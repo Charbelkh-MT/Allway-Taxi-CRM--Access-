@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Shadcn / Radix tokens (HSL) */
+  --color-background: hsl(36 25% 96%);
+  --color-foreground: hsl(22 14% 10%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(22 14% 10%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(22 14% 10%);
+  --color-primary: hsl(38 90% 38%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(32 18% 93%);
+  --color-secondary-foreground: hsl(22 14% 10%);
+  --color-muted: hsl(32 18% 93%);
+  --color-muted-foreground: hsl(22 8% 42%);
+  --color-accent: hsl(32 18% 91%);
+  --color-accent-foreground: hsl(22 14% 10%);
+  --color-destructive: hsl(0 57% 55%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(30 12% 88%);
+  --color-input: hsl(30 12% 88%);
+  --color-ring: hsl(38 90% 38%);
+
+  /* Brand colours for use in arbitrary classes */
+  --color-gold: #B8780A;
+  --color-gold-light: #D4920A;
+  --color-gold-dim: rgba(184,120,10,0.10);
+  --color-gold-border: rgba(184,120,10,0.20);
+  --color-green-brand: #0F7A4A;
+  --color-green-dim: rgba(15,122,74,0.08);
+  --color-red-brand: #C53030;
+  --color-red-dim: rgba(197,48,48,0.08);
+  --color-whish: #E8192C;
+  --color-whish-dim: rgba(232,25,44,0.08);
+  --color-blue-brand: #1D4ED8;
+  --color-blue-dim: rgba(29,78,216,0.08);
+
+  /* Typography */
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-mono: 'DM Mono', 'Courier New', monospace;
+
+  /* Radius */
+  --radius: 0.5rem;
+}
+
+/* CSS variables for shadcn component internals (still need :root) */
+:root {
+  --background: 36 25% 96%;
+  --foreground: 22 14% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 22 14% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 22 14% 10%;
+  --primary: 38 90% 38%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 32 18% 93%;
+  --secondary-foreground: 22 14% 10%;
+  --muted: 32 18% 93%;
+  --muted-foreground: 22 8% 42%;
+  --accent: 32 18% 91%;
+  --accent-foreground: 22 14% 10%;
+  --destructive: 0 57% 55%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 30 12% 88%;
+  --input: 30 12% 88%;
+  --ring: 38 90% 38%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    border-color: hsl(var(--border));
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-sans);
+    font-size: 13px;
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono    { font-family: var(--font-mono); }
+
+/* Thin scrollbar */
+::-webkit-scrollbar          { width: 4px; height: 4px; }
+::-webkit-scrollbar-track    { background: transparent; }
+::-webkit-scrollbar-thumb    { background: hsl(var(--border)); border-radius: 4px; }

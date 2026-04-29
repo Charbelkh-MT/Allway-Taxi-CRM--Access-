@@ -1,0 +1,27 @@
+{
+  "source": "Front End - Main Station.accdb",
+  "tables": [
+    {
+      "table": "tblInvoicesDetailsTemp",
+      "rows": 0,
+      "exported": true,
+      "csv": "exports/tblInvoicesDetailsTemp.csv",
+      "json": "exports/tblInvoicesDetailsTemp.json",
+      "cols": []
+    },
+    {
+      "table": "tblPurchaseDetailsTemp",
+      "rows": 0,
+      "exported": true,
+      "csv": "exports/tblPurchaseDetailsTemp.csv",
+      "json": "exports/tblPurchaseDetailsTemp.json",
+      "cols": []
+    },
+    {
+      "table": "tblVersion",
+      "rows": 3,
+      "exported": false,
+      "reason": "non-dict rows"
+    }
+  ]
+}

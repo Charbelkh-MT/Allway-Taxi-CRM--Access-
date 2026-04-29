@@ -1,0 +1,62 @@
+[
+  {
+    "P_ID": 2,
+    "MonthsReceived": 1,
+    "DollarsReceived": 3,
+    "Product_Details": "Card 04.50"
+  },
+  {
+    "P_ID": 3,
+    "MonthsReceived": 1,
+    "DollarsReceived": 6,
+    "Product_Details": "Card 07.58"
+  },
+  {
+    "P_ID": 4,
+    "MonthsReceived": 2,
+    "DollarsReceived": 12,
+    "Product_Details": "Card 15.15"
+  },
+  {
+    "P_ID": 5,
+    "MonthsReceived": 3,
+    "DollarsReceived": 18,
+    "Product_Details": "Card 22.73"
+  },
+  {
+    "P_ID": 6,
+    "MonthsReceived": 12,
+    "DollarsReceived": 72,
+    "Product_Details": "Card 77.28"
+  },
+  {
+    "P_ID": 12,
+    "MonthsReceived": 1,
+    "DollarsReceived": 3,
+    "Product_Details": "Card 04.50"
+  },
+  {
+    "P_ID": 13,
+    "MonthsReceived": 1,
+    "DollarsReceived": 6,
+    "Product_Details": "Card 07.58"
+  },
+  {
+    "P_ID": 14,
+    "MonthsReceived": 2,
+    "DollarsReceived": 12,
+    "Product_Details": "Card 15.15"
+  },
+  {
+    "P_ID": 15,
+    "MonthsReceived": 3,
+    "DollarsReceived": 18,
+    "Product_Details": "Card 22.73"
+  },
+  {
+    "P_ID": 16,
+    "MonthsReceived": 12,
+    "DollarsReceived": 72,
+    "Product_Details": "Card 77.28"
+  }
+]

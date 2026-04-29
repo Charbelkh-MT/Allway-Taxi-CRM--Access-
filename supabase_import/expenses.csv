@@ -1,0 +1,313 @@
+id,supplier,amount_usd,amount_lbp,description,note,status,submitted_by,approved_by,station,created_at
+1,Charbel,500.0,0,Insurance,"Receipt Number 06643
+04 / 04 / 2025",approved,Unknown,,Main Station,2025-04-28T09:16:24
+2,Charbel,105.0,0,Moteur Home,"Invoice Number FV 52268
+08 / 04 / 2025",approved,Unknown,,Main Station,2025-04-28T09:18:04
+3,Charbel,2.5,0,Protection For Moteur Guy,08 / 04 / 2025,approved,Unknown,,Main Station,2025-04-28T09:21:26
+4,Office,19.56,0,Ogero 04711020,08 / 04 / 2025,approved,Unknown,,Main Station,2025-04-28T09:59:20
+5,Office,7.33,0,Alfa 70534324,08/04/2025,approved,Unknown,,Main Station,2025-04-28T10:00:27
+6,Office,4.67,0,Ogero 04711350,08/04/2025,approved,Unknown,,Main Station,2025-04-28T10:04:13
+7,Tarek,1.2,0,Products,08/04/2025,approved,Unknown,,Main Station,2025-04-28T11:03:10
+8,Bright Cleaning Services,10.0,0,Cleaning Windows,10 / 04 / 2025,approved,Unknown,,Main Station,2025-04-30T10:14:53
+9,Jessy Msallem,102.22,0,Old Debts,Charbel,approved,Unknown,,Main Station,2025-04-30T10:15:36
+10,Fadi Msallem,14.33,0,Old Debts,Charbel,approved,Unknown,,Main Station,2025-04-30T10:15:54
+11,Tarek,9.22,0,Products,Office,approved,Unknown,,Main Station,2025-04-30T10:16:24
+12,Cable iPhone,8.0,0,Replacement,Replacing,approved,Unknown,,Main Station,2025-04-30T10:17:01
+13,Cleaning Girl,20.0,0,Office,Jenny,approved,Unknown,,Main Station,2025-04-30T10:17:19
+14,Perfume,20.0,0,Office,,approved,Unknown,,Main Station,2025-04-30T10:17:46
+15,Electricity Bill,28.49,0,Elias Issa Kazan,17 / 04 / 2025,approved,Unknown,,Main Station,2025-04-30T10:19:57
+16,Webcam,23.0,0,For Alfa Lines,,approved,Unknown,,Main Station,2025-04-30T10:21:23
+17,Mouawad Library,38.25,0,Office Supplies,Charbel,approved,Unknown,,Main Station,2025-04-30T10:22:26
+18,Nestle,7.78,0,2 Gallons,,approved,Unknown,,Main Station,2025-04-30T10:23:20
+19,Munch Mart,6.33,0,Nescafe,Jenny,approved,Unknown,,Main Station,2025-04-30T10:23:40
+20,Nestle,7.78,0,2 Gallons,08 / 04 / 2025,approved,Unknown,,Main Station,2025-04-30T10:24:27
+21,Electricity,103.82,0,AllWay Cell,August - September 2024,approved,Unknown,,Main Station,2025-04-30T10:25:10
+22,Tarek,5.0,0,Products,,approved,Unknown,,Main Station,2025-04-30T10:25:37
+23,Cleaning Girl,10.0,0,Office,Jenny,approved,Unknown,,Main Station,2025-05-01T20:55:52
+24,Salary,250.0,0,Melanie,Jenny,approved,Unknown,,Main Station,2025-05-03T13:17:32
+25,Tony,600.0,0,Social Media,Jenny,approved,Unknown,,Main Station,2025-05-05T18:49:16
+26,Salary,600.0,0,Elie,Jenny,approved,Unknown,,Main Station,2025-05-05T18:49:30
+27,Nestle,3.89,0,1 Gallon,,approved,Unknown,,Main Station,2025-05-06T11:18:24
+28,Moteur Shop,234.0,0,April 2025,,approved,Unknown,,Main Station,2025-05-06T20:08:13
+29,Internet,35.0,0,May 2025,,approved,Unknown,,Main Station,2025-05-06T20:08:39
+30,Electricity,19.45,0,Old Shop,,approved,Unknown,,Main Station,2025-05-08T00:00:00
+31,Tarek,4.0,0,Cleaning Products,Charbel,approved,Unknown,,Main Station,2025-05-13T17:35:50
+32,Master Chef,20.0,0,Food,Charbel - Maro - Roy,approved,Unknown,,Main Station,2025-05-13T20:27:05
+33,AT Trading,20.0,0,Perfume,,approved,Unknown,,Main Station,2025-05-15T11:48:39
+34,Bright Cleaning Services,10.0,0,Window GF,,approved,Unknown,,Main Station,2025-05-15T12:27:09
+35,Generator,10.0,0,Bireh Chouf,March and April 2025,approved,Unknown,,Main Station,2025-05-17T18:15:26
+36,Nestle,3.89,0,One Gallon,,approved,Unknown,,Main Station,2025-05-20T12:04:34
+37,Tarek,7.25,0,Klinex,1 Pack,approved,Unknown,,Main Station,2025-05-20T19:26:11
+38,Salary,100.0,0,Elie,,approved,Unknown,,Main Station,2025-05-21T19:44:36
+39,Cleaning Solar Panels,10.0,0,Ahmad Station,,approved,Unknown,,Main Station,2025-05-27T20:05:48
+40,Ogero,39.11,0,04711020,,approved,Unknown,,Main Station,2025-05-28T18:28:22
+41,Moteur,204.0,0,May 2025,,approved,Unknown,,Main Station,2025-06-03T15:07:35
+42,Internet,35.0,0,June 2025,,approved,Unknown,,Main Station,2025-06-03T15:08:04
+43,Tarek,8.6,0,Products,,approved,Unknown,,Main Station,2025-06-03T17:54:54
+44,bright cleaning,10.0,0,window cleaning,,approved,Unknown,,Main Station,2025-06-05T16:10:16
+45,bireh moteur,5.0,0,,,approved,Unknown,,Main Station,2025-06-09T10:13:12
+46,Nestle,7.78,0,Water,2 Gallons,approved,Unknown,,Main Station,2025-06-10T11:22:37
+47,nestle,3.89,0,,,approved,Unknown,,Main Station,2025-06-17T12:25:08
+48,toters,5.6,0,majroud and vileda,,approved,Unknown,,Main Station,2025-06-18T11:19:49
+49,perfume,20.0,0,2 bottle,,approved,Unknown,,Main Station,2025-06-19T11:25:14
+50,Jessy,400.0,0,,,approved,Unknown,,Main Station,2025-06-21T12:45:28
+51,pharmacie,3.33,0,bandage,,approved,Unknown,,Main Station,2025-06-24T09:06:57
+52,Nestle,7.78,0,2 Gallons,,approved,Unknown,,Main Station,2025-06-24T11:26:38
+53,Tarek,8.25,0,Products,,approved,Unknown,,Main Station,2025-06-24T18:40:54
+54,ogero bill,19.78,0,store,,approved,Unknown,,Main Station,2025-06-26T08:53:48
+55,Electricity,107.11,0,Month 10 - 11,,approved,Unknown,,Main Station,2025-06-26T11:23:01
+56,Jessy,100.0,0,Payment,,approved,Unknown,,Main Station,2025-06-26T21:23:29
+57,elie dekweneh,70.0,0,repair laptop,,approved,Unknown,,Main Station,2025-06-30T13:05:47
+58,Dekkene,2.61,0,Ghrad,,approved,Unknown,,Main Station,2025-07-02T09:56:35
+59,Alfa Bill,7.33,0,Mahal,,approved,Unknown,,Main Station,2025-07-02T12:58:12
+60,Moteur,300.0,0,June 2026,,approved,Unknown,,Main Station,2025-07-04T19:15:30
+61,Internet,35.0,0,July 2025,,approved,Unknown,,Main Station,2025-07-04T19:15:59
+62,Nestle,7.78,0,2 Gallons,,approved,Unknown,,Main Station,2025-07-08T11:22:45
+63,Tarek,12.25,0,Products,,approved,Unknown,,Main Station,2025-07-08T16:19:55
+64,ALFA INTERNET,17.1,0,STORE INTERNET 81999240,,approved,Unknown,,Main Station,2025-07-09T14:53:47
+65,Bright Cleaning Services,10.0,0,Cleaning Window,,approved,Unknown,,Main Station,2025-07-10T14:56:22
+66,MOTEUR,5.0,0,BIREH,BIREH,approved,Unknown,,Main Station,2025-07-11T13:26:04
+67,water,3.93,0,,,approved,Unknown,,Main Station,2025-07-15T13:09:18
+68,Perfume,20.0,0,2 bottles,,approved,Unknown,,Main Station,2025-07-17T11:42:50
+69,charbel msallem,165.0,0,10 gift,bireh festival,approved,Unknown,,Main Station,2025-07-18T14:13:19
+70,Jessy,200.0,0,3a lhseb,,approved,Unknown,,Main Station,2025-07-21T16:43:20
+71,nestleh,3.89,0,water,,approved,Unknown,,Main Station,2025-07-22T12:06:00
+72,alfa bill,15.37,0,70534324,,approved,Unknown,,Main Station,2025-07-29T10:48:13
+73,ogero bill,19.67,0,04711020,,approved,Unknown,,Main Station,2025-07-29T10:49:11
+74,nestle,3.89,0,,,approved,Unknown,,Main Station,2025-07-29T12:49:41
+75,JESSY MSALLEM,1200.0,0,SALARY,SALARY,approved,Unknown,,Main Station,2025-08-02T12:47:27
+76,Jessy Msallem,80.0,0,,,approved,Unknown,,Main Station,2025-08-04T16:17:37
+77,Roy,8.0,0,Mobile Stand Cost,,approved,Unknown,,Main Station,2025-08-06T09:56:56
+78,Moteur,386.0,0,July 2025,,approved,Unknown,,Main Station,2025-08-06T17:56:34
+79,Internet,35.0,0,August 2025,,approved,Unknown,,Main Station,2025-08-06T17:57:26
+80,ELECTRICITY,157.16,0,MONTh 11 12 2024,MONT 11 12 2024,approved,Unknown,,Main Station,2025-08-08T10:57:54
+81,WINDOW,10.0,0,10,,approved,Unknown,,Main Station,2025-08-08T11:33:40
+82,water,7.86,0,,,approved,Unknown,,Main Station,2025-08-12T11:33:21
+83,tarek ghrad,26.0,0,kebeyt carton plastic kyess,,approved,Unknown,,Main Station,2025-08-12T17:01:23
+84,PERFUM,20.0,0,,,approved,Unknown,,Main Station,2025-08-14T12:21:35
+85,81999240 internet,10.68,0,Card 7.58 + 2$,,approved,Unknown,,Main Station,2025-08-15T08:32:35
+86,Moteur Bireh,6.0,0,July 2025,,approved,Unknown,,Main Station,2025-08-15T15:04:20
+87,Dany,17.0,0,Blower 800 W,,approved,Unknown,,Main Station,2025-08-18T12:51:37
+88,CLEANING SARA,15.0,0,3 H,3H,approved,Unknown,,Main Station,2025-08-19T14:49:23
+89,sms,444.0,0,1 year warranty,1 year warranty,approved,Unknown,,Main Station,2025-08-20T13:14:20
+90,PrinteX,53.0,0,Toners x4,,approved,Unknown,,Main Station,2025-08-21T14:51:56
+91,Munch Mart,1.78,0,Vileda Gloves,,approved,Unknown,,Main Station,2025-08-21T17:21:56
+92,WATER,7.78,0,,,approved,Unknown,,Main Station,2025-08-26T12:06:55
+93,tarek ghrad,4.5,0,knineks,,approved,Unknown,,Main Station,2025-08-26T17:48:21
+94,baladiye,260.0,0,255+5,,approved,Unknown,,Main Station,2025-08-26T19:47:33
+95,tamer saad,300.0,0,half amount,half amount,approved,Unknown,,Main Station,2025-08-27T15:51:20
+96,ogero bill,19.67,0,bill,bill,approved,Unknown,,Main Station,2025-09-01T10:24:25
+97,alfa bill,7.33,0,,,approved,Unknown,,Main Station,2025-09-01T10:35:30
+98,SAMIR SALIBA,3250.0,0,AJAR MAHAL,AJAR MAHAL,approved,Unknown,,Main Station,2025-09-02T10:41:32
+99,moteur,370.0,0,moteur,moteur,approved,Unknown,,Main Station,2025-09-02T21:23:36
+100,internet,35.0,0,,,approved,Unknown,,Main Station,2025-09-02T21:24:15
+101,jessy,1200.0,0,salary,salary,approved,Unknown,,Main Station,2025-09-02T21:27:12
+103,BRIGHT CLEANING,10.0,0,AUGUST,AUGUST,approved,Unknown,,Main Station,2025-09-04T11:55:52
+104,kahrba bireh,10.0,0,10,,approved,Unknown,,Main Station,2025-09-08T08:31:50
+105,NESTLEH,7.78,0,,,approved,Unknown,,Main Station,2025-09-09T11:54:54
+106,SANNINE,3.89,0,,,approved,Unknown,,Main Station,2025-09-16T12:11:04
+107,tarek,32.0,0,,,approved,Unknown,,Main Station,2025-09-17T17:37:53
+108,perfum,20.0,0,,,approved,Unknown,,Main Station,2025-09-18T11:06:32
+109,SANINE,3.89,0,,,approved,Unknown,,Main Station,2025-09-23T18:55:00
+110,JHONNY SALARY,115.0,0,7 DAYS,7 DAYS,approved,Unknown,,Main Station,2025-09-25T11:53:41
+111,OGERO BILL,19.78,0,,,approved,Unknown,,Main Station,2025-09-26T13:49:15
+112,alfa bill,7.33,0,,,approved,Unknown,,Main Station,2025-09-29T19:55:47
+113,cleaning,25.0,0,4 hours,,approved,Unknown,,Main Station,2025-09-30T19:58:04
+115,ELECTRICITY,169.0,0,MONTH 1 AND 2 2025,MONTH 1 AND 2 2025,approved,Unknown,,Main Station,2025-10-04T08:46:07
+116,moteur,35.0,0,internet month 9,internet month 9,approved,Unknown,,Main Station,2025-10-06T10:14:33
+117,moteur bireh,12.0,0,2 month,aug and sep,approved,Unknown,,Main Station,2025-10-06T10:23:37
+118,moteur,318.0,0,sep,sep,approved,Unknown,,Main Station,2025-10-06T12:10:27
+119,SANINE,11.67,0,3,,approved,Unknown,,Main Station,2025-10-07T12:14:57
+120,WATER CITERN,11.11,0,,,approved,Unknown,,Main Station,2025-10-07T18:47:13
+121,kahraba bireh,9.46,0,bireh,bireh,approved,Unknown,,Main Station,2025-10-08T11:44:02
+122,BRIGHT CLEANING,10.0,0,,,approved,Unknown,,Main Station,2025-10-09T11:57:38
+123,water,11.11,0,5ezen,5ezen,approved,Unknown,,Main Station,2025-10-09T12:57:29
+124,wael karameh,70.0,0,toslih,toslih,approved,Unknown,,Main Station,2025-10-09T15:01:54
+125,hoco gm 14 mouse,5.0,0,,,approved,Unknown,,Main Station,2025-10-10T12:52:06
+126,CLEANING,15.0,0,cleaning,,approved,Unknown,,Main Station,2025-10-11T23:15:33
+127,TAREK BDA3A,8.0,0,BAG AND EASY,,approved,Unknown,,Main Station,2025-10-15T14:12:11
+128,SANINE,3.89,0,,,approved,Unknown,,Main Station,2025-10-15T14:12:27
+129,perfum,20.0,0,,,approved,Unknown,,Main Station,2025-10-16T11:46:36
+130,JESSY,188.0,0,COMM TILL 16.10.2025,CLOSING STOCK,approved,Unknown,,Main Station,2025-10-17T15:34:52
+131,cleaning,10.0,0,,,approved,Unknown,,Main Station,2025-10-18T17:01:25
+132,JESSY MSALLEM,218.0,0,,,approved,Unknown,,Main Station,2025-10-20T19:19:14
+133,tarek,12.5,0,,,approved,Unknown,,Main Station,2025-10-21T15:13:59
+134,INTERNT MAHAL,10.0,0,BUNDLE 7 GB,1 MONTH INTERNET,approved,Unknown,,Main Station,2025-10-28T09:54:19
+135,nestleh,3.89,0,,,approved,Unknown,,Main Station,2025-10-28T11:02:57
+136,najjar coffe,38.74,0,1 box double,,approved,Unknown,,Main Station,2025-10-28T12:36:47
+137,najjar coffee,24.0,0,single,single,approved,Unknown,,Main Station,2025-10-29T09:25:35
+138,JESSY SALARY,1200.0,0,,,approved,Unknown,,Main Station,2025-10-31T15:38:55
+139,TED SALARY,538.0,0,538,,approved,Unknown,,Main Station,2025-10-31T18:08:35
+140,mallah,331.0,0,moteur/internet,,approved,Unknown,,Main Station,2025-10-31T19:21:23
+141,CLEANING ROBEN,14.0,0,2H,2H,approved,Unknown,,Main Station,2025-11-01T14:04:18
+142,aninet GAZ,13.89,0,,,approved,Unknown,,Main Station,2025-11-01T15:03:58
+143,moteur bireh,5.0,0,,,approved,Unknown,,Main Station,2025-11-03T14:55:00
+144,WATER,3.89,0,,,approved,Unknown,,Main Station,2025-11-04T11:11:11
+145,PAPER,42.0,0,6 PACKET GIFT,GIFT,approved,Unknown,,Main Station,2025-11-04T11:18:33
+146,window cleaning,10.0,0,,,approved,Unknown,,Main Station,2025-11-06T12:40:54
+147,SERGE,20.0,0,INTERNET TESTER,,approved,Unknown,,Main Station,2025-11-06T19:10:31
+148,alfa bill,7.33,0,alfa 70534324,,approved,Unknown,,Main Station,2025-11-11T09:20:00
+149,parfum,20.0,0,,,approved,Unknown,,Main Station,2025-11-13T11:42:49
+150,tarek,6.0,0,,,approved,Unknown,,Main Station,2025-11-13T12:55:20
+151,OGERO,19.56,0,BILL,BILL,approved,Unknown,,Main Station,2025-11-15T10:51:51
+152,roben cleaning,10.0,0,cleaning,,approved,Unknown,,Main Station,2025-11-15T17:20:24
+153,cle agency,600.0,0,social media,,approved,Unknown,,Main Station,2025-11-15T17:22:05
+154,kahrba dawle,263.56,0,2 month,3 and 4 2025,approved,Unknown,,Main Station,2025-11-17T12:54:28
+155,MACHINE PROTECTION,399.0,0,,,approved,Unknown,,Main Station,2025-11-17T14:44:06
+156,water sanine,7.78,0,,,approved,Unknown,,Main Station,2025-11-18T12:18:16
+157,Rabih haykal,50.0,0,maintenance led,,approved,Unknown,,Main Station,2025-11-21T19:27:02
+158,karout Toys,160.25,0,Christmas Decoration,,approved,Unknown,,Main Station,2025-11-21T21:39:55
+159,roben cleaning,10.0,0,cleaning,,approved,Unknown,,Main Station,2025-11-22T19:15:47
+160,Charbel,75.0,0,New Desk Chair,Jenny,approved,Unknown,,Main Station,2025-11-22T21:41:53
+161,tarek,25.25,0,,,approved,Unknown,,Main Station,2025-11-26T16:51:31
+162,Alfa,7.33,0,Bill,,approved,Unknown,,Main Station,2025-11-29T23:44:42
+163,Ogero,19.56,0,Bill,04711350,approved,Unknown,,Main Station,2025-11-29T23:45:33
+164,Ted Salary,700.0,0,11/30/2025,,approved,Unknown,,Main Station,2025-11-30T14:58:48
+165,Moteur,340.0,0,moteur 11/2025,,approved,Unknown,,Main Station,2025-12-01T19:58:28
+166,internet,35.0,0,internet/ december,,approved,Unknown,,Main Station,2025-12-01T19:58:56
+167,joey salary,320.0,0,november,,approved,Unknown,,Main Station,2025-12-01T20:11:10
+168,Bright Cleaning Services,10.0,0,Cleaning Groun Floor Windows,,approved,Unknown,,Main Station,2025-12-04T11:14:13
+169,Batteries AAA,2.75,0,Jenny Light Mobile,,approved,Unknown,,Main Station,2025-12-06T16:37:09
+170,Roben Cleaning,10.0,0,Store cleaning,,approved,Unknown,,Main Station,2025-12-07T18:17:32
+171,Elie Cell,83.0,0,new phone,alfa phone,approved,Unknown,,Main Station,2025-12-11T11:30:39
+172,water,11.66,0,nestle,,approved,Unknown,,Main Station,2025-12-11T13:28:24
+174,feres,40.0,0,tozbit khashab,,approved,Unknown,,Main Station,2025-12-12T15:30:46
+175,Deken,4.33,0,flash mamsaha,,approved,Unknown,,Main Station,2025-12-13T21:10:57
+176,Roben,10.0,0,cleaning,,approved,Unknown,,Main Station,2025-12-13T21:11:17
+177,Ayoub Computers,196.2,0,new printer,hp printer,approved,Unknown,,Main Station,2025-12-15T13:36:26
+178,parfum,20.0,0,riha lal mahal,,approved,Unknown,,Main Station,2025-12-18T12:45:49
+179,Guardian insurance,150.0,0,store insurance,toni secar,approved,Unknown,,Main Station,2025-12-18T18:09:56
+180,Sandra badruk,10.25,0,Gift Voucher,,approved,Unknown,,Main Station,2025-12-19T14:44:15
+181,sms,100.0,0,kisan external display,sheshe,approved,Unknown,,Main Station,2025-12-19T15:14:16
+182,Cle Agency,600.0,0,social media,,approved,Unknown,,Main Station,2025-12-21T16:30:39
+183,Water,7.77,0,nestle,,approved,Unknown,,Main Station,2025-12-23T14:58:30
+184,tarek,34.0,0,klenex etc&,,approved,Unknown,,Main Station,2025-12-23T15:02:47
+185,benzine,5.55,0,benzine moto,,approved,Unknown,,Main Station,2025-12-24T13:59:52
+186,elie cell,10.0,0,fre2 fetura brn discount w charge original 60w,,approved,Unknown,,Main Station,2025-12-24T14:01:34
+187,salaries,1508.0,0,salary of ted 506$ / joey 567$ / rony 436$,,approved,Unknown,,Main Station,2025-12-26T10:07:20
+188,Harout kasssabian,100.0,0,kahraba mahal,,approved,Unknown,,Main Station,2025-12-26T19:19:13
+189,roben,10.0,0,store cleaning,,approved,Unknown,,Main Station,2025-12-28T20:36:41
+190,allway cell,82.0,0,new mobile mtc,82$,approved,Unknown,,Main Station,2025-12-29T17:58:58
+191,water,3.8,0,nestle,,approved,Unknown,,Main Station,2025-12-30T17:19:48
+192,SANTA MAHMOUD,20.0,0,SANTA,,approved,Unknown,,Main Station,2025-12-30T20:58:47
+193,NESCAFE 3IN1,6.66,0,NESCAFE,,approved,Unknown,,Main Station,2025-12-30T20:59:31
+194,abo jaoude,10.0,0,cutting fim AAA 10 units,,approved,Unknown,,Main Station,2025-12-31T14:27:17
+195,dawle,51.37,0,3an chaher 6,,approved,Unknown,,Main Station,2026-01-03T14:02:49
+196,remaining salaries,413.0,0,from 25/12/2025 till 31/12/2025,ted joey rony,approved,Unknown,,Main Station,2026-01-03T21:21:43
+197,Moteur 31/12/2025,408.0,0,Moteur Internet,,approved,Unknown,,Main Station,2026-01-05T18:54:54
+198,Bright Cleaning windows,10.0,0,windows,,approved,Unknown,,Main Station,2026-01-08T18:32:52
+199,Screen spray cleaning,20.0,0,4 Bottles,,approved,Unknown,,Main Station,2026-01-08T18:33:40
+200,Moto Fuel,5.0,0,fuel,,approved,Unknown,,Main Station,2026-01-08T19:22:20
+201,Munch Mart,12.0,0,coffee mint tea kebeyet,,approved,Unknown,,Main Station,2026-01-09T15:33:19
+204,Salary,750.0,0,Roy,,approved,Unknown,,Main Station,2025-04-30T20:51:55
+205,Salary,750.0,0,Roy,,approved,Unknown,,Main Station,2025-05-31T22:40:20
+206,Salary,750.0,0,Roy,,approved,Unknown,,Main Station,2025-06-30T19:35:52
+207,Salary,1200.0,0,Jessy,,approved,Unknown,,Main Station,2025-06-30T21:36:30
+208,Salary,750.0,0,Roy,,approved,Unknown,,Main Station,2025-07-31T21:36:30
+209,Salary,1200.0,0,Jessy,,approved,Unknown,,Main Station,2025-07-31T21:37:27
+210,Salary,750.0,0,Roy,,approved,Unknown,,Main Station,2025-08-31T20:30:27
+213,Salary,1200.0,0,Jessy,,approved,Unknown,,Main Station,2025-11-30T20:42:22
+214,roben,10.0,0,tondif,,approved,Unknown,,Main Station,2026-01-13T14:50:44
+215,nesle,8.0,0,may,,approved,Unknown,,Main Station,2026-01-13T14:51:14
+216,alfa 7gb,9.0,0,4g,,approved,Unknown,,Main Station,2026-01-13T14:51:43
+217,Tarek,42.5,0,Products,,approved,Unknown,,Main Station,2026-01-14T20:02:06
+218,Alfa Line,7.33,0,70534324,,approved,Unknown,,Main Station,2026-01-19T21:00:32
+219,Nestle Water,3.89,0,1 Gallon,,approved,Unknown,,Main Station,2026-01-20T23:10:31
+220,Serge Kizil,15.0,0,Toner 107A,No Invoice,approved,Unknown,,Main Station,2026-01-20T23:10:50
+221,Jal El Dib,14.0,0,x2 toners 107 A,,approved,Unknown,,Main Station,2026-01-21T23:19:16
+222,Moteur,15.0,0,Disjoncteur,,approved,Unknown,,Main Station,2026-01-21T23:19:35
+223,ogero,19.77,0,ogero mahal,22/01/2026,approved,Unknown,,Main Station,2026-01-24T14:52:29
+224,air refreshener,20.0,0,air refreshener,22/01/2026,approved,Unknown,,Main Station,2026-01-24T14:53:15
+225,Disjoncteur,15.0,0,Disjoncteur,23/01/2026,approved,Unknown,,Main Station,2026-01-24T14:53:48
+226,M tech,4.0,0,kmelit fetura adime,,approved,Unknown,,Main Station,2026-01-24T14:54:45
+227,serrge kizil,100.0,0,ups,,approved,Unknown,,Main Station,2026-01-29T12:22:21
+228,copy keys,15.0,0,copy keys,,approved,Unknown,,Main Station,2026-01-29T12:22:48
+229,tarek,1.11,0,cups,,approved,Unknown,,Main Station,2026-01-29T12:25:12
+230,Salaries,2056.0,0,salaries,,approved,Unknown,,Main Station,2026-02-03T12:41:37
+231,nestle,3.8,0,water,,approved,Unknown,,Main Station,2026-02-03T12:42:22
+232,A4,20.0,0,paper a4,,approved,Unknown,,Main Station,2026-02-03T12:48:31
+233,roy salary,400.0,0,roy salary,,approved,Unknown,,Main Station,2026-02-03T14:12:06
+234,Tarek,3.44,0,2 Cups Pack + Trash Bags,,approved,Unknown,,Main Station,2026-02-05T16:53:29
+235,Shop,1.67,0,Lamp for Toilette,,approved,Unknown,,Main Station,2026-02-05T16:54:00
+236,Mallah,365.0,0,Moteur January 2026,,approved,Unknown,,Main Station,2026-02-05T16:57:05
+237,Mallah,300.0,0,Moteur Upgrade Insurance,,approved,Unknown,,Main Station,2026-02-05T16:57:21
+238,Mallah,35.0,0,Internet February 2026,,approved,Unknown,,Main Station,2026-02-05T16:57:35
+239,Roben,10.0,0,Cleaning,,approved,Unknown,,Main Station,2026-02-05T16:58:06
+240,Haykal Station,5.56,0,Benzine Moto,,approved,Unknown,,Main Station,2026-02-05T18:52:10
+241,Haykal Station,1.0,0,Benzin,,approved,Unknown,,Main Station,2026-02-06T21:03:04
+242,Deken,3.33,0,Nescafe,,approved,Unknown,,Main Station,2026-02-06T21:03:17
+243,Bright Cleaning Services,10.0,0,Windows,,approved,Unknown,,Main Station,2026-02-14T20:12:18
+244,Whatsapp Business,15.0,0,Subscription,,approved,Unknown,,Main Station,2026-02-14T20:12:45
+245,Haykal Station,3.0,0,Benzine,,approved,Unknown,,Main Station,2026-02-14T20:13:16
+246,Dekkene,5.56,0,Nesacfe,,approved,Unknown,,Main Station,2026-02-14T20:13:51
+247,Haykal Station,2.22,0,Benzin,,approved,Unknown,,Main Station,2026-02-14T20:14:03
+252,roben cleaning,10.0,0,cleaning,,approved,Unknown,,Main Station,2026-02-18T16:14:37
+253,tarek,2.33,0,Cups and trash bag,,approved,Unknown,,Main Station,2026-02-18T16:59:23
+254,Nestle,7.7,0,Nestle Water,,approved,Unknown,,Main Station,2026-02-18T17:19:46
+255,Dettol,4.4,0,Dettol detergent,,approved,Unknown,,Main Station,2026-02-18T17:22:02
+256,social media,600.0,0,3an chaher wahad,,approved,Unknown,,Main Station,2026-02-19T13:28:30
+257,nescafe,14.0,0,nescafe,,approved,Unknown,,Main Station,2026-02-23T15:19:04
+258,benzine,3.0,0,benzine moto,,approved,Unknown,,Main Station,2026-02-23T15:20:13
+259,electricity,305.0,0,kahraba dawle,months 8-9/2025,approved,Unknown,,Main Station,2026-02-23T15:24:41
+260,nescafe,2.2,0,nescafe,nescafe,approved,Unknown,,Main Station,2026-02-23T17:20:57
+261,benzin,10.0,0,benzin moto,,approved,Unknown,,Main Station,2026-02-28T16:01:33
+262,Cleaning,10.0,0,Roben,,approved,Unknown,,Main Station,2026-02-28T16:01:58
+263,Nestle,3.8,0,Water,,approved,Unknown,,Main Station,2026-02-28T16:02:24
+264,Diken,3.3,0,Diken,,approved,Unknown,,Main Station,2026-02-28T16:07:20
+265,salary,700.0,0,rony,,approved,Unknown,,Main Station,2026-02-28T21:58:08
+266,samir saliba office,3505.0,0,ajar chaher 1 tel 6,,approved,Unknown,,Main Station,2026-03-03T11:26:20
+267,saleri,350.0,0,joey,,approved,Unknown,,Main Station,2026-03-03T22:45:08
+268,saleri,606.0,0,norman,,approved,Unknown,,Main Station,2026-03-03T22:45:53
+269,mallah,362.0,0,mouter internet 327 35,,approved,Unknown,,Main Station,2026-03-03T22:48:47
+270,Cleaning,10.0,0,Robin,,approved,Unknown,,Main Station,2026-03-04T21:03:32
+271,haykal station,5.0,0,benzine,,approved,Unknown,,Main Station,2026-03-10T16:06:32
+272,Café najjar,25.0,0,coffee,,approved,Unknown,,Main Station,2026-03-10T16:07:27
+273,nescafe,16.0,0,nescafe,,approved,Unknown,,Main Station,2026-03-10T16:08:17
+274,tarek,12.5,0,kleneex kyes zbele,,approved,Unknown,,Main Station,2026-03-10T16:08:46
+275,whatsapp business,15.0,0,whatsapp,,approved,Unknown,,Main Station,2026-03-10T16:09:21
+276,nestle,7.77,0,water,,approved,Unknown,,Main Station,2026-03-10T16:11:46
+277,HAYKAL STATION,4.44,0,BENZINE,,approved,Unknown,,Main Station,2026-03-14T16:19:03
+278,Deken,6.0,0,nescafe,,approved,Unknown,,Main Station,2026-03-18T19:40:40
+279,maktabit haykal,11.11,0,paper and bic,,approved,Unknown,,Main Station,2026-03-18T20:13:50
+280,tarek,4.0,0,cups w liyaf jale,,approved,Unknown,,Main Station,2026-03-18T20:14:27
+281,Bright,10.0,0,Cleaning Windows,,approved,Unknown,,Main Station,2026-03-19T20:40:02
+282,Cleaning,10.0,0,Roben,,approved,Unknown,,Main Station,2026-03-19T20:40:18
+283,ALFA LINE,11.0,0,70534324,FETURA,approved,Unknown,,Main Station,2026-03-24T18:19:21
+284,NESCAFE 2IN1,5.5,0,NESCAFE,,approved,Unknown,,Main Station,2026-03-24T18:19:40
+285,WATER,7.77,0,WATER NESTLET,,approved,Unknown,,Main Station,2026-03-24T18:20:42
+286,OGERO,19.77,0,FETURIT MAHAL,04711020,approved,Unknown,,Main Station,2026-03-24T18:21:27
+287,SERGE KILZI,10.0,0,PC 2,,approved,Unknown,,Main Station,2026-03-24T18:22:12
+288,usb wireless serge kizil,20.0,0,usb wireless quantity4,1usb wireless 5$,approved,Unknown,,Main Station,2026-03-25T18:52:27
+289,haykal station,5.0,0,benzine,,approved,Unknown,,Main Station,2026-03-25T18:52:47
+290,allway cell,12.0,0,mini ups 10800,,approved,Unknown,,Main Station,2026-03-25T18:53:50
+291,allway cell,1.5,0,panasonic batariyet,,approved,Unknown,,Main Station,2026-03-25T18:56:41
+292,nescafe 3in1,6.0,0,nescafe 3in1,,approved,Unknown,,Main Station,2026-03-28T09:19:07
+293,electricity,230.0,0,kahraba dawle,chaher 10-11 2025,approved,Unknown,,Main Station,2026-03-28T09:23:21
+294,roben cleaning,10.0,0,roben cleaning,,approved,Unknown,,Main Station,2026-03-28T14:44:54
+295,Moteur,279.0,0,Internet Moteur,,approved,Unknown,,Main Station,2026-03-31T17:08:58
+296,water,7.77,0,water,,approved,Unknown,,Main Station,2026-03-31T17:12:14
+297,bank,20.0,0,bank tokhlis mouaamalet,,approved,Unknown,,Main Station,2026-03-31T17:13:23
+298,reglateur moto,11.0,0,reglateur,,approved,Unknown,,Main Station,2026-03-31T17:35:28
+299,maktabit haykal,1.66,0,bic w kebes,,approved,Unknown,,Main Station,2026-04-01T12:59:51
+300,Salary Joey,300.0,0,March 2026,,approved,Unknown,,Main Station,2026-04-02T21:28:31
+301,Salary Norman,426.0,0,March 2026,,approved,Unknown,,Main Station,2026-04-02T21:28:44
+302,Salary Rony,710.0,0,March 2026,,approved,Unknown,,Main Station,2026-04-02T21:28:54
+303,Salary Anthony,487.0,0,March 2026,,approved,Unknown,,Main Station,2026-04-02T21:29:28
+304,HAYKAL SATATION,10.0,0,BENZINE,,pending,Unknown,,Main Station,2026-04-04T20:32:29
+305,Windows cleaner,10.0,0,window,,pending,Unknown,,Main Station,2026-04-04T20:33:11
+306,roben cleaning,10.0,0,roben,,pending,Unknown,,Main Station,2026-04-04T20:33:32
+307,nescafe,14.0,0,nescafe,,pending,Unknown,,Main Station,2026-04-04T20:33:52
+308,fare2 salary,27.0,0,joey anthony,1.3 31.3 2026,pending,Unknown,,Main Station,2026-04-04T20:47:05
+309,joey tozbit maash,34.0,0,tozbit maash,,pending,Unknown,,Main Station,2026-04-06T15:49:06
+310,UPS Router,15.0,0,M-Tech,,pending,Unknown,,Main Station,2026-04-07T23:33:26
+311,WC Freshner,3.0,0,.,,pending,Unknown,,Main Station,2026-04-07T23:33:37
+312,Tarek,10.25,0,Products,,pending,Unknown,,Main Station,2026-04-07T23:34:15
+313,Nestle,3.89,0,1 Gallon,,pending,Unknown,,Main Station,2026-04-07T23:35:05
+314,Whatsapp Plus,15.0,0,whish,,pending,Unknown,,Main Station,2026-04-09T19:58:37
+315,Haykal Station,5.0,0,benzin,,pending,Unknown,,Main Station,2026-04-11T17:55:36
+316,Haykal MiniMarket,14.0,0,nescafe,,pending,Unknown,,Main Station,2026-04-11T17:56:12
+317,Cleaning,10.0,0,Roben,,pending,Unknown,,Main Station,2026-04-11T17:56:32
+318,teghyir zeit,8.0,0,moto,,pending,Unknown,,Main Station,2026-04-11T17:57:03
+319,ALFA LINE 70534324,12.22,0,ALFA,,pending,Unknown,,Main Station,2026-04-15T15:42:09
+320,ABDO MARKET,1.44,0,CUPS,,pending,Unknown,,Main Station,2026-04-15T15:43:01
+321,WATER,3.88,0,WATER,,pending,Unknown,,Main Station,2026-04-15T15:43:40

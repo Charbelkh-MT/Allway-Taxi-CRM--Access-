@@ -1,0 +1,851 @@
+{
+  "source": "BackEnd.accdb",
+  "exported_at": "2026-04-27T20:37:16.481737Z",
+  "tables": [
+    {
+      "table": "tblApprove",
+      "rows": 3,
+      "json": "exports_backend/tblApprove.json",
+      "csv": "exports_backend/tblApprove.csv",
+      "cols": [
+        "Approve",
+        "ID"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblBrands",
+      "rows": 115,
+      "json": "exports_backend/tblBrands.json",
+      "csv": "exports_backend/tblBrands.csv",
+      "cols": [
+        "Brands",
+        "ID"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblCapital",
+      "rows": 1,
+      "json": "exports_backend/tblCapital.json",
+      "csv": "exports_backend/tblCapital.csv",
+      "cols": [
+        "CapitalAmount",
+        "ID"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblCashMovements",
+      "rows": 8,
+      "json": "exports_backend/tblCashMovements.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblCashSources",
+      "rows": 3,
+      "json": "exports_backend/tblCashSources.json",
+      "csv": "exports_backend/tblCashSources.csv",
+      "cols": [
+        "BalanceLBP",
+        "BalanceUSD",
+        "ID",
+        "SourceName"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblClientReceivables",
+      "rows": 150,
+      "json": "exports_backend/tblClientReceivables.json",
+      "csv": "exports_backend/tblClientReceivables.csv",
+      "cols": [
+        "AmountUSD",
+        "ClientName",
+        "Notes",
+        "Reason",
+        "ReceivableDate",
+        "ReceivableID",
+        "ResolvedDate",
+        "Status"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblClients",
+      "rows": 584,
+      "json": "exports_backend/tblClients.json",
+      "csv": "exports_backend/tblClients.csv",
+      "cols": [
+        "C_ID",
+        "ClientCategory",
+        "ClientDisplayName",
+        "ClientFullName",
+        "ClientMobile",
+        "DebtStatus",
+        "isDriver",
+        "lbp_balance",
+        "usd_balance"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblClientsCategory",
+      "rows": 2,
+      "json": "exports_backend/tblClientsCategory.json",
+      "csv": "exports_backend/tblClientsCategory.csv",
+      "cols": [
+        "CC_ID",
+        "Category"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblCurrencies",
+      "rows": 2,
+      "json": "exports_backend/tblCurrencies.json",
+      "csv": "exports_backend/tblCurrencies.csv",
+      "cols": [
+        "Currency",
+        "ID"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblDailyProfits",
+      "rows": 119,
+      "json": "exports_backend/tblDailyProfits.json",
+      "csv": "exports_backend/tblDailyProfits.csv",
+      "cols": [
+        "Commission",
+        "ID",
+        "ProfitDate",
+        "ProfitTime",
+        "Stock",
+        "Total",
+        "Whish"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblDailySales",
+      "rows": 593,
+      "json": "exports_backend/tblDailySales.json",
+      "csv": "exports_backend/tblDailySales.csv",
+      "cols": [
+        "DailySalesID",
+        "ItemsSold",
+        "ItemsSoldIDs",
+        "LogTime",
+        "SalesDate",
+        "TotalCost",
+        "TotalProfit",
+        "TotalSellingPrice"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblEmployees",
+      "rows": 13,
+      "json": "exports_backend/tblEmployees.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblExpenses",
+      "rows": 310,
+      "json": "exports_backend/tblExpenses.json",
+      "csv": "exports_backend/tblExpenses.csv",
+      "cols": [
+        "AmountUSD",
+        "Company",
+        "Description",
+        "ExpenseDate",
+        "Expenses_ID",
+        "Notes",
+        "ResolvedDate",
+        "Status",
+        "Supplier"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblHROptions",
+      "rows": 2,
+      "json": "exports_backend/tblHROptions.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblInformation",
+      "rows": 1,
+      "json": "exports_backend/tblInformation.json",
+      "csv": "exports_backend/tblInformation.csv",
+      "cols": [
+        "BusinessAddress",
+        "BusinessAddressLink",
+        "BusinessHours",
+        "BusinessName",
+        "BusinessNumber",
+        "BusinessWhishNumber",
+        "ID",
+        "OwnerWhatsapp"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblInvoiceCounter",
+      "rows": 1,
+      "json": "exports_backend/tblInvoiceCounter.json",
+      "csv": "exports_backend/tblInvoiceCounter.csv",
+      "cols": [
+        "ID",
+        "NextInvoiceID"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblInvoicesDetails",
+      "rows": 10929,
+      "json": "exports_backend/tblInvoicesDetails.json",
+      "csv": "exports_backend/tblInvoicesDetails.csv",
+      "cols": [
+        "Amount",
+        "Discount",
+        "Discount_Amount",
+        "ExistedQuantity",
+        "ID_ID",
+        "INV_ID",
+        "IsFullyReturned",
+        "LbpUsdRate",
+        "P_ID",
+        "Product_Category",
+        "Product_Cost",
+        "Product_Currency",
+        "Product_Description",
+        "Product_Selling",
+        "Qty_Returned_ToDate",
+        "Quantity",
+        "Total",
+        "USDollarsAmount",
+        "USDollarsCost",
+        "USDollarsProfit",
+        "USDollarsRate",
+        "USDollarsSelling",
+        "USDollarsTotal",
+        "UsdLbpRate",
+        "isReturned",
+        "isSelected"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblInvoicesDetailsUnsaved",
+      "rows": 82,
+      "json": "exports_backend/tblInvoicesDetailsUnsaved.json",
+      "csv": "exports_backend/tblInvoicesDetailsUnsaved.csv",
+      "cols": [
+        "Amount",
+        "Discount",
+        "Discount_Amount",
+        "ID_ID",
+        "INV_ID",
+        "P_ID",
+        "Product_Cost",
+        "Product_Currency",
+        "Product_Description",
+        "Product_Selling",
+        "Quantity",
+        "Total"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblInvoicesHead",
+      "rows": 8758,
+      "json": "exports_backend/tblInvoicesHead.json",
+      "csv": "exports_backend/tblInvoicesHead.csv",
+      "cols": [
+        "C_ID",
+        "ClientFullName",
+        "DebtNote",
+        "DebtStatus",
+        "Description",
+        "INV_ID",
+        "I_ID",
+        "InvoiceStatus",
+        "Invoice_Date",
+        "Invoice_Time",
+        "Payment_ID",
+        "Username",
+        "isDebt",
+        "lbp_received",
+        "lbp_returned",
+        "lbp_total",
+        "usdRate",
+        "usd_received",
+        "usd_returned",
+        "usd_total"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblInvoicesHeadUnsaved",
+      "rows": 69,
+      "json": "exports_backend/tblInvoicesHeadUnsaved.json",
+      "csv": "exports_backend/tblInvoicesHeadUnsaved.csv",
+      "cols": [
+        "C_ID",
+        "ClientFullName",
+        "Description",
+        "INV_ID",
+        "I_ID",
+        "Invoice_Date",
+        "Invoice_Time",
+        "Payment_ID",
+        "Username",
+        "lbp_received",
+        "lbp_returned",
+        "lbp_total",
+        "usd_received",
+        "usd_returned",
+        "usd_total"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblLogs",
+      "rows": 41433,
+      "json": "exports_backend/tblLogs.json",
+      "csv": "exports_backend/tblLogs.csv",
+      "cols": [
+        "ComputerName",
+        "Description",
+        "ID",
+        "LogDate",
+        "LogTime",
+        "Username"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblLoto",
+      "rows": 6,
+      "json": "exports_backend/tblLoto.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblManufacturing",
+      "rows": 5,
+      "json": "exports_backend/tblManufacturing.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblMissingItems",
+      "rows": 47,
+      "json": "exports_backend/tblMissingItems.json",
+      "csv": "exports_backend/tblMissingItems.csv",
+      "cols": [
+        "ClientFullName",
+        "ClientPhoneNumber",
+        "MessageID",
+        "MissingItem",
+        "MissingItemStatus",
+        "MissingItemsID",
+        "ProcessedBy"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblPNL",
+      "rows": 1259,
+      "json": "exports_backend/tblPNL.json",
+      "csv": "exports_backend/tblPNL.csv",
+      "cols": [
+        "AccessoriesUSD",
+        "AlfaUSD",
+        "AppLBP",
+        "AppUSD",
+        "CapitalUSD",
+        "CashLBP",
+        "CashUSD",
+        "ClientDebtsUSD",
+        "ComissionLBP",
+        "ComissionTotalLBP_Accumulated",
+        "ComissionTotalUSD_Accumulated",
+        "ComissionUSD",
+        "CountDate",
+        "CountTime",
+        "ExpensesUSD",
+        "Notes",
+        "OwnerWithdrawal",
+        "PNL_ID",
+        "PNL_ResultUSD",
+        "ReceivablesUSD",
+        "SystemLBP",
+        "SystemUSD",
+        "TouchUSD",
+        "USDT",
+        "isManual"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblPaymentDetails",
+      "rows": 9308,
+      "json": "exports_backend/tblPaymentDetails.json",
+      "csv": "exports_backend/tblPaymentDetails.csv",
+      "cols": [
+        "Amount_Paid",
+        "Amount_Paid_LBP",
+        "Amount_Paid_USD",
+        "Amount_Returned",
+        "C_ID",
+        "INV_ID",
+        "Payment_Detail_ID",
+        "Payment_ID",
+        "totalReceived"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblPayments",
+      "rows": 8112,
+      "json": "exports_backend/tblPayments.json",
+      "csv": "exports_backend/tblPayments.csv",
+      "cols": [
+        "C_ID",
+        "ClientFullName",
+        "ComputerName",
+        "LBP_Received",
+        "LBP_Returned",
+        "Payment_Date",
+        "Payment_ID",
+        "Payment_Time",
+        "Processed_By",
+        "USD_Received",
+        "USD_Returned"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblPendingInvoices",
+      "rows": 16,
+      "json": "exports_backend/tblPendingInvoices.json",
+      "csv": "exports_backend/tblPendingInvoices.csv",
+      "cols": [
+        "AssignedID",
+        "AssignedTime",
+        "AssignedTo"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblProducts",
+      "rows": 1744,
+      "json": "exports_backend/tblProducts.json",
+      "csv": "exports_backend/tblProducts.csv",
+      "cols": [
+        "AverageCost",
+        "Barcode",
+        "Checked",
+        "IsSelected",
+        "P_ID",
+        "Product_Brand",
+        "Product_Category",
+        "Product_Cost",
+        "Product_Currency",
+        "Product_Details",
+        "Product_Quantity",
+        "Product_Selling",
+        "Product_Sub_Category"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblProductsCategory",
+      "rows": 14,
+      "json": "exports_backend/tblProductsCategory.json",
+      "csv": "exports_backend/tblProductsCategory.csv",
+      "cols": [
+        "PC_ID",
+        "Products_Category"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblProductsManufacturing",
+      "rows": 10,
+      "json": "exports_backend/tblProductsManufacturing.json",
+      "csv": "exports_backend/tblProductsManufacturing.csv",
+      "cols": [
+        "DollarsReceived",
+        "MonthsReceived",
+        "P_ID",
+        "Product_Details"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblProductsSubCategory",
+      "rows": 56,
+      "json": "exports_backend/tblProductsSubCategory.json",
+      "csv": "exports_backend/tblProductsSubCategory.csv",
+      "cols": [
+        "PC_ID",
+        "Products_Sub_Category"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblPunchHead",
+      "rows": 8,
+      "json": "exports_backend/tblPunchHead.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblPunchImport",
+      "rows": 9,
+      "json": "exports_backend/tblPunchImport.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblPunchTransactions",
+      "rows": 10,
+      "json": "exports_backend/tblPunchTransactions.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblPurchaseDetails",
+      "rows": 940,
+      "json": "exports_backend/tblPurchaseDetails.json",
+      "csv": "exports_backend/tblPurchaseDetails.csv",
+      "cols": [
+        "Detail_ID",
+        "Discount",
+        "Discount_Amount",
+        "ExistedQuantity",
+        "P_ID",
+        "Product_Category",
+        "Product_Description",
+        "PurchaseCurrency",
+        "Purchase_ID",
+        "Qty",
+        "SerialNumber",
+        "Total",
+        "Total_Cost",
+        "Unit_Cost"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblPurchaseHead",
+      "rows": 158,
+      "json": "exports_backend/tblPurchaseHead.json",
+      "csv": "exports_backend/tblPurchaseHead.csv",
+      "cols": [
+        "Paid_USD",
+        "Purchase_Date",
+        "Purchase_ID",
+        "Purchase_Note",
+        "Supplier_ID",
+        "TimeSaved",
+        "Total_USD",
+        "Username",
+        "isPaid"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblRates",
+      "rows": 1,
+      "json": "exports_backend/tblRates.json",
+      "csv": "exports_backend/tblRates.csv",
+      "cols": [
+        "ID",
+        "usdRate"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblReturnDetails",
+      "rows": 36,
+      "json": "exports_backend/tblReturnDetails.json",
+      "csv": "exports_backend/tblReturnDetails.csv",
+      "cols": [
+        "INV_ID",
+        "LogDate",
+        "P_ID",
+        "Product_Details",
+        "Qty_Returned",
+        "ReturnDetail_ID",
+        "Return_ID",
+        "TotalCost_USD",
+        "Total_USD",
+        "UnitCost_USD",
+        "UnitPrice_USD",
+        "isPosted",
+        "isReturned"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblReturns",
+      "rows": 36,
+      "json": "exports_backend/tblReturns.json",
+      "csv": "exports_backend/tblReturns.csv",
+      "cols": [
+        "C_ID",
+        "ClientName",
+        "Invoice_ID",
+        "Reason",
+        "Return_Date",
+        "Return_ID",
+        "Total_LBP",
+        "Total_USD",
+        "USD_Rate",
+        "UserName"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblRoles",
+      "rows": 3,
+      "json": "exports_backend/tblRoles.json",
+      "csv": "exports_backend/tblRoles.csv",
+      "cols": [
+        "ID",
+        "Role"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblSettings",
+      "rows": 1,
+      "json": "exports_backend/tblSettings.json",
+      "csv": "exports_backend/tblSettings.csv",
+      "cols": [
+        "ID",
+        "IsLocked"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblStamps",
+      "rows": 147,
+      "json": "exports_backend/tblStamps.json",
+      "csv": "exports_backend/tblStamps.csv",
+      "cols": [
+        "ClientName",
+        "FinanceID",
+        "Mobile",
+        "StampID",
+        "Zone"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblStatus",
+      "rows": 2,
+      "json": "exports_backend/tblStatus.json",
+      "csv": "exports_backend/tblStatus.csv",
+      "cols": [
+        "ID",
+        "TrueFalse"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblStatus2",
+      "rows": 2,
+      "json": "exports_backend/tblStatus2.json",
+      "csv": "exports_backend/tblStatus2.csv",
+      "cols": [
+        "ID",
+        "Status"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblStockCash",
+      "rows": 1,
+      "json": "exports_backend/tblStockCash.json",
+      "csv": "exports_backend/tblStockCash.csv",
+      "cols": [
+        "ID",
+        "StockCash"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblStockCashAndPhysical",
+      "rows": 1698,
+      "json": "exports_backend/tblStockCashAndPhysical.json",
+      "csv": "exports_backend/tblStockCashAndPhysical.csv",
+      "cols": [
+        "CheckDate",
+        "CheckTime",
+        "ID",
+        "IsDayClose",
+        "IsMonthMarker",
+        "IsOpening",
+        "IsShiftClose",
+        "MonthKey",
+        "ShiftLabel",
+        "StockCash",
+        "StockPhysical"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblStockLog",
+      "rows": 4627,
+      "json": "exports_backend/tblStockLog.json",
+      "csv": "exports_backend/tblStockLog.csv",
+      "cols": [
+        "Checked",
+        "InvoiceID",
+        "LogDate",
+        "LogDateOnly",
+        "LogTime",
+        "New_Quantity",
+        "Old_Quantity",
+        "P_ID",
+        "Product_Cost",
+        "Product_Details",
+        "Product_Price",
+        "Sold_Quantity",
+        "StockLogID",
+        "StockType",
+        "Total_Cost",
+        "Total_Price",
+        "Total_Profit",
+        "Username",
+        "isReturned"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblStockWithdrawal",
+      "rows": 2,
+      "json": "exports_backend/tblStockWithdrawal.json",
+      "csv": "exports_backend/tblStockWithdrawal.csv",
+      "cols": [
+        "CarryoverBalance",
+        "ID",
+        "WithdrawalDate",
+        "WithdrawnAmount"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblSupplierPayments",
+      "rows": 9,
+      "json": "exports_backend/tblSupplierPayments.json",
+      "csv": null,
+      "cols": null,
+      "note": "non-dict rows or empty; csv skipped",
+      "ok": true
+    },
+    {
+      "table": "tblSuppliers",
+      "rows": 34,
+      "json": "exports_backend/tblSuppliers.json",
+      "csv": "exports_backend/tblSuppliers.csv",
+      "cols": [
+        "Address",
+        "Contact_Person",
+        "Credit_Terms",
+        "Email",
+        "Notes",
+        "Phone",
+        "Supplier_ID",
+        "Supplier_Name",
+        "USD_Balance"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblTaxiAccounts",
+      "rows": 144,
+      "json": "exports_backend/tblTaxiAccounts.json",
+      "csv": "exports_backend/tblTaxiAccounts.csv",
+      "cols": [
+        "Balance",
+        "ClientID",
+        "TaxiAccountID"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblTaxiCash",
+      "rows": 1,
+      "json": "exports_backend/tblTaxiCash.json",
+      "csv": "exports_backend/tblTaxiCash.csv",
+      "cols": [
+        "ID",
+        "TaxiCash"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblTaxiTransactions",
+      "rows": 514,
+      "json": "exports_backend/tblTaxiTransactions.json",
+      "csv": "exports_backend/tblTaxiTransactions.csv",
+      "cols": [
+        "AmountPaid",
+        "AmountReceived",
+        "AmountToPay",
+        "AmountToReceive",
+        "ClientID",
+        "CreatedBy",
+        "CreationDate",
+        "CreationTime",
+        "Description",
+        "DriverID",
+        "TransID",
+        "TransactionType"
+      ],
+      "ok": true
+    },
+    {
+      "table": "tblUsers",
+      "rows": 10,
+      "json": "exports_backend/tblUsers.json",
+      "csv": "exports_backend/tblUsers.csv",
+      "cols": [
+        "FailedAttempts",
+        "ID",
+        "IsLocked",
+        "MustChangePassword",
+        "PasswordHash",
+        "userRole",
+        "username"
+      ],
+      "ok": true
+    }
+  ]
+}

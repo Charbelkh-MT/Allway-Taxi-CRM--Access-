@@ -1,0 +1,722 @@
+[
+  {
+    "TaxiAccountID": 506,
+    "ClientID": 454,
+    "Balance": "-1730000"
+  },
+  {
+    "TaxiAccountID": 507,
+    "ClientID": 406,
+    "Balance": "-150000"
+  },
+  {
+    "TaxiAccountID": 508,
+    "ClientID": 197,
+    "Balance": "-1030000"
+  },
+  {
+    "TaxiAccountID": 509,
+    "ClientID": 307,
+    "Balance": "490000"
+  },
+  {
+    "TaxiAccountID": 510,
+    "ClientID": 545,
+    "Balance": "126100700"
+  },
+  {
+    "TaxiAccountID": 511,
+    "ClientID": 537,
+    "Balance": "-4660000"
+  },
+  {
+    "TaxiAccountID": 512,
+    "ClientID": 476,
+    "Balance": "-800000"
+  },
+  {
+    "TaxiAccountID": 513,
+    "ClientID": 519,
+    "Balance": "-590000"
+  },
+  {
+    "TaxiAccountID": 514,
+    "ClientID": 73,
+    "Balance": "2840000"
+  },
+  {
+    "TaxiAccountID": 515,
+    "ClientID": 120,
+    "Balance": "-3020000"
+  },
+  {
+    "TaxiAccountID": 516,
+    "ClientID": 485,
+    "Balance": "-6600000"
+  },
+  {
+    "TaxiAccountID": 517,
+    "ClientID": 11,
+    "Balance": "4424400"
+  },
+  {
+    "TaxiAccountID": 518,
+    "ClientID": 624,
+    "Balance": "-80000"
+  },
+  {
+    "TaxiAccountID": 519,
+    "ClientID": 422,
+    "Balance": "-4200000"
+  },
+  {
+    "TaxiAccountID": 520,
+    "ClientID": 586,
+    "Balance": "-780000"
+  },
+  {
+    "TaxiAccountID": 521,
+    "ClientID": 404,
+    "Balance": "-170000"
+  },
+  {
+    "TaxiAccountID": 522,
+    "ClientID": 165,
+    "Balance": "-945000"
+  },
+  {
+    "TaxiAccountID": 523,
+    "ClientID": 367,
+    "Balance": "-3620000"
+  },
+  {
+    "TaxiAccountID": 524,
+    "ClientID": 328,
+    "Balance": "-2170000"
+  },
+  {
+    "TaxiAccountID": 525,
+    "ClientID": 438,
+    "Balance": "-560000"
+  },
+  {
+    "TaxiAccountID": 526,
+    "ClientID": 368,
+    "Balance": "-2660000"
+  },
+  {
+    "TaxiAccountID": 527,
+    "ClientID": 521,
+    "Balance": "-5590000"
+  },
+  {
+    "TaxiAccountID": 528,
+    "ClientID": 583,
+    "Balance": "-1440000"
+  },
+  {
+    "TaxiAccountID": 529,
+    "ClientID": 500,
+    "Balance": "-2604400"
+  },
+  {
+    "TaxiAccountID": 530,
+    "ClientID": 524,
+    "Balance": "-4550000"
+  },
+  {
+    "TaxiAccountID": 531,
+    "ClientID": 354,
+    "Balance": "-150000"
+  },
+  {
+    "TaxiAccountID": 532,
+    "ClientID": 342,
+    "Balance": "-310000"
+  },
+  {
+    "TaxiAccountID": 533,
+    "ClientID": 398,
+    "Balance": "-5080000"
+  },
+  {
+    "TaxiAccountID": 534,
+    "ClientID": 319,
+    "Balance": "3460000"
+  },
+  {
+    "TaxiAccountID": 535,
+    "ClientID": 565,
+    "Balance": "-3810000"
+  },
+  {
+    "TaxiAccountID": 536,
+    "ClientID": 323,
+    "Balance": "-500000"
+  },
+  {
+    "TaxiAccountID": 537,
+    "ClientID": 303,
+    "Balance": "8090000"
+  },
+  {
+    "TaxiAccountID": 538,
+    "ClientID": 447,
+    "Balance": "-4390000"
+  },
+  {
+    "TaxiAccountID": 539,
+    "ClientID": 448,
+    "Balance": "-300000"
+  },
+  {
+    "TaxiAccountID": 540,
+    "ClientID": 427,
+    "Balance": "-1950000"
+  },
+  {
+    "TaxiAccountID": 541,
+    "ClientID": 523,
+    "Balance": "-2390000"
+  },
+  {
+    "TaxiAccountID": 542,
+    "ClientID": 610,
+    "Balance": "-300000"
+  },
+  {
+    "TaxiAccountID": 543,
+    "ClientID": 614,
+    "Balance": "-240000"
+  },
+  {
+    "TaxiAccountID": 544,
+    "ClientID": 499,
+    "Balance": "-4540000"
+  },
+  {
+    "TaxiAccountID": 545,
+    "ClientID": 429,
+    "Balance": "-1000000"
+  },
+  {
+    "TaxiAccountID": 546,
+    "ClientID": 51,
+    "Balance": "-2300000"
+  },
+  {
+    "TaxiAccountID": 547,
+    "ClientID": 313,
+    "Balance": "4560000"
+  },
+  {
+    "TaxiAccountID": 548,
+    "ClientID": 341,
+    "Balance": "-450000"
+  },
+  {
+    "TaxiAccountID": 549,
+    "ClientID": 592,
+    "Balance": "-360000"
+  },
+  {
+    "TaxiAccountID": 550,
+    "ClientID": 345,
+    "Balance": "-7350000"
+  },
+  {
+    "TaxiAccountID": 551,
+    "ClientID": 163,
+    "Balance": "-18930000"
+  },
+  {
+    "TaxiAccountID": 552,
+    "ClientID": 606,
+    "Balance": "-4360000"
+  },
+  {
+    "TaxiAccountID": 553,
+    "ClientID": 346,
+    "Balance": "-1000000"
+  },
+  {
+    "TaxiAccountID": 554,
+    "ClientID": 434,
+    "Balance": "-850000"
+  },
+  {
+    "TaxiAccountID": 555,
+    "ClientID": 68,
+    "Balance": "-610000"
+  },
+  {
+    "TaxiAccountID": 556,
+    "ClientID": 365,
+    "Balance": "-320000"
+  },
+  {
+    "TaxiAccountID": 557,
+    "ClientID": 311,
+    "Balance": "5327800"
+  },
+  {
+    "TaxiAccountID": 558,
+    "ClientID": 405,
+    "Balance": "-570000"
+  },
+  {
+    "TaxiAccountID": 559,
+    "ClientID": 144,
+    "Balance": "1810000"
+  },
+  {
+    "TaxiAccountID": 560,
+    "ClientID": 596,
+    "Balance": "-1250000"
+  },
+  {
+    "TaxiAccountID": 561,
+    "ClientID": 529,
+    "Balance": "-2020000"
+  },
+  {
+    "TaxiAccountID": 562,
+    "ClientID": 178,
+    "Balance": "-1120000"
+  },
+  {
+    "TaxiAccountID": 563,
+    "ClientID": 304,
+    "Balance": "1910000"
+  },
+  {
+    "TaxiAccountID": 564,
+    "ClientID": 46,
+    "Balance": "-2220000"
+  },
+  {
+    "TaxiAccountID": 565,
+    "ClientID": 50,
+    "Balance": "-1410000"
+  },
+  {
+    "TaxiAccountID": 566,
+    "ClientID": 416,
+    "Balance": "-500000"
+  },
+  {
+    "TaxiAccountID": 567,
+    "ClientID": 413,
+    "Balance": "-1540000"
+  },
+  {
+    "TaxiAccountID": 568,
+    "ClientID": 393,
+    "Balance": "-1470000"
+  },
+  {
+    "TaxiAccountID": 569,
+    "ClientID": 399,
+    "Balance": "-3050000"
+  },
+  {
+    "TaxiAccountID": 570,
+    "ClientID": 532,
+    "Balance": "-1300000"
+  },
+  {
+    "TaxiAccountID": 571,
+    "ClientID": 457,
+    "Balance": "-50000"
+  },
+  {
+    "TaxiAccountID": 572,
+    "ClientID": 297,
+    "Balance": "2500000"
+  },
+  {
+    "TaxiAccountID": 573,
+    "ClientID": 501,
+    "Balance": "-6180000"
+  },
+  {
+    "TaxiAccountID": 574,
+    "ClientID": 293,
+    "Balance": "5180000"
+  },
+  {
+    "TaxiAccountID": 575,
+    "ClientID": 572,
+    "Balance": "-1020000"
+  },
+  {
+    "TaxiAccountID": 576,
+    "ClientID": 301,
+    "Balance": "545000"
+  },
+  {
+    "TaxiAccountID": 577,
+    "ClientID": 302,
+    "Balance": "1068900"
+  },
+  {
+    "TaxiAccountID": 578,
+    "ClientID": 616,
+    "Balance": "1107000"
+  },
+  {
+    "TaxiAccountID": 579,
+    "ClientID": 131,
+    "Balance": "4210000"
+  },
+  {
+    "TaxiAccountID": 580,
+    "ClientID": 321,
+    "Balance": "-100000"
+  },
+  {
+    "TaxiAccountID": 581,
+    "ClientID": 314,
+    "Balance": "4080000"
+  },
+  {
+    "TaxiAccountID": 582,
+    "ClientID": 296,
+    "Balance": "1150000"
+  },
+  {
+    "TaxiAccountID": 583,
+    "ClientID": 32,
+    "Balance": "230000"
+  },
+  {
+    "TaxiAccountID": 584,
+    "ClientID": 621,
+    "Balance": "3660000"
+  },
+  {
+    "TaxiAccountID": 585,
+    "ClientID": 122,
+    "Balance": "1760000"
+  },
+  {
+    "TaxiAccountID": 586,
+    "ClientID": 295,
+    "Balance": "3970000"
+  },
+  {
+    "TaxiAccountID": 587,
+    "ClientID": 151,
+    "Balance": "4050000"
+  },
+  {
+    "TaxiAccountID": 588,
+    "ClientID": 344,
+    "Balance": "-990000"
+  },
+  {
+    "TaxiAccountID": 589,
+    "ClientID": 99,
+    "Balance": "-1380000"
+  },
+  {
+    "TaxiAccountID": 590,
+    "ClientID": 443,
+    "Balance": "-950000"
+  },
+  {
+    "TaxiAccountID": 591,
+    "ClientID": 498,
+    "Balance": "-80000"
+  },
+  {
+    "TaxiAccountID": 592,
+    "ClientID": 451,
+    "Balance": "-900000"
+  },
+  {
+    "TaxiAccountID": 593,
+    "ClientID": 300,
+    "Balance": "2390000"
+  },
+  {
+    "TaxiAccountID": 594,
+    "ClientID": 401,
+    "Balance": "-5050000"
+  },
+  {
+    "TaxiAccountID": 595,
+    "ClientID": 481,
+    "Balance": "-3600000"
+  },
+  {
+    "TaxiAccountID": 596,
+    "ClientID": 474,
+    "Balance": "-160000"
+  },
+  {
+    "TaxiAccountID": 597,
+    "ClientID": 324,
+    "Balance": "3590000"
+  },
+  {
+    "TaxiAccountID": 598,
+    "ClientID": 81,
+    "Balance": "-3130000"
+  },
+  {
+    "TaxiAccountID": 599,
+    "ClientID": 507,
+    "Balance": "-5870000"
+  },
+  {
+    "TaxiAccountID": 600,
+    "ClientID": 363,
+    "Balance": "1290000"
+  },
+  {
+    "TaxiAccountID": 601,
+    "ClientID": 442,
+    "Balance": "-281000"
+  },
+  {
+    "TaxiAccountID": 602,
+    "ClientID": 471,
+    "Balance": "-2070000"
+  },
+  {
+    "TaxiAccountID": 603,
+    "ClientID": 389,
+    "Balance": "-400000"
+  },
+  {
+    "TaxiAccountID": 604,
+    "ClientID": 625,
+    "Balance": "-390000"
+  },
+  {
+    "TaxiAccountID": 605,
+    "ClientID": 161,
+    "Balance": "-180000"
+  },
+  {
+    "TaxiAccountID": 606,
+    "ClientID": 125,
+    "Balance": "-280000"
+  },
+  {
+    "TaxiAccountID": 607,
+    "ClientID": 568,
+    "Balance": "-510000"
+  },
+  {
+    "TaxiAccountID": 608,
+    "ClientID": 464,
+    "Balance": "-2810000"
+  },
+  {
+    "TaxiAccountID": 609,
+    "ClientID": 347,
+    "Balance": "-130000"
+  },
+  {
+    "TaxiAccountID": 610,
+    "ClientID": 330,
+    "Balance": "-210000"
+  },
+  {
+    "TaxiAccountID": 611,
+    "ClientID": 213,
+    "Balance": "-150000"
+  },
+  {
+    "TaxiAccountID": 612,
+    "ClientID": 370,
+    "Balance": "-720000"
+  },
+  {
+    "TaxiAccountID": 613,
+    "ClientID": 130,
+    "Balance": "-540000"
+  },
+  {
+    "TaxiAccountID": 614,
+    "ClientID": 440,
+    "Balance": "-250000"
+  },
+  {
+    "TaxiAccountID": 615,
+    "ClientID": 10,
+    "Balance": "-2600000"
+  },
+  {
+    "TaxiAccountID": 616,
+    "ClientID": 179,
+    "Balance": "-110000"
+  },
+  {
+    "TaxiAccountID": 617,
+    "ClientID": 597,
+    "Balance": "-70000"
+  },
+  {
+    "TaxiAccountID": 618,
+    "ClientID": 290,
+    "Balance": "150000"
+  },
+  {
+    "TaxiAccountID": 619,
+    "ClientID": 256,
+    "Balance": "140000"
+  },
+  {
+    "TaxiAccountID": 620,
+    "ClientID": 316,
+    "Balance": "210000"
+  },
+  {
+    "TaxiAccountID": 621,
+    "ClientID": 258,
+    "Balance": "128000"
+  },
+  {
+    "TaxiAccountID": 622,
+    "ClientID": 626,
+    "Balance": "285500"
+  },
+  {
+    "TaxiAccountID": 623,
+    "ClientID": 317,
+    "Balance": "-60000"
+  },
+  {
+    "TaxiAccountID": 624,
+    "ClientID": 310,
+    "Balance": "-20000"
+  },
+  {
+    "TaxiAccountID": 625,
+    "ClientID": 431,
+    "Balance": "-2280000"
+  },
+  {
+    "TaxiAccountID": 626,
+    "ClientID": 548,
+    "Balance": "-400000"
+  },
+  {
+    "TaxiAccountID": 627,
+    "ClientID": 226,
+    "Balance": "-300000"
+  },
+  {
+    "TaxiAccountID": 628,
+    "ClientID": 430,
+    "Balance": "-630000"
+  },
+  {
+    "TaxiAccountID": 629,
+    "ClientID": 375,
+    "Balance": "-50000"
+  },
+  {
+    "TaxiAccountID": 630,
+    "ClientID": 45,
+    "Balance": "-350000"
+  },
+  {
+    "TaxiAccountID": 631,
+    "ClientID": 436,
+    "Balance": "-900000"
+  },
+  {
+    "TaxiAccountID": 632,
+    "ClientID": 285,
+    "Balance": "-120000"
+  },
+  {
+    "TaxiAccountID": 633,
+    "ClientID": 111,
+    "Balance": "6000000"
+  },
+  {
+    "TaxiAccountID": 634,
+    "ClientID": 343,
+    "Balance": "-70000"
+  },
+  {
+    "TaxiAccountID": 635,
+    "ClientID": 456,
+    "Balance": "-70000"
+  },
+  {
+    "TaxiAccountID": 636,
+    "ClientID": 136,
+    "Balance": "-160000"
+  },
+  {
+    "TaxiAccountID": 637,
+    "ClientID": 21,
+    "Balance": "-2680000"
+  },
+  {
+    "TaxiAccountID": 638,
+    "ClientID": 423,
+    "Balance": "-60000"
+  },
+  {
+    "TaxiAccountID": 639,
+    "ClientID": 627,
+    "Balance": "-288600"
+  },
+  {
+    "TaxiAccountID": 640,
+    "ClientID": 28,
+    "Balance": "-3010000"
+  },
+  {
+    "TaxiAccountID": 641,
+    "ClientID": 338,
+    "Balance": "-310000"
+  },
+  {
+    "TaxiAccountID": 642,
+    "ClientID": 396,
+    "Balance": "-80000"
+  },
+  {
+    "TaxiAccountID": 643,
+    "ClientID": 299,
+    "Balance": "-22000"
+  },
+  {
+    "TaxiAccountID": 644,
+    "ClientID": 145,
+    "Balance": "-200000"
+  },
+  {
+    "TaxiAccountID": 645,
+    "ClientID": 273,
+    "Balance": "-100000"
+  },
+  {
+    "TaxiAccountID": 646,
+    "ClientID": 186,
+    "Balance": "-3044400"
+  },
+  {
+    "TaxiAccountID": 647,
+    "ClientID": 525,
+    "Balance": "-60000"
+  },
+  {
+    "TaxiAccountID": 648,
+    "ClientID": 470,
+    "Balance": "-380000"
+  },
+  {
+    "TaxiAccountID": 649,
+    "ClientID": 225,
+    "Balance": "-425000"
+  }
+]

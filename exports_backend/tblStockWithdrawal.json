@@ -1,0 +1,14 @@
+[
+  {
+    "ID": 1,
+    "WithdrawalDate": "2026-03-10 00:00:00",
+    "WithdrawnAmount": "$0.00",
+    "CarryoverBalance": "$1,079.27"
+  },
+  {
+    "ID": 2,
+    "WithdrawalDate": "2026-04-02 00:00:00",
+    "WithdrawnAmount": "$2,783.00",
+    "CarryoverBalance": "$0.38"
+  }
+]

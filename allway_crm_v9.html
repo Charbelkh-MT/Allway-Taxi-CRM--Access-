@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AllWay Services CRM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#B8780A;--gold-light:#D4920A;--gold-dim:rgba(184,120,10,0.1);--gold-border:rgba(184,120,10,0.2);
+  --whish:#E8192C;--whish-dim:rgba(232,25,44,0.08);--whish-border:rgba(232,25,44,0.2);
+  --bg:#F7F4EF;--bg2:#FFFFFF;--bg3:#F2EFE9;--bg4:#EAE6DF;
+  --border:rgba(0,0,0,0.07);--border2:rgba(0,0,0,0.12);
+  --text:#1A1714;--text2:#6B6560;--text3:#9B958E;
+  --green:#0F7A4A;--green-dim:rgba(15,122,74,0.08);--green-border:rgba(15,122,74,0.2);
+  --red:#C53030;--red-dim:rgba(197,48,48,0.08);--red-border:rgba(197,48,48,0.2);
+  --blue:#1D4ED8;--blue-dim:rgba(29,78,216,0.08);--blue-border:rgba(29,78,216,0.2);
+  --shadow:0 1px 3px rgba(0,0,0,0.06),0 4px 12px rgba(0,0,0,0.04);
+  --shadow-lg:0 8px 32px rgba(0,0,0,0.1),0 2px 8px rgba(0,0,0,0.06);
+  --font:'DM Sans',sans-serif;--display:'Fraunces',serif;--mono:'DM Mono',monospace;
+  --r:8px;--r2:12px;--r3:16px;
+}
+*{-webkit-font-smoothing:antialiased}
+body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:13px;min-height:100vh}
+
+/* LOGIN */
+#login-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;background:var(--bg);background-image:radial-gradient(ellipse 60% 40% at 50% 0%,rgba(184,120,10,0.06),transparent)}
+.login-logo{font-family:var(--display);font-size:34px;font-weight:600;letter-spacing:-0.5px;margin-bottom:4px;color:var(--text)}
+.login-logo span{color:var(--gold)}
+.login-sub{color:var(--text3);font-size:10px;margin-bottom:36px;font-family:var(--mono);letter-spacing:2px;text-transform:uppercase}
+.login-card{background:var(--bg2);border:1px solid var(--border2);border-radius:var(--r3);padding:32px;width:360px;box-shadow:var(--shadow-lg)}
+.lbl{display:block;font-size:10px;color:var(--text3);margin-bottom:6px;font-family:var(--mono);text-transform:uppercase;letter-spacing:1px}
+.login-card input,.login-card select{width:100%;padding:10px 14px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);color:var(--text);font-family:var(--font);font-size:13px;margin-bottom:16px;transition:all 0.15s}
+.login-card input:focus,.login-card select:focus{outline:none;border-color:var(--gold);background:var(--bg2);box-shadow:0 0 0 3px var(--gold-dim)}
+.login-card select option{background:var(--bg2)}
+.btn-login{width:100%;padding:12px;background:var(--text);color:var(--bg2);font-weight:600;font-size:13px;border:none;border-radius:var(--r);cursor:pointer;font-family:var(--display);letter-spacing:0.3px;transition:all 0.2s}
+.btn-login:hover{background:var(--gold);transform:translateY(-1px);box-shadow:0 6px 20px rgba(184,120,10,0.25)}
+.btn-login:disabled{opacity:0.5;transform:none;cursor:not-allowed}
+.login-err{color:var(--red);font-size:11px;text-align:center;margin-top:10px;font-family:var(--mono)}
+
+/* APP */
+#app{display:none;flex-direction:column;min-height:100vh}
+.topbar{display:flex;align-items:center;background:var(--bg2);border-bottom:1px solid var(--border);height:52px;padding:0 24px;position:sticky;top:0;z-index:200;gap:0;box-shadow:0 1px 0 var(--border)}
+.topbar-logo{font-family:var(--display);font-size:17px;font-weight:600;margin-right:24px;white-space:nowrap;letter-spacing:-0.3px;color:var(--text)}
+.topbar-logo span{color:var(--gold)}
+.topbar-nav{display:flex;flex:1;overflow-x:auto;gap:0;scrollbar-width:none}
+.topbar-nav::-webkit-scrollbar{display:none}
+.tn{padding:0 14px;height:52px;display:flex;align-items:center;font-size:12px;color:var(--text3);cursor:pointer;border:none;border-bottom:2px solid transparent;background:none;font-family:var(--font);white-space:nowrap;transition:color 0.15s;font-weight:500}
+.tn:hover{color:var(--text2)}
+.tn.active{color:var(--text);border-bottom-color:var(--gold)}
+.tn.hidden{display:none}
+.tn.whish-tab:hover{color:var(--whish)}
+.tn.whish-tab.active{color:var(--whish);border-bottom-color:var(--whish)}
+.topbar-right{display:flex;align-items:center;gap:8px;margin-left:16px;flex-shrink:0}
+.user-badge{display:flex;align-items:center;gap:8px;padding:6px 14px;background:var(--bg3);border-radius:20px;border:1px solid var(--border2)}
+.udot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);flex-shrink:0}
+.uname{font-size:11px;font-family:var(--mono);font-weight:500;color:var(--text)}
+.urole{font-size:10px;color:var(--text3)}
+.shift-ind{font-size:10px;font-family:var(--mono);padding:6px 12px;background:var(--bg3);border-radius:20px;border:1px solid var(--border2);color:var(--text2);letter-spacing:0.5px}
+.btn-out{font-size:11px;padding:6px 14px;background:transparent;border:1px solid var(--border2);border-radius:20px;color:var(--text3);cursor:pointer;font-family:var(--font);transition:all 0.15s;font-weight:500}
+.btn-out:hover{border-color:var(--red);color:var(--red);background:var(--red-dim)}
+
+/* PAGES */
+.page{display:none;padding:24px;animation:fi 0.2s ease}
+.page.active{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+
+/* METRICS */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:24px}
+.metric{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:16px 18px;box-shadow:var(--shadow);transition:box-shadow 0.15s}
+.metric:hover{box-shadow:var(--shadow-lg)}
+.mlabel{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;font-family:var(--mono);margin-bottom:8px}
+.mvalue{font-size:22px;font-weight:600;font-family:var(--display);letter-spacing:-0.5px}
+.mg{color:var(--green)}.mr{color:var(--red)}.mb{color:var(--blue)}.mo{color:var(--gold)}
+
+/* ALERTS */
+.alerts{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.al{display:flex;align-items:center;gap:7px;padding:7px 14px;border-radius:20px;font-size:11px;font-weight:500}
+.al-w{background:var(--gold-dim);border:1px solid var(--gold-border);color:var(--gold)}
+.al-d{background:var(--red-dim);border:1px solid var(--red-border);color:var(--red)}
+.al-ok{background:var(--green-dim);border:1px solid var(--green-border);color:var(--green)}
+
+/* TABLES */
+.tw{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;margin-bottom:16px;box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{padding:9px 14px;text-align:left;font-size:10px;color:var(--text3);font-family:var(--mono);text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid var(--border);background:var(--bg3);font-weight:400}
+td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text)}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:var(--bg3)}
+
+/* TOOLBAR */
+.toolbar{display:flex;gap:8px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.toolbar input,.toolbar select{padding:8px 12px;background:var(--bg2);border:1px solid var(--border2);border-radius:var(--r);color:var(--text);font-family:var(--font);font-size:12px;transition:all 0.15s}
+.toolbar input:focus,.toolbar select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-dim)}
+.sp{flex:1}
+.st{font-size:11px;color:var(--text3);font-family:var(--mono)}
+
+/* BUTTONS */
+.btn{padding:7px 14px;border-radius:var(--r);font-size:12px;cursor:pointer;border:1px solid var(--border2);background:var(--bg2);color:var(--text2);font-family:var(--font);transition:all 0.15s;font-weight:500}
+.btn:hover{background:var(--bg3);color:var(--text);border-color:var(--border2)}
+.btn-g{background:var(--text);color:var(--bg2);border-color:var(--text);font-weight:600;font-family:var(--display)}
+.btn-g:hover{background:var(--gold);border-color:var(--gold);box-shadow:0 4px 16px rgba(184,120,10,0.2)}
+.btn-gr{background:var(--green-dim);color:var(--green);border-color:var(--green-border);font-weight:500}
+.btn-gr:hover{background:rgba(15,122,74,0.15)}
+.btn-r{background:var(--red-dim);color:var(--red);border-color:var(--red-border);font-weight:500}
+.btn-r:hover{background:rgba(197,48,48,0.15)}
+.btn-whish{background:var(--whish-dim);color:var(--whish);border-color:var(--whish-border);font-weight:600}
+.btn-whish:hover{background:rgba(232,25,44,0.15)}
+
+/* BADGES */
+.badge{display:inline-block;padding:3px 9px;border-radius:20px;font-size:10px;font-family:var(--mono);font-weight:500;letter-spacing:0.3px}
+.b-p{background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold-border)}
+.b-ok{background:var(--green-dim);color:var(--green);border:1px solid var(--green-border)}
+.b-d{background:var(--red-dim);color:var(--red);border:1px solid var(--red-border)}
+.b-c{background:var(--blue-dim);color:var(--blue);border:1px solid var(--blue-border)}
+.b-v{background:var(--red-dim);color:var(--red);border:1px solid var(--red-border);text-decoration:line-through}
+.b-w{background:var(--whish-dim);color:var(--whish);border:1px solid var(--whish-border)}
+.b-sup{background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold-border)}
+.b-cash{background:var(--blue-dim);color:var(--blue);border:1px solid var(--blue-border)}
+.b-sen{background:var(--green-dim);color:var(--green);border:1px solid var(--green-border)}
+
+/* FORMS */
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:20px;margin-bottom:16px;box-shadow:var(--shadow)}
+.ctitle{font-size:10px;color:var(--text3);font-family:var(--mono);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px;font-weight:400}
+.fg{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+.fg label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;font-family:var(--mono)}
+.fg input,.fg select,.fg textarea{padding:9px 12px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--r);color:var(--text);font-family:var(--font);font-size:12px;width:100%;transition:all 0.15s}
+.fg input:focus,.fg select:focus{outline:none;border-color:var(--gold);background:var(--bg2);box-shadow:0 0 0 3px var(--gold-dim)}
+.fg input[readonly]{opacity:0.5;cursor:not-allowed}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+
+/* AUDIT */
+.arow{display:flex;gap:12px;padding:10px 14px;border-bottom:1px solid var(--border);align-items:flex-start;transition:background 0.1s}
+.arow:hover{background:var(--bg3)}
+.atime{font-size:10px;color:var(--text3);font-family:var(--mono);white-space:nowrap;margin-top:2px;min-width:90px}
+.aicon{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0}
+.ai-s{background:var(--green-dim)}
+.ai-v{background:var(--red-dim)}
+.ai-e{background:var(--gold-dim)}
+.ai-l{background:var(--blue-dim)}
+.ai-f{background:var(--red-dim)}
+.ai-w{background:var(--whish-dim)}
+.atext{font-size:12px;flex:1;color:var(--text)}
+.auser{font-size:10px;color:var(--text3);font-family:var(--mono);margin-top:3px}
+
+/* SHIFT */
+.sban{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:16px 20px;display:flex;align-items:center;gap:14px;margin-bottom:20px;box-shadow:var(--shadow)}
+.sdot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green);flex-shrink:0}
+.sdot.cl{background:var(--red);box-shadow:0 0 8px var(--red)}
+.rrow{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);font-size:12px}
+.rrow:last-child{border-bottom:none;font-weight:600;font-size:13px;padding-top:12px}
+.rlabel{color:var(--text2)}
+.rdiff{color:var(--red);font-family:var(--mono);font-weight:600}
+.rok{color:var(--green);font-family:var(--mono);font-weight:600}
+
+/* WHISH */
+.whead{background:linear-gradient(135deg,#fff5f5,#fff0f0);border:1px solid var(--whish-border);border-radius:var(--r2);padding:20px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;box-shadow:var(--shadow)}
+.wlogo{font-family:var(--display);font-size:20px;font-weight:600;color:var(--text);letter-spacing:-0.3px}
+.wlogo span{color:var(--whish)}
+.wbal-label{font-size:10px;color:var(--text3);font-family:var(--mono);text-transform:uppercase;letter-spacing:1px}
+.wbal-val{font-size:24px;font-weight:600;color:var(--whish);font-family:var(--display);text-align:right;letter-spacing:-0.5px}
+
+/* LOADER */
+.loader{text-align:center;padding:32px;color:var(--text3);font-family:var(--mono);font-size:11px;letter-spacing:1px}
+
+/* SECURITY NOTE */
+.security-note{font-size:10px;color:var(--text3);font-family:var(--mono);padding:8px 12px;background:var(--bg3);border-radius:var(--r);border-left:2px solid var(--gold);letter-spacing:0.3px}
+
+/* ITEM ROW */
+.item-row{display:grid;grid-template-columns:2fr 0.7fr 1fr 0.5fr;gap:8px;align-items:center;margin-bottom:8px}
+.item-row input{padding:7px 10px;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;color:var(--text);font-family:var(--font);font-size:12px;width:100%;transition:all 0.15s}
+.item-row input:focus{outline:none;border-color:var(--gold)}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:var(--bg3)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+::-webkit-scrollbar-thumb:hover{background:var(--text3)}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen">
+  <div class="login-logo"><span>AllWay</span> Services</div>
+  <div class="login-sub">CRM — Secure Access</div>
+  <div class="login-card">
+    <label class="lbl">Username</label>
+    <input type="text" id="li-user" placeholder="Enter username...">
+    <label class="lbl">Password</label>
+    <input type="password" id="li-pass" placeholder="••••••••">
+    <label class="lbl">Station</label>
+    <select id="li-station">
+      <option>Main Station</option>
+      <option>Station 01</option>
+      <option>Station 02</option>
+      <option>Station 03</option>
+      <option>Laptop</option>
+    </select>
+    <button class="btn-login" onclick="doLogin()">Sign in</button>
+    <div class="login-err" id="login-err" style="display:none"></div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app">
+  <div class="topbar">
+    <div class="topbar-logo"><span>AllWay</span> Services</div>
+    <div class="topbar-nav">
+      <button class="tn active" onclick="nav('dashboard',this)">Dashboard</button>
+      <button class="tn" onclick="nav('sales',this)">Sales</button>
+      <button class="tn" onclick="nav('clients',this)">Clients</button>
+      <button class="tn" onclick="nav('products',this)">Products</button>
+      <button class="tn" id="tn-purchasing" onclick="nav('purchasing',this)">Purchasing</button>
+      <button class="tn" id="tn-expenses" onclick="nav('expenses',this)">Expenses</button>
+      <button class="tn whish-tab" onclick="nav('whish',this)">Whish</button>
+      <button class="tn" id="tn-recharge" onclick="nav('recharge',this)">Recharges</button>
+      <button class="tn" id="tn-internet" onclick="nav('internet',this)">Internet</button>
+      <button class="tn" id="tn-taxi" onclick="nav('taxi',this)">Taxi</button>
+      <button class="tn" id="tn-inventory" onclick="nav('inventory',this)">Inventory check</button>
+      <button class="tn" id="tn-returns" onclick="nav('returns',this)">Returns</button>
+      <button class="tn" id="tn-settings" onclick="nav('settings',this)" id="tn-settings">Settings</button>
+      <button class="tn" id="tn-shift" onclick="nav('shift',this)">Shift</button>
+      <button class="tn" id="tn-audit" onclick="nav('audit',this)">Audit log</button>
+      <button class="tn" id="tn-users" onclick="nav('users',this)">Users</button>
+    </div>
+    <div class="topbar-right">
+      <div class="shift-ind" id="shift-ind">● <span id="shift-lbl">No shift</span></div>
+      <div class="user-badge"><div class="udot"></div><div><div class="uname" id="top-user">—</div><div class="urole" id="top-role">—</div></div></div>
+      <button class="btn-out" onclick="doLogout()">Logout</button>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="p-dashboard" class="page active">
+    <div class="metrics" id="dash-metrics">
+      <div class="metric"><div class="mlabel">Total invoices</div><div class="mvalue mo" id="m-invoices">—</div></div>
+      <div class="metric"><div class="mlabel">Total sales USD</div><div class="mvalue mg" id="m-sales">—</div></div>
+      <div class="metric"><div class="mlabel">Total debts</div><div class="mvalue mr" id="m-debts">—</div></div>
+      <div class="metric"><div class="mlabel">Products</div><div class="mvalue mb" id="m-products">—</div></div>
+      <div class="metric"><div class="mlabel">Pending expenses</div><div class="mvalue mr" id="m-expenses">—</div></div>
+      <div class="metric"><div class="mlabel">Whish txns today</div><div class="mvalue" id="m-whish" style="color:#C07EE8">—</div></div>
+    </div>
+    <div id="dash-alerts" class="alerts"></div>
+    <div class="g2">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <span style="font-size:11px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.5px">Recent invoices</span>
+          <button class="btn" onclick="nav('sales',document.querySelectorAll('.tn')[1])">View all</button>
+        </div>
+        <div class="tw" id="dash-invoices"><div class="loader">Loading...</div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <span style="font-size:11px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.5px">Live audit feed</span>
+          <button class="btn" onclick="nav('audit',document.getElementById('tn-audit'))">View all</button>
+        </div>
+        <div class="tw" id="dash-audit" style="padding:0"><div class="loader">Loading...</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SALES -->
+  <div id="p-sales" class="page">
+    <div class="toolbar">
+      <input type="text" id="sales-search" placeholder="Search client..." style="width:180px" oninput="loadInvoices()">
+      <select id="sales-filter" onchange="loadInvoices()">
+        <option value="">All invoices</option>
+        <option value="today">Today</option>
+        <option value="week">This week</option>
+        <option value="month">This month</option>
+      </select>
+      <button class="btn btn-g" onclick="openNewInvoice()">+ New invoice</button>
+      <div class="sp"></div>
+      <div class="st" id="sales-stat">Loading...</div>
+    </div>
+    <div id="new-invoice-form" class="card" style="display:none">
+      <div class="ctitle">New invoice — <span id="inv-user-lbl"></span></div>
+      <div class="g2">
+        <div class="fg"><label>Client</label>
+          <input type="text" id="inv-client-search" placeholder="Type client name..." list="inv-client-list" oninput="matchClient(this.value)" autocomplete="off">
+          <datalist id="inv-client-list"></datalist>
+          <input type="hidden" id="inv-client-id">
+          <input type="hidden" id="inv-client-name">
+        </div>
+        <div class="fg"><label>Payment method</label>
+          <select id="inv-method">
+            <option>Cash USD</option><option>Cash LBP</option>
+            <option>Whish</option><option>Card</option><option>Debt</option>
+          </select>
+        </div>
+      </div>
+      <div id="inv-items-wrap"></div>
+      <button class="btn" onclick="addInvItem()" style="margin-bottom:12px">+ Add product</button>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div class="security-note">⚡ Invoice saved under your account with timestamp. Cannot be deleted — only voided with supervisor approval.</div>
+        <div style="display:flex;align-items:center;gap:12px;flex-shrink:0;margin-left:16px">
+          <span style="font-size:14px;font-weight:500;font-family:var(--mono)">Total: <span id="inv-total" class="mg">$0.00</span></span>
+          <button class="btn" onclick="document.getElementById('new-invoice-form').style.display='none'">Cancel</button>
+          <button class="btn btn-g" onclick="saveInvoice()">Save invoice</button>
+        </div>
+      </div>
+    </div>
+    <div class="tw" id="invoices-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- CLIENTS -->
+  <div id="p-clients" class="page">
+    <div class="toolbar">
+      <input type="text" id="cl-search" placeholder="Search client..." style="width:180px" oninput="loadClients()">
+      <select id="cl-filter" onchange="loadClients()">
+        <option value="">All clients</option>
+        <option value="Debt">Debt</option>
+        <option value="Cash">Cash</option>
+        <option value="Unchecked">Unchecked</option>
+      </select>
+      <button class="btn btn-g" onclick="openAddClient()">+ New client</button>
+      <div class="sp"></div>
+      <div class="st" id="cl-stat">Loading...</div>
+    </div>
+    <div id="add-client-form" class="card" style="display:none">
+      <div class="ctitle">Add client</div>
+      <div class="g2">
+        <div class="fg"><label>Full name</label><input type="text" id="cl-name"></div>
+        <div class="fg"><label>Mobile</label><input type="text" id="cl-mobile"></div>
+        <div class="fg"><label>Status</label><select id="cl-status"><option>Unchecked</option><option>Cash</option><option>Debt</option></select></div>
+        <div class="fg"><label>USD balance</label><input type="number" id="cl-usd" value="0"></div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-g" onclick="saveClient()">Save</button>
+        <button class="btn" onclick="document.getElementById('add-client-form').style.display='none'">Cancel</button>
+      </div>
+    </div>
+    <div class="tw" id="clients-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div id="p-products" class="page">
+    <div class="toolbar">
+      <input type="text" id="pr-search" placeholder="Search product..." style="width:200px" oninput="loadProducts()">
+      <select id="pr-cat" onchange="loadProducts()">
+        <option value="">All categories</option>
+        <option>Recharges</option><option>Accessories</option>
+        <option>Mobiles</option><option>Cables</option><option>Toys</option>
+      </select>
+      <button class="btn btn-g" id="add-prod-btn" onclick="openAddProduct()" style="display:none">+ Add item</button>
+      <div class="sp"></div>
+      <div class="st" id="pr-stat">Loading...</div>
+    </div>
+    <div id="add-product-form" class="card" style="display:none">
+      <div class="ctitle">Add product</div>
+      <div class="g2">
+        <div class="fg"><label>Description</label><input type="text" id="p-desc"></div>
+        <div class="fg"><label>Category</label><input type="text" id="p-cat"></div>
+        <div class="fg"><label>Brand</label><input type="text" id="p-brand"></div>
+        <div class="fg"><label>Currency</label><select id="p-cur"><option>USD</option><option>LBP</option></select></div>
+        <div class="fg"><label>Cost</label><input type="number" id="p-cost" value="0"></div>
+        <div class="fg"><label>Selling price</label><input type="number" id="p-sell" value="0"></div>
+        <div class="fg"><label>Quantity</label><input type="number" id="p-qty" value="0"></div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-g" onclick="saveProduct()">Save product</button>
+        <button class="btn" onclick="document.getElementById('add-product-form').style.display='none'">Cancel</button>
+      </div>
+    </div>
+    <div class="tw" id="products-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- PURCHASING -->
+  <div id="p-purchasing" class="page">
+    <div class="card">
+      <div class="ctitle">New purchase order</div>
+      <div class="g2">
+        <div class="fg"><label>Supplier</label><select id="po-supplier"><option value="">Select supplier...</option></select></div>
+        <div class="fg"><label>Date</label><input type="text" id="po-date" readonly></div>
+      </div>
+      <div id="po-items-wrap"></div>
+      <button class="btn" onclick="addPoItem()" style="margin-bottom:12px">+ Add line</button>
+      <div class="g2">
+        <div>
+          <div class="rrow"><span class="rlabel">USD total</span><span id="po-total-usd" style="font-family:var(--mono)">$0.00</span></div>
+          <div class="fg" style="margin-top:10px"><label>USD paid</label><input type="number" id="po-paid-usd" value="0" oninput="updatePoTotals()"></div>
+        </div>
+        <div>
+          <div class="rrow"><span class="rlabel">LBP total</span><span id="po-total-lbp" style="font-family:var(--mono)">0</span></div>
+          <div class="fg" style="margin-top:10px"><label>LBP paid</label><input type="number" id="po-paid-lbp" value="0"></div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px">
+        <div class="security-note" style="flex:1">⚡ Only supervisors and admins can create purchase orders.</div>
+        <button class="btn btn-g" onclick="savePurchase()">Save PO</button>
+      </div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Recent purchase orders</div>
+    <div class="tw" id="po-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- EXPENSES -->
+  <div id="p-expenses" class="page">
+    <div class="g2">
+      <div class="card">
+        <div class="ctitle">Add expense</div>
+        <div class="fg"><label>Supplier / description</label><input type="text" id="ex-supplier"></div>
+        <div class="g2">
+          <div class="fg"><label>Amount USD</label><input type="number" id="ex-usd" value="0"></div>
+          <div class="fg"><label>Amount LBP</label><input type="number" id="ex-lbp" value="0"></div>
+        </div>
+        <div class="fg"><label>Description</label><input type="text" id="ex-desc"></div>
+        <div class="fg"><label>Note</label><input type="text" id="ex-note"></div>
+        <div style="display:flex;gap:8px;align-items:center;margin-top:4px">
+          <button class="btn btn-g" onclick="saveExpense()">Submit for approval</button>
+          <span style="font-size:10px;color:var(--text3);font-family:var(--mono)">Supervisor must approve</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ctitle">Add receivable</div>
+        <div class="fg"><label>Client</label><select id="rec-client"><option value="">Select client...</option></select></div>
+        <div class="fg"><label>Amount USD</label><input type="number" id="rec-usd" value="0"></div>
+        <div class="fg"><label>Reason</label><input type="text" id="rec-reason"></div>
+        <div class="fg"><label>Note</label><input type="text" id="rec-note"></div>
+        <button class="btn btn-gr" onclick="saveReceivable()" style="margin-top:4px">Save receivable</button>
+      </div>
+    </div>
+    <div class="tw" id="expenses-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- WHISH -->
+  <div id="p-whish" class="page">
+    <div class="whead">
+      <div><div class="wlogo"><span style="color:var(--whish)">Whish</span> Money Services</div><div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:3px;font-family:var(--mono)">AllWay Services</div></div>
+      <div><div class="wbal-label">Whish transactions today</div><div class="wbal-val" id="whish-today-count">0</div></div>
+    </div>
+    <div class="g2">
+      <div class="card">
+        <div class="ctitle">Log Whish transaction</div>
+        <div class="fg"><label>Transaction type</label>
+          <select id="w-type">
+            <option>Whish to Whish</option><option>Receive USD</option>
+            <option>Send USD</option><option>Top up LBP</option>
+            <option>Withdrawal</option><option>Alfa Dollars</option>
+            <option>Touch Dollars</option>
+          </select>
+        </div>
+        <div class="fg"><label>Client / counterpart</label><input type="text" id="w-client"></div>
+        <div class="g2">
+          <div class="fg"><label>Amount USD</label><input type="number" id="w-usd" value="0"></div>
+          <div class="fg"><label>Amount LBP</label><input type="number" id="w-lbp" value="0"></div>
+        </div>
+        <div class="fg"><label>Commission USD</label><input type="number" id="w-comm" value="0"></div>
+        <div class="fg"><label>Note</label><input type="text" id="w-note"></div>
+        <button class="btn btn-g" onclick="saveWhish()" style="margin-top:4px">Save transaction</button>
+        <div class="security-note" style="margin-top:10px">⚡ All Whish transactions logged with employee name + timestamp</div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Recent Whish transactions</div>
+        <div class="tw" id="whish-table"><div class="loader">Loading...</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHIFT -->
+  <div id="p-shift" class="page">
+    <div class="sban" id="shift-banner">
+      <div class="sdot" id="shift-dot"></div>
+      <div style="flex:1">
+        <div style="font-size:13px;font-weight:500" id="shift-title">No active shift</div>
+        <div style="font-size:11px;color:var(--text2);font-family:var(--mono);margin-top:2px" id="shift-meta"></div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-gr" onclick="openShift()">Open shift</button>
+        <button class="btn" onclick="closeShift()">Close shift</button>
+        <button class="btn btn-r" id="close-day-btn" onclick="closeDay()">Close day</button>
+      </div>
+    </div>
+    <div class="g2">
+      <div class="card">
+        <div class="ctitle">Shift reconciliation</div>
+        <div id="recon-wrap">
+          <div class="rrow"><span class="rlabel">Sales recorded (your shift)</span><span id="recon-sales" style="font-family:var(--mono)">$0.00</span></div>
+          <div class="rrow"><span class="rlabel">Cash expected</span><span id="recon-expected" style="font-family:var(--mono)">$0.00</span></div>
+          <div class="rrow"><span class="rlabel">Your cash count</span><span id="recon-counted" style="font-family:var(--mono)">—</span></div>
+          <div class="rrow"><span class="rlabel">Difference</span><span id="recon-diff" class="rdiff">—</span></div>
+        </div>
+        <div class="fg" style="margin-top:12px"><label>Your cash count (USD)</label><input type="number" id="shift-count" placeholder="Enter amount..." oninput="updateRecon()"></div>
+        <div class="fg"><label>Note</label><input type="text" id="shift-note" placeholder="Any explanation..."></div>
+        <div style="display:flex;gap:8px;margin-top:4px">
+          <button class="btn btn-g" onclick="submitCount()">Submit count</button>
+          <button class="btn btn-r" onclick="flagShift()">Flag discrepancy</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ctitle">Today's station summary</div>
+        <div id="station-summary"><div class="loader">Loading...</div></div>
+        <button class="btn btn-g" onclick="generateReport()" style="width:100%;margin-top:12px">Generate daily report</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUDIT LOG -->
+  <div id="p-audit" class="page">
+    <div class="toolbar">
+      <select id="aud-module" onchange="loadAudit()">
+        <option value="">All activity</option>
+        <option value="sale">Sales</option><option value="void">Voids</option>
+        <option value="login">Logins</option><option value="expense">Expenses</option>
+        <option value="flag">Flags</option><option value="whish">Whish</option>
+      </select>
+      <select id="aud-user" onchange="loadAudit()">
+        <option value="">All staff</option>
+      </select>
+      <div class="sp"></div>
+      <button class="btn" onclick="exportAudit()">Export CSV</button>
+    </div>
+    <div class="tw" id="audit-wrap" style="padding:0"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- RECHARGE CARDS -->
+  <div id="p-recharge" class="page">
+    <div class="alerts">
+      <div class="al al-w">⚡ Every card received must be logged here. Every card sold is auto-deducted. Any gap = theft alert.</div>
+    </div>
+    <div class="g2">
+      <div class="card">
+        <div class="ctitle">Receive cards (stock in)</div>
+        <div class="g2">
+          <div class="fg"><label>Brand</label><select id="rc-brand"><option>Alfa</option><option>Touch</option></select></div>
+          <div class="fg"><label>Denomination</label><select id="rc-denom">
+            <option>03.03</option><option>04.50</option><option>07.58</option><option>15.15</option>
+            <option>22.73</option><option>77.28</option><option>Dollars</option><option>Month</option>
+          </select></div>
+          <div class="fg"><label>Quantity</label><input type="number" id="rc-qty" value="1" min="1"></div>
+          <div class="fg"><label>Batch number</label><input type="text" id="rc-batch" placeholder="e.g. BATCH-001"></div>
+          <div class="fg"><label>Cost each (LBP)</label><input type="number" id="rc-cost" value="0"></div>
+          <div class="fg"><label>Selling each (LBP)</label><input type="number" id="rc-sell" value="0"></div>
+        </div>
+        <button class="btn btn-g" onclick="receiveCards()">Add to stock</button>
+        <div class="security-note" style="margin-top:10px">⚡ Supervisor must approve card stock additions</div>
+      </div>
+      <div class="card">
+        <div class="ctitle">Sell card (manual)</div>
+        <div class="fg"><label>Brand</label><select id="rs-brand" onchange="loadCardStock()"><option>Alfa</option><option>Touch</option></select></div>
+        <div class="fg"><label>Denomination</label><select id="rs-denom" onchange="loadCardStock()">
+          <option>03.03</option><option>04.50</option><option>07.58</option><option>15.15</option>
+          <option>22.73</option><option>77.28</option><option>Dollars</option><option>Month</option>
+        </select></div>
+        <div class="fg"><label>Quantity</label><input type="number" id="rs-qty" value="1" min="1"></div>
+        <div class="fg"><label>Client</label><input type="text" id="rs-client" placeholder="Client name..."></div>
+        <div id="rs-stock-info" style="font-size:12px;color:var(--text2);font-family:var(--mono);margin-bottom:10px">Available: checking...</div>
+        <button class="btn btn-g" onclick="sellCard()">Record sale</button>
+      </div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Card inventory</div>
+    <div class="tw" id="recharge-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- INTERNET RECHARGES -->
+  <div id="p-internet" class="page">
+    <div class="alerts">
+      <div class="al al-w">⚡ Every internet recharge must include customer account number. Supervisor can verify any recharge.</div>
+    </div>
+    <div class="card">
+      <div class="ctitle">Log internet recharge</div>
+      <div class="g3">
+        <div class="fg"><label>Provider</label><select id="ir-provider">
+          <option>IDM</option><option>Ogero</option><option>Terranet</option><option>Sodetel</option>
+          <option>Cyberia</option><option>Connect</option><option>Mobi</option><option>Wise</option>
+        </select></div>
+        <div class="fg"><label>Plan / package</label><input type="text" id="ir-plan" placeholder="e.g. 100GB monthly"></div>
+        <div class="fg"><label>Customer account #</label><input type="text" id="ir-account" placeholder="Required — account number"></div>
+        <div class="fg"><label>Customer name</label><input type="text" id="ir-name" placeholder="Customer name..."></div>
+        <div class="fg"><label>Amount USD</label><input type="number" id="ir-usd" value="0"></div>
+        <div class="fg"><label>Amount LBP</label><input type="number" id="ir-lbp" value="0"></div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="btn btn-g" onclick="saveInternetRecharge()">Save recharge</button>
+        <div class="security-note" style="flex:1">⚡ Customer account number is mandatory — supervisor can verify any transaction</div>
+      </div>
+    </div>
+    <div class="tw" id="internet-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- TAXI -->
+  <div id="p-taxi" class="page">
+    <div class="card">
+      <div class="ctitle">Log taxi trip</div>
+      <div class="g2">
+        <div class="fg"><label>Driver name</label><input type="text" id="tx-driver" placeholder="Driver name..."></div>
+        <div class="fg"><label>Date</label><input type="date" id="tx-date"></div>
+        <div class="fg"><label>Amount USD</label><input type="number" id="tx-usd" value="0"></div>
+        <div class="fg"><label>Amount LBP</label><input type="number" id="tx-lbp" value="0"></div>
+        <div class="fg"><label>Payment method</label><select id="tx-method"><option>Cash</option><option>Whish</option><option>Card</option></select></div>
+        <div class="fg"><label>Route / note</label><input type="text" id="tx-route" placeholder="e.g. Beirut → Jounieh"></div>
+      </div>
+      <button class="btn btn-g" onclick="saveTaxiTrip()">Save trip</button>
+    </div>
+    <div style="font-size:11px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Trip log</div>
+    <div class="tw" id="taxi-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- INVENTORY CHECK -->
+  <div id="p-inventory" class="page">
+    <div class="alerts">
+      <div class="al al-w">⚡ Supervisor randomly selects products to count. Any mismatch between system qty and counted qty is flagged and logged forever.</div>
+    </div>
+    <div class="card">
+      <div class="ctitle">Spot check — count products</div>
+      <div class="g2">
+        <div class="fg"><label>Product</label>
+          <input type="text" id="ic-product" placeholder="Search product..." list="ic-prod-list">
+          <datalist id="ic-prod-list"></datalist>
+        </div>
+        <div class="fg"><label>System quantity</label><input type="number" id="ic-system-qty" readonly style="opacity:0.6"></div>
+        <div class="fg"><label>Your physical count</label><input type="number" id="ic-counted" placeholder="How many do you actually have?" oninput="calcCheckDiff()"></div>
+        <div class="fg"><label>Difference</label><input type="number" id="ic-diff" readonly style="opacity:0.6"></div>
+      </div>
+      <div class="fg"><label>Note</label><input type="text" id="ic-note" placeholder="Any explanation for difference..."></div>
+      <button class="btn btn-g" onclick="saveInventoryCheck()">Submit count</button>
+    </div>
+    <div style="font-size:11px;color:var(--text2);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Check history — flagged discrepancies</div>
+    <div class="tw" id="inventory-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- USERS -->
+  <div id="p-users" class="page">
+    <div class="toolbar">
+      <button class="btn btn-g" onclick="openAddUser()">+ Add user</button>
+      <div class="sp"></div>
+      <div class="st" id="users-stat"></div>
+    </div>
+    <div id="add-user-form" class="card" style="display:none">
+      <div class="ctitle">Add user</div>
+      <div class="g2">
+        <div class="fg"><label>Full name</label><input type="text" id="u-name"></div>
+        <div class="fg"><label>Username</label><input type="text" id="u-username"></div>
+        <div class="fg"><label>Password</label><input type="password" id="u-pass"></div>
+        <div class="fg"><label>Role</label><select id="u-role"><option>cashier</option><option>senior</option><option>supervisor</option><option>admin</option></select></div>
+        <div class="fg"><label>Station</label><select id="u-station"><option>Main Station</option><option>Station 01</option><option>Station 02</option><option>Station 03</option><option>Laptop</option></select></div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-g" onclick="saveUser()">Save user</button>
+        <button class="btn" onclick="document.getElementById('add-user-form').style.display='none'">Cancel</button>
+      </div>
+    </div>
+    <div class="tw" id="users-table"><div class="loader">Loading...</div></div>
+    <div class="card" style="margin-top:4px">
+      <div class="ctitle">Security rules — always enforced</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px">
+        <div style="padding:8px;background:var(--bg3);border-radius:6px;color:var(--text2)">⚡ No invoice can be deleted — only voided with reason</div>
+        <div style="padding:8px;background:var(--bg3);border-radius:6px;color:var(--text2)">⚡ Void requires supervisor approval + reason logged</div>
+        <div style="padding:8px;background:var(--bg3);border-radius:6px;color:var(--text2)">⚡ Every action stamped with user + station + time</div>
+        <div style="padding:8px;background:var(--bg3);border-radius:6px;color:var(--text2)">⚡ Cash mismatch auto-flagged on shift close</div>
+        <div style="padding:8px;background:var(--bg3);border-radius:6px;color:var(--text2)">⚡ Expenses need supervisor approval before paid</div>
+        <div style="padding:8px;background:var(--bg3);border-radius:6px;color:var(--text2)">⚡ Purchasing restricted to supervisor/admin only</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RETURNS -->
+  <div id="p-returns" class="page">
+    <div class="card">
+      <div class="ctitle">Process return / refund</div>
+      <div class="g2">
+        <div class="fg"><label>Original invoice #</label><input type="number" id="ret-invoice" placeholder="Invoice number..."></div>
+        <div class="fg"><label>Client</label><input type="text" id="ret-client" placeholder="Client name..."></div>
+        <div class="fg"><label>Product returned</label><input type="text" id="ret-product" placeholder="Product name..."></div>
+        <div class="fg"><label>Quantity</label><input type="number" id="ret-qty" value="1" min="1"></div>
+        <div class="fg"><label>Refund amount USD</label><input type="number" id="ret-usd" value="0"></div>
+        <div class="fg"><label>Refund method</label><select id="ret-method"><option>Cash USD</option><option>Whish</option><option>Store credit</option><option>Exchange only</option></select></div>
+      </div>
+      <div class="fg"><label>Reason for return</label><input type="text" id="ret-reason" placeholder="Damaged / Wrong item / Customer changed mind..."></div>
+      <div class="fg"><label>Note</label><input type="text" id="ret-note" placeholder="Any additional notes..."></div>
+      <div style="display:flex;gap:8px;align-items:center;margin-top:4px">
+        <button class="btn btn-g" onclick="saveReturn()">Process return</button>
+        <div class="security-note" style="flex:1">⚡ Returns logged with employee name. Supervisor notified automatically. Stock updated.</div>
+      </div>
+    </div>
+    <div style="font-size:11px;color:var(--text3);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Return history</div>
+    <div class="tw" id="returns-table"><div class="loader">Loading...</div></div>
+  </div>
+
+  <!-- SETTINGS -->
+  <div id="p-settings" class="page">
+    <div class="card">
+      <div class="ctitle">System settings</div>
+      <div class="fg"><label>Owner WhatsApp number</label><input type="text" id="set-phone" placeholder="e.g. 96181278387"></div>
+      <div class="fg"><label>CallMeBot API key</label><input type="text" id="set-apikey" placeholder="Get from CallMeBot — see instructions below"></div>
+      <div class="fg"><label>Alert on void</label><select id="set-void"><option value="1">Yes</option><option value="0">No</option></select></div>
+      <div class="fg"><label>Alert on cash mismatch</label><select id="set-mismatch"><option value="1">Yes</option><option value="0">No</option></select></div>
+      <div class="fg"><label>Alert on expense above (USD)</label><input type="number" id="set-exp-threshold" value="50"></div>
+      <button class="btn btn-g" onclick="saveSettings()" style="margin-top:4px">Save settings</button>
+    </div>
+    <div class="card">
+      <div class="ctitle">How to activate WhatsApp alerts</div>
+      <div style="font-size:12px;color:var(--text2);line-height:1.8">
+        <div style="margin-bottom:8px">1. Send this message on WhatsApp to <strong>+34 644 59 72 87</strong>:</div>
+        <div style="background:var(--bg3);padding:10px 14px;border-radius:var(--r);font-family:var(--mono);font-size:12px;margin-bottom:12px">I allow callmebot to send me messages</div>
+        <div style="margin-bottom:6px">2. You will receive your API key back via WhatsApp</div>
+        <div style="margin-bottom:6px">3. Paste the API key in the field above and save</div>
+        <div style="color:var(--text3);font-size:11px">CallMeBot is a free service. No registration needed.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const SUPA_URL = 'https://lcpathexhaywrzhdksrv.supabase.co';
+const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxjcGF0aGV4aGF5d3J6aGRrc3J2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2Mjc2NTcsImV4cCI6MjA5MjIwMzY1N30.4p7I5B3pZp32D-9NgqkZpJZesZ_t6AKpS38ylcC8PHg';
+
+// Pure fetch-based Supabase client — no workers, no postMessage issues
+const db = {
+  _headers: {
+    'apikey': SUPA_KEY,
+    'Authorization': 'Bearer ' + SUPA_KEY,
+    'Content-Type': 'application/json',
+    'Prefer': 'return=representation'
+  },
+  from(table) {
+    return new Query(table);
+  }
+};
+
+class Query {
+  constructor(table) {
+    this._table = table;
+    this._filters = [];
+    this._select = '*';
+    this._order = null;
+    this._limit = null;
+    this._single = false;
+    this._upsert = false;
+    this._method = 'GET';
+    this._body = null;
+    this._count = false;
+  }
+  select(cols) { this._select = cols || '*'; return this; }
+  eq(col, val) { this._filters.push(`${col}=eq.${encodeURIComponent(val)}`); return this; }
+  neq(col, val) { this._filters.push(`${col}=neq.${encodeURIComponent(val)}`); return this; }
+  ilike(col, val) { this._filters.push(`${col}=ilike.${encodeURIComponent(val)}`); return this; }
+  gte(col, val) { this._filters.push(`${col}=gte.${encodeURIComponent(val)}`); return this; }
+  lte(col, val) { this._filters.push(`${col}=lte.${encodeURIComponent(val)}`); return this; }
+  in(col, vals) { this._filters.push(`${col}=in.(${vals.join(',')})`); return this; }
+  order(col, opts) { this._order = `${col}.${opts && opts.ascending ? 'asc' : 'desc'}`; return this; }
+  limit(n) { this._limit = n; return this; }
+  single() { this._single = true; return this; }
+  insert(data) { this._method = 'POST'; this._body = Array.isArray(data) ? data : [data]; return this; }
+  update(data) { this._method = 'PATCH'; this._body = data; return this; }
+  upsert(data) { this._method = 'POST'; this._body = Array.isArray(data) ? data : [data]; this._upsert = true; return this; }
+  delete() { this._method = 'DELETE'; return this; }
+
+  async then(resolve, reject) {
+    try {
+      let url = `${SUPA_URL}/rest/v1/${this._table}?select=${this._select}`;
+      if (this._filters.length) url += '&' + this._filters.join('&');
+      if (this._order) url += '&order=' + this._order;
+      if (this._limit) url += '&limit=' + this._limit;
+
+      const headers = { ...db._headers };
+      if (this._upsert) headers['Prefer'] = 'resolution=merge-duplicates,return=representation';
+
+      const opts = { method: this._method, headers };
+      if (this._body) opts.body = JSON.stringify(this._method === 'POST' ? this._body : this._body);
+
+      const res = await fetch(url, opts);
+      const text = await res.text();
+      let data = null;
+      try { data = text ? JSON.parse(text) : null; } catch(e) { data = null; }
+
+      if (!res.ok) {
+        resolve({ data: null, error: { message: (data && data.message) || res.statusText } });
+        return;
+      }
+      if (this._single) {
+        resolve({ data: Array.isArray(data) ? (data[0] || null) : data, error: null });
+      } else {
+        resolve({ data: Array.isArray(data) ? data : (data ? [data] : []), error: null });
+      }
+    } catch(e) {
+      resolve({ data: null, error: { message: e.message } });
+    }
+  }
+}
+
+let CU = null; // current user
+let invItemCount = 0;
+let poItemCount = 0;
+let products_cache = [];
+let clients_cache = [];
+
+
+// ── WHATSAPP ALERTS ───────────────────────────────────────────────────
+const OWNER_PHONE = '96181278387';
+const CALLMEBOT_KEY = 'SETUP_NEEDED'; // will be replaced after setup
+
+async function sendWhatsApp(message) {
+  try {
+    const encoded = encodeURIComponent(message);
+    const url = `https://api.callmebot.com/whatsapp.php?phone=${OWNER_PHONE}&text=${encoded}&apikey=${CALLMEBOT_KEY}`;
+    await fetch(url, { mode: 'no-cors' });
+  } catch(e) { console.log('WhatsApp send failed:', e.message); }
+}
+
+async function alertOwner(type, detail) {
+  const time = new Date().toLocaleString('en-GB', { timeZone: 'Asia/Beirut' });
+  const emoji = type === 'void' ? '🚨' : type === 'mismatch' ? '⚠️' : type === 'expense' ? '💸' : '🔔';
+  const msg = `${emoji} AllWay Services Alert\n${type.toUpperCase()}\n${detail}\nTime: ${time}\nStation: ${CU ? CU.station : 'Unknown'}`;
+  await sendWhatsApp(msg);
+}
+
+// ── AUTH ──────────────────────────────────────────────
+async function doLogin() {
+  const username = document.getElementById('li-user').value.trim().toLowerCase();
+  const password = document.getElementById('li-pass').value.trim();
+  const station = document.getElementById('li-station').value;
+  const btn = document.querySelector('.btn-login');
+  document.getElementById('login-err').style.display = 'none';
+  if (!username || !password) { showErr('Please enter username and password'); return; }
+  try {
+    btn.textContent = 'Signing in...';
+    btn.disabled = true;
+    const { data, error } = await db.from('users').select('*').eq('username', username).eq('active', true);
+    console.log('LOGIN DEBUG:', JSON.stringify({data, error}));
+    if (error) { showErr('Connection error: ' + error.message); btn.textContent = 'Sign in'; btn.disabled = false; return; }
+    if (!data || data.length === 0) { showErr('User not found — check console'); btn.textContent = 'Sign in'; btn.disabled = false; return; }
+    const user = data[0];
+    if (user.password_hash !== password) { showErr('Wrong password'); btn.textContent = 'Sign in'; btn.disabled = false; return; }
+    CU = { ...user, station };
+    logAudit('login', 'auth', 'Login — ' + CU.name + ' · ' + station);
+    launchApp();
+  } catch(e) {
+    showErr('Error: ' + e.message);
+    btn.textContent = 'Sign in';
+    btn.disabled = false;
+  }
+}
+function showErr(msg) {
+  const e = document.getElementById('login-err');
+  e.textContent = msg; e.style.display = 'block';
+}
+function doLogout() {
+  CU = null;
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('li-pass').value = '';
+}
+function launchApp() {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'flex';
+  document.getElementById('app').style.flexDirection = 'column';
+  document.getElementById('top-user').textContent = CU.name;
+  document.getElementById('top-role').textContent = CU.role.charAt(0).toUpperCase() + CU.role.slice(1);
+  applyPerms();
+  document.getElementById('po-date').value = new Date().toLocaleDateString('en-GB');
+  // show add product only for supervisors+
+  if (['admin','supervisor'].includes(CU.role)) {
+    const apb = document.getElementById('add-prod-btn');
+    if (apb) apb.style.display = '';
+  }
+  // defer heavy loads so UI appears instantly
+  setTimeout(() => {
+    loadDashboard();
+    loadClientsCache();
+    loadProductsCache();
+  }, 50);
+}
+function applyPerms() {
+  const role = CU.role;
+  const perms = {
+    admin:      ['purchasing','expenses','audit','users','shift','recharge','internet','taxi','inventory','returns','settings'],
+    supervisor: ['purchasing','expenses','audit','shift','recharge','internet','taxi','inventory','returns','settings'],
+    senior:     ['expenses','internet','taxi'],
+    cashier:    ['shift']
+  };
+  const allowed = perms[role] || [];
+  const tabs = {
+    'tn-purchasing':'purchasing','tn-expenses':'expenses',
+    'tn-audit':'audit','tn-users':'users','tn-shift':'shift',
+    'tn-recharge':'recharge','tn-internet':'internet',
+    'tn-taxi':'taxi','tn-inventory':'inventory'
+  };
+  Object.entries(tabs).forEach(([tabId, perm]) => {
+    const el = document.getElementById(tabId);
+    if (!el) return;
+    if (!allowed.includes(perm)) {
+      el.classList.add('hidden');
+    } else {
+      el.classList.remove('hidden');
+    }
+  });
+}
+function can(perm) {
+  const perms = {
+    admin: ['all'], supervisor: ['sales','clients','products','purchasing','expenses','whish','shift','audit'],
+    senior: ['sales','clients','products','expenses','whish'],
+    cashier: ['sales','clients','whish']
+  };
+  return (perms[CU.role]||[]).includes('all') || (perms[CU.role]||[]).includes(perm);
+}
+
+// ── NAV ───────────────────────────────────────────────
+function nav(page, el) {
+  // permission check
+  const restricted = {
+    purchasing:['admin','supervisor'],
+    audit:['admin','supervisor'],
+    users:['admin'],
+    shift:['admin','supervisor','senior','cashier'],
+    recharge:['admin','supervisor'],
+    inventory:['admin','supervisor'],
+    returns:['admin','supervisor'],
+    settings:['admin','supervisor'],
+    expenses:['admin','supervisor','senior'],
+    internet:['admin','supervisor','senior'],
+    taxi:['admin','supervisor','senior']
+  };
+  if (restricted[page] && !restricted[page].includes(CU.role)) {
+    alert('Access restricted — your role cannot access this module.');
+    return;
+  }
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tn').forEach(t => t.classList.remove('active'));
+  const pg = document.getElementById('p-' + page);
+  if (pg) pg.classList.add('active');
+  if (el) el.classList.add('active');
+  if (page === 'sales') loadInvoices();
+  if (page === 'clients') loadClients();
+  if (page === 'products') loadProducts();
+  if (page === 'expenses') { loadExpenses(); loadClientsToSelect('rec-client'); }
+  if (page === 'audit') loadAudit();
+  if (page === 'whish') loadWhish();
+  if (page === 'shift') loadShift();
+  if (page === 'recharge') { loadRechargeTable(); loadCardStock(); }
+  if (page === 'internet') loadInternetTable();
+  if (page === 'taxi') { loadTaxiTable(); document.getElementById('tx-date').value = new Date().toISOString().split('T')[0]; }
+  if (page === 'inventory') { loadInventoryTable(); loadInventoryCheckProducts(); }
+  if (page === 'returns') loadReturnsTable();
+  if (page === 'settings') loadSettings();
+
+  if (page === 'purchasing') { loadPurchases(); loadSuppliersToSelect('po-supplier'); }
+}
+
+// ── AUDIT LOG ─────────────────────────────────────────
+async function logAudit(action, module, detail) {
+  await db.from('audit_log').insert({ action, module, detail, user_name: CU ? CU.name : 'system', station: CU ? CU.station : '' });
+}
+async function loadAudit() {
+  let q = db.from('audit_log').select('*').order('created_at', { ascending: false }).limit(100);
+  const mod = document.getElementById('aud-module')?.value;
+  const usr = document.getElementById('aud-user')?.value;
+  if (mod) q = q.eq('module', mod);
+  if (usr) q = q.eq('user_name', usr);
+  const { data } = await q;
+  const icons = { sale:'✓', void:'🚩', login:'→', expense:'$', flag:'🚩', whish:'W', default:'·' };
+  const iclass = { sale:'ai-s', void:'ai-v', login:'ai-l', expense:'ai-e', flag:'ai-f', whish:'ai-s', default:'ai-l' };
+  const wrap = document.getElementById('audit-wrap');
+  if (!data || !data.length) { wrap.innerHTML = '<div class="loader">No activity yet</div>'; return; }
+  wrap.innerHTML = data.map(r => `
+    <div class="arow">
+      <div class="atime">${fmt(r.created_at)}</div>
+      <div class="aicon ${iclass[r.module]||iclass.default}">${icons[r.module]||'·'}</div>
+      <div><div class="atext">${r.detail}</div><div class="auser">${r.user_name} · ${r.station}</div></div>
+    </div>`).join('');
+  // populate user filter
+  const users = [...new Set(data.map(r => r.user_name))];
+  const sel = document.getElementById('aud-user');
+  if (sel) { const cur = sel.value; sel.innerHTML = '<option value="">All staff</option>' + users.map(u => `<option ${u===cur?'selected':''}>${u}</option>`).join(''); }
+  // dash audit
+  const dw = document.getElementById('dash-audit');
+  if (dw) dw.innerHTML = (data.slice(0,6)).map(r => `
+    <div class="arow">
+      <div class="atime">${fmt(r.created_at)}</div>
+      <div class="aicon ${iclass[r.module]||iclass.default}">${icons[r.module]||'·'}</div>
+      <div><div class="atext">${r.detail}</div><div class="auser">${r.user_name} · ${r.station}</div></div>
+    </div>`).join('');
+}
+function exportAudit() { alert('CSV export will be available in the hosted version.'); }
+
+// ── DASHBOARD ─────────────────────────────────────────
+async function loadDashboard() {
+  const [inv, cl, pr, ex, wh] = await Promise.all([
+    db.from('invoices').select('id,total_usd,status').eq('status','saved'),
+    db.from('clients').select('usd_balance,debt_status'),
+    db.from('products').select('id').eq('active',true),
+    db.from('expenses').select('id').eq('status','pending'),
+    db.from('whish_transactions').select('id').gte('created_at', today())
+  ]);
+  document.getElementById('m-invoices').textContent = inv.data?.length || 0;
+  const totalSales = (inv.data||[]).reduce((s,r)=>s+parseFloat(r.total_usd||0),0);
+  document.getElementById('m-sales').textContent = '$'+totalSales.toFixed(2);
+  const totalDebt = (cl.data||[]).filter(r=>r.debt_status==='Debt').reduce((s,r)=>s+parseFloat(r.usd_balance||0),0);
+  document.getElementById('m-debts').textContent = '$'+Math.abs(totalDebt).toFixed(2);
+  document.getElementById('m-products').textContent = pr.data?.length || 0;
+  document.getElementById('m-expenses').textContent = ex.data?.length || 0;
+  document.getElementById('m-whish').textContent = wh.data?.length || 0;
+  // alerts
+  const alerts = document.getElementById('dash-alerts');
+  const voids = await db.from('invoices').select('id').eq('status','void_requested');
+  const html = [];
+  if (voids.data?.length) html.push(`<div class="al al-d">⚠ ${voids.data.length} void(s) awaiting supervisor approval</div>`);
+  if ((ex.data?.length||0) > 0) html.push(`<div class="al al-w">📋 ${ex.data.length} expense(s) pending approval</div>`);
+  html.push(`<div class="al al-ok">✓ System running — all actions being logged</div>`);
+  alerts.innerHTML = html.join('');
+  // recent invoices
+  const { data: ri } = await db.from('invoices').select('*').order('created_at',{ascending:false}).limit(6);
+  const di = document.getElementById('dash-invoices');
+  di.innerHTML = `<table><thead><tr><th>Client</th><th>USD</th><th>By</th><th>Status</th></tr></thead><tbody>
+    ${(ri||[]).map(r=>`<tr><td>${r.client_name}</td><td style="font-family:var(--mono)">${r.status==='voided'?'<span style="text-decoration:line-through;color:var(--red)">':''}$${parseFloat(r.total_usd).toFixed(2)}${r.status==='voided'?'</span>':''}</td><td><span class="badge b-sup">${r.created_by}</span></td><td>${statusBadge(r.status)}</td></tr>`).join('')}
+  </tbody></table>`;
+  loadAudit();
+}
+
+// ── INVOICES ──────────────────────────────────────────
+async function loadInvoices() {
+  const search = document.getElementById('sales-search')?.value || '';
+  const filter = document.getElementById('sales-filter')?.value || '';
+  let q = db.from('invoices').select('*').order('created_at',{ascending:false}).limit(200);
+  if (search) q = q.ilike('client_name','%'+search+'%');
+  if (filter === 'today') q = q.gte('created_at', today());
+  if (filter === 'week') q = q.gte('created_at', daysAgo(7));
+  if (filter === 'month') q = q.gte('created_at', daysAgo(30));
+  const { data } = await q;
+  const total = (data||[]).filter(r=>r.status==='saved').reduce((s,r)=>s+parseFloat(r.total_usd||0),0);
+  document.getElementById('sales-stat').textContent = `${(data||[]).length} invoices · $${total.toFixed(2)} USD`;
+  const wrap = document.getElementById('invoices-table');
+  if (!data?.length) { wrap.innerHTML = '<div class="loader">No invoices found</div>'; return; }
+  wrap.innerHTML = `<table><thead><tr><th>#</th><th>Client</th><th>Date</th><th>USD</th><th>Method</th><th>By</th><th>Station</th><th>Status</th><th>Action</th></tr></thead><tbody>
+    ${data.map(r=>`<tr>
+      <td style="font-family:var(--mono);color:var(--text2)">${r.id}</td>
+      <td>${r.client_name}</td>
+      <td style="font-family:var(--mono);color:var(--text2)">${fmt(r.created_at)}</td>
+      <td style="font-family:var(--mono)">${r.status==='voided'?'<span style="text-decoration:line-through;color:var(--red)">':''}$${parseFloat(r.total_usd).toFixed(2)}${r.status==='voided'?'</span>':''}</td>
+      <td>${methodBadge(r.payment_method)}</td>
+      <td><span class="badge b-sup">${r.created_by}</span></td>
+      <td style="color:var(--text2)">${r.station}</td>
+      <td>${statusBadge(r.status)}</td>
+      <td>${r.status==='saved' ? `<button class="btn btn-r" style="padding:2px 7px;font-size:11px" onclick="requestVoid(${r.id})">Void</button>` : r.status==='void_requested' && ['admin','supervisor'].includes(CU.role) ? `<button class="btn btn-gr" style="padding:2px 7px;font-size:11px" onclick="approveVoid(${r.id})">Approve void</button>` : '—'}</td>
+    </tr>`).join('')}
+  </tbody></table>`;
+}
+
+function matchClient(val) {
+  const match = clients_cache.find(c => c.full_name.toLowerCase() === val.toLowerCase());
+  if (match) {
+    document.getElementById('inv-client-id').value = match.id;
+    document.getElementById('inv-client-name').value = match.full_name;
+  } else {
+    document.getElementById('inv-client-id').value = '';
+    document.getElementById('inv-client-name').value = val;
+  }
+}
+
+function openNewInvoice() {
+  const f = document.getElementById('new-invoice-form');
+  f.style.display = f.style.display === 'none' ? 'block' : 'none';
+  document.getElementById('inv-user-lbl').textContent = CU.name;
+  document.getElementById('inv-client-search').value = '';
+  document.getElementById('inv-client-id').value = '';
+  document.getElementById('inv-client-name').value = '';
+  invItemCount = 0;
+  document.getElementById('inv-items-wrap').innerHTML = '';
+  addInvItem();
+  loadClientsToSelect('inv-client');
+}
+
+function addInvItem() {
+  invItemCount++;
+  const id = invItemCount;
+  const wrap = document.getElementById('inv-items-wrap');
+  const row = document.createElement('div');
+  row.className = 'item-row'; row.id = 'irow-'+id;
+  row.innerHTML = `
+    <input type="text" id="ip-${id}" placeholder="Scan barcode or type product..." list="prod-list-${id}" oninput="calcInvTotal()" onkeydown="handleBarcode(event,${id})">
+    <datalist id="prod-list-${id}">${products_cache.map(p=>`<option value="${p.description}">`).join('')}</datalist>
+    <input type="number" id="iq-${id}" value="1" min="1" oninput="calcInvTotal()">
+    <input type="number" id="ipr-${id}" value="0" oninput="calcInvTotal()">
+    <button class="btn btn-r" style="padding:4px 8px" onclick="document.getElementById('irow-${id}').remove();calcInvTotal()">×</button>`;
+  wrap.appendChild(row);
+}
+
+function calcInvTotal() {
+  let total = 0;
+  document.querySelectorAll('[id^="irow-"]').forEach(row => {
+    const id = row.id.replace('irow-','');
+    const q = parseFloat(document.getElementById('iq-'+id)?.value||0);
+    const p = parseFloat(document.getElementById('ipr-'+id)?.value||0);
+    total += q * p;
+  });
+  document.getElementById('inv-total').textContent = '$' + total.toFixed(2);
+}
+
+async function saveInvoice() {
+  const clientName = document.getElementById('inv-client-name').value || document.getElementById('inv-client-search').value || 'Cash customer';
+  const clientId = parseInt(document.getElementById('inv-client-id').value) || null;
+  const method = document.getElementById('inv-method').value;
+  const items = [];
+  let total = 0;
+  document.querySelectorAll('[id^="irow-"]').forEach(row => {
+    const id = row.id.replace('irow-','');
+    const name = document.getElementById('ip-'+id)?.value;
+    const qty = parseInt(document.getElementById('iq-'+id)?.value||1);
+    const price = parseFloat(document.getElementById('ipr-'+id)?.value||0);
+    if (name && price > 0) { items.push({product_name:name,quantity:qty,unit_price:price,total:qty*price}); total += qty*price; }
+  });
+  if (!items.length) { alert('Add at least one product'); return; }
+  const { data, error } = await db.from('invoices').insert({
+    client_id: clientId, client_name: clientName, total_usd: total,
+    payment_method: method, created_by: CU.name, station: CU.station, status: 'saved'
+  }).select().single();
+  if (error) { alert('Error: '+error.message); return; }
+  for (const item of items) await db.from('invoice_items').insert({ ...item, invoice_id: data.id, currency:'USD' });
+  await logAudit('sale', 'sale', `Invoice #${data.id} saved — $${total.toFixed(2)} ${method} — ${clientName}`);
+  document.getElementById('new-invoice-form').style.display = 'none';
+  loadInvoices(); loadDashboard();
+  alert('Invoice #' + data.id + ' saved!');
+}
+
+async function requestVoid(id) {
+  const reason = prompt('Reason for void request:');
+  if (!reason) return;
+  await db.from('invoices').update({ status:'void_requested', void_reason:reason, void_requested_by:CU.name }).eq('id',id);
+  await logAudit('void', 'void', `Void requested — Invoice #${id} — reason: "${reason}"`);
+  alertOwner('void', `Void requested on Invoice #${id} by ${CU.name} — reason: ${reason}`);
+  loadInvoices();
+}
+
+async function approveVoid(id) {
+  if (!['admin','supervisor'].includes(CU.role)) { alert('Only supervisors can approve voids'); return; }
+  await db.from('invoices').update({ status:'voided', void_approved_by:CU.name }).eq('id',id);
+  await logAudit('void', 'void', `Void APPROVED — Invoice #${id} — approved by ${CU.name}`);
+  alertOwner('void', `Invoice #${id} voided by ${CU.name}`);
+  loadInvoices();
+}
+
+// ── CLIENTS ───────────────────────────────────────────
+async function loadClientsCache() {
+  const { data } = await db.from('clients').select('id,full_name,debt_status').order('full_name',{ascending:true}).limit(600);
+  clients_cache = data || [];
+}
+async function loadClients() {
+  const search = document.getElementById('cl-search')?.value || '';
+  const filter = document.getElementById('cl-filter')?.value || '';
+  let q = db.from('clients').select('*').order('full_name', {ascending:true}).limit(600);
+  if (search) q = q.ilike('full_name','%'+search+'%');
+  if (filter) q = q.eq('debt_status',filter);
+  const { data, error } = await q;
+  if (error) { console.error('loadClients error:', error); }
+  console.log('loadClients result:', data?.length, 'rows', error);
+  const totalDebt = (data||[]).filter(r=>r.debt_status==='Debt').reduce((s,r)=>s+Math.abs(parseFloat(r.usd_balance||0)),0);
+  document.getElementById('cl-stat').textContent = `${(data||[]).length} clients · Debts: $${totalDebt.toFixed(2)}`;
+  const wrap = document.getElementById('clients-table');
+  if (!data?.length) { wrap.innerHTML='<div class="loader">No clients found</div>'; return; }
+  wrap.innerHTML = `<table><thead><tr><th>ID</th><th>Full name</th><th>Mobile</th><th>Status</th><th>USD balance</th><th>LBP balance</th><th>WA</th></tr></thead><tbody>
+    ${data.map(r=>`<tr><td style="font-family:var(--mono);color:var(--text2)">${r.id}</td><td>${r.full_name}</td><td style="font-family:var(--mono)">${r.mobile||'—'}</td><td>${debtBadge(r.debt_status)}</td><td style="font-family:var(--mono);color:${parseFloat(r.usd_balance)<0?'var(--red)':''}">$${parseFloat(r.usd_balance||0).toFixed(2)}</td><td style="font-family:var(--mono)">${r.lbp_balance||0}</td><td>${r.mobile&&r.mobile!='0'?'<span style="color:#25D366;font-size:14px">●</span>':'—'}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+function openAddClient() {
+  const f = document.getElementById('add-client-form');
+  f.style.display = f.style.display === 'none' ? 'block' : 'none';
+}
+async function saveClient() {
+  const name = document.getElementById('cl-name').value.trim();
+  if (!name) { alert('Name required'); return; }
+  await db.from('clients').insert({ full_name:name, mobile:document.getElementById('cl-mobile').value, debt_status:document.getElementById('cl-status').value, usd_balance:parseFloat(document.getElementById('cl-usd').value||0) });
+  await logAudit('client', 'clients', `New client added — ${name}`);
+  loadClients(); loadClientsCache();
+  document.getElementById('add-client-form').style.display = 'none';
+}
+async function loadClientsToSelect(selId) {
+  if (selId === 'inv-client') {
+    // populate datalist for invoice search
+    const dl = document.getElementById('inv-client-list');
+    if (dl) dl.innerHTML = clients_cache.map(c => `<option value="${c.full_name}" data-id="${c.id}">`).join('');
+    return;
+  }
+  const sel = document.getElementById(selId);
+  if (!sel) return;
+  sel.innerHTML = '<option value="">Select client...</option>' + clients_cache.map(c=>`<option value="${c.id}">${c.full_name}</option>`).join('');
+}
+
+// ── PRODUCTS ──────────────────────────────────────────
+async function loadProductsCache() {
+  const { data } = await db.from('products').select('id,description,selling,currency,quantity').eq('active',true).order('description',{ascending:true}).limit(2000);
+  products_cache = data || [];
+}
+async function loadProducts() {
+  const search = document.getElementById('pr-search')?.value || '';
+  const cat = document.getElementById('pr-cat')?.value || '';
+  let q = db.from('products').select('*').eq('active',true).order('description').limit(300);
+  if (search) q = q.ilike('description','%'+search+'%');
+  if (cat) q = q.eq('category',cat);
+  const { data } = await q;
+  document.getElementById('pr-stat').textContent = `${(data||[]).length} products`;
+  const wrap = document.getElementById('products-table');
+  if (!data?.length) { wrap.innerHTML='<div class="loader">No products found</div>'; return; }
+  wrap.innerHTML = `<table><thead><tr><th>ID</th><th>Product</th><th>Category</th><th>Brand</th><th>Cur</th><th>Cost</th><th>Selling</th><th>Qty</th></tr></thead><tbody>
+    ${data.map(r=>`<tr><td style="font-family:var(--mono);color:var(--text2)">${r.id}</td><td>${r.description}</td><td style="color:var(--text2)">${r.category||'—'}</td><td style="color:var(--text2)">${r.brand||'—'}</td><td style="font-family:var(--mono)">${r.currency}</td><td style="font-family:var(--mono)">${parseFloat(r.cost).toFixed(2)}</td><td style="font-family:var(--mono)">${parseFloat(r.selling).toFixed(2)}</td><td style="font-family:var(--mono);color:${r.quantity>0?'var(--green)':'var(--text3)'}">${r.quantity}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+function openAddProduct() {
+  const f = document.getElementById('add-product-form');
+  f.style.display = f.style.display === 'none' ? 'block' : 'none';
+}
+async function saveProduct() {
+  const desc = document.getElementById('p-desc').value.trim();
+  if (!desc) { alert('Description required'); return; }
+  await db.from('products').insert({ description:desc, category:document.getElementById('p-cat').value, brand:document.getElementById('p-brand').value, currency:document.getElementById('p-cur').value, cost:parseFloat(document.getElementById('p-cost').value||0), selling:parseFloat(document.getElementById('p-sell').value||0), quantity:parseInt(document.getElementById('p-qty').value||0) });
+  await logAudit('product', 'products', `New product added — ${desc}`);
+  loadProducts(); loadProductsCache();
+  document.getElementById('add-product-form').style.display = 'none';
+}
+
+// ── EXPENSES ──────────────────────────────────────────
+async function loadExpenses() {
+  const { data } = await db.from('expenses').select('*').order('created_at',{ascending:false}).limit(100);
+  const wrap = document.getElementById('expenses-table');
+  if (!data?.length) { wrap.innerHTML='<div class="loader">No expenses yet</div>'; return; }
+  const isSup = ['admin','supervisor'].includes(CU.role);
+  wrap.innerHTML = `<table><thead><tr><th>Supplier</th><th>Date</th><th>USD</th><th>Description</th><th>By</th><th>Status</th><th>Action</th></tr></thead><tbody>
+    ${data.map(r=>`<tr><td>${r.supplier}</td><td style="font-family:var(--mono);color:var(--text2)">${fmt(r.created_at)}</td><td style="font-family:var(--mono)">$${parseFloat(r.amount_usd).toFixed(2)}</td><td style="color:var(--text2)">${r.description||'—'}</td><td><span class="badge b-sup">${r.submitted_by}</span></td><td>${r.status==='pending'?'<span class="badge b-p">Pending</span>':r.status==='approved'?'<span class="badge b-ok">Approved</span>':'<span class="badge b-d">Rejected</span>'}</td><td>${r.status==='pending'&&isSup?`<button class="btn btn-gr" style="padding:2px 6px;font-size:11px" onclick="approveExpense(${r.id})">Approve</button> <button class="btn btn-r" style="padding:2px 6px;font-size:11px" onclick="rejectExpense(${r.id})">Reject</button>`:'—'}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+async function saveExpense() {
+  const supplier = document.getElementById('ex-supplier').value.trim();
+  if (!supplier) { alert('Supplier required'); return; }
+  const expAmt = parseFloat(document.getElementById('ex-usd').value||0);
+  await db.from('expenses').insert({ supplier, amount_usd:expAmt, amount_lbp:parseInt(document.getElementById('ex-lbp').value||0), description:document.getElementById('ex-desc').value, note:document.getElementById('ex-note').value, submitted_by:CU.name, station:CU.station, status:'pending' });
+  await logAudit('expense', 'expense', `Expense submitted — ${supplier} $${expAmt} — pending approval`);
+  if (expAmt >= 50) alertOwner('expense', `Large expense submitted: ${supplier} $${expAmt} by ${CU.name} — pending your approval`);
+  loadExpenses(); loadDashboard();
+  ['ex-supplier','ex-usd','ex-lbp','ex-desc','ex-note'].forEach(id => document.getElementById(id).value = id.includes('usd')||id.includes('lbp') ? '0' : '');
+  alert('Expense submitted for supervisor approval');
+}
+async function approveExpense(id) {
+  await db.from('expenses').update({ status:'approved', approved_by:CU.name }).eq('id',id);
+  await logAudit('expense', 'expense', `Expense #${id} APPROVED by ${CU.name}`);
+  loadExpenses();
+}
+async function rejectExpense(id) {
+  await db.from('expenses').update({ status:'rejected', approved_by:CU.name }).eq('id',id);
+  await logAudit('expense', 'expense', `Expense #${id} rejected by ${CU.name}`);
+  loadExpenses();
+}
+async function saveReceivable() {
+  const sel = document.getElementById('rec-client');
+  const clientName = sel.options[sel.selectedIndex]?.text;
+  const amount = parseFloat(document.getElementById('rec-usd').value||0);
+  await db.from('receivables').insert({ client_name:clientName, amount_usd:amount, reason:document.getElementById('rec-reason').value, note:document.getElementById('rec-note').value, created_by:CU.name, status:'pending' });
+  await logAudit('receivable', 'expenses', `Receivable added — ${clientName} $${amount}`);
+  alert('Receivable saved');
+}
+
+// ── WHISH ─────────────────────────────────────────────
+async function loadWhish() {
+  const { data } = await db.from('whish_transactions').select('*').order('created_at',{ascending:false}).limit(100);
+  const today_count = (data||[]).filter(r => r.created_at >= today()).length;
+  document.getElementById('whish-today-count').textContent = today_count;
+  const wrap = document.getElementById('whish-table');
+  if (!data?.length) { wrap.innerHTML='<div class="loader">No transactions yet</div>'; return; }
+  wrap.innerHTML = `<table><thead><tr><th>Type</th><th>Client</th><th>USD</th><th>LBP</th><th>Commission</th><th>By</th><th>Time</th></tr></thead><tbody>
+    ${data.map(r=>`<tr><td><span class="badge b-w">${r.transaction_type}</span></td><td>${r.client_name||'—'}</td><td style="font-family:var(--mono)">$${parseFloat(r.amount_usd).toFixed(2)}</td><td style="font-family:var(--mono)">${r.amount_lbp||0}</td><td style="font-family:var(--mono);color:var(--green)">$${parseFloat(r.commission_usd).toFixed(2)}</td><td><span class="badge b-sup">${r.created_by}</span></td><td style="font-family:var(--mono);color:var(--text2)">${fmt(r.created_at)}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+async function saveWhish() {
+  const type = document.getElementById('w-type').value;
+  const client = document.getElementById('w-client').value;
+  const usd = parseFloat(document.getElementById('w-usd').value||0);
+  const lbp = parseInt(document.getElementById('w-lbp').value||0);
+  const comm = parseFloat(document.getElementById('w-comm').value||0);
+  const note = document.getElementById('w-note').value;
+  await db.from('whish_transactions').insert({ transaction_type:type, client_name:client, amount_usd:usd, amount_lbp:lbp, commission_usd:comm, note, created_by:CU.name, station:CU.station });
+  await logAudit('whish', 'whish', `Whish ${type} — ${client} — $${usd.toFixed(2)} commission $${comm.toFixed(2)}`);
+  loadWhish();
+  ['w-client','w-usd','w-lbp','w-comm','w-note'].forEach(id => document.getElementById(id).value = id==='w-client'||id==='w-note' ? '' : '0');
+  alert('Whish transaction saved');
+}
+
+// ── PURCHASING ────────────────────────────────────────
+async function loadPurchases() {
+  const { data } = await db.from('purchases').select('*').order('created_at',{ascending:false}).limit(50);
+  const wrap = document.getElementById('po-table');
+  if (!data?.length) { wrap.innerHTML='<div class="loader">No purchase orders yet</div>'; return; }
+  wrap.innerHTML = `<table><thead><tr><th>#</th><th>Supplier</th><th>Date</th><th>Total USD</th><th>Paid</th><th>Rest</th><th>By</th></tr></thead><tbody>
+    ${data.map(r=>`<tr><td style="font-family:var(--mono);color:var(--text2)">${r.id}</td><td>${r.supplier_name}</td><td style="font-family:var(--mono);color:var(--text2)">${fmt(r.created_at)}</td><td style="font-family:var(--mono)">$${parseFloat(r.total_usd).toFixed(2)}</td><td style="font-family:var(--mono);color:var(--green)">$${parseFloat(r.paid_usd).toFixed(2)}</td><td style="font-family:var(--mono);color:${parseFloat(r.total_usd)-parseFloat(r.paid_usd)>0?'var(--red)':'var(--green)'}">$${(parseFloat(r.total_usd)-parseFloat(r.paid_usd)).toFixed(2)}</td><td><span class="badge b-sup">${r.created_by}</span></td></tr>`).join('')}
+  </tbody></table>`;
+}
+async function loadSuppliersToSelect(selId) {
+  const { data } = await db.from('suppliers').select('id,name').order('name');
+  const sel = document.getElementById(selId);
+  if (!sel) return;
+  sel.innerHTML = '<option value="">Select supplier...</option>' + (data||[]).map(s=>`<option value="${s.id}">${s.name}</option>`).join('');
+}
+function addPoItem() {
+  poItemCount++;
+  const id = poItemCount;
+  const wrap = document.getElementById('po-items-wrap');
+  const row = document.createElement('div');
+  row.className = 'item-row'; row.id = 'porow-'+id;
+  row.innerHTML = `
+    <input type="text" id="pp-${id}" placeholder="Product name..." list="po-prod-list-${id}">
+    <datalist id="po-prod-list-${id}">${products_cache.map(p=>`<option value="${p.description}">`).join('')}</datalist>
+    <input type="number" id="pq-${id}" value="1" min="1" oninput="calcPoTotal()">
+    <input type="number" id="ppr-${id}" value="0" oninput="calcPoTotal()">
+    <button class="btn btn-r" style="padding:4px 8px" onclick="document.getElementById('porow-${id}').remove();calcPoTotal()">×</button>`;
+  wrap.appendChild(row);
+}
+function calcPoTotal() {
+  let total = 0;
+  document.querySelectorAll('[id^="porow-"]').forEach(row => {
+    const id = row.id.replace('porow-','');
+    const q = parseFloat(document.getElementById('pq-'+id)?.value||0);
+    const p = parseFloat(document.getElementById('ppr-'+id)?.value||0);
+    total += q * p;
+  });
+  document.getElementById('po-total-usd').textContent = '$'+total.toFixed(2);
+}
+function updatePoTotals() { calcPoTotal(); }
+async function savePurchase() {
+  if (!['admin','supervisor'].includes(CU.role)) { alert('Only supervisors can create purchase orders'); return; }
+  const sel = document.getElementById('po-supplier');
+  const supplierName = sel.options[sel.selectedIndex]?.text;
+  const supplierId = parseInt(sel.value)||null;
+  const items = [];
+  let total = 0;
+  document.querySelectorAll('[id^="porow-"]').forEach(row => {
+    const id = row.id.replace('porow-','');
+    const name = document.getElementById('pp-'+id)?.value;
+    const qty = parseInt(document.getElementById('pq-'+id)?.value||1);
+    const price = parseFloat(document.getElementById('ppr-'+id)?.value||0);
+    if (name) { items.push({name,qty,price,total:qty*price}); total += qty*price; }
+  });
+  const paid = parseFloat(document.getElementById('po-paid-usd').value||0);
+  await db.from('purchases').insert({ supplier_id:supplierId, supplier_name:supplierName||'Unknown', total_usd:total, paid_usd:paid, items, created_by:CU.name, station:CU.station });
+  await logAudit('purchase', 'purchasing', `PO created — ${supplierName} — $${total.toFixed(2)}`);
+  loadPurchases();
+  alert('Purchase order saved');
+}
+
+// ── SHIFT ─────────────────────────────────────────────
+let activeShift = null;
+async function loadShift() {
+  const { data } = await db.from('shifts').select('*').eq('user_name',CU.name).eq('status','open').order('opened_at',{ascending:false}).limit(1);
+  activeShift = data?.[0] || null;
+  updateShiftUI();
+  loadStationSummary();
+}
+function updateShiftUI() {
+  const title = document.getElementById('shift-title');
+  const meta = document.getElementById('shift-meta');
+  const dot = document.getElementById('shift-dot');
+  const ind = document.getElementById('shift-ind');
+  if (activeShift) {
+    title.textContent = 'Shift open — ' + new Date(activeShift.opened_at).toLocaleDateString('en-GB');
+    meta.textContent = 'Opened ' + new Date(activeShift.opened_at).toLocaleTimeString() + ' · ' + CU.name + ' · ' + CU.station;
+    dot.classList.remove('cl');
+    document.getElementById('shift-lbl').textContent = 'Shift open';
+    ind.style.color = 'var(--green)';
+  } else {
+    title.textContent = 'No active shift'; meta.textContent = ''; dot.classList.add('cl');
+    document.getElementById('shift-lbl').textContent = 'No shift';
+    ind.style.color = 'var(--text2)';
+  }
+}
+async function openShift() {
+  if (activeShift) { alert('Shift already open'); return; }
+  const { data } = await db.from('shifts').insert({ user_name:CU.name, station:CU.station, status:'open' }).select().single();
+  activeShift = data;
+  await logAudit('shift', 'shift', `Shift opened — ${CU.station}`);
+  updateShiftUI();
+}
+async function closeShift() {
+  if (!activeShift) { alert('No open shift'); return; }
+  const counted = parseFloat(document.getElementById('shift-count').value||0);
+  const { data:sales } = await db.from('invoices').select('total_usd').eq('created_by',CU.name).eq('status','saved').gte('created_at', activeShift.opened_at);
+  const expected = (sales||[]).reduce((s,r)=>s+parseFloat(r.total_usd||0),0);
+  const diff = counted - expected;
+  let status = 'closed';
+  if (Math.abs(diff) > 1) { status = 'flagged'; await logAudit('flag', 'flag', `Cash mismatch — expected $${expected.toFixed(2)} counted $${counted.toFixed(2)} diff $${diff.toFixed(2)}`); alertOwner('mismatch', `Cash mismatch for ${CU.name} — Expected: $${expected.toFixed(2)} | Counted: $${counted.toFixed(2)} | Difference: $${diff.toFixed(2)}`); }
+  await db.from('shifts').update({ status, closed_at:new Date().toISOString(), expected_cash_usd:expected, counted_cash_usd:counted, difference_usd:diff, note:document.getElementById('shift-note').value }).eq('id',activeShift.id);
+  await logAudit('shift', 'shift', `Shift closed — expected $${expected.toFixed(2)} counted $${counted.toFixed(2)} diff $${diff.toFixed(2)}`);
+  activeShift = null; updateShiftUI();
+  if (status === 'flagged') alert(`⚠ Cash mismatch flagged!\nExpected: $${expected.toFixed(2)}\nCounted: $${counted.toFixed(2)}\nDiff: $${diff.toFixed(2)}\n\nThis has been logged and the supervisor will be notified.`);
+  else alert('Shift closed successfully. All balanced ✓');
+}
+function updateRecon() {
+  const counted = parseFloat(document.getElementById('shift-count').value||0);
+  document.getElementById('recon-counted').textContent = '$'+counted.toFixed(2);
+  document.getElementById('recon-diff').textContent = '—';
+}
+async function flagShift() {
+  const note = document.getElementById('shift-note').value || 'Manual flag';
+  await logAudit('flag', 'flag', `Manual discrepancy flag — ${CU.name} · ${CU.station} — ${note}`);
+  alert('Discrepancy flagged and logged');
+}
+async function closeDay() {
+  if (!['admin','supervisor'].includes(CU.role)) { alert('Only supervisors can close the day'); return; }
+  await logAudit('shift', 'shift', `Day closed by ${CU.name}`);
+  alert('Day closed. Daily report will be generated.');
+}
+async function loadStationSummary() {
+  const { data } = await db.from('shifts').select('*').gte('opened_at', today()).order('opened_at');
+  const wrap = document.getElementById('station-summary');
+  if (!data?.length) { wrap.innerHTML='<div class="loader">No shifts today</div>'; return; }
+  wrap.innerHTML = data.map(r=>`<div class="rrow"><span class="rlabel">${r.user_name} · ${r.station}</span><span class="${r.status==='flagged'?'rdiff':r.status==='closed'?'rok':''}">
+    ${r.status==='open'?'Open':r.status==='closed'?'✓ Balanced':r.status==='flagged'?`⚠ $${Math.abs(r.difference_usd).toFixed(2)} diff`:'—'}
+  </span></div>`).join('') + `<div class="rrow"><span class="rlabel">Status</span><span style="font-family:var(--mono)">${data.length} shift(s) today</span></div>`;
+}
+
+// ── DAILY REPORT ──────────────────────────────────────────────────────
+async function generateReport() {
+  const today = new Date().toISOString().split('T')[0];
+  const todayStart = today + 'T00:00:00';
+  
+  const [invRes, expRes, whishRes, shiftRes] = await Promise.all([
+    db.from('invoices').select('*').eq('status','saved').gte('created_at', todayStart),
+    db.from('expenses').select('*').gte('created_at', todayStart),
+    db.from('whish_transactions').select('*').gte('created_at', todayStart),
+    db.from('shifts').select('*').gte('opened_at', todayStart)
+  ]);
+
+  const invoices = invRes.data || [];
+  const expenses = expRes.data || [];
+  const whish = whishRes.data || [];
+  const shifts = shiftRes.data || [];
+
+  const totalSales = invoices.reduce((s,r) => s + parseFloat(r.total_usd||0), 0);
+  const totalExp = expenses.reduce((s,r) => s + parseFloat(r.amount_usd||0), 0);
+  const totalWhish = whish.reduce((s,r) => s + parseFloat(r.amount_usd||0), 0);
+  const totalComm = whish.reduce((s,r) => s + parseFloat(r.commission_usd||0), 0);
+  const flagged = shifts.filter(s => s.status === 'flagged');
+
+  // Build report HTML
+  const reportHTML = `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AllWay Services — Daily Report ${today}</title>
+<style>
+  body{font-family:Arial,sans-serif;padding:30px;color:#1a1714;background:#fff}
+  h1{font-size:22px;margin-bottom:4px}
+  .sub{color:#888;font-size:13px;margin-bottom:24px}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:24px}
+  .box{background:#f7f4ef;border-radius:8px;padding:14px 16px}
+  .box-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+  .box-val{font-size:22px;font-weight:700}
+  .green{color:#0f7a4a}.red{color:#c53030}.gold{color:#b8780a}
+  table{width:100%;border-collapse:collapse;font-size:12px;margin-bottom:24px}
+  th{background:#f2efe9;padding:8px 12px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#888}
+  td{padding:8px 12px;border-bottom:1px solid #eee}
+  .flag{background:#fff5f5;color:#c53030;padding:12px 16px;border-radius:8px;border-left:3px solid #c53030;margin-bottom:16px}
+  h2{font-size:14px;margin:20px 0 10px}
+  .footer{margin-top:32px;font-size:11px;color:#aaa;border-top:1px solid #eee;padding-top:12px}
+</style>
+</head>
+<body>
+<h1>AllWay Services — Daily Report</h1>
+<div class="sub">${new Date().toLocaleDateString('en-GB', {weekday:'long', year:'numeric', month:'long', day:'numeric'})}</div>
+
+<div class="grid">
+  <div class="box"><div class="box-label">Total sales</div><div class="box-val green">$${totalSales.toFixed(2)}</div></div>
+  <div class="box"><div class="box-label">Invoices</div><div class="box-val">${invoices.length}</div></div>
+  <div class="box"><div class="box-label">Expenses</div><div class="box-val red">$${totalExp.toFixed(2)}</div></div>
+  <div class="box"><div class="box-label">Whish commission</div><div class="box-val gold">$${totalComm.toFixed(2)}</div></div>
+</div>
+
+${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged today — cash mismatch detected</div>` : ''}
+
+<h2>Sales today</h2>
+<table>
+<thead><tr><th>#</th><th>Client</th><th>Amount</th><th>Method</th><th>By</th><th>Time</th></tr></thead>
+<tbody>
+${invoices.map(r => `<tr><td>${r.id}</td><td>${r.client_name}</td><td>$${parseFloat(r.total_usd).toFixed(2)}</td><td>${r.payment_method}</td><td>${r.created_by}</td><td>${new Date(r.created_at).toLocaleTimeString()}</td></tr>`).join('')}
+</tbody>
+</table>
+
+<h2>Expenses today</h2>
+<table>
+<thead><tr><th>Supplier</th><th>Amount</th><th>Description</th><th>Status</th><th>By</th></tr></thead>
+<tbody>
+${expenses.map(r => `<tr><td>${r.supplier}</td><td>$${parseFloat(r.amount_usd).toFixed(2)}</td><td>${r.description||'—'}</td><td>${r.status}</td><td>${r.submitted_by}</td></tr>`).join('')}
+</tbody>
+</table>
+
+<h2>Whish transactions today</h2>
+<table>
+<thead><tr><th>Type</th><th>Client</th><th>Amount</th><th>Commission</th><th>By</th></tr></thead>
+<tbody>
+${whish.map(r => `<tr><td>${r.transaction_type}</td><td>${r.client_name||'—'}</td><td>$${parseFloat(r.amount_usd).toFixed(2)}</td><td>$${parseFloat(r.commission_usd).toFixed(2)}</td><td>${r.created_by}</td></tr>`).join('')}
+</tbody>
+</table>
+
+<h2>Shift summary</h2>
+<table>
+<thead><tr><th>Employee</th><th>Station</th><th>Expected</th><th>Counted</th><th>Difference</th><th>Status</th></tr></thead>
+<tbody>
+${shifts.map(r => `<tr><td>${r.user_name}</td><td>${r.station}</td><td>$${parseFloat(r.expected_cash_usd||0).toFixed(2)}</td><td>$${parseFloat(r.counted_cash_usd||0).toFixed(2)}</td><td style="color:${Math.abs(r.difference_usd||0)>1?'#c53030':'#0f7a4a'}">$${parseFloat(r.difference_usd||0).toFixed(2)}</td><td>${r.status}</td></tr>`).join('')}
+</tbody>
+</table>
+
+<div class="footer">Generated by AllWay Services CRM · ${new Date().toLocaleString('en-GB')}</div>
+</body>
+</html>`;
+
+  // Open in new window for printing
+  const win = window.open('', '_blank');
+  win.document.write(reportHTML);
+  win.document.close();
+  win.print();
+}
+
+
+// ── USERS ─────────────────────────────────────────────
+async function loadUsers() {
+  const { data } = await db.from('users').select('*').order('name');
+  document.getElementById('users-stat').textContent = `${(data||[]).length} users`;
+  const wrap = document.getElementById('users-table');
+  wrap.innerHTML = `<table><thead><tr><th>Name</th><th>Username</th><th>Role</th><th>Station</th><th>Active</th></tr></thead><tbody>
+    ${(data||[]).map(r=>`<tr><td style="font-weight:500">${r.name}</td><td style="font-family:var(--mono);color:var(--text2)">${r.username}</td><td>${roleBadge(r.role)}</td><td style="color:var(--text2)">${r.station}</td><td>${r.active?'<span class="badge b-ok">Active</span>':'<span class="badge b-d">Inactive</span>'}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+function openAddUser() {
+  const f = document.getElementById('add-user-form');
+  f.style.display = f.style.display==='none'?'block':'none';
+}
+async function saveUser() {
+  const name = document.getElementById('u-name').value.trim();
+  const username = document.getElementById('u-username').value.trim().toLowerCase();
+  const pass = document.getElementById('u-pass').value.trim();
+  if (!name||!username||!pass) { alert('All fields required'); return; }
+  const { error } = await db.from('users').insert({ name, username, password_hash:pass, role:document.getElementById('u-role').value, station:document.getElementById('u-station').value });
+  if (error) { alert('Error: '+error.message); return; }
+  await logAudit('user', 'users', `New user added — ${name} (${username}) role: ${document.getElementById('u-role').value}`);
+  loadUsers();
+  document.getElementById('add-user-form').style.display='none';
+}
+
+
+// ── BARCODE SCANNER ───────────────────────────────────────────────────
+// Barcode scanners type fast and end with Enter key
+let barcodeBuffer = '';
+let barcodeTimer = null;
+document.addEventListener('keypress', function(e) {
+  if (document.activeElement && document.activeElement.id && document.activeElement.id.startsWith('ip-')) {
+    return; // let the input handle it
+  }
+  if (e.key === 'Enter' && barcodeBuffer.length > 3) {
+    const code = barcodeBuffer.trim();
+    barcodeBuffer = '';
+    // find product by description containing barcode
+    const match = products_cache.find(p => p.description.includes(code) || (p.barcode && p.barcode === code));
+    if (match) {
+      // add to current invoice
+      const wrap = document.getElementById('inv-items-wrap');
+      if (wrap && wrap.children.length > 0) {
+        const lastId = wrap.lastElementChild?.id?.replace('irow-','');
+        if (lastId) {
+          const ipEl = document.getElementById('ip-' + lastId);
+          const iprEl = document.getElementById('ipr-' + lastId);
+          if (ipEl && !ipEl.value) {
+            ipEl.value = match.description;
+            if (iprEl) iprEl.value = match.selling;
+            calcInvTotal();
+            return;
+          }
+        }
+      }
+    }
+  }
+  if (e.key !== 'Enter') {
+    barcodeBuffer += e.key;
+    clearTimeout(barcodeTimer);
+    barcodeTimer = setTimeout(() => { barcodeBuffer = ''; }, 100);
+  }
+});
+
+function handleBarcode(e, id) {
+  if (e.key === 'Enter') {
+    const val = document.getElementById('ip-' + id)?.value;
+    const match = products_cache.find(p => p.description.toLowerCase() === val.toLowerCase());
+    if (match) {
+      const prEl = document.getElementById('ipr-' + id);
+      if (prEl && (!prEl.value || prEl.value == '0')) {
+        prEl.value = match.selling;
+        calcInvTotal();
+      }
+    }
+    e.preventDefault();
+  }
+}
+
+// ── RECHARGE CARDS ────────────────────────────────────
+async function receiveCards() {
+  if (!['admin','supervisor'].includes(CU.role)) { alert('Only supervisors can add card stock'); return; }
+  const brand = document.getElementById('rc-brand').value;
+  const denom = document.getElementById('rc-denom').value;
+  const qty = parseInt(document.getElementById('rc-qty').value || 1);
+  const batch = document.getElementById('rc-batch').value;
+  const cost = parseFloat(document.getElementById('rc-cost').value || 0);
+  const sell = parseFloat(document.getElementById('rc-sell').value || 0);
+  const rows = [];
+  for (let i = 0; i < qty; i++) rows.push({ brand, denomination: denom, batch_number: batch, cost, selling: sell, currency: 'LBP', status: 'in_stock', received_by: CU.name });
+  await db.from('recharge_cards').insert(rows);
+  await logAudit('stock', 'recharge', `${qty}x ${brand} ${denom} cards received — batch ${batch}`);
+  loadRechargeTable();
+  alert(`${qty} cards added to stock`);
+}
+async function sellCard() {
+  const brand = document.getElementById('rs-brand').value;
+  const denom = document.getElementById('rs-denom').value;
+  const qty = parseInt(document.getElementById('rs-qty').value || 1);
+  const client = document.getElementById('rs-client').value || 'Cash customer';
+  const { data: available } = await db.from('recharge_cards').select('id').eq('brand', brand).eq('denomination', denom).eq('status', 'in_stock').limit(qty);
+  if (!available || available.length < qty) { alert(`Not enough ${brand} ${denom} cards in stock! Have ${available?.length || 0}, need ${qty}`); return; }
+  const ids = available.map(r => r.id);
+  await db.from('recharge_cards').update({ status: 'sold', sold_by: CU.name, sold_at: new Date().toISOString() }).in('id', ids);
+  await logAudit('sale', 'recharge', `${qty}x ${brand} ${denom} sold to ${client} by ${CU.name}`);
+  loadRechargeTable(); loadCardStock();
+  alert(`${qty}x ${brand} ${denom} sold`);
+}
+async function loadCardStock() {
+  const brand = document.getElementById('rs-brand')?.value;
+  const denom = document.getElementById('rs-denom')?.value;
+  if (!brand || !denom) return;
+  const { data } = await db.from('recharge_cards').select('id').eq('brand', brand).eq('denomination', denom).eq('status', 'in_stock');
+  const el = document.getElementById('rs-stock-info');
+  if (el) { el.textContent = `Available: ${data?.length || 0} cards`; el.style.color = (data?.length || 0) > 0 ? 'var(--green)' : 'var(--red)'; }
+}
+async function loadRechargeTable() {
+  const { data } = await db.from('recharge_cards').select('*').order('created_at', { ascending: false }).limit(200);
+  const wrap = document.getElementById('recharge-table');
+  if (!data?.length) { wrap.innerHTML = '<div class="loader">No cards yet — add stock first</div>'; return; }
+  // summarize by brand+denom
+  const summary = {};
+  data.forEach(r => {
+    const key = `${r.brand} ${r.denomination}`;
+    if (!summary[key]) summary[key] = { brand: r.brand, denom: r.denomination, in_stock: 0, sold: 0, selling: r.selling };
+    if (r.status === 'in_stock') summary[key].in_stock++;
+    if (r.status === 'sold') summary[key].sold++;
+  });
+  wrap.innerHTML = `<table><thead><tr><th>Brand</th><th>Denomination</th><th>In stock</th><th>Sold</th><th>Selling price</th><th>Status</th></tr></thead><tbody>
+    ${Object.values(summary).map(r => `<tr>
+      <td>${r.brand}</td><td>${r.denom}</td>
+      <td style="font-family:var(--mono);color:${r.in_stock > 0 ? 'var(--green)' : 'var(--red)'}">${r.in_stock}</td>
+      <td style="font-family:var(--mono)">${r.sold}</td>
+      <td style="font-family:var(--mono)">${parseFloat(r.selling).toLocaleString()} LBP</td>
+      <td>${r.in_stock === 0 ? '<span class="badge b-d">Out of stock</span>' : '<span class="badge b-ok">In stock</span>'}</td>
+    </tr>`).join('')}
+  </tbody></table>`;
+}
+
+// ── INTERNET RECHARGES ────────────────────────────────
+async function saveInternetRecharge() {
+  const account = document.getElementById('ir-account').value.trim();
+  if (!account) { alert('Customer account number is required'); return; }
+  const provider = document.getElementById('ir-provider').value;
+  const plan = document.getElementById('ir-plan').value;
+  const name = document.getElementById('ir-name').value;
+  const usd = parseFloat(document.getElementById('ir-usd').value || 0);
+  const lbp = parseInt(document.getElementById('ir-lbp').value || 0);
+  await db.from('internet_recharges').insert({ provider, plan, customer_account: account, customer_name: name, amount_usd: usd, amount_lbp: lbp, created_by: CU.name, station: CU.station });
+  await logAudit('sale', 'internet', `${provider} recharge — account ${account} — $${usd} — by ${CU.name}`);
+  loadInternetTable();
+  ['ir-plan','ir-account','ir-name','ir-usd','ir-lbp'].forEach(id => document.getElementById(id).value = id.includes('usd') || id.includes('lbp') ? '0' : '');
+  alert('Internet recharge saved');
+}
+async function loadInternetTable() {
+  const { data } = await db.from('internet_recharges').select('*').order('created_at', { ascending: false }).limit(100);
+  const wrap = document.getElementById('internet-table');
+  if (!data?.length) { wrap.innerHTML = '<div class="loader">No recharges yet</div>'; return; }
+  const isSup = ['admin','supervisor'].includes(CU.role);
+  wrap.innerHTML = `<table><thead><tr><th>Provider</th><th>Plan</th><th>Account #</th><th>Customer</th><th>USD</th><th>By</th><th>Time</th><th>Verified</th></tr></thead><tbody>
+    ${data.map(r => `<tr>
+      <td><span class="badge b-c">${r.provider}</span></td>
+      <td style="color:var(--text2)">${r.plan || '—'}</td>
+      <td style="font-family:var(--mono)">${r.customer_account}</td>
+      <td>${r.customer_name || '—'}</td>
+      <td style="font-family:var(--mono)">$${parseFloat(r.amount_usd).toFixed(2)}</td>
+      <td><span class="badge b-sup">${r.created_by}</span></td>
+      <td style="font-family:var(--mono);color:var(--text2)">${fmt(r.created_at)}</td>
+      <td>${r.verified ? '<span class="badge b-ok">Verified</span>' : isSup ? `<button class="btn btn-gr" style="padding:2px 6px;font-size:11px" onclick="verifyRecharge(${r.id})">Verify</button>` : '<span class="badge b-p">Pending</span>'}</td>
+    </tr>`).join('')}
+  </tbody></table>`;
+}
+async function verifyRecharge(id) {
+  await db.from('internet_recharges').update({ verified: true, verified_by: CU.name }).eq('id', id);
+  await logAudit('verify', 'internet', `Internet recharge #${id} verified by ${CU.name}`);
+  loadInternetTable();
+}
+
+// ── TAXI ──────────────────────────────────────────────
+async function saveTaxiTrip() {
+  const driver = document.getElementById('tx-driver').value.trim();
+  if (!driver) { alert('Driver name required'); return; }
+  const usd = parseFloat(document.getElementById('tx-usd').value || 0);
+  const lbp = parseInt(document.getElementById('tx-lbp').value || 0);
+  await db.from('taxi_trips').insert({ driver_name: driver, trip_date: document.getElementById('tx-date').value || new Date().toISOString().split('T')[0], amount_usd: usd, amount_lbp: lbp, payment_method: document.getElementById('tx-method').value, route: document.getElementById('tx-route').value, created_by: CU.name });
+  await logAudit('sale', 'taxi', `Taxi trip — driver ${driver} — $${usd} — by ${CU.name}`);
+  loadTaxiTable();
+  ['tx-driver','tx-usd','tx-lbp','tx-route'].forEach(id => document.getElementById(id).value = id.includes('usd') || id.includes('lbp') ? '0' : '');
+  alert('Trip saved');
+}
+async function loadTaxiTable() {
+  const { data } = await db.from('taxi_trips').select('*').order('created_at', { ascending: false }).limit(100);
+  const wrap = document.getElementById('taxi-table');
+  if (!data?.length) { wrap.innerHTML = '<div class="loader">No trips yet</div>'; return; }
+  const total = data.reduce((s, r) => s + parseFloat(r.amount_usd || 0), 0);
+  wrap.innerHTML = `<div style="padding:10px 12px;font-size:11px;color:var(--text2);font-family:var(--mono);border-bottom:0.5px solid var(--border)">Total: $${total.toFixed(2)} USD across ${data.length} trips</div>
+  <table><thead><tr><th>Driver</th><th>Date</th><th>USD</th><th>Method</th><th>Route</th><th>By</th></tr></thead><tbody>
+    ${data.map(r => `<tr>
+      <td style="font-weight:500">${r.driver_name}</td>
+      <td style="font-family:var(--mono);color:var(--text2)">${r.trip_date}</td>
+      <td style="font-family:var(--mono)">$${parseFloat(r.amount_usd).toFixed(2)}</td>
+      <td>${methodBadge(r.payment_method)}</td>
+      <td style="color:var(--text2)">${r.route || '—'}</td>
+      <td><span class="badge b-sup">${r.created_by}</span></td>
+    </tr>`).join('')}
+  </tbody></table>`;
+  document.getElementById('tx-date').value = new Date().toISOString().split('T')[0];
+}
+
+// ── INVENTORY CHECK ───────────────────────────────────
+async function loadInventoryCheckProducts() {
+  const dl = document.getElementById('ic-prod-list');
+  if (dl) dl.innerHTML = products_cache.map(p => `<option value="${p.description}" data-id="${p.id}" data-qty="${p.quantity}">`).join('');
+  document.getElementById('ic-product')?.addEventListener('change', function() {
+    const match = products_cache.find(p => p.description === this.value);
+    if (match) {
+      document.getElementById('ic-system-qty').value = match.quantity;
+      calcCheckDiff();
+    }
+  });
+}
+function calcCheckDiff() {
+  const sys = parseInt(document.getElementById('ic-system-qty').value || 0);
+  const counted = parseInt(document.getElementById('ic-counted').value || 0);
+  const diff = counted - sys;
+  const el = document.getElementById('ic-diff');
+  el.value = diff;
+  el.style.color = diff < 0 ? 'var(--red)' : diff > 0 ? 'var(--gold)' : 'var(--green)';
+}
+async function saveInventoryCheck() {
+  if (!['admin','supervisor'].includes(CU.role)) { alert('Only supervisors can submit inventory checks'); return; }
+  const productName = document.getElementById('ic-product').value.trim();
+  if (!productName) { alert('Select a product'); return; }
+  const match = products_cache.find(p => p.description === productName);
+  const sysQty = parseInt(document.getElementById('ic-system-qty').value || 0);
+  const counted = parseInt(document.getElementById('ic-counted').value || 0);
+  const diff = counted - sysQty;
+  await db.from('inventory_checks').insert({ product_id: match?.id || null, product_name: productName, system_qty: sysQty, counted_qty: counted, difference: diff, checked_by: CU.name, station: CU.station, note: document.getElementById('ic-note').value });
+  if (diff !== 0) await logAudit('flag', 'inventory', `Inventory mismatch — ${productName} — system: ${sysQty} counted: ${counted} diff: ${diff}`);
+  else await logAudit('inventory', 'inventory', `Inventory check OK — ${productName} — qty: ${sysQty}`);
+  loadInventoryTable();
+  if (diff < 0) alert(`⚠ Shortage detected! System shows ${sysQty} but you counted ${counted}. Difference of ${diff} has been flagged and logged.`);
+  else if (diff > 0) alert(`Surplus detected. System shows ${sysQty} but you counted ${counted}. Logged for review.`);
+  else alert('✓ Count matches system. All good!');
+}
+async function loadInventoryTable() {
+  const { data } = await db.from('inventory_checks').select('*').order('created_at', { ascending: false }).limit(100);
+  const wrap = document.getElementById('inventory-table');
+  if (!data?.length) { wrap.innerHTML = '<div class="loader">No checks yet</div>'; return; }
+  wrap.innerHTML = `<table><thead><tr><th>Product</th><th>System qty</th><th>Counted</th><th>Difference</th><th>By</th><th>Date</th><th>Note</th></tr></thead><tbody>
+    ${data.map(r => `<tr>
+      <td>${r.product_name}</td>
+      <td style="font-family:var(--mono)">${r.system_qty}</td>
+      <td style="font-family:var(--mono)">${r.counted_qty}</td>
+      <td style="font-family:var(--mono);font-weight:500;color:${r.difference < 0 ? 'var(--red)' : r.difference > 0 ? 'var(--gold)' : 'var(--green)'}">${r.difference > 0 ? '+' : ''}${r.difference} ${r.difference !== 0 ? '⚠' : '✓'}</td>
+      <td><span class="badge b-sup">${r.checked_by}</span></td>
+      <td style="font-family:var(--mono);color:var(--text2)">${fmt(r.created_at)}</td>
+      <td style="color:var(--text2)">${r.note || '—'}</td>
+    </tr>`).join('')}
+  </tbody></table>`;
+}
+
+
+function fmt(ts) {
+  if (!ts) return '—';
+  const d = new Date(ts);
+  return d.toLocaleDateString('en-GB',{day:'2-digit',month:'2-digit'}) + ' ' + d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+}
+function today() { return new Date().toISOString().split('T')[0] + 'T00:00:00'; }
+function daysAgo(n) { const d = new Date(); d.setDate(d.getDate()-n); return d.toISOString(); }
+function statusBadge(s) {
+  if (s==='saved') return '<span class="badge b-ok">Saved</span>';
+  if (s==='void_requested') return '<span class="badge b-p">Void requested</span>';
+  if (s==='voided') return '<span class="badge b-v">Voided</span>';
+  return s;
+}
+function methodBadge(m) {
+  if (!m) return '—';
+  if (m.toLowerCase().includes('whish')) return '<span class="badge b-w">Whish</span>';
+  if (m.toLowerCase().includes('cash')) return '<span class="badge b-c">Cash</span>';
+  if (m.toLowerCase().includes('debt')) return '<span class="badge b-d">Debt</span>';
+  return '<span class="badge">'+m+'</span>';
+}
+function debtBadge(s) {
+  if (s==='Debt') return '<span class="badge b-d">Debt</span>';
+  if (s==='Cash') return '<span class="badge b-c">Cash</span>';
+  return '<span class="badge b-p">Unchecked</span>';
+}
+function roleBadge(r) {
+  if (r==='supervisor') return '<span class="badge b-sup">Supervisor</span>';
+  if (r==='admin') return '<span class="badge b-d">Admin</span>';
+  if (r==='senior') return '<span class="badge b-sen">Senior</span>';
+  return '<span class="badge b-cash">Cashier</span>';
+}
+</script>
+</body>
+</html>

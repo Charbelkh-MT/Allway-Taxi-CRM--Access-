@@ -1,0 +1,1699 @@
+id,user_name,station,opened_at,closed_at,expected_cash_usd,counted_cash_usd,difference_usd,status,note
+16,Unknown,Main Station,,,14038.35,1943.52,-12094.83,open,
+29,Unknown,Main Station,,,13940.8,2086.85,-11853.949999999999,open,
+30,Unknown,Main Station,,,13915.8,2121.85,-11793.949999999999,open,
+31,Unknown,Main Station,,,13935.0,2102.95,-11832.05,open,
+32,Unknown,Main Station,,,13925.0,2117.95,-11807.05,open,
+54,Unknown,Main Station,,,13907.72,2117.95,-11789.77,open,
+55,Unknown,Main Station,,,13990.84,2068.28,-11922.56,open,
+56,Unknown,Main Station,2025-05-30T00:00:00,,13990.84,2068.28,-11922.56,open,
+58,Unknown,Main Station,,,13964.59,2118.28,-11846.31,open,
+59,Unknown,Main Station,,,13940.22,2179.28,-11760.939999999999,open,
+60,Unknown,Main Station,,,13938.97,2189.28,-11749.689999999999,open,
+63,Unknown,Main Station,,,13927.97,2214.28,-11713.689999999999,open,
+64,Unknown,Main Station,,,13928.97,2204.28,-11724.689999999999,open,
+65,Unknown,Main Station,,,13897.79,2236.28,-11661.51,open,
+67,Unknown,Main Station,2025-05-31T00:00:00,,13897.79,2236.28,-11661.51,open,
+68,Unknown,Main Station,,,13775.57,2388.95,-11386.619999999999,open,
+69,Unknown,Main Station,,,13774.07,2395.95,-11378.119999999999,open,
+72,Unknown,Main Station,,,13732.84,2452.74,-11280.1,open,
+73,Unknown,Main Station,,,13596.93,2679.86,-10917.07,open,
+76,Unknown,Main Station,2025-06-03T00:00:00,,13596.93,2679.86,-10917.07,open,
+77,Unknown,Main Station,,,13589.93,2704.86,-10885.07,open,
+78,Unknown,Main Station,,,13586.93,2714.86,-10872.07,open,
+79,Unknown,Main Station,,,13556.98,2752.53,-10804.449999999999,open,
+83,Unknown,Main Station,2025-06-01T00:00:00,,13556.98,2752.53,-10804.449999999999,open,
+84,Unknown,Main Station,2025-06-04T00:00:00,,13556.98,2752.53,-10804.449999999999,open,
+85,Unknown,Main Station,,,13532.02,2809.4,-10722.62,open,
+86,Unknown,Main Station,,,13529.85,2812.06,-10717.79,open,
+87,Unknown,Main Station,,,13529.85,2812.06,-10717.79,open,
+88,Unknown,Main Station,2025-06-05T00:00:00,,13529.85,2812.06,-10717.79,open,
+89,Unknown,Main Station,,,13466.65,2936.39,-10530.26,open,
+90,Unknown,Main Station,2025-06-06T00:00:00,,13466.65,2936.39,-10530.26,open,
+91,Unknown,Main Station,,,13463.68,2946.06,-10517.62,open,
+92,Unknown,Main Station,,,13431.18,3011.06,-10420.12,open,
+93,Unknown,Main Station,,,13430.38,3012.16,-10418.22,open,
+94,Unknown,Main Station,,,13430.38,3012.16,-10418.22,open,
+95,Unknown,Main Station,2025-06-07T00:00:00,,13430.38,3012.16,-10418.22,open,
+96,Unknown,Main Station,,,13884.59,2594.15,-11290.44,open,
+97,Unknown,Main Station,,,13874.42,2609.16,-11265.26,open,
+98,Unknown,Main Station,,,13874.42,2609.16,-11265.26,open,
+99,Unknown,Main Station,2025-06-09T00:00:00,,13874.42,2609.16,-11265.26,open,
+100,Unknown,Main Station,,,13873.77,2612.16,-11261.61,open,
+101,Unknown,Main Station,,,13950.82,2533.41,-11417.41,open,
+102,Unknown,Main Station,,,14037.32,2465.91,-11571.41,open,
+103,Unknown,Main Station,,,14014.48,2501.24,-11513.24,open,
+105,Unknown,Main Station,,,14014.48,2501.24,-11513.24,open,
+107,Unknown,Main Station,2025-06-10T00:00:00,,14014.48,2501.24,-11513.24,open,
+108,Unknown,Main Station,,,13931.93,2614.24,-11317.69,open,
+109,Unknown,Main Station,,,13917.44,2640.57,-11276.87,open,
+110,Unknown,Main Station,,,13908.76,2651.24,-11257.52,open,
+111,Unknown,Main Station,,,13908.76,2651.24,-11257.52,open,
+112,Unknown,Main Station,2025-06-11T00:00:00,,13908.76,2651.24,-11257.52,open,
+113,Unknown,Main Station,,,13865.09,2751.9,-11113.19,open,
+114,Unknown,Main Station,,,13814.21,2871.36,-10942.849999999999,open,
+115,Unknown,Main Station,2025-06-12T00:00:00,,13814.21,2871.36,-10942.849999999999,open,
+116,Unknown,Main Station,,,13766.17,2955.0,-10811.17,open,
+117,Unknown,Main Station,,,13754.02,2997.0,-10757.02,open,
+118,Unknown,Main Station,,,13742.44,3036.46,-10705.98,open,
+119,Unknown,Main Station,,,13742.44,3036.46,-10705.98,open,
+120,Unknown,Main Station,2025-06-13T00:00:00,,13742.44,3036.46,-10705.98,open,
+121,Unknown,Main Station,,,13578.24,3259.98,-10318.26,open,
+122,Unknown,Main Station,,,13603.24,3234.98,-10368.26,open,
+126,Unknown,Main Station,,,13618.97,3219.25,-10399.72,open,
+128,Unknown,Main Station,2025-06-14T00:00:00,,13618.97,3219.25,-10399.72,open,
+132,Unknown,Main Station,,,13681.18,3251.78,-10429.4,open,
+133,Unknown,Main Station,2025-06-16T00:00:00,,13681.18,3251.78,-10429.4,open,
+134,Unknown,Main Station,,,13673.51,3269.45,-10404.060000000001,open,
+135,Unknown,Main Station,,,13669.17,3274.78,-10394.39,open,
+136,Unknown,Main Station,,,13640.05,3340.44,-10299.609999999999,open,
+137,Unknown,Main Station,,,13652.06,3317.44,-10334.619999999999,open,
+138,Unknown,Main Station,2025-06-17T00:00:00,,13640.05,3340.44,-10299.609999999999,open,
+139,Unknown,Main Station,,,13617.11,3381.07,-10236.04,open,
+140,Unknown,Main Station,,,13022.61,4033.07,-8989.54,open,
+141,Unknown,Main Station,,,13013.86,4050.29,-8963.57,open,
+142,Unknown,Main Station,,,13262.06,3802.09,-9459.97,open,
+143,Unknown,Main Station,2025-06-18T00:00:00,,13262.06,3802.09,-9459.97,open,
+144,Unknown,Main Station,,,13257.06,3819.09,-9437.97,open,
+145,Unknown,Main Station,,,13188.67,3946.52,-9242.15,open,
+146,Unknown,Main Station,,,13183.5,3961.19,-9222.31,open,
+147,Unknown,Main Station,,,12834.96,4358.52,-8476.439999999999,open,
+148,Unknown,Main Station,,,12831.46,4370.52,-8460.939999999999,open,
+149,Unknown,Main Station,,,12828.58,4373.78,-8454.8,open,
+150,Unknown,Main Station,,,12827.93,4379.78,-8448.150000000001,open,
+151,Unknown,Main Station,,,12826.43,4386.78,-8439.650000000001,open,
+152,Unknown,Main Station,,,14385.93,2814.78,-11571.15,open,
+153,Unknown,Main Station,2025-06-19T00:00:00,,14385.93,2814.78,-11571.15,open,
+154,Unknown,Main Station,,,13861.39,3390.08,-10471.31,open,
+155,Unknown,Main Station,,,13848.39,3415.08,-10433.31,open,
+156,Unknown,Main Station,,,13724.6,3569.41,-10155.19,open,
+157,Unknown,Main Station,,,14205.6,3088.41,-11117.19,open,
+158,Unknown,Main Station,2025-06-20T00:00:00,,14205.6,3088.41,-11117.19,open,
+159,Unknown,Main Station,,,14173.46,3153.84,-11019.619999999999,open,
+160,Unknown,Main Station,,,14106.66,3259.94,-10846.72,open,
+161,Unknown,Main Station,,,14106.66,3259.94,-10846.72,open,
+162,Unknown,Main Station,2025-06-21T00:00:00,,14106.66,3259.94,-10846.72,open,
+163,Unknown,Main Station,,,14059.43,3333.5,-10725.93,open,
+164,Unknown,Main Station,,,14259.43,3131.5,-11127.93,open,
+165,Unknown,Main Station,,,14259.43,3131.5,-11127.93,open,
+166,Unknown,Main Station,2025-06-23T00:00:00,,14259.43,3131.5,-11127.93,open,
+167,Unknown,Main Station,,,14262.67,3137.76,-11124.91,open,
+168,Unknown,Main Station,,,14290.79,3121.52,-11169.27,open,
+169,Unknown,Main Station,,,14189.09,3281.18,-10907.91,open,
+170,Unknown,Main Station,,,14174.75,3319.51,-10855.24,open,
+171,Unknown,Main Station,,,14294.75,3199.51,-11095.24,open,
+172,Unknown,Main Station,2025-06-24T00:00:00,,14294.75,3199.51,-11095.24,open,
+173,Unknown,Main Station,,,14288.08,3214.18,-11073.9,open,
+174,Unknown,Main Station,,,14552.58,2956.18,-11596.4,open,
+175,Unknown,Main Station,,,14208.96,3339.29,-10869.669999999998,open,
+176,Unknown,Main Station,,,14208.96,3339.29,-10869.669999999998,open,
+177,Unknown,Main Station,2025-06-25T00:00:00,,14208.96,3339.29,-10869.669999999998,open,
+178,Unknown,Main Station,,,14185.21,3396.29,-10788.919999999998,open,
+179,Unknown,Main Station,,,14133.96,3481.29,-10652.669999999998,open,
+180,Unknown,Main Station,,,14094.86,3576.39,-10518.470000000001,open,
+181,Unknown,Main Station,,,14090.52,3581.72,-10508.800000000001,open,
+182,Unknown,Main Station,,,14055.77,3638.72,-10417.050000000001,open,
+183,Unknown,Main Station,,,14847.02,2847.47,-11999.550000000001,open,
+184,Unknown,Main Station,2025-06-26T00:00:00,,14847.02,2847.47,-11999.550000000001,open,
+185,Unknown,Main Station,,,14838.85,2867.14,-11971.710000000001,open,
+186,Unknown,Main Station,,,15053.85,2663.14,-12390.710000000001,open,
+187,Unknown,Main Station,,,15639.1,2088.14,-13550.960000000001,open,
+188,Unknown,Main Station,,,15037.85,2733.14,-12304.710000000001,open,
+189,Unknown,Main Station,,,14858.68,2915.81,-11942.87,open,
+190,Unknown,Main Station,,,14858.68,2915.81,-11942.87,open,
+192,Unknown,Main Station,2025-06-27T00:00:00,,14858.68,2915.81,-11942.87,open,
+193,Unknown,Main Station,,,14855.68,2925.81,-11929.87,open,
+194,Unknown,Main Station,,,14843.48,2969.81,-11873.67,open,
+195,Unknown,Main Station,,,14901.98,2938.81,-11963.17,open,
+196,Unknown,Main Station,,,14861.97,2986.81,-11875.16,open,
+197,Unknown,Main Station,,,14861.96,2986.81,-11875.15,open,
+198,Unknown,Main Station,2025-06-28T00:00:00,,14861.96,2986.81,-11875.15,open,
+199,Unknown,Main Station,,,14678.92,3238.81,-11440.11,open,
+200,Unknown,Main Station,,,14678.92,3238.81,-11440.11,open,
+201,Unknown,Main Station,2025-06-30T00:00:00,,14678.92,3238.81,-11440.11,open,
+202,Unknown,Main Station,,,14677.32,3244.91,-11432.41,open,
+203,Unknown,Main Station,,,14591.6,3401.91,-11189.69,open,
+204,Unknown,Main Station,,,14591.6,3401.91,-11189.69,open,
+205,Unknown,Main Station,2025-07-01T00:00:00,,14591.6,3401.91,-11189.69,open,
+206,Unknown,Main Station,,,14513.82,3492.71,-11021.11,open,
+207,Unknown,Main Station,,,14490.27,3554.71,-10935.560000000001,open,
+208,Unknown,Main Station,,,14494.68,3549.37,-10945.310000000001,open,
+209,Unknown,Main Station,2025-07-02T00:00:00,,14494.68,3549.37,-10945.310000000001,open,
+210,Unknown,Main Station,,,14453.06,3623.37,-10829.689999999999,open,
+211,Unknown,Main Station,,,14448.06,3633.37,-10814.689999999999,open,
+212,Unknown,Main Station,,,14448.06,3633.37,-10814.689999999999,open,
+213,Unknown,Main Station,2025-07-03T00:00:00,,14448.06,3633.37,-10814.689999999999,open,
+214,Unknown,Main Station,,,15470.84,2666.29,-12804.55,open,
+215,Unknown,Main Station,,,15292.84,2861.29,-12431.55,open,
+216,Unknown,Main Station,,,15283.59,2888.29,-12395.3,open,
+217,Unknown,Main Station,,,15274.19,2927.29,-12346.900000000001,open,
+218,Unknown,Main Station,,,15275.59,2921.29,-12354.3,open,
+219,Unknown,Main Station,2025-07-04T00:00:00,,15275.59,2921.29,-12354.3,open,
+220,Unknown,Main Station,,,15189.49,3075.18,-12114.31,open,
+221,Unknown,Main Station,,,15189.49,3075.18,-12114.31,open,
+222,Unknown,Main Station,2025-07-05T00:00:00,,15189.49,3075.18,-12114.31,open,
+223,Unknown,Main Station,,,15130.99,3220.18,-11910.81,open,
+224,Unknown,Main Station,,,14993.12,3370.84,-11622.28,open,
+225,Unknown,Main Station,,,14993.12,3370.84,-11622.28,open,
+226,Unknown,Main Station,2025-07-07T00:00:00,,14993.12,3370.84,-11622.28,open,
+227,Unknown,Main Station,,,14952.87,3443.16,-11509.710000000001,open,
+228,Unknown,Main Station,,,14946.2,3458.83,-11487.37,open,
+229,Unknown,Main Station,,,14946.2,3458.83,-11487.37,open,
+230,Unknown,Main Station,2025-07-08T00:00:00,,14946.2,3458.83,-11487.37,open,
+231,Unknown,Main Station,,,14905.71,-108.98,-15014.689999999999,open,
+232,Unknown,Main Station,,,14905.71,-108.98,-15014.689999999999,open,
+233,Unknown,Main Station,2025-07-09T00:00:00,,14905.71,-108.98,-15014.689999999999,open,
+234,Unknown,Main Station,,,15352.78,-537.13,-15889.91,open,
+235,Unknown,Main Station,,,15220.25,-370.13,-15590.38,open,
+236,Unknown,Main Station,,,15220.25,-370.13,-15590.38,open,
+237,Unknown,Main Station,2025-07-10T00:00:00,,15220.25,-370.13,-15590.38,open,
+238,Unknown,Main Station,,,15188.25,-336.63,-15524.88,open,
+239,Unknown,Main Station,,,15177.38,-311.63,-15489.009999999998,open,
+240,Unknown,Main Station,,,15151.34,-285.23,-15436.57,open,
+241,Unknown,Main Station,,,15147.0,-279.9,-15426.9,open,
+242,Unknown,Main Station,,,15140.0,-260.9,-15400.9,open,
+243,Unknown,Main Station,,,15324.27,-445.17,-15769.44,open,
+244,Unknown,Main Station,2025-07-11T00:00:00,,15324.27,-445.17,-15769.44,open,
+245,Unknown,Main Station,,,14561.74,421.39,-14140.35,open,
+246,Unknown,Main Station,,,14554.49,445.39,-14109.1,open,
+247,Unknown,Main Station,,,14554.49,445.39,-14109.1,open,
+248,Unknown,Main Station,2025-07-12T00:00:00,,14554.49,445.39,-14109.1,open,
+249,Unknown,Main Station,,,14670.24,354.39,-14315.85,open,
+250,Unknown,Main Station,,,14661.9,384.72,-14277.18,open,
+251,Unknown,Main Station,,,14653.4,411.72,-14241.68,open,
+252,Unknown,Main Station,,,14653.4,411.72,-14241.68,open,
+254,Unknown,Main Station,2025-07-14T00:00:00,,14653.4,411.72,-14241.68,open,
+255,Unknown,Main Station,,,14472.79,700.05,-13772.740000000002,open,
+256,Unknown,Main Station,,,14488.53,684.31,-13804.220000000001,open,
+257,Unknown,Main Station,2025-07-15T00:00:00,,14488.53,684.31,-13804.220000000001,open,
+258,Unknown,Main Station,,,14482.03,699.31,-13782.720000000001,open,
+259,Unknown,Main Station,,,14344.62,880.64,-13463.980000000001,open,
+260,Unknown,Main Station,,,14327.61,911.64,-13415.970000000001,open,
+261,Unknown,Main Station,,,14334.05,896.64,-13437.41,open,
+262,Unknown,Main Station,2025-07-16T00:00:00,,14327.61,911.64,-13415.970000000001,open,
+263,Unknown,Main Station,,,14272.23,1013.3,-13258.93,open,
+264,Unknown,Main Station,,,14220.06,1065.97,-13154.09,open,
+265,Unknown,Main Station,,,14220.06,1065.97,-13154.09,open,
+266,Unknown,Main Station,2025-07-17T00:00:00,,14220.06,1065.97,-13154.09,open,
+267,Unknown,Main Station,,,14212.07,1082.73,-13129.34,open,
+268,Unknown,Main Station,,,14138.57,1204.89,-12933.68,open,
+269,Unknown,Main Station,,,14138.57,1204.89,-12933.68,open,
+270,Unknown,Main Station,2025-07-18T00:00:00,,14138.57,1204.89,-12933.68,open,
+271,Unknown,Main Station,,,14142.13,1224.38,-12917.75,open,
+272,Unknown,Main Station,,,14051.27,1342.38,-12708.89,open,
+273,Unknown,Main Station,,,13995.65,1433.05,-12562.6,open,
+274,Unknown,Main Station,,,13995.65,1433.05,-12562.6,open,
+275,Unknown,Main Station,2025-07-19T00:00:00,,13995.65,1433.05,-12562.6,open,
+276,Unknown,Main Station,,,13956.8,1516.05,-12440.75,open,
+277,Unknown,Main Station,,,13956.8,1516.05,-12440.75,open,
+278,Unknown,Main Station,2025-07-21T00:00:00,,13956.8,1516.05,-12440.75,open,
+279,Unknown,Main Station,,,13972.23,1513.55,-12458.68,open,
+280,Unknown,Main Station,,,13942.61,1564.66,-12377.95,open,
+281,Unknown,Main Station,,,13942.61,1564.66,-12377.95,open,
+282,Unknown,Main Station,2025-07-22T00:00:00,,13942.61,1564.66,-12377.95,open,
+283,Unknown,Main Station,,,14196.28,1354.76,-12841.52,open,
+285,Unknown,Main Station,,,14161.1,1437.42,-12723.68,open,
+286,Unknown,Main Station,,,14161.1,1437.42,-12723.68,open,
+287,Unknown,Main Station,2025-07-23T00:00:00,,14161.1,1437.42,-12723.68,open,
+288,Unknown,Main Station,,,14117.1,1506.42,-12610.68,open,
+289,Unknown,Main Station,,,14248.17,1414.09,-12834.08,open,
+290,Unknown,Main Station,,,14248.17,1414.09,-12834.08,open,
+291,Unknown,Main Station,2025-07-24T00:00:00,,14248.17,1414.09,-12834.08,open,
+292,Unknown,Main Station,,,14305.97,1376.54,-12929.43,open,
+293,Unknown,Main Station,,,14304.22,1386.54,-12917.68,open,
+294,Unknown,Main Station,,,14304.22,1386.54,-12917.68,open,
+295,Unknown,Main Station,2025-07-25T00:00:00,,14304.22,1386.54,-12917.68,open,
+296,Unknown,Main Station,,,14210.37,1589.54,-12620.830000000002,open,
+297,Unknown,Main Station,,,14190.37,1619.54,-12570.830000000002,open,
+298,Unknown,Main Station,,,14184.7,1632.21,-12552.490000000002,open,
+299,Unknown,Main Station,,,14184.7,1632.21,-12552.490000000002,open,
+300,Unknown,Main Station,2025-07-26T00:00:00,,14184.7,1632.21,-12552.490000000002,open,
+301,Unknown,Main Station,,,14045.95,1859.01,-12186.94,open,
+302,Unknown,Main Station,,,14045.95,1859.01,-12186.94,open,
+303,Unknown,Main Station,2025-07-28T00:00:00,,14045.95,1859.01,-12186.94,open,
+304,Unknown,Main Station,,,13908.15,2024.01,-11884.14,open,
+305,Unknown,Main Station,,,13886.9,2059.01,-11827.89,open,
+306,Unknown,Main Station,,,13886.9,2059.01,-11827.89,open,
+307,Unknown,Main Station,2025-07-29T00:00:00,,13886.9,2059.01,-11827.89,open,
+309,Unknown,Main Station,,,13743.05,2333.43,-11409.619999999999,open,
+310,Unknown,Main Station,,,13743.05,2333.43,-11409.619999999999,open,
+311,Unknown,Main Station,2025-07-30T00:00:00,,13743.05,2333.43,-11409.619999999999,open,
+312,Unknown,Main Station,,,13623.96,2496.76,-11127.199999999999,open,
+313,Unknown,Main Station,,,13611.96,2518.76,-11093.199999999999,open,
+314,Unknown,Main Station,,,13611.96,2518.76,-11093.199999999999,open,
+315,Unknown,Main Station,2025-07-31T00:00:00,,13611.96,2518.76,-11093.199999999999,open,
+316,Unknown,Main Station,,,13549.31,2662.71,-10886.599999999999,open,
+317,Unknown,Main Station,,,13902.14,2335.58,-11566.56,open,
+318,Unknown,Main Station,,,13902.14,2335.57,-11566.57,open,
+319,Unknown,Main Station,2025-08-01T00:00:00,,13902.14,2335.57,-11566.57,open,
+320,Unknown,Main Station,,,13902.14,2335.57,-11566.57,open,
+321,Unknown,Main Station,,,13897.8,2340.9,-11556.9,open,
+322,Unknown,Main Station,,,13637.27,2724.89,-10912.380000000001,open,
+323,Unknown,Main Station,2025-08-02T00:00:00,,13637.27,2724.89,-10912.380000000001,open,
+324,Unknown,Main Station,,,13584.37,2805.09,-10779.28,open,
+325,Unknown,Main Station,,,13708.97,2698.09,-11010.88,open,
+326,Unknown,Main Station,,,13577.17,2844.09,-10733.08,open,
+327,Unknown,Main Station,2025-08-04T00:00:00,,13708.97,2698.09,-11010.88,open,
+328,Unknown,Main Station,,,13482.67,3038.59,-10444.08,open,
+329,Unknown,Main Station,2025-08-05T00:00:00,,13482.67,3038.59,-10444.08,open,
+330,Unknown,Main Station,,,13304.32,3302.25,-10002.07,open,
+331,Unknown,Main Station,,,13304.32,3302.25,-10002.07,open,
+332,Unknown,Main Station,,,13205.73,3453.14,-9752.59,open,
+333,Unknown,Main Station,2025-08-07T00:00:00,,13205.73,3453.14,-9752.59,open,
+334,Unknown,Main Station,,,13894.83,2789.97,-11104.86,open,
+335,Unknown,Main Station,,,13812.13,2897.22,-10914.91,open,
+336,Unknown,Main Station,,,13812.13,2897.22,-10914.91,open,
+337,Unknown,Main Station,2025-08-08T00:00:00,,13812.13,2897.22,-10914.91,open,
+338,Unknown,Main Station,,,13745.09,3047.69,-10697.4,open,
+339,Unknown,Main Station,,,13776.55,3016.23,-10760.32,open,
+340,Unknown,Main Station,2025-08-09T00:00:00,,13776.55,3016.23,-10760.32,open,
+341,Unknown,Main Station,,,13670.57,3211.68,-10458.89,open,
+342,Unknown,Main Station,,,13666.07,3221.68,-10444.39,open,
+343,Unknown,Main Station,,,13666.07,3221.68,-10444.39,open,
+344,Unknown,Main Station,2025-08-11T00:00:00,,13666.07,3221.68,-10444.39,open,
+345,Unknown,Main Station,,,13757.52,3158.93,-10598.59,open,
+346,Unknown,Main Station,,,13751.77,3170.93,-10580.84,open,
+347,Unknown,Main Station,,,13751.77,3170.93,-10580.84,open,
+348,Unknown,Main Station,2025-08-12T00:00:00,,13751.77,3170.93,-10580.84,open,
+349,Unknown,Main Station,,,13729.87,3216.9,-10512.970000000001,open,
+350,Unknown,Main Station,2025-08-13T00:00:00,,13729.87,3216.9,-10512.970000000001,open,
+351,Unknown,Main Station,,,13705.82,3293.9,-10411.92,open,
+352,Unknown,Main Station,,,13705.82,3293.9,-10411.92,open,
+353,Unknown,Main Station,2025-08-14T00:00:00,,13705.82,3293.9,-10411.92,open,
+354,Unknown,Main Station,,,13615.52,3440.4,-10175.12,open,
+355,Unknown,Main Station,2025-08-15T00:00:00,,13615.52,3440.4,-10175.12,open,
+356,Unknown,Main Station,,,13676.01,3453.25,-10222.76,open,
+357,Unknown,Main Station,,,13676.01,3453.25,-10222.76,open,
+358,Unknown,Main Station,2025-08-16T00:00:00,,13676.01,3453.25,-10222.76,open,
+359,Unknown,Main Station,,,13612.64,3543.25,-10069.39,open,
+360,Unknown,Main Station,,,14328.04,2862.75,-11465.29,open,
+361,Unknown,Main Station,,,14260.54,2977.75,-11282.79,open,
+363,Unknown,Main Station,2025-08-18T00:00:00,,14260.54,2977.75,-11282.79,open,
+364,Unknown,Main Station,,,14282.54,2961.75,-11320.79,open,
+365,Unknown,Main Station,,,14267.1,2988.38,-11278.720000000001,open,
+366,Unknown,Main Station,,,14723.1,2548.38,-12174.720000000001,open,
+367,Unknown,Main Station,,,14593.9,2701.05,-11892.849999999999,open,
+368,Unknown,Main Station,,,14572.4,2762.05,-11810.349999999999,open,
+369,Unknown,Main Station,,,14572.4,2762.05,-11810.349999999999,open,
+370,Unknown,Main Station,2025-08-19T00:00:00,,14572.4,2762.05,-11810.349999999999,open,
+371,Unknown,Main Station,,,14207.75,3187.38,-11020.369999999999,open,
+372,Unknown,Main Station,,,14162.75,3267.38,-10895.369999999999,open,
+373,Unknown,Main Station,,,14162.75,1977.38,-12185.369999999999,open,
+374,Unknown,Main Station,,,15452.75,1977.38,-13475.369999999999,open,
+375,Unknown,Main Station,,,15437.55,2010.05,-13427.5,open,
+376,Unknown,Main Station,,,15437.55,2010.05,-13427.5,open,
+377,Unknown,Main Station,2025-08-20T00:00:00,,15437.55,2010.05,-13427.5,open,
+378,Unknown,Main Station,,,14109.3,3401.3,-10708.0,open,
+379,Unknown,Main Station,,,14060.84,3469.2,-10591.64,open,
+380,Unknown,Main Station,,,14060.84,3469.2,-10591.64,open,
+381,Unknown,Main Station,2025-08-21T00:00:00,,14060.84,3469.2,-10591.64,open,
+382,Unknown,Main Station,,,14035.6,3517.52,-10518.08,open,
+383,Unknown,Main Station,,,14292.4,3261.19,-11031.21,open,
+384,Unknown,Main Station,,,14292.4,3261.19,-11031.21,open,
+385,Unknown,Main Station,2025-08-22T00:00:00,,14292.4,3261.19,-11031.21,open,
+386,Unknown,Main Station,,,14255.46,3329.59,-10925.869999999999,open,
+387,Unknown,Main Station,,,14201.46,3418.39,-10783.07,open,
+388,Unknown,Main Station,,,14201.46,3418.39,-10783.07,open,
+389,Unknown,Main Station,2025-08-23T00:00:00,,14201.46,3418.39,-10783.07,open,
+390,Unknown,Main Station,,,14136.21,3569.83,-10566.38,open,
+391,Unknown,Main Station,,,14192.89,3513.9,-10678.99,open,
+392,Unknown,Main Station,,,14192.89,3513.9,-10678.99,open,
+393,Unknown,Main Station,2025-08-25T00:00:00,,14192.89,3513.9,-10678.99,open,
+394,Unknown,Main Station,,,14143.14,3605.67,-10537.47,open,
+395,Unknown,Main Station,,,14115.9,3650.56,-10465.34,open,
+396,Unknown,Main Station,,,14115.9,3650.56,-10465.34,open,
+397,Unknown,Main Station,2025-08-26T00:00:00,,14115.9,3650.56,-10465.34,open,
+399,Unknown,Main Station,,,14160.45,3664.23,-10496.220000000001,open,
+400,Unknown,Main Station,,,14096.12,3784.36,-10311.76,open,
+402,Unknown,Main Station,,,14096.12,3784.35,-10311.77,open,
+403,Unknown,Main Station,2025-08-27T00:00:00,,14096.12,3784.35,-10311.77,open,
+404,Unknown,Main Station,,,14145.77,3758.42,-10387.35,open,
+405,Unknown,Main Station,,,14107.92,3827.42,-10280.5,open,
+406,Unknown,Main Station,,,14097.92,3847.42,-10250.5,open,
+407,Unknown,Main Station,,,14097.92,3847.42,-10250.5,open,
+408,Unknown,Main Station,2025-08-28T00:00:00,,14097.92,3847.42,-10250.5,open,
+409,Unknown,Main Station,,,14066.87,3910.08,-10156.79,open,
+410,Unknown,Main Station,,,14066.87,3910.08,-10156.79,open,
+411,Unknown,Main Station,2025-08-29T00:00:00,,14066.87,3910.08,-10156.79,open,
+412,Unknown,Main Station,,,14041.59,3940.52,-10101.07,open,
+413,Unknown,Main Station,,,13999.94,4027.57,-9972.37,open,
+414,Unknown,Main Station,,,13999.94,4027.57,-9972.37,open,
+415,Unknown,Main Station,2025-08-30T00:00:00,,13999.94,4027.57,-9972.37,open,
+416,Unknown,Main Station,,,13974.89,4084.67,-9890.22,open,
+417,Unknown,Main Station,,,13974.89,4084.67,-9890.22,open,
+418,Unknown,Main Station,2025-09-01T00:00:00,,13974.89,4084.67,-9890.22,open,
+419,Unknown,Main Station,,,13216.14,4957.17,-8258.97,open,
+420,Unknown,Main Station,,,13037.39,5219.67,-7817.719999999999,open,
+421,Unknown,Main Station,,,14376.14,3767.17,-10608.97,open,
+423,Unknown,Main Station,,,13796.14,4377.17,-9418.97,open,
+424,Unknown,Main Station,,,13796.14,4377.17,-9418.97,open,
+425,Unknown,Main Station,2025-09-02T00:00:00,,14088.14,4377.17,-9710.97,open,
+434,Unknown,Main Station,,,13611.14,4633.17,-8977.97,open,
+435,Unknown,Main Station,,,13312.64,4947.17,-8365.47,open,
+436,Unknown,Main Station,2025-09-02T00:00:00,,13896.64,2802.42,-11094.22,open,
+437,Unknown,Main Station,2025-09-03T00:00:00,,14676.53,2802.42,-11874.11,open,
+438,Unknown,Main Station,,,13870.79,2846.75,-11024.04,open,
+439,Unknown,Main Station,,,13869.29,2849.75,-11019.54,open,
+440,Unknown,Main Station,,,13859.34,2880.75,-10978.59,open,
+441,Unknown,Main Station,,,15419.12,2100.86,-13318.26,open,
+442,Unknown,Main Station,2025-09-04T00:00:00,,15659.12,2100.86,-13558.26,open,
+443,Unknown,Main Station,,,15271.87,2284.36,-12987.51,open,
+444,Unknown,Main Station,,,14491.78,2341.16,-12150.62,open,
+445,Unknown,Main Station,,,14191.78,2341.16,-11850.62,open,
+446,Unknown,Main Station,,,14491.78,2341.16,-12150.62,open,
+447,Unknown,Main Station,2025-09-05T00:00:00,,14735.78,2341.16,-12394.62,open,
+448,Unknown,Main Station,,,14376.34,2773.1,-11603.24,open,
+449,Unknown,Main Station,,,14620.34,2529.1,-12091.24,open,
+450,Unknown,Main Station,2025-09-06T00:00:00,,14620.34,2529.1,-12091.24,open,
+451,Unknown,Main Station,,,14466.89,2742.9,-11723.99,open,
+452,Unknown,Main Station,,,14466.89,2742.9,-11723.99,open,
+453,Unknown,Main Station,2025-09-08T00:00:00,,17148.89,2742.9,-14405.99,open,
+454,Unknown,Main Station,,,14408.61,2829.46,-11579.150000000001,open,
+455,Unknown,Main Station,,,14344.51,2939.46,-11405.05,open,
+456,Unknown,Main Station,,,13254.51,4049.46,-9205.05,open,
+457,Unknown,Main Station,,,18618.51,1367.46,-17251.05,open,
+458,Unknown,Main Station,2025-09-09T00:00:00,,19574.25,1367.46,-18206.79,open,
+459,Unknown,Main Station,,,18564.26,1452.05,-17112.21,open,
+460,Unknown,Main Station,,,17587.15,2509.05,-15078.100000000002,open,
+461,Unknown,Main Station,,,19498.63,1553.31,-17945.32,open,
+462,Unknown,Main Station,2025-09-10T00:00:00,,19498.63,1553.31,-17945.32,open,
+463,Unknown,Main Station,,,19465.88,1625.31,-17840.57,open,
+464,Unknown,Main Station,,,19368.16,1790.72,-17577.44,open,
+465,Unknown,Main Station,,,19400.91,1718.72,-17682.19,open,
+466,Unknown,Main Station,,,19221.91,1910.72,-17311.19,open,
+467,Unknown,Main Station,2025-09-11T00:00:00,,19221.91,1910.72,-17311.19,open,
+468,Unknown,Main Station,,,19207.03,1949.18,-17257.85,open,
+469,Unknown,Main Station,,,19776.95,1265.34,-18511.61,open,
+470,Unknown,Main Station,,,19748.75,1318.14,-18430.61,open,
+471,Unknown,Main Station,,,19743.77,1334.14,-18409.63,open,
+472,Unknown,Main Station,,,19728.89,1462.94,-18265.95,open,
+473,Unknown,Main Station,2025-09-12T00:00:00,,19728.89,1462.94,-18265.95,open,
+474,Unknown,Main Station,,,19716.39,1485.94,-18230.45,open,
+475,Unknown,Main Station,,,19850.89,1235.14,-18615.75,open,
+476,Unknown,Main Station,,,19831.89,1280.14,-18551.75,open,
+477,Unknown,Main Station,,,19819.39,1408.94,-18410.45,open,
+478,Unknown,Main Station,2025-09-13T00:00:00,,19819.39,1408.94,-18410.45,open,
+479,Unknown,Main Station,,,19713.17,1592.84,-18120.329999999998,open,
+480,Unknown,Main Station,,,19694.57,1620.04,-18074.53,open,
+481,Unknown,Main Station,,,19624.27,1714.59,-17909.68,open,
+482,Unknown,Main Station,,,19624.27,1714.59,-17909.68,open,
+483,Unknown,Main Station,2025-09-15T00:00:00,,19640.01,1714.59,-17925.42,open,
+484,Unknown,Main Station,,,19551.73,1831.08,-17720.65,open,
+485,Unknown,Main Station,,,19499.83,1939.18,-17560.65,open,
+486,Unknown,Main Station,,,19531.31,1923.44,-17607.870000000003,open,
+487,Unknown,Main Station,2025-09-16T00:00:00,,19531.31,1923.44,-17607.870000000003,open,
+488,Unknown,Main Station,,,19262.63,2279.1,-16983.530000000002,open,
+489,Unknown,Main Station,,,19262.63,2279.1,-16983.530000000002,open,
+490,Unknown,Main Station,2025-09-17T00:00:00,,19879.63,2279.1,-17600.530000000002,open,
+491,Unknown,Main Station,,,19247.68,2305.5,-16942.18,open,
+492,Unknown,Main Station,,,19164.28,2459.6,-16704.68,open,
+493,Unknown,Main Station,,,20398.28,1842.6,-18555.68,open,
+494,Unknown,Main Station,2025-09-18T00:00:00,,20726.28,1842.6,-18883.68,open,
+495,Unknown,Main Station,,,20397.28,1848.6,-18548.68,open,
+496,Unknown,Main Station,,,20377.78,1888.6,-18489.18,open,
+497,Unknown,Main Station,,,20254.58,2053.4,-18201.18,open,
+498,Unknown,Main Station,,,20243.58,2080.4,-18163.18,open,
+499,Unknown,Main Station,,,20241.83,2090.4,-18151.43,open,
+500,Unknown,Main Station,,,20897.83,1762.4,-19135.43,open,
+501,Unknown,Main Station,2025-09-19T00:00:00,,20997.33,1762.4,-19234.93,open,
+502,Unknown,Main Station,,,20838.78,1847.4,-18991.379999999997,open,
+503,Unknown,Main Station,,,20825.58,1870.2,-18955.38,open,
+504,Unknown,Main Station,,,21155.33,1483.9,-19671.43,open,
+505,Unknown,Main Station,,,21006.25,1670.96,-19335.29,open,
+506,Unknown,Main Station,2025-09-20T00:00:00,,21006.25,1670.96,-19335.29,open,
+507,Unknown,Main Station,,,20877.39,1909.02,-18968.37,open,
+508,Unknown,Main Station,,,20877.39,1909.02,-18968.37,open,
+509,Unknown,Main Station,2025-09-22T00:00:00,,22209.39,1909.02,-20300.37,open,
+510,Unknown,Main Station,,,20495.29,2306.02,-18189.27,open,
+511,Unknown,Main Station,,,20307.59,2513.82,-17793.77,open,
+512,Unknown,Main Station,,,20269.89,2595.32,-17674.57,open,
+513,Unknown,Main Station,,,20244.19,2650.32,-17593.87,open,
+514,Unknown,Main Station,,,23290.29,921.32,-22368.97,open,
+515,Unknown,Main Station,,,22913.69,1311.32,-21602.37,open,
+516,Unknown,Main Station,2025-09-23T00:00:00,,22913.69,1311.32,-21602.37,open,
+517,Unknown,Main Station,,,22847.19,1441.42,-21405.769999999997,open,
+518,Unknown,Main Station,,,22805.69,1489.42,-21316.269999999997,open,
+519,Unknown,Main Station,,,22805.69,1489.42,-21316.269999999997,open,
+520,Unknown,Main Station,2025-09-24T00:00:00,,22948.69,1489.42,-21459.269999999997,open,
+521,Unknown,Main Station,,,22788.69,1520.42,-21268.269999999997,open,
+522,Unknown,Main Station,,,22766.95,1575.44,-21191.510000000002,open,
+523,Unknown,Main Station,,,22758.45,1605.44,-21153.010000000002,open,
+524,Unknown,Main Station,,,22557.78,1885.74,-20672.039999999997,open,
+525,Unknown,Main Station,,,22556.28,1890.74,-20665.539999999997,open,
+526,Unknown,Main Station,,,22554.84,1892.37,-20662.47,open,
+527,Unknown,Main Station,,,22840.84,1749.37,-21091.47,open,
+528,Unknown,Main Station,2025-09-25T00:00:00,,22920.34,1749.37,-21170.97,open,
+529,Unknown,Main Station,,,22802.34,1821.37,-20980.97,open,
+530,Unknown,Main Station,,,22792.84,1843.37,-20949.47,open,
+531,Unknown,Main Station,,,22733.29,1912.37,-20820.920000000002,open,
+532,Unknown,Main Station,,,22669.24,2000.57,-20668.670000000002,open,
+533,Unknown,Main Station,,,22635.96,2043.65,-20592.309999999998,open,
+534,Unknown,Main Station,,,22794.96,1964.15,-20830.809999999998,open,
+535,Unknown,Main Station,2025-09-26T00:00:00,,22810.7,1964.15,-20846.55,open,
+536,Unknown,Main Station,,,22772.36,2020.75,-20751.61,open,
+537,Unknown,Main Station,,,22765.96,2044.25,-20721.71,open,
+538,Unknown,Main Station,,,22797.44,2028.51,-20768.93,open,
+539,Unknown,Main Station,2025-09-27T00:00:00,,22797.44,2028.51,-20768.93,open,
+540,Unknown,Main Station,,,22753.62,2151.05,-20602.57,open,
+541,Unknown,Main Station,,,22752.97,2157.05,-20595.920000000002,open,
+542,Unknown,Main Station,,,22827.44,2524.05,-20303.39,open,
+543,Unknown,Main Station,,,22803.94,2557.05,-20246.89,open,
+544,Unknown,Main Station,,,22759.47,2160.05,-20599.420000000002,open,
+545,Unknown,Main Station,2025-09-29T00:00:00,,22759.47,2160.05,-20599.420000000002,open,
+546,Unknown,Main Station,,,22740.66,2201.05,-20539.61,open,
+547,Unknown,Main Station,,,22225.66,2767.05,-19458.61,open,
+548,Unknown,Main Station,,,22076.36,2929.05,-19147.31,open,
+549,Unknown,Main Station,,,22074.61,2932.05,-19142.56,open,
+550,Unknown,Main Station,,,23284.47,2804.05,-20480.420000000002,open,
+551,Unknown,Main Station,,,23280.07,2809.65,-20470.42,open,
+552,Unknown,Main Station,,,22595.21,2412.65,-20182.559999999998,open,
+553,Unknown,Main Station,2025-09-30T00:00:00,,22595.21,2412.65,-20182.559999999998,open,
+554,Unknown,Main Station,,,22585.71,2432.65,-20153.059999999998,open,
+555,Unknown,Main Station,,,22523.55,2508.45,-20015.1,open,
+556,Unknown,Main Station,,,22483.25,2600.45,-19882.8,open,
+557,Unknown,Main Station,,,22870.21,2722.45,-20147.76,open,
+558,Unknown,Main Station,,,22595.21,3032.45,-19562.76,open,
+559,Unknown,Main Station,,,22618.82,3008.84,-19609.98,open,
+560,Unknown,Main Station,,,22615.12,3016.64,-19598.48,open,
+561,Unknown,Main Station,,,22600.75,3049.64,-19551.11,open,
+562,Unknown,Main Station,,,22590.75,3074.64,-19516.11,open,
+563,Unknown,Main Station,,,22973.61,2696.24,-20277.370000000003,open,
+564,Unknown,Main Station,,,22863.61,2823.24,-20040.370000000003,open,
+565,Unknown,Main Station,,,22747.19,2426.24,-20320.949999999997,open,
+566,Unknown,Main Station,2025-10-01T00:00:00,,22747.19,2426.24,-20320.949999999997,open,
+567,Unknown,Main Station,,,22721.69,2466.24,-20255.449999999997,open,
+568,Unknown,Main Station,,,23997.19,1613.24,-22383.949999999997,open,
+569,Unknown,Main Station,,,23861.41,1832.34,-22029.07,open,
+570,Unknown,Main Station,,,22593.01,3121.64,-19471.37,open,
+571,Unknown,Main Station,,,22548.51,3194.64,-19353.87,open,
+572,Unknown,Main Station,,,22523.01,2797.64,-19725.37,open,
+573,Unknown,Main Station,2025-10-02T00:00:00,,22523.01,2797.64,-19725.37,open,
+574,Unknown,Main Station,,,22668.01,3049.64,-19618.37,open,
+575,Unknown,Main Station,,,22563.51,3009.14,-19554.37,open,
+576,Unknown,Main Station,,,22560.01,3021.14,-19538.87,open,
+577,Unknown,Main Station,,,22587.51,2956.64,-19630.87,open,
+578,Unknown,Main Station,,,22491.41,3162.5,-19328.91,open,
+579,Unknown,Main Station,,,22673.41,2765.5,-19907.91,open,
+580,Unknown,Main Station,2025-10-03T00:00:00,,22673.41,2765.5,-19907.91,open,
+581,Unknown,Main Station,,,21745.28,3921.66,-17823.62,open,
+582,Unknown,Main Station,,,21563.28,4189.66,-17373.62,open,
+583,Unknown,Main Station,,,21563.28,4189.66,-17373.62,open,
+584,Unknown,Main Station,2025-10-04T00:00:00,,21563.28,4189.66,-17373.62,open,
+585,Unknown,Main Station,,,21490.41,4328.66,-17161.75,open,
+586,Unknown,Main Station,,,21479.76,4361.26,-17118.5,open,
+587,Unknown,Main Station,,,22094.78,4226.76,-17868.019999999997,open,
+588,Unknown,Main Station,,,22067.78,4280.76,-17787.019999999997,open,
+589,Unknown,Main Station,,,22059.78,4295.76,-17764.019999999997,open,
+590,Unknown,Main Station,,,22030.18,4335.76,-17694.42,open,
+591,Unknown,Main Station,,,21946.66,3938.76,-18007.9,open,
+592,Unknown,Main Station,2025-10-06T00:00:00,,21946.66,3938.76,-18007.9,open,
+593,Unknown,Main Station,,,21802.73,4106.46,-17696.27,open,
+594,Unknown,Main Station,,,21769.61,4164.46,-17605.15,open,
+595,Unknown,Main Station,,,21759.01,4184.36,-17574.649999999998,open,
+596,Unknown,Main Station,,,22440.66,4087.36,-18353.3,open,
+597,Unknown,Main Station,,,22136.16,4502.86,-17633.3,open,
+598,Unknown,Main Station,,,21948.51,4105.86,-17842.649999999998,open,
+599,Unknown,Main Station,2025-10-07T00:00:00,,21948.51,4105.86,-17842.649999999998,open,
+600,Unknown,Main Station,,,21897.31,4191.66,-17705.65,open,
+601,Unknown,Main Station,,,21972.12,4565.05,-17407.07,open,
+602,Unknown,Main Station,,,21391.12,5208.05,-16183.07,open,
+603,Unknown,Main Station,,,21389.37,5216.05,-16173.32,open,
+604,Unknown,Main Station,,,14083.41,5416.85,-8666.56,open,
+605,Unknown,Main Station,2025-10-08T00:00:00,,14083.41,5416.85,-8666.56,open,
+606,Unknown,Main Station,,,13913.39,5637.45,-8275.939999999999,open,
+607,Unknown,Main Station,,,13910.39,5647.45,-8262.939999999999,open,
+608,Unknown,Main Station,,,14065.39,5492.45,-8572.939999999999,open,
+609,Unknown,Main Station,,,14056.0,5513.34,-8542.66,open,
+610,Unknown,Main Station,,,14050.05,5527.79,-8522.259999999998,open,
+611,Unknown,Main Station,,,14050.05,5527.79,-8522.259999999998,open,
+612,Unknown,Main Station,2025-10-09T00:00:00,,14050.05,5527.79,-8522.259999999998,open,
+613,Unknown,Main Station,,,13970.55,5645.59,-8324.96,open,
+614,Unknown,Main Station,,,14087.05,5529.09,-8557.96,open,
+615,Unknown,Main Station,,,14501.55,5114.59,-9386.96,open,
+616,Unknown,Main Station,,,14473.6,5150.59,-9323.01,open,
+617,Unknown,Main Station,,,14473.6,5150.59,-9323.01,open,
+618,Unknown,Main Station,2025-10-10T00:00:00,,14473.6,5150.59,-9323.01,open,
+619,Unknown,Main Station,,,14108.7,5562.97,-8545.73,open,
+620,Unknown,Main Station,,,14093.7,5587.97,-8505.73,open,
+621,Unknown,Main Station,,,14123.7,5557.97,-8565.73,open,
+622,Unknown,Main Station,,,14122.2,5564.97,-8557.23,open,
+623,Unknown,Main Station,,,14120.0,5567.77,-8552.23,open,
+624,Unknown,Main Station,,,14190.0,5497.77,-8692.23,open,
+625,Unknown,Main Station,,,14248.0,5439.77,-8808.23,open,
+626,Unknown,Main Station,,,14241.85,5460.27,-8781.58,open,
+627,Unknown,Main Station,,,14839.85,4862.27,-9977.58,open,
+628,Unknown,Main Station,,,14839.85,4862.27,-9977.58,open,
+629,Unknown,Main Station,2025-10-11T00:00:00,,14839.85,4862.27,-9977.58,open,
+632,Unknown,Main Station,,,14738.95,5094.87,-9644.080000000002,open,
+633,Unknown,Main Station,2025-10-13T00:00:00,,14738.95,5094.87,-9644.080000000002,open,
+637,Unknown,Main Station,,,14709.85,5156.87,-9552.98,open,
+638,Unknown,Main Station,,,14709.85,5156.87,-9552.98,open,
+639,Unknown,Main Station,2025-10-14T00:00:00,,14709.85,5156.87,-9552.98,open,
+640,Unknown,Main Station,,,14883.35,4983.37,-9899.98,open,
+641,Unknown,Main Station,,,14797.6,5137.37,-9660.23,open,
+642,Unknown,Main Station,,,14721.33,5240.14,-9481.189999999999,open,
+643,Unknown,Main Station,,,14721.33,5240.14,-9481.189999999999,open,
+644,Unknown,Main Station,2025-10-15T00:00:00,,14721.33,5240.14,-9481.189999999999,open,
+645,Unknown,Main Station,,,14699.08,5284.14,-9414.939999999999,open,
+646,Unknown,Main Station,,,14759.58,5223.64,-9535.939999999999,open,
+647,Unknown,Main Station,,,14705.03,5290.64,-9414.39,open,
+648,Unknown,Main Station,,,14667.84,5355.95,-9311.89,open,
+649,Unknown,Main Station,,,14663.44,5361.55,-9301.89,open,
+650,Unknown,Main Station,,,15098.44,4926.55,-10171.89,open,
+651,Unknown,Main Station,,,15096.94,4932.55,-10164.39,open,
+652,Unknown,Main Station,,,15096.94,4932.55,-10164.39,open,
+653,Unknown,Main Station,2025-10-16T00:00:00,,15096.94,4932.55,-10164.39,open,
+654,Unknown,Main Station,,,15085.44,4974.55,-10110.89,open,
+655,Unknown,Main Station,,,15073.59,5005.62,-10067.970000000001,open,
+656,Unknown,Main Station,,,15070.59,5015.62,-10054.970000000001,open,
+657,Unknown,Main Station,,,15070.59,5015.62,-10054.970000000001,open,
+658,Unknown,Main Station,2025-10-17T00:00:00,,15070.59,5015.62,-10054.970000000001,open,
+659,Unknown,Main Station,,,15049.0,5054.02,-9994.98,open,
+660,Unknown,Main Station,,,15025.67,5096.71,-9928.96,open,
+661,Unknown,Main Station,,,15559.67,4562.71,-10996.96,open,
+662,Unknown,Main Station,,,15381.33,4857.55,-10523.779999999999,open,
+663,Unknown,Main Station,,,15381.33,4857.55,-10523.779999999999,open,
+664,Unknown,Main Station,2025-10-18T00:00:00,,15381.33,4857.55,-10523.779999999999,open,
+665,Unknown,Main Station,,,15243.67,5016.01,-10227.66,open,
+666,Unknown,Main Station,,,15551.67,4708.01,-10843.66,open,
+667,Unknown,Main Station,,,15664.42,4595.26,-11069.16,open,
+668,Unknown,Main Station,,,15655.17,4629.26,-11025.91,open,
+669,Unknown,Main Station,,,15655.17,4629.26,-11025.91,open,
+670,Unknown,Main Station,2025-10-20T00:00:00,,15655.17,4629.26,-11025.91,open,
+671,Unknown,Main Station,,,15582.55,4718.81,-10863.739999999998,open,
+672,Unknown,Main Station,,,15532.15,4796.41,-10735.74,open,
+673,Unknown,Main Station,,,15521.9,4821.41,-10700.49,open,
+674,Unknown,Main Station,,,15521.9,4821.41,-10700.49,open,
+675,Unknown,Main Station,2025-10-21T00:00:00,,15521.9,4821.41,-10700.49,open,
+676,Unknown,Main Station,,,15641.65,4701.66,-10939.99,open,
+677,Unknown,Main Station,,,15336.84,5051.66,-10285.18,open,
+678,Unknown,Main Station,,,15334.65,5054.46,-10280.189999999999,open,
+679,Unknown,Main Station,,,16257.65,4131.46,-12126.189999999999,open,
+680,Unknown,Main Station,,,15584.4,4834.46,-10749.939999999999,open,
+681,Unknown,Main Station,,,15546.4,4914.46,-10631.939999999999,open,
+682,Unknown,Main Station,,,15533.54,4942.98,-10590.560000000001,open,
+683,Unknown,Main Station,,,15533.54,4942.98,-10590.560000000001,open,
+684,Unknown,Main Station,2025-10-22T00:00:00,,15533.54,4942.98,-10590.560000000001,open,
+685,Unknown,Main Station,,,15501.59,5011.78,-10489.810000000001,open,
+686,Unknown,Main Station,,,15500.59,5014.78,-10485.810000000001,open,
+688,Unknown,Main Station,,,15486.84,5048.78,-10438.060000000001,open,
+689,Unknown,Main Station,,,15486.84,5048.78,-10438.060000000001,open,
+690,Unknown,Main Station,2025-10-23T00:00:00,,15486.84,5048.78,-10438.060000000001,open,
+691,Unknown,Main Station,,,15474.74,5073.83,-10400.91,open,
+692,Unknown,Main Station,,,15513.24,5035.33,-10477.91,open,
+693,Unknown,Main Station,,,15523.24,5025.33,-10497.91,open,
+694,Unknown,Main Station,,,15487.09,5098.93,-10388.16,open,
+695,Unknown,Main Station,,,15487.09,5098.93,-10388.16,open,
+696,Unknown,Main Station,2025-10-24T00:00:00,,15487.09,5098.93,-10388.16,open,
+697,Unknown,Main Station,,,15486.09,5103.93,-10382.16,open,
+698,Unknown,Main Station,,,15422.67,5225.93,-10196.74,open,
+699,Unknown,Main Station,,,15418.17,5236.73,-10181.44,open,
+700,Unknown,Main Station,,,15372.42,5320.73,-10051.69,open,
+701,Unknown,Main Station,,,15368.02,5325.53,-10042.490000000002,open,
+702,Unknown,Main Station,,,15369.02,5320.53,-10048.490000000002,open,
+703,Unknown,Main Station,2025-10-25T00:00:00,,15369.02,5320.53,-10048.490000000002,open,
+704,Unknown,Main Station,,,15465.82,5223.73,-10242.09,open,
+705,Unknown,Main Station,,,15463.62,5226.53,-10237.09,open,
+706,Unknown,Main Station,,,15454.62,5251.53,-10203.09,open,
+707,Unknown,Main Station,,,15469.62,5236.53,-10233.09,open,
+708,Unknown,Main Station,,,15540.37,5165.78,-10374.59,open,
+709,Unknown,Main Station,,,15631.87,5074.28,-10557.59,open,
+710,Unknown,Main Station,,,15626.77,5096.28,-10530.490000000002,open,
+711,Unknown,Main Station,,,15521.07,5314.58,-10206.49,open,
+712,Unknown,Main Station,,,15521.07,5314.58,-10206.49,open,
+713,Unknown,Main Station,2025-10-27T00:00:00,,15521.07,5314.58,-10206.49,open,
+714,Unknown,Main Station,,,15536.81,5298.84,-10237.97,open,
+715,Unknown,Main Station,,,15505.56,5351.84,-10153.72,open,
+716,Unknown,Main Station,,,15493.56,5373.84,-10119.72,open,
+717,Unknown,Main Station,,,15660.56,5206.84,-10453.72,open,
+718,Unknown,Main Station,,,15684.76,5182.64,-10502.119999999999,open,
+719,Unknown,Main Station,,,15627.56,5246.32,-10381.24,open,
+720,Unknown,Main Station,,,15626.76,5250.32,-10376.44,open,
+721,Unknown,Main Station,,,15626.76,5250.32,-10376.44,open,
+722,Unknown,Main Station,2025-10-28T00:00:00,,15626.76,5250.32,-10376.44,open,
+723,Unknown,Main Station,,,15577.56,5343.62,-10233.939999999999,open,
+724,Unknown,Main Station,,,15567.56,5373.62,-10193.939999999999,open,
+725,Unknown,Main Station,,,15549.36,5406.42,-10142.94,open,
+726,Unknown,Main Station,,,15549.36,5406.42,-10142.94,open,
+727,Unknown,Main Station,2025-10-29T00:00:00,,15549.36,5406.42,-10142.94,open,
+728,Unknown,Main Station,,,15598.76,5357.02,-10241.74,open,
+729,Unknown,Main Station,,,15597.26,5364.02,-10233.24,open,
+730,Unknown,Main Station,,,15563.81,5440.82,-10122.99,open,
+731,Unknown,Main Station,,,15563.81,5440.82,-10122.99,open,
+732,Unknown,Main Station,2025-10-30T00:00:00,,15563.81,5440.82,-10122.99,open,
+733,Unknown,Main Station,,,15512.56,5539.82,-9972.74,open,
+734,Unknown,Main Station,,,15505.11,5555.62,-9949.490000000002,open,
+735,Unknown,Main Station,,,15476.91,5598.42,-9878.49,open,
+736,Unknown,Main Station,,,15476.91,5598.42,-9878.49,open,
+737,Unknown,Main Station,2025-10-31T00:00:00,,15476.91,5598.42,-9878.49,open,
+738,Unknown,Main Station,,,15641.91,5433.42,-10208.49,open,
+739,Unknown,Main Station,,,15641.21,5436.42,-10204.789999999999,open,
+740,Unknown,Main Station,,,16372.21,4705.42,-11666.789999999999,open,
+741,Unknown,Main Station,,,16357.06,4754.22,-11602.84,open,
+742,Unknown,Main Station,,,16290.01,4864.42,-11425.59,open,
+743,Unknown,Main Station,,,16290.01,4864.42,-11425.59,open,
+744,Unknown,Main Station,2025-11-01T00:00:00,,16290.01,4864.42,-11425.59,open,
+745,Unknown,Main Station,,,16216.34,4984.42,-11231.92,open,
+746,Unknown,Main Station,,,16347.44,4853.32,-11494.12,open,
+747,Unknown,Main Station,,,16333.94,4883.32,-11450.62,open,
+748,Unknown,Main Station,,,16324.98,4909.34,-11415.64,open,
+749,Unknown,Main Station,,,16324.98,4909.34,-11415.64,open,
+750,Unknown,Main Station,2025-11-03T00:00:00,,16324.98,4909.34,-11415.64,open,
+751,Unknown,Main Station,,,16247.58,5007.14,-11240.439999999999,open,
+752,Unknown,Main Station,,,16094.71,5212.14,-10882.57,open,
+753,Unknown,Main Station,,,16089.01,5224.94,-10864.07,open,
+754,Unknown,Main Station,,,16078.01,5238.94,-10839.07,open,
+755,Unknown,Main Station,,,16077.01,5243.94,-10833.07,open,
+756,Unknown,Main Station,,,16077.01,5243.94,-10833.07,open,
+757,Unknown,Main Station,2025-11-04T00:00:00,,16077.01,5243.94,-10833.07,open,
+758,Unknown,Main Station,,,16061.01,5273.94,-10787.07,open,
+759,Unknown,Main Station,,,16076.75,5258.2,-10818.55,open,
+760,Unknown,Main Station,,,15938.5,5440.2,-10498.3,open,
+761,Unknown,Main Station,,,16113.2,5265.5,-10847.7,open,
+762,Unknown,Main Station,,,16112.4,5268.5,-10843.9,open,
+763,Unknown,Main Station,,,15925.15,5491.5,-10433.65,open,
+764,Unknown,Main Station,,,15925.15,5491.5,-10433.65,open,Closing Month
+765,Unknown,Main Station,2025-11-05T00:00:00,,15259.39,5491.5,-9767.89,open,Opening Month
+766,Unknown,Main Station,2025-11-05T00:00:00,,15259.39,5491.5,-9767.89,open,Opening Day
+767,Unknown,Main Station,,2025-11-05T00:00:00,15903.45,5537.3,-10366.150000000001,closed,Closing Shift
+769,Unknown,Main Station,,2025-11-05T00:00:00,18291.2,3162.3,-15128.900000000001,closed,Closing Shift
+770,Unknown,Main Station,,2025-11-05T00:00:00,16898.08,4620.3,-12277.780000000002,closed,Closing Shift
+771,Unknown,Main Station,,2025-11-05T00:00:00,16096.18,5454.7,-10641.48,closed,Closing Shift
+772,Unknown,Main Station,,,16096.18,5454.7,-10641.48,open,Closing Day
+773,Unknown,Main Station,,,15522.16,5362.3,-10159.86,open,Inventory
+775,Unknown,Main Station,2025-11-06T00:00:00,,15773.39,5782.7,-9990.689999999999,open,Opening Day
+782,Unknown,Main Station,,,15293.39,5782.7,-9510.689999999999,open,Closing Day
+790,Unknown,Main Station,2025-11-07T00:00:00,,15293.39,5782.7,-9510.689999999999,open,Opening Day
+791,Unknown,Main Station,,,15141.53,6019.36,-9122.170000000002,open,Closing Day
+795,Unknown,Main Station,2025-11-08T00:00:00,,15141.53,6019.36,-9122.170000000002,open,Opening Day
+796,Unknown,Main Station,,2025-11-08T00:00:00,15122.03,6064.36,-9057.670000000002,closed,Closing Shift
+797,Unknown,Main Station,,,16171.78,5014.61,-11157.170000000002,open,
+798,Unknown,Main Station,,2025-11-08T00:00:00,16166.83,5027.41,-11139.42,closed,Closing Shift
+799,Unknown,Main Station,,,16194.33,4999.91,-11194.42,open,
+800,Unknown,Main Station,,2025-11-08T00:00:00,16139.6,5077.79,-11061.810000000001,closed,Closing Shift
+801,Unknown,Main Station,,,16139.6,5077.79,-11061.810000000001,open,Closing Day
+802,Unknown,Main Station,2025-11-10T00:00:00,,16139.6,5077.79,-11061.810000000001,open,Opening Day
+803,Unknown,Main Station,,2025-11-10T00:00:00,16125.68,5109.46,-11016.220000000001,closed,Closing Shift
+804,Unknown,Main Station,,2025-11-10T00:00:00,16088.98,5179.26,-10909.72,closed,Closing Shift
+805,Unknown,Main Station,,,17668.98,3599.26,-14069.72,open,
+806,Unknown,Main Station,,2025-11-10T00:00:00,16054.54,5263.63,-10790.91,closed,Closing Shift
+807,Unknown,Main Station,,,16874.54,4443.63,-12430.91,open,
+808,Unknown,Main Station,,2025-11-10T00:00:00,16866.54,4458.63,-12407.91,closed,Closing Shift
+809,Unknown,Main Station,,,17916.54,3408.63,-14507.91,open,
+810,Unknown,Main Station,,2025-11-10T00:00:00,17915.29,3413.63,-14501.66,closed,Closing Shift
+811,Unknown,Main Station,,,19495.29,1833.63,-17661.66,open,
+812,Unknown,Main Station,,2025-11-10T00:00:00,17895.54,3449.63,-14445.91,closed,Closing Shift
+813,Unknown,Main Station,,2025-11-10T00:00:00,17887.64,3462.88,-14424.759999999998,closed,Closing Shift
+814,Unknown,Main Station,,,17887.64,3462.88,-14424.759999999998,open,Closing Day
+815,Unknown,Main Station,2025-11-11T00:00:00,,17887.64,3462.88,-14424.759999999998,open,Opening Day
+816,Unknown,Main Station,,2025-11-11T00:00:00,17871.42,3482.89,-14388.529999999999,closed,Closing Shift
+817,Unknown,Main Station,,2025-11-11T00:00:00,17864.97,3502.69,-14362.28,closed,Closing Shift
+818,Unknown,Main Station,,2025-11-11T00:00:00,17854.97,3522.69,-14332.28,closed,Closing Shift
+819,Unknown,Main Station,,,20074.97,1302.69,-18772.280000000002,open,
+820,Unknown,Main Station,,2025-11-11T00:00:00,18437.57,3008.29,-15429.279999999999,closed,Closing Shift
+821,Unknown,Main Station,,2025-11-11T00:00:00,18429.67,3023.89,-15405.779999999999,closed,Closing Shift
+822,Unknown,Main Station,,,18429.67,3023.89,-15405.779999999999,open,Closing Day
+823,Unknown,Main Station,2025-11-12T00:00:00,,18429.67,3023.89,-15405.779999999999,open,Opening Day
+824,Unknown,Main Station,,2025-11-12T00:00:00,18409.92,3076.89,-15333.029999999999,closed,Closing Shift
+825,Unknown,Main Station,,2025-11-12T00:00:00,18383.72,3129.69,-15254.03,closed,Closing Shift
+826,Unknown,Main Station,,2025-11-12T00:00:00,18348.22,3182.69,-15165.53,closed,Closing Shift
+827,Unknown,Main Station,,,18348.22,3182.69,-15165.53,open,Closing Day
+828,Unknown,Main Station,2025-11-13T00:00:00,,18348.22,3182.69,-15165.53,open,Opening Day
+829,Unknown,Main Station,,,18494.02,3036.89,-15457.130000000001,open,
+830,Unknown,Main Station,,2025-11-13T00:00:00,18485.22,3069.69,-15415.53,closed,Closing Shift
+831,Unknown,Main Station,,,18636.22,2918.69,-15717.53,open,
+832,Unknown,Main Station,,2025-11-13T00:00:00,18617.52,2953.49,-15664.03,closed,Closing Shift
+833,Unknown,Main Station,,,18617.52,2953.49,-15664.03,open,Closing Day
+834,Unknown,Main Station,2025-11-14T00:00:00,,18617.52,2953.49,-15664.03,open,Opening Day
+835,Unknown,Main Station,,2025-11-14T00:00:00,18614.13,2957.6,-15656.53,closed,Closing Shift
+836,Unknown,Main Station,,2025-11-14T00:00:00,18585.68,3012.6,-15573.08,closed,Closing Shift
+837,Unknown,Main Station,,2025-11-14T00:00:00,18585.23,3014.6,-15570.63,closed,Closing Shift
+838,Unknown,Main Station,,2025-11-14T00:00:00,18526.93,3096.7,-15430.23,closed,Closing Shift
+839,Unknown,Main Station,,,18526.93,3096.7,-15430.23,open,Closing Day
+840,Unknown,Main Station,2025-11-15T00:00:00,,18526.93,3096.7,-15430.23,open,Opening Day
+841,Unknown,Main Station,,2025-11-15T00:00:00,18471.14,3222.75,-15248.39,closed,Closing Shift
+842,Unknown,Main Station,,2025-11-15T00:00:00,18437.04,3288.15,-15148.890000000001,closed,Closing Shift
+843,Unknown,Main Station,,2025-11-15T00:00:00,18414.44,3339.95,-15074.489999999998,closed,Closing Shift
+844,Unknown,Main Station,,,18414.44,3339.95,-15074.489999999998,open,Closing Day
+845,Unknown,Main Station,2025-11-17T00:00:00,,18414.44,3339.95,-15074.489999999998,open,Opening Day
+846,Unknown,Main Station,,,18448.44,3304.95,-15143.489999999998,open,Return Item
+847,Unknown,Main Station,,,18473.44,3254.95,-15218.489999999998,open,Return Item
+848,Unknown,Main Station,,,18489.44,3229.95,-15259.489999999998,open,Return Item
+849,Unknown,Main Station,,,18505.44,3206.95,-15298.489999999998,open,Return Item
+850,Unknown,Main Station,,2025-11-17T00:00:00,18570.24,3130.95,-15439.29,closed,Closing Shift
+851,Unknown,Main Station,,,18577.24,3115.95,-15461.29,open,Return Item
+852,Unknown,Main Station,,2025-11-17T00:00:00,18658.49,3013.95,-15644.54,closed,Closing Shift
+853,Unknown,Main Station,,,18673.49,2988.95,-15684.54,open,Return Item
+854,Unknown,Main Station,,2025-11-17T00:00:00,18765.88,2841.9,-15923.980000000001,closed,Closing Shift
+855,Unknown,Main Station,,,18819.88,2787.9,-16031.980000000001,open,
+856,Unknown,Main Station,,2025-11-17T00:00:00,18930.28,2609.7,-16320.579999999998,closed,Closing Shift
+857,Unknown,Main Station,,,18515.28,3266.7,-15248.579999999998,open,Closing Day
+858,Unknown,Main Station,2025-11-18T00:00:00,,18515.28,3266.7,-15248.579999999998,open,Opening Day
+859,Unknown,Main Station,,,18785.08,2996.9,-15788.180000000002,open,
+860,Unknown,Main Station,,2025-11-18T00:00:00,18748.58,3066.9,-15681.680000000002,closed,Closing Shift
+861,Unknown,Main Station,,2025-11-18T00:00:00,18720.68,3122.9,-15597.78,closed,Closing Shift
+862,Unknown,Main Station,,2025-11-18T00:00:00,18664.18,3218.4,-15445.78,closed,Closing Shift
+863,Unknown,Main Station,,2025-11-18T00:00:00,18656.18,3233.4,-15422.78,closed,Closing Shift
+864,Unknown,Main Station,,2025-11-18T00:00:00,18547.28,3465.0,-15082.279999999999,closed,Closing Shift
+865,Unknown,Main Station,,,18547.28,3465.0,-15082.279999999999,open,Closing Day
+866,Unknown,Main Station,,,18548.53,3460.0,-15088.529999999999,open,Return Item
+867,Unknown,Main Station,,,18583.53,3425.0,-15158.529999999999,open,
+868,Unknown,Main Station,2025-11-20T00:00:00,,18583.53,3425.0,-15158.529999999999,open,Opening Day
+869,Unknown,Main Station,,2025-11-20T00:00:00,18480.13,3552.4,-14927.730000000001,closed,Closing Shift
+870,Unknown,Main Station,,2025-11-20T00:00:00,18471.33,3563.6,-14907.730000000001,closed,Closing Shift
+871,Unknown,Main Station,,,18804.33,3230.6,-15573.730000000001,open,
+872,Unknown,Main Station,,,18876.33,3158.6,-15717.730000000001,open,
+873,Unknown,Main Station,,,18876.33,3158.6,-15717.730000000001,open,Closing Day
+874,Unknown,Main Station,2025-11-21T00:00:00,,18876.33,3158.6,-15717.730000000001,open,Opening Day
+875,Unknown,Main Station,,2025-11-21T00:00:00,18840.93,3249.2,-15591.73,closed,Closing Shift
+876,Unknown,Main Station,,,18853.68,3236.2,-15617.48,open,Return Item
+877,Unknown,Main Station,,2025-11-21T00:00:00,18862.93,3223.2,-15639.73,closed,Closing Shift
+878,Unknown,Main Station,,,19352.93,2733.2,-16619.73,open,
+879,Unknown,Main Station,,,19989.34,2353.79,-17635.55,open,
+883,Unknown,Main Station,,,19976.59,2353.79,-17622.8,open,Closing Day
+886,Unknown,Main Station,2025-11-22T00:00:00,,19976.59,2353.79,-17622.8,open,Opening Day
+887,Unknown,Main Station,,2025-11-22T00:00:00,19971.39,2364.59,-17606.8,closed,Closing Shift
+888,Unknown,Main Station,,2025-11-22T00:00:00,19966.19,2377.39,-17588.8,closed,Closing Shift
+889,Unknown,Main Station,,2025-11-22T00:00:00,19963.99,2380.19,-17583.800000000003,closed,Closing Shift
+890,Unknown,Main Station,,,20793.99,1550.19,-19243.800000000003,open,
+891,Unknown,Main Station,,,20813.99,1550.19,-19263.800000000003,open,Closing Day
+892,Unknown,Main Station,2025-11-24T00:00:00,,20813.99,1550.19,-19263.800000000003,open,Opening Day
+893,Unknown,Main Station,,2025-11-24T00:00:00,20809.04,1557.24,-19251.8,closed,Closing Shift
+894,Unknown,Main Station,,,20809.04,1557.24,-19251.8,open,Closing Day
+895,Unknown,Main Station,2025-11-25T00:00:00,,20809.04,1557.24,-19251.8,open,Opening Day
+896,Unknown,Main Station,,2025-11-25T00:00:00,20466.65,2051.57,-18415.08,closed,Closing Shift
+897,Unknown,Main Station,,,20467.9,2046.57,-18421.33,open,Return Item
+898,Unknown,Main Station,,,20552.88,1961.59,-18591.29,open,
+899,Unknown,Main Station,,,20552.88,1961.59,-18591.29,open,Closing Day
+900,Unknown,Main Station,2025-11-26T00:00:00,,20552.88,1961.59,-18591.29,open,Opening Day
+901,Unknown,Main Station,,2025-11-26T00:00:00,20339.61,2271.94,-18067.670000000002,closed,Closing Shift
+902,Unknown,Main Station,,,20369.49,2242.06,-18127.43,open,
+903,Unknown,Main Station,,2025-11-26T00:00:00,20343.29,2274.86,-18068.43,closed,Closing Shift
+904,Unknown,Main Station,,,20343.29,2274.86,-18068.43,open,Closing Day
+905,Unknown,Main Station,2025-11-27T00:00:00,,20343.29,2274.86,-18068.43,open,Opening Day
+906,Unknown,Main Station,,2025-11-27T00:00:00,20323.29,2315.86,-18007.43,closed,Closing Shift
+907,Unknown,Main Station,,2025-11-27T00:00:00,20317.11,2332.66,-17984.45,closed,Closing Shift
+908,Unknown,Main Station,,,20317.11,2332.66,-17984.45,open,Closing Day
+909,Unknown,Main Station,2025-11-28T00:00:00,,20317.11,2332.66,-17984.45,open,Opening Day
+910,Unknown,Main Station,,2025-11-28T00:00:00,20313.61,2350.66,-17962.95,closed,Closing Shift
+911,Unknown,Main Station,,2025-11-28T00:00:00,20236.28,2486.96,-17749.32,closed,Closing Shift
+912,Unknown,Main Station,,2025-11-28T00:00:00,20200.53,2549.56,-17650.969999999998,closed,Closing Shift
+914,Unknown,Main Station,,,20260.31,2473.56,-17786.75,open,Purchasing
+915,Unknown,Main Station,,2025-11-28T00:00:00,20258.81,2480.56,-17778.25,closed,Closing Shift
+916,Unknown,Main Station,,,20258.81,2480.56,-17778.25,open,Closing Day
+917,Unknown,Main Station,2025-11-29T00:00:00,,20258.81,2480.56,-17778.25,open,Opening Day
+918,Unknown,Main Station,,2025-11-29T00:00:00,20143.06,2644.56,-17498.5,closed,Closing Shift
+919,Unknown,Main Station,,2025-11-29T00:00:00,20120.56,2681.56,-17439.0,closed,Closing Shift
+920,Unknown,Main Station,,,20122.06,2676.56,-17445.5,open,Return Item
+921,Unknown,Main Station,,2025-11-29T00:00:00,20119.56,2679.36,-17440.2,closed,Closing Shift
+922,Unknown,Main Station,,,20302.56,2496.36,-17806.2,open,
+923,Unknown,Main Station,,,20302.56,2496.36,-17806.2,open,Closing Day
+924,Unknown,Main Station,2025-11-30T00:00:00,,20302.56,2496.36,-17806.2,open,Opening Day
+925,Unknown,Main Station,,2025-11-30T00:00:00,20027.06,2814.96,-17212.100000000002,closed,Closing Shift
+926,Unknown,Main Station,,2025-11-30T00:00:00,20022.06,2831.76,-17190.300000000003,closed,Closing Shift
+927,Unknown,Main Station,,,20022.06,2831.76,-17190.300000000003,open,Closing Day
+928,Unknown,Main Station,2025-12-01T00:00:00,,20022.06,2831.76,-17190.300000000003,open,Opening Day
+929,Unknown,Main Station,,2025-12-01T00:00:00,19471.81,3591.76,-15880.050000000001,closed,Closing Shift
+930,Unknown,Main Station,,,19486.81,3566.76,-15920.050000000001,open,Return Item
+931,Unknown,Main Station,,,19486.81,3566.76,-15920.050000000001,open,Closing Day
+932,Unknown,Main Station,2025-12-02T00:00:00,,19486.81,3566.76,-15920.050000000001,open,Opening Day
+933,Unknown,Main Station,,2025-12-02T00:00:00,19384.31,3727.16,-15657.150000000001,closed,Closing Shift
+934,Unknown,Main Station,,2025-12-02T00:00:00,19381.81,3729.96,-15651.850000000002,closed,Closing Shift
+935,Unknown,Main Station,,,19381.81,3729.96,-15651.850000000002,open,Closing Day
+936,Unknown,Main Station,,,19381.81,3729.96,-15651.850000000002,open,Closing Month
+937,Unknown,Main Station,2025-12-03T00:00:00,,19377.81,3729.96,-15647.850000000002,open,Opening Month
+938,Unknown,Main Station,2025-12-03T00:00:00,,19377.81,3729.96,-15647.850000000002,open,Opening Day
+939,Unknown,Main Station,,2025-12-03T00:00:00,19362.05,3760.74,-15601.31,closed,Closing Shift
+940,Unknown,Main Station,,2025-12-03T00:00:00,19355.8,3771.34,-15584.46,closed,Closing Shift
+941,Unknown,Main Station,,2025-12-03T00:00:00,19353.3,3781.34,-15571.96,closed,Closing Shift
+942,Unknown,Main Station,,2025-12-03T00:00:00,19352.5,3784.34,-15568.16,closed,Closing Shift
+943,Unknown,Main Station,,,19352.5,3784.34,-15568.16,open,Closing Day
+944,Unknown,Main Station,2025-12-04T00:00:00,,19352.5,3784.34,-15568.16,open,Opening Day
+945,Unknown,Main Station,,2025-12-04T00:00:00,19350.0,3787.14,-15562.86,closed,Closing Shift
+946,Unknown,Main Station,,,19647.0,3490.14,-16156.86,open,
+947,Unknown,Main Station,,2025-12-04T00:00:00,19568.0,3608.14,-15959.86,closed,Closing Shift
+948,Unknown,Main Station,,2025-12-04T00:00:00,19563.75,3626.14,-15937.61,closed,Closing Shift
+949,Unknown,Main Station,,2025-12-04T00:00:00,19007.0,4242.74,-14764.26,closed,Closing Shift
+950,Unknown,Main Station,,2025-12-04T00:00:00,18990.0,4269.74,-14720.26,closed,Closing Shift
+951,Unknown,Main Station,,,18990.0,4269.74,-14720.26,open,Closing Day
+952,Unknown,Main Station,2025-12-05T00:00:00,,18990.0,4269.74,-14720.26,open,Opening Day
+953,Unknown,Main Station,,2025-12-05T00:00:00,18394.11,4993.74,-13400.37,closed,Closing Shift
+954,Unknown,Main Station,,,18552.11,4803.74,-13748.37,open,Return Item
+955,Unknown,Main Station,,,18672.11,4668.74,-14003.37,open,Return Item
+956,Unknown,Main Station,,,18961.11,4338.74,-14622.37,open,Return Item
+957,Unknown,Main Station,,2025-12-05T00:00:00,18386.11,5038.74,-13347.37,closed,Closing Shift
+958,Unknown,Main Station,,2025-12-05T00:00:00,18383.61,5041.54,-13342.07,closed,Closing Shift
+959,Unknown,Main Station,,2025-12-05T00:00:00,18380.33,5045.32,-13335.010000000002,closed,Closing Shift
+960,Unknown,Main Station,,,18635.33,4790.32,-13845.010000000002,open,
+961,Unknown,Main Station,,,18635.33,4790.32,-13845.010000000002,open,Closing Day
+962,Unknown,Main Station,2025-12-06T00:00:00,,18635.33,4790.32,-13845.010000000002,open,Opening Day
+966,Unknown,Main Station,,2025-12-06T00:00:00,18605.58,4833.32,-13772.260000000002,closed,Closing Shift
+967,Unknown,Main Station,,,19227.58,4211.32,-15016.260000000002,open,
+968,Unknown,Main Station,,,19457.58,3981.32,-15476.260000000002,open,
+969,Unknown,Main Station,,2025-12-06T00:00:00,19456.08,3988.32,-15467.760000000002,closed,Closing Shift
+970,Unknown,Main Station,,2025-12-06T00:00:00,19442.33,4018.07,-15424.260000000002,closed,Closing Shift
+971,Unknown,Main Station,,2025-12-06T00:00:00,19425.63,4051.07,-15374.560000000001,closed,Closing Shift
+972,Unknown,Main Station,,,19425.63,4051.07,-15374.560000000001,open,Closing Day
+973,Unknown,Main Station,2025-12-07T00:00:00,,19425.63,4051.07,-15374.560000000001,open,Opening Day
+974,Unknown,Main Station,,2025-12-07T00:00:00,19391.13,4101.07,-15290.060000000001,closed,Closing Shift
+975,Unknown,Main Station,,,19391.13,4101.07,-15290.060000000001,open,Closing Day
+976,Unknown,Main Station,2025-12-08T00:00:00,,19391.13,4101.07,-15290.060000000001,open,Opening Day
+977,Unknown,Main Station,,2025-12-08T00:00:00,19351.9,4182.07,-15169.830000000002,closed,Closing Shift
+978,Unknown,Main Station,,2025-12-08T00:00:00,19327.9,4213.87,-15114.030000000002,closed,Closing Shift
+979,Unknown,Main Station,,,19327.9,4213.87,-15114.030000000002,open,Closing Day
+980,Unknown,Main Station,2025-12-09T00:00:00,,19327.9,4213.87,-15114.030000000002,open,Opening Day
+981,Unknown,Main Station,,2025-12-09T00:00:00,19326.15,4219.87,-15106.280000000002,closed,Closing Shift
+982,Unknown,Main Station,,2025-12-09T00:00:00,19296.78,4295.17,-15001.609999999999,closed,Closing Shift
+983,Unknown,Main Station,,2025-12-09T00:00:00,19289.78,4320.17,-14969.609999999999,closed,Closing Shift
+984,Unknown,Main Station,,2025-12-09T00:00:00,19255.78,4365.17,-14890.609999999999,closed,Closing Shift
+985,Unknown,Main Station,,2025-12-09T00:00:00,19251.78,4372.97,-14878.809999999998,closed,Closing Shift
+986,Unknown,Main Station,,,19326.78,4297.97,-15028.809999999998,open,
+987,Unknown,Main Station,,2025-12-09T00:00:00,19325.28,4317.97,-15007.309999999998,closed,Closing Shift
+988,Unknown,Main Station,,,20552.28,3090.97,-17461.309999999998,open,
+989,Unknown,Main Station,,,20552.28,3090.97,-17461.309999999998,open,Closing Day
+990,Unknown,Main Station,2025-12-10T00:00:00,,20552.28,3090.97,-17461.309999999998,open,Opening Day
+991,Unknown,Main Station,,2025-12-10T00:00:00,20547.92,3098.77,-17449.149999999998,closed,Closing Shift
+992,Unknown,Main Station,,2025-12-10T00:00:00,20482.68,3212.8,-17269.88,closed,Closing Shift
+993,Unknown,Main Station,,,20482.68,3212.8,-17269.88,open,Closing Day
+994,Unknown,Main Station,2025-12-11T00:00:00,,20482.68,3212.8,-17269.88,open,Opening Day
+995,Unknown,Main Station,,2025-12-11T00:00:00,20454.68,3248.2,-17206.48,closed,Closing Shift
+996,Unknown,Main Station,,2025-12-11T00:00:00,20151.68,3596.6,-16555.08,closed,Closing Shift
+997,Unknown,Main Station,,,20151.68,3596.6,-16555.08,open,Closing Day
+998,Unknown,Main Station,2025-12-12T00:00:00,,20151.68,3596.6,-16555.08,open,Opening Day
+999,Unknown,Main Station,,2025-12-12T00:00:00,20078.68,3731.7,-16346.98,closed,Closing Shift
+1000,Unknown,Main Station,,,20465.68,3344.7,-17120.98,open,
+1001,Unknown,Main Station,,,20622.68,3187.7,-17434.98,open,
+1002,Unknown,Main Station,,2025-12-12T00:00:00,20578.18,3264.7,-17313.48,closed,Closing Shift
+1003,Unknown,Main Station,,,20578.18,3264.7,-17313.48,open,Closing Day
+1004,Unknown,Main Station,2025-12-13T00:00:00,,20578.18,3264.7,-17313.48,open,Opening Day
+1005,Unknown,Main Station,,2025-12-13T00:00:00,20491.18,3463.7,-17027.48,closed,Closing Shift
+1006,Unknown,Main Station,,2025-12-13T00:00:00,20488.68,3466.5,-17022.18,closed,Closing Shift
+1007,Unknown,Main Station,,,20488.68,3466.5,-17022.18,open,Closing Day
+1008,Unknown,Main Station,2025-12-14T00:00:00,,20488.68,3466.5,-17022.18,open,Opening Day
+1009,Unknown,Main Station,,2025-12-14T00:00:00,20473.68,3489.3,-16984.38,closed,Closing Shift
+1010,Unknown,Main Station,,2025-12-14T00:00:00,20469.68,3497.1,-16972.58,closed,Closing Shift
+1011,Unknown,Main Station,,,20469.68,3497.1,-16972.58,open,Closing Day
+1012,Unknown,Main Station,2025-12-15T00:00:00,,20469.68,3497.1,-16972.58,open,Opening Day
+1013,Unknown,Main Station,,2025-12-15T00:00:00,20453.43,3527.1,-16926.33,closed,Closing Shift
+1014,Unknown,Main Station,,,20497.43,3483.1,-17014.33,open,
+1015,Unknown,Main Station,,2025-12-15T00:00:00,20434.18,3625.9,-16808.28,closed,Closing Shift
+1016,Unknown,Main Station,,2025-12-15T00:00:00,20431.68,3628.7,-16802.98,closed,Closing Shift
+1017,Unknown,Main Station,,,20431.68,3628.7,-16802.98,open,Closing Day
+1018,Unknown,Main Station,2025-12-16T00:00:00,,20431.68,3628.7,-16802.98,open,Opening Day
+1019,Unknown,Main Station,,2025-12-16T00:00:00,20036.18,4107.0,-15929.18,closed,Closing Shift
+1020,Unknown,Main Station,,2025-12-16T00:00:00,19942.68,4226.8,-15715.880000000001,closed,Closing Shift
+1021,Unknown,Main Station,,2025-12-16T00:00:00,19917.68,4251.8,-15665.880000000001,closed,Closing Shift
+1022,Unknown,Main Station,,,19995.18,4174.3,-15820.880000000001,open,
+1023,Unknown,Main Station,,,20078.51,4090.97,-15987.539999999999,open,
+1024,Unknown,Main Station,,,20110.51,4058.97,-16051.539999999999,open,
+1026,Unknown,Main Station,,,20110.51,4058.97,-16051.539999999999,open,Closing Day
+1027,Unknown,Main Station,2025-12-17T00:00:00,,20110.51,4058.97,-16051.539999999999,open,Opening Day
+1028,Unknown,Main Station,,2025-12-17T00:00:00,20031.4,4188.08,-15843.320000000002,closed,Closing Shift
+1029,Unknown,Main Station,,2025-12-17T00:00:00,19995.4,4263.28,-15732.120000000003,closed,Closing Shift
+1030,Unknown,Main Station,,,19995.4,4263.28,-15732.120000000003,open,Closing Day
+1031,Unknown,Main Station,2025-12-18T00:00:00,,19995.4,4263.28,-15732.120000000003,open,Opening Day
+1032,Unknown,Main Station,,2025-12-18T00:00:00,19973.25,4300.27,-15672.98,closed,Closing Shift
+1033,Unknown,Main Station,,,19988.79,4284.73,-15704.060000000001,open,
+1034,Unknown,Main Station,,2025-12-18T00:00:00,19366.29,5002.73,-14363.560000000001,closed,Closing Shift
+1035,Unknown,Main Station,,2025-12-18T00:00:00,19263.71,5204.63,-14059.079999999998,closed,Closing Shift
+1036,Unknown,Main Station,,2025-12-18T00:00:00,19192.88,5316.63,-13876.25,closed,Closing Shift
+1037,Unknown,Main Station,,,19472.88,5036.63,-14436.25,open,
+1038,Unknown,Main Station,,,19549.88,4959.63,-14590.25,open,
+1039,Unknown,Main Station,,,19724.38,4785.13,-14939.25,open,
+1040,Unknown,Main Station,,,19724.38,4785.13,-14939.25,open,Closing Day
+1041,Unknown,Main Station,2025-12-19T00:00:00,,19724.38,4785.13,-14939.25,open,Opening Day
+1042,Unknown,Main Station,,2025-12-19T00:00:00,19457.85,5222.01,-14235.839999999998,closed,Closing Shift
+1043,Unknown,Main Station,,,19462.85,5210.01,-14252.839999999998,open,Return Item
+1044,Unknown,Main Station,,2025-12-19T00:00:00,19416.6,5258.06,-14158.539999999997,closed,Closing Shift
+1045,Unknown,Main Station,,2025-12-19T00:00:00,19332.35,5401.06,-13931.289999999997,closed,Closing Shift
+1046,Unknown,Main Station,,2025-12-19T00:00:00,19301.1,5475.66,-13825.439999999999,closed,Closing Shift
+1047,Unknown,Main Station,,,19301.1,5475.66,-13825.439999999999,open,Closing Day
+1048,Unknown,Main Station,2025-12-20T00:00:00,,19301.1,5475.66,-13825.439999999999,open,Opening Day
+1049,Unknown,Main Station,,2025-12-20T00:00:00,19150.6,5753.46,-13397.14,closed,Closing Shift
+1050,Unknown,Main Station,,,19163.6,5728.46,-13435.14,open,Return Item
+1051,Unknown,Main Station,,2025-12-20T00:00:00,19156.1,5748.46,-13407.64,closed,Closing Shift
+1052,Unknown,Main Station,,2025-12-20T00:00:00,19151.1,5754.06,-13397.039999999997,closed,Closing Shift
+1053,Unknown,Main Station,,2025-12-20T00:00:00,18705.33,6301.56,-12403.77,closed,Closing Shift
+1054,Unknown,Main Station,,2025-12-20T00:00:00,18650.83,6373.56,-12277.27,closed,Closing Shift
+1055,Unknown,Main Station,,,19101.83,5922.56,-13179.27,open,
+1056,Unknown,Main Station,,2025-12-20T00:00:00,19081.08,5953.16,-13127.920000000002,closed,Closing Shift
+1057,Unknown,Main Station,,,20855.88,4178.36,-16677.52,open,
+1058,Unknown,Main Station,,2025-12-20T00:00:00,20853.98,4192.36,-16661.62,closed,Closing Shift
+1059,Unknown,Main Station,,,21099.98,3946.36,-17153.62,open,
+1060,Unknown,Main Station,,,19325.18,5721.16,-13604.02,open,Closing Day
+1061,Unknown,Main Station,2025-12-21T00:00:00,,19325.18,5721.16,-13604.02,open,Opening Day
+1062,Unknown,Main Station,,2025-12-21T00:00:00,19134.65,6020.94,-13113.710000000003,closed,Closing Shift
+1063,Unknown,Main Station,,2025-12-21T00:00:00,20857.84,4325.14,-16532.7,closed,Closing Shift
+1064,Unknown,Main Station,,2025-12-21T00:00:00,20853.34,4337.94,-16515.4,closed,Closing Shift
+1065,Unknown,Main Station,,,20853.34,4337.94,-16515.4,open,Closing Day
+1066,Unknown,Main Station,2025-12-22T00:00:00,,20853.34,4337.94,-16515.4,open,Opening Day
+1067,Unknown,Main Station,,2025-12-22T00:00:00,20822.12,4371.56,-16450.559999999998,closed,Closing Shift
+1068,Unknown,Main Station,,2025-12-22T00:00:00,20818.62,4386.56,-16432.059999999998,closed,Closing Shift
+1069,Unknown,Main Station,,2025-12-22T00:00:00,20735.87,4574.96,-16160.91,closed,Closing Shift
+1070,Unknown,Main Station,,2025-12-22T00:00:00,20712.62,4643.96,-16068.66,closed,Closing Shift
+1071,Unknown,Main Station,,,26321.62,-965.04,-27286.66,open,
+1072,Unknown,Main Station,,2025-12-22T00:00:00,26287.12,-927.24,-27214.36,closed,Closing Shift
+1073,Unknown,Main Station,,2025-12-22T00:00:00,22306.62,3179.76,-19126.86,closed,Closing Shift
+1074,Unknown,Main Station,,2025-12-22T00:00:00,22302.87,3191.76,-19111.11,closed,Closing Shift
+1075,Unknown,Main Station,,,22302.87,3191.76,-19111.11,open,Closing Day
+1076,Unknown,Main Station,2025-12-23T00:00:00,,22302.87,3191.76,-19111.11,open,Opening Day
+1077,Unknown,Main Station,,2025-12-23T00:00:00,22288.77,3243.36,-19045.41,closed,Closing Shift
+1078,Unknown,Main Station,,2025-12-23T00:00:00,22216.28,3383.75,-18832.53,closed,Closing Shift
+1079,Unknown,Main Station,,,22881.28,2718.75,-20162.53,open,
+1080,Unknown,Main Station,,2025-12-23T00:00:00,22664.78,2951.55,-19713.23,closed,Closing Shift
+1081,Unknown,Main Station,,,23952.78,1663.55,-22289.23,open,
+1082,Unknown,Main Station,,2025-12-23T00:00:00,22664.78,3033.55,-19631.23,closed,Closing Shift
+1083,Unknown,Main Station,,,22664.78,3033.55,-19631.23,open,Closing Day
+1084,Unknown,Main Station,2025-12-24T00:00:00,,22664.78,3033.55,-19631.23,open,Opening Day
+1085,Unknown,Main Station,,2025-12-24T00:00:00,21928.73,4010.15,-17918.579999999998,closed,Closing Shift
+1086,Unknown,Main Station,,2025-12-24T00:00:00,20198.98,5895.15,-14303.83,closed,Closing Shift
+1087,Unknown,Main Station,,2025-12-24T00:00:00,19909.46,6257.95,-13651.509999999998,closed,Closing Shift
+1088,Unknown,Main Station,,,19909.46,6257.95,-13651.509999999998,open,Closing Day
+1089,Unknown,Main Station,2025-12-26T00:00:00,,19909.46,6257.95,-13651.509999999998,open,Opening Day
+1090,Unknown,Main Station,,2025-12-26T00:00:00,19840.71,6381.95,-13458.759999999998,closed,Closing Shift
+1091,Unknown,Main Station,,2025-12-26T00:00:00,19831.46,6398.35,-13433.109999999999,closed,Closing Shift
+1092,Unknown,Main Station,,2025-12-26T00:00:00,19793.71,6488.2,-13305.509999999998,closed,Closing Shift
+1093,Unknown,Main Station,,,20908.71,5373.2,-15535.509999999998,open,
+1094,Unknown,Main Station,,2025-12-26T00:00:00,19842.91,6561.8,-13281.11,closed,Closing Shift
+1095,Unknown,Main Station,,,19842.91,6541.8,-13301.11,open,Closing Day
+1096,Unknown,Main Station,2025-12-27T00:00:00,,19842.91,6541.8,-13301.11,open,Opening Day
+1097,Unknown,Main Station,,,19987.91,6381.8,-13606.11,open,Return Item
+1098,Unknown,Main Station,,2025-12-27T00:00:00,19857.91,6571.8,-13286.11,closed,Closing Shift
+1099,Unknown,Main Station,,2025-12-27T00:00:00,19838.41,6606.8,-13231.61,closed,Closing Shift
+1100,Unknown,Main Station,,2025-12-27T00:00:00,19695.42,6823.64,-12871.779999999999,closed,Closing Shift
+1101,Unknown,Main Station,,,19695.42,6823.64,-12871.779999999999,open,Closing Day
+1102,Unknown,Main Station,2025-12-28T00:00:00,,19695.42,6823.64,-12871.779999999999,open,Opening Day
+1103,Unknown,Main Station,,2025-12-28T00:00:00,19662.84,6880.64,-12782.2,closed,Closing Shift
+1104,Unknown,Main Station,,,19662.84,6880.64,-12782.2,open,Closing Day
+1105,Unknown,Main Station,2025-12-29T00:00:00,,19662.84,6880.64,-12782.2,open,Opening Day
+1106,Unknown,Main Station,,2025-12-29T00:00:00,19531.93,7075.2,-12456.73,closed,Closing Shift
+1107,Unknown,Main Station,,2025-12-29T00:00:00,19480.18,7145.0,-12335.18,closed,Closing Shift
+1108,Unknown,Main Station,,,19480.18,7145.0,-12335.18,open,Closing Day
+1109,Unknown,Main Station,2025-12-30T00:00:00,,19480.18,7145.0,-12335.18,open,Opening Day
+1110,Unknown,Main Station,,2025-12-30T00:00:00,19431.13,7251.65,-12179.480000000001,closed,Closing Shift
+1111,Unknown,Main Station,,2025-12-30T00:00:00,19307.02,7400.01,-11907.01,closed,Closing Shift
+1112,Unknown,Main Station,,,19307.02,7400.01,-11907.01,open,Closing Day
+1113,Unknown,Main Station,2025-12-31T00:00:00,,19307.02,7400.01,-11907.01,open,Opening Day
+1114,Unknown,Main Station,,2025-12-31T00:00:00,19224.52,7525.01,-11699.51,closed,Closing Shift
+1115,Unknown,Main Station,,,20239.52,6510.01,-13729.51,open,
+1116,Unknown,Main Station,,2025-12-31T00:00:00,19224.52,7560.01,-11664.51,closed,Closing Shift
+1117,Unknown,Main Station,,,19240.06,7544.47,-11695.59,open,
+1118,Unknown,Main Station,,2025-12-31T00:00:00,19215.76,7604.87,-11610.89,closed,Closing Shift
+1119,Unknown,Main Station,,,19215.76,7604.87,-11610.89,open,Closing Day
+1120,Unknown,Main Station,2026-01-02T00:00:00,,19215.76,7604.87,-11610.89,open,Opening Day
+1121,Unknown,Main Station,,2026-01-02T00:00:00,18570.69,7622.47,-10948.219999999998,closed,Closing Shift
+1123,Unknown,Main Station,,2026-01-02T00:00:00,18471.69,7774.47,-10697.219999999998,closed,Closing Shift
+1124,Unknown,Main Station,,,19108.26,7774.47,-11333.789999999997,open,Closing Day
+1125,Unknown,Main Station,2026-01-03T00:00:00,,19108.26,7774.47,-11333.789999999997,open,Opening Day
+1126,Unknown,Main Station,,2026-01-03T00:00:00,19087.26,7831.27,-11255.989999999998,closed,Closing Shift
+1127,Unknown,Main Station,,2026-01-03T00:00:00,18954.71,8010.27,-10944.439999999999,closed,Closing Shift
+1128,Unknown,Main Station,,2026-01-03T00:00:00,18922.46,8055.27,-10867.189999999999,closed,Closing Shift
+1129,Unknown,Main Station,,,18922.46,8055.27,-10867.189999999999,open,Closing Day
+1132,Unknown,Main Station,,,18939.06,4026.7,-14912.36,open,Closing Month
+1133,Unknown,Main Station,2026-01-05T00:00:00,,18285.89,4026.7,-14259.189999999999,open,Opening Month
+1134,Unknown,Main Station,2026-01-05T00:00:00,,18285.89,4026.7,-14259.189999999999,open,Opening Day
+1135,Unknown,Main Station,,2026-01-05T00:00:00,18194.25,4166.39,-14027.86,closed,Closing Shift
+1136,Unknown,Main Station,,2026-01-05T00:00:00,17999.0,4485.19,-13513.810000000001,closed,Closing Shift
+1137,Unknown,Main Station,,2026-01-05T00:00:00,17991.5,4505.19,-13486.310000000001,closed,Closing Shift
+1138,Unknown,Main Station,,,17991.5,4505.19,-13486.310000000001,open,Closing Day
+1139,Unknown,Main Station,2026-01-06T00:00:00,,17991.5,4505.19,-13486.310000000001,open,Opening Day
+1140,Unknown,Main Station,,2026-01-06T00:00:00,17973.0,4544.99,-13428.01,closed,Closing Shift
+1141,Unknown,Main Station,,,17973.0,4544.99,-13428.01,open,Closing Day
+1142,Unknown,Main Station,2026-01-07T00:00:00,,17973.0,4544.99,-13428.01,open,Opening Day
+1143,Unknown,Main Station,,2026-01-07T00:00:00,17957.08,4578.31,-13378.77,closed,Closing Shift
+1144,Unknown,Main Station,,2026-01-07T00:00:00,17947.81,4598.31,-13349.5,closed,Closing Shift
+1145,Unknown,Main Station,,,17947.81,4598.31,-13349.5,open,Closing Day
+1146,Unknown,Main Station,2026-01-08T00:00:00,,17947.81,4598.31,-13349.5,open,Opening Day
+1147,Unknown,Main Station,,2026-01-08T00:00:00,17904.31,4668.31,-13236.0,closed,Closing Shift
+1148,Unknown,Main Station,,2026-01-08T00:00:00,17901.56,4678.31,-13223.25,closed,Closing Shift
+1149,Unknown,Main Station,,,18225.56,4354.31,-13871.25,open,
+1150,Unknown,Main Station,,2026-01-08T00:00:00,18219.76,4369.11,-13850.649999999998,closed,Closing Shift
+1151,Unknown,Main Station,,,18219.76,4369.11,-13850.649999999998,open,Closing Day
+1152,Unknown,Main Station,2026-01-09T00:00:00,,18219.76,4369.11,-13850.649999999998,open,Opening Day
+1153,Unknown,Main Station,,2026-01-09T00:00:00,18165.06,4498.71,-13666.350000000002,closed,Closing Shift
+1154,Unknown,Main Station,,2026-01-09T00:00:00,17922.96,4834.71,-13088.25,closed,Closing Shift
+1155,Unknown,Main Station,,2026-01-09T00:00:00,17914.46,4859.71,-13054.75,closed,Closing Shift
+1156,Unknown,Main Station,,2026-01-09T00:00:00,17880.11,4930.71,-12949.400000000001,closed,Closing Shift
+1157,Unknown,Main Station,,,17880.11,4930.71,-12949.400000000001,open,Closing Day
+1158,Unknown,Main Station,2026-01-10T00:00:00,,17880.11,4930.71,-12949.400000000001,open,Opening Day
+1159,Unknown,Main Station,,2026-01-10T00:00:00,17853.81,4980.51,-12873.300000000001,closed,Closing Shift
+1160,Unknown,Main Station,,2026-01-10T00:00:00,17818.81,5076.41,-12742.400000000001,closed,Closing Shift
+1161,Unknown,Main Station,,2026-01-10T00:00:00,17809.81,5101.41,-12708.400000000001,closed,Closing Shift
+1162,Unknown,Main Station,,2026-01-10T00:00:00,17801.31,5129.41,-12671.900000000001,closed,Closing Shift
+1163,Unknown,Main Station,,,17801.31,5129.41,-12671.900000000001,open,Closing Day
+1164,Unknown,Main Station,2026-01-12T00:00:00,,17801.31,5129.41,-12671.900000000001,open,Opening Day
+1165,Unknown,Main Station,,2026-01-12T00:00:00,17785.56,5158.61,-12626.95,closed,Closing Shift
+1166,Unknown,Main Station,,2026-01-12T00:00:00,17781.69,5163.43,-12618.259999999998,closed,Closing Shift
+1167,Unknown,Main Station,,2026-01-12T00:00:00,17768.3,5197.66,-12570.64,closed,Closing Shift
+1168,Unknown,Main Station,,2026-01-12T00:00:00,17760.8,5212.66,-12548.14,closed,Closing Shift
+1169,Unknown,Main Station,,,17760.8,5212.66,-12548.14,open,Closing Day
+1170,Unknown,Main Station,2026-01-13T00:00:00,,17760.8,5212.66,-12548.14,open,Opening Day
+1171,Unknown,Main Station,,2026-01-13T00:00:00,17760.1,5222.66,-12537.439999999999,closed,Closing Shift
+1172,Unknown,Main Station,,2026-01-13T00:00:00,17750.25,5249.66,-12500.59,closed,Closing Shift
+1173,Unknown,Main Station,,2026-01-13T00:00:00,17748.75,5254.66,-12494.09,closed,Closing Shift
+1174,Unknown,Main Station,,2026-01-13T00:00:00,17746.45,5257.46,-12488.990000000002,closed,Closing Shift
+1175,Unknown,Main Station,,,17905.79,5098.12,-12807.670000000002,open,
+1176,Unknown,Main Station,,,17905.79,5098.12,-12807.670000000002,open,Closing Day
+1177,Unknown,Main Station,2026-01-14T00:00:00,,17905.79,5098.12,-12807.670000000002,open,Opening Day
+1178,Unknown,Main Station,,2026-01-14T00:00:00,17893.82,5110.59,-12783.23,closed,Closing Shift
+1179,Unknown,Main Station,,2026-01-14T00:00:00,17856.95,5153.65,-12703.300000000001,closed,Closing Shift
+1180,Unknown,Main Station,,2026-01-14T00:00:00,17847.5,5174.09,-12673.41,closed,Closing Shift
+1181,Unknown,Main Station,,2026-01-14T00:00:00,17823.5,5224.09,-12599.41,closed,Closing Shift
+1182,Unknown,Main Station,,,17828.5,5212.09,-12616.41,open,Return Item
+1183,Unknown,Main Station,,,17830.0,5204.09,-12625.91,open,Return Item
+1184,Unknown,Main Station,,2026-01-14T00:00:00,17825.0,5224.09,-12600.91,closed,Closing Shift
+1185,Unknown,Main Station,,,17825.0,5224.09,-12600.91,open,Closing Day
+1186,Unknown,Main Station,2026-01-15T00:00:00,,17825.0,5224.09,-12600.91,open,Opening Day
+1187,Unknown,Main Station,,2026-01-15T00:00:00,17791.87,5279.55,-12512.32,closed,Closing Shift
+1188,Unknown,Main Station,,2026-01-15T00:00:00,17789.57,5282.35,-12507.22,closed,Closing Shift
+1189,Unknown,Main Station,,2026-01-15T00:00:00,17783.82,5294.35,-12489.47,closed,Closing Shift
+1190,Unknown,Main Station,,2026-01-15T00:00:00,17779.82,5309.35,-12470.47,closed,Closing Shift
+1191,Unknown,Main Station,,2026-01-15T00:00:00,17771.82,5336.35,-12435.47,closed,Closing Shift
+1192,Unknown,Main Station,,,17771.82,5336.35,-12435.47,open,Closing Day
+1193,Unknown,Main Station,2026-01-16T00:00:00,,17771.82,5336.35,-12435.47,open,Opening Day
+1194,Unknown,Main Station,,2026-01-16T00:00:00,17416.2,5816.75,-11599.45,closed,Closing Shift
+1195,Unknown,Main Station,,2026-01-16T00:00:00,17409.2,5823.75,-11585.45,closed,Closing Shift
+1196,Unknown,Main Station,,2026-01-16T00:00:00,17397.3,5847.15,-11550.15,closed,Closing Shift
+1197,Unknown,Main Station,,,17397.3,5847.15,-11550.15,open,Closing Day
+1198,Unknown,Main Station,2026-01-17T00:00:00,,17397.3,5847.15,-11550.15,open,Opening Day
+1199,Unknown,Main Station,,2026-01-17T00:00:00,17396.36,5848.38,-11547.98,closed,Closing Shift
+1200,Unknown,Main Station,,2026-01-17T00:00:00,17357.06,5931.18,-11425.880000000001,closed,Closing Shift
+1201,Unknown,Main Station,,2026-01-17T00:00:00,17349.21,5944.78,-11404.43,closed,Closing Shift
+1202,Unknown,Main Station,,2026-01-17T00:00:00,17192.21,6110.78,-11081.43,closed,Closing Shift
+1203,Unknown,Main Station,,2026-01-17T00:00:00,17184.46,6125.78,-11058.68,closed,Closing Shift
+1204,Unknown,Main Station,,,17184.46,6125.78,-11058.68,open,Closing Day
+1205,Unknown,Main Station,2026-01-19T00:00:00,,17184.46,6125.78,-11058.68,open,Opening Day
+1206,Unknown,Main Station,,2026-01-19T00:00:00,17157.92,6184.47,-10973.449999999997,closed,Closing Shift
+1207,Unknown,Main Station,,2026-01-19T00:00:00,17157.12,6189.47,-10967.649999999998,closed,Closing Shift
+1208,Unknown,Main Station,,2026-01-19T00:00:00,17151.32,6197.27,-10954.05,closed,Closing Shift
+1209,Unknown,Main Station,,2026-01-19T00:00:00,17141.32,6222.27,-10919.05,closed,Closing Shift
+1210,Unknown,Main Station,,2026-01-19T00:00:00,17124.22,6255.87,-10868.350000000002,closed,Closing Shift
+1211,Unknown,Main Station,,,17134.22,6235.87,-10898.350000000002,open,Return Item
+1212,Unknown,Main Station,,,17139.22,6220.87,-10918.350000000002,open,Return Item
+1213,Unknown,Main Station,,,17139.22,6220.87,-10918.350000000002,open,Closing Day
+1214,Unknown,Main Station,2026-01-20T00:00:00,,17139.22,6220.87,-10918.350000000002,open,Opening Day
+1215,Unknown,Main Station,,,17224.22,6135.87,-11088.350000000002,open,
+1216,Unknown,Main Station,,,17777.62,5582.47,-12195.149999999998,open,
+1217,Unknown,Main Station,,2026-01-20T00:00:00,17757.97,5632.87,-12125.100000000002,closed,Closing Shift
+1218,Unknown,Main Station,,2026-01-20T00:00:00,17753.97,5645.87,-12108.100000000002,closed,Closing Shift
+1219,Unknown,Main Station,,2026-01-20T00:00:00,17723.97,5680.87,-12043.100000000002,closed,Closing Shift
+1220,Unknown,Main Station,,,17723.97,5680.87,-12043.100000000002,open,Closing Day
+1221,Unknown,Main Station,2026-01-21T00:00:00,,17723.97,5680.87,-12043.100000000002,open,Opening Day
+1222,Unknown,Main Station,,2026-01-21T00:00:00,17719.25,5687.09,-12032.16,closed,Closing Shift
+1223,Unknown,Main Station,,2026-01-21T00:00:00,17687.87,5721.98,-11965.89,closed,Closing Shift
+1224,Unknown,Main Station,,2026-01-21T00:00:00,17676.57,5759.76,-11916.81,closed,Closing Shift
+1225,Unknown,Main Station,,,17676.57,5759.76,-11916.81,open,Closing Day
+1226,Unknown,Main Station,2026-01-22T00:00:00,,17676.57,5759.76,-11916.81,open,Opening Day
+1227,Unknown,Main Station,,2026-01-22T00:00:00,17657.46,5778.87,-11878.59,closed,Closing Shift
+1228,Unknown,Main Station,,2026-01-22T00:00:00,17637.86,5829.87,-11807.990000000002,closed,Closing Shift
+1229,Unknown,Main Station,,2026-01-22T00:00:00,17601.66,5895.07,-11706.59,closed,Closing Shift
+1230,Unknown,Main Station,,2026-01-22T00:00:00,17593.66,5910.07,-11683.59,closed,Closing Shift
+1231,Unknown,Main Station,,2026-01-22T00:00:00,17592.16,5913.07,-11679.09,closed,Closing Shift
+1232,Unknown,Main Station,,2026-01-22T00:00:00,17589.66,5923.07,-11666.59,closed,Closing Shift
+1233,Unknown,Main Station,,,17589.66,5923.07,-11666.59,open,Closing Day
+1234,Unknown,Main Station,2026-01-23T00:00:00,,17589.66,5923.07,-11666.59,open,Opening Day
+1235,Unknown,Main Station,,2026-01-23T00:00:00,17549.66,5993.07,-11556.59,closed,Closing Shift
+1236,Unknown,Main Station,,2026-01-23T00:00:00,17546.42,5997.1,-11549.319999999998,closed,Closing Shift
+1237,Unknown,Main Station,,2026-01-23T00:00:00,17526.42,6032.1,-11494.319999999998,closed,Closing Shift
+1238,Unknown,Main Station,,2026-01-23T00:00:00,17503.67,6078.5,-11425.169999999998,closed,Closing Shift
+1239,Unknown,Main Station,,2026-01-23T00:00:00,17496.77,6086.9,-11409.87,closed,Closing Shift
+1240,Unknown,Main Station,,2026-01-23T00:00:00,17489.02,6103.9,-11385.12,closed,Closing Shift
+1241,Unknown,Main Station,,,17489.02,6103.9,-11385.12,open,Closing Day
+1242,Unknown,Main Station,2026-01-24T00:00:00,,17489.02,6103.9,-11385.12,open,Opening Day
+1243,Unknown,Main Station,,2026-01-24T00:00:00,17463.08,6130.13,-11332.95,closed,Closing Shift
+1244,Unknown,Main Station,,2026-01-24T00:00:00,17460.58,6132.93,-11327.650000000001,closed,Closing Shift
+1245,Unknown,Main Station,,,17476.12,6117.39,-11358.73,open,
+1246,Unknown,Main Station,,,17544.12,6049.39,-11494.73,open,
+1247,Unknown,Main Station,,,17613.12,5980.39,-11632.73,open,
+1248,Unknown,Main Station,,2026-01-24T00:00:00,17571.75,6029.39,-11542.36,closed,Closing Shift
+1249,Unknown,Main Station,,2026-01-24T00:00:00,17551.25,6069.99,-11481.26,closed,Closing Shift
+1250,Unknown,Main Station,,2026-01-24T00:00:00,17539.75,6111.99,-11427.76,closed,Closing Shift
+1251,Unknown,Main Station,,,17539.75,6111.99,-11427.76,open,Closing Day
+1252,Unknown,Main Station,2026-01-26T00:00:00,,17539.75,6111.99,-11427.76,open,Opening Day
+1253,Unknown,Main Station,,2026-01-26T00:00:00,17532.3,6126.15,-11406.15,closed,Closing Shift
+1254,Unknown,Main Station,,2026-01-26T00:00:00,17525.2,6139.75,-11385.45,closed,Closing Shift
+1255,Unknown,Main Station,,2026-01-26T00:00:00,17520.98,6144.76,-11376.22,closed,Closing Shift
+1256,Unknown,Main Station,,2026-01-26T00:00:00,17518.68,6147.56,-11371.119999999999,closed,Closing Shift
+1257,Unknown,Main Station,,2026-01-26T00:00:00,17496.18,6201.56,-11294.619999999999,closed,Closing Shift
+1258,Unknown,Main Station,,,17496.18,6201.56,-11294.619999999999,open,Closing Day
+1259,Unknown,Main Station,2026-01-27T00:00:00,,17496.18,6201.56,-11294.619999999999,open,Opening Day
+1260,Unknown,Main Station,,2026-01-27T00:00:00,17489.51,6208.22,-11281.289999999997,closed,Closing Shift
+1261,Unknown,Main Station,,2026-01-27T00:00:00,17484.51,6218.22,-11266.289999999997,closed,Closing Shift
+1264,Unknown,Main Station,,2026-01-27T00:00:00,17441.51,6283.22,-11158.289999999997,closed,Closing Shift
+1265,Unknown,Main Station,,2026-01-27T00:00:00,17428.86,6318.02,-11110.84,closed,Closing Shift
+1266,Unknown,Main Station,,2026-01-27T00:00:00,17423.26,6330.62,-11092.64,closed,Closing Shift
+1267,Unknown,Main Station,,2026-01-27T00:00:00,17416.86,6355.42,-11061.44,closed,Closing Shift
+1268,Unknown,Main Station,,,17416.86,6355.42,-11061.44,open,Closing Day
+1269,Unknown,Main Station,2026-01-28T00:00:00,,17416.86,6355.42,-11061.44,open,Opening Day
+1270,Unknown,Main Station,,2026-01-28T00:00:00,17410.36,6378.42,-11031.94,closed,Closing Shift
+1271,Unknown,Main Station,,2026-01-28T00:00:00,17406.77,6387.45,-11019.32,closed,Closing Shift
+1272,Unknown,Main Station,,2026-01-28T00:00:00,17404.47,6390.25,-11014.220000000001,closed,Closing Shift
+1273,Unknown,Main Station,,2026-01-28T00:00:00,17388.1,6420.85,-10967.249999999998,closed,Closing Shift
+1274,Unknown,Main Station,,2026-01-28T00:00:00,17334.58,6506.12,-10828.460000000003,closed,Closing Shift
+1275,Unknown,Main Station,,,17334.58,6506.12,-10828.460000000003,open,Closing Day
+1276,Unknown,Main Station,2026-01-29T00:00:00,,17334.58,6506.12,-10828.460000000003,open,Opening Day
+1277,Unknown,Main Station,,2026-01-29T00:00:00,17311.86,6540.24,-10771.62,closed,Closing Shift
+1278,Unknown,Main Station,,2026-01-29T00:00:00,17309.56,6543.04,-10766.52,closed,Closing Shift
+1279,Unknown,Main Station,,,17325.1,6527.5,-10797.599999999999,open,
+1280,Unknown,Main Station,,,17361.1,6491.5,-10869.599999999999,open,
+1281,Unknown,Main Station,,2026-01-29T00:00:00,17322.9,6551.5,-10771.400000000001,closed,Closing Shift
+1282,Unknown,Main Station,,2026-01-29T00:00:00,17314.45,6579.3,-10735.150000000001,closed,Closing Shift
+1283,Unknown,Main Station,,2026-01-29T00:00:00,17306.68,6594.3,-10712.380000000001,closed,Closing Shift
+1284,Unknown,Main Station,,2026-01-29T00:00:00,17301.43,6614.3,-10687.130000000001,closed,Closing Shift
+1285,Unknown,Main Station,,2026-01-29T00:00:00,17274.08,6664.3,-10609.780000000002,closed,Closing Shift
+1286,Unknown,Main Station,,,17274.08,6664.3,-10609.780000000002,open,Closing Day
+1287,Unknown,Main Station,2026-01-30T00:00:00,,17274.08,6664.3,-10609.780000000002,open,Opening Day
+1288,Unknown,Main Station,,2026-01-30T00:00:00,16932.51,7087.76,-9844.749999999998,closed,Closing Shift
+1289,Unknown,Main Station,,2026-01-30T00:00:00,16930.21,7090.56,-9839.649999999998,closed,Closing Shift
+1290,Unknown,Main Station,,2026-01-30T00:00:00,16928.31,7100.56,-9827.75,closed,Closing Shift
+1291,Unknown,Main Station,,2026-01-30T00:00:00,16718.44,7348.58,-9369.859999999999,closed,Closing Shift
+1292,Unknown,Main Station,,,16718.44,7348.58,-9369.859999999999,open,Closing Day
+1293,Unknown,Main Station,2026-01-31T00:00:00,,16718.44,7348.58,-9369.859999999999,open,Opening Day
+1294,Unknown,Main Station,,2026-01-31T00:00:00,16715.14,7363.58,-9351.56,closed,Closing Shift
+1295,Unknown,Main Station,,2026-01-31T00:00:00,16710.96,7368.84,-9342.119999999999,closed,Closing Shift
+1296,Unknown,Main Station,,2026-01-31T00:00:00,16700.48,7388.66,-9311.82,closed,Closing Shift
+1297,Unknown,Main Station,,2026-01-31T00:00:00,16696.04,7401.46,-9294.580000000002,closed,Closing Shift
+1298,Unknown,Main Station,,,16846.04,7251.47,-9594.57,open,
+1299,Unknown,Main Station,,2026-01-31T00:00:00,16815.48,7282.02,-9533.46,closed,Closing Shift
+1300,Unknown,Main Station,,2026-01-31T00:00:00,16810.88,7287.62,-9523.260000000002,closed,Closing Shift
+1301,Unknown,Main Station,,,16810.88,7287.62,-9523.260000000002,open,Closing Day
+1302,Unknown,Main Station,2026-02-02T00:00:00,,16810.88,7287.62,-9523.260000000002,open,Opening Day
+1303,Unknown,Main Station,,2026-02-02T00:00:00,16807.63,7300.62,-9507.010000000002,closed,Closing Shift
+1304,Unknown,Main Station,,2026-02-02T00:00:00,16793.89,7340.26,-9453.63,closed,Closing Shift
+1305,Unknown,Main Station,,2026-02-02T00:00:00,16779.39,7367.26,-9412.13,closed,Closing Shift
+1306,Unknown,Main Station,,2026-02-02T00:00:00,16765.39,7421.26,-9344.13,closed,Closing Shift
+1307,Unknown,Main Station,,,16765.39,7421.26,-9344.13,open,Closing Day
+1308,Unknown,Main Station,2026-02-03T00:00:00,,16765.39,7421.26,-9344.13,open,Opening Day
+1309,Unknown,Main Station,,2026-02-03T00:00:00,16756.49,7441.26,-9315.230000000001,closed,Closing Shift
+1310,Unknown,Main Station,,2026-02-03T00:00:00,16742.19,7464.06,-9278.129999999997,closed,Closing Shift
+1311,Unknown,Main Station,,,16757.73,7448.52,-9309.21,open,
+1312,Unknown,Main Station,,2026-02-03T00:00:00,16745.87,7480.64,-9265.23,closed,Closing Shift
+1313,Unknown,Main Station,,2026-02-03T00:00:00,16732.27,7501.24,-9231.03,closed,Closing Shift
+1314,Unknown,Main Station,,2026-02-03T00:00:00,16670.77,7569.04,-9101.73,closed,Closing Shift
+1315,Unknown,Main Station,,2026-02-03T00:00:00,16668.47,7571.84,-9096.630000000001,closed,Closing Shift
+1316,Unknown,Main Station,,,16668.47,7571.84,-9096.630000000001,open,Closing Day
+1317,Unknown,Main Station,2026-02-04T00:00:00,,16668.47,7571.84,-9096.630000000001,open,Opening Day
+1318,Unknown,Main Station,,2026-02-04T00:00:00,16580.9,7677.41,-8903.490000000002,closed,Closing Shift
+1319,Unknown,Main Station,,2026-02-04T00:00:00,16569.9,7714.41,-8855.490000000002,closed,Closing Shift
+1320,Unknown,Main Station,,2026-02-04T00:00:00,16529.1,7795.21,-8733.89,closed,Closing Shift
+1321,Unknown,Main Station,,2026-02-04T00:00:00,16524.6,7810.21,-8714.39,closed,Closing Shift
+1322,Unknown,Main Station,,2026-02-04T00:00:00,16523.0,7820.21,-8702.79,closed,Closing Shift
+1323,Unknown,Main Station,,,16523.0,7820.21,-8702.79,open,Closing Day
+1324,Unknown,Main Station,2026-02-05T00:00:00,,16523.0,7820.21,-8702.79,open,Opening Day
+1325,Unknown,Main Station,,2026-02-05T00:00:00,16502.25,7880.21,-8622.04,closed,Closing Shift
+1326,Unknown,Main Station,,2026-02-05T00:00:00,16465.2,7940.51,-8524.69,closed,Closing Shift
+1327,Unknown,Main Station,,2026-02-05T00:00:00,16459.1,7951.11,-8507.989999999998,closed,Closing Shift
+1328,Unknown,Main Station,,2026-02-05T00:00:00,16455.6,7963.11,-8492.489999999998,closed,Closing Shift
+1329,Unknown,Main Station,,,16649.2,7769.51,-8879.69,open,
+1330,Unknown,Main Station,,2026-02-05T00:00:00,16639.95,7795.11,-8844.84,closed,Closing Shift
+1331,Unknown,Main Station,,2026-02-05T00:00:00,16629.01,7823.34,-8805.669999999998,closed,Closing Shift
+1332,Unknown,Main Station,,,16629.01,7823.34,-8805.669999999998,open,Closing Day
+1333,Unknown,Main Station,,,16629.01,5683.58,-10945.429999999998,open,Closing Month
+1334,Unknown,Main Station,2026-02-06T00:00:00,,16630.81,5683.58,-10947.230000000001,open,Opening Month
+1335,Unknown,Main Station,2026-02-06T00:00:00,,16630.81,5683.58,-10947.230000000001,open,Opening Day
+1336,Unknown,Main Station,,2026-02-06T00:00:00,16628.31,5686.38,-10941.93,closed,Closing Shift
+1337,Unknown,Main Station,,2026-02-06T00:00:00,16623.71,5691.98,-10931.73,closed,Closing Shift
+1338,Unknown,Main Station,,2026-02-06T00:00:00,16622.21,5696.98,-10925.23,closed,Closing Shift
+1339,Unknown,Main Station,,2026-02-06T00:00:00,16614.97,5714.01,-10900.960000000001,closed,Closing Shift
+1340,Unknown,Main Station,,2026-02-06T00:00:00,16612.67,5716.81,-10895.859999999997,closed,Closing Shift
+1341,Unknown,Main Station,,,16612.67,5716.81,-10895.859999999997,open,Closing Day
+1342,Unknown,Main Station,2026-02-07T00:00:00,,16612.67,5716.81,-10895.859999999997,open,Opening Day
+1343,Unknown,Main Station,,,17220.67,5108.81,-12111.859999999997,open,
+1344,Unknown,Main Station,,2026-02-07T00:00:00,17216.92,5120.81,-12096.109999999997,closed,Closing Shift
+1345,Unknown,Main Station,,2026-02-07T00:00:00,17211.52,5140.61,-12070.91,closed,Closing Shift
+1346,Unknown,Main Station,,2026-02-07T00:00:00,17201.62,5159.01,-12042.609999999999,closed,Closing Shift
+1347,Unknown,Main Station,,2026-02-07T00:00:00,17193.97,5172.41,-12021.560000000001,closed,Closing Shift
+1348,Unknown,Main Station,,2026-02-07T00:00:00,17190.67,5180.21,-12010.46,closed,Closing Shift
+1349,Unknown,Main Station,,2026-02-07T00:00:00,17186.92,5190.21,-11996.71,closed,Closing Shift
+1350,Unknown,Main Station,,2026-02-07T00:00:00,17174.07,5233.81,-11940.259999999998,closed,Closing Shift
+1351,Unknown,Main Station,,,17174.07,5233.81,-11940.259999999998,open,Closing Day
+1352,Unknown,Main Station,2026-02-09T00:00:00,,17174.07,5233.81,-11940.259999999998,open,Opening Day
+1353,Unknown,Main Station,,2026-02-09T00:00:00,17170.77,5241.61,-11929.16,closed,Closing Shift
+1354,Unknown,Main Station,,2026-02-09T00:00:00,17104.77,5316.61,-11788.16,closed,Closing Shift
+1355,Unknown,Main Station,,2026-02-09T00:00:00,17091.97,5349.41,-11742.560000000001,closed,Closing Shift
+1356,Unknown,Main Station,,2026-02-09T00:00:00,17089.22,5364.41,-11724.810000000001,closed,Closing Shift
+1357,Unknown,Main Station,,2026-02-09T00:00:00,17073.22,5402.41,-11670.810000000001,closed,Closing Shift
+1358,Unknown,Main Station,,2026-02-09T00:00:00,17052.22,5432.41,-11619.810000000001,closed,Closing Shift
+1359,Unknown,Main Station,,,17052.22,5432.41,-11619.810000000001,open,Closing Day
+1360,Unknown,Main Station,2026-02-10T00:00:00,,17052.22,5432.41,-11619.810000000001,open,Opening Day
+1361,Unknown,Main Station,,2026-02-10T00:00:00,17046.42,5447.21,-11599.21,closed,Closing Shift
+1362,Unknown,Main Station,,2026-02-10T00:00:00,17038.92,5462.21,-11576.71,closed,Closing Shift
+1363,Unknown,Main Station,,2026-02-10T00:00:00,17036.62,5465.01,-11571.609999999999,closed,Closing Shift
+1364,Unknown,Main Station,,2026-02-10T00:00:00,17028.57,5488.51,-11540.06,closed,Closing Shift
+1365,Unknown,Main Station,,2026-02-10T00:00:00,17024.07,5498.51,-11525.56,closed,Closing Shift
+1366,Unknown,Main Station,,2026-02-10T00:00:00,17023.13,5499.74,-11523.390000000001,closed,Closing Shift
+1367,Unknown,Main Station,,,17023.13,5499.74,-11523.390000000001,open,Closing Day
+1368,Unknown,Main Station,2026-02-11T00:00:00,,17023.13,5499.74,-11523.390000000001,open,Opening Day
+1369,Unknown,Main Station,,2026-02-11T00:00:00,17016.03,5508.14,-11507.89,closed,Closing Shift
+1370,Unknown,Main Station,,2026-02-11T00:00:00,17006.79,5522.03,-11484.760000000002,closed,Closing Shift
+1371,Unknown,Main Station,,2026-02-11T00:00:00,16999.19,5540.63,-11458.559999999998,closed,Closing Shift
+1372,Unknown,Main Station,,2026-02-11T00:00:00,16842.19,5706.63,-11135.559999999998,closed,Closing Shift
+1373,Unknown,Main Station,,2026-02-11T00:00:00,16809.29,5755.03,-11054.260000000002,closed,Closing Shift
+1374,Unknown,Main Station,,2026-02-11T00:00:00,16694.79,5878.03,-10816.760000000002,closed,Closing Shift
+1375,Unknown,Main Station,,2026-02-11T00:00:00,16610.29,5985.03,-10625.260000000002,closed,Closing Shift
+1376,Unknown,Main Station,,,16610.29,5985.03,-10625.260000000002,open,Closing Day
+1377,Unknown,Main Station,2026-02-12T00:00:00,,16610.29,5985.03,-10625.260000000002,open,Opening Day
+1378,Unknown,Main Station,,2026-02-12T00:00:00,16607.51,5987.81,-10619.699999999997,closed,Closing Shift
+1379,Unknown,Main Station,,2026-02-12T00:00:00,16585.29,6010.03,-10575.260000000002,closed,Closing Shift
+1380,Unknown,Main Station,,2026-02-12T00:00:00,16576.99,6032.83,-10544.160000000002,closed,Closing Shift
+1381,Unknown,Main Station,,2026-02-12T00:00:00,16540.25,6110.86,-10429.39,closed,Closing Shift
+1382,Unknown,Main Station,,2026-02-12T00:00:00,16504.25,6173.36,-10330.89,closed,Closing Shift
+1383,Unknown,Main Station,,,16504.25,6173.36,-10330.89,open,Closing Day
+1384,Unknown,Main Station,2026-02-13T00:00:00,,16504.25,6173.36,-10330.89,open,Opening Day
+1385,Unknown,Main Station,,2026-02-13T00:00:00,16493.55,6187.56,-10305.989999999998,closed,Closing Shift
+1386,Unknown,Main Station,,2026-02-13T00:00:00,16490.45,6195.36,-10295.09,closed,Closing Shift
+1387,Unknown,Main Station,,2026-02-13T00:00:00,16484.85,6205.96,-10278.89,closed,Closing Shift
+1388,Unknown,Main Station,,2026-02-13T00:00:00,16441.31,6272.79,-10168.52,closed,Closing Shift
+1389,Unknown,Main Station,,2026-02-13T00:00:00,16437.56,6287.79,-10149.77,closed,Closing Shift
+1390,Unknown,Main Station,,,16437.56,6287.79,-10149.77,open,Closing Day
+1391,Unknown,Main Station,2026-02-14T00:00:00,,16437.56,6287.79,-10149.77,open,Opening Day
+1392,Unknown,Main Station,,2026-02-14T00:00:00,16432.76,6295.59,-10137.169999999998,closed,Closing Shift
+1393,Unknown,Main Station,,2026-02-14T00:00:00,16384.11,6388.39,-9995.720000000001,closed,Closing Shift
+1394,Unknown,Main Station,,2026-02-14T00:00:00,16378.01,6398.39,-9979.619999999999,closed,Closing Shift
+1395,Unknown,Main Station,,2026-02-14T00:00:00,16375.71,6401.19,-9974.52,closed,Closing Shift
+1396,Unknown,Main Station,,2026-02-14T00:00:00,16344.16,6468.19,-9875.970000000001,closed,Closing Shift
+1397,Unknown,Main Station,,,16352.16,6453.19,-9898.970000000001,open,Return Item
+1398,Unknown,Main Station,,2026-02-14T00:00:00,16349.86,6455.99,-9893.87,closed,Closing Shift
+1399,Unknown,Main Station,,,16353.61,6443.99,-9909.62,open,Return Item
+1400,Unknown,Main Station,,,16362.61,6428.99,-9933.62,open,Return Item
+1401,Unknown,Main Station,,,16366.36,6418.99,-9947.37,open,Return Item
+1402,Unknown,Main Station,,2026-02-14T00:00:00,16353.86,6443.99,-9909.87,closed,Closing Shift
+1403,Unknown,Main Station,,,16353.86,6443.99,-9909.87,open,Closing Day
+1404,Unknown,Main Station,2026-02-15T00:00:00,,16353.86,6443.99,-9909.87,open,Opening Day
+1405,Unknown,Main Station,,,16353.86,6443.99,-9909.87,open,Closing Day
+1406,Unknown,Main Station,2026-02-16T00:00:00,,16353.86,6443.99,-9909.87,open,Opening Day
+1407,Unknown,Main Station,,2026-02-16T00:00:00,16346.17,6460.68,-9885.49,closed,Closing Shift
+1408,Unknown,Main Station,,2026-02-16T00:00:00,16339.17,6475.68,-9863.49,closed,Closing Shift
+1409,Unknown,Main Station,,2026-02-16T00:00:00,16315.77,6512.28,-9803.490000000002,closed,Closing Shift
+1410,Unknown,Main Station,,2026-02-16T00:00:00,16304.47,6545.08,-9759.39,closed,Closing Shift
+1411,Unknown,Main Station,,,16304.47,6545.08,-9759.39,open,Closing Day
+1412,Unknown,Main Station,2026-02-17T00:00:00,,16304.47,6545.08,-9759.39,open,Opening Day
+1413,Unknown,Main Station,,2026-02-17T00:00:00,16294.02,6557.03,-9736.990000000002,closed,Closing Shift
+1414,Unknown,Main Station,,2026-02-17T00:00:00,16288.97,6565.83,-9723.14,closed,Closing Shift
+1415,Unknown,Main Station,,2026-02-17T00:00:00,16273.7,6592.43,-9681.27,closed,Closing Shift
+1416,Unknown,Main Station,,2026-02-17T00:00:00,16243.5,6633.63,-9609.869999999999,closed,Closing Shift
+1417,Unknown,Main Station,,,16243.5,6633.63,-9609.869999999999,open,Closing Day
+1418,Unknown,Main Station,2026-02-18T00:00:00,,16243.5,6633.63,-9609.869999999999,open,Opening Day
+1419,Unknown,Main Station,,2026-02-18T00:00:00,16241.2,6636.43,-9604.77,closed,Closing Shift
+1420,Unknown,Main Station,,2026-02-18T00:00:00,16232.14,6655.99,-9576.15,closed,Closing Shift
+1421,Unknown,Main Station,,2026-02-18T00:00:00,16228.76,6666.21,-9562.55,closed,Closing Shift
+1422,Unknown,Main Station,,2026-02-18T00:00:00,16226.26,6669.01,-9557.25,closed,Closing Shift
+1423,Unknown,Main Station,,,16280.26,6615.01,-9665.25,open,
+1424,Unknown,Main Station,,2026-02-18T00:00:00,16261.46,6637.81,-9623.649999999998,closed,Closing Shift
+1425,Unknown,Main Station,,2026-02-18T00:00:00,16249.16,6657.11,-9592.05,closed,Closing Shift
+1426,Unknown,Main Station,,,16249.16,6657.11,-9592.05,open,Closing Day
+1427,Unknown,Main Station,2026-02-19T00:00:00,,16249.16,6657.11,-9592.05,open,Opening Day
+1428,Unknown,Main Station,,2026-02-19T00:00:00,16244.66,6667.11,-9577.55,closed,Closing Shift
+1429,Unknown,Main Station,,2026-02-19T00:00:00,16242.01,6674.91,-9567.1,closed,Closing Shift
+1430,Unknown,Main Station,,2026-02-19T00:00:00,16230.56,6696.91,-9533.65,closed,Closing Shift
+1431,Unknown,Main Station,,2026-02-19T00:00:00,16211.99,6744.71,-9467.279999999999,closed,Closing Shift
+1432,Unknown,Main Station,,,16211.99,6744.71,-9467.279999999999,open,Closing Day
+1433,Unknown,Main Station,2026-02-20T00:00:00,,16211.99,6744.71,-9467.279999999999,open,Opening Day
+1434,Unknown,Main Station,,2026-02-20T00:00:00,16203.19,6764.51,-9438.68,closed,Closing Shift
+1435,Unknown,Main Station,,2026-02-20T00:00:00,16200.89,6767.31,-9433.579999999998,closed,Closing Shift
+1436,Unknown,Main Station,,2026-02-20T00:00:00,16198.59,6770.11,-9428.48,closed,Closing Shift
+1437,Unknown,Main Station,,2026-02-20T00:00:00,16195.09,6777.91,-9417.18,closed,Closing Shift
+1438,Unknown,Main Station,,,16195.09,6777.91,-9417.18,open,Closing Day
+1439,Unknown,Main Station,2026-02-21T00:00:00,,16195.09,6777.91,-9417.18,open,Opening Day
+1440,Unknown,Main Station,,2026-02-21T00:00:00,16173.49,6819.71,-9353.779999999999,closed,Closing Shift
+1441,Unknown,Main Station,,2026-02-21T00:00:00,16173.14,6824.71,-9348.43,closed,Closing Shift
+1442,Unknown,Main Station,,,16173.14,6824.71,-9348.43,open,Closing Day
+1443,Unknown,Main Station,2026-02-23T00:00:00,,16173.14,6824.71,-9348.43,open,Opening Day
+1444,Unknown,Main Station,,2026-02-23T00:00:00,16172.14,6829.71,-9342.43,closed,Closing Shift
+1445,Unknown,Main Station,,2026-02-23T00:00:00,16168.53,6833.62,-9334.91,closed,Closing Shift
+1446,Unknown,Main Station,,2026-02-23T00:00:00,16167.03,6841.62,-9325.41,closed,Closing Shift
+1447,Unknown,Main Station,,2026-02-23T00:00:00,16163.53,6851.62,-9311.91,closed,Closing Shift
+1448,Unknown,Main Station,,,16391.53,6623.62,-9767.91,open,
+1449,Unknown,Main Station,,,16569.3,6445.85,-10123.449999999999,open,
+1450,Unknown,Main Station,,,16584.84,6430.31,-10154.529999999999,open,
+1451,Unknown,Main Station,,2026-02-23T00:00:00,16560.4,6454.76,-10105.640000000001,closed,Closing Shift
+1452,Unknown,Main Station,,2026-02-23T00:00:00,16550.2,6470.76,-10079.44,closed,Closing Shift
+1453,Unknown,Main Station,,,16550.2,6470.76,-10079.44,open,Closing Day
+1454,Unknown,Main Station,2026-02-24T00:00:00,,16550.2,6470.76,-10079.44,open,Opening Day
+1455,Unknown,Main Station,,2026-02-24T00:00:00,16542.43,6490.76,-10051.67,closed,Closing Shift
+1456,Unknown,Main Station,,2026-02-24T00:00:00,16540.03,6493.76,-10046.269999999999,closed,Closing Shift
+1457,Unknown,Main Station,,2026-02-24T00:00:00,16527.53,6518.76,-10008.769999999999,closed,Closing Shift
+1458,Unknown,Main Station,,2026-02-24T00:00:00,16503.53,6555.76,-9947.769999999999,closed,Closing Shift
+1459,Unknown,Main Station,,2026-02-24T00:00:00,16495.53,6570.76,-9924.769999999999,closed,Closing Shift
+1460,Unknown,Main Station,,,16495.53,6570.76,-9924.769999999999,open,Closing Day
+1461,Unknown,Main Station,2026-02-25T00:00:00,,16495.53,6570.76,-9924.769999999999,open,Opening Day
+1462,Unknown,Main Station,,2026-02-25T00:00:00,16494.53,6571.76,-9922.769999999999,closed,Closing Shift
+1463,Unknown,Main Station,,2026-02-25T00:00:00,16488.53,6588.76,-9899.769999999999,closed,Closing Shift
+1464,Unknown,Main Station,,2026-02-25T00:00:00,16318.76,6778.76,-9540.0,closed,Closing Shift
+1465,Unknown,Main Station,,2026-02-25T00:00:00,16022.01,7077.76,-8944.25,closed,Closing Shift
+1466,Unknown,Main Station,,2026-02-25T00:00:00,16000.14,7100.42,-8899.72,closed,Closing Shift
+1467,Unknown,Main Station,,2026-02-25T00:00:00,15994.04,7113.42,-8880.62,closed,Closing Shift
+1468,Unknown,Main Station,,,15994.04,7113.42,-8880.62,open,Closing Day
+1469,Unknown,Main Station,2026-02-26T00:00:00,,15994.04,7113.42,-8880.62,open,Opening Day
+1470,Unknown,Main Station,,2026-02-26T00:00:00,15992.54,7116.42,-8876.12,closed,Closing Shift
+1471,Unknown,Main Station,,2026-02-26T00:00:00,15985.21,7130.76,-8854.449999999999,closed,Closing Shift
+1472,Unknown,Main Station,,2026-02-26T00:00:00,15982.36,7140.76,-8841.6,closed,Closing Shift
+1473,Unknown,Main Station,,2026-02-26T00:00:00,15969.86,7167.76,-8802.1,closed,Closing Shift
+1474,Unknown,Main Station,,,15969.86,7167.76,-8802.1,open,Closing Day
+1475,Unknown,Main Station,2026-02-27T00:00:00,,15969.86,7167.76,-8802.1,open,Opening Day
+1476,Unknown,Main Station,,2026-02-27T00:00:00,15960.82,7181.54,-8779.279999999999,closed,Closing Shift
+1477,Unknown,Main Station,,2026-02-27T00:00:00,15955.66,7187.78,-8767.880000000001,closed,Closing Shift
+1478,Unknown,Main Station,,2026-02-27T00:00:00,15955.31,7192.78,-8762.529999999999,closed,Closing Shift
+1479,Unknown,Main Station,,2026-02-27T00:00:00,15933.7,7221.89,-8711.810000000001,closed,Closing Shift
+1480,Unknown,Main Station,,2026-02-27T00:00:00,15931.2,7231.89,-8699.310000000001,closed,Closing Shift
+1481,Unknown,Main Station,,2026-02-27T00:00:00,15926.7,7241.89,-8684.810000000001,closed,Closing Shift
+1482,Unknown,Main Station,,2026-02-27T00:00:00,15915.5,7274.89,-8640.61,closed,Closing Shift
+1483,Unknown,Main Station,,,15915.5,7274.89,-8640.61,open,Closing Day
+1484,Unknown,Main Station,2026-02-28T00:00:00,,15915.5,7274.89,-8640.61,open,Opening Day
+1485,Unknown,Main Station,,2026-02-28T00:00:00,15914.39,7276.0,-8638.39,closed,Closing Shift
+1486,Unknown,Main Station,,2026-02-28T00:00:00,15896.74,7325.0,-8571.74,closed,Closing Shift
+1487,Unknown,Main Station,,2026-02-28T00:00:00,15891.24,7335.0,-8556.24,closed,Closing Shift
+1488,Unknown,Main Station,,2026-02-28T00:00:00,15774.14,7478.0,-8296.14,closed,Closing Shift
+1489,Unknown,Main Station,,2026-02-28T00:00:00,15765.2,7494.23,-8270.970000000001,closed,Closing Shift
+1490,Unknown,Main Station,,,15765.2,7494.23,-8270.970000000001,open,Closing Day
+1491,Unknown,Main Station,2026-03-02T00:00:00,,15765.2,7494.23,-8270.970000000001,open,Opening Day
+1492,Unknown,Main Station,,2026-03-02T00:00:00,15761.68,7498.58,-8263.1,closed,Closing Shift
+1493,Unknown,Main Station,,2026-03-02T00:00:00,15722.76,7564.25,-8158.51,closed,Closing Shift
+1494,Unknown,Main Station,,2026-03-02T00:00:00,15712.06,7583.25,-8128.8099999999995,closed,Closing Shift
+1495,Unknown,Main Station,,2026-03-02T00:00:00,15691.34,7621.47,-8069.87,closed,Closing Shift
+1496,Unknown,Main Station,,2026-03-02T00:00:00,15684.54,7641.47,-8043.070000000001,closed,Closing Shift
+1497,Unknown,Main Station,,,15684.54,7641.47,-8043.070000000001,open,Closing Day
+1498,Unknown,Main Station,2026-03-03T00:00:00,,15684.54,7641.47,-8043.070000000001,open,Opening Day
+1499,Unknown,Main Station,,2026-03-03T00:00:00,15628.1,7728.7,-7899.400000000001,closed,Closing Shift
+1500,Unknown,Main Station,,2026-03-03T00:00:00,15594.7,7783.26,-7811.4400000000005,closed,Closing Shift
+1501,Unknown,Main Station,,2026-03-03T00:00:00,15589.3,7793.26,-7796.039999999999,closed,Closing Shift
+1502,Unknown,Main Station,,2026-03-03T00:00:00,15579.4,7814.26,-7765.139999999999,closed,Closing Shift
+1503,Unknown,Main Station,,,15579.4,7814.26,-7765.139999999999,open,Closing Day
+1504,Unknown,Main Station,,,15579.4,7814.26,-7765.139999999999,open,Closing Month
+1507,Unknown,Main Station,2026-03-04T00:00:00,,15597.3,7814.26,-7783.039999999999,open,Opening Month
+1508,Unknown,Main Station,2026-03-04T00:00:00,,15597.3,7814.26,-7783.039999999999,open,Opening Day
+1509,Unknown,Main Station,,2026-03-04T00:00:00,15583.94,7828.81,-7755.13,closed,Closing Shift
+1510,Unknown,Main Station,,,15599.48,7813.27,-7786.209999999999,open,
+1511,Unknown,Main Station,,2026-03-04T00:00:00,15597.6,7815.73,-7781.870000000001,closed,Closing Shift
+1512,Unknown,Main Station,,2026-03-04T00:00:00,15580.83,7845.73,-7735.1,closed,Closing Shift
+1513,Unknown,Main Station,,2026-03-04T00:00:00,15538.31,7918.95,-7619.36,closed,Closing Shift
+1514,Unknown,Main Station,,2026-03-04T00:00:00,15534.81,7928.95,-7605.86,closed,Closing Shift
+1515,Unknown,Main Station,,2026-03-04T00:00:00,15526.81,7943.95,-7582.86,closed,Closing Shift
+1516,Unknown,Main Station,,,16608.81,6861.95,-9746.86,open,
+1517,Unknown,Main Station,,2026-03-04T00:00:00,16601.31,6873.95,-9727.36,closed,Closing Shift
+1518,Unknown,Main Station,,,16601.31,6873.95,-9727.36,open,Closing Day
+1519,Unknown,Main Station,2026-03-05T00:00:00,,16601.31,6873.95,-9727.36,open,Opening Day
+1520,Unknown,Main Station,,2026-03-05T00:00:00,16584.64,6890.62,-9694.02,closed,Closing Shift
+1521,Unknown,Main Station,,2026-03-05T00:00:00,16550.06,6931.12,-9618.940000000002,closed,Closing Shift
+1522,Unknown,Main Station,,2026-03-05T00:00:00,16545.62,6935.56,-9610.059999999998,closed,Closing Shift
+1523,Unknown,Main Station,,2026-03-05T00:00:00,16543.02,6938.56,-9604.46,closed,Closing Shift
+1524,Unknown,Main Station,,,16543.02,6938.56,-9604.46,open,Closing Day
+1525,Unknown,Main Station,2026-03-06T00:00:00,,16543.02,6938.56,-9604.46,open,Opening Day
+1526,Unknown,Main Station,,2026-03-06T00:00:00,16523.28,6983.26,-9540.019999999999,closed,Closing Shift
+1527,Unknown,Main Station,,2026-03-06T00:00:00,16519.78,6993.26,-9526.519999999999,closed,Closing Shift
+1528,Unknown,Main Station,,2026-03-06T00:00:00,16514.78,7008.26,-9506.519999999999,closed,Closing Shift
+1529,Unknown,Main Station,,2026-03-06T00:00:00,16504.43,7034.26,-9470.17,closed,Closing Shift
+1530,Unknown,Main Station,,2026-03-06T00:00:00,16495.73,7052.26,-9443.47,closed,Closing Shift
+1531,Unknown,Main Station,,,16495.73,7052.26,-9443.47,open,Closing Day
+1532,Unknown,Main Station,2026-03-07T00:00:00,,16495.73,7052.26,-9443.47,open,Opening Day
+1533,Unknown,Main Station,,2026-03-07T00:00:00,16465.73,7097.26,-9368.47,closed,Closing Shift
+1534,Unknown,Main Station,,2026-03-07T00:00:00,16451.43,7115.76,-9335.67,closed,Closing Shift
+1535,Unknown,Main Station,,2026-03-07T00:00:00,16444.93,7140.76,-9304.17,closed,Closing Shift
+1536,Unknown,Main Station,,2026-03-07T00:00:00,16432.93,7166.76,-9266.17,closed,Closing Shift
+1537,Unknown,Main Station,,2026-03-07T00:00:00,16417.28,7199.76,-9217.519999999999,closed,Closing Shift
+1538,Unknown,Main Station,,2026-03-07T00:00:00,16376.53,7279.76,-9096.77,closed,Closing Shift
+1539,Unknown,Main Station,,,16376.53,7279.76,-9096.77,open,Closing Day
+1540,Unknown,Main Station,2026-03-09T00:00:00,,16376.53,7279.76,-9096.77,open,Opening Day
+1541,Unknown,Main Station,,2026-03-09T00:00:00,16372.03,7289.76,-9082.27,closed,Closing Shift
+1542,Unknown,Main Station,,2026-03-09T00:00:00,16360.53,7314.76,-9045.77,closed,Closing Shift
+1543,Unknown,Main Station,,2026-03-09T00:00:00,16356.34,7332.65,-9023.69,closed,Closing Shift
+1544,Unknown,Main Station,,2026-03-09T00:00:00,16349.34,7349.65,-8999.69,closed,Closing Shift
+1545,Unknown,Main Station,,,16349.34,7349.65,-8999.69,open,Closing Day
+1546,Unknown,Main Station,2026-03-10T00:00:00,,16349.34,7349.65,-8999.69,open,Opening Day
+1547,Unknown,Main Station,,2026-03-10T00:00:00,16342.12,7356.87,-8985.25,closed,Closing Shift
+1548,Unknown,Main Station,,2026-03-10T00:00:00,16336.92,7362.87,-8974.05,closed,Closing Shift
+1549,Unknown,Main Station,,2026-03-10T00:00:00,16315.02,7399.87,-8915.150000000001,closed,Closing Shift
+1550,Unknown,Main Station,,2026-03-10T00:00:00,16305.92,7427.87,-8878.05,closed,Closing Shift
+1551,Unknown,Main Station,,,16313.92,7412.87,-8901.05,open,Return Item
+1552,Unknown,Main Station,,,16316.17,7402.87,-8913.3,open,Return Item
+1553,Unknown,Main Station,,,16320.67,7389.87,-8930.8,open,Return Item
+1554,Unknown,Main Station,,,16322.67,7383.87,-8938.8,open,Return Item
+1555,Unknown,Main Station,,,16329.17,7363.87,-8965.3,open,Return Item
+1556,Unknown,Main Station,,2026-03-10T00:00:00,16323.17,7383.87,-8939.3,closed,Closing Shift
+1557,Unknown,Main Station,,2026-03-10T00:00:00,16313.11,7399.43,-8913.68,closed,Closing Shift
+1558,Unknown,Main Station,,,16406.37,7306.17,-9100.199999999999,open,
+1559,Unknown,Main Station,,,16406.37,7306.17,-9100.199999999999,open,Closing Day
+1560,Unknown,Main Station,2026-03-11T00:00:00,,16406.37,7306.17,-9100.199999999999,open,Opening Day
+1561,Unknown,Main Station,,2026-03-11T00:00:00,16403.37,7316.17,-9087.199999999999,closed,Closing Shift
+1562,Unknown,Main Station,,2026-03-11T00:00:00,16401.07,7319.17,-9081.9,closed,Closing Shift
+1563,Unknown,Main Station,,2026-03-11T00:00:00,16398.07,7326.17,-9071.9,closed,Closing Shift
+1564,Unknown,Main Station,,2026-03-11T00:00:00,16388.02,7358.17,-9029.85,closed,Closing Shift
+1565,Unknown,Main Station,,2026-03-11T00:00:00,16348.42,7426.17,-8922.25,closed,Closing Shift
+1566,Unknown,Main Station,,2026-03-11T00:00:00,16346.92,7434.17,-8912.75,closed,Closing Shift
+1567,Unknown,Main Station,,,16346.92,7434.17,-8912.75,open,Closing Day
+1568,Unknown,Main Station,2026-03-12T00:00:00,,16346.92,7434.17,-8912.75,open,Opening Day
+1569,Unknown,Main Station,,2026-03-12T00:00:00,16319.76,7461.84,-8857.92,closed,Closing Shift
+1570,Unknown,Main Station,,2026-03-12T00:00:00,16305.01,7509.84,-8795.17,closed,Closing Shift
+1571,Unknown,Main Station,,2026-03-12T00:00:00,16291.91,7532.84,-8759.07,closed,Closing Shift
+1572,Unknown,Main Station,,2026-03-12T00:00:00,16288.91,7539.84,-8749.07,closed,Closing Shift
+1573,Unknown,Main Station,,2026-03-12T00:00:00,16155.16,7717.84,-8437.32,closed,Closing Shift
+1574,Unknown,Main Station,,,16155.16,7717.84,-8437.32,open,Closing Day
+1575,Unknown,Main Station,2026-03-13T00:00:00,,16155.16,7717.84,-8437.32,open,Opening Day
+1576,Unknown,Main Station,,2026-03-13T00:00:00,16149.51,7740.84,-8408.67,closed,Closing Shift
+1577,Unknown,Main Station,,2026-03-13T00:00:00,16127.94,7784.5,-8343.44,closed,Closing Shift
+1578,Unknown,Main Station,,2026-03-13T00:00:00,16095.6,7851.39,-8244.21,closed,Closing Shift
+1579,Unknown,Main Station,,2026-03-13T00:00:00,16093.1,7861.39,-8231.71,closed,Closing Shift
+1580,Unknown,Main Station,,,16603.35,7351.14,-9252.21,open,
+1581,Unknown,Main Station,,,16465.76,7351.14,-9114.619999999999,open,Closing Day
+1582,Unknown,Main Station,2026-03-14T00:00:00,,16465.76,7351.14,-9114.619999999999,open,Opening Day
+1583,Unknown,Main Station,,2026-03-14T00:00:00,16449.56,7382.14,-9067.420000000002,closed,Closing Shift
+1584,Unknown,Main Station,,2026-03-14T00:00:00,16441.56,7398.14,-9043.420000000002,closed,Closing Shift
+1585,Unknown,Main Station,,,16569.56,7270.14,-9299.420000000002,open,
+1586,Unknown,Main Station,,,16920.16,6919.54,-10000.619999999999,open,
+1587,Unknown,Main Station,,2026-03-14T00:00:00,16904.16,6957.54,-9946.619999999999,closed,Closing Shift
+1588,Unknown,Main Station,,,16907.66,6947.54,-9960.119999999999,open,Return Item
+1589,Unknown,Main Station,,2026-03-14T00:00:00,16878.66,6999.54,-9879.119999999999,closed,Closing Shift
+1590,Unknown,Main Station,,2026-03-14T00:00:00,16864.16,7041.54,-9822.619999999999,closed,Closing Shift
+1591,Unknown,Main Station,,,16864.16,7041.54,-9822.619999999999,open,Closing Day
+1592,Unknown,Main Station,2026-03-16T00:00:00,,16864.16,7041.54,-9822.619999999999,open,Opening Day
+1593,Unknown,Main Station,,2026-03-16T00:00:00,16834.66,7082.54,-9752.119999999999,closed,Closing Shift
+1594,Unknown,Main Station,,2026-03-16T00:00:00,16753.91,7179.2,-9574.71,closed,Closing Shift
+1595,Unknown,Main Station,,2026-03-16T00:00:00,16748.89,7194.2,-9554.689999999999,closed,Closing Shift
+1596,Unknown,Main Station,,2026-03-16T00:00:00,16745.39,7204.2,-9541.189999999999,closed,Closing Shift
+1597,Unknown,Main Station,,,16745.39,7204.2,-9541.189999999999,open,Closing Day
+1598,Unknown,Main Station,2026-03-17T00:00:00,,16745.39,7204.2,-9541.189999999999,open,Opening Day
+1599,Unknown,Main Station,,2026-03-17T00:00:00,16737.13,7224.7,-9512.43,closed,Closing Shift
+1600,Unknown,Main Station,,2026-03-17T00:00:00,16736.02,7225.81,-9510.21,closed,Closing Shift
+1601,Unknown,Main Station,,2026-03-17T00:00:00,16711.52,7283.81,-9427.71,closed,Closing Shift
+1602,Unknown,Main Station,,2026-03-17T00:00:00,16708.31,7290.81,-9417.5,closed,Closing Shift
+1603,Unknown,Main Station,,,16708.31,7290.81,-9417.5,open,Closing Day
+1604,Unknown,Main Station,2026-03-18T00:00:00,,16708.31,7290.81,-9417.5,open,Opening Day
+1605,Unknown,Main Station,,2026-03-18T00:00:00,16678.79,7364.76,-9314.03,closed,Closing Shift
+1606,Unknown,Main Station,,2026-03-18T00:00:00,16657.79,7394.76,-9263.03,closed,Closing Shift
+1607,Unknown,Main Station,,2026-03-18T00:00:00,16648.75,7410.76,-9237.99,closed,Closing Shift
+1608,Unknown,Main Station,,2026-03-18T00:00:00,16620.75,7460.76,-9159.99,closed,Closing Shift
+1609,Unknown,Main Station,,2026-03-18T00:00:00,16606.75,7475.76,-9130.99,closed,Closing Shift
+1610,Unknown,Main Station,,,16606.75,7475.76,-9130.99,open,Closing Day
+1611,Unknown,Main Station,2026-03-19T00:00:00,,16606.75,7475.76,-9130.99,open,Opening Day
+1612,Unknown,Main Station,,2026-03-19T00:00:00,16604.23,7478.76,-9125.47,closed,Closing Shift
+1613,Unknown,Main Station,,2026-03-19T00:00:00,16598.99,7489.76,-9109.230000000001,closed,Closing Shift
+1614,Unknown,Main Station,,2026-03-19T00:00:00,16587.11,7507.76,-9079.35,closed,Closing Shift
+1615,Unknown,Main Station,,,17216.11,6878.76,-10337.35,open,
+1616,Unknown,Main Station,,,17231.65,6863.22,-10368.43,open,
+1617,Unknown,Main Station,,,17526.65,6568.22,-10958.43,open,
+1618,Unknown,Main Station,,2026-03-19T00:00:00,17474.13,6621.22,-10852.91,closed,Closing Shift
+1619,Unknown,Main Station,,,17474.13,6621.22,-10852.91,open,Closing Day
+1620,Unknown,Main Station,2026-03-20T00:00:00,,17474.13,6621.22,-10852.91,open,Opening Day
+1621,Unknown,Main Station,,2026-03-20T00:00:00,17466.63,6641.22,-10825.41,closed,Closing Shift
+1622,Unknown,Main Station,,2026-03-20T00:00:00,17465.63,6646.22,-10819.41,closed,Closing Shift
+1623,Unknown,Main Station,,2026-03-20T00:00:00,17456.15,6663.22,-10792.93,closed,Closing Shift
+1624,Unknown,Main Station,,2026-03-20T00:00:00,17405.0,6765.22,-10639.779999999999,closed,Closing Shift
+1625,Unknown,Main Station,,2026-03-20T00:00:00,17374.75,6825.22,-10549.529999999999,closed,Closing Shift
+1626,Unknown,Main Station,,,17374.75,6825.22,-10549.529999999999,open,Closing Day
+1627,Unknown,Main Station,2026-03-21T00:00:00,,17374.75,6825.22,-10549.529999999999,open,Opening Day
+1628,Unknown,Main Station,,2026-03-21T00:00:00,17372.23,6828.22,-10544.009999999998,closed,Closing Shift
+1629,Unknown,Main Station,,2026-03-21T00:00:00,17323.23,6898.22,-10425.009999999998,closed,Closing Shift
+1630,Unknown,Main Station,,2026-03-21T00:00:00,17317.91,6904.22,-10413.689999999999,closed,Closing Shift
+1631,Unknown,Main Station,,2026-03-21T00:00:00,17312.41,6919.22,-10393.189999999999,closed,Closing Shift
+1632,Unknown,Main Station,,,17312.41,6919.22,-10393.189999999999,open,Closing Day
+1633,Unknown,Main Station,2026-03-23T00:00:00,,17312.41,6919.22,-10393.189999999999,open,Opening Day
+1634,Unknown,Main Station,,2026-03-23T00:00:00,17309.89,6922.22,-10387.669999999998,closed,Closing Shift
+1635,Unknown,Main Station,,2026-03-23T00:00:00,17303.64,6942.22,-10361.419999999998,closed,Closing Shift
+1636,Unknown,Main Station,,2026-03-23T00:00:00,17289.12,6970.22,-10318.899999999998,closed,Closing Shift
+1637,Unknown,Main Station,,2026-03-23T00:00:00,17282.52,6981.22,-10301.3,closed,Closing Shift
+1638,Unknown,Main Station,,,17282.52,6981.22,-10301.3,open,Closing Day
+1639,Unknown,Main Station,2026-03-24T00:00:00,,17282.52,6981.22,-10301.3,open,Opening Day
+1640,Unknown,Main Station,,2026-03-24T00:00:00,17274.41,6996.33,-10278.08,closed,Closing Shift
+1641,Unknown,Main Station,,2026-03-24T00:00:00,17262.19,7008.55,-10253.64,closed,Closing Shift
+1642,Unknown,Main Station,,2026-03-24T00:00:00,17252.65,7033.55,-10219.100000000002,closed,Closing Shift
+1643,Unknown,Main Station,,2026-03-24T00:00:00,17245.13,7058.55,-10186.580000000002,closed,Closing Shift
+1644,Unknown,Main Station,,2026-03-24T00:00:00,17217.99,7090.41,-10127.580000000002,closed,Closing Shift
+1645,Unknown,Main Station,,2026-03-24T00:00:00,17216.74,7095.41,-10121.330000000002,closed,Closing Shift
+1646,Unknown,Main Station,,,17216.74,7095.41,-10121.330000000002,open,Closing Day
+1647,Unknown,Main Station,2026-03-25T00:00:00,,17216.74,7095.41,-10121.330000000002,open,Opening Day
+1648,Unknown,Main Station,,2026-03-25T00:00:00,17208.97,7110.41,-10098.560000000001,closed,Closing Shift
+1649,Unknown,Main Station,,2026-03-25T00:00:00,17205.97,7120.41,-10085.560000000001,closed,Closing Shift
+1650,Unknown,Main Station,,,17319.97,7006.41,-10313.560000000001,open,
+1651,Unknown,Main Station,,,17325.47,6991.41,-10334.060000000001,open,Return Item
+1652,Unknown,Main Station,,2026-03-25T00:00:00,17324.47,6998.41,-10326.060000000001,closed,Closing Shift
+1653,Unknown,Main Station,,,17328.47,6988.41,-10340.060000000001,open,Return Item
+1654,Unknown,Main Station,,2026-03-25T00:00:00,17295.14,7042.91,-10252.23,closed,Closing Shift
+1655,Unknown,Main Station,,2026-03-25T00:00:00,17290.48,7048.91,-10241.57,closed,Closing Shift
+1656,Unknown,Main Station,,,17290.48,7048.91,-10241.57,open,Closing Day
+1657,Unknown,Main Station,2026-03-26T00:00:00,,17290.48,7048.91,-10241.57,open,Opening Day
+1658,Unknown,Main Station,,2026-03-26T00:00:00,17287.48,7060.91,-10226.57,closed,Closing Shift
+1659,Unknown,Main Station,,2026-03-26T00:00:00,17244.66,7116.91,-10127.75,closed,Closing Shift
+1660,Unknown,Main Station,,2026-03-26T00:00:00,17242.81,7126.91,-10115.900000000001,closed,Closing Shift
+1661,Unknown,Main Station,,2026-03-26T00:00:00,17239.46,7141.91,-10097.55,closed,Closing Shift
+1662,Unknown,Main Station,,2026-03-26T00:00:00,17228.21,7166.91,-10061.3,closed,Closing Shift
+1663,Unknown,Main Station,,,17228.21,7166.91,-10061.3,open,Closing Day
+1664,Unknown,Main Station,2026-03-27T00:00:00,,17228.21,7166.91,-10061.3,open,Opening Day
+1665,Unknown,Main Station,,2026-03-27T00:00:00,17214.96,7204.13,-10010.829999999998,closed,Closing Shift
+1666,Unknown,Main Station,,2026-03-27T00:00:00,17201.58,7228.13,-9973.45,closed,Closing Shift
+1667,Unknown,Main Station,,2026-03-27T00:00:00,17199.08,7238.13,-9960.95,closed,Closing Shift
+1668,Unknown,Main Station,,2026-03-27T00:00:00,17193.08,7261.13,-9931.95,closed,Closing Shift
+1669,Unknown,Main Station,,2026-03-27T00:00:00,17190.56,7264.13,-9926.43,closed,Closing Shift
+1670,Unknown,Main Station,,2026-03-27T00:00:00,17185.26,7279.46,-9905.8,closed,Closing Shift
+1671,Unknown,Main Station,,,17299.26,7165.46,-10133.8,open,
+1672,Unknown,Main Station,,2026-03-27T00:00:00,17290.26,7186.46,-10103.8,closed,Closing Shift
+1673,Unknown,Main Station,,,18900.26,5576.46,-13323.8,open,
+1674,Unknown,Main Station,,2026-03-27T00:00:00,17320.26,7246.46,-10073.8,closed,Closing Shift
+1675,Unknown,Main Station,,,17320.26,7246.46,-10073.8,open,Closing Day
+1676,Unknown,Main Station,2026-03-28T00:00:00,,17320.26,7246.46,-10073.8,open,Opening Day
+1677,Unknown,Main Station,,2026-03-28T00:00:00,17312.76,7266.46,-10046.3,closed,Closing Shift
+1678,Unknown,Main Station,,2026-03-28T00:00:00,17308.76,7273.46,-10035.3,closed,Closing Shift
+1679,Unknown,Main Station,,2026-03-28T00:00:00,17305.24,7281.46,-10023.780000000002,closed,Closing Shift
+1680,Unknown,Main Station,,2026-03-28T00:00:00,17233.72,7373.46,-9860.260000000002,closed,Closing Shift
+1681,Unknown,Main Station,,2026-03-28T00:00:00,17230.22,7385.46,-9844.760000000002,closed,Closing Shift
+1682,Unknown,Main Station,,,17230.22,7385.46,-9844.760000000002,open,Closing Day
+1683,Unknown,Main Station,2026-03-30T00:00:00,,17230.22,7385.46,-9844.760000000002,open,Opening Day
+1684,Unknown,Main Station,,2026-03-30T00:00:00,17207.7,7413.46,-9794.240000000002,closed,Closing Shift
+1685,Unknown,Main Station,,2026-03-30T00:00:00,17188.25,7433.84,-9754.41,closed,Closing Shift
+1686,Unknown,Main Station,,,17217.05,7405.04,-9812.009999999998,open,
+1687,Unknown,Main Station,,2026-03-30T00:00:00,17211.05,7419.04,-9792.009999999998,closed,Closing Shift
+1688,Unknown,Main Station,,2026-03-30T00:00:00,17196.66,7442.93,-9753.73,closed,Closing Shift
+1689,Unknown,Main Station,,2026-03-30T00:00:00,17126.37,7569.43,-9556.939999999999,closed,Closing Shift
+1690,Unknown,Main Station,,2026-03-30T00:00:00,17095.12,7630.43,-9464.689999999999,closed,Closing Shift
+1691,Unknown,Main Station,,,17095.12,7630.43,-9464.689999999999,open,Closing Day
+1692,Unknown,Main Station,2026-03-31T00:00:00,,17095.12,7630.43,-9464.689999999999,open,Opening Day
+1693,Unknown,Main Station,,2026-03-31T00:00:00,17094.01,7631.54,-9462.469999999998,closed,Closing Shift
+1694,Unknown,Main Station,,2026-03-31T00:00:00,17084.47,7654.14,-9430.330000000002,closed,Closing Shift
+1695,Unknown,Main Station,,,18794.47,5944.14,-12850.330000000002,open,
+1696,Unknown,Main Station,,2026-03-31T00:00:00,17077.62,7724.14,-9353.48,closed,Closing Shift
+1697,Unknown,Main Station,,2026-03-31T00:00:00,17051.62,7764.14,-9287.48,closed,Closing Shift
+1698,Unknown,Main Station,,2026-03-31T00:00:00,17048.12,7774.14,-9273.98,closed,Closing Shift
+1699,Unknown,Main Station,,,17063.66,7758.6,-9305.06,open,
+1700,Unknown,Main Station,,2026-03-31T00:00:00,17057.91,7778.6,-9279.31,closed,Closing Shift
+1701,Unknown,Main Station,,,17059.91,7768.6,-9291.31,open,Return Item
+1702,Unknown,Main Station,,2026-03-31T00:00:00,17046.56,7822.6,-9223.960000000001,closed,Closing Shift
+1703,Unknown,Main Station,,,17046.56,7822.6,-9223.960000000001,open,Closing Day
+1704,Unknown,Main Station,2026-04-01T00:00:00,,17046.56,7822.6,-9223.960000000001,open,Opening Day
+1705,Unknown,Main Station,,2026-04-01T00:00:00,17033.29,7850.4,-9182.890000000001,closed,Closing Shift
+1706,Unknown,Main Station,,2026-04-01T00:00:00,17027.74,7870.4,-9157.340000000002,closed,Closing Shift
+1707,Unknown,Main Station,,,17031.24,7858.4,-9172.840000000002,open,Return Item
+1708,Unknown,Main Station,,2026-04-01T00:00:00,17026.2,7864.4,-9161.800000000001,closed,Closing Shift
+1709,Unknown,Main Station,,2026-04-01T00:00:00,17024.7,7871.4,-9153.300000000001,closed,Closing Shift
+1710,Unknown,Main Station,,2026-04-01T00:00:00,16962.7,7972.4,-8990.300000000001,closed,Closing Shift
+1711,Unknown,Main Station,,2026-04-01T00:00:00,16961.06,7974.4,-8986.660000000002,closed,Closing Shift
+1712,Unknown,Main Station,,,16961.06,7974.4,-8986.660000000002,open,Closing Day
+1713,Unknown,Main Station,2026-04-02T00:00:00,,16961.06,7974.4,-8986.660000000002,open,Opening Day
+1714,Unknown,Main Station,,2026-04-02T00:00:00,16951.56,7994.4,-8957.160000000002,closed,Closing Shift
+1715,Unknown,Main Station,,2026-04-02T00:00:00,16936.68,8022.4,-8914.28,closed,Closing Shift
+1716,Unknown,Main Station,,2026-04-02T00:00:00,16930.68,8047.4,-8883.28,closed,Closing Shift
+1717,Unknown,Main Station,,,16930.68,8047.4,-8883.28,open,Closing Day
+1718,Unknown,Main Station,,,17068.27,5264.4,-11803.87,open,Closing Month
+1719,Unknown,Main Station,2026-04-03T00:00:00,,16898.68,5264.4,-11634.28,open,Opening Month
+1720,Unknown,Main Station,2026-04-03T00:00:00,,16898.68,5264.4,-11634.28,open,Opening Day
+1721,Unknown,Main Station,,2026-04-03T00:00:00,16890.16,5274.3,-11615.86,closed,Closing Shift
+1722,Unknown,Main Station,,2026-04-03T00:00:00,16888.36,5284.3,-11604.060000000001,closed,Closing Shift
+1723,Unknown,Main Station,,2026-04-03T00:00:00,16881.62,5296.9,-11584.72,closed,Closing Shift
+1724,Unknown,Main Station,,2026-04-03T00:00:00,16858.37,5351.9,-11506.47,closed,Closing Shift
+1725,Unknown,Main Station,,2026-04-03T00:00:00,16850.52,5386.9,-11463.62,closed,Closing Shift
+1726,Unknown,Main Station,,,16850.52,5386.9,-11463.62,open,Closing Day
+1727,Unknown,Main Station,2026-04-04T00:00:00,,16850.52,5386.9,-11463.62,open,Opening Day
+1728,Unknown,Main Station,,2026-04-04T00:00:00,16822.52,5441.9,-11380.62,closed,Closing Shift
+1729,Unknown,Main Station,,2026-04-04T00:00:00,16797.02,5482.9,-11314.12,closed,Closing Shift
+1730,Unknown,Main Station,,2026-04-04T00:00:00,16784.37,5517.9,-11266.47,closed,Closing Shift
+1731,Unknown,Main Station,,,16785.17,5512.9,-11272.269999999999,open,Return Item
+1732,Unknown,Main Station,,,16785.17,5512.9,-11272.269999999999,open,Closing Day
+1733,Unknown,Main Station,2026-04-06T00:00:00,,16785.17,5512.9,-11272.269999999999,open,Opening Day
+1734,Unknown,Main Station,,2026-04-06T00:00:00,16780.13,5518.5,-11261.630000000001,closed,Closing Shift
+1735,Unknown,Main Station,,2026-04-06T00:00:00,16245.13,6128.5,-10116.63,closed,Closing Shift
+1736,Unknown,Main Station,,2026-04-06T00:00:00,16228.57,6152.5,-10076.07,closed,Closing Shift
+1737,Unknown,Main Station,,2026-04-06T00:00:00,16221.57,6167.5,-10054.07,closed,Closing Shift
+1738,Unknown,Main Station,,2026-04-06T00:00:00,16216.07,6185.5,-10030.57,closed,Closing Shift
+1739,Unknown,Main Station,,,16216.07,6185.5,-10030.57,open,Closing Day
+1740,Unknown,Main Station,2026-04-07T00:00:00,,16216.07,6185.5,-10030.57,open,Opening Day
+1741,Unknown,Main Station,,2026-04-07T00:00:00,16215.11,6187.0,-10028.11,closed,Closing Shift
+1742,Unknown,Main Station,,2026-04-07T00:00:00,16208.48,6199.0,-10009.48,closed,Closing Shift
+1743,Unknown,Main Station,,2026-04-07T00:00:00,16207.6,6201.22,-10006.380000000001,closed,Closing Shift
+1744,Unknown,Main Station,,2026-04-07T00:00:00,16203.45,6218.22,-9985.23,closed,Closing Shift
+1745,Unknown,Main Station,,2026-04-07T00:00:00,16164.45,6307.22,-9857.23,closed,Closing Shift
+1746,Unknown,Main Station,,2026-04-07T00:00:00,16143.89,6360.22,-9783.669999999998,closed,Closing Shift
+1747,Unknown,Main Station,,,16385.27,6118.84,-10266.43,open,
+1748,Unknown,Main Station,,,16634.27,5869.84,-10764.43,open,
+1749,Unknown,Main Station,,,16634.27,5869.84,-10764.43,open,Closing Day
+1750,Unknown,Main Station,2026-04-08T00:00:00,,16634.27,5869.84,-10764.43,open,Opening Day
+1751,Unknown,Main Station,,2026-04-08T00:00:00,16597.88,5912.72,-10685.16,closed,Closing Shift
+1752,Unknown,Main Station,,2026-04-08T00:00:00,16583.44,5927.17,-10656.269999999999,closed,Closing Shift
+1753,Unknown,Main Station,,2026-04-08T00:00:00,16578.27,5938.84,-10639.43,closed,Closing Shift
+1754,Unknown,Main Station,,2026-04-08T00:00:00,16566.03,5969.84,-10596.189999999999,closed,Closing Shift
+1755,Unknown,Main Station,,2026-04-08T00:00:00,16562.53,5979.84,-10582.689999999999,closed,Closing Shift
+1756,Unknown,Main Station,,2026-04-08T00:00:00,16543.36,6012.84,-10530.52,closed,Closing Shift
+1757,Unknown,Main Station,,,16543.36,6012.84,-10530.52,open,Closing Day
+1758,Unknown,Main Station,2026-04-09T00:00:00,,16543.36,6012.84,-10530.52,open,Opening Day
+1759,Unknown,Main Station,,2026-04-09T00:00:00,16537.61,6029.84,-10507.77,closed,Closing Shift
+1760,Unknown,Main Station,,2026-04-09T00:00:00,16529.61,6054.84,-10474.77,closed,Closing Shift
+1761,Unknown,Main Station,,2026-04-09T00:00:00,16524.57,6060.84,-10463.73,closed,Closing Shift
+1762,Unknown,Main Station,,2026-04-09T00:00:00,16522.17,6073.84,-10448.329999999998,closed,Closing Shift
+1763,Unknown,Main Station,,2026-04-09T00:00:00,16489.88,6159.44,-10330.440000000002,closed,Closing Shift
+1764,Unknown,Main Station,,,16540.88,6108.44,-10432.440000000002,open,
+1765,Unknown,Main Station,,2026-04-09T00:00:00,16531.88,6129.44,-10402.440000000002,closed,Closing Shift
+1766,Unknown,Main Station,,,16531.88,6129.44,-10402.440000000002,open,Closing Day
+1767,Unknown,Main Station,2026-04-10T00:00:00,,16531.88,6129.44,-10402.440000000002,open,Opening Day
+1768,Unknown,Main Station,,2026-04-10T00:00:00,16514.88,6151.44,-10363.440000000002,closed,Closing Shift
+1769,Unknown,Main Station,,2026-04-10T00:00:00,16508.13,6161.44,-10346.690000000002,closed,Closing Shift
+1770,Unknown,Main Station,,2026-04-10T00:00:00,16425.48,6283.44,-10142.04,closed,Closing Shift
+1771,Unknown,Main Station,,2026-04-10T00:00:00,16417.43,6325.44,-10091.990000000002,closed,Closing Shift
+1772,Unknown,Main Station,,2026-04-10T00:00:00,16404.63,6371.44,-10033.190000000002,closed,Closing Shift
+1773,Unknown,Main Station,,,16404.63,6371.44,-10033.190000000002,open,Closing Day
+1774,Unknown,Main Station,2026-04-11T00:00:00,,16404.63,6371.44,-10033.190000000002,open,Opening Day
+1775,Unknown,Main Station,,2026-04-11T00:00:00,16389.13,6408.44,-9980.690000000002,closed,Closing Shift
+1776,Unknown,Main Station,,2026-04-11T00:00:00,16384.18,6421.44,-9962.740000000002,closed,Closing Shift
+1777,Unknown,Main Station,,2026-04-11T00:00:00,16378.76,6440.44,-9938.32,closed,Closing Shift
+1778,Unknown,Main Station,,2026-04-11T00:00:00,16359.58,6466.44,-9893.14,closed,Closing Shift
+1779,Unknown,Main Station,,2026-04-11T00:00:00,16357.98,6476.44,-9881.54,closed,Closing Shift
+1780,Unknown,Main Station,,,16357.98,6476.44,-9881.54,open,Closing Day
+1781,Unknown,Main Station,2026-04-13T00:00:00,,16357.98,6476.44,-9881.54,open,Opening Day
+1782,Unknown,Main Station,,2026-04-13T00:00:00,16322.98,6521.44,-9801.54,closed,Closing Shift
+1783,Unknown,Main Station,,2026-04-13T00:00:00,16307.48,6563.44,-9744.04,closed,Closing Shift
+1784,Unknown,Main Station,,2026-04-13T00:00:00,16275.23,6625.44,-9649.79,closed,Closing Shift
+1785,Unknown,Main Station,,2026-04-13T00:00:00,16263.9,6638.27,-9625.63,closed,Closing Shift
+1786,Unknown,Main Station,,,16263.9,6638.27,-9625.63,open,Closing Day
+1787,Unknown,Main Station,2026-04-14T00:00:00,,16263.9,6638.27,-9625.63,open,Opening Day
+1788,Unknown,Main Station,,2026-04-14T00:00:00,15363.75,7425.82,-7937.93,closed,Closing Shift
+1789,Unknown,Main Station,,2026-04-14T00:00:00,15345.75,7460.82,-7884.93,closed,Closing Shift
+1790,Unknown,Main Station,,2026-04-14T00:00:00,15334.55,7478.38,-7856.169999999999,closed,Closing Shift
+1791,Unknown,Main Station,,2026-04-14T00:00:00,15332.55,7486.38,-7846.169999999999,closed,Closing Shift
+1792,Unknown,Main Station,,,15332.55,7486.38,-7846.169999999999,open,Closing Day
+1793,Unknown,Main Station,2026-04-15T00:00:00,,15332.55,7486.38,-7846.169999999999,open,Opening Day
+1794,Unknown,Main Station,,2026-04-15T00:00:00,15293.0,7525.93,-7767.07,closed,Closing Shift
+1795,Unknown,Main Station,,2026-04-15T00:00:00,15279.98,7559.04,-7720.94,closed,Closing Shift
+1796,Unknown,Main Station,,2026-04-15T00:00:00,15271.48,7581.54,-7689.94,closed,Closing Shift
+1797,Unknown,Main Station,,2026-04-15T00:00:00,15249.33,7628.54,-7620.79,closed,Closing Shift
+1798,Unknown,Main Station,,2026-04-15T00:00:00,15246.33,7634.54,-7611.79,closed,Closing Shift
+1799,Unknown,Main Station,,,15531.33,7349.54,-8181.79,open,
+1800,Unknown,Main Station,,,15589.33,7291.54,-8297.79,open,
+1801,Unknown,Main Station,,,15949.93,6930.94,-9018.990000000002,open,
+1802,Unknown,Main Station,,,15949.93,6930.94,-9018.990000000002,open,Closing Day
+1803,Unknown,Main Station,2026-04-16T00:00:00,,15949.93,6930.94,-9018.990000000002,open,Opening Day
+1804,Unknown,Main Station,,2026-04-16T00:00:00,15922.66,6956.56,-8966.099999999999,closed,Closing Shift
+1805,Unknown,Main Station,,2026-04-16T00:00:00,15921.31,6966.56,-8954.75,closed,Closing Shift
+1806,Unknown,Main Station,,2026-04-16T00:00:00,15900.06,6998.11,-8901.95,closed,Closing Shift
+1807,Unknown,Main Station,,2026-04-16T00:00:00,15892.16,7029.11,-8863.05,closed,Closing Shift
+1808,Unknown,Main Station,,2026-04-16T00:00:00,15886.45,7041.11,-8845.34,closed,Closing Shift
+1809,Unknown,Main Station,,2026-04-16T00:00:00,15882.65,7050.11,-8832.54,closed,Closing Shift
+1810,Unknown,Main Station,,,15882.65,7050.11,-8832.54,open,Closing Day
+1811,Unknown,Main Station,2026-04-17T00:00:00,,15882.65,7050.11,-8832.54,open,Opening Day
+1812,Unknown,Main Station,,2026-04-17T00:00:00,15879.85,7054.11,-8825.740000000002,closed,Closing Shift
+1813,Unknown,Main Station,,2026-04-17T00:00:00,15874.33,7067.11,-8807.220000000001,closed,Closing Shift
+1814,Unknown,Main Station,,2026-04-17T00:00:00,15871.66,7070.61,-8801.05,closed,Closing Shift
+1815,Unknown,Main Station,,2026-04-17T00:00:00,15839.66,7115.61,-8724.05,closed,Closing Shift
+1816,Unknown,Main Station,,2026-04-17T00:00:00,15837.16,7118.61,-8718.55,closed,Closing Shift
+1817,Unknown,Main Station,,2026-04-17T00:00:00,15834.46,7128.61,-8705.849999999999,closed,Closing Shift
+1818,Unknown,Main Station,,,16414.46,6548.61,-9865.849999999999,open,
+1819,Unknown,Main Station,,,16414.46,6548.61,-9865.849999999999,open,Closing Day
+1820,Unknown,Main Station,2026-04-18T00:00:00,,16414.46,6548.61,-9865.849999999999,open,Opening Day
+1821,Unknown,Main Station,,2026-04-18T00:00:00,16402.94,6566.61,-9836.329999999998,closed,Closing Shift
+1822,Unknown,Main Station,,2026-04-18T00:00:00,16400.54,6569.61,-9830.93,closed,Closing Shift
+1823,Unknown,Main Station,,2026-04-18T00:00:00,16397.54,6579.61,-9817.93,closed,Closing Shift

@@ -1,0 +1,48 @@
+{
+  "source_access": "BackEnd.accdb",
+  "access_exported_at": "2026-04-27T20:37:16.481737Z",
+  "generated_at": "2026-04-27T21:21:56.061803Z",
+  "supabase_schema_source": "allway_complete_schema.sql",
+  "generated_files": {
+    "clients": "supabase_import/clients.csv",
+    "suppliers": "supabase_import/suppliers.csv",
+    "products": "supabase_import/products.csv",
+    "invoices": "supabase_import/invoices.csv",
+    "invoice_items": "supabase_import/invoice_items.csv",
+    "expenses": "supabase_import/expenses.csv",
+    "purchases": "supabase_import/purchases.csv",
+    "receivables": "supabase_import/receivables.csv",
+    "taxi_trips": "supabase_import/taxi_trips.csv",
+    "pnl_entries": "supabase_import/pnl_entries.csv",
+    "audit_log": "supabase_import/audit_log.csv",
+    "s14_stamps": "supabase_import/s14_stamps.csv",
+    "shifts": "supabase_import/shifts.csv"
+  },
+  "row_counts": {
+    "clients": 584,
+    "suppliers": 34,
+    "products": 1744,
+    "invoices": 8758,
+    "invoice_items": 10929,
+    "expenses": 310,
+    "purchases": 158,
+    "receivables": 150,
+    "taxi_trips": 514,
+    "pnl_entries": 1259,
+    "audit_log": 41433,
+    "s14_stamps": 147,
+    "shifts": 1698
+  },
+  "notes": [
+    "payment_method derived from tblPayments (LBP_Received / USD_Received per first Payment_ID).",
+    "purchases.items populated as JSONB from tblPurchaseDetails grouped by Purchase_ID.",
+    "invoice_items and expenses now carry stable Access IDs for idempotent upsert.",
+    "receivables: Status='Solved' maps to 'collected'; all others to 'pending'.",
+    "taxi_trips: amounts stored as LBP (amount_usd=0); DriverID resolved via tblTaxiAccounts→tblClients.",
+    "pnl_entries: AccessoriesUSD→usd_cms, AppUSD→usd_whish, AppLBP→lbp_cms, CashLBP→lbp_cash.",
+    "audit_log: LogTime OLE-epoch date stripped; combined with LogDate for created_at.",
+    "s14_stamps: financial amounts not in Access; amount_usd/lbp default 0.",
+    "shifts: mapped from tblStockCashAndPhysical; user_name defaulted to 'Unknown'.",
+    "Tables with no Access equivalent (whish_transactions, recharge_cards, internet_recharges, whish_balances, inventory_checks) are not imported."
+  ]
+}

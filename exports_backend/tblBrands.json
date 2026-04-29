@@ -1,0 +1,462 @@
+[
+  {
+    "ID": 1,
+    "Brands": "Samsung"
+  },
+  {
+    "ID": 2,
+    "Brands": "iPhone"
+  },
+  {
+    "ID": 3,
+    "Brands": "Hoco"
+  },
+  {
+    "ID": 4,
+    "Brands": "Kakusiga"
+  },
+  {
+    "ID": 5,
+    "Brands": "Borofone"
+  },
+  {
+    "ID": 6,
+    "Brands": "Silicone"
+  },
+  {
+    "ID": 7,
+    "Brands": "DKG Shock"
+  },
+  {
+    "ID": 8,
+    "Brands": "DKG Premium"
+  },
+  {
+    "ID": 9,
+    "Brands": "DKG Design"
+  },
+  {
+    "ID": 10,
+    "Brands": "Berlia"
+  },
+  {
+    "ID": 11,
+    "Brands": "New Case"
+  },
+  {
+    "ID": 12,
+    "Brands": "Space"
+  },
+  {
+    "ID": 13,
+    "Brands": "Fashion"
+  },
+  {
+    "ID": 14,
+    "Brands": "Crystal Palace"
+  },
+  {
+    "ID": 15,
+    "Brands": "Casetify"
+  },
+  {
+    "ID": 16,
+    "Brands": "Doyers"
+  },
+  {
+    "ID": 17,
+    "Brands": "Mercury"
+  },
+  {
+    "ID": 18,
+    "Brands": "Adannu"
+  },
+  {
+    "ID": 19,
+    "Brands": "AG Glass"
+  },
+  {
+    "ID": 20,
+    "Brands": "Better"
+  },
+  {
+    "ID": 22,
+    "Brands": "Case"
+  },
+  {
+    "ID": 23,
+    "Brands": "Magnetic"
+  },
+  {
+    "ID": 24,
+    "Brands": "Simeitu"
+  },
+  {
+    "ID": 25,
+    "Brands": "Yesido"
+  },
+  {
+    "ID": 26,
+    "Brands": "Kalio"
+  },
+  {
+    "ID": 27,
+    "Brands": "Earldom"
+  },
+  {
+    "ID": 28,
+    "Brands": "IDM"
+  },
+  {
+    "ID": 29,
+    "Brands": "Terranet"
+  },
+  {
+    "ID": 30,
+    "Brands": "Sodetel"
+  },
+  {
+    "ID": 31,
+    "Brands": "Cyberia"
+  },
+  {
+    "ID": 32,
+    "Brands": "Connect"
+  },
+  {
+    "ID": 33,
+    "Brands": "Mobi"
+  },
+  {
+    "ID": 34,
+    "Brands": "Wise"
+  },
+  {
+    "ID": 35,
+    "Brands": "Panasonic"
+  },
+  {
+    "ID": 36,
+    "Brands": "PikCell"
+  },
+  {
+    "ID": 37,
+    "Brands": "Blackview"
+  },
+  {
+    "ID": 38,
+    "Brands": "Oscal"
+  },
+  {
+    "ID": 39,
+    "Brands": "Nokia"
+  },
+  {
+    "ID": 40,
+    "Brands": "Caisles"
+  },
+  {
+    "ID": 41,
+    "Brands": "Kzood"
+  },
+  {
+    "ID": 42,
+    "Brands": "KeepPhone"
+  },
+  {
+    "ID": 43,
+    "Brands": "New I"
+  },
+  {
+    "ID": 44,
+    "Brands": "Unnamed"
+  },
+  {
+    "ID": 45,
+    "Brands": "DKG Cover"
+  },
+  {
+    "ID": 46,
+    "Brands": "Piblue"
+  },
+  {
+    "ID": 47,
+    "Brands": "9D Glass"
+  },
+  {
+    "ID": 48,
+    "Brands": "Leather"
+  },
+  {
+    "ID": 49,
+    "Brands": "Metal Frame"
+  },
+  {
+    "ID": 50,
+    "Brands": "XO"
+  },
+  {
+    "ID": 51,
+    "Brands": "Schwaiger"
+  },
+  {
+    "ID": 52,
+    "Brands": "Meetion"
+  },
+  {
+    "ID": 53,
+    "Brands": "Green Lion"
+  },
+  {
+    "ID": 54,
+    "Brands": "Ace Fast"
+  },
+  {
+    "ID": 55,
+    "Brands": "Glass Pro"
+  },
+  {
+    "ID": 56,
+    "Brands": "Funshare"
+  },
+  {
+    "ID": 57,
+    "Brands": "Lito"
+  },
+  {
+    "ID": 58,
+    "Brands": "Watch"
+  },
+  {
+    "ID": 59,
+    "Brands": "Apple"
+  },
+  {
+    "ID": 60,
+    "Brands": "Chief Max"
+  },
+  {
+    "ID": 61,
+    "Brands": "Whish System"
+  },
+  {
+    "ID": 62,
+    "Brands": "Whish App"
+  },
+  {
+    "ID": 63,
+    "Brands": "Loto"
+  },
+  {
+    "ID": 64,
+    "Brands": "Terea"
+  },
+  {
+    "ID": 65,
+    "Brands": "Blends"
+  },
+  {
+    "ID": 66,
+    "Brands": "Fiit"
+  },
+  {
+    "ID": 67,
+    "Brands": "Heets"
+  },
+  {
+    "ID": 68,
+    "Brands": "Luminous"
+  },
+  {
+    "ID": 69,
+    "Brands": "Privacy"
+  },
+  {
+    "ID": 70,
+    "Brands": "Tempered"
+  },
+  {
+    "ID": 71,
+    "Brands": "Terea"
+  },
+  {
+    "ID": 72,
+    "Brands": "Delia"
+  },
+  {
+    "ID": 73,
+    "Brands": "Copy"
+  },
+  {
+    "ID": 74,
+    "Brands": "Streaming"
+  },
+  {
+    "ID": 75,
+    "Brands": "Tranyo"
+  },
+  {
+    "ID": 76,
+    "Brands": "Customized"
+  },
+  {
+    "ID": 77,
+    "Brands": "Teclast"
+  },
+  {
+    "ID": 78,
+    "Brands": "MELIYE"
+  },
+  {
+    "ID": 79,
+    "Brands": "SONY"
+  },
+  {
+    "ID": 80,
+    "Brands": "telzeal"
+  },
+  {
+    "ID": 81,
+    "Brands": "JBL"
+  },
+  {
+    "ID": 82,
+    "Brands": "Cufan"
+  },
+  {
+    "ID": 83,
+    "Brands": "Dream"
+  },
+  {
+    "ID": 84,
+    "Brands": "Porodo"
+  },
+  {
+    "ID": 85,
+    "Brands": "unipha"
+  },
+  {
+    "ID": 86,
+    "Brands": "MOXOM"
+  },
+  {
+    "ID": 87,
+    "Brands": "Coblue"
+  },
+  {
+    "ID": 88,
+    "Brands": "Eggshell"
+  },
+  {
+    "ID": 89,
+    "Brands": "TPU"
+  },
+  {
+    "ID": 90,
+    "Brands": "Crown"
+  },
+  {
+    "ID": 91,
+    "Brands": "iPefet"
+  },
+  {
+    "ID": 92,
+    "Brands": "Mletubl"
+  },
+  {
+    "ID": 93,
+    "Brands": "N/A"
+  },
+  {
+    "ID": 94,
+    "Brands": "OG Glass"
+  },
+  {
+    "ID": 95,
+    "Brands": "Mtetubl"
+  },
+  {
+    "ID": 96,
+    "Brands": "Alfa"
+  },
+  {
+    "ID": 97,
+    "Brands": "HP"
+  },
+  {
+    "ID": 98,
+    "Brands": "Clear Silicone"
+  },
+  {
+    "ID": 99,
+    "Brands": "Stanley"
+  },
+  {
+    "ID": 100,
+    "Brands": "Kingston"
+  },
+  {
+    "ID": 101,
+    "Brands": "Odora"
+  },
+  {
+    "ID": 102,
+    "Brands": "Foneng"
+  },
+  {
+    "ID": 103,
+    "Brands": "OG Full Clue"
+  },
+  {
+    "ID": 104,
+    "Brands": "IQOS"
+  },
+  {
+    "ID": 105,
+    "Brands": "SamFire"
+  },
+  {
+    "ID": 106,
+    "Brands": "Fashion Case"
+  },
+  {
+    "ID": 107,
+    "Brands": "Clear Case Magnetic"
+  },
+  {
+    "ID": 108,
+    "Brands": "Silicone Case"
+  },
+  {
+    "ID": 109,
+    "Brands": "Mobile Case"
+  },
+  {
+    "ID": 110,
+    "Brands": "Bonds"
+  },
+  {
+    "ID": 111,
+    "Brands": "Iluma I"
+  },
+  {
+    "ID": 112,
+    "Brands": "Iluma I One"
+  },
+  {
+    "ID": 113,
+    "Brands": "Bavin"
+  },
+  {
+    "ID": 114,
+    "Brands": "Unknown"
+  },
+  {
+    "ID": 115,
+    "Brands": "Joyroom"
+  },
+  {
+    "ID": 116,
+    "Brands": "Heybingo"
+  }
+]

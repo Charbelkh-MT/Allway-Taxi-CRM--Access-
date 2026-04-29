@@ -1,0 +1,1745 @@
+AverageCost,Barcode,Checked,IsSelected,P_ID,Product_Brand,Product_Category,Product_Cost,Product_Currency,Product_Details,Product_Quantity,Product_Selling,Product_Sub_Category
+"$318,000.00",,False,False,1,Alfa,Recharges,3180000000,LBP,Alfa Card 03.03,0,4000000000,Mobiles
+"$462,000.00",,False,False,2,Alfa,Recharges,4620000000,LBP,Alfa Card 04.50,0,5500000000,Mobiles
+"$765,000.00",,False,False,3,Alfa,Recharges,7650000000,LBP,Alfa Card 07.58,0,9000000000,Mobiles
+"$1,510,000.00",,False,False,4,Alfa,Recharges,15100000000,LBP,Alfa Card 15.15,0,17000000000,Mobiles
+"$2,255,000.00",,False,False,5,Alfa,Recharges,22550000000,LBP,Alfa Card 22.73,0,25500000000,Mobiles
+"$7,620,000.00",,False,False,6,Alfa,Recharges,76200000000,LBP,Alfa Card 77.28,0,84000000000,Mobiles
+"$95,000.00",,False,False,7,Alfa,Recharges,1150000000,LBP,Alfa Dollars,0,1300000000,Mobiles
+"$195,000.00",,False,False,8,Alfa,Recharges,1950000000,LBP,Alfa Month,0,3500000000,Mobiles
+"$184,000.00",,False,False,10,Touch,Recharges,1840000000,LBP,Touch Card 01.67,0,2200000000,Mobiles
+"$393,000.00",,False,False,11,Touch,Recharges,3930000000,LBP,Touch Card 03.79,0,4500000000,Mobiles
+"$462,000.00",,False,False,12,Touch,Recharges,4620000000,LBP,Touch Card 04.50,0,5500000000,Mobiles
+"$765,000.00",,False,False,13,Touch,Recharges,7650000000,LBP,Touch Card 07.58,0,8500000000,Mobiles
+"$1,510,000.00",,False,False,14,Touch,Recharges,15100000000,LBP,Touch Card 15.15,0,17000000000,Mobiles
+"$2,255,000.00",,False,False,15,Touch,Recharges,22550000000,LBP,Card 22.73Touch,0,25500000000,Mobiles
+"$7,620,000.00",,False,False,16,Touch,Recharges,76200000000,LBP,Touch Card 77.28,0,84000000000,Mobiles
+"$95,000.00",,False,False,17,Touch,Recharges,1150000000,LBP,Touch Dollars,0,1300000000,Mobiles
+"$295,000.00",,False,False,18,Touch,Recharges,2950000000,LBP,Touch Month,0,3500000000,Mobiles
+$0.00,,False,False,19,IDM,Recharges,[],LBP,IDM LBP,0,[],Internet
+$0.00,,False,False,21,Terranet,Recharges,[],LBP,Terranet LBP,0,[],Internet
+$0.00,,False,False,22,Terranet,Recharges,[],USD,Terranet USD,0,[],Internet
+$0.00,,False,False,23,Sodetel,Recharges,[],LBP,Sodetel LBP,0,[],Internet
+$0.00,,False,False,24,Sodetel,Recharges,[],USD,Sodetel USD,0,[],Internet
+$0.00,,False,False,25,Cyberia,Recharges,[],LBP,Cyberia LBP,0,[],Internet
+$0.00,,False,False,27,Connect,Recharges,[],LBP,Connect LBP,0,[],Internet
+$0.00,,False,False,28,Connect,Recharges,[],USD,Connect USD,0,[],Internet
+$0.00,,False,False,29,Mobi,Recharges,[],LBP,Mobi LBP,0,[],Internet
+$0.00,,False,False,30,Mobi,Recharges,[],USD,Mobi USD,0,[],Internet
+$0.00,,False,False,31,Wise,Recharges,[],LBP,Wise LBP,0,[],Internet
+$0.00,,False,False,32,Wise,Recharges,[],USD,Wise USD,0,[],Internet
+$3.00,,False,False,33,DKG Cover,Accessories,30000,USD,Case iPhone 13 Pro Max,0,100000,Mobiles Covers
+$3.50,,False,False,34,DKG Shock,Accessories,35000,USD,Case iPhone 13 Pro Max,0,100000,Mobiles Covers
+$3.50,,False,False,35,DKG Design,Accessories,35000,USD,Case iPhone 13 Pro Max,0,100000,Mobiles Covers
+$3.00,,False,False,36,Unnamed,Accessories,30000,USD,Case iPhone 14 Pro Max,6.00,100000,Mobiles Covers
+$3.00,,False,False,37,Unnamed,Accessories,30000,USD,Case iPhone 13 Pro,4.00,100000,Mobiles Covers
+$14.00,2428569972510,False,False,65,,Accessories,140000,USD,2.4G Wireless Controller Gamepad Lite,1.00,200000,
+$25.00,2237388253218,False,False,66,Green Lion,Accessories,250000,USD,Green Lion 4 in 1 Wireless Charger Charging Station,0,350000,Charger Station
+$15.00,2141759216781,False,False,67,,Accessories,150000,USD,"6.5"" Speaker AL-6812 - AL-6813",1.00,250000,Speakers
+$1.50,2839423596856,False,False,69,Watch,Accessories,15000,USD,Watch Cover + Glass 41mm,2.00,70000,Watch Protection
+$1.50,2741968691340,False,False,70,Lito,Accessories,15000,USD,2 in 1 Glass + Case 49mm,7.00,70000,Watch Protection
+$1.50,2878551959980,False,False,71,Caisles,Accessories,15000,USD,Camera Lens iPhone 11,2.00,50000,Camera Lens
+$1.50,2701758086671,False,False,72,Caisles,Accessories,15000,USD,Camera Lens iPhone 11 Pro,2.00,50000,Camera Lens
+$1.50,2350914120676,False,False,73,Caisles,Accessories,15000,USD,Camera Lens iPhone 11 Pro Max,2.00,50000,Camera Lens
+$1.50,2528079807750,False,False,74,Caisles,Accessories,15000,USD,Camera Lens iPhone 12,2.00,50000,Camera Lens
+$1.50,2671616315833,False,False,75,Caisles,Accessories,15000,USD,Camera Lens iPhone 13 Pro,1.00,50000,Camera Lens
+$1.50,2054056108003,False,False,76,Caisles,Accessories,15000,USD,Camera Lens iPhone 14 Pro,2.00,50000,Camera Lens
+$2.00,2753709018224,False,False,80,Caisles,Accessories,20000,USD,Camera Lens iPhone 16 | 16 Plus,3.00,50000,Camera Lens
+$2.00,2495400071145,False,False,81,Caisles,Accessories,20000,USD,Camera Lens iPhone 16 Pro | 16 Pro Max,0,50000,Camera Lens
+$1.50,2175386726856,False,False,82,Lito,Accessories,15000,USD,Watch Screen Protection 38mm,3.00,70000,Watch Protection
+$1.50,2644414186479,False,False,83,Lito,Accessories,15000,USD,Watch Screen Protection iWatch Ultra,1.00,70000,Watch Protection
+$1.50,2548916280263,False,False,84,Lito,Accessories,15000,USD,Watch Screen Protection 42mm,2.00,70000,Watch Protection
+$1.50,2743399500840,False,False,85,Lito,Accessories,15000,USD,Watch Screen Protection 44mm,0,70000,Watch Protection
+$1.50,2553092539302,False,False,86,Lito,Accessories,15000,USD,Watch Screen Protection 49mm,3.00,70000,Watch Protection
+$1.50,2861363887787,False,False,87,Lito,Accessories,15000,USD,Camera Lens S23 Ultra,3.00,80000,Camera Lens
+$1.50,2953133702274,False,False,89,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 11,3.00,50000,Camera Lens
+$1.50,2813904583450,False,False,90,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 11 Pro,2.00,50000,Camera Lens
+$1.50,2624734640127,False,False,91,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 11 Pro max,5.00,50000,Camera Lens
+$1.50,2251631677156,False,False,92,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 12,19.00,50000,Camera Lens
+$1.50,2568343520169,False,False,93,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 12 Pro,3.00,50000,Camera Lens
+$1.50,2149366438398,False,False,94,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 13,7.00,50000,Camera Lens
+$1.50,2265352249141,False,False,95,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 13 Pro,1.00,50000,Camera Lens
+$1.50,2530111491674,False,False,96,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 13 Pro Max,1.00,50000,Camera Lens
+$1.50,2204675316819,False,False,97,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 14,9.00,50000,Camera Lens
+$1.50,2820464432234,False,False,98,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 14 Pro,3.00,50000,Camera Lens
+$1.75,2996931314461,False,False,99,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 14 Pro Max,2.00,50000,Camera Lens
+$1.50,2365464627742,False,False,100,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 15,6.00,50000,Camera Lens
+$1.50,2696082949634,False,False,101,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 15 Pro,6.00,50000,Camera Lens
+$1.50,2222004473217,False,False,102,Chief Max,Accessories,15000,USD,Lens Shield - iPhone 15 Pro Max,3.00,50000,Camera Lens
+$2.50,2709486484523,False,False,103,A4Tech,Accessories,25000,USD,A4Tech MousePad X7-200S,0,50000,Mouses & Keyboards
+$1.25,2768130064009,False,False,107,,Accessories,12500,USD,Airpods Silicone Case,8.00,50000,
+$18.00,2783676505083,False,False,109,,Accessories,180000,USD,Anti-Gravity Humidifier Y16,1.00,250000,
+$18.00,2021540701392,False,False,110,,Accessories,180000,USD,Anti-Gravity Humidifier Y17,0,250000,
+$2.40,2018763720996,False,False,111,Copy,Accessories,24000,USD,Apple Copy USB-C 25W Power Adapter,1.00,100000,Chargers
+$108.00,2932471513742,False,False,114,iPhone,Accessories,1080000,USD,Apple Original Airpods 3,0,1300000,Airpods
+$12.00,2270677149298,False,False,117,,Accessories,120000,USD,Apple Original Earpods USBC,0,200000,
+$17.90,2723655223843,False,False,118,Apple,Accessories,170000,USD,Apple Original USB-C 20W Power Adapter,9.00,250000,Chargers
+$8.75,,False,False,119,iPhone,Accessories,90000,USD,Apple Original USB-C to USB-C Charge Cable (1m),3.00,150000,Cables
+$9.00,195949085611,False,False,120,Apple,Accessories,90000,USD,Apple Original USB-C to Lightning Cable 1m,0,150000,Cables
+$20.00,2612376928321,False,False,122,,Accessories,200000,USD,Apple Watch Series 9 (Non Original),0,300000,
+$3.00,2107949197292,False,False,123,,Accessories,30000,USD,Arigato USB to LAN 10/100 Ethernet Adapter,2.00,70000,
+$15.00,2751529693607,False,False,125,,Accessories,150000,USD,Galaxy Nighlight Star Light White,3.00,250000,
+$11.00,2586761653429,False,False,126,Aukey,Accessories,150000,USD,Aukey Gaming Mousepad KMP4 XXL 120 x 60 Black Box,1.00,350000,Mouses & Keyboards
+$20.00,2627847015851,False,False,128,,Accessories,200000,USD,Baofeng Talkie Walkie,0,270000,
+$75.20,2087111055851,False,False,132,Blackview,Accessories,752000,USD,TAB 30 Kids,0,950000,Tabs
+$94.00,2708847522737,False,False,133,Blackview,Accessories,940000,USD,TAB 60 Wifi,0,1150000,Tabs
+$82.72,2502360045908,False,False,134,Blackview,Accessories,827200,USD,TAB 70 Wifi,0,1100000,Tabs
+$6.50,6931474748584,False,False,135,Borofone,Accessories,65000,USD,Borofone BH49 In Car Holder,1.00,150000,Car Holder
+$3.75,6931474750891,False,False,136,Borofone,Accessories,37500,USD,Borofone BX51 USBC to iPhone,0,120000,Cables
+$3.75,6931474751676,False,False,137,Borofone,Accessories,37500,USD,Borofone BX51 USBC to USBC,0,120000,Cables
+$19.00,2415510118004,False,False,138,Borofone,Accessories,190000,USD,Borofone BR13 Wireless Speaker Camo,0,300000,
+$19.00,2173250555991,False,False,139,Borofone,Accessories,190000,USD,Borofone BR13 Wireless Speaker Grey,0,300000,
+$12.00,2297764837746,False,False,140,Borofone,Accessories,120000,USD,Borofone BR23 Wireless Speaker White,0,230000,
+$15.00,2041729927061,False,False,141,Borofone,Accessories,150000,USD,Borofone BR3 IPX5 Waterproof Wireless Speaker Red,0,250000,
+$3.50,6941991108587,False,False,142,Borofone,Accessories,35000,USD,Borofone USBC to Aux Cable BL19,0,100000,
+$15.00,6908886821006,False,False,143,,Accessories,150000,USD,BOSE Wireless Headset 700,0,300000,
+$8.50,2421392738810,False,False,144,,Accessories,85000,USD,Bowling Game NO.ZY1905,0,230000,
+$2.75,,False,False,146,,Accessories,27500,USD,Professional Camera Tripod,0,80000,
+$5.50,6974443386844,False,False,152,,Accessories,55000,USD,Car Holder BH74,0,150000,
+$6.50,2852636337276,False,False,155,,Accessories,65000,USD,Cluedo Black Serlock Edition The Classic Mystery Game,1.00,180000,
+$4.00,2565005600450,False,False,156,,Accessories,40000,USD,Core Mechanics Project 0000 RGB,0,100000,
+$25.00,2983217477798,False,False,157,,Accessories,250000,USD,Coteci 3 in 1 Magsafe stand wireless charger,2.00,400000,
+$20.00,2713329195972,False,False,159,,Accessories,200000,USD,Rotate Multifunction Racing Stunt,0,320000,
+$4.00,2973671495902,False,False,160,,Accessories,40000,USD,Dancing Cactus Toy,0,120000,
+$17.00,2211885929111,False,False,161,,Accessories,170000,USD,Di S9 Mini Watch,3.00,250000,
+$15.00,2009050190455,False,False,164,,Accessories,150000,USD,DOOR ALUMINIUM MOSS GREEN,1.00,150000,
+$15.00,2503485441200,False,False,165,,Accessories,150000,USD,DOOR ALUMINIUM PEBBLE BEIGE,1.00,150000,
+$15.00,2816917359821,False,False,166,,Accessories,150000,USD,DOOR ALUMINIUM PEBBLE GREY,0,150000,
+$15.00,2738605856897,False,False,167,,Accessories,150000,USD,DOOR ALUMINIUM SUNSET RED,1.00,150000,
+$15.00,2773207724090,False,False,168,,Accessories,150000,USD,DOOR ALUMINIUM AZURE BLUE,0,150000,
+$15.00,2353224754333,False,False,169,,Accessories,150000,USD,DOOR ALUMINIUM AMBER GREEN,1.00,150000,
+$5.00,2222960650929,False,False,170,,Accessories,50000,USD,DOOR AZURE BLUE,1.00,50000,
+$10.00,2613752961154,False,False,171,,Accessories,100000,USD,DOOR MATTE CORAL,1.00,100000,
+$10.00,2834518730634,False,False,172,,Accessories,100000,USD,DOOR MATTE LIME,1.00,100000,
+$10.00,2169291734693,False,False,173,,Accessories,100000,USD,DOOR MATTE YELLOW,1.00,100000,
+$5.00,2503321111205,False,False,174,,Accessories,50000,USD,DOOR MOSS GREEN,1.00,50000,
+$15.00,2032391428956,False,False,175,,Accessories,150000,USD,DOOR ORANGE GLOW,1.00,150000,
+$5.00,2569814264773,False,False,176,,Accessories,50000,USD,DOOR PEBBLE BEIGE,0,50000,
+$5.00,2678584575658,False,False,177,,Accessories,50000,USD,DOOR PEBBLE GREY,0,50000,
+$15.00,2070382773883,False,False,178,,Accessories,150000,USD,DOOR  PURPLE PLUME,1.00,150000,
+$5.00,2325347065924,False,False,179,,Accessories,50000,USD,DOOR SUNSET RED,1.00,50000,
+$14.00,2508831918238,False,False,182,,Accessories,140000,USD,Dream Aurora Star Lights,0,230000,
+$20.00,2379704833039,False,False,183,,Accessories,200000,USD,Drone Aircraft H157,0,350000,
+$50.00,2875408232203,False,False,184,,Accessories,500000,USD,Drone G8 360 Obstacle Avoidance,0,650000,
+$27.00,2621253967285,False,False,185,,Accessories,270000,USD,Drone NO.H66,0,450000,
+$40.00,2768070399759,False,False,186,,Accessories,400000,USD,Drone Pihot G6 Series Drone,0,550000,
+$2.50,6971410554503,False,False,187,Earldom,Accessories,25000,USD,Earldom AUX 2m Audio Cable - AUX10,2.00,100000,
+$1.75,6971410551281,False,False,188,Earldom,Accessories,17500,USD,Earldom AUX 1m Audio Cable - AUX23,0,70000,
+$6.00,6973965933079,False,False,189,,Accessories,60000,USD,Earldom Motorcycle Bracket EH139,1.00,150000,
+$8.00,6973965939613,False,False,190,,Accessories,80000,USD,Earldom Sam Galaxy Watch USB Charger Cable WC23,3.00,150000,
+$6.50,6973965938234,False,False,191,Earldom,Accessories,65000,USD,Earldom Universal Desktop Mobile Phone holder EH187,0,150000,Car Holder
+$8.00,6973965937572,False,False,192,,Accessories,80000,USD,Earldom Watch Type-C Charging Cable WC22,4.00,150000,
+$8.00,6973965939583,False,False,193,,Accessories,80000,USD,Earldom Watch USB Charging Cable ET-WC21,2.00,150000,
+$5.00,2559035003183,False,False,194,,Accessories,50000,USD,Earphone Vidvie Metal Stripes HS-606,0,100000,
+$145.00,2706726193429,False,False,195,,Accessories,1450000,USD,Electric Scooter for Kids,1.00,1600000,
+$0.75,2472185075285,False,False,198,,Accessories,7750,USD,Finger Sleeves Pubg Fingers,6.00,30000,
+$10.00,48372929492929,False,False,199,,Accessories,100000,USD,Fire Extinguisher Ball AFO Auto Fire Off,2.00,200000,
+$14.00,6970462514541,False,False,202,,Accessories,140000,USD,Foneng Gravity Car Mount Holder CP12,0,250000,Car Holder
+$95.00,2179108262066,False,False,203,,Accessories,950000,USD,FUJIFILM Instax Mini 12,0,1190000,
+$11.00,2767084419729,False,False,204,,Accessories,130000,USD,Fujifulm Instax Mini instant Film 10 Sheets,0,150000,
+$30.00,2000226259235,False,False,205,,Accessories,300000,USD,Game TV Stick 8k Ultra HD Set-Top-Box,0,400000,
+$26.00,2701466023913,False,False,206,,Accessories,260000,USD,Gamestick Controller Gamepad 3D Games Emuelec 4.3,0,350000,
+$33.00,2597746729848,False,False,207,,Accessories,330000,USD,JTC Rechargeable Fan 12 Inch,0,450000,
+$38.00,2017226755629,False,False,208,,Accessories,380000,USD,GDTimes Rechargeable Fan 14Inch Model : GD-314,0,550000,
+$5.00,00017151815,False,False,210,,Accessories,50000,USD,GEATI Laptop Stand Creative Folding Storage Bracket,1.00,100000,
+$10.00,2105683445938,False,False,211,,Accessories,100000,USD,GEATIX Computer Fan Cooling Pad S18,0,250000,
+$8.50,2464989483359,False,False,212,,Accessories,85000,USD,Geek Bar B5000 50mg/ml Nicotine,0,100000,
+$36.00,2557710409169,False,False,213,,Accessories,360000,USD,Google Chromecast With Google TV HD,0,450000,
+$68.00,2125220239165,False,False,214,,Accessories,680000,USD,HD Projector + 3D Game S40 Max Your Name Gamer,0,850000,
+$3.00,CAB-MINIHDMI-TO,False,False,215,,Accessories,30000,USD,HDMI to Mini HDMI 1.5m,0,60000,
+$2.25,6997546447120,False,False,216,,Accessories,22500,USD,HDTV Premium HDMI 4K Ultra HD,1.00,130000,
+$13.00,2854120254519,False,False,217,,Accessories,130000,USD,Headphone Meetion MT-HP021 Gaming Headset,0,200000,
+$14.00,4587146135156,False,False,218,,Accessories,140000,USD,Headset Sony WH-1000XM4,0,300000,
+$1.65,007537584,False,False,219,,Accessories,18000,USD,He-Link PC Power Cable 1.5,3.00,50000,
+$5.00,2594488382331,False,False,220,,Accessories,50000,USD,Hoco 20W Charger Set Type-C +USA-A C80A Cable C to C,0,150000,
+$5.00,6931474740526,False,False,221,,Accessories,50000,USD,Hoco 20W Charger Set Type-C +USA-A C80A Cable C to IP,0,150000,
+$10.00,6931474778284,False,False,222,Hoco,Accessories,100000,USD,Hoco AC5 Universal Conversion Charger 2USB + 1 Socket,1.00,250000,Chargers
+$0.00,2873089373109,False,False,223,,Accessories,[],USD,Hoco Air outlet Strong Anti-Falling Locking H18,0,[],
+$6.50,6931474742568,False,False,224,Hoco,Accessories,65000,USD,Hoco CA76 In-Car Phone Holder,0,150000,Car Holder
+$16.00,2055437207223,False,False,225,,Accessories,160000,USD,Hoco Children Care Y100 Kid Watch,1.00,300000,
+$4.00,6942007611473,False,False,226,Hoco,Accessories,40000,USD,Hoco Console Small Size Strong Magnetic H30,2.00,100000,Car Holder
+$4.00,6942007601580,False,False,227,Hoco,Accessories,40000,USD,Hoco Console Strong Anti-Falling Locking H19,0,100000,Car Holder
+$7.50,6931474797025,False,False,228,Hoco,Accessories,75000,USD,Hoco Desktop Holder Secure Four Feet Crystal HD3,0,150000,Car Holder
+$35.00,2670647025100,False,False,229,,Accessories,350000,USD,Hoco Driving Recorder DV9,0,500000,
+$7.50,2669695913781,False,False,230,,Accessories,75000,USD,Hoco E65 In Car Wireless Fm transmitter,3.00,150000,
+$4.00,6942007601597,False,False,231,Hoco,Accessories,40000,USD,Hoco H20 Strong Clamping Arm,1.00,100000,Cables
+$5.50,6942007630559,False,False,232,,Accessories,55000,USD,Hoco H54 Car Holder For Center Console,0,150000,
+$18.00,2106646180156,False,False,233,,Accessories,180000,USD,Hoco HB23 5 in 1 USB-C Multimedia Adapter,0,350000,
+$13.00,2343723595148,False,False,234,,Accessories,130000,USD,Hoco HB38 7-in-1 Converter for Type-C,0,300000,
+$6.00,2478163957598,False,False,235,,Accessories,60000,USD,Hoco HX50 Widely Compatible IPX8,1.00,120000,
+$5.00,2467985570436,False,False,236,Hoco,Accessories,50000,USD,Hoco IP to 3.5mm AUX Audio Cable UPA30,0,100000,
+$20.00,2557907938953,False,False,237,,Accessories,200000,USD,Hoco laptop stand PH52 Plus Aluminium Allow,0,400000,
+$3.75,6942007608800,False,False,238,Hoco,Accessories,37500,USD,Hoco Male to Male 3.5mm AUX Audio Cable UPA26,2.00,100000,
+$19.00,2187789440154,False,False,239,,Accessories,190000,USD,Hoco Stable Support Tablet Lazy Stand DH12,1.00,400000,
+$14.00,2127057731157,False,False,240,,Accessories,140000,USD,Hoco TWS Headset With Silicone Case EW48,0,270000,
+$2.00,6931474744890,False,False,241,,Accessories,20000,USD,Hoco X59 Anti-Bending USB to Micro-USB,0,60000,
+$2.00,6931474744944,False,False,242,,Accessories,20000,USD,Hoco X59 Anti-Bending USB to Type-C,0,60000,
+$21.00,6942007623742,False,False,243,,Accessories,210000,USD,Hoco. Beauty Care Hair Clipper HP21,0,300000,
+$19.00,6942007623766,False,False,244,,Accessories,190000,USD,Hoco. Beauty Care Hair Clipper HP22,0,280000,
+$30.00,2443505644795,False,False,245,,Accessories,300000,USD,Hoco. Beauty Care HP50 Massager Ultra Mini Portable,0,450000,
+$15.00,6942007623865,False,False,246,,Accessories,150000,USD,Hoco. Beauty Care Nose Hair Trimmer HP34,0,220000,
+$21.00,6942007623797,False,False,247,,Accessories,210000,USD,Hoco. Beauty Care Shaver HP30,0,300000,
+$15.00,6942007623827,False,False,248,,Accessories,150000,USD,Hoco. Beauty Care Shaver HP32,0,250000,
+$4.00,6931474759931,False,False,249,,Accessories,40000,USD,Hoco. UPA19 DC3.5 To IP Audio Conversion Cable,0,100000,
+$3.00,6934177789618,False,False,250,,Accessories,30000,USD,Huawei Capsule Headset Pro,0,100000,
+$24.00,2318423688414,False,False,251,,Accessories,240000,USD,Huawei Scale 3 Bluetooth Edition,0,600000,
+$10.00,2001394808294,False,False,252,,Accessories,100000,USD,ICONZ Portable Outdoor Wireless Speaker BS05 Red,0,200000,
+$50.00,2094902515418,False,False,253,,Accessories,500000,USD,IQOS ILUMA AZURE BLUE,0,500000,
+$50.00,2419573485851,False,False,254,,Accessories,500000,USD,IQOS ILUMA BRIGHT CORAL,0,500000,
+$50.00,2616199612610,False,False,255,,Accessories,500000,USD,IQOS ILUMA MOSS GREEN,0,500000,
+$30.00,2996627628797,False,False,256,,Accessories,300000,USD,IQOS ILUMA ONE AZURE BLUE,0,300000,
+$30.00,2389431715010,False,False,257,,Accessories,300000,USD,IQOS ILUMA ONE MOSS GREEN,0,300000,
+$30.00,2067144334321,False,False,258,,Accessories,300000,USD,IQOS ILUMA ONE PEBBLE BEIGE,0,300000,
+$30.00,2434671759604,False,False,259,,Accessories,300000,USD,IQOS ILUMA ONE PEBBLE GREY,0,300000,
+$5.00,2066510260103,False,False,260,,Accessories,50000,USD,IQOS ILUMA SLEEVE BRIGHT CORAL,0,50000,
+$5.00,2764470100407,False,False,261,,Accessories,50000,USD,IQOS ILUMA ONE SLEEVE CHARTEUSE,0,50000,
+$5.00,2063733279707,False,False,262,,Accessories,50000,USD,IQOS ILUMA ONE SLEEVE CITRON YELLOW,0,50000,
+$5.00,2016209244730,False,False,263,,Accessories,50000,USD,IQOS ILUMA ONE SLEEVE CLARET RED,0,50000,
+$5.00,2886076271531,False,False,264,,Accessories,50000,USD,IQOS ILUMA ONE SLEEVE NEW INDIGO,0,50000,
+$18.00,2151841402053,False,False,265,,Accessories,180000,USD,IQOS ILUMA ONE SLEEVE PLUS DARK GREEN,0,180000,
+$18.00,2010338246825,False,False,266,,Accessories,180000,USD,IQOS ILUMA ONE SLEEVE PLUS DARK GREY,0,180000,
+$18.00,2172198176381,False,False,267,,Accessories,180000,USD,IQOS ILUMA ONE SLEEVE PLUS KHAKI,0,180000,
+$5.00,2326098978525,False,False,268,,Accessories,50000,USD,IQOS ILUMA ONE SLEEVE TINTED TEAL,0,50000,
+$30.00,2362931728360,False,False,269,,Accessories,300000,USD,IQOS ILUMA ONE SUNSET RED,0,300000,
+$50.00,2105628669269,False,False,270,,Accessories,443750,USD,IQOS ILUMA PEBBLE BEIGE,2.00,500000,
+$50.00,2205433964730,False,False,271,,Accessories,500000,USD,IQOS ILUMA PEBBLE GREY,0,500000,
+$5.00,2315472424031,False,False,272,,Accessories,50000,USD,IQOS ILUMA SLEEVE CHARTEUSE,0,50000,
+$5.00,2657460927965,False,False,273,,Accessories,50000,USD,IQOS ILUMA SLEEVE CITRON YELLOW,0,50000,
+$5.00,2227900445467,False,False,274,,Accessories,50000,USD,IQOS ILUMA SLEEVE CLARET RED,1.00,50000,
+$5.00,2997142195696,False,False,275,,Accessories,50000,USD,IQOS ILUMA SLEEVE NEW INDIGO,0,50000,
+$15.00,2548471510409,False,False,276,,Accessories,150000,USD,IQOS ILUMA SLEEVE PLUS DARK GREEN,0,150000,
+$15.00,2976041793813,False,False,277,,Accessories,150000,USD,IQOS ILUMA SLEEVE PLUS DARK GREY,1.00,150000,
+$15.00,2958910167215,False,False,278,,Accessories,150000,USD,IQOS ILUMA SLEEVE PLUS KHAKI,1.00,150000,
+$5.00,2866429924963,False,False,279,,Accessories,50000,USD,IQOS ILUMA SLEEVE TINTED TEAL,0,50000,
+$6.31,2482219040394,False,False,280,,Accessories,62000,USD,IQOS LIL ADAPTER,1.00,70000,
+$4.50,2634851694101,False,False,281,,Accessories,45050,USD,IQOS LIL CABLE,1.00,50000,
+$6.31,2176953732973,False,False,282,,Accessories,63070,USD,IQOS ADAPTER,0,70000,
+$4.50,2287998080254,False,False,283,,Accessories,45050,USD,IQOS CABLE,1.00,50000,
+$1.80,2359726488592,False,False,284,,Accessories,18020,USD,IQOS LIL SOLID CLEANER,1.00,20000,
+$50.00,2581629276277,False,False,285,,Accessories,500000,USD,IQOS ILUMA SUNSET RED,0,500000,
+$6.50,2276495099067,False,False,286,,Accessories,65000,USD,IPAD cover 11,0,200000,
+$8.50,2850564777843,False,False,287,,Accessories,85000,USD,IPAD cover 12.9,2.00,300000,
+$6.50,2109114408493,False,False,288,,Accessories,65000,USD,IPAD cover IP 10th 2022,1.00,200000,
+$380.00,2671813905233,False,False,289,iPhone,Accessories,3800000,USD,Iphone 12 Pro Max 128gb Used,0,4200000,Mobiles
+$4.00,2486152946942,False,False,295,,Accessories,40000,USD,Iphone X Max 5W USB Power Adapter + Ip to USB Cable,7.00,100000,
+$36.00,2823855638505,False,False,296,,Accessories,360000,USD,IQOS ILUMA,0,450000,
+$65.00,2079256474970,False,False,297,,Accessories,650000,USD,iSteady XE Kit Smartphone Stabilizer Hohem,0,850000,
+$116.00,2893552362911,False,False,298,,Accessories,1160000,USD,JBL Harman Charge 5,0,1300000,
+$83.00,2861377239220,False,False,299,,Accessories,830000,USD,JBL Harman FLIP 6,0,950000,
+$13.00,TL1028-AL0213431,False,False,300,,Accessories,130000,USD,JBL Harman Pure Bass Wireless Tune 900BT,0,300000,
+$80.00,2189032673838,False,False,301,,Accessories,800000,USD,JBL PartyBox 600,0,950000,
+$15.00,2712286770345,False,False,302,,Accessories,150000,USD,K8 Wireless Microphone,0,250000,
+$4.50,6921042132105,False,False,303,Kakusiga,Accessories,45000,USD,Kakusiga 2-in-1 Receiver / Transmitter In-Car Aux Wireless KSC1068,0,130000,
+$10.00,6921042133126,False,False,304,Kakusiga,Accessories,100000,USD,Kakusiga BT5.3 FM Transmitter 5 Port-2TypeC-3USB KSC1069,0,220000,Chargers
+$12.00,2828076720237,False,False,305,,Accessories,120000,USD,Kakusiga Cat Ear Wireless Headphones - KSC-839,0,250000,
+$7.00,6921042118635,False,False,306,,Accessories,70000,USD,Kakusiga Cooling GamePad KSC-651,0,140000,
+$1.25,6921042127873,False,False,307,Kakusiga,Accessories,12500,USD,Kakusiga Data Cable USB-A to Type-C 1M PD60W KSC-808,0,50000,Cables
+$1.75,6921042114491,False,False,308,Kakusiga,Accessories,17500,USD,Kakusiga Earphone Universal Wired AUX 3.5 - KSC-403,0,50000,
+$7.50,6921042135496,False,False,309,Kakusiga,Accessories,75000,USD,Kakusiga In-Car BT Audio Receiver BT 5.0 Built-in-Microphone KSC1180,4.00,150000,
+$14.00,2867314636701,False,False,310,,Accessories,140000,USD,Kakusiga Metal Laptop stand - KSC-1142,0,250000,
+$5.00,6921042117928,False,False,311,,Accessories,50000,USD,Kakusiga PD20W Fast Charging Charger Set C-IP KSC-547,0,150000,
+$5.50,6921042122427,False,False,312,Kakusiga,Accessories,55000,USD,Kakusiga PD25W Charger Set + Type C to Type-C Cable KSC-814,0,150000,Chargers
+$5.50,6921042127804,False,False,313,Kakusiga,Accessories,55000,USD,Kakusiga PD30W QC3.0 Car Charger + Type C to Type C KSC-856,0,150000,Chargers
+$8.00,6921042130897,False,False,314,Kakusiga,Accessories,80000,USD,Kakusiga Portable Live Holder KSC1143,0,150000,
+$5.00,6921042125626,False,False,315,,Accessories,50000,USD,Kakusiga Wired Earphone For Iphone KSD-729,0,100000,
+$6.00,2564552426339,False,False,316,,Accessories,60000,USD,Kakusiga Wired Earphone Type-C KSC-144,0,120000,
+$5.00,2022030916586,False,False,317,Kalio,Accessories,50000,USD,Kalio 4 USB PD 48 W KL-P05,1.00,100000,Chargers
+$55.10,K1271073D04511,False,False,318,,Accessories,600000,USD,Kieslect Kr2 Smart Watch,2.00,850000,
+$45.00,K0201103J06854,False,False,319,,Accessories,450000,USD,Kieslect Calling Watch Kr Pro,0,550000,
+$54.00,K0961253A00736,False,False,320,,Accessories,540000,USD,Kieslect Kr Pro LTD Smart Watch,0,650000,
+$23.75,K0641033L10533,False,False,321,,Accessories,280000,USD,Kieslect Ks Mini Smart Watch,0,380000,
+$54.00,K0801014I01005,False,False,322,,Accessories,540000,USD,Kieslect Ks Pro Smart Watch,0,650000,
+$40.00,KLoraA0101056941,False,False,323,,Accessories,400000,USD,Kieslect Lady Calling Smart Watch Lora,1.00,500000,
+$8.00,2418718636035,False,False,325,,Accessories,55000,USD,Kingston 64 GB 100 MB/S Memory Card,1.00,100000,
+$20.00,2090450704106,False,False,327,,Accessories,200000,USD,IQOS LIL BLACK,0,200000,
+$50.00,2986731410029,False,False,328,,Accessories,500000,USD,IQOS ILUMA AOKI EDITION,0,550000,
+$20.00,,False,False,329,Bonds,Accessories,200000,USD,Kit Bonds By Iqos Cosmic Black 1.6,1.00,200000,IQOS
+$20.00,,False,False,330,Bonds,Accessories,200000,USD,Kit Bonds By Iqos Ruby Red 1.6,1.00,200000,IQOS
+$20.00,,False,False,331,Bonds,Accessories,200000,USD,Kit Bonds By Iqos Ocean Blue 1.6,0,200000,IQOS
+$0.00,2395584881304,False,False,333,,Accessories,[],USD,KIT IQOS ILUMA PRIME JADE GREEN,0,[],
+$0.00,2268731832507,False,False,334,,Accessories,[],USD,KIT IQOS ILUMA PRIME OBSIDIAN BLACK,0,[],
+$25.00,2421462416648,False,False,336,,Accessories,250000,USD,Led Professional Photography Fill Light PL36,0,400000,
+$10.00,2471326887602,False,False,337,,Accessories,100000,USD,Led Strip Light RGB,1.00,150000,
+$4.00,2852891921999,False,False,338,,Accessories,40000,USD,Led Video Light AY-49J,2.00,100000,
+$13.50,2304601848121,False,False,339,,Accessories,135000,USD,Led Wireless Charging Speaker HM-X63A,0,250000,
+$13.50,2792214989650,False,False,340,,Accessories,135000,USD,Led Wireless Speaker BT2301,1.00,200000,
+$12.00,2359069168564,False,False,341,,Accessories,120000,USD,Liquid Light Rocket F-878,0,170000,
+$15.00,2777281045911,False,False,342,Logitech,Accessories,150000,USD,Logitech Wired Combo Keyboard and Mouse MK120,0,250000,Mouses & Keyboards
+$9.00,2568464756010,False,False,346,,Accessories,90000,USD,Max Performance Gallop Top Speed Car Remote - QX201,0,230000,
+$1.50,2221863448626,False,False,347,,Accessories,15000,USD,Maxxtro Touch Light USB,2.00,40000,
+$12.00,2503809094426,False,False,348,Meetion,Accessories,120000,USD,Meetion Gaming Mouse Wired GM015,0,200000,Mouses & Keyboards
+$12.00,2251447498808,False,False,349,Meetion,Accessories,120000,USD,Meetion Gaming Mouse Wired M930,0,200000,Mouses & Keyboards
+$15.00,2370899140834,False,False,351,,Accessories,150000,USD,Mercusys 300Mbps Multi-Mode Wireless N Router MW306R,0,250000,
+$14.00,2181335806845,False,False,352,,Accessories,140000,USD,Mercusys 300Mbps Wireless N ADSL2+ Modem Router MW300D,0,220000,
+$18.00,2213007986545,False,False,353,,Accessories,180000,USD,Metal Desktop Stand Hoco PH30,0,250000,
+$2.00,6971835790128,False,False,355,,Accessories,20000,USD,Mobile Game Controller W10 PUBG,0,60000,
+$17.00,2808407127850,False,False,357,,Accessories,170000,USD,Modio Watch MW09 Mini,0,250000,
+$28.00,2880530595775,False,False,358,,Accessories,280000,USD,Monster Earphone Aria Free,0,350000,
+$7.00,2667089879514,False,False,359,,Accessories,70000,USD,Mouschi Field L Large 45 x 40 x 4,0,150000,
+$4.50,2163536906241,False,False,360,,Accessories,45000,USD,Mouschi Field M Medium 36 x 30 x 3,0,100000,
+$3.00,2950227320185,False,False,361,,Accessories,30000,USD,Mouschi Field S Small 29 x 24 x 3,0,100000,
+$12.00,2590156078339,False,False,362,,Accessories,120000,USD,Mouschi Field XL Xlarge 90 x 42 x 4,0,200000,
+$13.00,2197536230099,False,False,365,,Accessories,130000,USD,Multifunction Adapter USB-C/USB-A/Lightning Card Reader,0,200000,
+$13.00,2561149656773,False,False,367,,Accessories,130000,USD,Mutlimedia Speaker 2 inch with Microphoneh,0,230000,
+$13.00,2542881011969,False,False,368,,Accessories,130000,USD,"Mutlimedia Speaker 3"" with Microphone",0,270000,
+$10.00,2449580788614,False,False,370,,Accessories,100000,USD,NCTS 1290 12V 9A Battery,0,250000,
+$2.00,161851741,False,False,371,,Accessories,20000,USD,Ethernet Cable Cat6 0.5 Meter,1.00,40000,
+$7.00,2827789545052,False,False,372,,Accessories,70000,USD,Need of Speed Passion Contestants,0,200000,
+$13.00,2661403119560,False,False,373,,Accessories,130000,USD,Netis 300Mbps Wireless N Router WF2409E,0,250000,
+$17.00,2313226580620,False,False,374,,Accessories,170000,USD,Netis AC1200 Dual Band WiFi Range Extender Model No.E3,0,250000,
+$9.50,2092002689848,False,False,379,Nokia,Accessories,95000,USD,Nokia 106,0,200000,Mobiles
+$33.00,2392796278007,False,False,380,,Accessories,330000,USD,Original 60W MagSafe 2 Power Adapter,1.00,450000,
+$37.00,2040815293790,False,False,381,,Accessories,370000,USD,Original 60W MagSafe 2 Power Adapter For Macbook,0,470000,
+$9.00,2359407782551,False,False,382,,Accessories,90000,USD,Original Apple IP to Headphone Jack Adapter,4.00,150000,
+$6.00,2256825506687,False,False,383,,Accessories,60000,USD,Original Apple iPhone X Max IP to Usb Cable,0,100000,
+$8.00,2813839912417,False,False,384,,Accessories,80000,USD,Original Apple USB Power Adapter MD813ZM/A Old Type,4.00,130000,
+$8.00,2289601504805,False,False,385,,Accessories,80000,USD,Original Apple USB-C to Headphone Jack Adapter,0,150000,
+$108.00,2196618318564,False,False,388,Oscal,Accessories,1080000,USD,Pad 5 4G 4gb | 128gb,0,1250000,Tabs
+$5.00,2819229543209,False,False,389,,Accessories,50000,USD,Pad Laptop Stand ZM-020,0,120000,
+$3.00,2872767329216,False,False,390,Panasonic,Accessories,30000,USD,Panasonic Alkaline Power AA | 4,14.00,45000,Batteries
+$2.75,2870677530760,False,False,391,Panasonic,Accessories,27500,USD,Panasonic Alkaline Power AAA | 4,7.00,42500,Batteries
+$4.00,2035073757177,False,False,392,Panasonic,Accessories,40000,USD,Panasonic Chinese Alkaline 5 | 4,0,50000,Batteries
+$4.00,2246612250800,False,False,393,Panasonic,Accessories,40000,USD,Panasonic Chinese Alkaline 7 | 4,1.00,50000,Batteries
+$2.00,2343487858770,False,False,394,Panasonic,Accessories,20000,USD,Panasonic CR1220,10.00,35000,Batteries
+$2.00,2906056225290,False,False,395,Panasonic,Accessories,20000,USD,Panasonic CR1616,3.00,35000,Batteries
+$2.00,2156034231182,False,False,396,Panasonic,Accessories,20000,USD,Panasonic CR1620,4.00,35000,Batteries
+$2.00,2913424432273,False,False,397,Panasonic,Accessories,20000,USD,Panasonic CR1632,11.00,35000,Batteries
+$1.50,2043185591701,False,False,398,Panasonic,Accessories,15000,USD,Panasonic CR2016,2.00,30000,Batteries
+$1.50,2030733168126,False,False,399,Panasonic,Accessories,15000,USD,Panasonic CR2025,4.00,30000,Batteries
+$1.50,2596319198609,False,False,400,Panasonic,Accessories,15000,USD,Panasonic CR2032,21.00,30000,Batteries
+$2.43,2126657664773,False,False,401,Panasonic,Accessories,22500,USD,Panasonic CR2450,13.00,37500,Batteries
+$6.00,2771527886382,False,False,402,Panasonic,Accessories,60000,USD,Eneloop Pro AA Rechargeable,4.00,75000,Batteries
+$6.00,2253894150254,False,False,403,Panasonic,Accessories,60000,USD,Eneloop Pro AAA Rechargeable,1.00,75000,Batteries
+$1.50,2547472238541,False,False,404,Panasonic,Accessories,15000,USD,Panasonic Evolta AAA | 2 Alkaline Battery 1.5V,2.00,30000,Batteries
+$2.50,2745366513723,False,False,405,Panasonic,Accessories,25000,USD,General Purpose AAA | 4 Zinc Carbon,3.00,40000,Batteries
+$3.75,6971214860299,False,False,406,,Accessories,37500,USD,Pavareal Fast Car Charger 4.8A 2USB PA-CC32S,1.00,80000,
+$12.00,2317085802558,False,False,407,,Accessories,120000,USD,Pencil 1 Universal Stylus Black,0,200000,
+$3.50,2509294986727,False,False,408,PikCell,Accessories,35000,USD,Ultra Alkaline  AAAA | 2 LR61 1.5V,3.00,40000,Batteries
+$42.00,2830204665655,False,False,409,,Accessories,420000,USD,Picocici Kids Camera Toys,0,520000,Cameras
+$43.00,2738248944289,False,False,410,,Accessories,430000,USD,Picocici Kids Print Camera Toys,0,600000,Cameras
+$8.00,2404329121114,False,False,411,,Accessories,80000,USD,PieFace Sky High Hasbro,1.00,250000,
+$11.00,2367605924604,False,False,412,,Accessories,110000,USD,Police Car Special City Hero,0,250000,
+$35.00,2884300172326,False,False,413,,Accessories,350000,USD,Porodo Lifestyle Compact Portable Steam and Heat Iron,1.00,500000,
+$7.00,2884617209432,False,False,414,Promate,Accessories,70000,USD,Promate Ergonomic Wireless Mouse,0,200000,Mouses & Keyboards
+$12.00,2962935447689,False,False,415,,Accessories,120000,USD,PS4 Dual Shock 4 Wireless Controller SONY - Big Box,0,270000,
+$11.00,2740660846232,False,False,416,,Accessories,110000,USD,PS4 Dual Shock 4 Wireless Controller SONY - Small Box,0,270000,
+$580.00,2518736481669,False,False,417,,Accessories,5800000,USD,PS5 1Terra,1.00,6500000,
+$64.00,2473923027511,False,False,418,,Accessories,640000,USD,PS5 DualSense Controller Original,1.00,750000,
+$52.00,2749308824533,False,False,419,,Accessories,520000,USD,PS5 Gaming - GTA5,1.00,550000,
+$40.00,2801447331904,False,False,420,,Accessories,400000,USD,PS5 Gaming - NBA 2K25,0,450000,
+$35.00,2569332957263,False,False,421,,Accessories,350000,USD,PS5 Gaming - SpiderMan - Miles Morales,1.00,400000,
+$9.80,,False,False,423,,Accessories,98000,USD,Rallonge 2 Meter Power Socket - 10 Sockets - 4 USB - 1 Type C,0,200000,
+$16.18,3414971945524,False,False,424,,Accessories,161800,USD,Rallong 3 Meter - Legrand - 6 Sockets,2.00,350000,
+$15.00,2673292934896,False,False,426,,Accessories,150000,USD,RGB Intelligent Karaoke Audio Model : SM011,1.00,250000,
+$25.00,2547271490096,False,False,427,,Accessories,250000,USD,RGB Led Livestreaming Lamp Ambience Lamp 3D-45,1.00,400000,
+$10.00,2465680062775,False,False,428,,Accessories,100000,USD,RGB Led Ring Fill Light LJJ-26,0,200000,
+$20.00,2211919188507,False,False,429,,Accessories,200000,USD,RGB Led Ring Fill Light LJJ-30,0,300000,
+$22.00,2783321440219,False,False,430,,Accessories,220000,USD,RGB Led Ring Fill Light LJJ-33,0,350000,
+$32.00,2000938415530,False,False,431,,Accessories,320000,USD,RGB Led Ring Fill Light RL-520,2.00,450000,
+$25.00,2085437953479,False,False,432,,Accessories,250000,USD,RGB Led Soft Ring Light MJ18,0,450000,
+$15.00,2162765145308,False,False,433,,Accessories,150000,USD,RGB Speaker Wireless G5 Wireless Music Table Lamp,1.00,300000,
+$8.00,2067136108879,False,False,434,,Accessories,80000,USD,RGB Speaker Wireless G63 Smart Light Sound Machine 15W,1.00,200000,
+$25.00,2026127099992,False,False,435,,Accessories,250000,USD,RGB W-Led Professional Photography Fill Light PM-36,0,400000,
+$10.00,2853881299494,False,False,436,,Accessories,100000,USD,RING SET ENERGIZED,0,100000,
+$10.00,2020551562312,False,False,437,,Accessories,100000,USD,RING SET GROUNDED,0,100000,
+$10.00,2084322512159,False,False,438,,Accessories,100000,USD,RING SET SOPHISTICATED,0,100000,
+$10.00,2455128192904,False,False,439,,Accessories,100000,USD,Rolimat Musical Hammering & Pounding Bench,1.00,200000,
+$50.00,2983061492435,False,False,440,,Accessories,500000,USD,Samsung Buds FE,0,650000,
+$94.00,2523895382887,False,False,441,Samsung,Accessories,940000,USD,Samsung Galaxy A06 SM-A065F 4gb | 128gb,0,1050000,Mobiles
+$82.00,2839076817032,False,False,442,Samsung,Accessories,820000,USD,Samsung Galaxy A06 SM-A065F 4gb | 64gb,0,950000,Mobiles
+$102.00,2123558759690,False,False,443,Samsung,Accessories,1020000,USD,Samsung Galaxy A06 SM-A065F 6gb | 128gb,0,1150000,Mobiles
+$123.00,2033712744717,False,False,444,Samsung,Accessories,1230000,USD,Samsung Galaxy A16 SM-A165F 4gb | 128gb,0,1350000,Mobiles
+$144.78,2931130468843,False,False,445,Samsung,Accessories,1460000,USD,Samsung Galaxy A16 SM-A165F 6gb | 128gb,0,1550000,Mobiles
+$175.50,2363511085514,False,False,446,Samsung,Accessories,1750000,USD,Samsung Galaxy A16 SM-A165F 8gb | 256gb,0,1900000,Mobiles
+$280.00,2683426499368,False,False,447,Samsung,Accessories,2800000,USD,Samsung Galaxy A35 SM-A356E 8gb | 256gb,0,2950000,Mobiles
+$190.00,2747394978994,False,False,450,Samsung,Accessories,1900000,USD,Samsung Galaxy Tab A9+ SM-X210 8gb | 128gb,0,2050000,Tabs
+$8.00,2145140528682,False,False,451,,Accessories,80000,USD,Samsung Original Cable Fast Charging Type-C to Type-C,2.00,150000,
+$8.50,8806094899528,False,False,452,Samsung,Accessories,85000,USD,Samsung Original Charger 25W PD,5.00,150000,Chargers
+$12.00,2398190975191,False,False,453,,Accessories,120000,USD,Samsung Original Charger 25W PD Adapter C to C,0,250000,
+$8.00,2829303443424,False,False,454,,Accessories,80000,USD,Samsung Original Charger 45W PD,0,150000,
+$6.67,2791092991823,False,False,455,,Accessories,150000,USD,Samsung Charger 45W PD Adapter C to C,2.00,250000,
+$10.00,2353661358354,False,False,456,,Accessories,100000,USD,Samsung Original Type-C Earphones AKG,0,200000,
+$7.00,2180803060536,False,False,457,,Accessories,70000,USD,Samsung Tablet Cover A8,1.00,200000,
+$6.00,2810629785053,False,False,458,,Accessories,60000,USD,Samsung Tablet Cover A9,0,200000,
+$7.00,2579871535303,False,False,459,,Accessories,70000,USD,Samsung Tablet Cover A9+,1.00,250000,
+$130.00,2008371353150,False,False,461,,Accessories,1300000,USD,Samsung Watch FE 40mm,0,1450000,
+$9.00,2695966899393,False,False,462,,Accessories,90000,USD,SanDisk Dual Drive Go USb Type-C 64Gb,0,150000,
+$3.50,6976071490153,False,False,467,,Accessories,35000,USD,Senior Data Cable 2m USBC to USBC S9,2.00,80000,
+$4.50,6976071490146,False,False,468,,Accessories,45000,USD,Senior Data Cable 2m USBC to IP S9,0,80000,
+$3.50,2292458236218,False,False,469,,Accessories,35000,USD,Senior Supreme Link USBC to USBC 200CM M:C.C-S8,0,70000,
+$22.00,2137508392332,False,False,492,,Accessories,220000,USD,Soccer Game Size 69x37x22cm NO.20535B,0,400000,
+$11.00,6920075740455,False,False,493,,Accessories,110000,USD,Sonoff Iplug S60TPF Wi-fi Smart Plug,2.00,200000,
+$8.50,6920075776447,False,False,494,,Accessories,85000,USD,Sonoff S26R2 Wi-fi Smart Plug,1.00,150000,
+$5.00,2005439996724,False,False,496,,Accessories,50000,USD,Speak Out,0,150000,
+$80.00,2977069318286,False,False,497,,Accessories,800000,USD,Speaker 12 Inch NDR-Y12 1200W,0,1100000,
+$14.00,2455324053764,False,False,498,,Accessories,140000,USD,Speaker Outdoor Battery Model : MN03,0,200000,
+$0.70,2394461214549,False,False,499,,Accessories,7000,USD,Stick for Covers,0,30000,
+$98.70,2275622069836,False,False,501,,Accessories,987000,USD,Tab A6 Kids,0,1200000,
+$40.00,2245480298990,False,False,504,,Accessories,400000,USD,Tenda Camera CP7 4MP Ultra HD,1.00,550000,Cameras
+$1.50,2206350266938,False,False,505,,Accessories,15000,USD,Toshiba High Power AA | 4 Alkaline LR6/1.5v,12.00,30000,
+$20.00,2825047492971,False,False,508,,Accessories,200000,USD,TP-Link 300Mbps Wi-fi ADSL2+ TD-W8961N Modem Router,0,270000,
+$16.50,2406201541423,False,False,509,,Accessories,170000,USD,TP-Link 300Mbps Wi-fi Range Extender TL-WA850RE,0,270000,
+$20.00,2250901460658,False,False,511,,Accessories,200000,USD,TP-LINK WA801N 300Mbps Wireless N Access Point router,1.00,300000,
+$10.00,2624245107171,False,False,512,,Accessories,100000,USD,Track Racing Race Playset,0,250000,
+$18.00,2700807094575,False,False,514,,Accessories,180000,USD,Tranyoo B3 Wireless Speaker,0,350000,
+$5.00,6970791125319,False,False,515,,Accessories,50000,USD,Tranyoo Earphone TR12,0,100000,
+$7.00,6970791123384,False,False,516,,Accessories,70000,USD,Tranyoo Magnetic Phone Holder Metal TZ7,0,150000,
+$3.75,6970791123940,False,False,517,,Accessories,37500,USD,Tranyoo PD Fast Charger Type-C to IP 20W TP1,0,100000,
+$6.50,6970791124169,False,False,518,,Accessories,65000,USD,Tranyoo Type-C Earphone TK4,0,150000,
+$8.50,2904124200347,False,False,519,,Accessories,150000,USD,Tripod Professional Camera Tripod 3366T,2.00,250000,
+$1.25,4008153779640,False,False,520,,Accessories,12500,USD,Unitec Kfz USB LED 77964,2.00,40000,
+$12.00,6958444909158,False,False,521,,Accessories,120000,USD,USAMS Desktop Wireless Fast Charging US-CD223,2.00,250000,
+$139.00,2121107101440,False,False,522,,Accessories,1390000,USD,Watch 6 44mm Black,0,1500000,
+$193.00,2900713145723,False,False,523,,Accessories,1930000,USD,Watch 6 47mm Classic,0,2050000,
+$2.00,2271215081216,False,False,524,,Accessories,20000,USD,Watch Band Box - Spigen - 44 | 45 | 49 mm,2.00,60000,
+$2.00,2887004196636,False,False,525,,Accessories,20000,USD,Watch Band Box - Spigen - 45 mm,8.00,60000,
+$1.50,2570795297629,False,False,526,Watch,Accessories,15000,USD,Watch Band 38 | 40 | 41 mm,3.00,50000,
+$1.50,2644055783747,False,False,527,Watch,Accessories,15000,USD,Watch Band 38 | 40 mm,0,50000,
+$2.25,2302570223819,False,False,528,Watch,Accessories,22500,USD,Watch Band 42 | 44 | 45 | 49 MM Original,0,60000,
+$1.50,2327026903633,False,False,529,Watch,Accessories,15000,USD,Watch Band 42 | 44 | 45 | 49 MM,8.00,50000,
+$1.50,2516306400294,False,False,530,Watch,Accessories,15000,USD,Watch Band 42 | 44 | 45 mm,0,50000,
+$2.50,2270504653455,False,False,531,,Accessories,25000,USD,Watch Band Box - Spigen - 42 | 44 | 45 | 49 mm,2.00,70000,
+$1.50,2303182721137,False,False,532,Watch,Accessories,15000,USD,Watch Band Long Box 38 | 40 | 41 mm,13.00,60000,
+$1.50,2785241901870,False,False,533,Watch,Accessories,15000,USD,Watch Band Box 42 | 44 | 45 | 49 mm,3.00,60000,
+$1.50,2810835599895,False,False,534,Watch,Accessories,15000,USD,Watch Band Long 38 | 40 | 41 mm,5.00,60000,
+$11.00,2392776429658,False,False,535,,Accessories,110000,USD,Water Gun,0,200000,
+$75.00,2845623373982,False,False,536,,Accessories,750000,USD,Wireless Speaker NDR-A55 1800W 15Inch,0,950000,
+$14.00,2814978659140,False,False,537,,Accessories,140000,USD,Wiwu Bag 14 Inch,1.00,250000,
+$10.00,6976195090581,False,False,538,,Accessories,100000,USD,Wiwu CH041 Lotto Car Bracket,1.00,200000,
+$3.00,2061469256887,False,False,539,,Accessories,30000,USD,Woman Bag 3-in-1 Mint Green,7.00,70000,
+$52.50,2183752655983,False,False,540,,Accessories,530000,USD,Xiaomi Smart TV Box 4K Android TV,0,650000,
+$42.50,2138939201835,False,False,541,,Accessories,425000,USD,Xiaomi Smart TV Stick 4k Android TV,0,550000,
+$12.00,2053805589681,False,False,542,,Accessories,120000,USD,Xiaomi WiFi Range Extender N300,0,200000,
+$4.00,2810671269891,False,False,543,,Accessories,40000,USD,Xmax Universal Earphone Model : D-39,0,100000,
+$10.00,6920680848669,False,False,544,,Accessories,100000,USD,XO-MKF08A Ai Noise Reduction Wireless Microphone Type-C,0,250000,
+$10.00,6920680848676,False,False,545,,Accessories,100000,USD,XO-MKF08B Ai Noise Reduction Wireless Microphone Iphone,1.00,250000,
+$15.00,6920680848652,False,False,546,,Accessories,150000,USD,XO-MKF09B Ai Noise Reduction Wireless Microphone Type-C,0,350000,
+$9.00,6971050268471,False,False,547,,Accessories,90000,USD,Yesido Desktop Stand C184,0,170000,
+$6.00,6942314402160,False,False,548,Yesido,Accessories,60000,USD,Yesido Heavy Bass YH47,1.00,130000,
+$6.00,6971050262639,False,False,549,Yesido,Accessories,60000,USD,Yesido Stero Earphone YH31,1.00,130000,
+$13.00,2452369451524,False,False,550,,Accessories,130000,USD,Yesido Wireless Keyboard Compatible Pc and Tablets - KB11,0,250000,
+$14.00,6942314402405,False,False,551,Yesido,Accessories,140000,USD,Power Bank Fast Charging 10000mAh - YP53,0,250000,Power Bank
+$18.00,2786191344250,False,False,552,Yesido,Accessories,180000,USD,Power Bank Wireless Fast Charging 10000mAh - YP57,0,350000,Power Bank
+$11.00,2796741545198,False,False,553,,Accessories,110000,USD,Yousichuang Back Clip Phone Radiator YS-S1,1.00,200000,
+$12.50,6975685730266,False,False,554,,Accessories,125000,USD,Yousichuang Back Clip Magnatic Phone Radiator YS-S3,2.00,250000,
+$17.00,,False,False,555,,Accessories,170000,USD,Golon Bluetooth Radio RX-BT 939,0,270000,
+$50.00,,False,False,557,,Accessories,500000,USD,PS4 Gaming - Fifa 2025,0,550000,
+$28.00,,False,False,558,,Accessories,280000,USD,JBL BoomBox 520,1.00,600000,
+$15.00,,False,False,559,,Accessories,150000,USD,JBL Pro 03,0,350000,
+$23.00,,False,False,560,,Accessories,230000,USD,JBL P19 Pro,0,500000,
+$21.00,,False,False,561,,Accessories,210000,USD,JBL P16 Pro,0,450000,
+$24.00,,False,False,562,,Accessories,240000,USD,JBL P20 Pro,0,550000,
+$24.00,6942007634854,False,False,563,,Accessories,240000,USD,Hoco Power Bank 30000 Fast Charge J136B,0,350000,
+$16.00,6931474783608,False,False,564,Hoco,Accessories,160000,USD,Hoco Power Bank 10000 Fast Charge J102,0,300000,Power Bank
+$0.90,6931474784360,False,False,565,Hoco,Accessories,9000,USD,USB-A to iPhone X89,0,100000,Cables
+$2.00,6931474784322,False,False,566,Hoco,Accessories,20000,USD,USB-C to iPhone X89 2 Meter,0,100000,Cables
+$26.00,,False,False,567,,Accessories,260000,USD,Buenos Wireless Keyboad ,1.00,360000,
+$11.00,,False,False,568,,Accessories,118800,USD,Mini UPS for Router SKE 10800,0,180000,
+$14.00,,False,False,569,,Accessories,140000,USD,Hoco Crystal TWS Headset EW202,0,240000,
+$14.00,,False,False,570,,Accessories,140000,USD,Hoco Sleep TWS Headset EW200,0,240000,
+$15.00,,False,False,571,,Accessories,150000,USD,Hoco AirPro 2 ANC/ENC EW69,0,300000,
+$15.00,,False,False,572,,Accessories,150000,USD,Hoco AirPro ANC/ENC EW68,0,300000,
+$26.00,,False,False,573,,Accessories,260000,USD,Camera Disney,1.00,400000,Cameras
+$17.00,,False,False,574,,Accessories,170000,USD,Camera Kids Animal,0,270000,Cameras
+$4.50,,False,False,576,,Accessories,45000,USD,Samsung Galaxy Fold 3 Cover,0,100000,
+$12.00,,False,False,578,,Accessories,120000,USD,Hoco laptop stand PH52 Aluminium Allow,0,200000,
+$44.00,K1911105G06912,False,False,580,,Accessories,440000,USD,Kieslect Ks Pura Ele,0,550000,
+$42.00,K1921015G34274,False,False,581,,Accessories,420000,USD,Kieslect Ks Pura,0,550000,
+$55.10,K1821134F00481,False,False,582,,Accessories,580000,USD,Kieslect Ks 3 Elite,1.00,700000,
+$5.50,6921042127798,False,False,584,Kakusiga,Accessories,55000,USD,Kakusiga PD30W QC3.0 Car Charger + Type C to iPhone KSC-856,1.00,150000,Chargers
+$8.00,6942314400937,False,False,586,Hoco,Accessories,80000,USD,Yesido Magnet Holder C203,0,150000,
+$6.00,6942314402078,False,False,587,Hoco,Accessories,60000,USD,Yesido Ring Magnet C205,0,130000,
+$7.00,6920680842957,False,False,588,,Accessories,70000,USD,XO XO-EP70 Half-in-ear Earphones With iPhone Port,0,150000,
+$1.50,6931474703187,False,False,589,Borofone,Accessories,15000,USD,Charging Data Cable USB-A to iPhone BX21,1.00,60000,Cables
+$3.50,6941991108570,False,False,590,Borofone,Accessories,35000,USD,Borofone iPhone to Aux Cable BL19,1.00,100000,
+$5.00,6941950215202,False,False,591,,Accessories,50000,USD,Moxom USBC Earphones MX-EP89,0,100000,
+$10.50,,False,False,592,Kingston,Accessories,105000,USD,Kingston Data Traveler Exodia Onyx 128 GB USB 3.2,1.00,150000,Storages
+$21.67,,False,False,593,Kingston,Accessories,225000,USD,Kingston Data Traveler Exodia Onyx 256 GB USB 3.2,3.00,300000,Storages
+$0.80,,False,False,595,,Accessories,8000,USD,Clippers Lighter,0,11000,
+$12.00,,False,False,596,,Accessories,120000,USD,Yesido Vacuum Cleaner - VC03,0,300000,
+$1.50,,False,False,597,,Accessories,15000,USD,Samsung S24 Ultra Lenses,4.00,50000,Camera Lens
+$2.75,,False,False,598,Caisles,Accessories,27500,USD,Caisless Watch Protection Matte Explosion Proof 38mm,5.00,70000,
+$2.75,,False,False,599,Caisles,Accessories,27500,USD,Caisless Watch Protection Matte Explosion Proof 41mm,2.00,70000,
+$2.75,,False,False,600,Caisles,Accessories,27500,USD,Caisless Watch Protection Matte Explosion Proof 45mm,2.00,70000,
+$2.75,,False,False,601,Caisles,Accessories,27500,USD,Caisless Watch Protection Clear Explosion Proof 42mm,5.00,70000,
+$2.75,,False,False,602,Caisles,Accessories,27500,USD,Caisless Watch Protection Clear Explosion Proof 49mm,5.00,70000,
+$1.25,,False,False,603,,Accessories,12500,USD,Camera Lens Small Box 15 Pro / 15 Pro Max,0,50000,Camera Lens
+$1.25,,False,False,604,Chief Max,Accessories,12500,USD,Lens Shield - iPhone 12 Pro Max,4.00,50000,Camera Lens
+$34.00,,False,False,605,,Accessories,340000,USD,Xiaomi Smart Mini TV Stick FHD Android TV,1.00,450000,
+$33.00,,False,False,606,,Accessories,330000,USD,JBL Headphones Tune 520 BT,0,450000,
+$15.00,,False,False,607,,Accessories,150000,USD,JBL Speaker Clip 5,0,250000,
+$10.00,,False,False,608,,Accessories,100000,USD,ICONZ Portable Outdoor Wireless Speaker BS05 Black,0,200000,
+$5.00,,False,False,610,,Accessories,50000,USD,IPAD Cover 2/3/4,1.00,120000,
+$8.00,,False,False,611,Silicone,Accessories,80000,USD,Case Samsung Tab A9+,3.00,150000,
+$8.00,,False,False,612,Silicone,Accessories,80000,USD,Case Samsung Tab A8,3.00,150000,
+$7.00,,False,False,613,,Accessories,70000,USD,Elf Bar TE5000 50mg/ml Nicotine,0,100000,
+$14.00,,False,False,614,,Accessories,140000,USD,Wiwu Bag 15.6 Inch,1.00,300000,
+$2.50,,False,False,621,,Accessories,25000,USD,Led Panel Small 8.5 inch,2.00,40000,
+$4.00,,False,False,622,,Accessories,40000,USD,Led Panel Medium 10 inch,1.00,80000,
+$4.75,,False,False,623,,Accessories,47500,USD,Led Panel Big 12 inch,2.00,100000,
+$12.00,,False,False,624,,Accessories,120000,USD,Headphone MF-201F,0,150000,
+$12.00,,False,False,625,,Accessories,120000,USD,Headphone AH-706D,0,150000,
+$12.00,,False,False,626,,Accessories,120000,USD,Headphone AH-806X,0,150000,
+$1.25,,False,False,627,Silicone,Accessories,12500,USD,Cover iPhone 8,0,50000,
+$3.50,6931474784131,False,False,628,Hoco,Accessories,35000,USD,Hoco Led Flashing Gaming Wired Mouse GM19,0,70000,Mouses & Keyboards
+$4.50,6942007616768,False,False,629,,Accessories,45000,USD,Hoco Laser Pointer GM200,0,100000,
+$5.00,,False,False,631,,Accessories,50000,USD,Adata Micro SDXC 64GB UHS-I,0,100000,
+$10.67,,False,False,632,,Accessories,100000,USD,Kingston 128 GB 100 MB/S Memory Card,3.00,150000,
+$5.00,,False,False,633,,Accessories,50000,USD,Kingston Data Traveler Exodia Onyx 64 GB USB 3.2,0,100000,
+$18.00,,False,False,635,,Accessories,180000,USD,AirPods Pro 2nd Generation,0,350000,
+$6.50,,False,False,639,Hoco,Accessories,65000,USD,Headrest Car Holder H69,2.00,200000,
+$25.00,,False,False,640,,Accessories,250000,USD,TV Box Watch onn,0,350000,
+$28.00,,False,False,641,,Accessories,280000,USD,Mini UPS 20000 MPA POE-830P-LFP,0,380000,
+$55.00,,False,False,642,,Accessories,550000,USD,Mini POE-60W,1.00,700000,
+$3.50,,False,False,643,Logitech,Accessories,35000,USD,Logitech Mouse Silent Plus M330,0,100000,Mouses & Keyboards
+$12.00,,False,False,644,Logitech,Accessories,120000,USD,Logitech Wireless Mouse And Keyboard MK290,0,250000,Mouses & Keyboards
+$12.00,,False,False,645,Hoco,Accessories,120000,USD,HOCO Mouse And Keyboard GM18,0,220000,Mouses & Keyboards
+$2.50,,False,False,646,Meetion,Accessories,25000,USD,Mouse Pad MeeTion,0,50000,Mouses & Keyboards
+$1.69,,False,False,647,,Accessories,16920,USD,Marken Conversion Plugin,3.00,33700,
+$1.50,,False,False,648,,Accessories,15000,USD,3.5 Aux Audio Cable - RL113,0,60000,
+$1.50,,False,False,650,Silicone,Accessories,15000,USD,Case Samsung Note 20,6.00,50000,Mobiles Covers
+$1.50,,False,False,651,Silicone,Accessories,15000,USD,Case Samsung Note 10+,4.00,50000,Mobiles Covers
+$1.50,,False,False,652,Silicone,Accessories,15000,USD,Case Samsung Note 10,4.00,50000,Mobiles Covers
+$1.50,,False,False,653,Silicone,Accessories,15000,USD,Case Samsung Note 8,3.00,50000,Mobiles Covers
+$1.50,,False,False,654,Silicone,Accessories,15000,USD,Case Samsung A70,4.00,50000,Mobiles Covers
+$1.25,,False,False,655,Silicone,Accessories,15000,USD,Case Samsung A55,1.00,50000,Mobiles Covers
+$1.50,,False,False,656,Silicone,Accessories,15000,USD,Case Samsung A54,0,50000,Mobiles Covers
+$1.50,,False,False,657,Silicone,Accessories,15000,USD,Case Samsung A53,1.00,50000,Mobiles Covers
+$1.50,,False,False,658,Silicone,Accessories,15000,USD,Case Samsung A51,0,50000,Mobiles Covers
+$1.50,,False,False,659,Silicone,Accessories,15000,USD,Case Samsung A36,4.00,50000,Mobiles Covers
+$1.50,,False,False,660,Silicone,Accessories,15000,USD,Case Samsung A35,3.00,50000,Mobiles Covers
+$1.50,,False,False,661,Silicone,Accessories,15000,USD,Case Samsung A34,2.00,50000,Mobiles Covers
+$1.50,,False,False,662,Silicone,Accessories,15000,USD,Case Samsung A32,0,50000,Mobiles Covers
+$1.50,,False,False,663,Silicone,Accessories,15000,USD,Case Samsung A26,8.00,50000,Mobiles Covers
+$1.50,,False,False,664,Silicone,Accessories,15000,USD,Case Samsung A25,0,50000,Mobiles Covers
+$1.50,,False,False,665,Silicone,Accessories,15000,USD,Case Samsung A24,2.00,50000,Mobiles Covers
+$1.39,,False,False,666,Silicone,Accessories,15000,USD,Case Samsung A16,6.00,50000,Mobiles Covers
+$1.50,,False,False,667,Silicone,Accessories,15000,USD,Case Samsung A15,1.00,50000,Mobiles Covers
+$1.50,,False,False,668,Silicone,Accessories,15000,USD,Case Samsung A14,0,50000,Mobiles Covers
+$1.50,,False,False,669,Silicone,Accessories,15000,USD,Case Samsung A11,2.00,50000,Mobiles Covers
+$1.00,,False,False,670,Silicone,Accessories,10000,USD,Clear Case Samsung A06,15.00,50000,Mobiles Covers
+$1.50,,False,False,671,Silicone,Accessories,15000,USD,Case Samsung A05S,4.00,50000,Mobiles Covers
+$1.50,,False,False,672,Silicone,Accessories,15000,USD,Case Samsung A05,2.00,50000,Mobiles Covers
+$1.50,,False,False,673,Silicone,Accessories,15000,USD,Case Samsung A04S,7.00,50000,Mobiles Covers
+$1.50,,False,False,675,Silicone,Accessories,15000,USD,Case Samsung S25 Ultra,1.00,50000,Mobiles Covers
+$1.50,,False,False,676,Silicone,Accessories,15000,USD,Case Samsung S23,2.00,50000,Mobiles Covers
+$1.50,,False,False,677,Silicone,Accessories,15000,USD,Case Samsung S22 Ultra,3.00,50000,Mobiles Covers
+$1.50,,False,False,678,Silicone,Accessories,15000,USD,Case Samsung S21 Ultra,3.00,50000,Mobiles Covers
+$1.50,,False,False,679,Silicone,Accessories,15000,USD,Case Samsung S21,2.00,50000,Mobiles Covers
+$1.50,,False,False,680,Silicone,Accessories,15000,USD,Case Samsung S20 FE,1.00,50000,Mobiles Covers
+$1.50,,False,False,681,Silicone,Accessories,15000,USD,Case Samsung S20,2.00,50000,Mobiles Covers
+$3.00,,False,False,682,DKG Shock,Accessories,30000,USD,Case Samsung S24/25,3.00,100000,Mobiles Covers
+$3.00,,False,False,683,DKG Shock,Accessories,30000,USD,Case Samsung S24+/25+,1.00,100000,Mobiles Covers
+$3.50,,False,False,684,Berlia,Accessories,35000,USD,Case Samsung S25 Ultra,0,100000,Mobiles Covers
+$3.50,,False,False,685,Berlia,Accessories,35000,USD,Case Samsung S25 Plus,2.00,100000,Mobiles Covers
+$3.50,,False,False,686,Berlia,Accessories,35000,USD,Case Samsung S25,2.00,100000,Mobiles Covers
+$3.50,,False,False,687,DKG Premium,Accessories,35000,USD,Case Samsung A05,1.00,80000,Mobiles Covers
+$3.50,,False,False,688,New Case,Accessories,30000,USD,Case Samsung S24 Ultra,4.00,150000,Mobiles Covers
+$3.50,,False,False,689,Case,Accessories,35000,USD,Case Samsung S21 Ultra,1.00,100000,Mobiles Covers
+$3.50,,False,False,690,Berlia,Accessories,35000,USD,Case Samsung S22,0,100000,Mobiles Covers
+$3.50,,False,False,691,DKG Premium,Accessories,35000,USD,Case Samsung S22 Ultra,1.00,100000,Mobiles Covers
+$1.50,,False,False,692,Silicone,Accessories,15000,USD,Case iPhone 14 Pro Max,14.00,50000,Mobiles Covers
+$1.50,,False,False,693,Silicone,Accessories,15000,USD,Case iPhone 14 Pro,7.00,50000,Mobiles Covers
+$1.28,,False,False,694,Silicone,Accessories,15000,USD,Case iPhone 14,1.00,50000,Mobiles Covers
+$1.50,,False,False,695,Silicone,Accessories,15000,USD,Case iPhone 14+,4.00,50000,Mobiles Covers
+$1.50,,False,False,696,Silicone,Accessories,15000,USD,Case iPhone 13 Pro Max,1.00,50000,Mobiles Covers
+$1.47,,False,False,697,Silicone,Accessories,15000,USD,Case iPhone 13 Pro,2.00,50000,Mobiles Covers
+$1.50,,False,False,698,Silicone,Accessories,15000,USD,Case iPhone XS Max,8.00,50000,Mobiles Covers
+$1.50,,False,False,699,Silicone,Accessories,15000,USD,Case iPhone X/XS,6.00,50000,Mobiles Covers
+$1.50,,False,False,700,Silicone,Accessories,15000,USD,Case iPhone 7/8,0,50000,Mobiles Covers
+$1.39,,False,False,701,Silicone,Accessories,15000,USD,Case iPhone 12 Pro Max,6.00,50000,Mobiles Covers
+$1.40,,False,False,702,Silicone,Accessories,15000,USD,Case iPhone 12 Pro,5.00,50000,Mobiles Covers
+$1.50,,False,False,703,Silicone,Accessories,15000,USD,Case iPhone 11 Pro Max,8.00,50000,Mobiles Covers
+$1.50,,False,False,704,Silicone,Accessories,15000,USD,Case iPhone 11 Pro,1.00,50000,Mobiles Covers
+$1.50,,False,False,705,Silicone,Accessories,15000,USD,Case iPhone 11,0,50000,Mobiles Covers
+$3.50,,False,False,706,Doyers,Accessories,35000,USD,Case Samsung Z Fold 6,1.00,100000,Mobiles Covers
+$3.50,,False,False,707,Case,Accessories,35000,USD,Case Samsung Z Fold 5,0,100000,Mobiles Covers
+$3.50,,False,False,708,Mercury,Accessories,35000,USD,Case Samsung Z Fold 4,1.00,100000,Mobiles Covers
+$3.50,,False,False,709,Adannu,Accessories,35000,USD,Case Samsung Z Flip 6,2.00,100000,Mobiles Covers
+$3.50,,False,False,710,Adannu,Accessories,35000,USD,Case Samsung Z Fold 6,1.00,100000,Mobiles Covers
+$3.50,,False,False,711,Case,Accessories,35000,USD,Case Samsung Z Fold 3,1.00,100000,Mobiles Covers
+$3.50,,False,False,712,Adannu,Accessories,35000,USD,Case Samsung Z Flip 4,1.00,100000,Mobiles Covers
+$3.50,,False,False,713,Case,Accessories,35000,USD,Case Samsung Z Fold 3,1.00,100000,Mobiles Covers
+$3.75,,False,False,714,Berlia,Accessories,37500,USD,Case Samsung S23,0,100000,Mobiles Covers
+$2.50,,False,False,715,Space,Accessories,25000,USD,Case Samsung S20 Ultra,2.00,70000,Mobiles Covers
+$3.75,,False,False,716,Berlia,Accessories,37500,USD,Case Samsung S24,3.00,100000,Mobiles Covers
+$3.75,,False,False,717,DKG Shock,Accessories,37500,USD,Case Samsung S24 Ultra,0,100000,Mobiles Covers
+$3.50,,False,False,719,Magnetic,Accessories,35000,USD,Case Samsung S24 Ultra,0,100000,Mobiles Covers
+$3.50,,False,False,720,Berlia,Accessories,35000,USD,Case Samsung S24 Ultra,0,100000,Mobiles Covers
+$3.50,,False,False,721,Fashion,Accessories,35000,USD,Case Samsung S24 Ultra,1.00,100000,Mobiles Covers
+$3.50,,False,False,722,Berlia,Accessories,35000,USD,Case Samsung S24 Plus,2.00,100000,Mobiles Covers
+$3.50,,False,False,723,DKG Design,Accessories,35000,USD,Case Samsung S24,2.00,100000,Mobiles Covers
+$3.50,,False,False,724,Berlia,Accessories,35000,USD,Case Samsung S24 Plus,2.00,100000,Mobiles Covers
+$3.50,,False,False,725,Case,Accessories,35000,USD,Case Samsung Z Flip 3,1.00,100000,Mobiles Covers
+$3.50,,False,False,726,Case,Accessories,35000,USD,Case Samsung Z Flip 4,0,100000,Mobiles Covers
+$3.50,,False,False,727,Casetify,Accessories,35000,USD,Case Samsung Z Flip 4,2.00,100000,Mobiles Covers
+$3.50,,False,False,728,Casetify,Accessories,35000,USD,Case Samsung Z Flip 5,0,100000,Mobiles Covers
+$3.50,,False,False,729,Casetify,Accessories,35000,USD,Case Samsung Z Flip 6,1.00,100000,Mobiles Covers
+$3.50,,False,False,730,Doyers,Accessories,35000,USD,Case Samsung Z Flip 6,1.00,100000,Mobiles Covers
+$3.00,,False,False,731,Crystal Palace,Accessories,30000,USD,Case iPhone 11 Pro Max,1.00,100000,Mobiles Covers
+$3.00,,False,False,732,Crystal Palace,Accessories,30000,USD,Case iPhone 11 Pro,2.00,100000,Mobiles Covers
+$3.00,,False,False,733,Crystal Palace,Accessories,30000,USD,Case iPhone 13 Pro,0,100000,Mobiles Covers
+$3.00,,False,False,734,Crystal Palace,Accessories,30000,USD,Case iPhone 14 Pro,1.00,100000,Mobiles Covers
+$3.00,,False,False,735,Simeitu,Accessories,30000,USD,Case Samsung S23 Plus,1.00,100000,Mobiles Covers
+$0.65,,False,False,736,Hoco,Accessories,6500,USD,Cable x88 USB-A to Micro USB,0,60000,Cables
+$1.25,,False,False,737,Kakusiga,Accessories,12500,USD,Kakusiga Data Cable USB-A to iPhone 1M PD60W KSC-808,0,50000,Cables
+$15.00,,False,False,738,Borofone,Accessories,150000,USD,Power Bank 10000 mah BJ56,0,250000,Power Bank
+$0.00,,False,False,739,Alfa,Recharges,[],LBP,Alfa Mobile Bill,0,[],Mobiles
+$0.00,,False,False,740,Touch,Recharges,[],LBP,Touch Mobile Bill,0,[],Mobiles
+$0.00,,False,False,741,Whish App,Whish App,[],LBP,Whish to Whish LBP,0,[],Whish to Whish
+$0.00,,False,False,742,Whish System,Whish System,[],LBP,Mechanic - EJC'FJC,0,[],Mechanic
+$0.00,,False,False,743,Whish System,Whish System,[],LBP,E-Payment,0,[],Finance
+$0.00,,False,False,744,Whish System,Whish System,[],LBP,Offline - :1,0,[],Finance
+$0.00,,False,False,745,Whish System,Whish System,[],LBP,Offline - 51,0,[],Finance
+$0.00,,False,False,746,Whish System,Whish System,[],LBP,Offline - 56,0,[],Finance
+$0.00,,False,False,747,Whish System,Whish System,[],LBP,Offline - 57,0,[],Finance
+$0.00,,False,False,748,Whish System,Whish System,[],LBP,Offline - 58,0,[],Finance
+$0.00,,False,False,749,Whish System,Whish System,[],LBP,Offline - 59,0,[],Finance
+$0.00,,False,False,750,Whish System,Whish System,[],LBP,Offline - 510,0,[],Finance
+$0.00,,False,False,751,Whish System,Whish System,[],LBP,Offline - 511,0,[],Finance
+$0.00,,False,False,752,Whish System,Whish System,[],LBP,Offline - 512,0,[],Finance
+$0.00,,False,False,753,Whish System,Whish System,[],LBP,Offline - 513,0,[],Finance
+$0.00,,False,False,754,Whish System,Whish System,[],LBP,Offline - 517,0,[],Finance
+$0.00,,False,False,755,Whish System,Whish System,[],LBP,Offline - 518,0,[],Finance
+$0.00,,False,False,756,Whish System,Whish System,[],LBP,Offline - #E1 B(6 13HE 9B'1J),0,[],Finance
+$0.00,,False,False,757,Whish System,Whish System,[],LBP,Offline - 61'&( #.1I,0,[],Finance
+"$300,000.00",,False,False,758,Whish System,Whish System,3000000000,LBP,9B'1J) - Ikariye,0,3500000000,Finance
+$3.00,,False,False,759,KeepPhone,Accessories,30000,USD,Case iPhone 13 Pro,0,100000,Mobiles Covers
+$3.00,,False,False,760,AG Glass,Accessories,30000,USD,Case iPhone 13 Pro,0,100000,Mobiles Covers
+$3.00,,False,False,761,New I,Accessories,30000,USD,Case iPhone 14,0,100000,Mobiles Covers
+$3.00,,False,False,762,Unnamed,Accessories,30000,USD,Case iPhone 14,1.00,100000,Mobiles Covers
+$3.00,,False,False,763,DKG Design,Accessories,30000,USD,Case iPhone 13 Pro,0,100000,Mobiles Covers
+$3.00,,False,False,764,DKG Shock,Accessories,30000,USD,Case iPhone 13 Pro,0,100000,Mobiles Covers
+$0.65,,False,False,765,Hoco,Accessories,6500,USD,Cable x88 USB-A to USB-C,0,60000,Cables
+$283.50,,False,False,767,Samsung,Accessories,2840000,USD,Samsung Galaxy A36 SM-A366B/DS 8gb | 256gba56,0,3150000,Mobiles
+$370.00,,False,False,768,Samsung,Accessories,3700000,USD,Samsung Galaxy A56 SM-A566B/DS 8gb | 256gb,1.00,3950000,Mobiles
+$3.00,,False,False,769,Doyers,Accessories,30000,USD,Case iPhone 13 Pro,0,100000,Mobiles Covers
+$3.00,,False,False,771,Better,Accessories,30000,USD,Case iPhone 13 Pro,0,100000,Mobiles Covers
+$3.00,,False,False,772,DKG Design,Accessories,30000,USD,Case iPhone 14 Pro,1.00,100000,Mobiles Covers
+$3.00,,False,False,773,Doyers,Accessories,30000,USD,Case iPhone 14 Pro,2.00,100000,Mobiles Covers
+$3.00,,False,False,774,DKG Shock,Accessories,30000,USD,Case iPhone 14 Pro,6.00,100000,Mobiles Covers
+$3.00,,False,False,775,Case,Accessories,30000,USD,Case iPhone 14,0,100000,Mobiles Covers
+$3.00,,False,False,776,Kzood,Accessories,30000,USD,Case iPhone 14,0,100000,Mobiles Covers
+$3.00,,False,False,777,New I,Accessories,30000,USD,Case iPhone 14 Pro Max,12.00,100000,Mobiles Covers
+$3.00,,False,False,778,Kzdoo,Accessories,30000,USD,Case iPhone 14+,1.00,100000,Mobiles Covers
+$3.00,,False,False,779,Case,Accessories,30000,USD,Case iPhone 14 Pro Max,1.00,100000,Mobiles Covers
+$3.00,,False,False,780,New I,Accessories,30000,USD,Case iPhone 14  Max,3.00,100000,Mobiles Covers
+$3.00,,False,False,781,Kzdoo,Accessories,30000,USD,Case iPhone 14 Pro,1.00,100000,Mobiles Covers
+$3.00,,False,False,783,Case,Accessories,30000,USD,Case iPhone 14 Pro,4.00,100000,Mobiles Covers
+$3.00,,False,False,784,Piblue,Accessories,30000,USD,Case iPhone 14 Pro,1.00,100000,Mobiles Covers
+$3.00,,False,False,785,Case,Accessories,30000,USD,Case iPhone 14 Pro,3.00,100000,Mobiles Covers
+$3.00,,False,False,786,Ag Glass,Accessories,30000,USD,Case iPhone 14 Pro,1.00,100000,Mobiles Covers
+$3.00,,False,False,787,Unnamed,Accessories,30000,USD,Case iPhone 14 Pro,6.00,100000,Mobiles Covers
+$3.00,,False,False,788,New I,Accessories,30000,USD,Case iPhone 14 Pro,9.00,100000,Mobiles Covers
+$3.00,,False,False,789,DKG Design,Accessories,30000,USD,Case iPhone 14 Pro,4.00,100000,Mobiles Covers
+$3.00,,False,False,790,DKG Shock,Accessories,30000,USD,Case iPhone 14 Pro,2.00,100000,Mobiles Covers
+$3.00,,False,False,791,DKG Shock,Accessories,30000,USD,Case iPhone 14 Pro Max,1.00,100000,Mobiles Covers
+$3.00,,False,False,792,DKG Design,Accessories,30000,USD,Case iPhone 14 Pro Max,2.00,100000,Mobiles Covers
+$3.00,,False,False,793,9D Glass,Accessories,30000,USD,Case iPhone 14 Pro Max,5.00,100000,Mobiles Covers
+$3.00,,False,False,794,Leather,Accessories,30000,USD,Case iPhone 14 Pro Max,3.00,120000,Mobiles Covers
+$5.00,,False,False,795,JoyPorodo,Accessories,50000,USD,Case iPhone 16 Pro Max,5.00,120000,Mobiles Covers
+$5.00,,False,False,796,JoyPorodo,Accessories,50000,USD,Case iPhone 16 Pro,1.00,120000,Mobiles Covers
+$5.00,,False,False,797,JoyPorodo,Accessories,50000,USD,Case iPhone 16,5.00,120000,Mobiles Covers
+$3.00,,False,False,798,DKG Shock,Accessories,30000,USD,Case iPhone 15 Pro Max,3.00,100000,Mobiles Covers
+$3.00,,False,False,799,DKG Design,Accessories,27000,USD,Case iPhone 15 Pro Max,4.00,100000,Mobiles Covers
+$3.00,,False,False,800,DKG Cover,Accessories,30000,USD,Case iPhone 16 Pro Max,3.00,100000,Mobiles Covers
+$5.00,,False,False,801,DKG Premium,Accessories,50000,USD,Case iPhone 16 ProIPEFET,0,100000,Mobiles Covers
+$3.00,,False,False,802,DKG Cover,Accessories,30000,USD,Case iPhone 16,2.00,100000,Mobiles Covers
+$3.00,,False,False,803,Doyers,Accessories,30000,USD,Case iPhone 15 Pro Max,0,100000,Mobiles Covers
+$5.00,,False,False,804,Metal Frame,Accessories,50000,USD,Case iPhone 15 Pro Max,0,100000,Mobiles Covers
+$4.00,,False,False,805,AG Glass,Accessories,40000,USD,Case iPhone 15 Pro Max,2.00,100000,Mobiles Covers
+$3.50,,False,False,806,DKG Design,Accessories,35000,USD,Case iPhone 16,2.00,100000,Mobiles Covers
+$3.50,,False,False,807,DKG Shock,Accessories,35000,USD,Case iPhone 16,1.00,100000,Mobiles Covers
+$3.50,,False,False,808,DKG Shock,Accessories,35000,USD,Case iPhone 16 Pro Max,0,100000,Mobiles Covers
+$3.50,,False,False,809,DKG Shock,Accessories,35000,USD,Case iPhone 16 Pro,0,100000,Mobiles Covers
+$3.50,,False,False,810,DKG Design,Accessories,35000,USD,Case iPhone 15 Pro,2.00,100000,Mobiles Covers
+$3.50,,False,False,811,DKG Shock,Accessories,35000,USD,Case iPhone 15 Pro,4.00,100000,Mobiles Covers
+$3.50,,False,False,812,DKG Cover,Accessories,35000,USD,Case iPhone 15 Pro Max,0,100000,Mobiles Covers
+$3.50,,False,False,813,DKG Design,Accessories,35000,USD,Case iPhone 1,1.00,100000,Mobiles Covers
+$3.00,,False,False,814,Case,Accessories,30000,USD,Case iPhone 15 Pro,0,100000,Mobiles Covers
+$3.50,,False,False,815,AG Glass,Accessories,35000,USD,Case iPhone 15 Pro,0,100000,Mobiles Covers
+$3.50,,False,False,816,Kzdoo,Accessories,35000,USD,Case iPhone 12,0,100000,Mobiles Covers
+$3.50,,False,False,817,DKG Design,Accessories,35000,USD,Case iPhone 12 Pro,2.00,100000,Mobiles Covers
+$3.50,,False,False,818,DKG Shock,Accessories,35000,USD,Case iPhone 11 Pro,1.00,100000,Mobiles Covers
+$3.50,,False,False,819,DKG Shock,Accessories,35000,USD,Case iPhone 11,0,100000,Mobiles Covers
+$3.50,,False,False,820,DKG Shock,Accessories,35000,USD,Case iPhone 11 Pro Max,2.00,100000,Mobiles Covers
+$3.50,,False,False,821,DKG Design,Accessories,35000,USD,Case iPhone 11 Pro Max,2.00,100000,Mobiles Covers
+$3.50,,False,False,822,DKG Design,Accessories,35000,USD,Case iPhone 12 Pro Max,1.00,100000,Mobiles Covers
+$3.50,,False,False,823,Berlia,Accessories,35000,USD,Case iPhone 12 Pro Max,1.00,100000,Mobiles Covers
+$3.00,,False,False,824,Case,Accessories,30000,USD,Case iPhone 12 Pro Max,1.00,100000,Mobiles Covers
+$3.00,,False,False,825,Case,Accessories,30000,USD,Case iPhone 12 Pro,1.00,100000,Mobiles Covers
+$3.50,,False,False,826,New case,Accessories,35000,USD,Case iPhone 14 Pro Max,6.00,100000,Mobiles Covers
+$3.50,,False,False,827,New case,Accessories,35000,USD,Case iPhone 15 Pro Max,5.00,100000,Mobiles Covers
+$3.50,,False,False,828,New case,Accessories,35000,USD,Case iPhone 15 pro,3.00,100000,Mobiles Covers
+$3.50,,False,False,829,New case,Accessories,35000,USD,Case iPhone 14 pro,6.00,100000,Mobiles Covers
+$1.38,,False,False,836,Silicone,Accessories,15000,USD,Case iPhone 16 Pro Max,12.00,50000,
+$1.38,,False,False,837,Silicone,Accessories,15000,USD,Case iPhone 16 Pro,6.00,50000,Mobiles Covers
+$1.50,,False,False,838,Silicone,Accessories,15000,USD,Case iPhone 16,8.00,50000,Mobiles Covers
+$1.36,,False,False,839,Silicone,Accessories,15000,USD,Silicone Case iPhone 15 Pro Max,2.00,50000,Mobiles Covers
+$1.35,,False,False,840,Silicone,Accessories,15000,USD,Case iPhone 15 Pro,4.00,50000,Mobiles Covers
+$1.50,,False,False,841,Silicone,Accessories,15000,USD,Case iPhone 15,4.00,50000,Mobiles Covers
+$3.50,,False,False,842,XO,Accessories,35000,USD,XO-L119 Type-C,0,120000,Chargers
+$3.50,,False,False,843,XO,Accessories,35000,USD,XO-L119 Micro USB,0,100000,Chargers
+$3.50,,False,False,844,XO,Accessories,35000,USD,XO-L119 iPhone,0,120000,Chargers
+$6.00,,False,False,847,Hoco,Accessories,60000,USD,Mobile Tripod K17,0,150000,Mobile Holder
+$3.60,,False,False,848,,Accessories,36000,USD,Sonny Angel Hippers,0,80000,
+$3.00,,False,False,849,XO,Accessories,30000,USD,XO-L78 USB-A Double Port,0,80000,Chargers
+$2.00,,False,False,850,Schwaiger,Accessories,20000,USD,Car Charger 12 - 24 V USB-A Double Port PE 900,0,80000,Chargers
+$5.00,,False,False,851,Meetion,Accessories,50000,USD,Wireless Mouse R545 - Black,0,100000,Mouses & Keyboards
+$5.00,,False,False,852,Meetion,Accessories,50000,USD,Wireless Mouse R545 - Blue,0,100000,Mouses & Keyboards
+$1.50,,False,False,853,,Accessories,15000,USD,Samsung S25 Ultra Lenses,3.00,50000,Camera Lens
+$3.25,,False,False,854,Green Lion,Accessories,32500,USD,Samsung S25 Ultra Lenses,1.00,100000,Camera Lens
+$15.00,,False,False,855,Green Lion,Accessories,150000,USD,Power Bank MagSafe 10000mAh GL-PB60,0,280000,Power Bank
+$2.00,,False,False,856,Watch,Accessories,20000,USD,Watch Band with Cover 41 mm,3.00,80000,
+$2.00,,False,False,857,Watch,Accessories,20000,USD,Watch Band with Cover 45 mm,2.00,80000,
+$33.00,,False,False,859,Ace Fast,Accessories,330000,USD,Fast Four Port Charger 3x USB-C 1x USB-A,0,450000,Chargers
+$0.00,,False,False,860,Borofone,Accessories,100000,USD,Intelligent Positioning Anti-Lost Device BC100,1.00,220000,Tags
+$3.25,,False,False,861,Funshare,Accessories,32500,USD,Case iPhone 16 Pro Max,4.00,100000,Mobiles Covers
+$3.25,,False,False,862,Funshare,Accessories,32500,USD,Case iPhone 13 Pro Max,0,100000,Mobiles Covers
+$3.25,,False,False,863,Funshare,Accessories,32500,USD,Case Samsung S23 Ultra,2.00,100000,Mobiles Covers
+$3.25,,False,False,864,Funshare,Accessories,32500,USD,Case Samsung S24 Ultra,3.00,100000,Mobiles Covers
+$3.25,,False,False,865,Funshare,Accessories,30000,USD,Case Samsung S25 Ultra,4.00,100000,Mobiles Covers
+$0.75,,False,False,866,Silicone,Accessories,8000,USD,Clear Case Samsung A36 A56,3.00,50000,Mobiles Covers
+$1.50,,False,False,868,Lito,Accessories,15000,USD,2 in 1 Glass + Case 45mm,0,70000,
+$5.00,,False,False,869,Apple,Accessories,50000,USD,Case MagSafe Original iPhone 14 Pro,12.00,200000,Mobiles Covers
+$5.00,,False,False,870,Apple,Accessories,50000,USD,Case MagSafe Original iPhone 14 Pro Max,3.00,200000,Mobiles Covers
+$5.00,,False,False,871,Apple,Accessories,50000,USD,Case MagSafe Original iPhone 15 Pro,0,200000,Mobiles Covers
+$5.00,,False,False,872,Apple,Accessories,50000,USD,Case MagSafe Original iPhone 15 Pro max,2.00,200000,Mobiles Covers
+$5.00,,False,False,873,Apple,Accessories,50000,USD,Clear Case MagSafe Original iPhone 16,0,150000,Mobiles Covers
+$5.00,,False,False,874,Apple,Accessories,50000,USD,Clear Case MagSafe Original iPhone 16 Pro,1.00,150000,Mobiles Covers
+$5.00,,False,False,875,Apple,Accessories,50000,USD,Clear Case MagSafe Original iPhone 16 Pro Max,0,150000,Mobiles Covers
+$1.50,,False,False,876,Apple,Accessories,15000,USD,Case MagSafe Copy iPhone 14,0,100000,Mobiles Covers
+$1.50,,False,False,877,Apple,Accessories,15000,USD,Case MagSafe Copy iPhone 14 Pro,6.00,100000,Mobiles Covers
+$1.50,,False,False,878,Apple,Accessories,15000,USD,Case MagSafe Copy iPhone 14 Pro Max,4.00,100000,Mobiles Covers
+$1.50,,False,False,879,Apple,Accessories,15000,USD,Case MagSafe Copy iPhone 13 Pro Max,0,100000,Mobiles Covers
+$3.00,,False,False,880,Fashion,Accessories,30000,USD,Case Samsung S23 Ultra,1.00,100000,Mobiles
+$1.25,,False,False,881,,Accessories,12500,USD,Camera Lens Small Box 15 / 15 Plus,3.00,50000,Camera Lens
+$0.00,,False,False,882,Whish App,Whish App,[],USD,Whish to Whish USD,0,[],Whish to Whish
+$0.00,,False,False,883,USD,Cash,[],USD,Cash USD,0,[],USD
+$0.00,,False,False,884,LBP,Cash,[],LBP,Cash LBP,0,[],LBP
+$0.00,,False,False,885,Whish App,Vouchers,[],USD,Vouchers USD,0,[],
+$0.00,,False,False,887,Whish System,Whish System,[],LBP,Stamps - H5D 7H'(9,0,[],
+$0.00,,False,False,888,Whish App,Vouchers,[],LBP,Vouchers LBP,0,[],
+$1.00,,False,False,889,,Recharges,10000,USD,USDT - USD Tether TRC20,0,10000,Finance
+"$100,000.00",,False,False,891,Loto,Loto,1000000000,LBP,Loto Grid,0,1000000000,
+"$20,000.00",,False,False,892,Leather,Loto,200000000,LBP,Loto Zeed,0,200000000,
+$0.00,,False,False,893,,Accessories,15000,USD,Airpods 4 Silicone Case,2.00,50000,
+$0.00,,False,False,894,,Accessories,25000,USD,Airpods 4 Protective Case,5.00,80000,
+$3.50,6959627800002,False,False,895,Coblue,Accessories,35000,USD,Airpods Pro 3 2025 Protective Case EJ-01,4.00,80000,Airpods Cases
+$0.00,,False,False,896,,Accessories,15000,USD,Buds 2 Pro / Live Protection Case,1.00,50000,
+$0.00,,False,False,899,,Accessories,[],USD,Bavin Car Mobile Mount PS-07,0,120000,Cables
+$5.00,,False,False,900,,Accessories,50000,USD,Car Charger Full Agreement UC-04,0,100000,Chargers
+$1.50,,False,False,901,PikCell,Accessories,15000,USD,Ultra Alkaline  AA | 2 LR61 1.5V,0,30000,Batteries
+$1.50,,False,False,902,PikCell,Accessories,15000,USD,Ultra Alkaline  AAA | 2 LR61 1.5V,0,30000,Batteries
+$15.00,,False,False,903,,Accessories,150000,USD,Full Set RGB Keyboard + Mouse + Headset K70,1.00,250000,
+$11.00,,False,False,904,,Accessories,110000,USD,Baby Stroller,0,270000,
+$10.00,,False,False,905,,Accessories,100000,USD,Fashion Beads and Fun Games,0,200000,
+$7.00,,False,False,906,,Accessories,70000,USD,Writing Tablet 16 inch,0,150000,
+$2.50,,False,False,907,,Accessories,25000,USD,Writing Tablet 8.5 inch,0,40000,
+$4.00,,False,False,908,,Accessories,40000,USD,Writing Tablet 10 inch,0,80000,
+$6.00,,False,False,911,,Accessories,60000,USD,Shoot Gun,1.00,200000,
+$23.00,,False,False,912,,Accessories,230000,USD,Logitech Webcam C270 HD Webcam,0,300000,
+$0.00,,False,False,914,,Whish App,[],LBP,Ogero,0,[],
+$0.00,,False,False,915,,Whish App,[],USD,Cablevision USD,0,[],
+$0.00,,False,False,916,,Whish App,[],LBP,Cablevision LBP,0,[],
+$2.31,,False,False,917,Terea,Accessories,25200,USD,Terea Turquoise,44.00,30000,Smoking
+$2.36,,False,False,918,Terea,Accessories,24200,USD,Terea Silver,58.00,30000,Smoking
+$2.35,,False,False,919,Terea,Accessories,24000,USD,Terea Yellow,21.00,30000,Smoking
+$2.46,,False,False,920,Terea,Accessories,24200,USD,Terea Sun Pearl,29.00,30000,Smoking
+$3.30,,False,False,921,Terea,Accessories,28000,USD,Terea Oasis Pearl,18.00,40000,Smoking
+$2.53,,False,False,922,Terea,Accessories,25200,USD,Terea Purple,42.00,30000,Smoking
+$2.42,,False,False,923,Terea,Accessories,25200,USD,Terea Amber,30.00,30000,Smoking
+$2.39,,False,False,924,Terea,Accessories,25000,USD,Terea Sienna,19.00,30000,Smoking
+$0.95,,False,False,925,Blends,Accessories,11170,USD,Blends Cool Fresh,2.00,15000,Smoking
+$0.96,,False,False,926,Blends,Accessories,9600,USD,Blends Purple Aroma,13.00,15000,Smoking
+$0.94,,False,False,927,Blends,Accessories,9400,USD,Blends Rich Classics,0,15000,Smoking
+$0.94,,False,False,928,Blends,Accessories,9400,USD,Blends Warm Classics,0,15000,Smoking
+$0.96,,False,False,929,Blends,Accessories,9600,USD,Blends Round Clasics,18.00,15000,Smoking
+$0.94,,False,False,930,Blends,Accessories,11170,USD,Blends Balanced Classics,0,15000,Smoking
+$0.96,,False,False,931,Blends,Accessories,11170,USD,Blends Mellow Classics,13.00,15000,Smoking
+$1.44,,False,False,932,Fiit,Accessories,14400,USD,Fiit Regular Sky,17.00,16300,Smoking
+$1.44,,False,False,934,Fiit,Accessories,14400,USD,Fiit Regular Deep,0,16300,Smoking
+$1.57,,False,False,935,Heets,Accessories,15700,USD,Heets Amber,0,20200,Smoking
+$1.57,,False,False,936,Heets,Accessories,15700,USD,Heets Sienna,0,20200,Smoking
+$1.57,,False,False,937,Heets,Accessories,15700,USD,Heets Purple,0,20200,Smoking
+$1.57,,False,False,938,Heets,Accessories,15700,USD,Heets Yellow,9.00,20200,Smoking
+$1.00,,False,False,939,Luminous,Accessories,10000,USD,Clear Protection Samsung A14,1.00,50000,Screen Protection
+$1.00,,False,False,940,Luminous,Accessories,10000,USD,Clear Protection Samsung A04,8.00,50000,Screen Protection
+$1.00,,False,False,941,Luminous,Accessories,10000,USD,Clear Protection Samsung A04E,8.00,50000,Screen Protection
+$1.00,,False,False,942,Tempered,Accessories,10000,USD,Clear Protection Samsung A72,8.00,33500,Screen Protection
+$1.00,,False,False,943,Tempered,Accessories,10000,USD,Clear Protection Samsung A73,8.00,33500,Screen Protection
+$1.00,,False,False,944,Tempered,Accessories,10000,USD,Clear Protection Samsung A71,9.00,33500,Screen Protection
+$1.00,,False,False,946,Tempered,Accessories,10000,USD,Clear Protection Redmi Note 11S,1.00,33500,Screen Protection
+$1.00,,False,False,948,Luminous,Accessories,10000,USD,Clear Protection Samsung A34,11.00,50000,Screen Protection
+$1.00,,False,False,950,Luminous,Accessories,10000,USD,Clear Protection Samsung A15,0,50000,Screen Protection
+$1.00,,False,False,951,Luminous,Accessories,10000,USD,Clear Protection Samsung A06,7.00,50000,Screen Protection
+$1.00,,False,False,952,Luminous,Accessories,10000,USD,Clear Protection Samsung A05,0,50000,Screen Protection
+$0.91,,False,False,953,Luminous,Accessories,10000,USD,Clear Protection Samsung A16,14.00,50000,Screen Protection
+$1.00,,False,False,954,Tempered,Accessories,10000,USD,Clear Protection Samsung A70,11.00,33500,Screen Protection
+$1.00,,False,False,955,Luminous,Accessories,10000,USD,Clear Protection Samsung A21S,23.00,50000,Screen Protection
+$1.00,,False,False,956,Luminous,Accessories,10000,USD,Clear Protection Samsung A32,0,50000,Screen Protection
+$1.00,,False,False,957,Luminous,Accessories,10000,USD,Clear Protection Samsung A02,3.00,50000,Screen Protection
+$1.00,,False,False,960,Tempered,Accessories,10000,USD,Clear Protection Samsung A7 2018,9.00,33500,Screen Protection
+$1.00,,False,False,961,Tempered,Accessories,10000,USD,Clear Protection Samsung J7 Prime,10.00,33500,Screen Protection
+$1.00,,False,False,962,Tempered,Accessories,10000,USD,Clear Protection Samsung J7,8.00,33500,Screen Protection
+$1.00,,False,False,963,Tempered,Accessories,10000,USD,Clear Protection Spark 6,9.00,33500,Screen Protection
+$1.00,,False,False,964,Tempered,Accessories,10000,USD,Clear Protection Huawei Y9 Prime 2019,6.00,33500,Screen Protection
+$1.00,,False,False,965,Tempered,Accessories,10000,USD,Clear Protection iPhone 7G/8G,11.00,33500,Screen Protection
+$1.00,,False,False,967,Luminous,Accessories,10000,USD,Super Glass Clear Protection iPhone 16 Pro Max,0,70000,Screen Protection
+$1.50,,False,False,968,Luminous,Accessories,10000,USD,Clear Protection iPhone 13 / 13 Pro,0,50000,Screen Protection
+$1.00,,False,False,969,Luminous,Accessories,10000,USD,Clear Protection iPhone 13 Pro Max,0,50000,Screen Protection
+$1.00,,False,False,977,Luminous,Accessories,10000,USD,Clear Protection Samsung P30 Pro,3.00,50000,Screen Protection
+$1.20,,False,False,982,Luminous,Accessories,8000,USD,Ceramics Clear Protection Samsung S24 Ultra,6.00,70000,Screen Protection
+$0.80,,False,False,983,Luminous,Accessories,8000,USD,Ceramics Clear Protection Samsung S24 Plus,10.00,70000,Screen Protection
+$0.80,,False,False,984,Luminous,Accessories,8000,USD,Ceramic Clear Protection Samsung S24,9.00,70000,Screen Protection
+$1.50,,False,False,992,Luminous,Accessories,15000,USD,Clear Protection iPhone 15,0,50000,Screen Protection
+$1.50,,False,False,998,Luminous,Accessories,15000,USD,Clear Protection iPhone X Max / XS Max / 11 Pro Max,7.00,50000,Screen Protection
+$1.50,,False,False,999,Luminous,Accessories,15000,USD,Clear Protection iPhone X / XS / 11 Pro,28.00,50000,Screen Protection
+$1.50,,False,False,1000,Luminous,Accessories,15000,USD,OG Glass Clear Protection iPhone 16 Pro,6.00,70000,Screen Protection
+$1.50,,False,False,1003,Privacy,Accessories,15000,USD,Privacy Protection Samsung A05S,5.00,70000,Screen Protection
+$1.50,,False,False,1004,Privacy,Accessories,15000,USD,Privacy Protection Samsung A12,8.00,70000,Screen Protection
+$1.50,,False,False,1005,Privacy,Accessories,15000,USD,Privacy Protection Samsung A15,2.00,70000,Screen Protection
+$1.50,,False,False,1006,Privacy,Accessories,15000,USD,Privacy Protection Samsung A35,5.00,70000,Screen Protection
+$1.75,,False,False,1007,Privacy,Accessories,17500,USD,Privacy Protection Samsung A34,11.00,70000,Screen Protection
+$1.50,,False,False,1008,Privacy,Accessories,15000,USD,Privacy Protection Samsung A54,4.00,70000,Screen Protection
+$1.50,,False,False,1010,Privacy,Accessories,15000,USD,Privacy Protection Samsung A05a,9.00,70000,Screen Protection
+$1.50,,False,False,1013,Privacy,Accessories,15000,USD,Privacy Protection iphone 7G,10.00,70000,Screen Protection
+$1.50,,False,False,1014,Privacy,Accessories,15000,USD,Privacy Protection iPhone X Max / XS Max / 11 Pro Max,31.00,70000,Screen Protection
+$1.50,,False,False,1015,Privacy,Accessories,15000,USD,Privacy Protection iPhone 12 / 12 Pro,18.00,70000,Screen Protection
+$1.50,,False,False,1016,Privacy,Accessories,15000,USD,Privacy Protection iPhone 11 / XR,37.00,70000,Screen Protection
+$1.50,,False,False,1019,Privacy,Accessories,15000,USD,Privacy Protection iPhone X / XS / 11 Pro,32.00,70000,Screen Protection
+$1.50,,False,False,1020,Privacy,Accessories,15000,USD,Privacy Protection iPhone 13 Pro,11.00,70000,Screen Protection
+$1.50,,False,False,1021,Privacy,Accessories,15000,USD,Bonafies Privacy Protection iPhone 16,8.00,70000,Screen Protection
+$1.50,,False,False,1023,Privacy,Accessories,15000,USD,Airbag Privacy Protection iPhone 13 Pro,17.00,70000,Screen Protection
+$1.50,,False,False,1024,Privacy,Accessories,15000,USD,Privacy Protection iPhone 15,6.00,70000,Screen Protection
+$1.50,,False,False,1025,Privacy,Accessories,15000,USD,Privacy Protection iPhone 15 Pro Max,1.00,70000,Screen Protection
+$1.50,,False,False,1026,Privacy,Accessories,15000,USD,Privacy Protection iPhone 14,7.00,70000,Screen Protection
+$1.50,,False,False,1027,Privacy,Accessories,15000,USD,Privacy Protection iPhone 7G Plus,10.00,70000,Screen Protection
+$1.50,,False,False,1033,Privacy,Accessories,15000,USD,Privacy Protection iPhone 14 Pro,7.00,70000,Screen Protection
+$1.50,,False,False,1034,Privacy,Accessories,15000,USD,Privacy Protection iPhone 15 Pro,0,70000,Screen Protection
+$1.50,,False,False,1036,Privacy,Accessories,15000,USD,Privacy Protection iPhone 14 Pro Max,6.00,70000,Screen Protection
+$2.25,,False,False,1040,Luminous,Accessories,25000,USD,"Clear Protection iPad 10 10.9""",5.00,80000,Screen Protection
+$2.50,,False,False,1041,Luminous,Accessories,25000,USD,Clear Protection iPad 11 2022,3.00,80000,Screen Protection
+$2.50,,False,False,1042,Luminous,Accessories,25000,USD,"Clear Protection iPad 12.9"" 2022",2.00,80000,Screen Protection
+$2.50,,False,False,1043,Luminous,Accessories,25000,USD,Clear Protection Tab A9 Plus,3.00,80000,Screen Protection
+$2.50,,False,False,1044,Luminous,Accessories,25000,USD,Clear Protection Tab S9 FE,2.00,80000,Screen Protection
+$2.50,,False,False,1045,Luminous,Accessories,25000,USD,Clear Protection Tab S9,6.00,80000,Screen Protection
+$2.50,,False,False,1046,Luminous,Accessories,25000,USD,Clear Protection Tab S8,1.00,80000,Screen Protection
+$2.50,,False,False,1047,Luminous,Accessories,25000,USD,Clear Protection Tab A7 T220 / T225,3.00,80000,Screen Protection
+$0.80,,False,False,1048,Silicone,Accessories,8000,USD,Clear Case Samsung A05,13.00,50000,Mobiles Covers
+$0.80,,False,False,1049,Silicone,Accessories,8000,USD,Clear Case Samsung A15,9.00,50000,Mobiles Covers
+$0.77,,False,False,1050,Silicone,Accessories,8000,USD,Clear Case Samsung A16,4.00,50000,Mobiles Covers
+$0.80,,False,False,1051,Silicone,Accessories,8000,USD,Clear Case Samsung S23,1.00,50000,Mobiles Covers
+$0.80,,False,False,1052,Silicone,Accessories,8000,USD,Clear Case Samsung A24 A25 5G,10.00,50000,Mobiles Covers
+$0.80,,False,False,1053,Silicone,Accessories,8000,USD,Clear Case Samsung Note 20 Ultra,1.00,50000,Mobiles Covers
+$0.80,,False,False,1054,Silicone,Accessories,8000,USD,Clear Case Samsung A54 5G,0,50000,Mobiles Covers
+$0.80,,False,False,1055,Silicone,Accessories,8000,USD,Clear Case Samsung A35 5G,10.00,50000,Mobiles Covers
+$0.80,,False,False,1056,Silicone,Accessories,8000,USD,Clear Case iPhone X / XS,0,50000,Mobiles Covers
+$0.80,,False,False,1057,Silicone,Accessories,8000,USD,Clear Case iPhone 14 Pro Max,10.00,50000,Mobiles Covers
+$0.76,,False,False,1058,Silicone,Accessories,8000,USD,Clear Case iPhone 15 Pro,11.00,50000,Mobiles Covers
+$0.75,,False,False,1059,Silicone,Accessories,8000,USD,Clear Case iPhone 15,6.00,50000,Mobiles Covers
+$0.80,,False,False,1060,Silicone,Accessories,8000,USD,Clear Case iPhone 15 Pro Max,1.00,50000,Mobiles Covers
+$0.80,,False,False,1061,Silicone,Accessories,8000,USD,Clear Case iPhone 15 Ultra,0,50000,Mobiles Covers
+$0.80,,False,False,1062,Silicone,Accessories,8000,USD,Clear Case iPhone 11,10.00,50000,Mobiles Covers
+$0.80,,False,False,1063,Silicone,Accessories,8000,USD,Clear Case iPhone 12,3.00,50000,Mobiles Covers
+$0.80,,False,False,1064,Silicone,Accessories,8000,USD,Clear Case iPhone 12 Pro,4.00,50000,Mobiles Covers
+$0.80,,False,False,1065,Silicone,Accessories,10000,USD,Clear Case iPhone 12 Pro Max,0,50000,Mobiles Covers
+$0.80,,False,False,1066,Silicone,Accessories,8000,USD,Clear Case iPhone 11 Pro Max,14.00,50000,Mobiles Covers
+$0.80,,False,False,1067,Silicone,Accessories,8000,USD,Clear Case iPhone 13 Pro,0,50000,Mobiles Covers
+$0.80,,False,False,1068,Silicone,Accessories,8000,USD,Clear Case iPhone 13 Pro Max,4.00,50000,Mobiles Covers
+$0.80,,False,False,1069,Silicone,Accessories,8000,USD,Clear Case iPhone 14,10.00,50000,Mobiles Covers
+$0.80,,False,False,1070,Silicone,Accessories,8000,USD,Clear Case iPhone 13,6.00,50000,Mobiles Covers
+$0.80,,False,False,1071,Silicone,Accessories,8000,USD,Clear Case iPhone 11 Pro,13.00,50000,Mobiles Covers
+$0.80,,False,False,1072,Silicone,Accessories,9000,USD,Clear Case iPhone 14 Pro,9.00,50000,Mobiles Covers
+$0.80,,False,False,1073,Silicone,Accessories,9000,USD,Clear Case iPhone 16 Pro,15.00,50000,Mobiles Covers
+$0.80,,False,False,1074,Silicone,Accessories,9000,USD,Clear Case iPhone 16 Pro Max,4.00,50000,Mobiles Covers
+$7.00,,False,False,1075,,Accessories,70000,USD,Iqos Lil Cap Black,1.00,70000,
+$7.00,,False,False,1076,,Accessories,70000,USD,Iqos Lil Cap Pink,1.00,70000,
+$7.00,,False,False,1077,,Accessories,70000,USD,Iqos Lil Cap White,1.00,70000,
+$7.00,,False,False,1078,,Accessories,70000,USD,Iqos Lil Cap Blue,1.00,70000,
+$7.00,,False,False,1079,,Accessories,70000,USD,Iqos Lil Cap Green,1.00,70000,
+$2.50,,False,False,1080,,Streaming,10000,USD,Netflix - One Profile - 01 Month,0,40000,
+$7.00,,False,False,1081,,Streaming,54000,USD,Netflix - One Profile - 03 Months,0,100000,
+$13.00,,False,False,1082,,Streaming,100000,USD,Netflix - One Profile - 06 Months,0,170000,
+$25.00,,False,False,1083,,Streaming,180000,USD,Netflix - One Profile - 12 Months,0,300000,
+$10.00,,False,False,1084,,Streaming,70000,USD,Netflix - Full Account - 01 Month,0,120000,
+$28.00,,False,False,1085,,Streaming,210000,USD,Netflix - Full Account - 03 Months,0,330000,
+$54.00,,False,False,1086,,Streaming,420000,USD,Netflix - Full Account - 06 Months,0,600000,
+$100.00,,False,False,1087,,Streaming,840000,USD,Netflix - Full Account - 12 Months,0,1100000,
+$3.00,,False,False,1089,,Streaming,22500,USD,Shahid - One Profile - 03 Months,0,80000,
+$8.00,,False,False,1091,,Streaming,77500,USD,Shahid - One Profile - 12 Months,0,200000,
+$12.00,,False,False,1093,,Streaming,90000,USD,Shahid - Full Account - 03 Months,0,150000,
+$30.00,,False,False,1095,,Streaming,310000,USD,Shahid - Full Account - 12 Months,0,450000,
+$7.77,,False,False,1096,,Accessories,77700,USD,Alfa Line,1.00,150000,
+$10.00,,False,False,1097,,Whish App,100000,USD,CarFax,0,110000,
+$10.00,,False,False,1098,,Accessories,100000,USD,NCTS USB-C to HDMI - Samsung Dex,1.00,200000,
+$14.00,,False,False,1099,,Accessories,140000,USD,Buds Live Earpods,0,300000,
+$0.00,,False,False,1100,,Whish System,[],USD,Cash Out USD,0,[],
+$0.00,,False,False,1101,,Whish System,[],LBP,Cash Out LBP,0,[],
+$0.00,,False,False,1102,,Whish System,[],USD,Internationl Transfer USD,0,[],
+"$800,000.00",,False,False,1103,,Recharges,8000000000,LBP,Touch - One Year,0,28000000000,
+$35.00,,False,False,1104,,Whish System,350000,USD,Insurance Obligaroty - Car,0,350000,
+$20.00,,False,False,1105,,Whish System,200000,USD,Insurance Obligaroty - Moto < 125 cc,0,200000,
+$25.00,,False,False,1106,,Whish System,250000,USD,Insurance Obligaroty - Moto >= 125 cc,0,250000,
+$70.00,,False,False,1107,,Whish System,700000,USD,Insurance Obligaroty - Taxi,0,700000,
+$70.00,,False,False,1108,,Whish System,700000,USD,Insurance Obligaroty - Rapid,0,700000,
+$70.00,,False,False,1109,,Whish System,700000,USD,Insurance Obligaroty - Van or Pickup <=4.5T,0,700000,
+$160.00,,False,False,1110,,Whish System,1600000,USD,Insurance Obligaroty - Truck > 4.5 Tonnes (Non-Flammable),0,1600000,
+$100.00,,False,False,1111,,Whish System,1000000,USD,Insurance Obligaroty - Private Bus up to 11 Passengers,0,1000000,
+$160.00,,False,False,1112,,Whish System,1600000,USD,Insurance Obligaroty - Private Bus 12 to 24 Passengers,0,1600000,
+"$332,500.00",,False,False,1113,,Recharges,3325000000,LBP,Alfa Internet 1 GB,0,4000000000,
+"$855,000.00",,False,False,1114,,Recharges,8550000000,LBP,Alfa Internet 7 GB,0,10500000000,
+"$1,377,500.00",,False,False,1115,,Recharges,13775000000,LBP,Alfa Internet 22 GB,0,16500000000,
+"$1,995,000.00",,False,False,1116,,Recharges,19950000000,LBP,Alfa Internet 44 GB,0,24000000000,
+"$2,945,000.00",,False,False,1117,,Recharges,29450000000,LBP,Alfa Internet 77 GB,0,35500000000,
+"$3,800,000.00",,False,False,1118,,Recharges,38000000000,LBP,Alfa Internet 111 GB,0,46000000000,
+"$12,255,000.00",,False,False,1119,,Recharges,122550000000,LBP,Alfa Internet 444 GB,0,148350000000,
+$12.00,,False,False,1120,,Accessories,120000,USD,Bavin USB Drive 128GB USB-C and USB-A,0,200000,
+$2.50,,False,False,1121,,Accessories,25000,USD,Sony Playstation 4 Cable Micro USB PS4,0,100000,
+$2.50,,False,False,1122,,Accessories,25000,USD,Sony Playstation 5 Cable USB-C PS5,2.00,100000,
+$3.00,,False,False,1123,,Accessories,30000,USD,HDMI Cable 2M,0,60000,
+$5.00,,False,False,1124,,Accessories,50000,USD,HDMI Cable 3M,0,100000,
+$6.50,,False,False,1125,,Accessories,65000,USD,HDMI Cable 5M,0,120000,
+$10.50,,False,False,1126,,Accessories,105000,USD,Mini UPS 10400 mah,0,200000,
+$20.50,,False,False,1127,,Accessories,205000,USD,General Fan Big Size 18 inch,0,400000,
+$0.00,,False,False,1128,,Photocopy,[],LBP,Photocopy,0,250000000,
+$3.00,,False,False,1129,,Accessories,30000,USD,Multifunction Desktop Fan,0,100000,
+$2.25,,False,False,1130,,Accessories,22500,USD,Portable Mini Fan,3.00,70000,
+$5.50,,False,False,1132,,Accessories,55000,USD,Headphone Stitch AH-806,0,150000,
+$0.80,,False,False,1135,Privacy,Accessories,8000,USD,Privacy Protection Samsung S25 Ultra,5.00,70000,Screen Protection
+$0.80,,False,False,1139,Luminous,Accessories,8000,USD,Clear Protection Samsung S24 FE / A36 / A560,5.00,50000,Screen Protection
+$13.00,,False,False,1140,Hoco,Accessories,130000,USD,Hoco Quadropod 1.75m K22,0,350000,Mobile Holder
+$15.00,,False,False,1141,Hoco,Accessories,150000,USD,Hoco Smart Watch - Y23,0,300000,
+$16.00,,False,False,1142,Hoco,Accessories,160000,USD,Hoco Smart Watch - Y12,0,300000,
+$15.00,,False,False,1143,Hoco,Accessories,150000,USD,Hoco Foldable Portable Car Vacuum Cleaner ZP6,1.00,350000,
+$15.00,,False,False,1144,Hoco,Accessories,150000,USD,Hoco Portable Smart Air Pump ZP5,0,400000,
+$13.00,,False,False,1145,Hoco,Accessories,130000,USD,Hoco Open-Ear True Wireless Headset EA9,1.00,300000,
+$13.00,,False,False,1146,Hoco,Accessories,130000,USD,Hoco Open-Ear True Wireless Headset EA6,0,300000,
+$100.00,,False,False,1147,,Accessories,1000000,USD,Hoco Projector DT3,0,1500000,
+$21.00,,False,False,1148,Hoco,Accessories,210000,USD,Hoco Watch Y9,0,400000,
+$18.00,,False,False,1149,Hoco,Accessories,180000,USD,Hoco Watch Y15,0,350000,
+$20.00,,False,False,1150,Hoco,Accessories,200000,USD,Hoco Watch Y20,0,450000,
+$33.00,,False,False,1151,,Accessories,330000,USD,GDTimes Rechargeable Fan 12Inch 8029,0,450000,
+$0.00,,False,False,1152,,Whish System,[],LBP,Services,0,[],
+$220.00,,False,False,1153,Samsung,Accessories,2200000,USD,Samsung Galaxy A26 8gb | 256gb,0,2600000,Mobiles
+$0.00,,False,False,1154,,Whish System,[],USD,Transfer to Name USD,0,[],
+$0.00,,False,False,1155,,Whish System,[],LBP,Transfer to Name LBP,0,[],
+$1.57,,False,False,1156,Heets,Accessories,15700,USD,Heets Teak,0,20200,
+$21.00,,False,False,1157,,Accessories,210000,USD,Kids Camera Printer,0,400000,Cameras
+$0.45,,False,False,1158,Luminous,Accessories,4500,USD,Clear Protection Samsung A26,2.00,50000,Screen Protection
+$13.00,,False,False,1159,,Accessories,130000,USD,HDMI to VGA Adapter,0,220000,Cables
+$16.00,,False,False,1160,,Accessories,160000,USD,Fan 16 inch ABH-210,0,300000,
+$2.50,,False,False,1161,,Accessories,25000,USD,Apple Copy USB-C to IP Cable(1m),1.00,50000,
+$8.75,,False,False,1162,,Accessories,87500,USD,Jtc Led Rechargeable JL-1t120,0,150000,
+$1.50,,False,False,1163,,Accessories,15000,USD,Hoco X59 Anti-Bending USB to iPhone,0,120000,
+$1.50,,False,False,1165,Privacy,Accessories,15000,USD,Privacy Protection iPhone 16 Pro,2.00,70000,Screen Protection
+$104.00,,False,False,1167,,Accessories,1040000,USD,Airpods 4 No ANC,1.00,1230000,
+$1.75,,False,False,1168,,Accessories,17500,USD,Flavored Beads Blue Menthol,0,22200,
+$0.88,,False,False,1170,,Accessories,8750,USD,Flavored Beads Blueberry,2.00,22200,
+$1.75,,False,False,1171,,Accessories,17500,USD,Flavored Beads Green Mint,0,22200,
+$1.75,,False,False,1172,,Accessories,17500,USD,Flavored Beads Strawberry,3.00,22200,
+$1.75,,False,False,1173,,Accessories,17500,USD,Flavored Beads WaterMelon,8.00,22200,
+$0.00,,False,False,1174,,Repair,[],USD,Repair,1.00,[],
+$2.50,,False,False,1175,,Accessories,25000,USD,Havan CB-01 2 To 2 Cable 65W / 27W,0,120000,
+$2.50,,False,False,1176,,Accessories,25000,USD,Havan CB-02 4 in 1 Super Fast Cable 120W,0,150000,
+$0.80,,False,False,1177,Silicone,Accessories,8000,USD,Clear Case Samsung S23 ultra,1.00,50000,Mobiles Covers
+$1.69,,False,False,1178,Delia,Accessories,16400,USD,Delia Classic Red,11.00,20000,Smoking
+$1.70,,False,False,1179,Delia,Accessories,17100,USD,Delia Classic Silver,9.00,20000,Smoking
+$1.70,,False,False,1180,Delia,Accessories,17100,USD,Delia Classic Gold,17.00,20000,Smoking
+$16.00,,False,False,1181,,Accessories,160000,USD,Henin H7,0,250000,
+$11.00,,False,False,1182,,Accessories,110000,USD,Henin H6,0,200000,
+$27.00,,False,False,1183,,Accessories,270000,USD,Maxphone 16 Max,0,470000,
+$6.00,,False,False,1184,Apple,Accessories,60000,USD,Case MagSafe Original iPhone 15,1.00,200000,Mobiles Covers
+$6.00,,False,False,1185,Apple,Accessories,60000,USD,Case MagSafe Original iPhone 13 Pro Max,1.00,200000,Mobiles Covers
+$400.00,,False,False,1186,Apple,Accessories,4000000,USD,iPhone 13 - 256 Gb,0,[],Mobiles
+$4.00,,False,False,1187,New Case,Accessories,40000,USD,Case Samsung S25 Ultra,1.00,100000,Mobiles Covers
+$13.00,,False,False,1188,Samsung,Accessories,130000,USD,Air Buds 3,0,250000,
+$1.25,,False,False,1189,Fashion,Accessories,12500,USD,Case Samsung A06,9.00,100000,Mobiles Covers
+$4.50,,False,False,1190,XO,Accessories,45000,USD,Car Holder XO-C120,0,150000,Car Holder
+$5.00,,False,False,1191,XO,Accessories,50000,USD,Car Holder XO-C110,0,150000,Car Holder
+$5.00,,False,False,1192,XO,Accessories,50000,USD,Car Holder XO-C98B,1.00,150000,Car Holder
+$6.00,,False,False,1193,,Accessories,60000,USD,Car Holder T-Z20,1.00,170000,Car Holder
+$0.45,,False,False,1194,,Accessories,4500,USD,Pop Socket,10.00,20000,
+$55.00,,False,False,1195,,Accessories,550000,USD,JTC Rechargeable Fan 18 Inch,0,750000,
+$59.00,,False,False,1196,,Accessories,600000,USD,Speaker Sing-e 12 inch ZQS12121 + Microphone Bluetooth RGB,2.00,800000,Speakers
+$19.00,,False,False,1197,,Accessories,170000,USD,MoXom Power Bank 10000 mah PD20 + Wireless 15w MX-PB111,2.00,350000,Power Bank
+$19.00,,False,False,1198,,Accessories,190000,USD,MoXom Power Bank 10000 mah PD20 + SCP 22.5W + Wireless 15w + Stand,0,400000,Power Bank
+$14.00,,False,False,1199,,Accessories,140000,USD,Projector starry skyGALAXYSNIPER,0,250000,
+$3.75,,False,False,1200,New Case,Accessories,37500,USD,Case iPhone 16 Pro + Lenses,1.00,150000,Mobiles Covers
+$3.75,,False,False,1201,New Case,Accessories,37500,USD,Case iPhone 16 Pro Max + Lenses,1.00,150000,Mobiles Covers
+$3.00,,False,False,1202,Funshare,Accessories,30000,USD,Case Samsung S24 FE,1.00,100000,Mobiles Covers
+$3.50,,False,False,1203,,Accessories,35000,USD,Charger Tranyo 20 W T-EU7C USB-C,3.00,120000,Chargers
+$3.50,,False,False,1204,,Accessories,35000,USD,Charger Tranyo 20 W T-EU7L iPhone,3.00,120000,Chargers
+$4.50,,False,False,1205,,Accessories,45000,USD,Apple Earpods Lightning iPhone,0,120000,
+$3.75,,False,False,1206,New Case,Accessories,37500,USD,Case iPhone 12 Pro,2.00,150000,Mobiles Covers
+$3.75,,False,False,1207,New Case,Accessories,37500,USD,Case iPhone 15,1.00,150000,Mobiles Covers
+$22.00,,False,False,1208,,Accessories,220000,USD,Smartphone Magnetic Neck Holder Telesin,3.00,350000,
+$0.76,,False,False,1209,Silicone,Accessories,8000,USD,Clear Case Samsung S24,8.00,50000,Mobiles Covers
+$283.00,,False,False,1210,,Accessories,2830000,USD,Whoop 5.0,0,3050000,
+$1.75,,False,False,1211,Hoco,Accessories,17500,USD,Hoco Cable 1 Meter USB-A to USB-C X102,0,100000,Cables
+$1.75,,False,False,1212,Hoco,Accessories,17500,USD,Hoco Cable 1 Meter USB-A to iPhone Lightning X102,0,100000,Cables
+$1.75,,False,False,1213,Hoco,Accessories,17500,USD,Hoco Cable 1 Meter USB-A to Mirco X102,0,100000,Cables
+$38.00,,False,False,1215,Hoco,Accessories,380000,USD,Hoco Camera DV101,0,600000,
+$4.50,,False,False,1216,Yesido,Accessories,45000,USD,Yesido Cable 2 Meter USB-C to iPhone Lightning CA184,2.00,120000,
+$9.00,,False,False,1217,Hoco,Accessories,90000,USD,Hoco Charger USB-A USB-C 65W,0,200000,Chargers
+$43.00,,False,False,1218,,Accessories,430000,USD,JTC Rechargeable Fan 14 Inch,2.00,550000,
+$42.00,,False,False,1220,,Accessories,420000,USD,JBL Headphones Tune 720 BT,0,550000,
+$2.25,,False,False,1221,,Accessories,22500,USD,Case Magsafe iPhone 11 Pro,2.00,100000,Mobiles Covers
+$2.00,,False,False,1222,,Accessories,20000,USD,Case Magsafe Samsung S24 Ultra,3.00,100000,Mobiles Covers
+$2.00,,False,False,1223,,Accessories,20000,USD,Case Magsafe Samsung S25 Ultra,1.00,100000,Mobiles Covers
+$2.00,,False,False,1224,,Accessories,20000,USD,Case Magsafe iPhone 11,2.00,100000,Mobiles Covers
+$1.25,,False,False,1225,Silicone,Accessories,12500,USD,Case iPhone 13,0,50000,Mobiles Covers
+$590.00,,False,False,1226,Samsung,Accessories,5900000,USD,Samsung S23 Ultra,0,6200000,Mobiles
+$5.00,,False,False,1227,,Accessories,50000,USD,Clear Case Magsafe iPhone 13,1.00,150000,Mobiles Covers
+$5.00,,False,False,1228,,Accessories,50000,USD,Clear Case Magsafe iPhone 13 Pro,0,150000,Mobiles Covers
+$5.00,,False,False,1229,,Accessories,50000,USD,Clear Case Magsafe iPhone 13 Pro Max,1.00,150000,Mobiles Covers
+$5.00,,False,False,1230,,Accessories,50000,USD,Clear Case Magsafe iPhone 14,2.00,150000,Mobiles Covers
+$5.00,,False,False,1231,,Accessories,50000,USD,Clear Case Magsafe iPhone 14 Pro,1.00,150000,Mobiles Covers
+$5.00,,False,False,1232,,Accessories,50000,USD,Clear Case Magsafe iPhone 15,0,150000,Mobiles Covers
+$2.00,,False,False,1233,,Accessories,50000,USD,Clear Case Magsafe iPhone 15 Pro,0,150000,Mobiles Covers
+$5.00,,False,False,1234,,Accessories,50000,USD,Clear Case Magsafe iPhone 15 Pro Max,0,150000,Mobiles Covers
+$5.00,,False,False,1236,,Accessories,50000,USD,Clear Case Magsafe iPhone 16 Pro,1.00,150000,Mobiles Covers
+$330.00,,False,False,1239,,Accessories,3300000,USD,Apple Watch S10 46mm,0,3500000,
+$7.50,,False,False,1240,,Accessories,75000,USD,Pen Samsung,0,200000,
+$13.00,,False,False,1241,,Accessories,130000,USD,Pen Apple x pencil,1.00,200000,
+$1.25,,False,False,1243,Silicone,Accessories,12500,USD,Case Samsung A23,0,50000,
+$3.50,,False,False,1247,DKG Shock,Accessories,35000,USD,Case iPhone 13 / iPhone 14,2.00,100000,Mobiles Covers
+$12.00,,False,False,1248,Borofone,Accessories,120000,USD,Gaming Headphone Borofone B0104,0,220000,
+$14.00,,False,False,1249,Borofone,Accessories,140000,USD,Gaming Headset Borofone B0105,0,280000,
+$15.00,,False,False,1250,,Accessories,150000,USD,Gaming Headset K2 pink,1.00,280000,
+$1.25,,False,False,1251,Silicone,Accessories,12500,USD,Case Samsung A56,1.00,50000,
+$3.25,,False,False,1252,Samsung,Accessories,32500,USD,Case Magsafe iPhone 13 Pro Max,0,100000,
+$3.25,,False,False,1253,Borofone,Accessories,32500,USD,Cable iPhone - USB-C 20W Borofone BX87,0,100000,Cables
+$3.50,,False,False,1254,,Accessories,35000,USD,Microphone with Speaker Built in WS858,1.00,100000,
+$6.00,,False,False,1255,,Accessories,60000,USD,Hoco HX51 Widely Compatible IPX8,0,120000,
+$0.75,,False,False,1257,,Accessories,10000,USD,Marken Conversion Universal Plugin,0,33000,
+$158.00,,False,False,1258,,Accessories,1590000,USD,Airpods 4 with ANC,0,1700000,
+$4.00,,False,False,1259,,Accessories,40000,USD,Phone Umbrella,5.00,100000,
+$2.50,,False,False,1260,,Accessories,25000,USD,Bavin Charger Dual USB-A to iPhone PC910Y,0,70000,Chargers
+$5.75,,False,False,1261,Borofone,Accessories,57500,USD,Borofone Car Charger PD30W+QC3.0 Dual Port USB-C,0,120000,Chargers
+$5.75,,False,False,1262,Borofone,Accessories,57500,USD,Borofone Car Charger PD30W+QC3.0 Dual Port iPhone B Z30,7.00,120000,Chargers
+$18.00,,False,False,1263,Borofone,Accessories,180000,USD,Borofone Headphone B022,0,350000,
+$1.50,,False,False,1264,Watch,Accessories,15000,USD,Watch Band 40 | 42 mm,0,50000,
+$1.25,,False,False,1265,Silicone,Accessories,12500,USD,Case Samsung S22,0,50000,Mobiles Covers
+$30.00,,False,False,1266,,Accessories,300000,USD,Soundcore by Anker R50i Earbuds,0,450000,
+$28.00,,False,False,1267,,Accessories,280000,USD,Soundcore by Anker K20i Earbuds,0,400000,
+$40.00,,False,False,1268,,Accessories,400000,USD,Drone 3388-5 8K HD Camera 360 Obstacle Avoidance,0,650000,
+$12.00,,False,False,1269,,Accessories,120000,USD,Apple Original Earpods iPhone,1.00,250000,
+$12.75,,False,False,1272,,Accessories,127500,USD,TP-Link 300Mbps Wi-fi TL-WR841N Router,0,250000,
+$21.00,,False,False,1273,,Accessories,170000,USD,Baofeng Talkie Walkie BF-888S,0,270000,
+$15.00,,False,False,1274,,Accessories,150000,USD,Samsung Buds 3 Pro,0,270000,
+$14.00,,False,False,1275,,Accessories,140000,USD,Samsung Buds 3,0,270000,
+$15.00,,False,False,1276,,Accessories,150000,USD,Bose AirBuds,2.00,270000,
+$19.00,,False,False,1277,,Accessories,190000,USD,Bose Headphone QC55,0,350000,
+$15.00,,False,False,1278,,Accessories,150000,USD,Headphone G9000,0,270000,
+$16.00,,False,False,1279,,Accessories,160000,USD,Headphone K19,0,280000,
+$13.50,,False,False,1280,,Accessories,135000,USD,Headphone 3001,0,200000,
+$14.00,,False,False,1281,,Accessories,140000,USD,Headphone 101T,1.00,250000,
+$18.00,,False,False,1282,,Accessories,180000,USD,Microphone ANC SX21,1.00,350000,
+$4.50,,False,False,1284,,Accessories,45000,USD,MoXoM Car Charger Solo No Cable VC14,2.00,100000,
+$10.00,,False,False,1285,,Accessories,100000,USD,MoXoM Wireless Music Car Charger Dual Ports MX-VC26,0,200000,
+$6.50,,False,False,1286,,Accessories,65000,USD,Car MP3 Player RGB Ambient Lighting A11,1.00,130000,
+$9.50,,False,False,1287,,Accessories,95000,USD,Jamry Tab Holder 360 MK-62,2.00,250000,
+$4.00,,False,False,1288,,Accessories,40000,USD,Borofone Mini Body Strong Magnet BH102,0,100000,
+$7.50,,False,False,1289,,Accessories,75000,USD,Borofone Windshield Car Holder BH18,0,150000,
+$7.00,,False,False,1290,,Accessories,70000,USD,Borofone One Button Racer Windshield BH54,0,150000,
+$6.50,,False,False,1291,,Accessories,65000,USD,Borofone Borofone Locking Strong Anti-Falling BH85,0,120000,
+$19.00,,False,False,1292,,Accessories,190000,USD,MoXom Power Bank 4 in 1 LCD 20.000 mah MX-PB139,0,350000,
+$19.00,,False,False,1293,,Accessories,190000,USD,MoXoM Power Bank 20.000 mah MX-PB164,0,350000,
+$25.00,,False,False,1294,,Accessories,250000,USD,MoXoM Power Bank 20.000 mah MX-PB159,0,400000,
+$12.50,,False,False,1295,,Accessories,125000,USD,MoXoM Power Bank 10.000 mah MX-PB160,0,230000,
+$3.50,,False,False,1296,,Accessories,35000,USD,MoXoM USB-C to USB-C CB304,2.00,100000,
+$1.50,,False,False,1297,,Accessories,15000,USD,MoXoM USB-A to USB-C,6.00,80000,
+$1.50,,False,False,1298,,Accessories,15000,USD,MoXoM USB-A to Micro,1.00,80000,
+$1.50,,False,False,1299,,Accessories,15000,USD,MoXoM USB-A to iPhone,3.00,80000,
+$5.50,,False,False,1300,,Accessories,55000,USD,Rallong 3 Ports 3 USB 2.0,0,100000,
+$1.50,,False,False,1301,,Accessories,15000,USD,Printer Cable 1.5 M,2.00,50000,
+$293.00,,False,False,1302,,Accessories,2930000,USD,Galaxy Watch 8 44 mm,0,3050000,
+$100.00,,False,False,1303,,Accessories,1000000,USD,Samsung Buds 2 Pro,0,1100000,
+"$1,250.00",,False,False,1304,,Accessories,12600000,USD,iPhone 16 Pro 256 GB,0,[],
+$1.00,,False,False,1305,,Accessories,10000,USD,No! Push Button,0,60000,
+$21.00,,False,False,1306,Samsung,Accessories,210000,USD,Samsung Original Charger 45W PD Adapter C to C 5A 1.8m,4.00,300000,Chargers Full Set
+$66.00,,False,False,1307,,Accessories,660000,USD,Seagate External Hdd 2tb,0,750000,
+$5.00,,False,False,1308,,Accessories,50000,USD,Kingston DataTraveler USB-C 64GB,0,100000,
+$8.50,,False,False,1309,,Accessories,85000,USD,Kingston DataTraveler USB-C 128GB,0,170000,
+$580.00,,False,False,1310,,Accessories,5800000,USD,S23 Ultra White 256,0,6100000,Mobiles
+$33.00,,False,False,1311,,Accessories,330000,USD,pawa 2in1 Vacuum,0,500000,
+$0.80,,False,False,1312,,Accessories,12500,USD,One Depot DPH03,17.00,50000,
+$3.00,,False,False,1313,,Accessories,30000,USD,pubg mobile controller ak-66,0,80000,
+$0.80,,False,False,1314,,Accessories,12500,USD,One Depot DPH02,10.00,50000,
+$0.80,,False,False,1315,,Accessories,12500,USD,One Depot DPH01,11.00,50000,
+$2.50,,False,False,1316,,Accessories,25000,USD,Magnetic Cover Samsung S23 Ultra,0,100000,
+$3.75,,False,False,1317,,Accessories,37500,USD,My Choice Cover Samsung S25 Ultra,0,150000,
+$2.50,,False,False,1319,,Accessories,25000,USD,Magnetic Cover iPhone 13 - iPhone 14,4.00,100000,
+$3.00,,False,False,1320,,Accessories,25000,USD,New Silicone MagSafe Case iPhone 13,0,100000,
+$3.00,,False,False,1321,,Accessories,25000,USD,New Silicone MagSafe Case iPhone 14,1.00,100000,
+$3.00,,False,False,1322,,Accessories,25000,USD,New Silicone MagSafe Case iPhone 16 Pro,2.00,100000,
+$1.75,,False,False,1323,9D Glass,Accessories,17500,USD,New Lens iPhone 16 Pro Max,8.00,60000,Mobiles Covers
+$1.25,,False,False,1324,,Accessories,12500,USD,New Lens iPhone 14 Pro Max,1.00,50000,
+$0.00,,False,False,1325,,Accessories,250000,USD,PodCast Microphone,1.00,500000,
+$139.00,,False,False,1326,,Accessories,1390000,USD,Honor Pad X8A,1.00,1550000,Tabs
+$55.00,,False,False,1327,,Accessories,550000,USD,Iqos ILUMA I Midnight Black,1.00,550000,
+$55.00,,False,False,1328,Iluma I,Accessories,550000,USD,Iqos ILUMA I Leaf Green,2.00,550000,IQOS
+$7.00,,False,False,1329,XO,Accessories,70000,USD,XO-BCC08 CAR MP3 CHARGER,0,150000,Chargers
+"$1,090.00",,False,False,1330,,Accessories,10900000,USD,Iphone 15 Pro Max 256 353180735731 785,0,11100000,Mobiles
+$98.00,,False,False,1331,Samsung,Accessories,1130000,USD,Samsung Galaxy A07SM-A07F 4gb | 128gb,0,1280000,Mobiles
+$110.00,,False,False,1332,Samsung,Accessories,1100000,USD,Samsung Galaxy A07SM-A07F 6gb | 128gb,0,1350000,Mobiles
+$890.00,,False,False,1333,Samsung,Accessories,8900000,USD,Samsung Galaxy ZFLIP 7 512|12GB,0,10500000,Mobiles
+$940.00,,False,False,1335,iPhone,Accessories,9400000,USD,Iphone 15 Pro Max USED 256 358525998778173,0,9650000,Mobiles
+$2.13,,False,False,1336,,Accessories,21300,USD,Stick note Transparent Shape,4.00,30000,
+$15.04,,False,False,1337,,Accessories,150400,USD,Bag Dinosaur Yutong,2.00,280000,
+$5.85,,False,False,1338,,Accessories,58500,USD,Bag kids Unicorn pink,0,180000,
+$5.85,,False,False,1339,,Accessories,58500,USD,Bag kids Unicorn purple,2.00,180000,
+$14.65,,False,False,1340,,Accessories,146500,USD,Bag Preppy Ice Cream,2.00,270000,
+$15.04,,False,False,1341,,Accessories,150400,USD,Bag Strawberry 3 pcs,1.00,300000,
+$0.00,,False,False,1342,,Accessories,133100,USD,Bag Dinosaur Green with lunch bag,0,300000,
+$0.00,,False,False,1343,,Accessories,150400,USD,Bag Strawberry 3 pcs,0,300000,
+$11.12,,False,False,1344,,Accessories,111100,USD,Bag Duck black,2.00,250000,
+$15.03,,False,False,1345,,Accessories,150300,USD,Bag Dinosaur Yellow,2.00,350000,
+$16.34,,False,False,1346,,Accessories,163400,USD,Bag Hapni Bear Green Dinosaur,2.00,350000,
+$15.37,,False,False,1347,,Accessories,153700,USD,Bag Unicorn set 3 pcs pink,1.00,330000,
+$1.75,,False,False,1348,,Accessories,17500,USD,Note Book with ressort,0,30000,
+$1.57,,False,False,1349,,Accessories,15700,USD,Note Book A5,10.00,30000,
+$3.27,,False,False,1350,,Accessories,32700,USD,Set Colored Pencil 24 PCS,5.00,60000,
+$4.27,,False,False,1351,,Accessories,42700,USD,Set Colored Pencil 12 PCS,5.00,80000,
+$0.43,,False,False,1352,,Accessories,4300,USD,Ruler Multicolor,12.00,15000,
+$0.35,,False,False,1353,,Accessories,3500,USD,Eraser Macaron Multicolor,27.00,10000,
+$0.40,,False,False,1354,,Accessories,4000,USD,Pencil Stitch Blue,6.00,15000,
+$0.40,,False,False,1355,,Accessories,4000,USD,Pencil Stitch Teddy Bear,10.00,15000,
+$0.50,,False,False,1356,,Accessories,5000,USD,Pencil Pink Heart,18.00,15000,
+$6.44,,False,False,1357,,Accessories,64400,USD,Bottle Water Big size,3.00,150000,
+$4.58,,False,False,1358,,Accessories,45800,USD,Bottle Water Small size Happy MUSIC,3.00,120000,
+$5.85,,False,False,1359,,Accessories,58500,USD,Bottle Water Small size Astronot Pink & Blue,6.00,120000,
+$0.49,,False,False,1360,,Accessories,4900,USD,Transparent File,40.00,10000,
+$0.20,,False,False,1361,,Accessories,2000,USD,Magnetic Phone Holder stick,54.00,10000,
+$0.36,,False,False,1362,,Accessories,3600,USD,Highlighter Mini Bear Fluorescent,3.00,15000,
+$13.44,,False,False,1364,,Accessories,134400,USD,Bag Happy Kids,2.00,270000,
+$17.75,,False,False,1365,,Accessories,135100,USD,Green Dinosaur With Lunch Bag 3in1,2.00,350000,
+$0.70,,False,False,1366,,Accessories,7000,USD,Sharpner Multicolor,15.00,20000,
+$65.00,,False,False,1367,,Accessories,650000,USD,Speaker 40w F58 Dual,0,850000,
+$38.00,,False,False,1368,,Accessories,380000,USD,Speaker 20w F55,0,650000,
+$9.50,,False,False,1369,,Accessories,95000,USD,Portable storage Bag xo-CB06,3.00,200000,
+$3.00,,False,False,1370,,Accessories,30000,USD,Case Magsafe iPhone 17,2.00,130000,
+$3.00,,False,False,1371,,Accessories,30000,USD,Case Magsafe iPhone 17 Pro,0,130000,
+$3.00,,False,False,1372,,Accessories,30000,USD,Case Magsafe iPhone 17 Pro Max,0,130000,Mobiles Covers
+$3.00,,False,False,1373,,Accessories,30000,USD,Lens iPhone 17,4.00,100000,
+$3.00,,False,False,1374,,Accessories,30000,USD,Lens iPhone 17Pro /17 Pro Max,0,100000,Mobiles Covers
+$3.00,,False,False,1375,,Accessories,30000,USD,Lens iPhone 17 AIR,3.00,100000,
+$1.75,,False,False,1376,,Accessories,17500,USD,Clear Protection iPhone 17,18.00,80000,Screen Protection
+$1.75,,False,False,1377,,Accessories,17500,USD,Clear Protection iPhone 16 Pro / 17,34.00,80000,Screen Protection
+$1.75,,False,False,1378,,Accessories,17500,USD,Clear Protection iPhone 17 Pro Max,6.00,80000,Screen Protection
+$3.00,,False,False,1379,,Accessories,30000,USD,Case Magsafe iPhone 17 AIR,2.00,100000,
+$8.00,,False,False,1380,,Accessories,80000,USD,Hoco Laser Pointer GM202,4.00,150000,
+$5.00,,False,False,1381,,Accessories,50000,USD,Wireless Mouse GM14,0,100000,Mouses & Keyboards
+$6.50,,False,False,1382,,Accessories,65000,USD,Wireless Mouse GM35,0,140000,Mouses & Keyboards
+$3.00,,False,False,1383,,Accessories,30000,USD,FILM Cam with stik,5.00,50000,
+$2.50,,False,False,1384,,Accessories,25000,USD,FILM Cam,5.00,40000,
+$2.50,,False,False,1385,,Accessories,25000,USD,Watch Screen Protection Bonafies 46mm,1.00,70000,
+$0.75,,False,False,1386,,Accessories,7500,USD,Case Samsung A73,1.00,30000,Mobiles Covers
+$9.10,,False,False,1387,,Accessories,85000,USD,Flip Cover Ipad 10.9,2.00,170000,Tabs
+$8.50,,False,False,1388,,Accessories,85000,USD,Flip Cover Ipad AIR 11 2024,1.00,170000,Tabs
+$55.00,,False,False,1389,,Accessories,550000,USD,Iqos ILUMA I Breeze Blue,0,550000,
+$55.00,,False,False,1390,,Accessories,550000,USD,Iqos ILUMA I Digital Violet,0,550000,
+$52.40,,False,False,1391,,Accessories,300000,USD,Iqos Iluma I One Vivid Terracotta,0,300000,
+$2.36,,False,False,1393,Terea,Accessories,24000,USD,Terea Arbob Pearl,0,30000,Smoking
+$2.34,,False,False,1394,Terea,Accessories,24000,USD,Terea Summer Wave,14.00,30000,Smoking
+$2.20,,False,False,1395,Terea,Accessories,25000,USD,Terea Beige,4.00,30000,Smoking
+$1.50,,False,False,1396,,Accessories,15000,USD,Extension USB Cable 1.5m,1.00,35000,
+$3.50,,False,False,1397,,Accessories,35000,USD,Optical Cable 1.5m,2.00,70000,
+$2.00,,False,False,1398,,Accessories,20000,USD,SVGA Cable 1.5M,4.00,45000,
+$2.50,,False,False,1399,,Accessories,25000,USD,HDMI Cable 1.5M,3.00,50000,
+$1.50,,False,False,1400,,Accessories,15000,USD,Net Cable 1.5M,4.00,35000,
+$2.00,,False,False,1402,,Accessories,15000,USD,Adapter Power Cable 1.5,1.00,50000,
+$9.00,,False,False,1403,,Accessories,90000,USD,Tools Net,1.00,150000,
+$3.50,,False,False,1404,,Accessories,35000,USD,Type C to Sata,1.00,70000,
+$3.00,,False,False,1405,,Accessories,30000,USD,USBC to Sata,1.00,60000,
+$3.50,,False,False,1406,,Accessories,35000,USD,Adapter AC/DC 12v,3.00,70000,
+$5.50,,False,False,1407,,Accessories,55000,USD,Type C to Hub,1.00,150000,
+$4.50,,False,False,1408,,Accessories,45000,USD,USB To Hub,0,150000,
+$1.50,,False,False,1409,,Accessories,15000,USD,MP4 CABLE,1.00,40000,
+$79.00,,False,False,1410,,Accessories,790000,USD,HONOR PAD X7,0,950000,
+$162.00,,False,False,1411,Samsung,Accessories,1620000,USD,Samsung Galaxy A17 SM-A175F 4gb | 128gb Old,0,1750000,Mobiles
+$196.00,,False,False,1412,,Accessories,1960000,USD,Samsung Galaxy A17 SM-A175F 8gb | 256gb,2.00,2200000,
+$4.50,,False,False,1413,,Accessories,45000,USD,Wireless 11N USB ADAPTER,0,100000,
+$0.98,,False,False,1414,,Accessories,2700,USD,CAT 6 CABLE NET,295.00,10000,
+$3.50,,False,False,1416,,Accessories,35000,USD,FULL CHARGER USBC TO IP C143A,0,120000,Cables
+$9.00,,False,False,1417,,Accessories,90000,USD,Case iPhone 17 Pro Max X-LEVEL,0,250000,Mobiles Covers
+$9.00,,False,False,1418,,Accessories,90000,USD,Case iPhone 17 X-LEVEL,2.00,250000,Mobiles Covers
+$9.00,,False,False,1419,,Accessories,90000,USD,Case iPhone 17 Pro X-LEVEL,1.00,250000,Mobiles Covers
+$30.00,,False,False,1420,,Accessories,300000,USD,Iqos Iluma I One Leaf Green,2.00,300000,
+$30.00,,False,False,1421,Iluma I One,Accessories,300000,USD,Iqos Iluma I One Midnight Black,4.00,300000,IQOS
+$2.50,,False,False,1422,Silicone,Accessories,25000,USD,Case iPhone 17,4.00,80000,Mobiles
+$2.50,,False,False,1423,Silicone,Accessories,25000,USD,Case iPhone 17 Pro,3.00,80000,Mobiles
+$2.50,,False,False,1424,Silicone,Accessories,25000,USD,Case iPhone 17 Pro max,0,80000,Mobiles
+$275.00,,False,False,1425,,Accessories,2750000,USD,Apple Original Airpods Pro 3,0,3100000,Mobiles
+$15.00,,False,False,1426,,Accessories,150000,USD,Apple Watch Charge  AAA usb -c,0,350000,Cables
+$15.00,,False,False,1427,,Accessories,150000,USD,Hoco Smart Watch - Y30,0,300000,
+$9.00,,False,False,1428,Hoco,Accessories,90000,USD,EXTREMELY FAST Cooling GM-76,1.00,200000,Chargers
+$0.00,,False,False,1429,Kakusiga,Accessories,50000,USD,Kakusiga Car Holder Ksc-337A,0,100000,Car Holder
+$0.00,,False,False,1430,,Accessories,50000,USD,Metal Magnetic Phone Holder,0,140000,Car Holder
+$10.00,,False,False,1431,Hoco,Accessories,100000,USD,Stable Support HD10,0,250000,
+$12.00,,False,False,1432,Kakusiga,Accessories,120000,USD,Led Lamp ksc-1504,1.00,230000,
+$4.00,,False,False,1433,Kakusiga,Accessories,40000,USD,Car Holder 360 Degree KSC-1496,0,120000,Car Holder
+$4.00,,False,False,1434,Borofone,Accessories,40000,USD,Borofone Magnetic Phone Holder BH8,0,100000,Car Holder
+$0.00,,False,False,1435,Kakusiga,Accessories,40000,USD,Magnetic Phone Holder Metal ksc-1516,0,150000,Car Holder
+$4.50,,False,False,1436,Hoco,Accessories,45000,USD,Hoco CA86 In-Car Phone Holder,0,130000,Car Holder
+$5.00,,False,False,1437,Hoco,Accessories,50000,USD,Hoco Car Phone Holder H48,0,150000,Car Holder
+$5.00,,False,False,1438,,Accessories,50000,USD,Car Holder Metal Support F72,3.00,140000,Car Holder
+$1.75,,False,False,1439,Hoco,Accessories,17500,USD,Hoco X107 Anti-Bending USB to iPhone,1.00,80000,Cables
+$1.75,,False,False,1440,Hoco,Accessories,17500,USD,Hoco X107 Anti-Bending USB to Type-C,0,80000,Cables
+$3.75,,False,False,1442,Hoco,Accessories,37500,USD,Hoco X37 USBC to iPhone,0,120000,Cables
+$3.75,,False,False,1443,Hoco,Accessories,37500,USD,Hoco X37 USBC to C,1.00,120000,Cables
+$1.00,,False,False,1444,,Accessories,10000,USD,Clear Case Samsung A07,6.00,50000,Mobile Covers
+$0.81,,False,False,1445,,Accessories,10000,USD,Clear Case Samsung A26 / A17,22.00,50000,Cables
+$15.00,,False,False,1446,Hoco,Accessories,150000,USD,Hoco AirPods Pro 2 EQ22 ANC+ENC,1.00,300000,
+$14.00,,False,False,1447,Green Lion,Accessories,140000,USD,Green Lion Earbuds 4,0,300000,
+$16.00,,False,False,1448,Hoco,Accessories,160000,USD,Hoco AirPods Pro 2 EQ21 ANC+ENC,0,280000,Mobiles
+$183.00,,False,False,1449,Apple,Accessories,1830000,USD,Apple Watch Se 40mm black,0,1950000,
+$82.00,,False,False,1450,Samsung,Accessories,820000,USD,Samsung Galaxy A07SM-A07F 4gb | 64gb,0,1100000,Mobiles
+$0.00,,False,False,1451,Silicone,Accessories,7500,USD,Case Samsung S25,0,30000,Mobiles
+$0.00,,False,False,1452,Silicone,Accessories,7500,USD,Case Samsung S24,2.00,30000,Mobiles
+$19.00,,False,False,1454,,Accessories,190000,USD,MaxMate Power Bank 10000 mah PD20 + Wireless 15w,2.00,400000,Mobiles
+$34.00,,False,False,1455,,Accessories,340000,USD,Modem LTE Wireless Modem Wifi Pro 300Mbps,3.00,550000,Mobiles
+$0.00,,False,False,1456,,Accessories,95000,USD,Ipad Cover A16,0,270000,Tabs
+$15.00,,False,False,1457,Hoco,Accessories,150000,USD,5IN1 Converter USB-C HB50 4K,3.00,280000,Mobiles
+$5.00,,False,False,1458,,Accessories,50000,USD,Clear Case MagSafe Original iPhone 12 Pro Max,0,200000,Mobiles
+$7.00,,False,False,1459,,Accessories,50000,USD,IPAD 9.7 (2017/2018),1.00,150000,Tabs
+$8.00,,False,False,1460,,Accessories,80000,USD,Airpods Stitch,1.00,300000,
+$15.00,,False,False,1461,,Accessories,150000,USD,MaxPower Speaker MPD474,1.00,350000,
+$63.00,,False,False,1462,Samsung,Accessories,630000,USD,Samsung Buds 3,0,750000,
+$95.00,,False,False,1463,Samsung,Accessories,930000,USD,Samsung Buds Pro 3,0,1100000,
+$24.00,,False,False,1464,,Accessories,240000,USD,TELZEAL WH-04 PRO,1.00,480000,
+$23.00,,False,False,1465,,Accessories,230000,USD,TELZEAL WH-05,0,450000,
+$26.00,,False,False,1466,,Accessories,260000,USD,TELZEAL T7,1.00,550000,
+$22.00,,False,False,1467,,Accessories,220000,USD,TELZEAL T6,0,450000,
+$25.00,,False,False,1468,,Accessories,250000,USD,TELZEAL S11 PRO MAX,1.00,550000,
+$43.00,,False,False,1469,,Accessories,430000,USD,JBL Speaker Clip 5 Original,3.00,650000,
+$34.00,,False,False,1470,,Accessories,340000,USD,JBL Speaker GO 4 Original,3.00,550000,
+$2.50,,False,False,1471,,Accessories,25000,USD,Airpods Pro 3 Protective Silicone Case,2.00,80000,
+$5.50,,False,False,1472,,Accessories,55000,USD,FAN LED digital display fan,0,120000,
+$3.50,,False,False,1473,,Accessories,35000,USD,Case Samsung S25 Ultra Mate,2.00,130000,Mobiles
+$5.50,,False,False,1474,,Accessories,55000,USD,CASE ZFLIP 5 FLAAG SHIP,0,120000,Mobiles
+$5.00,,False,False,1475,Hoco,Accessories,50000,USD,Portable Ringlight k28,2.00,100000,Mobiles
+$7.50,,False,False,1476,Hoco,Accessories,75000,USD,Portable Ringlight k29 super bright,0,150000,Mobiles
+$15.00,,False,False,1477,,Accessories,150000,USD,YM200 CAMERA Ring Light Video RIG,2.00,250000,Mobiles
+$1.75,,False,False,1478,Luminous,Accessories,17500,USD,Luminos screen Protector Samsung S20 Ultra,5.00,80000,
+$0.00,,False,False,1479,,Accessories,22500,USD,Portal Mini Fan,0,80000,
+$2.25,,False,False,1480,,Accessories,22500,USD,Ringlight mini U20,2.00,100000,
+$670.00,,False,False,1481,iPhone,Accessories,6700000,USD,Iphone 15 256 gb 358506531124448,0,6900000,Mobiles
+$1.00,,False,False,1482,,Accessories,10000,USD,Fast Charging cable 65w/27w,6.00,70000,Cables
+$2.75,,False,False,1483,,Accessories,27500,USD,Samsung Watch 7 Band,6.00,80000,
+$2.75,,False,False,1484,,Accessories,27500,USD,Samsung Watch 8 Band,7.00,100000,
+$3.75,,False,False,1485,,Accessories,37500,USD,T11 Wireless Mouse,0,120000,Mouses & Keyboards
+$1.25,,False,False,1486,iPhone,Accessories,12500,USD,Case iPhone 15,6.00,50000,Mobiles
+$1.25,,False,False,1487,iPhone,Accessories,12500,USD,Case iPhone 15 SID,2.00,80000,Mobiles
+$4.50,,False,False,1488,Samsung,Accessories,45000,USD,Magnetic Case s25 ultra,2.00,130000,Mobiles
+$8.50,,False,False,1489,Samsung,Accessories,85000,USD,Creative Case ZFLIP 7,1.00,150000,Mobiles
+$8.50,,False,False,1490,Samsung,Accessories,85000,USD,Creative Case FOLD 7,1.00,150000,Mobiles
+$6.50,,False,False,1491,,Accessories,50000,USD,Water Cup K800,2.00,120000,Mobiles
+$12.50,,False,False,1492,,Accessories,120000,USD,Selfie Stick L20,2.00,220000,Mobiles
+$5.00,,False,False,1493,,Accessories,30000,USD,Car Mounted Water Cup Holder,2.00,100000,Mobile Holder
+$2.50,,False,False,1494,,Accessories,25000,USD,Case Protect Buds Pro 3,2.00,80000,
+$1.25,,False,False,1495,,Accessories,12500,USD,Phone Pholding Stand S059,5.00,50000,
+$3.00,,False,False,1496,,Accessories,30000,USD,Phone Holder Universal Bracket YC-016,4.00,100000,Mobile Holder
+$2.00,,False,False,1497,,Accessories,20000,USD,Watch Protection Clear Samsung 7 & 8,10.00,80000,
+$15.00,,False,False,1498,,Accessories,150000,USD,Led Lithium Eye Protection 1960,0,280000,
+$19.00,,False,False,1499,,Accessories,190000,USD,Led Desk Lamp VC009,2.00,350000,
+$14.00,,False,False,1500,,Accessories,140000,USD,Led Digad 1924,1.00,250000,
+$18.00,,False,False,1501,,Accessories,180000,USD,Led Cosmetic Mirror,1.00,370000,
+$9.00,,False,False,1502,,Accessories,90000,USD,Laptop Stand MX-VS54,1.00,200000,
+$19.00,,False,False,1503,,Accessories,190000,USD,4in1 Mobile Gaming Combo Pack,0,400000,
+$13.00,,False,False,1504,,Accessories,130000,USD,Scale UAKEEN ZL-2902,1.00,280000,
+$22.00,,False,False,1505,Apple,Accessories,220000,USD,Apple Original USB-C 40W Power Adapter,9.00,350000,Mobiles
+$1.50,,False,False,1506,Tranyo,Accessories,15000,USD,Tranyo USB-A to iPhone T-S13 I,1.00,80000,Cables
+$1.50,,False,False,1507,,Accessories,15000,USD,Tranyo USB-A to USB-C T-S13 C,0,80000,Cables
+$1.50,,False,False,1508,,Accessories,15000,USD,TRANYO USBC to MICRO T-S13 V,4.00,80000,Cables
+$3.25,,False,False,1509,,Accessories,32500,USD,Borofone C to Ip 2m BX18,0,120000,Cables
+$25.00,,False,False,1510,,Accessories,250000,USD,Anker 2in1 Clutter-Free Car Charger PAP 21,0,400000,Chargers
+$52.25,,False,False,1511,,Accessories,522500,USD,Kieslect KS2 Smart Watch,2.00,680000,
+$670.00,,False,False,1512,iPhone,Accessories,6700000,USD,Iphone 15 256 GB 358506531060196,0,6950000,Mobiles
+"$1,375.00",,False,False,1513,iPhone,Accessories,13700000,USD,Iphone 17 PRO E-SIM 256 GB 358506531060196,0,14050000,Mobiles
+$0.00,,False,False,1514,iPhone,Accessories,1040000,USD,Airpods 4 No ANC SKW5YG421D2,0,1190000,Mobiles
+$0.00,,False,False,1515,,Accessories,750000,USD,Tourne Disk Machine,0,800000,
+$0.00,,False,False,1516,,Accessories,5000,USD,Bending Colored Pen,1.00,15000,
+$0.00,,False,False,1517,,Accessories,5000,USD,Pen Smiling Ocean Blue,15.00,15000,
+$0.00,,False,False,1518,,Accessories,15000,USD,Protective Case Eggshell Air Pro 2,1.00,50000,
+$0.00,,False,False,1519,,Accessories,400000,USD,Outdoor Projector,2.00,500000,
+$0.00,,False,False,1520,Silicone,Accessories,15000,USD,Case Samsung A02S,1.00,30000,Mobiles Covers
+$0.00,,False,False,1521,DKG Cover,Accessories,30000,USD,Case Samsung A25,1.00,50000,Mobiles Covers
+$0.00,,False,False,1522,,Accessories,15000,USD,Case S21 Fe,1.00,50000,
+$0.00,,False,False,1523,Silicone,Accessories,15000,USD,Case Samsung S22 5G,1.00,50000,Mobile Covers
+$0.00,,False,False,1524,Leather,Accessories,30000,USD,Case Samsung S24 Plus,3.00,100000,
+$0.00,,False,False,1525,Silicone,Accessories,8000,USD,Case Samsung S23,1.00,50000,
+$0.00,,False,False,1526,DKG Premium,Accessories,35000,USD,Case iPhone 15 Pro Max,1.00,100000,Mobiles Covers
+$0.00,,False,False,1527,,Accessories,8000,USD,Clear Case iPhone 16,10.00,50000,
+$0.00,,False,False,1528,Silicone,Accessories,9000,USD,Clear Case Samsung S24 Ultra,9.00,50000,Mobiles Covers
+$0.00,,False,False,1529,Silicone,Accessories,8000,USD,Clear Case Samsung S25,10.00,50000,Mobiles Covers
+$0.00,,False,False,1530,Silicone,Accessories,8000,USD,Clear Case Samsung S25 Ultra,9.00,50000,Mobiles Covers
+$0.00,,False,False,1531,iPhone,Accessories,4800000,USD,14 pro Max Used 256gb IME 350321538624285,0,6500000,Mobiles
+$30.00,,False,False,1532,,Accessories,300000,USD,Iqos Iluma I One Digital Violet,2.00,300000,
+$30.00,,False,False,1533,,Accessories,300000,USD,Iqos Iluma I One Breeze Blue,0,300000,
+$39.00,,False,False,1535,,Accessories,390000,USD,Led Light Kit Pro 600,1.00,650000,
+$0.00,,False,False,1536,,Accessories,[],USD,Headphones Kids,0,[],
+$8.00,,False,False,1537,,Accessories,80000,USD,Headset kids,4.00,180000,
+$5.00,,False,False,1538,,Accessories,50000,USD,Fast Push Game Console,0,120000,
+$40.00,,False,False,1539,,Accessories,400000,USD,Drone E88 AIR Aerial Photo,0,650000,
+$18.50,,False,False,1540,iPhone,Accessories,185000,USD,Apple Pencil Tips,3.00,300000,Tabs
+$11.00,,False,False,1541,,Accessories,110000,USD,P15MINI MINI GRIP QUADRIPOD,2.00,250000,
+$60.00,,False,False,1542,,Accessories,600000,USD,Speaker BT 12 INCH 2Q12121,0,850000,
+$13.00,,False,False,1543,,Accessories,130000,USD,Video Making kit PK-772,1.00,370000,
+$12.00,,False,False,1544,,Accessories,120000,USD,Video Making kit PK-771,0,350000,
+$20.00,,False,False,1545,,Accessories,200000,USD,Video Making kit PK-777,1.00,450000,
+$20.00,,False,False,1546,,Accessories,200000,USD,Video Making kit PK-778,1.00,420000,
+$16.00,,False,False,1547,,Accessories,160000,USD,Selfie Stick 3IN1 M5 PRO,0,320000,
+$19.00,,False,False,1548,,Accessories,190000,USD,Live Broadcast Stand LIVE-K9 pro,1.00,420000,
+$16.50,,False,False,1549,,Accessories,160000,USD,Led Light 7w VL-06,2.00,400000,
+$0.00,,False,False,1550,,Accessories,170000,USD,RGB Light 7w VL-06 PRO,0,450000,
+$2.75,,False,False,1551,,Accessories,27500,USD,Case Unique Classic Fit Iphone 11,8.00,100000,Mobiles Covers
+$2.75,,False,False,1552,,Accessories,27500,USD,Case Unique Classic Fit Iphone 11 Pro Max,6.00,100000,Mobiles Covers
+$2.75,,False,False,1553,,Accessories,27500,USD,Case Unique Classic Fit Iphone 12 Pro Max,8.00,100000,Mobile Holder
+$2.75,,False,False,1554,,Accessories,27500,USD,Case Unique Classic Fit Iphone 13 Pro Max,5.00,100000,Mobiles Covers
+$2.75,,False,False,1555,,Accessories,27500,USD,Case Unique Classic Fit Iphone 14 Pro Max,5.00,100000,Mobiles Covers
+$2.75,,False,False,1556,,Accessories,27500,USD,Case Unique Classic Fit Iphone 15 Pro Max,10.00,100000,Mobiles Covers
+$2.75,,False,False,1557,,Accessories,27500,USD,Case Unique Classic Fit Iphone 16 Pro Max,10.00,100000,Mobiles Covers
+$3.50,,False,False,1558,,Accessories,35000,USD,Case Unique Classic Fit Iphone 17 Pro Max,4.00,120000,Mobiles Covers
+$3.50,,False,False,1559,,Accessories,35000,USD,Case Unique Classic Fit Iphone 17 Pro,5.00,120000,Mobiles Covers
+$3.50,,False,False,1560,,Accessories,35000,USD,Case Unique Classic Fit Iphone 17,3.00,120000,Mobiles Covers
+"$1,610.00",,False,False,1561,iPhone,Accessories,15800000,USD,Iphone 17 Pro Max 256 EID 357610215590584,0,15800000,Mobiles
+$820.00,,False,False,1562,iPhone,Accessories,8200000,USD,Iphone 15 Pro Max 256Gb IME 356616942377691,0,9500000,Mobiles
+"$1,050.00",,False,False,1563,iPhone,Accessories,10500000,USD,Iphone 16 Pro Max 256gb IME 3533248311380867,0,11300000,Mobiles
+"$1,580.00",,False,False,1564,iPhone,Accessories,15800000,USD,Iphone 17 Pro Max 256 EID 350132461699644,0,15800000,Mobiles
+"$1,663.00",,False,False,1565,Samsung,Accessories,16330000,USD,Samsung Galaxy FOLD 7 12gb | 256gb IME 350181975112206,0,17100000,Mobiles
+$96.00,,False,False,1566,Samsung,Accessories,960000,USD,Samsung Buds 3FE RFAY9043DTW,1.00,1200000,Mobiles
+$7.00,,False,False,1567,Hoco,Accessories,70000,USD,Hoco BT Headphones w66,0,150000,
+$7.00,,False,False,1568,Hoco,Accessories,70000,USD,Hoco earpods DES57 PLUS,0,200000,
+$5.50,,False,False,1569,iPhone,Accessories,55000,USD,Iphone 17 Clear Case MagSafe original,4.00,200000,Mobiles Covers
+$5.50,,False,False,1570,iPhone,Accessories,55000,USD,Iphone 17 pro Clear Case MagSafe original,4.00,200000,Mobiles Covers
+$5.50,,False,False,1571,iPhone,Accessories,55000,USD,Iphone 17 promax Clear Case MagSafe original,2.00,200000,Mobiles Covers
+$5.50,,False,False,1572,iPhone,Accessories,55000,USD,Iphone 17 Air Clear Case MagSafe original,5.00,200000,Mobiles Covers
+$25.00,,False,False,1573,,Accessories,250000,USD,Radio r-1826 bt,0,400000,
+$26.00,,False,False,1574,,Accessories,260000,USD,Radio r-1973 bt,1.00,400000,
+$24.00,,False,False,1575,,Accessories,240000,USD,Radio r-1972 bt,1.00,400000,
+$25.00,,False,False,1576,,Accessories,250000,USD,Radio r-1911,0,250000,
+$35.00,,False,False,1577,,Accessories,350000,USD,Ring light plokma 450mm live-r45pro rgb led,0,450000,
+$32.00,,False,False,1578,,Accessories,320000,USD,Ring light plokma 450mm live-r45 soft light led,0,450000,
+$42.00,,False,False,1579,,Accessories,420000,USD,Barbie Piccolina Magic Eyes Pink Box,0,530000,Toys
+$43.00,,False,False,1580,,Accessories,430000,USD,Barbie Charlene Interactive Pink Box,0,530000,Toys
+$3.50,,False,False,1581,,Accessories,35000,USD,Wrist Bands Fasion Set,1.00,50000,Toys
+$7.75,,False,False,1582,,Accessories,77500,USD,Wood Fate Early Education Musical Instrument Combination,0,100000,Toys
+$2.75,,False,False,1583,,Accessories,27500,USD,Merry Christmas Festival Makeup Set,0,50000,Toys
+$3.50,,False,False,1584,,Accessories,35000,USD,Beauty Bomb,1.00,50000,Toys
+$21.50,,False,False,1585,,Accessories,215000,USD,Trick Spray Water Bomb Launching Tank,0,300000,Toys
+$6.75,,False,False,1586,,Accessories,67500,USD,Die Cast Model Car Transporter Launcher Car,0,100000,Toys
+$3.50,,False,False,1587,,Accessories,35000,USD,Catch The Liar Kadab Cards Game,0,50000,Toys
+$50.00,,False,False,1588,,Accessories,500000,USD,Batman Car Bat Tech Racer with Remote Control,1.00,650000,Toys
+$2.25,,False,False,1589,,Accessories,22500,USD,Building Blocks Play And Learn Small 19 Pieces,0,50000,Toys
+$9.75,,False,False,1590,,Accessories,97500,USD,Soft Pull Back Vehicle,0,120000,Toys
+$4.25,,False,False,1591,,Accessories,42500,USD,Building Blocks Play And Learn Medium 39 Pieces,0,100000,Toys
+$4.75,,False,False,1593,,Accessories,47500,USD,Iron Man Avengers Lego US Team - Hulk - Anti Hulk Zin1,2.00,100000,Toys
+$6.75,,False,False,1594,,Accessories,67500,USD,Avdngars The Inftitiy Saga,0,100000,Toys
+$17.75,,False,False,1595,,Accessories,177500,USD,Lateral Drift Cool Stunt Car Chengde,1.00,220000,Toys
+$5.75,,False,False,1596,,Accessories,57500,USD,Toy Story 4 Buzz LightYear Battery Operated,0,100000,Toys
+$5.25,,False,False,1597,,Accessories,52500,USD,Peppa Pig Lego,0,100000,Toys
+$5.50,,False,False,1598,,Accessories,55000,USD,Captain America Civil War Super Hero Soft Bullet Blaster,0,100000,Toys
+$4.50,,False,False,1599,,Accessories,45000,USD,Cardinal Classics Backgamon,2.00,100000,Toys
+$8.75,,False,False,1600,,Accessories,87500,USD,Speed Racing Remote Control Car Series,0,120000,Toys
+$6.50,,False,False,1601,,Accessories,65000,USD,Balloonman KO Boxing,1.00,100000,Toys
+$16.50,,False,False,1602,,Accessories,165000,USD,Bentley Continental GT3,1.00,250000,Toys
+$7.25,,False,False,1603,,Accessories,70000,USD,Sniper Rifle Super Weapon,1.00,100000,Toys
+$6.75,,False,False,1604,,Accessories,67500,USD,Pop Football Player,1.00,100000,Toys
+$4.75,,False,False,1605,,Accessories,47500,USD,Elephant Musician,0,100000,Toys
+$4.50,,False,False,1606,,Accessories,45000,USD,Elephant Singing and Dancing,0,100000,Toys
+$10.50,,False,False,1607,,Accessories,105000,USD,Accompany Slumber Buddies Unicorn,0,150000,Toys
+$7.75,,False,False,1608,,Accessories,77500,USD,Dinosaur Color Dough Set,0,100000,Toys
+$10.25,,False,False,1609,,Accessories,102500,USD,Activity Cube,1.00,150000,Toys
+$3.75,,False,False,1610,,Accessories,37500,USD,Union Legend Avcngcrs,0,50000,Toys
+$6.50,,False,False,1611,,Accessories,65000,USD,Color My Love Barbie The Movie,0,100000,Toys
+$4.75,,False,False,1612,,Accessories,47500,USD,Playtive Junior Circuit a Boules,1.00,100000,Toys
+$13.75,,False,False,1613,,Accessories,137500,USD,Assault Soft Bullet Gun,0,200000,Toys
+$4.25,,False,False,1614,,Accessories,42500,USD,Dart Board Paper Dart Game Advance,1.00,100000,Toys
+$11.50,,False,False,1615,,Accessories,115000,USD,FMG9 Folding Matching Gun,0,150000,Toys
+$19.75,,False,False,1616,,Accessories,197500,USD,AK47/Future,1.00,250000,Toys
+$5.50,,False,False,1617,,Accessories,55000,USD,Ultimate Spider Man VS The Sinister 6 Gun,0,100000,Toys
+$3.50,,False,False,1618,,Accessories,35000,USD,Egg Saucer Game,1.00,50000,Toys
+$5.75,,False,False,1619,,Accessories,57500,USD,My World Lego,0,100000,Toys
+$7.50,,False,False,1620,,Accessories,75000,USD,Stadium 3D Puzzle Unite Dream,2.00,100000,Toys
+$1.35,,False,False,1621,,Accessories,13500,USD,Mini Vehicle Ultra Cool Styling Pull Back & Go,0,50000,Toys
+$0.67,,False,False,1622,,Accessories,3670,USD,Flashing Squirrel,0,20000,Toys
+$13.75,,False,False,1623,,Accessories,137500,USD,Gatling Blaze Pioneer Soft Bullet Gun Series,0,200000,Toys
+$6.75,,False,False,1624,,Accessories,67500,USD,Classical Train The Locomotive With Sound,0,100000,Toys
+$2.35,,False,False,1625,,Accessories,25000,USD,Pop Big Size,8.00,50000,Toys
+$0.22,,False,False,1626,,Accessories,2200,USD,Gun Shots,12.00,10000,Toys
+$5.25,,False,False,1627,,Accessories,52500,USD,Pelushe Duck,0,[],Toys
+$19.00,,False,False,1628,Green Lion,Accessories,190000,USD,Green Lion 5 in 1 RPM 2000 Hair Styler 2,1.00,250000,
+$11.50,,False,False,1629,Green Lion,Accessories,115000,USD,Green Lion Dryer Bristol,1.00,180000,
+$5.50,,False,False,1630,iPefet,Accessories,55000,USD,Iphone 17 Pro iPefet Antishock Case,5.00,150000,Mobile Covers
+$5.50,,False,False,1631,iPefet,Accessories,55000,USD,Iphone 17 Pro Max iPefet Antishock Case,7.00,150000,Mobile Covers
+$14.00,,False,False,1632,Green Lion,Accessories,140000,USD,Green Lion Triana Travel Pouch,0,200000,
+$20.00,,False,False,1633,Green Lion,Accessories,200000,USD,Green Lion Moon Charge 4in1 wireless charger,0,250000,
+$20.00,9904907016892,False,False,1634,Green Lion,Accessories,200000,USD,Green Lion Dynamic Duo Watch Ultimate 41 and Earbuds Pro 2 GL-SWA11,1.00,350000,Combo
+$12.00,,False,False,1635,,Accessories,120000,USD,Air Blower Lithium 48V,1.00,170000,
+$18.00,,False,False,1636,Green Lion,Accessories,180000,USD,Green Lion Duo Cast Wirless Microphone lighting black,2.00,250000,
+$22.00,,False,False,1637,,Accessories,220000,USD,Porodo Orion Lavalier Microphone type-c & lightning 70MAH,0,300000,
+$21.00,,False,False,1638,,Accessories,210000,USD,Porodo Movo Lavalier Microphone type-c 5h working time,0,280000,
+$19.00,,False,False,1639,,Accessories,190000,USD,Porodo  Lavalier Microphone Type-c Connwctor With Lighting Adapter,0,250000,
+$14.00,,False,False,1640,Green Lion,Accessories,140000,USD,Green Lion Earbuds Pro 3 G-Pro 3,0,150000,Earbuds
+$13.00,,False,False,1641,Green Lion,Accessories,130000,USD,Green Lion pro2 with active noise cancellation,1.00,200000,
+$12.00,6935100196947,False,False,1642,Green Lion,Accessories,120000,USD,Green Lion Kitty Beats Earbuds GL-TWS55,1.00,200000,Earbuds
+$12.00,,False,False,1643,Green Lion,Accessories,120000,USD,Green Lion Shadow Beats Earbuds GL-TWS54,1.00,200000,Earbuds
+$10.00,,False,False,1644,Green Lion,Accessories,100000,USD,Green Lion Earbuds pro2 2nd generation,0,150000,
+$11.00,,False,False,1645,Green Lion,Accessories,110000,USD,Green Lion Earbuds 4 GBUD4-G1,1.00,150000,Earbuds
+$14.50,,False,False,1646,,Accessories,145000,USD,DIY Instant Digital Camera for kids,1.00,200000,
+$65.00,,False,False,1648,Green Lion,Accessories,650000,USD,Green Lion Venus 4K Portable Projector GL-VP4K,1.00,850000,Projectors
+$12.00,,False,False,1649,Green Lion,Accessories,120000,USD,Green Lion Priston Speaker,0,250000,
+$12.00,,False,False,1650,Green Lion,Accessories,120000,USD,Green Lion / Speaker / Porto,1.00,250000,Speakers
+$7.00,,False,False,1651,Hoco,Accessories,70000,USD,Hoco Speaker BS47,0,150000,
+$7.00,,False,False,1652,Hoco,Accessories,70000,USD,Hoco Speaker Riding Portable Speaker,1.00,150000,
+$9.00,,False,False,1653,XO,Accessories,90000,USD,XO-CZ001A Car Vacuum Cleaner,0,150000,
+$220.00,,False,False,1654,,Accessories,2200000,USD,Porodo Scooter 250w,1.00,2600000,
+$0.00,,False,False,1655,,Accessories,20000,USD,Case Magsafe Samsung S22 Ultra,3.00,100000,Mobiles Covers
+$5.00,,False,False,1656,Hoco,Accessories,50000,USD,Hoco smart finder android E96A,1.00,150000,
+$6.00,,False,False,1657,Hoco,Accessories,60000,USD,Hoco smart finder apple E100,2.00,150000,
+$14.00,,False,False,1658,Hoco,Accessories,140000,USD,Hoco Watch Y33,0,300000,
+$11.66,,False,False,1659,Hoco,Accessories,116000,USD,Hoco comfoprtable wireless headphones W35,1.00,300000,
+$0.00,,False,False,1660,,Recharges,13000000000,LBP,One Year Touch / Alfa,0,28000000000,
+$0.83,,False,False,1661,,Accessories,8300,USD,Christmas bag,27.00,15000,
+$1.57,,False,False,1664,Heets,Accessories,15700,USD,Heets Teaks,0,20200,Smoking
+$0.00,,False,False,1665,,Accessories,25000,USD,VGA Male to Female,1.00,50000,Cables
+$3.00,,False,False,1667,,Streaming,9000,USD,Shahid - One Profile - 01 Month,0,40000,
+$0.00,,False,False,1668,Streaming,Streaming,400000,USD,Anghami - 1 Year,0,450000,Music
+$34.00,,False,False,1669,Hoco,Accessories,340000,USD,Hoco Children Care - Kids Watch - Y101,0,420000,Watches
+$30.00,,False,False,1670,Hoco,Accessories,300000,USD,Hoco Children Care - Kids Watch - Y104,0,400000,Watches
+$12.00,,False,False,1671,Hoco,Accessories,120000,USD,Hoco - Power Bank - 10000 mah - Q38,1.00,170000,Power Bank
+$55.00,,False,False,1672,Hoco,Accessories,550000,USD,Hoco - Jump Starter - Air Pump - Light - 10000 mah - QS4,0,700000,Charger Station
+$16.00,,False,False,1673,Hoco,Accessories,160000,USD,Hoco - Magnetic Power Bank - 10000mah - Q44,1.00,230000,Power Bank
+$10.00,,False,False,1674,Hoco,Accessories,100000,USD,Hoco - Power Bank - 10000mah - J132,0,150000,Power Bank
+$10.00,,False,False,1675,Hoco,Accessories,100000,USD,Hoco - Power Bank - 15000mah - J144,0,150000,Power Bank
+$10.00,,False,False,1676,Hoco,Accessories,100000,USD,Hoco - Power Bank - Dual Lighting - 10000mah - J151,0,150000,Power Bank
+$17.00,,False,False,1677,Hoco,Accessories,170000,USD,Hoco - Power Bank - 30000mah - J123B,0,250000,Power Bank
+$23.00,,False,False,1678,Hoco,Accessories,230000,USD,Hoco - Portable Smart Air Pump - S53,1.00,300000,Pumps
+$16.00,,False,False,1679,Hoco,Accessories,160000,USD,Hoco - Colorful Led - Bluetooth Speaker - HC29,1.00,230000,Speakers
+$12.00,,False,False,1680,Hoco,Accessories,120000,USD,Hoco - Magnetic Light - Bluetooth Speaker - BS64,1.00,170000,Speakers
+$0.00,,False,False,1681,Customized,Screen Protection,10000,USD,Customized Screen Protection,0,100000,Screen Protection
+$115.00,,False,False,1682,Teclast,Accessories,1150000,USD,Tablet Teclast M50,1.00,1300000,Tabs
+$0.00,IMEI2:356752279225896,False,False,1683,Samsung,Mobiles,1100000,USD,Samsung Galaxy A07SM-A07F 6gb | 128gb full box,0,1260000,Mobiles
+$143.00,,False,False,1684,Samsung,Accessories,1430000,USD,Samsung Galaxy A17 SM-A175F 4gb | 128gb New,0,1530000,Mobiles
+$160.00,,False,False,1685,Samsung,Accessories,1600000,USD,Samsung Galaxy A17 SM-A175F 6gb | 128gbA26,2.00,1850000,Mobiles
+$0.22,,False,False,1686,MELIYE,Accessories,2222,usd,"Tabe3 mebele 20,000LBP",63.00,2222,MELIYE
+$0.55,,False,False,1687,MELIYE,Accessories,5555,usd,"Tabe3 mebele 50,000LBP",44.00,5555,MELIYE
+$1.10,,False,False,1688,MELIYE,Accessories,11111,usd,"Tabe3 Mele 100,000LBP",36.00,11111,MELIYE
+$2.22,,False,False,1689,MELIYE,Accessories,22222,usd,"Tabe3 Mele 200,000LBP",0,22222,MELIYE
+$387.00,,False,False,1690,SONY,Accessories,3870000,USD,Sony VR2,1.00,4450000,PC Spare Parts
+$44.00,,False,False,1691,SONY,Accessories,440000,USD,FC26 PS5,0,550000,PLAY STATION
+$20.00,,False,False,1692,Hoco,Accessories,200000,USD,VR HOCO DGA10VR GLASSES,0,400000,PLAY STATION
+$12.50,6975837582897,False,False,1693,XO,Accessories,125000,USD,XO-SS20 AUTO FACE TRACKING,1.00,180000,Mobile Holders
+$2.25,6942007627795,False,False,1694,Hoco,Accessories,22500,USD,HOCO ADAPTER QC3.0 // C140A,0,60000,Chargers
+$3.25,6942007644716,False,False,1695,Hoco,Accessories,32500,USD,Hoco Car charger 30w nz16,2.00,80000,Chargers
+$4.50,6942007644402,False,False,1696,Hoco,Accessories,45000,USD,Hoco charger dual-port output 30w n63,0,100000,Chargers
+$5.00,6942007651349,False,False,1697,Hoco,Accessories,50000,USD,Hoco adapter usb-c single port fast charger set n70,1.00,120000,Chargers
+$32.00,5056635611741,False,False,1698,SONY,Accessories,320000,USD,Minecraft ps5 gaming CD,0,460000,PLAY STATION
+$70.00,6976854611669,False,False,1699,telzeal,Accessories,700000,USD,Telzeal p104 / 16Gram 1T,0,1300000,Tabs
+$77.00,200130016356,False,False,1700,JBL,Accessories,770000,USD,JBL Earbuds tune 2,0,900000,Earbuds
+$55.00,692007634328,False,False,1701,Hoco,Accessories,550000,USD,Hoco Children tablet HI10,0,800000,Tabs
+$8.00,6942007667890,False,False,1702,Hoco,Accessories,80000,USD,Hoco HC43,2.00,120000,Speakers
+$16.00,9904781910132,False,False,1703,Green Lion,Accessories,160000,USD,Green Lion earbuds ocean open ear headphones,1.00,450000,Earbuds
+$4.00,6942007621472,False,False,1704,Hoco,Accessories,40000,USD,Hoco Multifunctional card holder GT3,0,100000,Car Holder
+$5.00,6942007659383,False,False,1705,Hoco,Accessories,50000,USD,Hoco non-slip rotating car holder for dashboard DCA67,1.00,100000,Car Holder
+$10.00,6931474756299,False,False,1706,Hoco,Accessories,100000,USD,Hoco in car wireless FM Transmitter E62,0,150000,Music
+$33.00,6942007666046,False,False,1707,Hoco,Accessories,330000,USD,Hoco Watch Y37,1.00,550000,Watches
+$12.00,6942007645430,False,False,1708,Hoco,Accessories,120000,USD,Hoco Watch Y27,1.00,300000,Watches
+$8.75,,False,False,1709,Cufan,Accessories,87500,USD,Playtime babies 3599,1.00,400000,games
+$6.75,8199b,False,False,1710,Cufan,Accessories,67500,USD,cufan baby with diaper 8199b,1.00,300000,games
+$23.50,,False,False,1711,Dream,Accessories,235000,USD,Deluxe Doll stroller set 16pcs,1.00,600000,games
+$17.50,,False,False,1712,Dream,Accessories,175000,USD,play house plush pet grooming shoulder bag,0,400000,games
+$14.75,,False,False,1713,Dream,Accessories,147500,USD,Fashion real action play set NO.008-603A,0,400000,games
+$6.75,,False,False,1714,Dream,Accessories,67500,USD,Duck and friends,0,150000,games
+$5.75,,False,False,1715,Dream,Accessories,57500,USD,Squide electric Dance,0,120000,games
+$7.50,,False,False,1716,Dream,Accessories,75000,USD,Elephant animal little pal,0,120000,games
+$2.50,,False,False,1717,Dream,Accessories,25000,USD,Fantastic color,1.00,60000,games
+$2.50,,False,False,1718,Dream,Accessories,25000,USD,Phone learning activities,0,80000,games
+$6.25,,False,False,1719,Dream,Accessories,62500,USD,Glittering cosmetic bag,0,100000,games
+$25.50,,False,False,1720,Dream,Accessories,255000,USD,Chrildren's print camera,2.00,450000,games
+$4.25,,False,False,1721,Dream,Accessories,42500,USD,Foilart dream set,1.00,100000,games
+$5.75,,False,False,1722,Dream,Accessories,57500,USD,Blackboard + magnectic puzzle,0,150000,games
+$6.25,,False,False,1723,Dream,Accessories,62500,USD,Makeuo series stitch / barbie,1.00,150000,games
+$7.75,,False,False,1724,Dream,Accessories,77500,USD,Pretty Animals sweet dreams makeup,0,160000,games
+$6.75,,False,False,1725,Dream,Accessories,67500,USD,Magic cube,1.00,150000,games
+$15.50,,False,False,1726,Dream,Accessories,155000,USD,Electrinoc Dartboard,1.00,400000,games
+$16.50,,False,False,1727,Dream,Accessories,165000,USD,3D Frame cars,0,300000,games
+$14.75,,False,False,1728,Dream,Accessories,147500,USD,Cool Tools real action,0,400000,games
+$15.50,,False,False,1729,Dream,Accessories,155000,USD,special combat vehicles,0,350000,games
+$6.25,,False,False,1730,Dream,Accessories,62500,USD,Champion metal racing car,1.00,150000,games
+$11.50,,False,False,1731,Dream,Accessories,115000,USD,fighter jet h23,0,250000,games
+$35.00,,False,False,1732,Dream,Accessories,350000,USD,House Model's barbie,0,750000,games
+$16.50,,False,False,1733,Dream,Accessories,165000,USD,Grand Piano playmat,0,250000,games
+$1.00,,False,False,1734,Samsung,Accessories,10000,USD,Cable C TO C Black and white KN20,5.00,50000,Chargers
+$12.00,,False,False,1735,Green Lion,Accessories,120000,USD,Green Lion Earbuds 4 Anc white,1.00,350000,Earbuds
+$59.00,,False,False,1736,Green Lion,Accessories,590000,USD,Green Lion portable jump starter,1.00,900000,car accessories
+$130.00,,False,False,1737,Green Lion,Accessories,1300000,USD,Green lion Kids scooter,0,1900000,scooter
+$130.00,,False,False,1738,Porodo,Accessories,1300000,USD,Porodo electric scooter pink,0,1900000,scooter
+$0.65,,False,False,1739,unipha,Accessories,6500,USD,Unipha stereo earphones D21,4.00,50000,earphones
+$2.50,,False,False,1740,Green Lion,Accessories,25000,USD,Green Lion GL-stereo pro,2.00,80000,earphones
+$4.50,,False,False,1741,MOXOM,Accessories,45000,USD,Moxom colorful 360 rotation phone holder MX-VS137,2.00,100000,Mobile Holders
+$5.50,,False,False,1742,MOXOM,Accessories,55000,USD,Moxom rotation tablet holder vs138,2.00,150000,Mobile Holders
+$12.50,,False,False,1743,Green Lion,Accessories,125000,USD,Green Lion aurix clip on buds,1.00,300000,Earbuds
+$9.00,,False,False,1744,Green Lion,Accessories,90000,USD,Green lion siena enc,0,250000,Earbuds
+$8.00,,False,False,1745,Green Lion,Accessories,80000,USD,Green Lion harmonic,1.00,250000,Earbuds
+$8.00,,False,False,1746,Green Lion,Accessories,80000,USD,Green Lion earbuds Mittersill,0,250000,Earbuds
+$9.00,,False,False,1747,Green Lion,Accessories,90000,USD,Green Lion sienna earbuds pink,0,300000,Earbuds
+$4.50,,False,False,1748,Green Lion,Accessories,45000,USD,Green Lion stereo earphones type-c connector,1.00,100000,earphones
+$5.50,,False,False,1749,Porodo,Accessories,55000,USD,Porodo FWC048 Transparent 95W Car Charger,3.00,150000,car accessories
+$2.50,1010000000043,False,False,1750,Eggshell,Accessories,25000,USD,Eggshell Airpods 4  Air 4 Protective Case,4.00,80000,Airpods Cases
+$2.50,1010000000044,False,False,1751,TPU,Accessories,25000,USD,Case Protective TPU Airpods 4 Air 4,5.00,80000,Airpods Cases
+$9.00,6935100171937,False,False,1752,Green Lion,Accessories,90000,USD,Green Lion Car FM Transmitter Kit 30W Fast Charge GL-FM2,0,200000,FM Transmitter
+$2.50,,False,False,1753,Green Lion,Accessories,25000,USD,Green Lion Compact Car Charger Dual Port Fast Charger 12W,2.00,100000,Car Charger
+$2.00,6935100194301,False,False,1754,Green Lion,Accessories,20000,USD,Green Lion USB-A to Lightning PVC Cable 2m,0,100000,Cables
+$2.00,6935100194295,False,False,1755,Green Lion,Accessories,20000,USD,Green Lion USB-A to USB-C PVC Cable 2m,0,100000,Cables
+$2.50,6935100194325,False,False,1756,Green Lion,Accessories,25000,USD,Green Lion USB-C to Lightning PVC Cable 2m,0,100000,Cables
+$17.50,9904907111764,False,False,1757,Green Lion,Accessories,175000,USD,Green Lion Flex 46 2.06 IPS Smart Watch GL-SW11,0,400000,Watches
+$26.00,9904781973120,False,False,1758,Green Lion,Accessories,260000,USD,Green Lion Rivo Smart Watch Pink GL-SWA46,0,500000,Watches
+$14.50,,False,False,1759,Porodo,Accessories,145000,USD,Porodo Kids Flip Digital Camera with Tripod Stand LFS014,2.00,300000,Cameras
+$7.00,1010000000309,False,False,1760,Crown,Accessories,70000,USD,Crown C500 Watch + Headphone,1.00,200000,Combo
+$8.00,1010000000308,False,False,1761,Crown,Accessories,80000,USD,Crown M50/S600 Watch + Airpods,2.00,200000,Combo
+$1.50,,False,False,1762,Silicone,Accessories,15000,USD,Silicon Case iPhone 17 Pro Max,3.00,100000,Mobile Covers
+$0.90,,False,False,1763,Silicone,Accessories,9000,USD,Silicone Case iPhone 15 Pro Max,6.00,50000,Mobile Covers
+$0.90,,False,False,1764,Silicone,Accessories,9000,USD,Silicone Case iPhone 16 Pro Max,6.00,50000,Mobile Covers
+$0.90,,False,False,1765,Silicone,Accessories,9000,USD,Silicone Case iPhone 16,5.00,50000,Mobile Covers
+$4.50,,False,False,1766,Doyers,Accessories,45000,USD,Case iPhone 17 Pro Max,1.00,150000,Mobile Covers
+$4.50,,False,False,1767,Doyers,Accessories,45000,USD,Case iPhone 17 Pro,1.00,150000,Mobile Covers
+$2.25,,False,False,1768,Berlia,Accessories,22500,USD,Case iPhone 17 Pro Max,0,100000,Mobile Covers
+$2.25,,False,False,1769,Berlia,Accessories,22500,USD,Case iPhone 17 Pro,0,100000,Mobile Covers
+$0.90,,False,False,1770,Silicone,Accessories,9000,USD,Silicone Case Samsung S25,8.00,50000,Mobile Covers
+$0.90,,False,False,1771,Silicone,Accessories,9000,USD,Silicone Case Samsung S25 Ultra,14.00,50000,Mobile Covers
+$3.00,,False,False,1772,Fashion,Accessories,30000,USD,Silicone Case Magnetic iPhone 17 Pro Max,3.00,100000,Mobile Covers
+$3.00,,False,False,1773,Fashion,Accessories,30000,USD,Silicone Case Magnetic iPhone 17,3.00,100000,Mobile Covers
+$4.50,,False,False,1774,iPefet,Accessories,45000,USD,Silicone Case iPhone 16 Protective Case,5.00,150000,Mobile Covers
+$4.50,,False,False,1775,iPefet,Accessories,45000,USD,Silicone Case iPhone 16 Pro Protective Case,4.00,150000,Mobile Covers
+$4.50,,False,False,1776,iPefet,Accessories,45000,USD,Silicone Case iPhone 16 Pro Max Protective Case,4.00,150000,Mobile Covers
+$2.00,,False,False,1777,Mtetubl,Accessories,20000,USD,Mtetubl Camera Lens iPhone 17 Pro,2.00,80000,Camera Lens
+$2.00,,False,False,1778,Mtetubl,Accessories,20000,USD,Mtetubl Camera Lens iPhone 17,3.00,80000,Camera Lens
+$2.00,,False,False,1779,Mtetubl,Accessories,20000,USD,Mtetubl Camera Lens iPhone 17 Air,4.00,80000,Camera Lens
+$1.85,,False,False,1780,Mtetubl,Accessories,18500,USD,Mtetubl Camera Lens iPhone 15 Pro / 15 Pro Max,3.00,80000,Camera Lens
+$1.85,,False,False,1781,Mtetubl,Accessories,18500,USD,Mtetubl Camera Lens iPhone 16 Pro / 16 Pro Max,3.00,80000,Camera Lens
+$1.75,,False,False,1782,Caisles,Accessories,17500,USD,Caisles Camera Lens iPhone 16 Pro / 16 Pro Max,2.00,80000,Camera Lens
+$1.75,,False,False,1783,Caisles,Accessories,17500,USD,Caisles Camera Lens iPhone 16,2.00,80000,Camera Lens
+$1.75,,False,False,1784,Caisles,Accessories,17500,USD,Caisles Camera Lens iPhone 15 Pro Max,2.00,80000,Camera Lens
+$1.75,,False,False,1785,Caisles,Accessories,17500,USD,Caisles Camera Lens Samsung S25 Ultra,3.00,80000,Camera Lens
+$4.00,,False,False,1786,Green Lion,Accessories,40000,USD,Green Lion 2 in 1 Card Reader Supports Micro SD Cards,2.00,100000,Card Readers
+$8.50,,False,False,1787,Green Lion,Accessories,85000,USD,Adapter Type-C to HDMI,1.00,180000,Adpaters
+$5.00,,False,False,1788,Green Lion,Accessories,50000,USD,Green Lion 4 in 1 USB-A Hub Docking Station Adapter,0,150000,Hub
+$5.00,,False,False,1789,Green Lion,Accessories,50000,USD,Green Lion 4 in 1 USB-C Hub Docking Station Adapter,0,150000,Hub
+$4.50,,False,False,1790,Green Lion,Accessories,45000,USD,Green Lion 8 in 1 Cable Organizer 3M Self Adhesive,1.00,100000,Organizers
+$2.75,,False,False,1791,Green Lion,Accessories,27500,USD,Green Lion 2 in 1 Cable Organizer 3M Self Adhesive,0,60000,Organizers
+$3.50,,False,False,1792,Green Lion,Accessories,35000,USD,Green Lion Magnetic Clip Cable Organizer 10Pcs/Set,1.00,70000,Organizers
+$5.50,,False,False,1793,Green Lion,Accessories,55000,USD,Green Lion 4 in 1 TF Card Reader Supports Micro SD Cards,2.00,120000,Hub
+$5.00,,False,False,1794,Green Lion,Accessories,50000,USD,Green Lion 3 in 1 OTG,0,120000,Hub
+$4.50,,False,False,1795,Green Lion,Accessories,45000,USD,Green Lion 3 in 1 Card Reader USB-A & USB-C Connectivity,0,120000,Hub
+$11.00,,False,False,1796,Green Lion,Accessories,110000,USD,Green Lion Power Bank Toledo 10000 mah 20W Fast Charging,0,200000,Power Bank
+$11.00,,False,False,1797,Green Lion,Accessories,110000,USD,Green Lion Power Bank Kyoto 10000 mah PD 20W Fast Charging,0,200000,Power Bank
+$5.50,,False,False,1798,N/A,Accessories,55000,USD,Flip Case For Pro 11 2024,1.00,150000,Tab Covers
+$5.50,,False,False,1799,N/A,Accessories,55000,USD,Flip Case For iP 10.2 / 10.5,1.00,150000,Tab Covers
+$5.50,,False,False,1800,N/A,Accessories,55000,USD,Flip Case For Air 11 2024 / 2025,1.00,150000,Tab Covers
+$6.50,,False,False,1801,N/A,Accessories,65000,USD,Flip Case Samsung Tab A11 2025,4.00,130000,Tab Covers
+$6.50,,False,False,1802,N/A,Accessories,65000,USD,Flip Case Samsung Tab A11+ 2025,3.00,180000,Tab Covers
+$6.50,,False,False,1803,N/A,Accessories,65000,USD,Flip Case Samsung Tab S10 FE+ 13.1 inch 2025,1.00,200000,Tab Covers
+$0.35,,False,False,1804,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung A16 / A26 / M16 / F16,11.00,50000,Screen Protection
+$0.35,,False,False,1805,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung A05 / A06 / M05 / M06 / F05 / F06,20.00,50000,Screen Protection
+$0.35,,False,False,1806,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung A24 / A25 / M34 / F34,8.00,50000,Screen Protection
+$0.35,,False,False,1807,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung A23,10.00,50000,Screen Protection
+$0.35,,False,False,1808,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung A35 / A55 / M35,6.00,50000,Screen Protection
+$0.70,,False,False,1809,OG Glass,Accessories,7000,USD,OG Full Glue Clear Protection Samsung S25 Ultra,8.00,50000,Screen Protection
+$0.70,,False,False,1810,OG Glass,Accessories,7000,USD,OG Full Glue Clear Protection Samsung S25 Plus,10.00,50000,Screen Protection
+$0.70,,False,False,1811,OG Glass,Accessories,7000,USD,OG Full Glue Clear Protection Samsung S25,9.00,50000,Screen Protection
+$0.35,,False,False,1813,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung S22 / S23,7.00,50000,Screen Protection
+$0.35,,False,False,1814,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung S22 Plus / S23 Plus,10.00,50000,Screen Protection
+$0.35,,False,False,1815,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung S24,10.00,50000,Screen Protection
+$0.35,,False,False,1816,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung S24 Plus,9.00,50000,Screen Protection
+$0.35,,False,False,1817,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection Samsung S24 Ultra,8.00,50000,Screen Protection
+$0.35,,False,False,1818,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 15,5.00,50000,Screen Protection
+$0.35,,False,False,1819,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 15 Pro Max,5.00,50000,Screen Protection
+$0.35,,False,False,1820,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 15 Pro,3.00,50000,Screen Protection
+$0.35,,False,False,1821,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 13 / 13 Pro / 14 / 16E,4.00,50000,Screen Protection
+$0.35,,False,False,1823,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 16 Pro Max,6.00,50000,Screen Protection
+$0.35,,False,False,1824,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 16 Pro,7.00,50000,Screen Protection
+$0.35,,False,False,1825,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 16,3.00,50000,Screen Protection
+$0.35,,False,False,1826,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 14 Pro,8.00,50000,Screen Protection
+$0.35,,False,False,1827,OG Glass,Accessories,3500,USD,OG Full Glue Clear Protection iPhone 14 Pro Max,7.00,50000,Screen Protection
+$1.00,,False,False,1828,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 13 Pro Max,0,70000,Screen Protection
+$1.00,,False,False,1829,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 13 / 13 Pro / 14,1.00,70000,Screen Protection
+$1.00,,False,False,1832,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 15 / 16,1.00,70000,Screen Protection
+$1.00,,False,False,1833,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 16 Pro,7.00,70000,Screen Protection
+$1.00,,False,False,1834,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 16 Pro max,8.00,70000,Screen Protection
+$1.00,,False,False,1835,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 17,11.00,70000,Screen Protection
+$1.00,,False,False,1836,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 17 Pro,12.00,70000,Screen Protection
+$1.00,,False,False,1837,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 17 Pro Max,7.00,70000,Screen Protection
+$1.00,,False,False,1838,Hoco,Accessories,10000,USD,Hoco G15 Privacy Protection iPhone 17 Pro,6.00,70000,Screen Protection
+$1.00,,False,False,1839,Hoco,Accessories,10000,USD,Hoco G15 Privacy Protection iPhone 17 Pro Max,1.00,70000,Screen Protection
+$1.00,,False,False,1840,Hoco,Accessories,10000,USD,Hoco G16 Clear Protection iPhone 17 Pro,2.00,50000,Screen Protection
+$0.00,,False,False,1841,Alfa,Recharges,10030000000,LBP,Alfa Card 10.00,0,11500000000,Mobile Recharges
+"$1,015.00",,False,False,1842,Samsung,Accessories,10150000,USD,Samsung S25 Ultra 256/12,0,10500000,Phones
+"$1,050.00",,False,False,1843,Apple,Accessories,10500000,USD,Iphone 17 Air 256,0,10700000,Phones
+$970.00,,False,False,1844,Apple,Accessories,9700000,USD,Iphone 17 256,0,10330000,Phones
+"$1,590.00",,False,False,1845,iPhone,Accessories,15900000,USD,Iphone 17 pro max 256 esim/sim,0,16200000,Phones
+$665.00,00088698322948602,False,False,1846,HP,Accessories,6650000,USD,Laptop HP Victus 15-FA2013DX I5-13420H 8/512,0,7000000,LAPTOP
+$0.00,,False,False,1849,,Accessories,17500,USD,New Lens iPhone 14 Pro Max,1.00,60000,
+$0.59,,False,False,1850,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 16,11.00,70000,Screen Protection
+$0.00,,False,False,1851,,Accessories,15000,USD,Privacy Protection iPhone 16,7.00,70000,Screen Protection
+$0.00,,False,False,1852,,Accessories,15000,USD,Bonafies Privacy Protection iPhone 16 Pro,5.00,70000,Screen Protection
+$0.00,,False,False,1853,,Accessories,10000,USD,Mtetubl Clear Protection iPhone 16,3.00,50000,Screen Protection
+$0.00,,False,False,1854,9D Glass,Accessories,10000,USD,9D Matte Ceramic Clear Protection iPhone 15 Pro Max,2.00,50000,Screen Protection
+$0.00,,False,False,1855,Caisles,Accessories,10000,USD,Caisles Protection iPhone 15 Pro,0,50000,Screen Protection
+$0.00,,False,False,1856,,Accessories,10000,USD,Luminous Clear Protection iPhone 14 Pro,8.00,50000,Screen Protection
+$0.00,,False,False,1857,,Accessories,10000,USD,Solid Myth Super Glass Clear Protection iPhone 14,4.00,50000,Screen Protection
+$0.00,,False,False,1858,OG Glass,Accessories,10000,USD,OG Full Glue Clear Protection 13 Pro Max / 14 Plus,4.00,50000,Screen Protection
+$0.00,,False,False,1859,,Accessories,10000,USD,ESD Super X Clear Protection iPhone 14 Pro,6.00,50000,Screen Protection
+$0.00,,False,False,1860,,Accessories,10000,USD,Luminous Clear Protection iPhone 14,2.00,50000,Screen Protection
+$0.00,,False,False,1861,Caisles,Accessories,15000,USD,Caisles Privacy iPhone 14 Pro,1.00,10000,Screen Protection
+$0.00,,False,False,1862,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S20 Ultra,4.00,50000,Screen Protection
+$0.00,,False,False,1863,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S22 Plus,1.00,50000,Screen Protection
+$0.00,,False,False,1864,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S22 Ultra,2.00,50000,Screen Protection
+$0.00,,False,False,1865,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S21 Ultra,2.00,50000,Screen Protection
+$0.00,,False,False,1866,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S21,7.00,50000,Screen Protection
+$0.00,,False,False,1867,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S22,3.00,50000,Screen Protection
+$0.00,,False,False,1868,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S24 Ultra,5.00,50000,Screen Protection
+$0.00,,False,False,1869,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S24 Plus,4.00,50000,Screen Protection
+$0.00,,False,False,1870,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S24,3.00,50000,Screen Protection
+$0.00,,False,False,1871,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S25 Ultra,9.00,50000,Screen Protection
+$0.00,,False,False,1872,Caisles,Accessories,15000,USD,Caisles Clear Protection Samsung S25,5.00,50000,Screen Protection
+$0.00,,False,False,1873,,Accessories,17500,USD,VWK Anti Static Pro+ Glass Privacy Samsung S25 Plus,4.00,70000,Screen Protection
+$0.00,,False,False,1874,,Accessories,17500,USD,VWK Anti Static Pro+ Glass Privacy Samsung S25,10.00,70000,Screen Protection
+$0.00,,False,False,1875,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung S23,1.00,50000,Screen Protection
+$0.00,,False,False,1876,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung S9 Plus,1.00,50000,Screen Protection
+$0.00,,False,False,1877,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung S8,2.00,50000,Screen Protection
+$0.00,,False,False,1878,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung S10 plus,2.00,50000,Screen Protection
+$0.00,,False,False,1879,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung S10,3.00,50000,Screen Protection
+$0.00,,False,False,1880,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung Note 20,1.00,50000,Screen Protection
+$0.00,,False,False,1881,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung Note 20 Ultra,2.00,50000,Screen Protection
+$0.00,,False,False,1882,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung Note 10,3.00,50000,Screen Protection
+$0.00,,False,False,1883,Caisles,Accessories,15000,USD,Caisless Clear Protection Samsung Note 10 Plus,2.00,50000,Screen Protection
+$0.00,,False,False,1884,Silicone,Accessories,10000,USD,Case Samsung S23,1.00,50000,Mobile Covers
+$0.00,,False,False,1885,,Accessories,30000,USD,Case Mate Samsung S25 Ultra,0,100000,Mobile Covers
+$0.00,,False,False,1886,DKG Cover,Accessories,35000,USD,Case Samsung S24 / S25,2.00,100000,Mobile Covers
+$0.00,,False,False,1887,Leather,Accessories,30000,USD,Case iPhone 14 Pro Magsafe,3.00,120000,Mobile Covers
+$0.00,,False,False,1888,,Accessories,35000,USD,Case iPhone 15 Pro Max Unique,8.00,100000,Mobile Covers
+$0.00,,False,False,1889,,Accessories,30000,USD,Case iPhone 16,1.00,100000,Mobile Covers
+$0.00,,False,False,1890,,Accessories,35000,USD,Case iPhone 16 Magnetic,3.00,100000,Mobile Covers
+$0.00,,False,False,1891,Magnetic,Accessories,35000,USD,Case iPhone 17 Pro Max Magnetic,1.00,100000,Mobile Covers
+$0.00,,False,False,1892,Case,Accessories,30000,USD,Case iPhone 13 Pro Max,0,100000,Mobile Covers
+$0.00,,False,False,1894,Silicone,Accessories,8000,USD,Clear Case Samsung A26,16.00,50000,Mobile Covers
+$0.00,,False,False,1895,Case,Accessories,15000,USD,Case iPhone 16 Pro,2.00,100000,
+$0.00,,False,False,1896,,,35000,USD,Shahid - Full Account - 01 Month,0,60000,
+$0.00,,False,False,1897,Penalty,Penalty,[],USD,Penalty,0,[],Penalty
+$2.00,,False,False,1898,Green Lion,Accessories,20000,USD,60W / 10000 Bends / USB-C to USB-C PVC Cable / 1 Meter,2.00,100000,Cables
+$1.00,,False,False,1899,Green Lion,Accessories,10000,USD,12W / 10000 Bends / USB-A to Micro PVC Cable / 1 Meter,3.00,50000,Cables
+$5.00,,False,False,1900,Green Lion,Accessories,50000,USD,Led Lights / 10000 Bends / 4 in 1 Led Braided Cable / 60W / 1.2 Meter,1.00,150000,Cables
+$4.00,,False,False,1901,Green Lion,Accessories,40000,USD,60W / 10000 Bends / 3 in 2 Braided Fast Charging Cable / 1.2 Meter,0,120000,Cables
+$0.00,,False,False,1902,Green Lion,Accessories,25000,USD,GL-Stereo Pro Wired-Control with Microphone White,0,60000,Cables
+$0.00,,False,False,1903,Green Lion,Accessories,45000,USD,Stereo Surround / Control Buttons / 1.2 Meter,0,100000,earphones
+$2.50,,False,False,1904,Green Lion,Accessories,25000,USD,10000 Bends / USB-A to Lightning PVC Cable / 2 Meters,1.00,120000,Cables
+$2.50,,False,False,1905,Green Lion,Accessories,25000,USD,10000 Bends / USB-A to USB-C / 2 Meters,0,120000,Cables
+$3.50,,False,False,1906,Green Lion,Accessories,35000,USD,Lightning to Aux Braided Cable / 1 Meter,0,100000,Cables
+$2.50,,False,False,1907,Hoco,Accessories,25000,USD,USB-C to 3.5mm Aux Audio Cable / UPA26,4.00,100000,Cables
+$2.50,,False,False,1908,Green Lion,Accessories,25000,USD,27W / 10000 Bends / USB-C to Lightning PVC Cable / 2 Meters,0,120000,Cables
+$5.00,,False,False,1909,Samsung,Accessories,50000,USD,25W PD Adapter USB-C Samsung White,1.00,100000,Chargers
+$4.50,,False,False,1910,Samsung,Accessories,45000,USD,65W PD / Power Adapter Trio / USB-C 2Ports / USB-A Port,1.00,120000,Chargers
+$3.75,,False,False,1911,Hoco,Accessories,37500,USD,Hoco 30W Dual Port USB-C / USB-A Z57A,0,100000,Car Charger
+$15.00,,False,False,1912,Porodo,Accessories,150000,USD,Porodo / Essential Pulse / Smart Watch / Black,1.00,350000,Watches
+$15.00,,False,False,1913,Porodo,Accessories,150000,USD,Porodo / Essential Pulse / Smart Watch / Pink,1.00,350000,Watches
+$17.00,,False,False,1914,Green Lion,Accessories,170000,USD,Green Lion / Optima Smart Watch,1.00,400000,Watches
+$29.00,,False,False,1915,Green Lion,Accessories,290000,USD,Green Lion / Galvin Smart Watch,1.00,550000,Watches
+$0.65,,False,False,1916,Clear Silicone,Accessories,6500,USD,Clear Case iPhone 17,10.00,50000,Mobile Covers
+$0.65,,False,False,1917,Clear Silicone,Accessories,6500,USD,Clear Case iPhone 17 Pro,9.00,50000,Mobile Covers
+$0.65,,False,False,1918,Clear Silicone,Accessories,6500,USD,Clear Case iPhone 17 Pro Max,2.00,50000,Mobile Covers
+$0.65,,False,False,1919,Clear Silicone,Accessories,6500,USD,Clear Case iPhone 17 Air,10.00,50000,Mobile Covers
+$11.50,,False,False,1920,Hoco,Accessories,115000,USD,Hoco / Speaker / Powerful Shocking 3D Sound / HC27,1.00,200000,Speakers
+$12.00,,False,False,1921,Green Lion,Accessories,120000,USD,Green Lion / Speaker / Pristone,1.00,250000,Speakers
+$20.00,,False,False,1922,Green Lion,Accessories,200000,USD,Green Lion / Moon Charge / 4 in 1 Wireless Charger,1.00,380000,Charger Station
+$14.00,,False,False,1923,Ace Fast,Accessories,140000,USD,AceFast / Portable Wireles Speaker / Waterproof,2.00,300000,Speakers
+$37.00,,False,False,1924,Hoco,Accessories,370000,USD,Hoco / Old Fashion Speaker / Dual Microphones / BS63,1.00,650000,Speakers
+$1.00,,False,False,1925,Caisles,Accessories,10000,USD,Caisles Privacy Protection iPhone 17 Air,10.00,70000,Screen Protection
+$8.00,,False,False,1926,Stanley,Accessories,80000,USD,Original Stanley,0,200000,Mugs
+$13.00,,False,False,1927,Green Lion,Accessories,130000,USD,Green Lion / Citrus Juicer / Dual Rotation / BPA Free,0,300000,Kitchenware
+$3.50,,False,False,1928,Hoco,Accessories,35000,USD,Hoco / Car Holder / Clamp Arm One Click Opening / H78,0,100000,Car Holder
+$3.50,,False,False,1929,Hoco,Accessories,35000,USD,Hoco / Car Holder / Gravity Clamping / H80,0,100000,Car Holder
+$8.00,,False,False,1930,Hoco,Accessories,80000,USD,Hoco / Headphone / Cat Ear / Pink / W42,1.00,200000,Headphones
+$8.00,,False,False,1931,Hoco,Accessories,80000,USD,Hoco / Headphone / Cat Ear / Blue / W42,0,200000,Headphones
+$1.00,,False,False,1932,Caisles,Accessories,10000,USD,Caisles Clear Protection iPhone 17 Pro Max HD Glass,2.00,50000,Screen Protection
+$1.00,,False,False,1933,Caisles,Accessories,10000,USD,Caisles Clear Protection iPhone 16 Pro Max HD Glass,2.00,50000,Screen Protection
+$1.00,,False,False,1934,Caisles,Accessories,10000,USD,Caisles Clear Protection iPhone 17 Pro HD Glass,3.00,50000,Screen Protection
+$4.33,,False,False,1935,Hoco,Accessories,45000,USD,Hoco Mouse 2.4G Wireless BT Dual Mode Mouse DI04 Plus,3.00,100000,Mouses & Keyboards
+$3.00,,False,False,1936,Hoco,Accessories,30000,USD,Hoco Mouse Confortable Grip Wired Mouse GM50,2.00,80000,Mouses & Keyboards
+$21.00,,False,False,1937,Green Lion,Accessories,210000,USD,Green Lion Shadow RGB ANC Gaming Headset,0,300000,Headphones
+$12.00,,False,False,1938,Porodo,Accessories,120000,USD,Porodo Soundtec Vintage Wireless ENC Headphone Black,1.00,170000,Headphones
+$11.00,,False,False,1939,Porodo,Accessories,110000,USD,Porodo Soundtec Vintage Wireless ENC Headphone Black/Silver,1.00,170000,Headphones
+$18.00,,False,False,1940,Porodo,Accessories,180000,USD,Porodo Soundtec Clap ANC Wireless Headphone,1.00,250000,Headphones
+$11.00,,False,False,1941,Porodo,Accessories,110000,USD,Porodo Soundtec Primo Wireless Headphone ENC & Low-Latency Gaming Mode,0,160000,Headphones
+$18.00,,False,False,1942,Porodo,Accessories,180000,USD,Porodo 6 in 1 Keyboard & Mouse Set,0,260000,Mouses & Keyboards
+$2.25,,False,False,1943,Green Lion,Accessories,22500,USD,60W / 10000 Bends / USB-C to USB-C Braided Cable / 1 Meter,0,100000,Cables
+$3.75,,False,False,1944,Green Lion,Accessories,37500,USD,Led Indicator / 10000 Bends / Led Braided Cable / USB-C to USB-C / 60W,4.00,100000,Cables
+$5.00,,False,False,1945,MOXOM,Accessories,50000,USD,MoXoM Extendable Holder StrongMan MX-VS27,2.00,150000,Car Holder
+$7.00,,False,False,1946,Porodo,Accessories,70000,USD,Porodo Flexible Arm Magnetic Car Mount Adjustable Positioning,2.00,150000,Car Holder
+$10.00,,False,False,1947,Green Lion,Accessories,100000,USD,Green Lion / Fire Flame Windproof Lighter / Agjustable Knob,1.00,200000,Home Appliances
+$10.00,,False,False,1948,Green Lion,Accessories,100000,USD,Green Lion / Travel Mate Luggage Scale,1.00,200000,Home Appliances
+$13.50,,False,False,1949,Porodo,Accessories,135000,USD,Porodo Dual Lightning Selfie Stick Remote Shutter 4-Leg Base,1.00,250000,Photography
+$5.50,,False,False,1950,iPhone,Accessories,55000,USD,New MagSafe Case iPhone 17 Camera Control,9.00,180000,Mobile Covers
+$5.50,,False,False,1951,iPhone,Accessories,55000,USD,New MagSafe Case iPhone 17 Pro Camera Control,9.00,180000,Mobile Covers
+$5.50,,False,False,1952,iPhone,Accessories,55000,USD,New MagSafe Case iPhone 17 Pro Max Camera Control,3.00,180000,Mobile Covers
+$3.00,,False,False,1953,Odora,Accessories,30000,USD,Odora Reed Diffuser,18.00,70000,Diffusser
+$15.00,,False,False,1954,Odora,Accessories,150000,USD,Deo Group premium Diffuser,4.00,220000,Diffusser
+$7.00,,False,False,1955,Apple,Accessories,70000,USD,New USB-C to Jack 3.5,4.00,150000,Cables
+$7.00,,False,False,1956,Apple,Accessories,70000,USD,New Lightning to Jack 3.5,5.00,150000,Cables
+$4.75,,False,False,1957,Foneng,Accessories,47500,USD,Foneng USB-C Fast Charger 45W EU62,2.00,120000,Chargers
+$2.25,,False,False,1958,Foneng,Accessories,22500,USD,Foneng Single USB Fast Charger 18W EU54,2.00,100000,Chargers
+$3.50,,False,False,1959,Foneng,Accessories,35000,USD,Foneng Audio Cable USB-C to Jack BM31,8.00,100000,Cables
+$3.50,,False,False,1960,Foneng,Accessories,35000,USD,Foneng Audio Cable Lightning to Jack BM31xo,3.00,100000,Cables
+$1.75,,False,False,1961,Kakusiga,Accessories,17500,USD,Kakusiga USB-C to USB-A OTG Adapter KSC-1420,3.00,50000,Adpaters
+$4.00,,False,False,1962,Green Lion,Accessories,40000,USD,Green Lion Stereo X90 Earphones,0,100000,Earbuds
+$11.00,,False,False,1963,Hoco,Accessories,110000,USD,Hoco Power Bank 20000 mah J159A,0,200000,Power Bank
+$19.00,,False,False,1964,Foneng,Accessories,190000,USD,Foneng Power Bank Fast Charging 30000 mah GT300,1.00,350000,Power Bank
+$19.00,,False,False,1965,Foneng,Accessories,190000,USD,Foneng Power Bank Fast Charging 40000 mah P64,1.00,400000,Power Bank
+$9.00,,False,False,1966,Green Lion,Accessories,90000,USD,Green Lion Earbuds 3 White,0,150000,Earbuds
+$0.85,,False,False,1967,Caisles,Accessories,8500,USD,Caisles Clear Protection iPhone 13 Pro Max,8.00,50000,Screen Protection
+$0.85,,False,False,1968,Caisles,Accessories,8500,USD,Caisles Clear Protection iPhone 13 / 13 Pro / 14,8.00,50000,Screen Protection
+$0.35,,False,False,1969,OG Full Clue,Accessories,3500,USD,OG Full Glue - Clear Protection A54 S23,10.00,50000,Screen Protection
+$0.35,,False,False,1970,OG Full Clue,Accessories,3500,USD,OG Full Glue - Clear Protection A36 A56 S24 FE,6.00,50000,Screen Protection
+$0.85,,False,False,1971,Hoco,Accessories,8500,USD,Hoco G14 Clear Protection iPhone 17 Pro Max,4.00,50000,Screen Protection
+$1.00,,False,False,1972,Lito,Accessories,10000,USD,Lito Clear Protection iPhone 12 Pro Max,9.00,50000,Screen Protection
+$1.00,,False,False,1973,Lito,Accessories,10000,USD,Lito Clear Protection iPhone 12 / 12 Pro,8.00,50000,Screen Protection
+$1.00,,False,False,1974,Lito,Accessories,10000,USD,Lito Clear Protection iPhone 15,10.00,50000,Screen Protection
+$0.00,DK004576.00,False,False,1975,IQOS,Accessories,495500,USD,Kit Iqos Iluma / Leaf Green,0,550000,IQOS
+$3.00,,False,False,1976,SamFire,Accessories,30000,USD,SamFire Case iPhone 13/14,6.00,100000,Mobile Covers
+$3.00,,False,False,1977,SamFire,Accessories,30000,USD,SamFire Case iPhone 14 Pro,9.00,100000,Mobile Covers
+$3.00,,False,False,1978,SamFire,Accessories,30000,USD,SamFire Case iPhone 14 Pro Max,9.00,100000,Mobile Covers
+$3.00,,False,False,1979,SamFire,Accessories,30000,USD,SamFire Case iPhone 15,10.00,100000,Mobile Covers
+$3.00,,False,False,1980,SamFire,Accessories,30000,USD,SamFire Case iPhone 15 Pro,10.00,100000,Mobile Covers
+$3.00,,False,False,1981,SamFire,Accessories,30000,USD,SamFire Case iPhone 15 Pro Max,9.00,100000,Mobile Covers
+$3.00,,False,False,1982,SamFire,Accessories,30000,USD,SamFire Case iPhone 16,8.00,100000,Mobile Covers
+$3.00,,False,False,1983,SamFire,Accessories,30000,USD,SamFire Case iPhone 16 Pro,10.00,100000,Mobile Covers
+$3.00,,False,False,1984,SamFire,Accessories,30000,USD,SamFire Case iPhone 16 Pro Max,9.00,100000,Mobile Covers
+$3.00,,False,False,1985,SamFire,Accessories,30000,USD,SamFire Case iPhone 17,10.00,100000,Mobile Covers
+$3.00,,False,False,1986,SamFire,Accessories,30000,USD,SamFire Case iPhone 17 Pro,10.00,100000,Mobile Covers
+$3.00,,False,False,1987,SamFire,Accessories,30000,USD,SamFire Case iPhone 17 Pro Max,9.00,100000,Mobile Covers
+$3.00,,False,False,1988,SamFire,Accessories,30000,USD,SamFire Case iPhone 17 Air,10.00,100000,Mobile Covers
+$3.00,,False,False,1989,Fashion Case,Accessories,30000,USD,Fashion Case iPhone 17,10.00,100000,Mobile Covers
+$3.00,,False,False,1990,Fashion Case,Accessories,30000,USD,Fashion Case iPhone 17 Pro,10.00,100000,Mobile Covers
+$3.00,,False,False,1991,Fashion Case,Accessories,30000,USD,Fashion Case iPhone 17 Pro Max,6.00,100000,Mobile Covers
+$2.00,,False,False,1992,Clear Case Magnetic,Accessories,20000,USD,Clear Case Magnetic 17 Pro Max,9.00,100000,Mobile Covers
+$2.00,,False,False,1993,Clear Case Magnetic,Accessories,20000,USD,Clear Case Magnetic 14,1.00,100000,Mobile Covers
+$6.00,,False,False,1994,Clear Case Magnetic,Accessories,60000,USD,Clear Case Galaxy S26 Ultra,9.00,150000,Mobile Covers
+$6.00,,False,False,1995,Silicone Case,Accessories,60000,USD,Silicone Case Galaxy S26 Ultra,10.00,150000,Mobile Covers
+$3.00,,False,False,1996,Mobile Case,Accessories,30000,USD,Mobile Case Highly Protective S25 Ultra,3.00,120000,Mobile Covers
+$3.00,,False,False,1997,New Case,Accessories,30000,USD,New Case Creative Case S25 Ultra,3.00,120000,Mobile Covers
+$5.00,,False,False,1998,Panasonic,Accessories,50000,USD,Panasonic CR123 A,6.00,70000,Batteries
+$30.00,,False,False,1999,Samsung,Accessories,300000,USD,samsung trio adapter 65w,0,300000,Adpaters
+"$1,680.00",,False,False,2000,Samsung,Accessories,16800000,USD,phone samsung s26 ultra,0,17300000,Mobiles
+$11.50,,False,False,2001,Hoco,Accessories,115000,USD,Hoco Power Bank PD 20000 J87A,1.00,200000,Power Bank
+$1.25,,False,False,2002,Foneng,Accessories,12500,USD,Foneng Earphone EP100,2.00,50000,Earbuds
+$1.25,,False,False,2003,Foneng,Accessories,12500,USD,Foneng Earphone T57,3.00,50000,Earbuds
+$0.90,,False,False,2004,Foneng,Accessories,9000,USD,Foneng Cable USB XS01,7.00,60000,Cables
+$4.00,,False,False,2005,Hoco,Accessories,40000,USD,Hoco Car Holder H81,2.00,120000,Car Holder
+$4.00,,False,False,2006,Bavin,Accessories,40000,USD,Bavin Car Holder PS-74,2.00,120000,Car Holder
+$5.00,,False,False,2007,MOXOM,Accessories,50000,USD,Moxom Car Holder VS48,2.00,130000,Car Holder
+$2.50,,False,False,2008,Unknown,Accessories,25000,USD,Game Mouse Pad JT-P100 / CP-P200,2.00,70000,Mouse Pad
+$6.50,,False,False,2009,Joyroom,Accessories,65000,USD,Joyroom Car Phone Holder ZS198,1.00,140000,Car Holder
+$7.00,,False,False,2010,Heybingo,Accessories,70000,USD,Heybingo 3 in 1 Protection S26 Ultra,3.00,200000,Combo
+$3.50,,False,False,2011,Apple,Accessories,35000,USD,Apple Earpods USB-C iPhone Copy,10.00,100000,earphones

@@ -1,0 +1,538 @@
+{
+  "source": "BackEnd.accdb",
+  "exported_at": "2026-04-27T20:37:16.481737Z",
+  "tables_total": 55,
+  "tables_ok": 55,
+  "tables_failed": [],
+  "json_only_tables": [
+    {
+      "table": "tblEmployees",
+      "rows": 13,
+      "json": "exports_backend/tblEmployees.json"
+    },
+    {
+      "table": "tblPunchTransactions",
+      "rows": 10,
+      "json": "exports_backend/tblPunchTransactions.json"
+    },
+    {
+      "table": "tblPunchImport",
+      "rows": 9,
+      "json": "exports_backend/tblPunchImport.json"
+    },
+    {
+      "table": "tblSupplierPayments",
+      "rows": 9,
+      "json": "exports_backend/tblSupplierPayments.json"
+    },
+    {
+      "table": "tblCashMovements",
+      "rows": 8,
+      "json": "exports_backend/tblCashMovements.json"
+    },
+    {
+      "table": "tblPunchHead",
+      "rows": 8,
+      "json": "exports_backend/tblPunchHead.json"
+    },
+    {
+      "table": "tblLoto",
+      "rows": 6,
+      "json": "exports_backend/tblLoto.json"
+    },
+    {
+      "table": "tblManufacturing",
+      "rows": 5,
+      "json": "exports_backend/tblManufacturing.json"
+    },
+    {
+      "table": "tblHROptions",
+      "rows": 2,
+      "json": "exports_backend/tblHROptions.json"
+    }
+  ],
+  "top_25_by_rows": [
+    {
+      "table": "tblLogs",
+      "rows": 41433,
+      "csv": "exports_backend/tblLogs.csv",
+      "json": "exports_backend/tblLogs.json"
+    },
+    {
+      "table": "tblInvoicesDetails",
+      "rows": 10929,
+      "csv": "exports_backend/tblInvoicesDetails.csv",
+      "json": "exports_backend/tblInvoicesDetails.json"
+    },
+    {
+      "table": "tblPaymentDetails",
+      "rows": 9308,
+      "csv": "exports_backend/tblPaymentDetails.csv",
+      "json": "exports_backend/tblPaymentDetails.json"
+    },
+    {
+      "table": "tblInvoicesHead",
+      "rows": 8758,
+      "csv": "exports_backend/tblInvoicesHead.csv",
+      "json": "exports_backend/tblInvoicesHead.json"
+    },
+    {
+      "table": "tblPayments",
+      "rows": 8112,
+      "csv": "exports_backend/tblPayments.csv",
+      "json": "exports_backend/tblPayments.json"
+    },
+    {
+      "table": "tblStockLog",
+      "rows": 4627,
+      "csv": "exports_backend/tblStockLog.csv",
+      "json": "exports_backend/tblStockLog.json"
+    },
+    {
+      "table": "tblProducts",
+      "rows": 1744,
+      "csv": "exports_backend/tblProducts.csv",
+      "json": "exports_backend/tblProducts.json"
+    },
+    {
+      "table": "tblStockCashAndPhysical",
+      "rows": 1698,
+      "csv": "exports_backend/tblStockCashAndPhysical.csv",
+      "json": "exports_backend/tblStockCashAndPhysical.json"
+    },
+    {
+      "table": "tblPNL",
+      "rows": 1259,
+      "csv": "exports_backend/tblPNL.csv",
+      "json": "exports_backend/tblPNL.json"
+    },
+    {
+      "table": "tblPurchaseDetails",
+      "rows": 940,
+      "csv": "exports_backend/tblPurchaseDetails.csv",
+      "json": "exports_backend/tblPurchaseDetails.json"
+    },
+    {
+      "table": "tblDailySales",
+      "rows": 593,
+      "csv": "exports_backend/tblDailySales.csv",
+      "json": "exports_backend/tblDailySales.json"
+    },
+    {
+      "table": "tblClients",
+      "rows": 584,
+      "csv": "exports_backend/tblClients.csv",
+      "json": "exports_backend/tblClients.json"
+    },
+    {
+      "table": "tblTaxiTransactions",
+      "rows": 514,
+      "csv": "exports_backend/tblTaxiTransactions.csv",
+      "json": "exports_backend/tblTaxiTransactions.json"
+    },
+    {
+      "table": "tblExpenses",
+      "rows": 310,
+      "csv": "exports_backend/tblExpenses.csv",
+      "json": "exports_backend/tblExpenses.json"
+    },
+    {
+      "table": "tblPurchaseHead",
+      "rows": 158,
+      "csv": "exports_backend/tblPurchaseHead.csv",
+      "json": "exports_backend/tblPurchaseHead.json"
+    },
+    {
+      "table": "tblClientReceivables",
+      "rows": 150,
+      "csv": "exports_backend/tblClientReceivables.csv",
+      "json": "exports_backend/tblClientReceivables.json"
+    },
+    {
+      "table": "tblStamps",
+      "rows": 147,
+      "csv": "exports_backend/tblStamps.csv",
+      "json": "exports_backend/tblStamps.json"
+    },
+    {
+      "table": "tblTaxiAccounts",
+      "rows": 144,
+      "csv": "exports_backend/tblTaxiAccounts.csv",
+      "json": "exports_backend/tblTaxiAccounts.json"
+    },
+    {
+      "table": "tblDailyProfits",
+      "rows": 119,
+      "csv": "exports_backend/tblDailyProfits.csv",
+      "json": "exports_backend/tblDailyProfits.json"
+    },
+    {
+      "table": "tblBrands",
+      "rows": 115,
+      "csv": "exports_backend/tblBrands.csv",
+      "json": "exports_backend/tblBrands.json"
+    },
+    {
+      "table": "tblInvoicesDetailsUnsaved",
+      "rows": 82,
+      "csv": "exports_backend/tblInvoicesDetailsUnsaved.csv",
+      "json": "exports_backend/tblInvoicesDetailsUnsaved.json"
+    },
+    {
+      "table": "tblInvoicesHeadUnsaved",
+      "rows": 69,
+      "csv": "exports_backend/tblInvoicesHeadUnsaved.csv",
+      "json": "exports_backend/tblInvoicesHeadUnsaved.json"
+    },
+    {
+      "table": "tblProductsSubCategory",
+      "rows": 56,
+      "csv": "exports_backend/tblProductsSubCategory.csv",
+      "json": "exports_backend/tblProductsSubCategory.json"
+    },
+    {
+      "table": "tblMissingItems",
+      "rows": 47,
+      "csv": "exports_backend/tblMissingItems.csv",
+      "json": "exports_backend/tblMissingItems.json"
+    },
+    {
+      "table": "tblReturnDetails",
+      "rows": 36,
+      "csv": "exports_backend/tblReturnDetails.csv",
+      "json": "exports_backend/tblReturnDetails.json"
+    }
+  ],
+  "all_tables_rows": [
+    {
+      "table": "tblApprove",
+      "rows": 3,
+      "csv": "exports_backend/tblApprove.csv",
+      "json": "exports_backend/tblApprove.json"
+    },
+    {
+      "table": "tblBrands",
+      "rows": 115,
+      "csv": "exports_backend/tblBrands.csv",
+      "json": "exports_backend/tblBrands.json"
+    },
+    {
+      "table": "tblCapital",
+      "rows": 1,
+      "csv": "exports_backend/tblCapital.csv",
+      "json": "exports_backend/tblCapital.json"
+    },
+    {
+      "table": "tblCashMovements",
+      "rows": 8,
+      "csv": null,
+      "json": "exports_backend/tblCashMovements.json"
+    },
+    {
+      "table": "tblCashSources",
+      "rows": 3,
+      "csv": "exports_backend/tblCashSources.csv",
+      "json": "exports_backend/tblCashSources.json"
+    },
+    {
+      "table": "tblClientReceivables",
+      "rows": 150,
+      "csv": "exports_backend/tblClientReceivables.csv",
+      "json": "exports_backend/tblClientReceivables.json"
+    },
+    {
+      "table": "tblClients",
+      "rows": 584,
+      "csv": "exports_backend/tblClients.csv",
+      "json": "exports_backend/tblClients.json"
+    },
+    {
+      "table": "tblClientsCategory",
+      "rows": 2,
+      "csv": "exports_backend/tblClientsCategory.csv",
+      "json": "exports_backend/tblClientsCategory.json"
+    },
+    {
+      "table": "tblCurrencies",
+      "rows": 2,
+      "csv": "exports_backend/tblCurrencies.csv",
+      "json": "exports_backend/tblCurrencies.json"
+    },
+    {
+      "table": "tblDailyProfits",
+      "rows": 119,
+      "csv": "exports_backend/tblDailyProfits.csv",
+      "json": "exports_backend/tblDailyProfits.json"
+    },
+    {
+      "table": "tblDailySales",
+      "rows": 593,
+      "csv": "exports_backend/tblDailySales.csv",
+      "json": "exports_backend/tblDailySales.json"
+    },
+    {
+      "table": "tblEmployees",
+      "rows": 13,
+      "csv": null,
+      "json": "exports_backend/tblEmployees.json"
+    },
+    {
+      "table": "tblExpenses",
+      "rows": 310,
+      "csv": "exports_backend/tblExpenses.csv",
+      "json": "exports_backend/tblExpenses.json"
+    },
+    {
+      "table": "tblHROptions",
+      "rows": 2,
+      "csv": null,
+      "json": "exports_backend/tblHROptions.json"
+    },
+    {
+      "table": "tblInformation",
+      "rows": 1,
+      "csv": "exports_backend/tblInformation.csv",
+      "json": "exports_backend/tblInformation.json"
+    },
+    {
+      "table": "tblInvoiceCounter",
+      "rows": 1,
+      "csv": "exports_backend/tblInvoiceCounter.csv",
+      "json": "exports_backend/tblInvoiceCounter.json"
+    },
+    {
+      "table": "tblInvoicesDetails",
+      "rows": 10929,
+      "csv": "exports_backend/tblInvoicesDetails.csv",
+      "json": "exports_backend/tblInvoicesDetails.json"
+    },
+    {
+      "table": "tblInvoicesDetailsUnsaved",
+      "rows": 82,
+      "csv": "exports_backend/tblInvoicesDetailsUnsaved.csv",
+      "json": "exports_backend/tblInvoicesDetailsUnsaved.json"
+    },
+    {
+      "table": "tblInvoicesHead",
+      "rows": 8758,
+      "csv": "exports_backend/tblInvoicesHead.csv",
+      "json": "exports_backend/tblInvoicesHead.json"
+    },
+    {
+      "table": "tblInvoicesHeadUnsaved",
+      "rows": 69,
+      "csv": "exports_backend/tblInvoicesHeadUnsaved.csv",
+      "json": "exports_backend/tblInvoicesHeadUnsaved.json"
+    },
+    {
+      "table": "tblLogs",
+      "rows": 41433,
+      "csv": "exports_backend/tblLogs.csv",
+      "json": "exports_backend/tblLogs.json"
+    },
+    {
+      "table": "tblLoto",
+      "rows": 6,
+      "csv": null,
+      "json": "exports_backend/tblLoto.json"
+    },
+    {
+      "table": "tblManufacturing",
+      "rows": 5,
+      "csv": null,
+      "json": "exports_backend/tblManufacturing.json"
+    },
+    {
+      "table": "tblMissingItems",
+      "rows": 47,
+      "csv": "exports_backend/tblMissingItems.csv",
+      "json": "exports_backend/tblMissingItems.json"
+    },
+    {
+      "table": "tblPaymentDetails",
+      "rows": 9308,
+      "csv": "exports_backend/tblPaymentDetails.csv",
+      "json": "exports_backend/tblPaymentDetails.json"
+    },
+    {
+      "table": "tblPayments",
+      "rows": 8112,
+      "csv": "exports_backend/tblPayments.csv",
+      "json": "exports_backend/tblPayments.json"
+    },
+    {
+      "table": "tblPendingInvoices",
+      "rows": 16,
+      "csv": "exports_backend/tblPendingInvoices.csv",
+      "json": "exports_backend/tblPendingInvoices.json"
+    },
+    {
+      "table": "tblPNL",
+      "rows": 1259,
+      "csv": "exports_backend/tblPNL.csv",
+      "json": "exports_backend/tblPNL.json"
+    },
+    {
+      "table": "tblProducts",
+      "rows": 1744,
+      "csv": "exports_backend/tblProducts.csv",
+      "json": "exports_backend/tblProducts.json"
+    },
+    {
+      "table": "tblProductsCategory",
+      "rows": 14,
+      "csv": "exports_backend/tblProductsCategory.csv",
+      "json": "exports_backend/tblProductsCategory.json"
+    },
+    {
+      "table": "tblProductsManufacturing",
+      "rows": 10,
+      "csv": "exports_backend/tblProductsManufacturing.csv",
+      "json": "exports_backend/tblProductsManufacturing.json"
+    },
+    {
+      "table": "tblProductsSubCategory",
+      "rows": 56,
+      "csv": "exports_backend/tblProductsSubCategory.csv",
+      "json": "exports_backend/tblProductsSubCategory.json"
+    },
+    {
+      "table": "tblPunchHead",
+      "rows": 8,
+      "csv": null,
+      "json": "exports_backend/tblPunchHead.json"
+    },
+    {
+      "table": "tblPunchImport",
+      "rows": 9,
+      "csv": null,
+      "json": "exports_backend/tblPunchImport.json"
+    },
+    {
+      "table": "tblPunchTransactions",
+      "rows": 10,
+      "csv": null,
+      "json": "exports_backend/tblPunchTransactions.json"
+    },
+    {
+      "table": "tblPurchaseDetails",
+      "rows": 940,
+      "csv": "exports_backend/tblPurchaseDetails.csv",
+      "json": "exports_backend/tblPurchaseDetails.json"
+    },
+    {
+      "table": "tblPurchaseHead",
+      "rows": 158,
+      "csv": "exports_backend/tblPurchaseHead.csv",
+      "json": "exports_backend/tblPurchaseHead.json"
+    },
+    {
+      "table": "tblRates",
+      "rows": 1,
+      "csv": "exports_backend/tblRates.csv",
+      "json": "exports_backend/tblRates.json"
+    },
+    {
+      "table": "tblReturnDetails",
+      "rows": 36,
+      "csv": "exports_backend/tblReturnDetails.csv",
+      "json": "exports_backend/tblReturnDetails.json"
+    },
+    {
+      "table": "tblReturns",
+      "rows": 36,
+      "csv": "exports_backend/tblReturns.csv",
+      "json": "exports_backend/tblReturns.json"
+    },
+    {
+      "table": "tblRoles",
+      "rows": 3,
+      "csv": "exports_backend/tblRoles.csv",
+      "json": "exports_backend/tblRoles.json"
+    },
+    {
+      "table": "tblSettings",
+      "rows": 1,
+      "csv": "exports_backend/tblSettings.csv",
+      "json": "exports_backend/tblSettings.json"
+    },
+    {
+      "table": "tblStamps",
+      "rows": 147,
+      "csv": "exports_backend/tblStamps.csv",
+      "json": "exports_backend/tblStamps.json"
+    },
+    {
+      "table": "tblStatus",
+      "rows": 2,
+      "csv": "exports_backend/tblStatus.csv",
+      "json": "exports_backend/tblStatus.json"
+    },
+    {
+      "table": "tblStatus2",
+      "rows": 2,
+      "csv": "exports_backend/tblStatus2.csv",
+      "json": "exports_backend/tblStatus2.json"
+    },
+    {
+      "table": "tblStockCash",
+      "rows": 1,
+      "csv": "exports_backend/tblStockCash.csv",
+      "json": "exports_backend/tblStockCash.json"
+    },
+    {
+      "table": "tblStockCashAndPhysical",
+      "rows": 1698,
+      "csv": "exports_backend/tblStockCashAndPhysical.csv",
+      "json": "exports_backend/tblStockCashAndPhysical.json"
+    },
+    {
+      "table": "tblStockLog",
+      "rows": 4627,
+      "csv": "exports_backend/tblStockLog.csv",
+      "json": "exports_backend/tblStockLog.json"
+    },
+    {
+      "table": "tblStockWithdrawal",
+      "rows": 2,
+      "csv": "exports_backend/tblStockWithdrawal.csv",
+      "json": "exports_backend/tblStockWithdrawal.json"
+    },
+    {
+      "table": "tblSupplierPayments",
+      "rows": 9,
+      "csv": null,
+      "json": "exports_backend/tblSupplierPayments.json"
+    },
+    {
+      "table": "tblSuppliers",
+      "rows": 34,
+      "csv": "exports_backend/tblSuppliers.csv",
+      "json": "exports_backend/tblSuppliers.json"
+    },
+    {
+      "table": "tblTaxiAccounts",
+      "rows": 144,
+      "csv": "exports_backend/tblTaxiAccounts.csv",
+      "json": "exports_backend/tblTaxiAccounts.json"
+    },
+    {
+      "table": "tblTaxiCash",
+      "rows": 1,
+      "csv": "exports_backend/tblTaxiCash.csv",
+      "json": "exports_backend/tblTaxiCash.json"
+    },
+    {
+      "table": "tblTaxiTransactions",
+      "rows": 514,
+      "csv": "exports_backend/tblTaxiTransactions.csv",
+      "json": "exports_backend/tblTaxiTransactions.json"
+    },
+    {
+      "table": "tblUsers",
+      "rows": 10,
+      "csv": "exports_backend/tblUsers.csv",
+      "json": "exports_backend/tblUsers.json"
+    }
+  ]
+}

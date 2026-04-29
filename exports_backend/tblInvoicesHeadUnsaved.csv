@@ -1,0 +1,104 @@
+C_ID,ClientFullName,Description,INV_ID,I_ID,Invoice_Date,Invoice_Time,Payment_ID,Username,lbp_received,lbp_returned,lbp_total,usd_received,usd_returned,usd_total
+31,Ralph Avakian,Whish to Whish USD (1 x 15.00 USD),54,1,2025-11-04 00:00:00,1899-12-30 14:54:40,,ELIE,[],[],13425000000,[],[],150000
+15,Georges Housayne,Ogero (1 x 800000.00 LBP),211,2,2025-04-17 00:00:00,1899-12-30 10:32:25,,elie,[],[],8000000000,[],[],89385
+11,Charbel Msallem,Turquoise (4 x 2.67 USD),486,3,2025-04-25 00:00:00,1899-12-30 20:35:18,,jenny,[],[],9597600000,100000,[],106640
+11,Charbel Msallem,Writing Tablet 10 inch (2 x 8.00 USD),558,4,2025-04-28 00:00:00,1899-12-30 16:54:47,,elie,[],[],14400000000,[],[],160000
+11,Charbel Msallem,Writing Tablet 10 inch (2 x 8.00 USD),558,5,2025-04-28 00:00:00,1899-12-30 16:55:18,,elie,[],[],14400000000,[],[],160000
+68,Samir Saliba,IDM LBP (1 x 2170000.00 LBP),613,6,2025-04-29 00:00:00,1899-12-30 22:59:34,,maro,[],[],21700000000,[],[],241111
+1,Cash Customer,Touch Card 07.58 (1 x 850000.00 LBP),921,7,2025-10-05 00:00:00,1899-12-30 16:36:13,,elie,[],[],8500000000,[],[],94444
+50,Mike Barbour,Whish to Whish USD (1 x 280.00 USD),1122,8,2025-05-19 00:00:00,1899-12-30 18:18:40,,maro,[],[],252000000000,[],[],2800000
+36,Fares Andraos,Whish to Whish USD (1 x 61.00 USD),1225,9,2025-05-23 00:00:00,1899-12-30 21:35:59,,MARO,[],[],54900000000,[],[],610000
+19,Jessy Msallem,"USB-A to iPhone X89 (1 x 10.00 USD), Apple Original USB-C 20W Power Adapter (1 x 25.00 USD), Clear Protection Samsung A21S (1 x 4.00 USD), Case iPhone 14 Pro (1 x 10.00 USD), Clear Protection iPhone 14 Pro (1 x 5.00 USD), Clear Protection iPhone 14 (1 x 5.00 USD), Moxom USBC Earphones MX-EP89 (1 x 8.00 USD), Caisless Watch Protection Matte Explosion Proof 41mm (1 x 7.00 USD)",1414,10,2025-02-06 00:00:00,1899-12-30 22:19:00,,MARO,[],[],66600000000,740000,[],740000
+37,Saad Awad Master Chicken,Whish to Whish USD (1 x 200.00 USD),1561,11,2025-06-11 00:00:00,1899-12-30 19:02:56,,ROY,[],[],180000000000,[],[],2000000
+32,Tony Msallem,Whish to Whish USD (1 x 200.00 USD),1927,12,2025-06-30 00:00:00,1899-12-30 16:30:17,,jessy,[],[],180000000000,[],[],2000000
+1,Cash Customer,Samsung Galaxy A16 SM-A165F 4gb | 128gb (1 x 135.00 USD),3049,13,2025-09-04 00:00:00,1899-12-30 09:46:00,,jessy,[],[],121500000000,1350000,[],1350000
+32,Tony Msallem,Whish to Whish USD (1 x 50.00 USD),3090,14,2025-06-09 00:00:00,1899-12-30 16:14:47,,jessy,[],[],[],[],[],[]
+81,Marc Charabati,iPhone 16 Pro 2 56 GB (1 x 1275.00 USD),3571,15,2025-01-10 00:00:00,1899-12-30 19:13:07,,Unknown,[],[],1147500000000,12750000,[],12750000
+51,Abdo Kassab,Whish to Whish USD (1 x 330.00 USD),3635,16,2025-04-10 00:00:00,1899-12-30 12:48:09,,Unknown,[],[],297000000000,[],[],3300000
+46,Roger Saliba,Bag kids Unicorn pink (1 x 18.00 USD),3971,17,2025-10-23 00:00:00,1899-12-30 16:51:32,,jessy,[],[],16200000000,[],[],180000
+46,Roger Saliba,Bag kids Unicorn pink (1 x 15.00 USD),3971,18,2025-10-23 00:00:00,1899-12-30 16:51:52,,jessy,[],[],16200000000,[],[],180000
+11,Charbel Msallem,Terea Turquoise (2 x 2.80 USD),3974,19,2025-10-23 00:00:00,1899-12-30 20:08:10,,jessy,[],[],5040000000,[],[],56000
+1,Cash Customer,Alfa Internet 44 GB (1 x 2400000.00 LBP),4018,20,2025-10-27 00:00:00,1899-12-30 16:28:41,,jessy,[],[],24000000000,266667,[],266667
+1,Cash Customer,Samsung Original Charger 45W PD Adapter C to C (1 x 30.00 USD),4090,21,2025-10-30 00:00:00,1899-12-30 18:53:07,,JESSY,[],[],27000000000,1000000,[],300000
+27,Roy Jalbout,Samsung Original Charger 45W PD Adapter C to C (1 x 30.00 USD),4177,22,2025-04-11 00:00:00,1899-12-30 11:16:35,,jessy,[],[],27000000000,[],[],300000
+27,Roy Jalbout,Samsung Original Charger 45W PD Adapter C to C (1 x 30.00 USD),4177,23,2025-04-11 00:00:00,1899-12-30 11:16:53,,jessy,[],[],27000000000,[],[],300000
+84,Jason Haykal,"""  Terea Silver
+	10 x $2.80 USD",4251,24,2025-11-06 00:00:00,1899-12-30 19:19:33,,jessy,[],[],2520000000,[],[],28000
+1,Cash Customer,"""  Terea Turquoise
+	11 x $2.80 USD
+""  XO-MKF08A Ai Noise Reduction Wireless Microphone Type-C
+	1 x $25.00 USD
+""  Samsung Galaxy A56 SM-A566B/DS 8gb | 256gb
+	1 x $375.00 USD
+""  Clear Case Samsung A36 A56
+	1 x $1.00 USD
+""  Case Samsung A56
+	1 x $1.00 USD
+""  Apple Original Earpods USBC
+	1 x $20.00 USD
+""  Samsung Original Charger 45W PD
+	1 x $15.00 USD",4254,25,2025-11-07 00:00:00,1899-12-30 13:28:33,,jessy,[],[],421020000000,4678000,[],4678000
+103,Tamer Saad,"""  Whish to Whish USD
+	1 x $10.00 USD",4397,26,2025-11-12 00:00:00,1899-12-30 10:12:58,,jessy,[],[],9000000000,[],[],100000
+101,Walaa Aad,"""  Whish to Whish USD
+	1 x $2.00 USD",4626,27,2025-11-14 00:00:00,1899-12-30 11:00:22,,jessy,[],[],1800000000,[],[],20000
+126,Nadim Geagea,"""  Cash Out USD
+	1 x $17.00 USD",4640,28,2025-11-14 00:00:00,1899-12-30 13:19:19,,jessy,[],[],15300000000,[],[],170000
+80,Mhammad Askar,"""  USDT - USD Tether TRC20
+	1 x $18.00 USD",4654,29,2025-11-14 00:00:00,1899-12-30 14:31:57,,jessy,[],[],16200000000,[],[],180000
+1,Cash Customer,"""  Touch Month
+	1 x $2,500,000.00 LBP
+""  Alfa Card 04.50
+	1 x $550,000.00 LBP",4704,30,2025-11-15 00:00:00,1899-12-30 09:12:30,,JESSY,30500000000,[],30500000000,[],[],338889
+24,Sami Abou Serhal,"""  Whish to Whish USD
+	1 x $26.00 USD",4770,31,2025-11-15 00:00:00,1899-12-30 18:18:29,,jenny,[],[],23400000000,[],[],260000
+24,Sami Abou Serhal,"""  Whish to Whish USD
+	1 x $30.00 USD",4775,32,2025-11-15 00:00:00,1899-12-30 19:36:59,,jenny,[],[],27000000000,[],[],300000
+1,Cash Customer,"""  Clear Protection Samsung A34   1 × $5.00 USD
+""  Clear Protection iPhone 16 Pro   1 × $7.00 USD",4909,33,2025-11-18 00:00:00,1899-12-30 13:54:40,,jessy,[],[],10800000000,[],[],120000
+1,Cash Customer,"""  Whish to Whish USD   1 × $520.00 USD",4966,34,2025-11-18 00:00:00,1899-12-30 17:54:40,,joey,[],[],468000000000,5200000,[],5200000
+1,Cash Customer,"""  Whish to Whish USD   1 × $55.00 USD",5385,35,2025-11-25 00:00:00,1899-12-30 15:25:11,,joey,[],[],49500000000,550000,[],550000
+24,Sami Abou Serhal,"""  Cablevision LBP   1 × $4,590,000.00 LBP",5516,36,2025-11-26 00:00:00,1899-12-30 18:14:36,,jenny,[],[],45900000000,[],[],510000
+27,Roy Jalbout,"""  Whish to Whish LBP   1 × $3,100,000.00 LBP",5597,37,2025-11-28 00:00:00,1899-12-30 13:13:07,,jenny,[],[],31000000000,[],[],344444
+1,Cash Customer,"""  Whish to Whish USD   1 × $700.00 USD
+""  Whish to Whish USD   1 × $1,700.00 USD",5654,38,2025-11-28 00:00:00,1899-12-30 18:57:31,,joey,[],[],2160000000000,24000000,[],24000000
+566,Mariane Sabagh,"""  PS5 DualSense Controller Original   1 × $65.00 USD
+""  PS5 1Terra   1 × $540.00 USD",5863,39,2025-12-04 00:00:00,1899-12-30 19:13:40,,jenny,[],[],544500000000,[],[],6050000
+567,Anne Grace Gnanhoui,"""  Samsung Galaxy A07SM-A07F 6gb | 128gb   1 × $135.00 USD
+""  HONOR PAD X7   2 × $100.00 USD",5874,40,2025-12-05 00:00:00,1899-12-30 13:10:12,,jenny,[],[],301500000000,7000000,[],3350000
+73,42 Maroun Msallem,"""  Whish to Whish USD   1 × $5.00 USD",5918,41,2025-12-07 00:00:00,1899-12-30 18:45:09,,jenny,[],[],4500000000,[],[],50000
+1,Cash Customer,"""  Samsung Galaxy A17 SM-A175F 8gb | 256gb   1 × $230.00 USD",6019,42,2025-12-11 00:00:00,1899-12-30 13:08:08,,ted,[],[],207000000000,2300000,[],2300000
+1,Cash Customer,"""  Alfa Internet 7 GB   1 × $1,050,000.00 LBP",6121,43,2025-12-14 00:00:00,1899-12-30 21:07:05,,ted,[],[],10500000000,120000,[],116667
+24,Sami Abou Serhal,"""  Whish to Whish USD   1 × $50.00 USD",6134,44,2025-12-15 00:00:00,1899-12-30 13:12:42,,rony,[],[],45000000000,[],[],500000
+24,Sami Abou Serhal,"""  Whish to Whish USD   1 × $60.00 USD",6185,45,2025-12-16 00:00:00,1899-12-30 17:51:31,,ted,[],[],54000000000,[],[],600000
+24,Sami Abou Serhal,"""  Whish to Whish USD   1 × $40.00 USD",6204,46,2025-12-17 00:00:00,1899-12-30 13:37:48,,ted,[],[],36000000000,[],[],400000
+1,Cash Customer,"""  Alfa Mobile Bill   1 × $4,500,000.00 LBP",6231,47,2025-12-18 00:00:00,1899-12-30 12:38:34,,rony,[],[],45000000000,500000,[],500000
+24,Sami Abou Serhal,"""  Whish to Whish USD   1 × $50.00 USD",6300,48,2025-12-19 00:00:00,1899-12-30 15:59:42,,rony,[],[],45000000000,[],[],500000
+1,Cash Customer,"""  Samsung Galaxy A07SM-A07F 6gb | 128gb   1 × $135.00 USD",6330,49,2025-12-20 00:00:00,1899-12-30 16:29:40,,RONY,[],[],121500000000,1350000,[],1350000
+1,Cash Customer,"""  Alfa Mobile Bill   1 × $3,566,500.00 LBP
+""  Alfa Mobile Bill   1 × $1,505,250.00 LBP
+""  Ogero   1 × $3,540,000.00 LBP",6405,50,2025-12-22 00:00:00,1899-12-30 13:28:11,,joey,86117500000,[],86117500000,[],[],956861
+346,Cedric Abrahamian,"""  Samsung Galaxy A07SM-A07F 4gb | 64gb   1 × $100.00 USD",6533,51,2025-12-26 00:00:00,1899-12-30 20:21:30,,,[],[],90000000000,[],[],1000000
+346,Cedric Abrahamian,"""  Case iPhone 16   1 × $5.00 USD
+""  Caisles Privacy Protection iPhone 15 / 16   1 × $7.00 USD",6588,52,2025-12-29 00:00:00,1899-12-30 14:31:15,,RONY,[],[],10800000000,[],[],120000
+1,Cash Customer,"""  Alfa Card 22.73   1 × $2,550,000.00 LBP",6693,53,2026-01-03 00:00:00,1899-12-30 09:18:28,,joey,[],[],25500000000,500000,[],283333
+560,00 Cash,"""  Case iPhone 16   1 × $10.00 USD",6754,54,2026-01-05 00:00:00,1899-12-30 13:29:56,,ted,[],[],9000000000,100000,[],100000
+134,Joe Mouawad,"""  Whish to Whish USD   1 × $200.00 USD",6774,55,2026-01-05 00:00:00,1899-12-30 17:36:55,,rony,[],[],180000000000,[],[],2000000
+11,11 Charbel Msallem,"""  Green Lion stereo earphones type-c connector   1 × $10.00 USD",6788,56,2026-01-06 00:00:00,1899-12-30 09:01:16,,ted,[],[],9000000000,100000,[],100000
+2,Ted Kassabian,"""  Terea Purple   1 × $2.80 USD",6860,57,2026-01-08 00:00:00,1899-12-30 19:23:19,,jenny,[],[],[],[],[],[]
+102,Rita Sakr,"""  Whish to Whish USD   1 × $10.00 USD",7012,58,2026-01-14 00:00:00,1899-12-30 17:30:11,,RONY,[],[],9000000000,[],[],100000
+81,Marc Charabati,"""  Bose Headphone QC55   1 × $35.00 USD",7081,59,2026-01-17 00:00:00,1899-12-30 11:58:59,,ted,[],[],31500000000,[],[],350000
+0,,"""  Whish to Whish USD   1 × $70.00 USD",7103,60,2026-01-17 00:00:00,1899-12-30 20:03:01,,rony,[],[],63000000000,[],[],700000
+1,Cash Customer,"""  Terea Turquoise   1 × $2.80 USD",7540,61,2026-02-04 00:00:00,1899-12-30 12:05:50,,joey,[],[],2520000000,[],[],28000
+46,Roger Saliba,"""  Apple Original USB-C 20W Power Adapter   1 × $25.00 USD
+""  Apple Original USB-C to USB-C Charge Cable (1m)   1 × $15.00 USD",7710,62,2026-02-11 00:00:00,1899-12-30 14:51:35,,Norman,[],[],36000000000,[],[],400000
+99,31 Fadi Chamoun,"""  Alfa Card 07.58   1 × $900,000.00 LBP
+""  Alfa Dollars   1 × $115,000.00 LBP",7996,63,2026-02-25 00:00:00,1899-12-30 08:07:56,,rony,[],[],10150000000,[],[],112778
+464,Madeleine Korban,"""  Alfa Card 22.73   1 × $2,550,000.00 LBP",8283,64,2026-03-13 00:00:00,1899-12-30 18:35:32,,rony,[],[],25500000000,[],[],283333
+1,Cash Customer,ERROR: See application log.,8288,65,2026-03-13 00:00:00,1899-12-30 20:13:02,,rony,[],[],[],[],[],[]
+623,Anthony lahoud,"""  Terea Amber   1 × $3.00 USD",8358,66,2026-03-19 00:00:00,1899-12-30 10:06:41,,rony,[],[],2700000000,[],[],30000
+1,Cash Customer,ERROR: See application log.,8466,67,2026-03-27 00:00:00,1899-12-30 14:07:54,,RONY,[],[],[],[],[],[]
+622,areeba,"""  Cash USD   1 × $194.00 USD",8466,68,2026-03-27 00:00:00,1899-12-30 14:08:23,,RONY,[],[],174600000000,[],[],1940000
+1,Cash Customer,"""  Iqos ILUMA I Leaf Green   1 × $55.00 USD
+""  Terea Oasis Pearl   1 × $4.00 USD
+""  Terea Turquoise   1 × $3.00 USD",8493,69,2026-03-28 00:00:00,1899-12-30 18:48:05,,RONY,[],[],55800000000,620000,[],620000

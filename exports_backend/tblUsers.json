@@ -1,0 +1,92 @@
+[
+  {
+    "ID": 1,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "Charbel",
+    "PasswordHash": "40BD001563085FC35165329EA1FF5C5ECBDBBEEF",
+    "userRole": "Admin"
+  },
+  {
+    "ID": 2,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "Roy",
+    "PasswordHash": "4ED4E585A55262A0CAE1621CEF1B601238B91B17",
+    "userRole": "Supervisor"
+  },
+  {
+    "ID": 6,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "royza",
+    "PasswordHash": "4ED4E585A55262A0CAE1621CEF1B601238B91B17",
+    "userRole": "Programmer"
+  },
+  {
+    "ID": 8,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "Jenny",
+    "PasswordHash": "7A62D311B9302AC49E077DD3EB2D370B1E996A20",
+    "userRole": "Supervisor"
+  },
+  {
+    "ID": 9,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "Maro",
+    "PasswordHash": "FFE172EE63B3EAFDA83AF6E3EF5E474B194B1817",
+    "userRole": "Sales"
+  },
+  {
+    "ID": 11,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": true,
+    "username": "Ted",
+    "PasswordHash": "40BD001563085FC35165329EA1FF5C5ECBDBBEEF",
+    "userRole": "Sales"
+  },
+  {
+    "ID": 12,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "Joey",
+    "PasswordHash": "23A0538F53CCBF131A1F79874D3805AC4ED108FC",
+    "userRole": "Sales"
+  },
+  {
+    "ID": 13,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "rony",
+    "PasswordHash": "BC0D64AB9735781A3E0C72D96A7519674431C789",
+    "userRole": "Sales"
+  },
+  {
+    "ID": 14,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "Norman",
+    "PasswordHash": "04BB283624451E0C9DEF06D1C196C68BF926070F",
+    "userRole": "Sales"
+  },
+  {
+    "ID": 15,
+    "MustChangePassword": false,
+    "FailedAttempts": 0,
+    "IsLocked": false,
+    "username": "Anthony",
+    "PasswordHash": "1E2C8D4AB394329DCFF70882A5723350F1E1230E",
+    "userRole": "Sales"
+  }
+]

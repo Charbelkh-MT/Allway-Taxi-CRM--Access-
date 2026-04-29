@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 1,
+    "BalanceUSD": "150000",
+    "BalanceLBP": "10000000000",
+    "SourceName": "Cash"
+  },
+  {
+    "ID": 2,
+    "BalanceUSD": [],
+    "BalanceLBP": [],
+    "SourceName": "WhishApp"
+  },
+  {
+    "ID": 3,
+    "BalanceUSD": [],
+    "BalanceLBP": [],
+    "SourceName": "WhishSystem"
+  }
+]

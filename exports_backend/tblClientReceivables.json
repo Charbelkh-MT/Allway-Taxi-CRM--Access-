@@ -1,0 +1,1502 @@
+[
+  {
+    "ReceivableID": 1,
+    "ReceivableDate": "2025-04-24 20:49:17",
+    "AmountUSD": "$346.00",
+    "ResolvedDate": "2025-05-06 21:23:35",
+    "ClientName": "Khaled Abbara",
+    "Reason": "Check Excel File",
+    "Status": "Solved",
+    "Notes": "Check Excel File"
+  },
+  {
+    "ReceivableID": 2,
+    "ReceivableDate": "2025-04-24 21:33:36",
+    "AmountUSD": "$1,537.00",
+    "ResolvedDate": "2025-06-04 21:01:51",
+    "ClientName": "AFC",
+    "Reason": "0",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 3,
+    "ReceivableDate": "2025-05-05 19:26:41",
+    "AmountUSD": "$7.00",
+    "ResolvedDate": "2025-11-29 22:56:38",
+    "ClientName": "Anthony Abi Khalil",
+    "Reason": "Rest From Transfer",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 4,
+    "ReceivableDate": "2025-05-09 16:52:09",
+    "AmountUSD": "$2.00",
+    "ResolvedDate": "2025-06-11 12:29:19",
+    "ClientName": "Laure Habib",
+    "Reason": "Rest from Transfer",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 5,
+    "ReceivableDate": "2025-05-09 16:58:08",
+    "AmountUSD": "$10.00",
+    "ResolvedDate": "2025-05-16 21:31:02",
+    "ClientName": "Roula Tawm",
+    "Reason": "Rest from Transfer",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 6,
+    "ReceivableDate": "2025-05-12 16:03:07",
+    "AmountUSD": "$105.00",
+    "ResolvedDate": "2025-05-29 19:30:18",
+    "ClientName": "Ashraf Dagher",
+    "Reason": "Cash Out",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 7,
+    "ReceivableDate": "2025-05-26 18:44:34",
+    "AmountUSD": "$11.00",
+    "ResolvedDate": "2025-05-27 12:12:48",
+    "ClientName": "Rebecca Awwad",
+    "Reason": "Wrong Transfer",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 8,
+    "ReceivableDate": "2025-05-27 12:25:11",
+    "AmountUSD": "$250.00",
+    "ResolvedDate": "2025-05-27 15:39:39",
+    "ClientName": "Mohamad Koujan",
+    "Reason": "Whish to Whish",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 9,
+    "ReceivableDate": "2025-05-27 13:29:46",
+    "AmountUSD": "$505.00",
+    "ResolvedDate": "2025-05-27 15:19:54",
+    "ClientName": "Abdo Kassab",
+    "Reason": "Transfer",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 10,
+    "ReceivableDate": "2025-06-03 09:04:25",
+    "AmountUSD": "$179.00",
+    "ResolvedDate": "2025-06-03 20:43:10",
+    "ClientName": "Sevan Senekjian",
+    "Reason": "transfer tap tap",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 11,
+    "ReceivableDate": "2025-06-03 14:47:38",
+    "AmountUSD": "$27.00",
+    "ResolvedDate": "2025-07-05 13:47:59",
+    "ClientName": "Eliane Abou Rjeily",
+    "Reason": "3 Clocks 30 min",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 12,
+    "ReceivableDate": "2025-06-11 16:10:35",
+    "AmountUSD": "$3.00",
+    "ResolvedDate": "2025-07-15 12:41:33",
+    "ClientName": "Roula Tawm",
+    "Reason": "Rest From Transfer",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 13,
+    "ReceivableDate": "2025-06-27 11:44:53",
+    "AmountUSD": "$150.00",
+    "ResolvedDate": "2025-07-11 12:22:12",
+    "ClientName": "Cash Customer",
+    "Reason": "Madame badda teb3atelna number la nhawel",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 14,
+    "ReceivableDate": "2025-06-27 19:52:57",
+    "AmountUSD": "$66.00",
+    "ResolvedDate": "2025-07-10 13:06:01",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Covers MagSafe",
+    "Status": "Solved",
+    "Notes": "33 Cover"
+  },
+  {
+    "ReceivableID": 15,
+    "ReceivableDate": "2025-06-30 14:39:44",
+    "AmountUSD": "$22.00",
+    "ResolvedDate": "2025-07-08 13:57:34",
+    "ClientName": "Elie Ghantous",
+    "Reason": "Mobile Repair",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 16,
+    "ReceivableDate": "2025-06-30 20:54:39",
+    "AmountUSD": "$28.00",
+    "ResolvedDate": "2025-07-02 17:28:18",
+    "ClientName": "Habib Korban",
+    "Reason": "USDT",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 17,
+    "ReceivableDate": "2025-07-01 20:09:41",
+    "AmountUSD": "$70.00",
+    "ResolvedDate": "2025-07-03 20:57:45",
+    "ClientName": "Ghida Abdel Nour",
+    "Reason": "Transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 18,
+    "ReceivableDate": "2025-07-02 17:28:08",
+    "AmountUSD": "$118.00",
+    "ResolvedDate": "2025-07-03 14:04:22",
+    "ClientName": "Claire Saade",
+    "Reason": "Rest of transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 19,
+    "ReceivableDate": "2025-07-02 17:28:20",
+    "AmountUSD": "$118.00",
+    "ResolvedDate": "2025-07-02 17:28:26",
+    "ClientName": "Claire Saade",
+    "Reason": "Rest of transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 20,
+    "ReceivableDate": "2025-07-04 10:11:18",
+    "AmountUSD": "$45.00",
+    "ResolvedDate": "2025-07-04 18:38:43",
+    "ClientName": "Georges Ghanem Moteur",
+    "Reason": "Moteur Payment",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 21,
+    "ReceivableDate": "2025-07-05 11:01:14",
+    "AmountUSD": "$188.00",
+    "ResolvedDate": "2025-07-15 11:22:39",
+    "ClientName": "Lena Hajj",
+    "Reason": "Water Invoice",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 22,
+    "ReceivableDate": "2025-07-05 11:31:34",
+    "AmountUSD": "$200.00",
+    "ResolvedDate": "2025-07-12 12:06:44",
+    "ClientName": "Sevan Senekjian",
+    "Reason": "Transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 23,
+    "ReceivableDate": "2025-07-05 11:32:25",
+    "AmountUSD": "$1,609.00",
+    "ResolvedDate": "2025-07-08 13:34:25",
+    "ClientName": "Habib Korban",
+    "Reason": "USDT",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 24,
+    "ReceivableDate": "2025-07-05 11:32:38",
+    "AmountUSD": "$1,750.00",
+    "ResolvedDate": "2025-07-08 13:32:36",
+    "ClientName": "Roy Jalbout",
+    "Reason": "Cash to Maroun",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 25,
+    "ReceivableDate": "2025-07-05 11:33:20",
+    "AmountUSD": "$780.00",
+    "ResolvedDate": "2025-07-08 15:13:18",
+    "ClientName": "Jessy Msallem",
+    "Reason": "Cash",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 26,
+    "ReceivableDate": "2025-07-05 17:07:38",
+    "AmountUSD": "$197.00",
+    "ResolvedDate": "2025-07-05 18:34:49",
+    "ClientName": "Alain Aoun",
+    "Reason": "Transfer 190 + 5 to kenya",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 27,
+    "ReceivableDate": "2025-07-05 18:19:42",
+    "AmountUSD": "$8.00",
+    "ResolvedDate": "2025-07-08 17:54:27",
+    "ClientName": "Ramy Richani",
+    "Reason": "Moteur Fees",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 28,
+    "ReceivableDate": "2025-07-07 16:12:42",
+    "AmountUSD": "$95.00",
+    "ResolvedDate": "2025-07-22 13:56:46",
+    "ClientName": "Mirna Haidar",
+    "Reason": "Rest of transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 29,
+    "ReceivableDate": "2025-07-09 11:45:55",
+    "AmountUSD": "$151.25",
+    "ResolvedDate": "2025-07-10 13:06:09",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Purchasing 4211",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 30,
+    "ReceivableDate": "2025-07-10 10:36:48",
+    "AmountUSD": "$1,003.00",
+    "ResolvedDate": "2025-07-10 15:20:28",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 31,
+    "ReceivableDate": "2025-07-11 15:03:04",
+    "AmountUSD": "$5.00",
+    "ResolvedDate": "2025-07-12 20:59:13",
+    "ClientName": "Elie Ghantous",
+    "Reason": "Services",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 32,
+    "ReceivableDate": "2025-07-11 15:21:35",
+    "AmountUSD": "$2,250.00",
+    "ResolvedDate": "2025-07-11 17:01:12",
+    "ClientName": "Frances Halawani",
+    "Reason": "Transfers",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 33,
+    "ReceivableDate": "2025-07-11 17:01:03",
+    "AmountUSD": "$803.00",
+    "ResolvedDate": "2025-07-14 15:34:04",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 34,
+    "ReceivableDate": "2025-07-11 17:29:11",
+    "AmountUSD": "$6.00",
+    "ResolvedDate": "2025-07-15 14:02:29",
+    "ClientName": "Eliane Abou Rjeily",
+    "Reason": "10mins",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 35,
+    "ReceivableDate": "2025-07-11 17:29:22",
+    "AmountUSD": "$6.00",
+    "ResolvedDate": "2025-07-11 17:29:39",
+    "ClientName": "Eliane Abou Rjeily",
+    "Reason": "10mins",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 36,
+    "ReceivableDate": "2025-07-12 16:51:53",
+    "AmountUSD": "$300.00",
+    "ResolvedDate": "2025-07-12 19:25:34",
+    "ClientName": "Roger Saliba",
+    "Reason": "Alexi Toufic",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 37,
+    "ReceivableDate": "2025-07-14 13:47:11",
+    "AmountUSD": "$70.00",
+    "ResolvedDate": "2025-08-01 11:37:12",
+    "ClientName": "Ghida Abdel Nour",
+    "Reason": "TRANSFER",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 38,
+    "ReceivableDate": "2025-07-14 16:19:27",
+    "AmountUSD": "$2,511.00",
+    "ResolvedDate": "2025-07-18 12:26:25",
+    "ClientName": "Habib Korban",
+    "Reason": "USDT",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 39,
+    "ReceivableDate": "2025-07-14 21:48:54",
+    "AmountUSD": "$100.00",
+    "ResolvedDate": "2025-07-15 10:57:04",
+    "ClientName": "Vladimir Maalouf",
+    "Reason": "need 98 usdt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 40,
+    "ReceivableDate": "2025-07-14 21:58:33",
+    "AmountUSD": "$110.00",
+    "ResolvedDate": "2025-07-15 10:13:55",
+    "ClientName": "Roy Jalbout",
+    "Reason": "selling phone to gilbert",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 41,
+    "ReceivableDate": "2025-07-17 09:21:23",
+    "AmountUSD": "$248.00",
+    "ResolvedDate": "2025-07-18 12:26:22",
+    "ClientName": "Sola Nohra",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 42,
+    "ReceivableDate": "2025-07-18 16:45:26",
+    "AmountUSD": "$702.00",
+    "ResolvedDate": "2025-07-19 12:28:25",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 43,
+    "ReceivableDate": "2025-07-19 11:37:19",
+    "AmountUSD": "$45.00",
+    "ResolvedDate": "2025-07-31 17:20:55",
+    "ClientName": "Ashraf Dagher",
+    "Reason": "omt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 44,
+    "ReceivableDate": "2025-07-19 12:04:53",
+    "AmountUSD": "$82.00",
+    "ResolvedDate": "2025-07-19 14:21:15",
+    "ClientName": "Omar Khoury",
+    "Reason": "terranet",
+    "Status": "Solved",
+    "Notes": "bill not paid"
+  },
+  {
+    "ReceivableID": 45,
+    "ReceivableDate": "2025-07-19 14:56:49",
+    "AmountUSD": "$1,003.00",
+    "ResolvedDate": "2025-07-22 15:42:13",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 46,
+    "ReceivableDate": "2025-07-21 13:30:13",
+    "AmountUSD": "$150.00",
+    "ResolvedDate": "2025-07-23 20:59:21",
+    "ClientName": "Claire Saade",
+    "Reason": "transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 47,
+    "ReceivableDate": "2025-07-21 13:32:17",
+    "AmountUSD": "$350.00",
+    "ResolvedDate": "2025-07-22 20:56:48",
+    "ClientName": "12 Maroun Msallem",
+    "Reason": "transfer water",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 48,
+    "ReceivableDate": "2025-07-21 15:26:38",
+    "AmountUSD": "$545.00",
+    "ResolvedDate": "2025-07-21 19:04:33",
+    "ClientName": "Ola Bakro",
+    "Reason": "transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 49,
+    "ReceivableDate": "2025-07-21 21:18:27",
+    "AmountUSD": "$200.00",
+    "ResolvedDate": "2025-07-22 20:08:05",
+    "ClientName": "Nelly Jabbour Nasr",
+    "Reason": "transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 50,
+    "ReceivableDate": "2025-07-22 18:32:23",
+    "AmountUSD": "$300.00",
+    "ResolvedDate": "2025-07-23 18:02:16",
+    "ClientName": "Juliette Harik",
+    "Reason": "transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 51,
+    "ReceivableDate": "2025-07-23 15:17:44",
+    "AmountUSD": "$185.25",
+    "ResolvedDate": "2025-08-02 16:25:02",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Old Camera and new invoice",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 52,
+    "ReceivableDate": "2025-07-25 17:25:35",
+    "AmountUSD": "$784.00",
+    "ResolvedDate": "2025-07-25 20:53:57",
+    "ClientName": "Dory Habib",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 53,
+    "ReceivableDate": "2025-07-25 21:47:44",
+    "AmountUSD": "$750.00",
+    "ResolvedDate": "2025-07-26 21:14:51",
+    "ClientName": "Jack Jay Saliba",
+    "Reason": "to kenya (Nancy)",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 54,
+    "ReceivableDate": "2025-07-28 11:10:30",
+    "AmountUSD": "$2,100.00",
+    "ResolvedDate": "2025-08-26 18:25:03",
+    "ClientName": "12 Maroun Msallem",
+    "Reason": "cash",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 55,
+    "ReceivableDate": "2025-07-28 20:19:13",
+    "AmountUSD": "$150.00",
+    "ResolvedDate": "2025-07-29 21:02:50",
+    "ClientName": "Claire Saade",
+    "Reason": "transfer to ethiopia",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 56,
+    "ReceivableDate": "2025-07-28 20:30:16",
+    "AmountUSD": "$606.00",
+    "ResolvedDate": "2025-07-29 11:25:58",
+    "ClientName": "Jack Jay Saliba",
+    "Reason": "transfer to kenya",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 57,
+    "ReceivableDate": "2025-07-28 20:30:47",
+    "AmountUSD": "$205.00",
+    "ResolvedDate": "2025-07-29 11:08:13",
+    "ClientName": "Rami Semaan",
+    "Reason": "transfer to kenya",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 58,
+    "ReceivableDate": "2025-07-29 10:18:29",
+    "AmountUSD": "$650.00",
+    "ResolvedDate": "2025-07-29 21:43:22",
+    "ClientName": "Tony Msallem",
+    "Reason": "plus",
+    "Status": "Solved",
+    "Notes": "plus"
+  },
+  {
+    "ReceivableID": 59,
+    "ReceivableDate": "2025-07-29 13:39:10",
+    "AmountUSD": "$757.00",
+    "ResolvedDate": "2025-07-29 17:10:47",
+    "ClientName": "Jack Jay Saliba",
+    "Reason": "kenya",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 60,
+    "ReceivableDate": "2025-07-29 13:40:42",
+    "AmountUSD": "$800.00",
+    "ResolvedDate": "2025-07-29 17:49:47",
+    "ClientName": "Maro Msallem",
+    "Reason": "chabbou7",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 61,
+    "ReceivableDate": "2025-07-29 17:44:07",
+    "AmountUSD": "$6.00",
+    "ResolvedDate": "2025-07-29 21:02:56",
+    "ClientName": "Eliane Karaki",
+    "Reason": "10 min",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 62,
+    "ReceivableDate": "2025-07-30 10:58:28",
+    "AmountUSD": "$9.00",
+    "ResolvedDate": "2025-08-20 10:33:45",
+    "ClientName": "Eliane Abou Rjeily",
+    "Reason": "30 min",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 63,
+    "ReceivableDate": "2025-07-30 19:29:56",
+    "AmountUSD": "$6,300.00",
+    "ResolvedDate": "2025-07-31 11:23:43",
+    "ClientName": "Rowan Najem",
+    "Reason": "2 transfers",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 64,
+    "ReceivableDate": "2025-08-01 10:35:53",
+    "AmountUSD": "$1,900.00",
+    "ResolvedDate": "2025-08-01 16:34:22",
+    "ClientName": "Charbel Msallem",
+    "Reason": "w2w",
+    "Status": "Solved",
+    "Notes": "w2w"
+  },
+  {
+    "ReceivableID": 65,
+    "ReceivableDate": "2025-08-01 17:35:22",
+    "AmountUSD": "$4,100.00",
+    "ResolvedDate": "2025-08-26 18:25:04",
+    "ClientName": "Charbel Msallem",
+    "Reason": "w2w",
+    "Status": "Solved",
+    "Notes": "w2w"
+  },
+  {
+    "ReceivableID": 66,
+    "ReceivableDate": "2025-08-05 19:38:29",
+    "AmountUSD": "$2,420.00",
+    "ResolvedDate": "2025-08-06 09:22:45",
+    "ClientName": "Ralph Eid",
+    "Reason": "meliye",
+    "Status": "Solved",
+    "Notes": "cash"
+  },
+  {
+    "ReceivableID": 67,
+    "ReceivableDate": "2025-08-05 20:54:05",
+    "AmountUSD": "$50.00",
+    "ResolvedDate": "2025-08-06 16:00:03",
+    "ClientName": "Mike Semaan",
+    "Reason": "Moteur",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 68,
+    "ReceivableDate": "2025-08-08 13:52:27",
+    "AmountUSD": "$4.00",
+    "ResolvedDate": "2025-11-29 22:56:41",
+    "ClientName": "Roula Tawm",
+    "Reason": "rest from transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 69,
+    "ReceivableDate": "2025-08-09 18:52:05",
+    "AmountUSD": "$100.00",
+    "ResolvedDate": "2025-08-11 20:56:34",
+    "ClientName": "Dory Nicolas",
+    "Reason": "4 Vapes",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 70,
+    "ReceivableDate": "2025-08-13 15:43:38",
+    "AmountUSD": "$200.00",
+    "ResolvedDate": "2025-08-13 18:14:38",
+    "ClientName": "Omar Khoury",
+    "Reason": "transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 71,
+    "ReceivableDate": "2025-08-16 17:27:28",
+    "AmountUSD": "$445.50",
+    "ResolvedDate": "2025-09-03 15:56:52",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Rest From Last Invoice",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 72,
+    "ReceivableDate": "2025-08-18 15:38:19",
+    "AmountUSD": "$1,503.00",
+    "ResolvedDate": "2025-08-19 12:52:16",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 73,
+    "ReceivableDate": "2025-08-18 18:39:36",
+    "AmountUSD": "$20.00",
+    "ResolvedDate": "2025-08-20 08:57:51",
+    "ClientName": "Ramy Richani",
+    "Reason": "Moteur",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 74,
+    "ReceivableDate": "2025-08-19 19:54:01",
+    "AmountUSD": "$40.00",
+    "ResolvedDate": "2025-08-22 21:09:18",
+    "ClientName": "Dory Nicolas",
+    "Reason": "Vape x1",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 75,
+    "ReceivableDate": "2025-08-19 21:46:43",
+    "AmountUSD": "$1,260.00",
+    "ResolvedDate": "2025-08-20 12:39:39",
+    "ClientName": "Elie Cell",
+    "Reason": "iPhone 16 Pro",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 76,
+    "ReceivableDate": "2025-08-21 20:35:06",
+    "AmountUSD": "$550.00",
+    "ResolvedDate": "2025-08-21 21:20:34",
+    "ClientName": "Omar Khoury",
+    "Reason": "Transfer Charbel",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 77,
+    "ReceivableDate": "2025-08-26 18:27:06",
+    "AmountUSD": "$1,000.00",
+    "ResolvedDate": "2025-08-28 08:33:30",
+    "ClientName": "Habib Korban",
+    "Reason": "w2w",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 78,
+    "ReceivableDate": "2025-08-27 14:24:28",
+    "AmountUSD": "$17.50",
+    "ResolvedDate": "2025-10-16 11:58:47",
+    "ClientName": "Eliane Abou Rjeily",
+    "Reason": "30 MIN",
+    "Status": "Solved",
+    "Notes": "30 MIN"
+  },
+  {
+    "ReceivableID": 79,
+    "ReceivableDate": "2025-08-27 20:32:57",
+    "AmountUSD": "$302.00",
+    "ResolvedDate": "2025-08-28 08:33:28",
+    "ClientName": "Habib Korban",
+    "Reason": "USDT to Tony",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 80,
+    "ReceivableDate": "2025-08-28 13:47:21",
+    "AmountUSD": "$2,000.00",
+    "ResolvedDate": "2025-08-29 10:15:26",
+    "ClientName": "Habib Korban",
+    "Reason": "usd",
+    "Status": "Solved",
+    "Notes": "usd"
+  },
+  {
+    "ReceivableID": 81,
+    "ReceivableDate": "2025-08-28 14:11:11",
+    "AmountUSD": "$300.00",
+    "ResolvedDate": "2025-08-28 18:26:28",
+    "ClientName": "Omar Khoury",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 82,
+    "ReceivableDate": "2025-09-01 13:06:38",
+    "AmountUSD": "$2,500.00",
+    "ResolvedDate": "2025-09-04 14:03:36",
+    "ClientName": "Habib Korban",
+    "Reason": "transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 83,
+    "ReceivableDate": "2025-09-01 15:56:33",
+    "AmountUSD": "$300.00",
+    "ResolvedDate": "2025-09-01 16:18:35",
+    "ClientName": "Roy Mouawad",
+    "Reason": "transfer",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 84,
+    "ReceivableDate": "2025-09-02 12:15:43",
+    "AmountUSD": "$152.00",
+    "ResolvedDate": "2025-09-02 13:45:20",
+    "ClientName": "Nadim Geagea",
+    "Reason": "1 TRANSACTION",
+    "Status": "Solved",
+    "Notes": "1"
+  },
+  {
+    "ReceivableID": 85,
+    "ReceivableDate": "2025-09-03 00:00:00",
+    "AmountUSD": "$63.00",
+    "ResolvedDate": "2025-09-16 18:32:51",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 2"
+  },
+  {
+    "ReceivableID": 86,
+    "ReceivableDate": "2025-09-04 10:07:23",
+    "AmountUSD": "$20.00",
+    "ResolvedDate": "2025-09-08 17:19:10",
+    "ClientName": "Dory Habib",
+    "Reason": "1 VAPE",
+    "Status": "Solved",
+    "Notes": "1 VAPE"
+  },
+  {
+    "ReceivableID": 87,
+    "ReceivableDate": "2025-09-04 14:10:18",
+    "AmountUSD": "$980.00",
+    "ResolvedDate": "2025-09-04 20:46:49",
+    "ClientName": "Jessy Msallem",
+    "Reason": "cash",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 88,
+    "ReceivableDate": "2025-09-04 14:33:32",
+    "AmountUSD": "$3,000.00",
+    "ResolvedDate": "2025-09-06 14:48:21",
+    "ClientName": "Habib Korban",
+    "Reason": "1",
+    "Status": "Solved",
+    "Notes": "1"
+  },
+  {
+    "ReceivableID": 89,
+    "ReceivableDate": "2025-09-05 10:20:04",
+    "AmountUSD": "$700.00",
+    "ResolvedDate": "2025-09-05 18:51:30",
+    "ClientName": "Jessy Msallem",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 90,
+    "ReceivableDate": "2025-09-06 15:24:23",
+    "AmountUSD": "$600.00",
+    "ResolvedDate": "2025-09-06 16:58:10",
+    "ClientName": "Jessy Msallem",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 91,
+    "ReceivableDate": "2025-09-06 18:56:55",
+    "AmountUSD": "$3,000.00",
+    "ResolvedDate": "2025-09-20 12:34:41",
+    "ClientName": "Charbel Msallem",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 92,
+    "ReceivableDate": "2025-09-08 17:03:20",
+    "AmountUSD": "$2,000.00",
+    "ResolvedDate": "2025-09-12 09:49:41",
+    "ClientName": "Habib Korban",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 93,
+    "ReceivableDate": "2025-09-11 08:48:17",
+    "AmountUSD": "$319.00",
+    "ResolvedDate": "2025-09-11 14:04:42",
+    "ClientName": "Sola Nohra",
+    "Reason": "alfa bill",
+    "Status": "Solved",
+    "Notes": "alfa bill -"
+  },
+  {
+    "ReceivableID": 94,
+    "ReceivableDate": "2025-09-11 09:10:32",
+    "AmountUSD": "$650.00",
+    "ResolvedDate": "2025-09-11 19:07:44",
+    "ClientName": "Jessy Msallem",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 95,
+    "ReceivableDate": "2025-09-11 09:10:39",
+    "AmountUSD": "$650.00",
+    "ResolvedDate": "2025-09-11 11:40:57",
+    "ClientName": "Jessy Msallem",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 96,
+    "ReceivableDate": "2025-09-11 09:10:52",
+    "AmountUSD": "$650.00",
+    "ResolvedDate": "2025-09-11 11:41:01",
+    "ClientName": "Jessy Msallem",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 97,
+    "ReceivableDate": "2025-09-15 08:33:31",
+    "AmountUSD": "$502.00",
+    "ResolvedDate": "2025-09-16 14:36:37",
+    "ClientName": "Omar Khoury",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 98,
+    "ReceivableDate": "2025-09-17 09:44:49",
+    "AmountUSD": "$95.00",
+    "ResolvedDate": "2025-09-17 12:49:32",
+    "ClientName": "Sevan Senekjian",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "elie al hajj"
+  },
+  {
+    "ReceivableID": 99,
+    "ReceivableDate": "2025-09-17 00:00:00",
+    "AmountUSD": "$298.00",
+    "ResolvedDate": "2025-09-29 17:52:35",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 15"
+  },
+  {
+    "ReceivableID": 100,
+    "ReceivableDate": "2025-09-17 12:56:37",
+    "AmountUSD": "$27.00",
+    "ResolvedDate": "2025-09-18 17:48:34",
+    "ClientName": "Sevan Senekjian",
+    "Reason": "44 GB",
+    "Status": "Solved",
+    "Notes": "PREPAID"
+  },
+  {
+    "ReceivableID": 101,
+    "ReceivableDate": "2025-09-19 08:44:45",
+    "AmountUSD": "$10.00",
+    "ResolvedDate": "2025-09-20 17:46:26",
+    "ClientName": "Ahmad Koz",
+    "Reason": "cash",
+    "Status": "Solved",
+    "Notes": "cash"
+  },
+  {
+    "ReceivableID": 102,
+    "ReceivableDate": "2025-09-19 00:00:00",
+    "AmountUSD": "$158.00",
+    "ResolvedDate": "2025-09-30 15:17:24",
+    "ClientName": "HONOR",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 20"
+  },
+  {
+    "ReceivableID": 103,
+    "ReceivableDate": "2025-09-22 08:20:51",
+    "AmountUSD": "$248.00",
+    "ResolvedDate": "2025-09-22 11:00:43",
+    "ClientName": "Sevan Senekjian",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 104,
+    "ReceivableDate": "2025-09-23 16:25:06",
+    "AmountUSD": "$503.00",
+    "ResolvedDate": "2025-09-25 08:25:40",
+    "ClientName": "Habib Korban",
+    "Reason": "USDT",
+    "Status": "Solved",
+    "Notes": "USDT"
+  },
+  {
+    "ReceivableID": 105,
+    "ReceivableDate": "2025-09-25 11:12:44",
+    "AmountUSD": "$151.00",
+    "ResolvedDate": "2025-09-27 11:14:34",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "usdt"
+  },
+  {
+    "ReceivableID": 106,
+    "ReceivableDate": "2025-09-25 00:00:00",
+    "AmountUSD": "$79.50",
+    "ResolvedDate": "2025-09-29 19:03:56",
+    "ClientName": "Jawad Matta",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 26"
+  },
+  {
+    "ReceivableID": 107,
+    "ReceivableDate": "2025-09-26 18:27:51",
+    "AmountUSD": "$503.00",
+    "ResolvedDate": "2025-09-27 11:14:36",
+    "ClientName": "Habib Korban",
+    "Reason": "USDT",
+    "Status": "Solved",
+    "Notes": "USDT"
+  },
+  {
+    "ReceivableID": 108,
+    "ReceivableDate": "2025-09-29 13:23:03",
+    "AmountUSD": "$347.00",
+    "ResolvedDate": "2025-09-30 09:25:23",
+    "ClientName": "Walid Khater",
+    "Reason": "MAY 2 BILL",
+    "Status": "Solved",
+    "Notes": "2"
+  },
+  {
+    "ReceivableID": 109,
+    "ReceivableDate": "2025-09-29 17:57:50",
+    "AmountUSD": "$90.00",
+    "ResolvedDate": "2025-09-29 19:59:40",
+    "ClientName": "Jean Paul katerjian",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 110,
+    "ReceivableDate": "2025-09-29 19:19:13",
+    "AmountUSD": "$1,159.00",
+    "ResolvedDate": "2025-10-01 17:29:40",
+    "ClientName": "Habib Korban",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "usdt"
+  },
+  {
+    "ReceivableID": 111,
+    "ReceivableDate": "2025-09-29 19:19:28",
+    "AmountUSD": "$152.00",
+    "ResolvedDate": "2025-09-29 19:53:39",
+    "ClientName": "Habib Korban",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "usdt"
+  },
+  {
+    "ReceivableID": 112,
+    "ReceivableDate": "2025-10-02 00:00:00",
+    "AmountUSD": "$64.50",
+    "ResolvedDate": "2025-10-09 15:34:37",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 36"
+  },
+  {
+    "ReceivableID": 113,
+    "ReceivableDate": "2025-10-04 00:00:00",
+    "AmountUSD": "$331.50",
+    "ResolvedDate": "2025-10-09 15:34:39",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 37"
+  },
+  {
+    "ReceivableID": 114,
+    "ReceivableDate": "2025-10-08 00:00:00",
+    "AmountUSD": "$155.00",
+    "ResolvedDate": "2025-10-09 15:34:40",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 40"
+  },
+  {
+    "ReceivableID": 115,
+    "ReceivableDate": "2025-10-09 00:00:00",
+    "AmountUSD": "$414.50",
+    "ResolvedDate": "2025-10-17 19:26:42",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 42"
+  },
+  {
+    "ReceivableID": 116,
+    "ReceivableDate": "2025-10-10 00:00:00",
+    "AmountUSD": "$58.00",
+    "ResolvedDate": "2025-10-17 19:25:11",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 45"
+  },
+  {
+    "ReceivableID": 117,
+    "ReceivableDate": "2025-10-13 09:28:48",
+    "AmountUSD": "$259.58",
+    "ResolvedDate": "2025-10-13 13:32:12",
+    "ClientName": "Sola Nohra",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 118,
+    "ReceivableDate": "2025-10-13 10:04:46",
+    "AmountUSD": "$506.00",
+    "ResolvedDate": "2025-10-14 13:04:33",
+    "ClientName": "Habib Korban",
+    "Reason": "USDT",
+    "Status": "Solved",
+    "Notes": "USDT"
+  },
+  {
+    "ReceivableID": 119,
+    "ReceivableDate": "2025-10-13 13:39:12",
+    "AmountUSD": "$70.00",
+    "ResolvedDate": "2025-10-13 16:17:03",
+    "ClientName": "Ghida Abdel Nour",
+    "Reason": ".",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 120,
+    "ReceivableDate": "2025-10-13 18:59:42",
+    "AmountUSD": "$217.00",
+    "ResolvedDate": "2025-10-14 13:04:35",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "0"
+  },
+  {
+    "ReceivableID": 121,
+    "ReceivableDate": "2025-10-15 17:15:00",
+    "AmountUSD": "$3,000.00",
+    "ResolvedDate": "2025-10-15 18:12:48",
+    "ClientName": "Charbel Msallem",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 122,
+    "ReceivableDate": "2025-10-15 18:13:03",
+    "AmountUSD": "$3,000.00",
+    "ResolvedDate": null,
+    "ClientName": "Charbel Msallem",
+    "Reason": "*",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 123,
+    "ReceivableDate": "2025-10-18 00:00:00",
+    "AmountUSD": "$209.00",
+    "ResolvedDate": "2025-10-28 18:06:42",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 51"
+  },
+  {
+    "ReceivableID": 124,
+    "ReceivableDate": "2025-10-18 00:00:00",
+    "AmountUSD": "$112.75",
+    "ResolvedDate": "2025-10-30 18:08:58",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 52"
+  },
+  {
+    "ReceivableID": 125,
+    "ReceivableDate": "2025-10-27 10:56:30",
+    "AmountUSD": "$24.00",
+    "ResolvedDate": "2025-12-18 10:56:36",
+    "ClientName": "Eliane Abou Rjeily",
+    "Reason": "3",
+    "Status": "Solved",
+    "Notes": "3 small"
+  },
+  {
+    "ReceivableID": 126,
+    "ReceivableDate": "2025-10-27 12:54:08",
+    "AmountUSD": "$505.00",
+    "ResolvedDate": "2025-10-28 08:18:27",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 127,
+    "ReceivableDate": "2025-10-28 09:22:43",
+    "AmountUSD": "$34.56",
+    "ResolvedDate": "2025-11-03 08:34:01",
+    "ClientName": "Patrick Abdel Karim",
+    "Reason": "bills to be paid",
+    "Status": "Solved",
+    "Notes": "on Monday"
+  },
+  {
+    "ReceivableID": 128,
+    "ReceivableDate": "2025-10-28 16:19:51",
+    "AmountUSD": "$101.00",
+    "ResolvedDate": "2025-10-29 12:17:12",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "usdt"
+  },
+  {
+    "ReceivableID": 129,
+    "ReceivableDate": "2025-10-28 18:35:55",
+    "AmountUSD": "$303.00",
+    "ResolvedDate": "2025-10-29 12:17:13",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "pending"
+  },
+  {
+    "ReceivableID": 130,
+    "ReceivableDate": "2025-10-28 18:48:00",
+    "AmountUSD": "$505.00",
+    "ResolvedDate": "2025-10-29 12:17:14",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "pending"
+  },
+  {
+    "ReceivableID": 131,
+    "ReceivableDate": "2025-10-31 00:00:00",
+    "AmountUSD": "$400.00",
+    "ResolvedDate": "2025-11-06 13:49:22",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 66"
+  },
+  {
+    "ReceivableID": 132,
+    "ReceivableDate": "2025-11-01 11:43:05",
+    "AmountUSD": "$205.00",
+    "ResolvedDate": "2025-11-01 17:56:58",
+    "ClientName": "GEORGE BOU FARHAT",
+    "Reason": "KENYA TRANSFER",
+    "Status": "Solved",
+    "Notes": "TRANSFER"
+  },
+  {
+    "ReceivableID": 133,
+    "ReceivableDate": "2025-11-01 13:40:41",
+    "AmountUSD": "$10.00",
+    "ResolvedDate": null,
+    "ClientName": "RABIHAA SEMEHA",
+    "Reason": "SHAHID 9 MONTH",
+    "Status": "Pending",
+    "Notes": "*"
+  },
+  {
+    "ReceivableID": 134,
+    "ReceivableDate": "2025-11-03 17:59:58",
+    "AmountUSD": "$1,200.00",
+    "ResolvedDate": "2025-11-06 12:37:28",
+    "ClientName": "Habib Korban",
+    "Reason": "w2w",
+    "Status": "Solved",
+    "Notes": "w2w"
+  },
+  {
+    "ReceivableID": 135,
+    "ReceivableDate": "2025-11-08 00:00:00",
+    "AmountUSD": "$749.75",
+    "ResolvedDate": "2025-11-20 15:44:32",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 74"
+  },
+  {
+    "ReceivableID": 136,
+    "ReceivableDate": "2025-11-08 00:00:00",
+    "AmountUSD": "$27.50",
+    "ResolvedDate": "2025-11-20 15:44:34",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 75"
+  },
+  {
+    "ReceivableID": 137,
+    "ReceivableDate": "2025-11-10 13:25:58",
+    "AmountUSD": "$600.00",
+    "ResolvedDate": "2025-11-12 08:44:14",
+    "ClientName": "Habib Korban",
+    "Reason": "w2w",
+    "Status": "Solved",
+    "Notes": "w2w"
+  },
+  {
+    "ReceivableID": 138,
+    "ReceivableDate": "2025-11-13 11:37:13",
+    "AmountUSD": "$535.00",
+    "ResolvedDate": "2025-11-13 15:44:17",
+    "ClientName": "Ola Bakro",
+    "Reason": "cash",
+    "Status": "Solved",
+    "Notes": "cash"
+  },
+  {
+    "ReceivableID": 139,
+    "ReceivableDate": "2025-11-13 15:50:46",
+    "AmountUSD": "$3,015.00",
+    "ResolvedDate": "2025-11-14 13:05:15",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "usdt"
+  },
+  {
+    "ReceivableID": 140,
+    "ReceivableDate": "2025-11-17 12:13:02",
+    "AmountUSD": "$30.00",
+    "ResolvedDate": "2025-12-04 15:06:25",
+    "ClientName": "Ghida Abdel Nour",
+    "Reason": "transaction",
+    "Status": "Solved",
+    "Notes": "usd"
+  },
+  {
+    "ReceivableID": 141,
+    "ReceivableDate": "2025-11-18 00:00:00",
+    "AmountUSD": "$35.00",
+    "ResolvedDate": "2025-11-20 08:17:25",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 85"
+  },
+  {
+    "ReceivableID": 142,
+    "ReceivableDate": "2025-11-20 00:00:00",
+    "AmountUSD": "$333.00",
+    "ResolvedDate": "2025-12-16 14:48:50",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 86"
+  },
+  {
+    "ReceivableID": 143,
+    "ReceivableDate": "2025-11-20 00:00:00",
+    "AmountUSD": "$72.00",
+    "ResolvedDate": "2025-12-16 14:48:49",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Solved",
+    "Notes": "Purchase ID: 87"
+  },
+  {
+    "ReceivableID": 144,
+    "ReceivableDate": "2025-11-29 22:56:05",
+    "AmountUSD": "$-4.00",
+    "ResolvedDate": "2025-12-16 14:48:47",
+    "ClientName": "Ahmad Koz",
+    "Reason": "Moxom Power Bank costed 19 instead of 17",
+    "Status": "Solved",
+    "Notes": "."
+  },
+  {
+    "ReceivableID": 145,
+    "ReceivableDate": "2025-12-02 14:38:22",
+    "AmountUSD": "$503.00",
+    "ResolvedDate": "2025-12-06 16:01:47",
+    "ClientName": "Habib Korban",
+    "Reason": "usdt",
+    "Status": "Solved",
+    "Notes": "bdo yehun cash"
+  },
+  {
+    "ReceivableID": 146,
+    "ReceivableDate": "2025-12-09 22:15:54",
+    "AmountUSD": "$2,420.00",
+    "ResolvedDate": "2025-12-17 11:02:17",
+    "ClientName": "11 Charbel Msallem",
+    "Reason": "cash",
+    "Status": "Solved",
+    "Notes": "cash"
+  },
+  {
+    "ReceivableID": 147,
+    "ReceivableDate": "2025-12-11 20:18:01",
+    "AmountUSD": "$2,415.00",
+    "ResolvedDate": "2025-12-13 17:39:08",
+    "ClientName": "Abdo Kassab",
+    "Reason": "w2w 50$ DEBTS 25 CASH OUT 10$ TAXI",
+    "Status": "Solved",
+    "Notes": "w2w 50$ DEBTS 25 CASH OUT 10$ TAXI"
+  },
+  {
+    "ReceivableID": 148,
+    "ReceivableDate": "2026-03-19 20:03:46",
+    "AmountUSD": "$300.00",
+    "ResolvedDate": null,
+    "ClientName": "Ahmad Koz",
+    "Reason": "Unpaid Purchase",
+    "Status": "Pending",
+    "Notes": "Purchase ID: 143"
+  },
+  {
+    "ReceivableID": 149,
+    "ReceivableDate": "2026-04-02 21:23:27",
+    "AmountUSD": "$2,783.00",
+    "ResolvedDate": null,
+    "ClientName": "11 Charbel Msallem",
+    "Reason": "Stock",
+    "Status": "Pending",
+    "Notes": "S"
+  },
+  {
+    "ReceivableID": 150,
+    "ReceivableDate": "2026-04-02 21:48:26",
+    "AmountUSD": "$4,960.50",
+    "ResolvedDate": null,
+    "ClientName": "11 Charbel Msallem",
+    "Reason": "Whish",
+    "Status": "Pending",
+    "Notes": "."
+  }
+]
