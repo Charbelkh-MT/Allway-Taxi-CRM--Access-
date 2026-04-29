@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd allway-crm && npm install && npm run build",
+  "outputDirectory": "allway-crm/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
