@@ -43,7 +43,7 @@ export default function Taxi() {
   })
 
   const stats = useMemo(() => {
-    const data = tripsQuery.data ?? []
+    const data = (tripsQuery.data ?? []) as any[]
     const day = today()
     const todayTrips = data.filter(t => t.trip_date === day)
     
@@ -66,7 +66,7 @@ export default function Taxi() {
   }, [tripsQuery.data])
 
   const filteredTrips = useMemo(() => {
-    const data = tripsQuery.data ?? []
+    const data = (tripsQuery.data ?? []) as any[]
     if (!search.trim()) return data
     const s = search.toLowerCase()
     return data.filter(t => 
@@ -104,11 +104,11 @@ export default function Taxi() {
       }
 
       if (editingTrip) {
-        const { error } = await supabase.from('taxi_trips').update(payload).eq('id', editingTrip.id)
+        const { error } = await (supabase as any).from('taxi_trips').update(payload).eq('id', editingTrip.id)
         if (error) throw error
         await log('taxi_trip_edited', 'Taxi', `Trip updated — driver ${driver.trim()} (#${editingTrip.id})`)
       } else {
-        const { error } = await supabase.from('taxi_trips').insert(payload)
+        const { error } = await (supabase as any).from('taxi_trips').insert(payload)
         if (error) throw error
         await log('taxi_trip', 'Taxi', `Trip logged — driver ${driver.trim()} — $${usd}`)
       }

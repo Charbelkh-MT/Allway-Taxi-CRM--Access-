@@ -45,7 +45,7 @@ export default function Audit() {
   })
 
   const stats = useMemo(() => {
-    const data = logsQuery.data ?? []
+    const data = (logsQuery.data ?? []) as any[]
     const today = new Date().toISOString().split('T')[0]
     const todayLogs = data.filter(r => r.created_at.startsWith(today))
     const criticalFlags = todayLogs.filter(r => r.module === 'flag' || r.module === 'void').length

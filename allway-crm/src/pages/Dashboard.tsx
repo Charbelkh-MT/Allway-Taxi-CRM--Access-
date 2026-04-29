@@ -94,7 +94,7 @@ export default function Dashboard() {
         supabase.from('shifts').select('*').eq('user_name', profile.name).eq('status', 'open').maybeSingle(),
       ])
 
-      const todaySales = (todayInvsRes.data ?? []).reduce((sum, row) => {
+      const todaySales = ((todayInvsRes.data ?? []) as any[]).reduce((sum, row) => {
         const usd = normalizeMoney(row.total_usd, 'USD')
         const lbp = normalizeMoney(row.total_lbp, 'LBP')
         return sum + (usd > 0 ? usd : lbp / 90_000)

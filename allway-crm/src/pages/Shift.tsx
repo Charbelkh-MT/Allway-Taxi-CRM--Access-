@@ -22,7 +22,8 @@ import {
   FileText, 
   Wallet,
   MessageSquare,
-  ArrowRight
+  ArrowRight,
+  User
 } from 'lucide-react'
 import type { Shift } from '@/types/database'
 
@@ -231,7 +232,7 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
               <div className="text-center md:text-left">
                 <h2 className="text-xl font-bold">{activeShift ? 'Shift in Progress' : 'No Active Shift'}</h2>
                 <p className={`text-sm ${activeShift ? 'text-green-50' : 'text-muted-foreground'}`}>
-                  {activeShift ? `Started at ${new Date(activeShift.opened_at).toLocaleTimeString()}` : 'Start a new shift to record sales.'}
+                  {activeShift ? `Started at ${activeShift.opened_at ? new Date(activeShift.opened_at).toLocaleTimeString() : '...'}` : 'Start a new shift to record sales.'}
                 </p>
               </div>
               {!activeShift && (

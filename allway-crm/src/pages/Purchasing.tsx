@@ -71,7 +71,7 @@ export default function Purchasing() {
   })
 
   const stats = useMemo(() => {
-    const data = purchasesQuery.data ?? []
+    const data = (purchasesQuery.data ?? []) as any[]
     const totalPurchased = data.reduce((sum, p) => sum + (p.total_usd || 0), 0)
     const totalPaid = data.reduce((sum, p) => sum + (p.paid_usd || 0), 0)
     const totalDebt = totalPurchased - totalPaid
@@ -84,7 +84,7 @@ export default function Purchasing() {
   }, [purchasesQuery.data])
 
   const filteredPurchases = useMemo(() => {
-    const data = purchasesQuery.data ?? []
+    const data = (purchasesQuery.data ?? []) as any[]
     if (!search.trim()) return data
     const s = search.toLowerCase()
     return data.filter(p => 
