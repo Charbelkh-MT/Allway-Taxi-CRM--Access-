@@ -105,24 +105,6 @@ export default function ShiftPage() {
     return () => clearInterval(id)
   }, [activeShift?.opened_at])
 
-  // Live shift elapsed timer — ticks every second
-  const [elapsed, setElapsed] = useState('00:00:00')
-  useEffect(() => {
-    if (!activeShift?.opened_at) { setElapsed('00:00:00'); return }
-    function tick() {
-      const start = new Date(activeShift!.opened_at!).getTime()
-      const diff  = Math.max(0, Math.floor((Date.now() - start) / 1000))
-      const h = Math.floor(diff / 3600)
-      const m = Math.floor((diff % 3600) / 60)
-      const s = diff % 60
-      setElapsed(
-        `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`
-      )
-    }
-    tick()
-    const id = setInterval(tick, 1000)
-    return () => clearInterval(id)
-  }, [activeShift?.opened_at])
 
   const diff = counted ? parseFloat(counted) - reconSales : null
 
