@@ -370,8 +370,7 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
               )}
               {activeShift && (
                 <Button
-                  variant="outline"
-                  className="w-full border-white/30 text-white hover:bg-white/10 hover:text-white font-semibold"
+                  className="w-full bg-white text-green-700 hover:bg-green-50 font-bold border-0 shadow-md"
                   onClick={() => {
                     void queryClient.invalidateQueries({ queryKey: ['shift'] })
                     void queryClient.invalidateQueries({ queryKey: ['shift', 'active'] })
