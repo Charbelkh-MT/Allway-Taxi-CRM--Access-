@@ -368,6 +368,20 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
                   {openMutation.isPending ? 'Starting...' : 'Open Shift Now'}
                 </Button>
               )}
+              {activeShift && (
+                <Button
+                  variant="outline"
+                  className="w-full border-white/30 text-white hover:bg-white/10 hover:text-white font-semibold"
+                  onClick={() => {
+                    void queryClient.invalidateQueries({ queryKey: ['shift'] })
+                    void queryClient.invalidateQueries({ queryKey: ['shift', 'active'] })
+                    setCounted('')
+                    setShiftNote('')
+                  }}
+                >
+                  End Shift (UI only)
+                </Button>
+              )}
             </div>
 
             <div className="flex-1 p-8 space-y-6">
@@ -471,21 +485,6 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
                 {closeMutation.isPending ? 'Processing...' : 'Confirm Count & Close Shift'}
               </Button>
 
-              {/* Quick end — UI only, no backend call */}
-              {activeShift && (
-                <Button
-                  variant="outline"
-                  className="w-full h-10 text-sm font-medium border-dashed text-muted-foreground hover:text-foreground"
-                  onClick={() => {
-                    void queryClient.invalidateQueries({ queryKey: ['shift'] })
-                    void queryClient.invalidateQueries({ queryKey: ['shift', 'active'] })
-                    setCounted('')
-                    setShiftNote('')
-                  }}
-                >
-                  End Shift (UI only — no save)
-                </Button>
-              )}
             </div>
           </CardContent>
         </Card>
