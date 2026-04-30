@@ -20,6 +20,19 @@ const BRANDS = ['Alfa', 'Touch']
 const DENOMS = ['03.03', '04.50', '07.58', '15.15', '22.73', '77.28', 'Dollars', 'Month']
 const QK = ['recharge_cards']
 
+
+// Brand logo using official downloaded SVGs
+function BrandLogo({ brand, size = 'md' }: { brand: string; size?: 'sm' | 'md' | 'lg' }) {
+  const h = size === 'sm' ? 'h-5' : size === 'lg' ? 'h-10' : 'h-7'
+  if (brand === 'Alfa') {
+    return <img src="/alfa-logo.svg" alt="Alfa" className={`${h} w-auto object-contain`} />
+  }
+  if (brand === 'Touch') {
+    return <img src="/touch-logo.svg" alt="Touch" className={`${h} w-auto object-contain`} />
+  }
+  return <span className="font-bold">{brand}</span>
+}
+
 export default function Recharge() {
   const queryClient = useQueryClient()
   const { profile } = useAuth()
@@ -248,9 +261,9 @@ export default function Recharge() {
                     {filteredSummary.map(r => (
                       <TableRow key={`${r.brand}-${r.denom}`} className="hover:bg-secondary/5 transition-colors">
                         <TableCell>
-                          <Badge variant="outline" className={r.brand === 'Alfa' ? 'bg-red-50 text-red-700 border-red-200' : 'bg-purple-50 text-purple-700 border-purple-200'}>
-                            {r.brand}
-                          </Badge>
+                          <div className="flex items-center gap-2">
+                            <BrandLogo brand={r.brand} size="sm" />
+                          </div>
                         </TableCell>
                         <TableCell className="font-mono font-bold text-primary">{r.denom}</TableCell>
                         <TableCell className="text-center">
@@ -301,7 +314,7 @@ export default function Recharge() {
                           </TableCell>
                           <TableCell>
                             <div className="flex items-center gap-1.5">
-                              <span className="text-xs font-bold">{s.brand}</span>
+                              <BrandLogo brand={s.brand} size="sm" />
                               <span className="text-xs text-primary font-mono">{s.denomination}</span>
                             </div>
                           </TableCell>
