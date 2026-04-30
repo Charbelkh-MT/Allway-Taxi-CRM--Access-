@@ -161,9 +161,19 @@ export default function Products() {
           <p className="text-muted-foreground text-sm font-medium mt-1">Manage inventory, categories, pricing, and stock levels.</p>
         </div>
         {canAdd && (
-          <Button onClick={handleOpenAdd} className="h-12 bg-emerald-600 hover:bg-emerald-700 text-white font-black px-8 rounded-2xl shadow-xl shadow-emerald-600/20">
-            <Plus className="w-4 h-4 mr-2" /> ADD PRODUCT
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button
+              variant="outline"
+              onClick={() => setScanMode(true)}
+              className="h-12 px-6 rounded-2xl border-2 border-amber-400 text-amber-700 hover:bg-amber-50 font-black gap-2"
+            >
+              <ScanBarcode className="w-4 h-4" />
+              SCAN TO ASSIGN
+            </Button>
+            <Button onClick={handleOpenAdd} className="h-12 bg-emerald-600 hover:bg-emerald-700 text-white font-black px-8 rounded-2xl shadow-xl shadow-emerald-600/20">
+              <Plus className="w-4 h-4 mr-2" /> ADD PRODUCT
+            </Button>
+          </div>
         )}
       </div>
 
@@ -338,6 +348,15 @@ export default function Products() {
             </div>
           </DialogContent>
         </Dialog>
+      )}
+
+      {/* Scan-to-Assign full-screen overlay */}
+      {scanMode && (
+        <ScanToAssign
+          products={productsQuery.data ?? []}
+          onClose={() => setScanMode(false)}
+          onAssigned={() => void queryClient.invalidateQueries({ queryKey: QK })}
+        />
       )}
     </div>
   )
