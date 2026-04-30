@@ -21,16 +21,34 @@ const DENOMS = ['03.03', '04.50', '07.58', '15.15', '22.73', '77.28', 'Dollars',
 const QK = ['recharge_cards']
 
 
-// Brand logo using official downloaded SVGs
-function BrandLogo({ brand, size = 'md' }: { brand: string; size?: 'sm' | 'md' | 'lg' }) {
+// Central brand logo registry — maps brand name to logo file
+export const BRAND_LOGOS: Record<string, { file: string; bg?: string }> = {
+  'Alfa':       { file: '/alfa-logo.svg',       bg: '#FFF0F0' },
+  'Touch':      { file: '/touch-logo.svg',       bg: '#E6F7FA' },
+  'Samsung':    { file: '/samsung-logo.svg',     bg: '#EEF0FF' },
+  'Apple':      { file: '/apple-logo.svg',       bg: '#F5F5F5' },
+  'Huawei':     { file: '/huawei-logo.svg',      bg: '#FFF0F0' },
+  'Xiaomi':     { file: '/xiaomi-logo.svg',      bg: '#FFF5F0' },
+  'Nokia':      { file: '/nokia-logo.svg',       bg: '#E8EEF8' },
+  'OPPO':       { file: '/oppo-logo.svg',        bg: '#EEF8EE' },
+  'OnePlus':    { file: '/oneplus-logo.svg',     bg: '#FFF0F0' },
+  'Realme':     { file: '/realme-logo.svg',      bg: '#FFF8EE' },
+  'Green Lion': { file: '/green-lion-logo.svg',  bg: '#EEF5EE' },
+}
+
+// Brand logo component — shows logo if known, falls back to styled text
+export function BrandLogo({ brand, size = 'md', showBg = false }: { brand: string; size?: 'sm' | 'md' | 'lg'; showBg?: boolean }) {
   const h = size === 'sm' ? 'h-5' : size === 'lg' ? 'h-10' : 'h-7'
-  if (brand === 'Alfa') {
-    return <img src="/alfa-logo.svg" alt="Alfa" className={`${h} w-auto object-contain`} />
+  const entry = BRAND_LOGOS[brand] || BRAND_LOGOS[brand?.toUpperCase()] || BRAND_LOGOS[brand?.toLowerCase()]
+  if (entry) {
+    return (
+      <div className={`flex items-center justify-center ${showBg ? 'rounded-lg px-3 py-1.5' : ''}`}
+           style={showBg ? { background: entry.bg } : {}}>
+        <img src={entry.file} alt={brand} className={`${h} w-auto object-contain max-w-[120px]`} />
+      </div>
+    )
   }
-  if (brand === 'Touch') {
-    return <img src="/touch-logo.svg" alt="Touch" className={`${h} w-auto object-contain`} />
-  }
-  return <span className="font-bold">{brand}</span>
+  return <span className="font-semibold text-sm">{brand}</span>
 }
 
 export default function Recharge() {
