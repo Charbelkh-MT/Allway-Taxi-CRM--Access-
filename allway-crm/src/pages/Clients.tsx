@@ -24,7 +24,7 @@ export default function Clients() {
   const { log } = useAuditLog()
   const { profile: _p } = useAuth()
   const role = useRole()
-  const canEdit = role === 'admin' || role === 'supervisor'
+  const canEdit = role === 'admin'
   const [search, setSearch] = useState('')
   const [statusFilter, setStatusFilter] = useState<DebtStatus | 'all'>('all')
   const [dialogOpen, setDialogOpen] = useState(false)
