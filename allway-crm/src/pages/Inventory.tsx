@@ -6,6 +6,8 @@ import { fmt } from '@/lib/utils'
 import { useAuth, useRole } from '@/contexts/AuthContext'
 import { useAuditLog } from '@/hooks/useAuditLog'
 import { useProductsCache } from '@/hooks/useProductsCache'
+import { BarcodeCamera } from '@/components/shared/BarcodeCamera'
+import { useBarcode } from '@/hooks/useBarcode'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -107,6 +109,19 @@ export default function Inventory() {
     },
     onError: (e) => toast.error(e instanceof Error ? e.message : 'Submission failed'),
   })
+
+  // Barcode scanner — scan product to instantly fill the spot-check form
+  const handleBarcodeScan = (barcode: string) => {
+    const match = products.find(p => p.barcode === barcode)
+    if (match) {
+      setProductName(match.description)
+      toast.success(`Found: ${match.description} — system qty: ${match.quantity}`, { duration: 3000 })
+    } else {
+      toast.error(`Barcode "${barcode}" not found in products`)
+    }
+  }
+
+  useBarcode({ onScan: handleBarcodeScan })
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-10">
@@ -238,18 +253,21 @@ export default function Inventory() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="space-y-2 lg:col-span-2">
                   <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Search Product</Label>
-                  <div className="relative">
-                    <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                    <Input 
-                      list="inv-products" 
-                      value={productName} 
-                      onChange={e => setProductName(e.target.value)} 
-                      placeholder="Select a product to audit..." 
-                      className="h-11 pl-10 font-medium" 
-                    />
-                    <datalist id="inv-products">
-                      {products.map(p => <option key={p.id} value={p.description} />)}
-                    </datalist>
+                  <div className="relative flex gap-2">
+                    <div className="relative flex-1">
+                      <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
+                      <Input 
+                        list="inv-products" 
+                        value={productName} 
+                        onChange={e => setProductName(e.target.value)} 
+                        placeholder="Type product name or scan barcode..." 
+                        className="h-11 pl-10 font-medium" 
+                      />
+                      <datalist id="inv-products">
+                        {products.map(p => <option key={p.id} value={p.description} />)}
+                      </datalist>
+                    </div>
+                    <BarcodeCamera onScan={handleBarcodeScan} label="Scan" className="h-11" />
                   </div>
                 </div>
 

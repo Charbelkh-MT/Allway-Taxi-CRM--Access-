@@ -72,6 +72,9 @@ import {
   ChevronRight
 } from 'lucide-react'
 import { MethodBadge, StatusBadge, UserBadge } from '@/components/shared/Badges'
+import { BarcodeCamera } from '@/components/shared/BarcodeCamera'
+import { useBarcode } from '@/hooks/useBarcode'
+import { lookupBarcode } from '@/lib/barcodeUtils'
 import type { Invoice, InvoiceItem } from '@/types/database'
 
 type RangeFilter = 'today' | 'week' | 'month'
@@ -297,6 +300,27 @@ export default function Sales() {
 
   const updateLine = (index: number, next: Partial<InvoiceLineDraft>) => setLines(prev => prev.map((line, i) => (i === index ? { ...line, ...next } : line)))
   const addLine = () => setLines(prev => [...prev, { productName: '', productId: null, qty: 1, unitPrice: 0 }])
+
+  // Barcode scanner handler — fires when USB scanner or camera scan detected
+  const handleBarcodeScan = async (barcode: string) => {
+    if (!sheetOpen) return // Only active when invoice sheet is open
+    const result = await lookupBarcode(barcode)
+    if (result.found) {
+      const p = result.product
+      // Add new line with product pre-filled
+      setLines(prev => [
+        ...prev.filter(l => l.productName || l.unitPrice > 0), // Keep non-empty lines
+        { productName: p.description, productId: p.id, qty: 1, unitPrice: p.selling },
+      ])
+      toast.success(`Added: ${p.description}`, { duration: 2000 })
+    } else if (result.reason === 'not_found') {
+      toast.error(`Barcode "${barcode}" not found in products`, { duration: 3000 })
+    } else {
+      toast.warning(`Product found but is inactive`)
+    }
+  }
+
+  useBarcode({ onScan: handleBarcodeScan, active: sheetOpen })
   const removeLine = (index: number) => setLines(prev => (prev.length === 1 ? prev : prev.filter((_, i) => i !== index)))
 
   const resolveProductForLine = (index: number) => {
@@ -359,7 +383,15 @@ export default function Sales() {
                   <div className="space-y-4">
                     <div className="flex items-center justify-between px-1">
                       <Label className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Line Items</Label>
-                      <Button variant="ghost" size="sm" onClick={addLine} className="h-6 text-[9px] font-black uppercase text-indigo-600">Add Product +</Button>
+                      <div className="flex items-center gap-2">
+                        <BarcodeCamera
+                          onScan={handleBarcodeScan}
+                          label="Scan"
+                          hint=""
+                          className="h-6 text-[9px] border-indigo-200 text-indigo-600 hover:bg-indigo-50"
+                        />
+                        <Button variant="ghost" size="sm" onClick={addLine} className="h-6 text-[9px] font-black uppercase text-indigo-600">Add Product +</Button>
+                      </div>
                     </div>
                     <div className="space-y-2">
                       {lines.map((line, idx) => (

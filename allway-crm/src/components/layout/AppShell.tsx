@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom'
 import { TopBar } from './TopBar'
 import { Toaster } from '@/components/ui/sonner'
 import { ScrollToTop } from '@/components/shared/ScrollToTop'
+import { BarcodeScanDev } from '@/components/shared/BarcodeScanDev'
 
 export function AppShell() {
   return (
@@ -12,6 +13,8 @@ export function AppShell() {
       </main>
       <Toaster richColors position="top-right" />
       <ScrollToTop />
+      {/* Dev-only barcode test panel — hidden in production */}
+      <BarcodeScanDev />
     </div>
   )
 }

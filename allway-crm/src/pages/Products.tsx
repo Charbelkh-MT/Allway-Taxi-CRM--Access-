@@ -4,6 +4,9 @@ import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
 import { fmtMoney, normalizeMoney } from '@/lib/utils'
 import { useAuditLog } from '@/hooks/useAuditLog'
+import { BarcodeCamera } from '@/components/shared/BarcodeCamera'
+import { useBarcode } from '@/hooks/useBarcode'
+import { lookupBarcode } from '@/lib/barcodeUtils'
 import { useRole } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -123,6 +126,26 @@ export default function Products() {
     onSuccess: () => { toast.success(editingProduct ? 'Product updated' : 'Product added'); void queryClient.invalidateQueries({ queryKey: QK }); setDialogOpen(false) },
     onError: (e) => toast.error(e instanceof Error ? e.message : 'Failed'),
   })
+
+  // Barcode scan on Products page:
+  // — If product found → open edit dialog pre-filled
+  // — If not found → open add dialog with barcode pre-filled
+  const [barcodeDialogOpen, setBarcodeDialogOpen] = useState(false)
+
+  const handleBarcodeScan = async (barcode: string) => {
+    const result = await lookupBarcode(barcode)
+    if (result.found) {
+      handleOpenEdit(result.product as any)
+      toast.success(`Found: ${result.product.description}`)
+    } else {
+      // Pre-fill barcode field for new product
+      setBarcode(barcode)
+      handleOpenAdd()
+      toast.info(`New barcode "${barcode}" — fill in product details`)
+    }
+  }
+
+  useBarcode({ onScan: handleBarcodeScan })
 
   return (
     <div className="max-w-7xl mx-auto space-y-10 pb-20">

@@ -6,6 +6,9 @@ import { fmt, fmtMoney, normalizeMoney } from '@/lib/utils'
 import { useAuth, useRole } from '@/contexts/AuthContext'
 import { useAuditLog } from '@/hooks/useAuditLog'
 import { useProductsCache } from '@/hooks/useProductsCache'
+import { BarcodeCamera } from '@/components/shared/BarcodeCamera'
+import { useBarcode } from '@/hooks/useBarcode'
+import { lookupBarcode } from '@/lib/barcodeUtils'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -94,6 +97,28 @@ export default function Purchasing() {
   }, [purchasesQuery.data, search])
 
   const totalUsd = useMemo(() => lines.reduce((s, l) => s + l.qty * l.unitCost, 0), [lines])
+
+  // Barcode scan on Purchasing page: scan product to add to purchase order
+  const handleBarcodeScan = async (barcode: string) => {
+    if (!canCreate) return
+    const result = await lookupBarcode(barcode)
+    if (result.found) {
+      const p = result.product
+      // Check if already in lines, if so increment qty
+      const existing = lines.findIndex(l => l.description === p.description)
+      if (existing >= 0) {
+        setLines(prev => prev.map((l, i) => i === existing ? { ...l, qty: l.qty + 1 } : l))
+        toast.success(`+1 qty: ${p.description}`, { duration: 2000 })
+      } else {
+        setLines(prev => [...prev, { description: p.description, qty: 1, unitCost: p.cost }])
+        toast.success(`Added to PO: ${p.description}`, { duration: 2000 })
+      }
+    } else {
+      toast.error(`Barcode "${barcode}" not found`)
+    }
+  }
+
+  useBarcode({ onScan: handleBarcodeScan, active: canCreate })
 
   function updateLine(i: number, patch: Partial<PoLine>) {
     setLines(prev => prev.map((l, idx) => idx === i ? { ...l, ...patch } : l))
@@ -328,9 +353,12 @@ export default function Purchasing() {
                     <Package className="w-4 h-4 text-muted-foreground" />
                     Order Line Items
                   </h3>
-                  <Button variant="outline" size="sm" onClick={addLine} className="h-8 gap-1.5 border-dashed hover:border-primary hover:bg-primary/5">
-                    <Plus className="w-3.5 h-3.5" /> Add Product
-                  </Button>
+                  <div className="flex items-center gap-2">
+                    <BarcodeCamera onScan={handleBarcodeScan} label="Scan" hint="" className="h-8" />
+                    <Button variant="outline" size="sm" onClick={addLine} className="h-8 gap-1.5 border-dashed hover:border-primary hover:bg-primary/5">
+                      <Plus className="w-3.5 h-3.5" /> Add line
+                    </Button>
+                  </div>
                 </div>
                 
                 <div className="space-y-3">
