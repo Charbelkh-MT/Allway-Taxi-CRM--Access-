@@ -42,7 +42,6 @@ export default function ShiftPage() {
   const [counted, setCounted] = useState('')
   const [shiftNote, setShiftNote] = useState('')
   const [reconSales, setReconSales] = useState(0)
-  const [confirmCloseDayOpen, setConfirmCloseDayOpen] = useState(false)
 
   const activeShiftQuery = useQuery({
     queryKey: ['shift', 'active', profile?.name],
@@ -273,9 +272,8 @@ export default function ShiftPage() {
     onSuccess: () => {
       toast.success('Day closed — notifications sent')
       void queryClient.invalidateQueries({ queryKey: ['shift'] })
-      setConfirmCloseDayOpen(false)
     },
-    onError: (e) => { toast.error(e instanceof Error ? e.message : 'Failed'); setConfirmCloseDayOpen(false) },
+    onError: (e) => toast.error(e instanceof Error ? e.message : 'Failed'),
   })
 
   const generateReport = async () => {
@@ -323,16 +321,10 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
           <p className="text-muted-foreground text-sm mt-1">Open, track, and reconcile daily employee shifts.</p>
         </div>
         {isAdmin && (
-          <div className="flex items-center gap-3">
-            <Button variant="outline" size="sm" onClick={generateReport} className="flex items-center gap-2">
-              <FileText className="w-4 h-4" />
-              Daily Report
-            </Button>
-            <Button variant="destructive" size="sm" onClick={() => setConfirmCloseDayOpen(true)} className="flex items-center gap-2">
-              <StopCircle className="w-4 h-4" />
-              Close Day
-            </Button>
-          </div>
+          <Button variant="outline" size="sm" onClick={generateReport} className="flex items-center gap-2">
+            <FileText className="w-4 h-4" />
+            Daily Report
+          </Button>
         )}
       </div>
 
@@ -547,28 +539,6 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
           </div>
         </Card>
       </div>
-      {/* Close Day Confirmation */}
-      <Dialog open={confirmCloseDayOpen} onOpenChange={setConfirmCloseDayOpen}>
-        <DialogContent className="sm:max-w-[420px]">
-          <DialogHeader>
-            <DialogTitle className="flex items-center gap-2 text-destructive">
-              <StopCircle className="w-5 h-5" />
-              Close Day
-            </DialogTitle>
-            <DialogDescription>
-              This will force-close all remaining open shifts for today. Employees will not be able to submit a cash count after this action. Are you sure?
-            </DialogDescription>
-          </DialogHeader>
-          <DialogFooter className="gap-2">
-            <Button variant="outline" onClick={() => setConfirmCloseDayOpen(false)} disabled={closeDayMutation.isPending}>
-              Cancel
-            </Button>
-            <Button variant="destructive" onClick={() => closeDayMutation.mutate()} disabled={closeDayMutation.isPending}>
-              {closeDayMutation.isPending ? 'Closing...' : 'Yes, Close Day'}
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
     </div>
   )
 }

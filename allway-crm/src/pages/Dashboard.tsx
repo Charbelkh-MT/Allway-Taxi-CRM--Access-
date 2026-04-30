@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
 import { 
@@ -27,9 +28,9 @@ import {
   ArrowUpRight
 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
-import { useAuth } from '@/contexts/AuthContext'
+import { useAuth, useRole } from '@/contexts/AuthContext'
 import { useAuditLog } from '@/hooks/useAuditLog'
-import { fmtMoney, fmt, normalizeMoney } from '@/lib/utils'
+import { fmtMoney, fmt, normalizeMoney, LBP_MIN, sendWhatsApp, sendEmail, buildDailyWhatsApp, buildDailyReportHTML, type DailyReportData, type DailyReportFullData } from '@/lib/utils'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -52,6 +53,10 @@ interface Metrics {
 
 export default function Dashboard() {
   const { profile } = useAuth()
+  const role = useRole()
+  const isAdmin = role === 'admin' || role === 'supervisor'
+  const queryClient = useQueryClient()
+  const [confirmCloseDayOpen, setConfirmCloseDayOpen] = useState(false)
   const { log } = useAuditLog()
   const navigate = useNavigate()
   const [metrics, setMetrics] = useState<Metrics | null>(null)
@@ -149,6 +154,78 @@ export default function Dashboard() {
     } catch (e: any) { toast.error(e.message || 'Failed') } finally { setIsStarting(false) }
   }
 
+  const infoQuery = { data: null as any }  // settings — loaded lazily inside mutation
+
+  const closeDayMutation = useMutation({
+    mutationFn: async () => {
+      if (!isAdmin) throw new Error('Supervisor clearance required')
+      const start = new Date(); start.setHours(0,0,0,0)
+      const startISO = start.toISOString()
+
+      // 1. Close any still-open shifts
+      await (supabase as any).from('shifts').update({
+        status: 'closed', closed_at: new Date().toISOString(),
+      }).gte('opened_at', startISO).eq('status', 'open')
+
+      // 2. Gather today's full data for reports
+      const [invRes, expRes, whishRes, shiftRes] = await Promise.all([
+        (supabase as any).from('invoices').select('*').eq('status','saved').gte('created_at', startISO),
+        (supabase as any).from('expenses').select('*').gte('created_at', startISO),
+        (supabase as any).from('whish_transactions').select('*').gte('created_at', startISO),
+        supabase.from('shifts').select('*').gte('opened_at', startISO),
+      ])
+      const invoices = (invRes.data ?? []) as any[]
+      const expenses = (expRes.data ?? []) as any[]
+      const whish    = (whishRes.data ?? []) as any[]
+      const shifts   = (shiftRes.data ?? []) as any[]
+
+      const invIds = invoices.map((r: any) => r.id)
+      const itemsD = invIds.length > 0
+        ? (((await (supabase as any).from('invoice_items').select('product_name,quantity').in('invoice_id', invIds)).data ?? []) as any[])
+        : []
+      const pt: Record<string,number> = {}
+      itemsD.forEach((i: any) => { pt[i.product_name||'?'] = (pt[i.product_name||'?']??0)+(i.quantity||0) })
+      const topProducts = Object.entries(pt).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([name,qty]) => ({name,qty}))
+
+      const totalSalesUsd = invoices.reduce((s: number, r: any) => s + Math.max(0, normalizeMoney(parseFloat(r.total_usd||0),'USD')), 0)
+      const totalSalesLbp = invoices.reduce((s: number, r: any) => { const v = normalizeMoney(parseFloat(r.total_lbp||0),'LBP'); return s + (v > LBP_MIN ? v : 0) }, 0)
+      const totalExp      = expenses.reduce((s: number, r: any) => s + normalizeMoney(parseFloat(r.amount_usd||0),'USD'), 0)
+      const whishVol      = whish.reduce((s: number, r: any) => s + normalizeMoney(parseFloat(r.amount_usd||0),'USD'), 0)
+      const whishComm     = whish.reduce((s: number, r: any) => s + normalizeMoney(parseFloat(r.commission_usd||0),'USD'), 0)
+      const flaggedCount  = shifts.filter((s: any) => s.status === 'flagged').length
+      const dateStr       = new Date().toLocaleDateString('en-GB', { weekday:'long', year:'numeric', month:'long', day:'numeric', timeZone:'Asia/Beirut' })
+
+      const reportData: DailyReportData = {
+        date: dateStr, totalSalesUsd, totalSalesLbp, invoiceCount: invoices.length,
+        expenseTotal: totalExp, whishVolume: whishVol, whishCommission: whishComm,
+        shiftCount: shifts.length, flaggedCount, topProducts,
+      }
+
+      // 3. Send notifications if configured
+      const { data: infoRow } = await (supabase as any).from('tblInformation').select('*').limit(1).single().catch(() => ({ data: null }))
+      const phone     = infoRow?.OwnerWhatsapp  || infoRow?.owner_whatsapp  || ''
+      const legacyKey = infoRow?.CallMeBotApiKey || infoRow?.callmebot_api_key || ''
+      const ownerEml  = infoRow?.OwnerEmail     || infoRow?.owner_email     || ''
+      const dailyWaOn    = infoRow?.DailyReportEnabled  ?? infoRow?.daily_report_enabled  ?? false
+      const dailyEmailOn = infoRow?.DailyEmailEnabled   ?? infoRow?.daily_email_enabled   ?? false
+
+      if (phone && dailyWaOn)
+        await sendWhatsApp(phone, legacyKey, buildDailyWhatsApp(reportData))
+      if (dailyEmailOn && ownerEml) {
+        const fullData: DailyReportFullData = { ...reportData, invoices, expenses, whishTransactions: whish, shifts }
+        await sendEmail(ownerEml, `AllWay Daily Report — ${dateStr}`, buildDailyReportHTML(fullData))
+      }
+
+      await log('day_closed', 'Dashboard', `Day closed by ${profile?.name} — ${invoices.length} invoices, $${totalSalesUsd.toFixed(2)}`)
+    },
+    onSuccess: () => {
+      toast.success('Day closed — analytics compiled, notifications sent')
+      void queryClient.invalidateQueries()
+      setConfirmCloseDayOpen(false)
+    },
+    onError: (e) => { toast.error(e instanceof Error ? e.message : 'Failed to close day'); setConfirmCloseDayOpen(false) },
+  })
+
   if (loading) return <div className="h-screen flex items-center justify-center"><Zap className="w-8 h-8 text-amber-500 animate-pulse" /></div>
 
   return (
@@ -187,8 +264,44 @@ export default function Dashboard() {
               </CardContent>
             </Card>
           )}
+        {isAdmin && (
+          <button
+            onClick={() => setConfirmCloseDayOpen(true)}
+            className="h-12 px-6 rounded-2xl border-2 border-destructive text-destructive font-bold hover:bg-destructive hover:text-white transition-all flex items-center gap-2 text-sm"
+          >
+            <XCircle className="w-4 h-4" />
+            Close Day
+          </button>
+        )}
         </div>
       </div>
+
+      {/* Close Day Confirmation Dialog */}
+      <Dialog open={confirmCloseDayOpen} onOpenChange={setConfirmCloseDayOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle className="text-destructive">Close Day</DialogTitle>
+            <DialogDescription>
+              This will compile today's full analytics, close any open shifts, and send the daily report
+              to the owner via WhatsApp and email (if configured in Settings).
+              This action is logged and cannot be undone.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="rounded-lg bg-secondary p-4 space-y-1.5 text-sm">
+            <p className="font-semibold text-foreground">What happens:</p>
+            <p className="text-muted-foreground">✓ All open shifts are marked closed</p>
+            <p className="text-muted-foreground">✓ Daily WhatsApp summary sent to owner</p>
+            <p className="text-muted-foreground">✓ Full HTML email report sent (if enabled)</p>
+            <p className="text-muted-foreground">✓ Logged in Audit Log</p>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setConfirmCloseDayOpen(false)} disabled={closeDayMutation.isPending}>Cancel</Button>
+            <Button variant="destructive" onClick={() => closeDayMutation.mutate()} disabled={closeDayMutation.isPending}>
+              {closeDayMutation.isPending ? 'Compiling & sending...' : 'Yes, Close Day'}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       {/* Decluttered Metrics Command Bar */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
