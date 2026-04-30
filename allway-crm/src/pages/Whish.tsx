@@ -160,51 +160,54 @@ export default function Whish() {
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-10">
-      {/* Premium Whish Header */}
-      <div className="rounded-3xl p-8 text-white relative overflow-hidden shadow-2xl shadow-rose-600/20" style={{ background: 'linear-gradient(135deg, #E8192C 0%, #a50d1f 100%)' }}>
-        <div className="absolute top-0 right-0 p-8 opacity-10">
-          <Wallet className="w-48 h-48" />
-        </div>
-        
-        <div className="relative z-10">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <Badge variant="outline" className="bg-white/10 text-white border-white/20 text-[10px] uppercase font-bold tracking-widest px-2">
-                  Official Whish Agent
-                </Badge>
-              </div>
-              <h1 className="font-display text-4xl font-black tracking-tight">Whish Money Services</h1>
-              <p className="text-rose-100 text-sm mt-1 opacity-80">Manage all money transfers and telecom top-ups through the official Whish wallet.</p>
-            </div>
-            <div className="text-left md:text-right">
-              <p className="text-xs text-rose-200 uppercase font-bold tracking-widest mb-1">Total Transactions Today</p>
-              <div className="flex items-center md:justify-end gap-3">
-                <span className="text-5xl font-black">{todayStats.count}</span>
-                <div className="h-10 w-[1px] bg-white/20 mx-2 hidden md:block" />
-                <div className="hidden md:block">
-                  <p className="text-xs text-rose-200 leading-tight">Processed from<br /><span className="font-bold text-white uppercase">{profile?.station}</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Official Whish Money Header — real logo + brand colors */}
+      <div
+        className="rounded-3xl text-white relative overflow-hidden shadow-2xl"
+        style={{ background: 'linear-gradient(135deg, #EC174D 0%, #C1003A 60%, #410099 100%)' }}
+      >
+        {/* Decorative background circles matching Whish brand */}
+        <div className="absolute -top-16 -right-16 w-64 h-64 rounded-full opacity-10" style={{ background: '#7100FF' }} />
+        <div className="absolute -bottom-20 -left-10 w-80 h-80 rounded-full opacity-10" style={{ background: '#EC174D' }} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { label: 'Volume USD Today', value: fmtMoney(todayStats.usd, 'USD'), icon: TrendingUp },
-              { label: 'Volume LBP Today', value: fmtMoney(todayStats.lbp, 'LBP'), icon: Activity },
-              { label: 'Comm. USD Earned', value: fmtMoney(todayStats.commUsd, 'USD'), icon: DollarSign, highlight: 'text-amber-300' },
-              { label: 'Comm. LBP Earned', value: fmtMoney(todayStats.commLbp, 'LBP'), icon: DollarSign, highlight: 'text-amber-300' },
-            ].map(({ label, value, icon: Icon, highlight }) => (
-              <div key={label} className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10 hover:bg-white/20 transition-all group">
-                <div className="flex items-center justify-between mb-2">
-                  <p className="text-[10px] text-rose-100 uppercase font-black tracking-widest leading-none">{label}</p>
-                  <Icon className="w-4 h-4 text-rose-200 opacity-60 group-hover:opacity-100 transition-opacity" />
-                </div>
-                <p className={`text-xl font-mono font-black ${highlight || 'text-white'}`}>{value}</p>
-              </div>
-            ))}
+        {/* Top bar with official logo */}
+        <div className="relative z-10 flex items-center justify-between px-8 pt-7 pb-5 border-b border-white/10">
+          <div className="flex items-center gap-4">
+            {/* Official Whish Money logo — white version on red bg */}
+            <img
+              src="/whish-logo.svg"
+              alt="Whish Money"
+              className="h-9 brightness-0 invert"
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
+            <div className="h-6 w-px bg-white/20" />
+            <div>
+              <p className="text-[10px] font-black uppercase tracking-[3px] text-white/70">AllWay Services</p>
+              <p className="text-xs text-white/90 font-medium">Official Whish Agent</p>
+            </div>
           </div>
+          <div className="text-right">
+            <p className="text-[10px] uppercase tracking-widest text-white/60 font-bold mb-0.5">Today's transactions</p>
+            <p className="text-5xl font-black tabular-nums">{todayStats.count}</p>
+            <p className="text-[10px] text-white/60 mt-0.5">{profile?.station}</p>
+          </div>
+        </div>
+
+        {/* Stats row */}
+        <div className="relative z-10 grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 border-t border-white/10">
+          {[
+            { label: 'USD Volume', value: fmtMoney(todayStats.usd, 'USD'), icon: TrendingUp, accent: false },
+            { label: 'LBP Volume', value: fmtMoney(todayStats.lbp, 'LBP'), icon: Activity,  accent: false },
+            { label: 'Commission USD', value: fmtMoney(todayStats.commUsd, 'USD'), icon: DollarSign, accent: true },
+            { label: 'Commission LBP', value: fmtMoney(todayStats.commLbp, 'LBP'), icon: DollarSign, accent: true },
+          ].map(({ label, value, icon: Icon, accent }) => (
+            <div key={label} className="bg-black/10 backdrop-blur-sm px-6 py-5 hover:bg-white/10 transition-colors">
+              <div className="flex items-center gap-2 mb-2">
+                <Icon className="w-3.5 h-3.5 text-white/50" />
+                <p className="text-[9px] font-black uppercase tracking-[2px] text-white/60">{label}</p>
+              </div>
+              <p className={`text-lg font-mono font-black ${accent ? 'text-yellow-300' : 'text-white'}`}>{value}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -337,7 +340,7 @@ export default function Whish() {
               </div>
             </div>
 
-            <Button className="w-full h-14 text-lg font-bold text-white shadow-xl shadow-rose-600/20 hover:scale-[1.01] active:scale-[0.99] transition-all" style={{ background: 'linear-gradient(90deg, #E8192C 0%, #c11525 100%)' }}
+            <Button className="w-full h-14 text-lg font-bold text-white shadow-xl shadow-rose-600/20 hover:scale-[1.01] active:scale-[0.99] transition-all" style={{ background: 'linear-gradient(90deg, #EC174D 0%, #C1003A 100%)' }}
               onClick={() => saveMutation.mutate()} disabled={saveMutation.isPending}>
               {saveMutation.isPending ? 'Processing...' : 'Complete Transaction'}
             </Button>
