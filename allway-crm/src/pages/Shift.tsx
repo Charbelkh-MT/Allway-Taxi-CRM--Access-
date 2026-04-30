@@ -86,6 +86,44 @@ export default function ShiftPage() {
       )
   }, [activeShift, profile?.name])
 
+  // Live shift elapsed timer — ticks every second
+  const [elapsed, setElapsed] = useState('00:00:00')
+  useEffect(() => {
+    if (!activeShift?.opened_at) { setElapsed('00:00:00'); return }
+    function tick() {
+      const start = new Date(activeShift!.opened_at!).getTime()
+      const diff  = Math.max(0, Math.floor((Date.now() - start) / 1000))
+      const h = Math.floor(diff / 3600)
+      const m = Math.floor((diff % 3600) / 60)
+      const s = diff % 60
+      setElapsed(
+        `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`
+      )
+    }
+    tick()
+    const id = setInterval(tick, 1000)
+    return () => clearInterval(id)
+  }, [activeShift?.opened_at])
+
+  // Live shift elapsed timer — ticks every second
+  const [elapsed, setElapsed] = useState('00:00:00')
+  useEffect(() => {
+    if (!activeShift?.opened_at) { setElapsed('00:00:00'); return }
+    function tick() {
+      const start = new Date(activeShift!.opened_at!).getTime()
+      const diff  = Math.max(0, Math.floor((Date.now() - start) / 1000))
+      const h = Math.floor(diff / 3600)
+      const m = Math.floor((diff % 3600) / 60)
+      const s = diff % 60
+      setElapsed(
+        `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`
+      )
+    }
+    tick()
+    const id = setInterval(tick, 1000)
+    return () => clearInterval(id)
+  }, [activeShift?.opened_at])
+
   const diff = counted ? parseFloat(counted) - reconSales : null
 
   const openMutation = useMutation({
@@ -242,9 +280,22 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
               </div>
               <div className="text-center md:text-left">
                 <h2 className="text-xl font-bold">{activeShift ? 'Shift in Progress' : 'No Active Shift'}</h2>
-                <p className={`text-sm ${activeShift ? 'text-green-50' : 'text-muted-foreground'}`}>
-                  {activeShift ? `Started at ${activeShift.opened_at ? new Date(activeShift.opened_at).toLocaleTimeString() : '...'}` : 'Start a new shift to record sales.'}
-                </p>
+                {activeShift ? (
+                  <div className="mt-1">
+                    <p className="text-green-100 text-xs mb-1">
+                      Started at {new Date(activeShift.opened_at ?? '').toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Beirut' })}
+                    </p>
+                    {/* Live elapsed timer */}
+                    <div className="inline-flex items-center gap-1.5 bg-white/15 rounded-lg px-3 py-1.5 mt-0.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-green-300 animate-ping shrink-0" />
+                      <span className="font-mono font-black text-2xl tracking-widest text-white tabular-nums">
+                        {elapsed}
+                      </span>
+                    </div>
+                  </div>
+                ) : (
+                  <p className="text-sm text-muted-foreground">Start a new shift to record sales.</p>
+                )}
               </div>
               {!activeShift && (
                 <Button onClick={() => openMutation.mutate()} disabled={openMutation.isPending} className="w-full bg-primary hover:bg-primary/90 font-bold">

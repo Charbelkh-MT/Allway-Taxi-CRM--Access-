@@ -181,8 +181,8 @@ export default function Whish() {
             />
             <div className="h-6 w-px bg-white/20" />
             <div>
-              <p className="text-[10px] font-black uppercase tracking-[3px] text-white/70">AllWay Services</p>
-              <p className="text-xs text-white/90 font-medium">Official Whish Agent</p>
+              <p className="text-[8px] font-black uppercase tracking-[3px] text-white/60">AllWay Services</p>
+              <p className="text-[9px] text-white/80 font-medium">Official Whish Agent</p>
             </div>
           </div>
           <div className="text-right">
