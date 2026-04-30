@@ -17,8 +17,9 @@ import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
-import { Package, Plus, Search, AlertTriangle, BarChart3, ArrowUpRight, Layers, Box, Hash, Tag, LayoutGrid, FileText } from 'lucide-react'
+import { Package, Plus, Search, AlertTriangle, BarChart3, ArrowUpRight, Layers, Box, Hash, Tag, LayoutGrid, FileText, ScanBarcode } from 'lucide-react'
 import type { Product } from '@/types/database'
+import { ScanToAssign } from '@/components/shared/ScanToAssign'
 
 const QK = ['products']
 const CATEGORIES = ['Accessories', 'Mobiles', 'Recharges', 'Cables', 'Toys', 'Other']
@@ -33,6 +34,7 @@ export default function Products() {
   const [catFilter, setCatFilter] = useState('all')
   const [brandFilter, setBrandFilter] = useState('all')
   const [stockFilter, setStockFilter] = useState('all')
+  const [scanMode, setScanMode] = useState(false)
   const [dialogOpen, setDialogOpen] = useState(false)
   const [editingProduct, setEditingProduct] = useState<Product | null>(null)
 
