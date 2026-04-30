@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
-import { fmtMoney, normalizeMoney } from '@/lib/utils'
+import { fmtMoney, normalizeMoney, LBP_MIN, sendWhatsApp, sendEmail, buildShiftWhatsApp, buildDailyWhatsApp, buildDailyReportHTML, escHtml, type ShiftSummaryData, type DailyReportData, type DailyReportFullData } from '@/lib/utils'
 import { useAuth, useRole } from '@/contexts/AuthContext'
 import { useAuditLog } from '@/hooks/useAuditLog'
 import { Button } from '@/components/ui/button'
@@ -11,6 +11,7 @@ import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { 
   Clock, 
   Play, 
@@ -28,10 +29,6 @@ import {
 import type { Shift } from '@/types/database'
 
 // HTML-escape user-provided data before inserting into report template
-function escHtml(s: string | null | undefined): string {
-  return (s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')
-}
-
 
 function todayStart() { const d = new Date(); d.setHours(0,0,0,0); return d.toISOString() }
 
@@ -45,6 +42,7 @@ export default function ShiftPage() {
   const [counted, setCounted] = useState('')
   const [shiftNote, setShiftNote] = useState('')
   const [reconSales, setReconSales] = useState(0)
+  const [confirmCloseDayOpen, setConfirmCloseDayOpen] = useState(false)
 
   const activeShiftQuery = useQuery({
     queryKey: ['shift', 'active', profile?.name],
@@ -151,26 +149,49 @@ export default function ShiftPage() {
       if (error) throw error
       if (count === 0) throw new Error('Shift was already closed by another user. Please refresh.')
 
+      // Capture exact close time for the summary
+      const shiftStart = activeShift.opened_at!
+      const shiftEnd   = new Date().toISOString()
+
       await log('shift_closed', 'Shift', `Shift closed — expected ${fmtMoney(expected)} counted ${fmtMoney(cnt)} diff ${fmtMoney(difference)}`)
       if (status === 'flagged') await log('cash_mismatch', 'Shift', `⚠ Cash mismatch — diff ${fmtMoney(difference)}`)
 
-      // WhatsApp Notification
+      // ── Rich shift-end WhatsApp summary ─────────────────────────────────
       const info = infoQuery.data as any
-      if (info) {
-        const phone = info.OwnerWhatsapp || info.owner_whatsapp
-        const apiKey = info.CallMeBotApiKey || info.callmebot_api_key || info.WhatsappApiKey
-
-        if (phone && apiKey) {
-          let message = `🏠 *AllWay Shift Report*\n`
-          message += `👤 Employee: ${profile?.name}\n`
-          message += `📍 Station: ${profile?.station}\n`
-          message += `💰 Expected: ${fmtMoney(expected)}\n`
-          message += `💵 Counted: ${fmtMoney(cnt)}\n`
-          message += `📊 Diff: ${fmtMoney(difference)}\n`
-          if (status === 'flagged') message += `⚠ *DISCREPANCY DETECTED*\n`
-          if (shiftNote) message += `📝 Note: ${shiftNote}`
-
-          await import('@/lib/utils').then(m => m.sendWhatsApp(String(phone), String(apiKey), message))
+      const shiftSummaryOn = info?.ShiftSummaryEnabled ?? info?.shift_summary_enabled ?? true
+      if (shiftSummaryOn && info) {
+        const phone     = info.OwnerWhatsapp  || info.owner_whatsapp  || ''
+        const legacyKey = info.CallMeBotApiKey || info.callmebot_api_key || ''
+        if (phone) {
+          const [invRes2, whishRes2] = await Promise.all([
+            (supabase as any).from('invoices').select('id,total_usd,total_lbp,payment_method')
+              .eq('created_by', profile?.name ?? '').eq('status', 'saved').gte('created_at', shiftStart),
+            (supabase as any).from('whish_transactions').select('commission_usd')
+              .eq('created_by', profile?.name ?? '').gte('created_at', shiftStart),
+          ])
+          const invs = (invRes2.data ?? []) as any[]
+          const invIds = invs.map((r: any) => r.id)
+          const itemsD = invIds.length > 0
+            ? (((await (supabase as any).from('invoice_items').select('product_name,quantity').in('invoice_id', invIds)).data ?? []) as any[])
+            : []
+          const totUsd = invs.reduce((s: number, r: any) => s + Math.max(0, normalizeMoney(parseFloat(r.total_usd||0),'USD')), 0)
+          const totLbp = invs.reduce((s: number, r: any) => { const v = normalizeMoney(parseFloat(r.total_lbp||0),'LBP'); return s + (v > LBP_MIN ? v : 0) }, 0)
+          const wComm  = ((whishRes2.data ?? []) as any[]).reduce((s: number, r: any) => s + normalizeMoney(parseFloat(r.commission_usd||0),'USD'), 0)
+          const mc: Record<string,number> = {}
+          invs.forEach((r: any) => { const m = r.payment_method||'Unknown'; mc[m] = (mc[m]??0)+1 })
+          const topMethod = Object.entries(mc).sort((a,b)=>b[1]-a[1])[0]?.[0] ?? 'N/A'
+          const pt: Record<string,number> = {}
+          itemsD.forEach((i: any) => { pt[i.product_name||'?'] = (pt[i.product_name||'?']??0)+(i.quantity||0) })
+          const topProds = Object.entries(pt).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([name,qty]) => ({name,qty}))
+          const sumData: ShiftSummaryData = {
+            employeeName: profile?.name??'', station: profile?.station??'',
+            openedAt: shiftStart, closedAt: shiftEnd,
+            totalSalesUsd: totUsd, totalSalesLbp: totLbp, invoiceCount: invs.length,
+            topPaymentMethod: topMethod, topProducts: topProds,
+            expectedCash: expected, countedCash: cnt, difference, status, note: shiftNote,
+            whishCommissionUsd: wComm,
+          }
+          await sendWhatsApp(phone, legacyKey, buildShiftWhatsApp(sumData))
         }
       }
 
@@ -188,10 +209,73 @@ export default function ShiftPage() {
   const closeDayMutation = useMutation({
     mutationFn: async () => {
       if (!isAdmin) throw new Error('Supervisor clearance required')
-      await log('day_closed', 'Shift', `Day closed by ${profile?.name}`)
+
+      // 1. Close all still-open shifts
+      const { error: shiftErr } = await (supabase as any).from('shifts').update({
+        status: 'closed', closed_at: new Date().toISOString(),
+      }).gte('opened_at', todayStart()).eq('status', 'open')
+      if (shiftErr) throw shiftErr
+
+      // 2. Gather today's full data
+      const start = todayStart()
+      const [invRes, expRes, whishRes, shiftRes] = await Promise.all([
+        (supabase as any).from('invoices').select('*').eq('status','saved').gte('created_at', start),
+        (supabase as any).from('expenses').select('*').gte('created_at', start),
+        (supabase as any).from('whish_transactions').select('*').gte('created_at', start),
+        supabase.from('shifts').select('*').gte('opened_at', start),
+      ])
+      const invoices = (invRes.data ?? []) as any[]
+      const expenses = (expRes.data ?? []) as any[]
+      const whish    = (whishRes.data ?? []) as any[]
+      const shifts   = (shiftRes.data ?? []) as any[]
+
+      // Fetch invoice items for top products
+      const invIds = invoices.map((r: any) => r.id)
+      const itemsD = invIds.length > 0
+        ? (((await (supabase as any).from('invoice_items').select('product_name,quantity').in('invoice_id', invIds)).data ?? []) as any[])
+        : []
+      const pt: Record<string,number> = {}
+      itemsD.forEach((i: any) => { pt[i.product_name||'?'] = (pt[i.product_name||'?']??0)+(i.quantity||0) })
+      const topProducts = Object.entries(pt).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([name,qty]) => ({name,qty}))
+
+      const totalSalesUsd = invoices.reduce((s: number, r: any) => s + Math.max(0, normalizeMoney(parseFloat(r.total_usd||0),'USD')), 0)
+      const totalSalesLbp = invoices.reduce((s: number, r: any) => { const v = normalizeMoney(parseFloat(r.total_lbp||0),'LBP'); return s + (v > LBP_MIN ? v : 0) }, 0)
+      const totalExp      = expenses.reduce((s: number, r: any) => s + normalizeMoney(parseFloat(r.amount_usd||0),'USD'), 0)
+      const whishVol      = whish.reduce((s: number, r: any) => s + normalizeMoney(parseFloat(r.amount_usd||0),'USD'), 0)
+      const whishComm     = whish.reduce((s: number, r: any) => s + normalizeMoney(parseFloat(r.commission_usd||0),'USD'), 0)
+      const flaggedCount  = shifts.filter((s: any) => s.status === 'flagged').length
+      const dateStr       = new Date().toLocaleDateString('en-GB', { weekday:'long', year:'numeric', month:'long', day:'numeric', timeZone:'Asia/Beirut' })
+
+      const reportData: DailyReportData = {
+        date: dateStr, totalSalesUsd, totalSalesLbp, invoiceCount: invoices.length,
+        expenseTotal: totalExp, whishVolume: whishVol, whishCommission: whishComm,
+        shiftCount: shifts.length, flaggedCount, topProducts,
+      }
+
+      // 3. Send notifications
+      const info = infoQuery.data as any
+      const phone     = info?.OwnerWhatsapp  || info?.owner_whatsapp  || ''
+      const legacyKey = info?.CallMeBotApiKey || info?.callmebot_api_key || ''
+      const ownerEml  = info?.OwnerEmail     || info?.owner_email     || ''
+      const dailyWaOn    = info?.DailyReportEnabled  ?? info?.daily_report_enabled  ?? false
+      const dailyEmailOn = info?.DailyEmailEnabled   ?? info?.daily_email_enabled   ?? false
+
+      if (phone && dailyWaOn) {
+        await sendWhatsApp(phone, legacyKey, buildDailyWhatsApp(reportData))
+      }
+      if (dailyEmailOn && ownerEml) {
+        const fullData: DailyReportFullData = { ...reportData, invoices, expenses, whishTransactions: whish, shifts }
+        await sendEmail(ownerEml, `AllWay Daily Report — ${dateStr}`, buildDailyReportHTML(fullData))
+      }
+
+      await log('day_closed', 'Shift', `Day closed by ${profile?.name} — ${invoices.length} invoices, $${totalSalesUsd.toFixed(2)} USD`)
     },
-    onSuccess: () => toast.success('Day finalized — reports ready'),
-    onError: (e) => toast.error(e instanceof Error ? e.message : 'Failed'),
+    onSuccess: () => {
+      toast.success('Day closed — notifications sent')
+      void queryClient.invalidateQueries({ queryKey: ['shift'] })
+      setConfirmCloseDayOpen(false)
+    },
+    onError: (e) => { toast.error(e instanceof Error ? e.message : 'Failed'); setConfirmCloseDayOpen(false) },
   })
 
   const generateReport = async () => {
@@ -244,7 +328,7 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
               <FileText className="w-4 h-4" />
               Daily Report
             </Button>
-            <Button variant="destructive" size="sm" onClick={() => closeDayMutation.mutate()} className="flex items-center gap-2">
+            <Button variant="destructive" size="sm" onClick={() => setConfirmCloseDayOpen(true)} className="flex items-center gap-2">
               <StopCircle className="w-4 h-4" />
               Close Day
             </Button>
@@ -446,6 +530,28 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
           </div>
         </Card>
       </div>
+      {/* Close Day Confirmation */}
+      <Dialog open={confirmCloseDayOpen} onOpenChange={setConfirmCloseDayOpen}>
+        <DialogContent className="sm:max-w-[420px]">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-destructive">
+              <StopCircle className="w-5 h-5" />
+              Close Day
+            </DialogTitle>
+            <DialogDescription>
+              This will force-close all remaining open shifts for today. Employees will not be able to submit a cash count after this action. Are you sure?
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="gap-2">
+            <Button variant="outline" onClick={() => setConfirmCloseDayOpen(false)} disabled={closeDayMutation.isPending}>
+              Cancel
+            </Button>
+            <Button variant="destructive" onClick={() => closeDayMutation.mutate()} disabled={closeDayMutation.isPending}>
+              {closeDayMutation.isPending ? 'Closing...' : 'Yes, Close Day'}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   )
 }

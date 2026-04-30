@@ -64,6 +64,21 @@ export default function Dashboard() {
   const [startUsd, setStartUsd] = useState('0')
   const [startLbp, setStartLbp] = useState('0')
   const [isStarting, setIsStarting] = useState(false)
+  const [elapsed, setElapsed] = useState('00:00:00')
+
+  useEffect(() => {
+    if (!activeShift?.opened_at) { setElapsed('00:00:00'); return }
+    function tick() {
+      const diff = Math.max(0, Math.floor((Date.now() - new Date(activeShift!.opened_at!).getTime()) / 1000))
+      const h = Math.floor(diff / 3600)
+      const m = Math.floor((diff % 3600) / 60)
+      const s = diff % 60
+      setElapsed(`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`)
+    }
+    tick()
+    const id = setInterval(tick, 1000)
+    return () => clearInterval(id)
+  }, [activeShift?.opened_at])
 
   useEffect(() => {
     async function load() {
@@ -162,12 +177,13 @@ export default function Dashboard() {
           ) : (
             <Card className="bg-emerald-500/5 border-emerald-500/20 shadow-none hover:bg-emerald-500/10 transition-all cursor-pointer" onClick={() => navigate('/shift')}>
               <CardContent className="px-6 py-3 flex items-center gap-4">
-                <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse" />
+                <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse shrink-0" />
                 <div>
                   <p className="text-[9px] font-black uppercase tracking-widest text-emerald-700">Session Active</p>
-                  <p className="text-sm font-bold text-emerald-900 font-mono">Started {activeShift.opened_at ? new Date(activeShift.opened_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—'}</p>
+                  <p className="text-[10px] text-emerald-600 opacity-70">Started {activeShift.opened_at ? new Date(activeShift.opened_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—'}</p>
+                  <p className="font-mono font-black text-lg text-emerald-900 tabular-nums leading-tight">{elapsed}</p>
                 </div>
-                <ArrowRight className="w-4 h-4 text-emerald-400" />
+                <ArrowRight className="w-4 h-4 text-emerald-400 ml-2" />
               </CardContent>
             </Card>
           )}
