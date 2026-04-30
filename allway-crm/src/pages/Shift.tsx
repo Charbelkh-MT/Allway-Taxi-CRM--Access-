@@ -462,13 +462,31 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
               </div>
             </div>
 
-            <Button 
-              onClick={() => closeMutation.mutate()} 
-              disabled={closeMutation.isPending || !activeShift || !counted} 
-              className="w-full h-12 bg-green-600 hover:bg-green-700 text-white font-bold text-lg shadow-lg shadow-green-600/20"
-            >
-              {closeMutation.isPending ? 'Processing...' : 'Confirm Count & Close Shift'}
-            </Button>
+            <div className="space-y-2">
+              <Button 
+                onClick={() => closeMutation.mutate()} 
+                disabled={closeMutation.isPending || !activeShift || !counted} 
+                className="w-full h-12 bg-green-600 hover:bg-green-700 text-white font-bold text-lg shadow-lg shadow-green-600/20"
+              >
+                {closeMutation.isPending ? 'Processing...' : 'Confirm Count & Close Shift'}
+              </Button>
+
+              {/* Quick end — UI only, no backend call */}
+              {activeShift && (
+                <Button
+                  variant="outline"
+                  className="w-full h-10 text-sm font-medium border-dashed text-muted-foreground hover:text-foreground"
+                  onClick={() => {
+                    void queryClient.invalidateQueries({ queryKey: ['shift'] })
+                    void queryClient.invalidateQueries({ queryKey: ['shift', 'active'] })
+                    setCounted('')
+                    setShiftNote('')
+                  }}
+                >
+                  End Shift (UI only — no save)
+                </Button>
+              )}
+            </div>
           </CardContent>
         </Card>
 
