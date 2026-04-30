@@ -372,8 +372,9 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
                 <Button
                   className="w-full bg-white text-green-700 hover:bg-green-50 font-bold border-0 shadow-md"
                   onClick={() => {
-                    void queryClient.invalidateQueries({ queryKey: ['shift'] })
-                    void queryClient.invalidateQueries({ queryKey: ['shift', 'active'] })
+                    // Directly overwrite the cached query so the UI immediately
+                    // shows "No Active Shift" without touching the database
+                    queryClient.setQueryData(['shift', 'active', profile?.name], null)
                     setCounted('')
                     setShiftNote('')
                   }}
