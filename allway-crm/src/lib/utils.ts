@@ -5,17 +5,20 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+// All times displayed in Lebanon timezone (UTC+3)
+const BEIRUT_TZ = 'Asia/Beirut'
+
 export function fmt(ts: string | null | undefined): string {
   if (!ts) return '—'
   const d = new Date(ts)
-  return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })
+  return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: BEIRUT_TZ })
 }
 
 export function fmtDateTime(ts: string | null | undefined): string {
   if (!ts) return '—'
   const d = new Date(ts)
-  return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) +
-    ' ' + d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })
+  return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: BEIRUT_TZ }) +
+    ' ' + d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: BEIRUT_TZ })
 }
 
 export function fmtMoney(v: number | null | undefined, currency: 'USD' | 'LBP' = 'USD'): string {

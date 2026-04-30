@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
 import { fmtMoney, normalizeMoney } from '@/lib/utils'
 import { useAuditLog } from '@/hooks/useAuditLog'
-import { useRole } from '@/contexts/AuthContext'
+import { useRole, useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -22,6 +22,7 @@ const QK = ['clients']
 export default function Clients() {
   const queryClient = useQueryClient()
   const { log } = useAuditLog()
+  const { profile: _p } = useAuth()
   const role = useRole()
   const canEdit = role === 'admin' || role === 'supervisor'
   const [search, setSearch] = useState('')
@@ -76,8 +77,21 @@ export default function Clients() {
       if (editingClient) {
         const { error } = await (supabase as any).from('clients').update(payload).eq('id', editingClient.id)
         if (error) throw error
+        const oldBal = editingClient.usd_balance ?? 0
+        const newBal = parseFloat(usdBalance) || 0
+        if (Math.abs(oldBal - newBal) > 0.01) {
+          await log('balance_changed', 'Clients', `Balance: ${trimmed} (#${editingClient.id}) $${oldBal.toFixed(2)} → $${newBal.toFixed(2)}`)
+        }
+        if (editingClient.debt_status !== debtStatus) {
+          await log('status_changed', 'Clients', `Status: ${trimmed} ${editingClient.debt_status} → ${debtStatus}`)
+        }
         await log('client_edited', 'Clients', `Updated: ${trimmed}`)
       } else {
+        // Prevent duplicate client names
+        const { data: existing } = await supabase.from('clients').select('id').ilike('full_name', trimmed).limit(1)
+        if (existing && (existing as any[]).length > 0) {
+          throw new Error(`Client "${trimmed}" already exists. Search for them and use Edit instead.`)
+        }
         const { error } = await (supabase as any).from('clients').insert(payload)
         if (error) throw error
         await log('client_added', 'Clients', `New: ${trimmed}`)

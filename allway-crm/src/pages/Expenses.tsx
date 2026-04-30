@@ -149,9 +149,14 @@ export default function Expenses() {
 
   const approveMutation = useMutation({
     mutationFn: async (id: number) => {
+      // Fetch expense to check self-approval
+      const { data: expense } = await (supabase as any).from('expenses').select('submitted_by, amount_usd, supplier').eq('id', id).single()
+      if (expense && expense.submitted_by === profile?.name) {
+        throw new Error('You cannot approve your own expense submission.')
+      }
       const { error } = await (supabase as any).from('expenses').update({ status: 'approved', approved_by: profile?.name }).eq('id', id)
       if (error) throw error
-      await log('expense_approved', 'Expenses', `Expense #${id} approved by ${profile?.name}`)
+      await log('expense_approved', 'Expenses', `Expense #${id} approved by ${profile?.name} — ${expense?.supplier} $${expense?.amount_usd}`)
     },
     onSuccess: () => { 
       toast.success('Expense approved')

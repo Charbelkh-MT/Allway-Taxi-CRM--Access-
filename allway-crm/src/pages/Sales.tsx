@@ -190,6 +190,15 @@ export default function Sales() {
       const validLines = lines.filter(line => line.productName.trim() && line.qty > 0 && line.unitPrice > 0)
       if (validLines.length === 0) throw new Error('Add valid line items')
 
+      // Stock availability check
+      for (const line of validLines) {
+        if (!line.productId) continue
+        const { data: prod } = await supabase.from('products').select('quantity, description').eq('id', line.productId).single()
+        if (prod && (prod as any).quantity < line.qty) {
+          throw new Error(`Insufficient stock for "${(prod as any).description}": only ${(prod as any).quantity} available, tried to sell ${line.qty}`)
+        }
+      }
+
       const matchedClient = clients.find(c => c.full_name.trim().toLowerCase() === cleanedClientName.toLowerCase())
       const isLbpPayment = paymentMethod === 'Cash LBP'
 
@@ -249,9 +258,36 @@ export default function Sales() {
 
   const approveVoidMutation = useMutation({
     mutationFn: async (invoice: Invoice) => {
-      const { error } = await (supabase as any).from('invoices').update({ status: 'voided', void_approved_by: profile?.name ?? 'system' }).eq('id', invoice.id)
+      // 1. Mark invoice as voided
+      const { error } = await (supabase as any)
+        .from('invoices')
+        .update({ status: 'voided', void_approved_by: profile?.name ?? 'system' })
+        .eq('id', invoice.id)
       if (error) throw error
-      await log('void_approved', 'Voids', `Void approved for #${invoice.id}`)
+
+      // 2. Restore stock quantities for each line item
+      const { data: items } = await supabase
+        .from('invoice_items')
+        .select('product_id, quantity')
+        .eq('invoice_id', invoice.id)
+
+      for (const item of (items ?? []) as any[]) {
+        if (!item.product_id || !item.quantity) continue
+        const { data: prod } = await supabase
+          .from('products')
+          .select('id, quantity')
+          .eq('id', item.product_id)
+          .single()
+        if (prod) {
+          const restoredQty = ((prod as any).quantity ?? 0) + item.quantity
+          await (supabase as any)
+            .from('products')
+            .update({ quantity: restoredQty })
+            .eq('id', item.product_id)
+        }
+      }
+
+      await log('void_approved', 'Voids', `Void approved for Invoice #${invoice.id} — stock restored for ${(items ?? []).length} item(s)`)
     },
     onSuccess: () => {
       toast.success('Void approved'); void queryClient.invalidateQueries({ queryKey: INVOICES_QUERY_KEY })

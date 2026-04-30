@@ -3,7 +3,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
 import { useAuditLog } from '@/hooks/useAuditLog'
-import { useRole } from '@/contexts/AuthContext'
+import { useRole, useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -29,6 +29,7 @@ const SECURITY_RULES = [
 export default function Users() {
   const queryClient = useQueryClient()
   const { log } = useAuditLog()
+  const { profile } = useAuth()
   const role = useRole()
   const isAdmin = role === 'admin'
   const [dialogOpen, setDialogOpen] = useState(false)
@@ -84,37 +85,28 @@ export default function Users() {
         // Update profile
         const { error } = await (supabase as any).from('users').update(payload).eq('id', editingUser.id)
         if (error) throw error
-        await log('user_edited', 'Users', `Updated user: ${uName.trim()} (${normalizedUsername})`)
-        return { authProvisioned: false as const }
-      }
-
-      if (provisionAuth) {
-        const { error: provisionError } = await (supabase as any).rpc('provision_auth_user', {
-          p_username: normalizedUsername,
-          p_password: uPass,
-          p_name: uName.trim(),
-          p_role: uRole,
-          p_station: uStation,
-        })
-        if (!provisionError) {
-          await log('user_added', 'Users', `New user provisioned: ${uName.trim()} (${normalizedUsername}) — ${uRole}`)
-          return { authProvisioned: true as const }
+        // Detect and log specific sensitive changes
+        if (editingUser.active && !uActive) {
+          await log('user_deactivated', 'Users', `SECURITY: User account DEACTIVATED — ${uName.trim()} (${uUsername.trim()}) by ${profile?.name}`)
         }
-      }
-
-      const { error } = await (supabase as any).from('users').insert({
-        ...payload, password_hash: uPass,
-      })
-      if (error) throw error
-      await log('user_added', 'Users', `New user profile: ${uName.trim()} (${normalizedUsername}) — ${uRole}`)
-      return { authProvisioned: false as const }
-    },
-    onSuccess: ({ authProvisioned }) => {
-      if (authProvisioned) {
-        toast.success('User saved with Auth account')
+        if (!editingUser.active && uActive) {
+          await log('user_reactivated', 'Users', `User account reactivated — ${uName.trim()} by ${profile?.name}`)
+        }
+        if (uPass.trim()) {
+          await log('password_changed', 'Users', `SECURITY: Password changed for ${uUsername.trim()} by ${profile?.name}`)
+        }
+        await log('user_edited', 'Users', `Updated user: ${uName.trim()}`)
       } else {
-        toast.success(editingUser ? 'User updated' : 'User profile saved')
+        // New user — insert profile only (Auth is provisioned separately via Supabase dashboard)
+        const { error } = await (supabase as any).from('users').insert({
+          ...payload,
+        })
+        if (error) throw error
+        await log('user_added', 'Users', `New user: ${uName.trim()} (${normalizedUsername}) — ${uRole}`)
       }
+    },
+    onSuccess: () => {
+      toast.success(editingUser ? 'User updated' : 'User saved')
       void queryClient.invalidateQueries({ queryKey: QK })
       setDialogOpen(false)
     },
