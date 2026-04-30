@@ -301,26 +301,28 @@ export default function Sales() {
   const updateLine = (index: number, next: Partial<InvoiceLineDraft>) => setLines(prev => prev.map((line, i) => (i === index ? { ...line, ...next } : line)))
   const addLine = () => setLines(prev => [...prev, { productName: '', productId: null, qty: 1, unitPrice: 0 }])
 
-  // Barcode scanner handler — fires when USB scanner or camera scan detected
+  // Barcode scanner handler — fires from USB scanner or camera scan
+  // Auto-opens the invoice sheet if it isn't already open
   const handleBarcodeScan = async (barcode: string) => {
-    if (!sheetOpen) return // Only active when invoice sheet is open
     const result = await lookupBarcode(barcode)
     if (result.found) {
       const p = result.product
-      // Add new line with product pre-filled
-      setLines(prev => [
-        ...prev.filter(l => l.productName || l.unitPrice > 0), // Keep non-empty lines
-        { productName: p.description, productId: p.id, qty: 1, unitPrice: p.selling },
-      ])
-      toast.success(`Added: ${p.description}`, { duration: 2000 })
+      // Auto-open sheet if closed
+      if (!sheetOpen) setSheetOpen(true)
+      setLines(prev => {
+        const nonEmpty = prev.filter(l => l.productName.trim() || l.unitPrice > 0)
+        return [...nonEmpty, { productName: p.description, productId: p.id, qty: 1, unitPrice: p.selling }]
+      })
+      toast.success(`✓ ${p.description} — ${p.currency === 'LBP' ? p.selling.toLocaleString() + ' LBP' : '$' + p.selling.toFixed(2)}`, { duration: 2500 })
     } else if (result.reason === 'not_found') {
-      toast.error(`Barcode "${barcode}" not found in products`, { duration: 3000 })
+      toast.error(`Barcode "${barcode}" not found — assign it in Products first`, { duration: 4000 })
     } else {
-      toast.warning(`Product found but is inactive`)
+      toast.warning(`Product is inactive — reactivate it in Products first`)
     }
   }
 
-  useBarcode({ onScan: handleBarcodeScan, active: sheetOpen })
+  // Always active on Sales page — auto-opens invoice sheet when a scan arrives
+  useBarcode({ onScan: handleBarcodeScan, active: canUseSales })
   const removeLine = (index: number) => setLines(prev => (prev.length === 1 ? prev : prev.filter((_, i) => i !== index)))
 
   const resolveProductForLine = (index: number) => {

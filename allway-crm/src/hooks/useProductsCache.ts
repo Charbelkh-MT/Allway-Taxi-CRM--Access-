@@ -21,7 +21,7 @@ export function useProductsCache(options: UseProductsCacheOptions = {}) {
       while (true) {
         const { data, error } = await supabase
           .from('products')
-          .select('id,description,category,sub_category,brand,currency,cost,selling,quantity,active,created_at')
+          .select('id,description,category,sub_category,brand,barcode,currency,cost,selling,quantity,active,created_at')
           .eq('active', true)
           .order('description', { ascending: true })
           .range(from, from + step - 1)

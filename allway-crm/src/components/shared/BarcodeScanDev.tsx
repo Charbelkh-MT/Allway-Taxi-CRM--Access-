@@ -1,102 +1,133 @@
 /**
- * BarcodeScanDev — floating developer test panel
+ * BarcodeScanDev — barcode scanner test panel
  *
- * Only rendered when import.meta.env.DEV is true (local dev server).
- * Never appears in production builds.
+ * Visible in DEV mode always.
+ * In production: hidden by default, toggle with Ctrl+Shift+B.
  *
- * Lets you type any barcode and press Enter (or click Scan) to fire
- * the exact same event pipeline as a real USB barcode scanner.
+ * Simulates a USB barcode scanner by dispatching rapid keyboard events
+ * identical to what a real scanner produces.
  */
-import { useState, useRef } from 'react'
-import { ScanBarcode, ChevronDown, ChevronUp } from 'lucide-react'
+import { useState, useRef, useEffect } from 'react'
+import { ScanBarcode, X } from 'lucide-react'
 import { simulateScan } from '@/hooks/useBarcode'
 
 const SAMPLE_BARCODES = [
-  { label: 'Samsung A16', code: '8806095844701' },
+  { label: 'Samsung A16',   code: '8806095844701' },
   { label: 'iPhone 15 Case', code: '0194253418481' },
-  { label: 'USB-C Cable 1m', code: '6901443157097' },
-  { label: 'Alfa 15.15 Card', code: 'ALFA-15-TEST01' },
-  { label: 'Touch 07.58 Card', code: 'TUCH-07-TEST02' },
+  { label: 'USB-C Cable',   code: '6901443157097' },
+  { label: 'Alfa 15.15',    code: 'ALFA-15-TEST01' },
+  { label: 'Custom test',   code: 'TEST-PRODUCT-01' },
 ]
 
 export function BarcodeScanDev() {
-  // Never render in production
-  if (!import.meta.env.DEV) return null
-
-  const [code, setCode]         = useState('')
+  const isDev = import.meta.env.DEV
+  const [visible, setVisible]   = useState(isDev)   // always on in dev, off in prod
   const [expanded, setExpanded] = useState(true)
+  const [code, setCode]         = useState('')
   const [flash, setFlash]       = useState(false)
-  const inputRef                = useRef<HTMLInputElement>(null)
+  const [lastScan, setLastScan] = useState('')
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  // In production, toggle visibility with Ctrl+Shift+B
+  useEffect(() => {
+    if (isDev) return
+    function onKey(e: KeyboardEvent) {
+      if (e.ctrlKey && e.shiftKey && e.key === 'B') {
+        setVisible(v => !v)
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [isDev])
+
+  if (!visible) return null
 
   function fire(barcode: string) {
-    if (!barcode.trim()) return
+    const clean = barcode.trim()
+    if (!clean) return
     setFlash(true)
-    simulateScan(barcode.trim())
-    setTimeout(() => setFlash(false), 400)
+    setLastScan(clean)
+    simulateScan(clean)
+    setTimeout(() => setFlash(false), 600)
     setCode('')
-    inputRef.current?.focus()
+    setTimeout(() => inputRef.current?.focus(), 50)
   }
 
   return (
-    <div
-      className="fixed bottom-4 left-4 z-50 font-mono text-xs select-none"
-      style={{ width: expanded ? 260 : 44 }}
-    >
-      <div
-        className={`rounded-xl border-2 shadow-xl transition-all duration-200 overflow-hidden ${
-          flash ? 'border-green-400 bg-green-50' : 'border-amber-400 bg-amber-50'
-        }`}
-      >
+    <div className="fixed bottom-4 left-4 z-[9999] font-mono text-xs select-none"
+      style={{ width: expanded ? 256 : 42 }}>
+      <div className={`rounded-xl border-2 shadow-2xl overflow-hidden transition-all ${
+        flash
+          ? 'border-green-400 bg-green-50 shadow-green-200'
+          : 'border-amber-400 bg-amber-50 shadow-amber-100'
+      }`}>
+
         {/* Header */}
         <button
           onClick={() => setExpanded(e => !e)}
-          className="w-full flex items-center gap-2 px-3 py-2 text-amber-800 font-bold hover:bg-amber-100 transition-colors"
+          className="w-full flex items-center gap-2 px-3 py-2.5 text-amber-800 font-bold hover:bg-amber-100 transition-colors"
         >
-          <ScanBarcode className="w-4 h-4 shrink-0" />
-          {expanded && <span className="flex-1 text-left">Scanner Dev Panel</span>}
-          {expanded ? <ChevronDown className="w-3 h-3" /> : null}
+          <ScanBarcode className="w-4 h-4 shrink-0 text-amber-600" />
+          {expanded && (
+            <>
+              <span className="flex-1 text-left text-[11px] uppercase tracking-widest">
+                Scanner Test
+              </span>
+              {!isDev && (
+                <span className="text-[9px] bg-amber-200 text-amber-700 px-1.5 py-0.5 rounded">PROD</span>
+              )}
+              <X className="w-3 h-3 text-amber-400" onClick={e => { e.stopPropagation(); setVisible(false) }} />
+            </>
+          )}
         </button>
 
         {expanded && (
-          <div className="px-3 pb-3 space-y-2">
+          <div className="px-3 pb-3 space-y-2.5">
+
+            {/* Last scan result */}
+            {lastScan && (
+              <div className={`text-[10px] px-2 py-1 rounded ${flash ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'}`}>
+                {flash ? '✓ Fired:' : 'Last:'} <span className="font-bold">{lastScan}</span>
+              </div>
+            )}
+
             {/* Manual entry */}
             <div className="flex gap-1">
               <input
                 ref={inputRef}
                 value={code}
                 onChange={e => setCode(e.target.value)}
-                onKeyDown={e => { if (e.key === 'Enter') fire(code) }}
-                placeholder="Type barcode…"
-                className="flex-1 px-2 py-1 rounded border border-amber-300 bg-white text-xs focus:outline-none focus:border-amber-500"
-                autoFocus
+                onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); fire(code) } }}
+                placeholder="Type barcode + Enter"
+                className="flex-1 px-2 py-1.5 rounded-lg border border-amber-300 bg-white text-[11px] focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-300"
+                autoComplete="off"
               />
               <button
                 onClick={() => fire(code)}
-                className="px-2 py-1 rounded bg-amber-500 text-white hover:bg-amber-600 transition-colors font-bold"
+                className="px-2.5 py-1 rounded-lg bg-amber-500 text-white hover:bg-amber-600 active:scale-95 transition-all font-bold text-sm"
+                title="Simulate scan (Enter)"
               >
                 ↵
               </button>
             </div>
 
-            {/* Quick-fire sample barcodes */}
-            <div className="space-y-1">
-              <p className="text-amber-600 uppercase tracking-wide" style={{ fontSize: 9 }}>
-                Quick samples
-              </p>
+            {/* Quick-fire samples */}
+            <div className="space-y-0.5">
+              <p className="text-[9px] text-amber-500 uppercase tracking-widest px-1">Quick samples</p>
               {SAMPLE_BARCODES.map(s => (
                 <button
                   key={s.code}
                   onClick={() => fire(s.code)}
-                  className="w-full text-left px-2 py-1 rounded hover:bg-amber-100 transition-colors flex items-center justify-between gap-1"
+                  className="w-full text-left px-2 py-1 rounded-lg hover:bg-amber-100 active:bg-amber-200 transition-colors flex items-center justify-between gap-2"
                 >
-                  <span className="text-amber-900">{s.label}</span>
-                  <span className="text-amber-500 truncate" style={{ fontSize: 9 }}>{s.code}</span>
+                  <span className="text-amber-900 font-medium">{s.label}</span>
+                  <span className="text-amber-400 text-[9px] truncate max-w-[90px]">{s.code}</span>
                 </button>
               ))}
             </div>
 
-            <p className="text-amber-500 text-center" style={{ fontSize: 9 }}>
-              DEV ONLY — not visible in production
+            <p className="text-[9px] text-amber-400 text-center pt-0.5">
+              {isDev ? 'DEV MODE' : 'Press Ctrl+Shift+B to hide'}
             </p>
           </div>
         )}

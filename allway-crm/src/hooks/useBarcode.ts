@@ -120,18 +120,30 @@ export function useBarcode({
  * event pipeline as a real USB scanner.
  */
 export function simulateScan(barcode: string) {
+  // Blur any currently focused input so the scan isn't captured by the input field
+  ;(document.activeElement as HTMLElement)?.blur?.()
+
   const chars = barcode.split('')
-  const DELAY = 5 // 5ms between chars — realistic scanner speed
+  const DELAY = 8 // 8ms between chars — safe scanner speed
 
   chars.forEach((char, i) => {
     setTimeout(() => {
-      window.dispatchEvent(new KeyboardEvent('keydown', { key: char, bubbles: true }))
-      window.dispatchEvent(new KeyboardEvent('keyup', { key: char, bubbles: true }))
+      window.dispatchEvent(new KeyboardEvent('keydown', {
+        key: char,
+        code: `Key${char.toUpperCase()}`,
+        bubbles: true,
+        cancelable: true,
+      }))
     }, i * DELAY)
   })
 
-  // Fire Enter after all chars
+  // Fire Enter after all chars with a small buffer
   setTimeout(() => {
-    window.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }))
-  }, chars.length * DELAY + 10)
+    window.dispatchEvent(new KeyboardEvent('keydown', {
+      key: 'Enter',
+      code: 'Enter',
+      bubbles: true,
+      cancelable: true,
+    }))
+  }, chars.length * DELAY + 30)
 }
