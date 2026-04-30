@@ -107,7 +107,10 @@ export default function ShiftPage() {
       const cnt = parseFloat(counted) || 0
       const expected = reconSales
       const difference = cnt - expected
-      const status = Math.abs(difference) > 1 ? 'flagged' : 'closed'
+      // Read mismatch threshold from Settings (defaults to $1 if not configured)
+      const infoData = infoQuery.data as any
+      const mismatchThreshold = parseFloat(infoData?.MismatchThreshold ?? infoData?.mismatch_threshold ?? '1') || 1
+      const status = Math.abs(difference) > mismatchThreshold ? 'flagged' : 'closed'
       
       const { error } = await (supabase as any).from('shifts').update({
         status, 
@@ -297,13 +300,13 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
               </div>
               <div className={`flex justify-between items-center border-t-2 pt-3 ${
                 diff === null ? 'text-muted-foreground' : 
-                Math.abs(diff) < 1 ? 'text-green-600' : 'text-destructive'
+                (diff !== null && Math.abs(diff) <= 1) ? 'text-green-600' : 'text-destructive'
               }`}>
                 <span className="text-sm font-bold">Final Difference</span>
                 <div className="flex items-center gap-2">
                   <span className="font-mono font-bold text-xl">{diff !== null ? fmtMoney(diff) : '—'}</span>
-                  {diff !== null && Math.abs(diff) < 1 && <CheckCircle2 className="w-5 h-5" />}
-                  {diff !== null && Math.abs(diff) >= 1 && <AlertCircle className="w-5 h-5" />}
+                  {diff !== null && Math.abs(diff) <= 1 && <CheckCircle2 className="w-5 h-5" />}
+                  {diff !== null && Math.abs(diff) > 1 && <AlertCircle className="w-5 h-5" />}
                 </div>
               </div>
             </div>

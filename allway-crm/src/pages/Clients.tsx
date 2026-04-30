@@ -4,6 +4,7 @@ import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
 import { fmtMoney, normalizeMoney } from '@/lib/utils'
 import { useAuditLog } from '@/hooks/useAuditLog'
+import { useRole } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -21,6 +22,8 @@ const QK = ['clients']
 export default function Clients() {
   const queryClient = useQueryClient()
   const { log } = useAuditLog()
+  const role = useRole()
+  const canEdit = role === 'admin' || role === 'supervisor'
   const [search, setSearch] = useState('')
   const [statusFilter, setStatusFilter] = useState<DebtStatus | 'all'>('all')
   const [dialogOpen, setDialogOpen] = useState(false)

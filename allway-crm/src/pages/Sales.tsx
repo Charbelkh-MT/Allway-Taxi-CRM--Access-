@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
-import { fmtDateTime, fmtMoney, normalizeMoney } from '@/lib/utils'
+import { fmtDateTime, fmtMoney, normalizeMoney, USD_RATE, LBP_MIN } from '@/lib/utils'
 import { useAuth, useCan, useRole } from '@/contexts/AuthContext'
 import { useAuditLog } from '@/hooks/useAuditLog'
 import { useClientsCache } from '@/hooks/useClientsCache'
@@ -86,8 +86,6 @@ interface InvoiceLineDraft {
 
 const PAYMENT_METHODS: PaymentMethod[] = ['Cash USD', 'Cash LBP', 'Whish', 'Card', 'Debt']
 const INVOICES_QUERY_KEY = ['sales', 'invoices']
-const USD_RATE = 89_500
-const LBP_MIN = 1_000
 
 function startOfRange(range: RangeFilter) {
   const now = new Date()
@@ -237,6 +235,8 @@ export default function Sales() {
   const requestVoidMutation = useMutation({
     mutationFn: async () => {
       if (!selectedInvoice || !voidReason.trim()) throw new Error('Reason required')
+      const isCreator = selectedInvoice.created_by === profile?.name
+      if (!isCreator && !canApproveVoid) throw new Error('Only the invoice creator or a supervisor can request a void')
       const { error } = await (supabase as any).from('invoices').update({ status: 'void_requested', void_reason: voidReason.trim(), void_requested_by: profile?.name ?? 'system' }).eq('id', selectedInvoice.id)
       if (error) throw error
       await log('void_requested', 'Voids', `Void requested for #${selectedInvoice.id}`)
@@ -287,7 +287,13 @@ export default function Sales() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
+          <Sheet open={sheetOpen} onOpenChange={(open) => {
+              setSheetOpen(open)
+              if (!open) {
+                setClientName(''); setPaymentMethod('Cash USD')
+                setLines([{ productName: '', productId: null, qty: 1, unitPrice: 0 }])
+              }
+            }}>
             <SheetTrigger asChild>
               <Button className="h-12 bg-indigo-600 hover:bg-indigo-700 text-white font-black px-8 rounded-2xl shadow-xl shadow-indigo-600/20 group">
                 <PlusCircle className="w-4 h-4 mr-2 group-hover:rotate-90 transition-transform" />

@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
-import { fmtMoney } from '@/lib/utils'
+import { fmtMoney, USD_RATE } from '@/lib/utils'
 import { useAuth } from '@/contexts/AuthContext'
 import { useAuditLog } from '@/hooks/useAuditLog'
 import { Button } from '@/components/ui/button'
@@ -85,7 +85,7 @@ export default function DailyBalance() {
     const l_cash = parseFloat(lbpCash) || 0
 
     // Using 90,000 as the standard rate for reconciliation
-    const totalUsd = u_cms + u_whish + u_cash + u_usdt + u_alfa + u_touch + (l_cms + l_whish + l_cash) / 90000
+    const totalUsd = u_cms + u_whish + u_cash + u_usdt + u_alfa + u_touch + (l_cms + l_whish + l_cash) / USD_RATE
     
     return {
       totalUsd,
@@ -122,9 +122,11 @@ export default function DailyBalance() {
       await log('pnl_entry_added', 'Daily Balance', `Reconciliation report saved: ${fmtMoney(totals.totalUsd)}`)
     },
     onSuccess: () => {
-      toast.success('Daily balance report successfully archived')
+      toast.success('Daily balance entry saved successfully')
       void queryClient.invalidateQueries({ queryKey: QK })
-      setNote('')
+      setUsdCms('0'); setUsdWhish('0'); setUsdCash('0'); setUsdt('0'); setAlfa('0'); setTouch('0')
+      setLbpCms('0'); setLbpWhish('0'); setLbpCash('0')
+      setCommUsd('0'); setCommLbp('0'); setNote('')
     },
     onError: (e) => toast.error(e instanceof Error ? e.message : 'Failed to archive report')
   })
@@ -147,9 +149,14 @@ export default function DailyBalance() {
             <Copy className="w-4 h-4" />
             Save & Copy
           </Button>
-          <Button variant="outline" className="h-11 px-6 bg-amber-500/10 border-amber-500/20 text-amber-700 font-bold hover:bg-amber-500/20 flex items-center gap-2">
+          <Button 
+            onClick={() => saveMutation.mutate()}
+            disabled={saveMutation.isPending}
+            className="h-11 px-6 bg-amber-500/10 border-amber-500/20 text-amber-700 font-bold hover:bg-amber-500/20 flex items-center gap-2"
+            variant="outline"
+          >
             <History className="w-4 h-4" />
-            Archive History
+            {saveMutation.isPending ? 'Saving...' : 'Save Entry'}
           </Button>
         </div>
       </div>

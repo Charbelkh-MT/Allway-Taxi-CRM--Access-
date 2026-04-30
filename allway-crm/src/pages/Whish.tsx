@@ -137,6 +137,14 @@ export default function Whish() {
         station: profile?.station ?? '',
       })
       if (error) throw error
+      // Warn if wallet would go negative after this outflow
+      const dir = TX_TYPES[type]?.direction ?? -1
+      if (dir === -1) {
+        const newUsd = walletBalance.usd + dir * (parseFloat(usd) || 0)
+        if (newUsd < 0) {
+          toast.warning(`⚠ Wallet balance is now negative (${newUsd.toFixed(2)} USD). Verify your Whish account has sufficient funds.`)
+        }
+      }
       await log('whish_transaction', 'Whish', `${type} — ${client.trim()} — $${usd}`)
     },
     onSuccess: () => {

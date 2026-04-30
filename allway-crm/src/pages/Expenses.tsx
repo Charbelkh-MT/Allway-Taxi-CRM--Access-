@@ -130,6 +130,13 @@ export default function Expenses() {
       })
       if (error) throw error
       await log('expense_submitted', 'Expenses', `Expense: ${supplierName} $${usd} / ${lbp} LBP`)
+
+      // Check expense threshold from Settings and warn supervisors
+      const { data: settingsRow } = await (supabase as any).from('tblInformation').select('*').limit(1).single().catch(() => ({ data: null }))
+      const threshold = parseFloat(settingsRow?.ExpenseThreshold ?? settingsRow?.expense_threshold ?? '50') || 50
+      if (usd >= threshold) {
+        toast.warning(`⚠ Large expense ($${usd}) submitted — supervisor approval required`, { duration: 6000 })
+      }
     },
     onSuccess: () => {
       toast.success('Expense submitted for supervisor approval')
@@ -144,6 +151,7 @@ export default function Expenses() {
     mutationFn: async (id: number) => {
       const { error } = await (supabase as any).from('expenses').update({ status: 'approved', approved_by: profile?.name }).eq('id', id)
       if (error) throw error
+      await log('expense_approved', 'Expenses', `Expense #${id} approved by ${profile?.name}`)
     },
     onSuccess: () => { 
       toast.success('Expense approved')
@@ -155,6 +163,7 @@ export default function Expenses() {
     mutationFn: async (id: number) => {
       const { error } = await (supabase as any).from('expenses').update({ status: 'rejected', approved_by: profile?.name }).eq('id', id)
       if (error) throw error
+      await log('expense_rejected', 'Expenses', `Expense #${id} rejected by ${profile?.name}`)
     },
     onSuccess: () => { 
       toast.success('Expense rejected')

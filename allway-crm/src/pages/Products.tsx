@@ -103,6 +103,12 @@ export default function Products() {
   const saveMutation = useMutation({
     mutationFn: async () => {
       if (!desc.trim()) throw new Error('Description required')
+      const costVal = parseFloat(cost) || 0
+      const sellVal = parseFloat(selling) || 0
+      if (costVal > 0 && sellVal > 0 && costVal > sellVal) {
+        const ok = window.confirm(`⚠ Cost (${costVal}) exceeds selling price (${sellVal}). This item will sell at a loss. Save anyway?`)
+        if (!ok) throw new Error('Cancelled — adjust the price before saving')
+      }
       const payload = { description: desc.trim(), category: cat.trim(), brand: brand.trim(), barcode: barcode.trim(), currency, cost: parseFloat(cost) || 0, selling: parseFloat(selling) || 0, quantity: parseInt(qty) || 0 }
       if (editingProduct) {
         const { error } = await (supabase as any).from('products').update(payload).eq('id', editingProduct.id)

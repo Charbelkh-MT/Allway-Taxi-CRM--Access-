@@ -73,12 +73,16 @@ export default function Returns() {
     mutationFn: async () => {
       if (!client.trim() || !product.trim()) throw new Error('Client and product names are required')
       if (parseInt(qty) <= 0) throw new Error('Return quantity must be at least 1')
+      if (parseFloat(refundUsd) < 0) throw new Error('Refund amount cannot be negative')
       
+      const returnQty = parseInt(qty) || 1
+
+      // 1. Insert the return record
       const { error } = await (supabase as any).from('returns').insert({
         invoice_id: invId ? parseInt(invId) : null, 
         client_name: client.trim(),
         product_name: product.trim(), 
-        quantity: parseInt(qty) || 1,
+        quantity: returnQty,
         refund_usd: parseFloat(refundUsd) || 0, 
         refund_method: refundMethod,
         reason: reason.trim(), 
@@ -86,8 +90,22 @@ export default function Returns() {
         processed_by: profile?.name ?? 'system', 
         station: profile?.station ?? '',
       })
-      
       if (error) throw error
+
+      // 2. Add quantity back to product stock (match by description, case-insensitive)
+      const { data: matchedProducts } = await supabase
+        .from('products')
+        .select('id, quantity, description')
+        .ilike('description', product.trim())
+        .limit(1)
+
+      if (matchedProducts && matchedProducts.length > 0) {
+        const prod = matchedProducts[0] as any
+        const newQty = (prod.quantity ?? 0) + returnQty
+        await (supabase as any).from('products').update({ quantity: newQty }).eq('id', prod.id)
+        await log('stock_adjusted', 'Returns', `Stock +${returnQty} for "${prod.description}" (return by ${client.trim()})`)
+      }
+
       await log('return_processed', 'Returns', `Return — ${product.trim()} for ${client.trim()} — $${refundUsd}`)
     },
     onSuccess: () => {

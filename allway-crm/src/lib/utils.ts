@@ -44,6 +44,13 @@ export function today(): string {
   return new Date().toISOString().split('T')[0]
 }
 
+// ─── Global exchange rate (LBP per $1 USD) ────────────────────────────────────
+// Source: tblRates from Access export (900,000,000 raw units / 10,000 scale)
+export const USD_RATE = 89_500
+
+// Minimum LBP amount to be considered a real LBP invoice (not an import artefact)
+export const LBP_MIN = 1_000
+
 export async function sendWhatsApp(phone: string, apiKey: string, message: string) {
   if (!phone || !apiKey || !message) return
   const encodedMsg = encodeURIComponent(message)
