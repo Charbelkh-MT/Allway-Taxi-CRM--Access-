@@ -8,7 +8,7 @@
  *
  * When a barcode is detected it calls onScan() and closes automatically.
  */
-import { useEffect, useRef, useState, useCallback } from 'react'
+import { useEffect, useRef, useState, useCallback, useLayoutEffect } from 'react'
 import { BrowserMultiFormatReader } from '@zxing/browser'
 import { NotFoundException } from '@zxing/library'
 import { Camera, X, AlertCircle, Loader2 } from 'lucide-react'
@@ -29,9 +29,13 @@ export function BarcodeCamera({ onScan, label = 'Scan with camera', hint, classN
   const [open, setOpen]         = useState(false)
   const [error, setError]       = useState<string | null>(null)
   const [scanning, setScanning] = useState(false)
+  const [retryKey, setRetryKey] = useState(0)
   const videoRef                = useRef<HTMLVideoElement>(null)
   const readerRef               = useRef<BrowserMultiFormatReader | null>(null)
   const controlsRef             = useRef<any>(null)
+  // Keep a stable ref to onScan so the camera effect never re-runs when the parent re-renders
+  const onScanRef               = useRef(onScan)
+  useLayoutEffect(() => { onScanRef.current = onScan }, [onScan])
 
   const stopScanner = useCallback(() => {
     try {
@@ -74,7 +78,7 @@ export function BarcodeCamera({ onScan, label = 'Scan with camera', hint, classN
               const code = result.getText()
               stopScanner()
               setOpen(false)
-              onScan(code)
+              onScanRef.current(code)
             }
             if (err && !(err instanceof NotFoundException)) {
               console.warn('Scan error:', err)
@@ -93,7 +97,9 @@ export function BarcodeCamera({ onScan, label = 'Scan with camera', hint, classN
 
     startScanning()
     return () => { mounted = false; stopScanner() }
-  }, [open, onScan, stopScanner])
+  // retryKey triggers a camera restart when the user hits "Try again"
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, retryKey, stopScanner])
 
   return (
     <>
@@ -160,7 +166,7 @@ export function BarcodeCamera({ onScan, label = 'Scan with camera', hint, classN
                 <div className="text-center text-white space-y-3">
                   <AlertCircle className="w-8 h-8 text-red-400 mx-auto" />
                   <p className="text-sm">{error}</p>
-                  <Button size="sm" variant="secondary" onClick={() => { setError(null); setOpen(false); setOpen(true) }}>
+                  <Button size="sm" variant="secondary" onClick={() => { setError(null); setRetryKey(k => k + 1) }}>
                     Try again
                   </Button>
                 </div>

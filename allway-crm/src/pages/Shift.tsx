@@ -363,15 +363,18 @@ ${flagged.length > 0 ? `<div class="flag">⚠ ${flagged.length} shift(s) flagged
               {activeShift && (
                 <Button
                   className="w-full bg-white text-green-700 hover:bg-green-50 font-bold border-0 shadow-md"
-                  onClick={() => {
-                    // Directly overwrite the cached query so the UI immediately
-                    // shows "No Active Shift" without touching the database
+                  onClick={async () => {
+                    await (supabase as any).from('shifts').update({
+                      status: 'closed',
+                      closed_at: new Date().toISOString(),
+                    }).eq('id', activeShift.id).eq('status', 'open')
                     queryClient.setQueryData(['shift', 'active', profile?.name], null)
+                    void queryClient.invalidateQueries({ queryKey: ['shift'] })
                     setCounted('')
                     setShiftNote('')
                   }}
                 >
-                  End Shift (UI only)
+                  End Shift
                 </Button>
               )}
             </div>

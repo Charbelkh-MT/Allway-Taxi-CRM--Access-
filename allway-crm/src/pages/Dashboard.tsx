@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useMutation, useQueryClient } from '@tanstack/react-query'
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'sonner'
 import { 
@@ -62,7 +62,16 @@ export default function Dashboard() {
   const [metrics, setMetrics] = useState<Metrics | null>(null)
   const [recentInvoices, setRecentInvoices] = useState<Invoice[]>([])
   const [recentLogs, setRecentLogs] = useState<AuditLog[]>([])
-  const [activeShift, setActiveShift] = useState<Shift | null>(null)
+  const activeShiftQuery = useQuery({
+    queryKey: ['shift', 'active', profile?.name],
+    queryFn: async () => {
+      if (!profile?.name) return null
+      const { data } = await supabase.from('shifts').select('*').eq('user_name', profile.name).eq('status', 'open').maybeSingle()
+      return data ?? null
+    },
+    enabled: !!profile?.name,
+  })
+  const activeShift = activeShiftQuery.data ?? null
   const [loading, setLoading] = useState(true)
 
   const [shiftDialogOpen, setShiftDialogOpen] = useState(false)
@@ -101,7 +110,6 @@ export default function Dashboard() {
         productsRes,
         invoicesRes,
         logsRes,
-        shiftRes,
       ] = await Promise.all([
         supabase.from('invoices').select('total_usd,total_lbp').eq('station', station).gte('created_at', todayStart.toISOString()).eq('status', 'saved'),
         supabase.from('clients').select('*', { count: 'exact', head: true }),
@@ -111,7 +119,6 @@ export default function Dashboard() {
         supabase.from('products').select('cost,selling,quantity').eq('active', true),
         supabase.from('invoices').select('*').eq('station', station).order('created_at', { ascending: false }).limit(10),
         supabase.from('audit_log').select('*').eq('station', station).order('created_at', { ascending: false }).limit(10),
-        supabase.from('shifts').select('*').eq('user_name', profile.name).eq('status', 'open').maybeSingle(),
       ])
 
       const todaySales = ((todayInvsRes.data ?? []) as any[]).reduce((sum, row) => {
@@ -131,7 +138,6 @@ export default function Dashboard() {
       })
       setRecentInvoices(invoicesRes.data ?? [])
       setRecentLogs(logsRes.data ?? [])
-      setActiveShift(shiftRes.data ?? null)
       setLoading(false)
     }
     load()
@@ -149,7 +155,7 @@ export default function Dashboard() {
         opened_at: new Date().toISOString()
       }).select().single()
       if (error) throw error
-      setActiveShift(data); setShiftDialogOpen(false); toast.success('Shift started!')
+      queryClient.setQueryData(['shift', 'active', profile.name], data); setShiftDialogOpen(false); toast.success('Shift started!')
       await log('shift_started', 'Dashboard', `Started shift at ${profile.station}`)
     } catch (e: any) { toast.error(e.message || 'Failed') } finally { setIsStarting(false) }
   }
