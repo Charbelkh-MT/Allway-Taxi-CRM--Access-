@@ -19,7 +19,7 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { Package, Plus, Search, AlertTriangle, BarChart3, ArrowUpRight, Layers, Box, Hash, Tag, LayoutGrid, FileText, ScanBarcode } from 'lucide-react'
 import type { Product } from '@/types/database'
-import { BrandLogo, BRAND_LOGOS } from '@/pages/Recharge'
+import { BrandLogo, BRAND_LOGOS, hasBrandLogo } from '@/components/shared/BrandLogos'
 import { ScanToAssign } from '@/components/shared/ScanToAssign'
 
 const QK = ['products']
@@ -258,7 +258,7 @@ export default function Products() {
                     <TableCell>
                       <div className="flex flex-col gap-0.5">
                         <Badge variant="secondary" className="w-fit h-5 text-[9px] uppercase bg-emerald-50 text-emerald-700 border-emerald-200">{p.category || 'Other'}</Badge>
-                        {p.brand && BRAND_LOGOS[p.brand]
+                        {p.brand && hasBrandLogo(p.brand)
                           ? <BrandLogo brand={p.brand} size="sm" />
                           : <span className="text-[9px] font-black uppercase tracking-widest text-muted-foreground opacity-60">{p.brand || '—'}</span>}
                       </div>
