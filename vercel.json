@@ -3,5 +3,11 @@
   "outputDirectory": "allway-crm/dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "crons": [
+    {
+      "path": "/api/send-daily-report",
+      "schedule": "0 18 * * *"
+    }
   ]
 }
