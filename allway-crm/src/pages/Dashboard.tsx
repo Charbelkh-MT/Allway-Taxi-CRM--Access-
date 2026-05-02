@@ -52,6 +52,8 @@ interface Metrics {
   lowStockCount: number
   suspiciousCount: number
   stockValue: number
+  stockPhysical: number
+  stockCash: number
 }
 
 export default function Dashboard() {
@@ -186,6 +188,8 @@ export default function Dashboard() {
         lowStockCount: allProducts.filter((p: any) => p.quantity <= 2).length,
         suspiciousCount: allProducts.filter((p: any) => p.cost > p.selling).length,
         stockValue: stockPhysical + stockCash,
+        stockPhysical,
+        stockCash,
       })
       setRecentInvoices(invoicesRes.data ?? [])
       setRecentLogs(logsRes.data ?? [])
@@ -365,7 +369,7 @@ export default function Dashboard() {
         {[
           { label: 'Total Revenue', value: fmtMoney(metrics?.todaySales || 0), icon: TrendingUp, color: 'text-emerald-600', sub: 'Today (USD)' },
           { label: 'Active Clients', value: metrics?.totalClients || 0, icon: Users, color: 'text-indigo-600', sub: 'Global Directory' },
-          { label: 'Stock Value', value: fmtMoney(metrics?.stockValue || 0), icon: Package, color: 'text-slate-700', sub: 'Physical + Cash' },
+          { label: 'Stock Value', value: fmtMoney(metrics?.stockValue || 0), icon: Package, color: 'text-slate-700', sub: `CRM ${fmtMoney(metrics?.stockPhysical || 0)} · Access ${fmtMoney(metrics?.stockCash || 0)}` },
           { label: 'Pending Debt', value: metrics?.openReceivables || 0, icon: CreditCard, color: 'text-amber-600', sub: 'Awaiting Collection' },
         ].map((m) => (
           <div key={m.label} className="p-6 bg-background border-2 rounded-3xl hover:border-primary/20 transition-all">
