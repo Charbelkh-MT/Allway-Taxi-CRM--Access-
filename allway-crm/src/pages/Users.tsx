@@ -47,6 +47,7 @@ export default function Users() {
   const { profile } = useAuth()
   const role = useRole()
   const isAdmin = role === 'admin'
+  const canView = role === 'admin' || role === 'supervisor'
 
   const [sheetOpen, setSheetOpen] = useState(false)
   const [editingUser, setEditingUser] = useState<any>(null)
@@ -121,7 +122,7 @@ export default function Users() {
     onError: (e) => toast.error(e instanceof Error ? e.message : 'Failed to save user'),
   })
 
-  if (!isAdmin) {
+  if (!canView) {
     return (
       <div className="max-w-7xl mx-auto space-y-10 pb-20">
         <div className="flex flex-col border-b pb-8">
@@ -135,7 +136,7 @@ export default function Users() {
           <AlertCircle className="w-8 h-8 text-destructive opacity-30" />
           <div>
             <p className="font-black text-lg uppercase tracking-tight">Access Restricted</p>
-            <p className="text-sm text-muted-foreground font-medium">Admin access required.</p>
+            <p className="text-sm text-muted-foreground font-medium">Supervisor or Admin access required.</p>
           </div>
         </div>
       </div>
@@ -155,13 +156,15 @@ export default function Users() {
           <h1 className="font-display text-4xl font-black tracking-tighter text-foreground italic uppercase">User Accounts</h1>
           <p className="text-muted-foreground text-sm font-medium mt-1">Manage CRM access, roles, and station assignments.</p>
         </div>
-        <Button
-          onClick={openAdd}
-          className="h-12 bg-slate-800 hover:bg-slate-900 text-white font-black px-8 rounded-2xl shadow-xl shadow-slate-800/20 group"
-        >
-          <PlusCircle className="w-4 h-4 mr-2 group-hover:rotate-90 transition-transform" />
-          ADD USER
-        </Button>
+        {isAdmin && (
+          <Button
+            onClick={openAdd}
+            className="h-12 bg-slate-800 hover:bg-slate-900 text-white font-black px-8 rounded-2xl shadow-xl shadow-slate-800/20 group"
+          >
+            <PlusCircle className="w-4 h-4 mr-2 group-hover:rotate-90 transition-transform" />
+            ADD USER
+          </Button>
+        )}
       </div>
 
       {/* Stats */}
@@ -188,7 +191,7 @@ export default function Users() {
       <Card className="rounded-3xl border-2 shadow-none overflow-hidden">
         <CardHeader className="bg-secondary/30 pb-6 border-b">
           <CardTitle className="text-lg font-black uppercase tracking-tight italic">Account Registry</CardTitle>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{users.length} user{users.length !== 1 ? 's' : ''} · Admin access only</p>
+          <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{users.length} user{users.length !== 1 ? 's' : ''} · {isAdmin ? 'Full admin access' : 'View only'}</p>
         </CardHeader>
         <CardContent className="p-0">
           <Table className="aw-table">
@@ -243,14 +246,16 @@ export default function Users() {
                     )}
                   </TableCell>
                   <TableCell className="text-right pr-6">
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={() => openEdit(u)}
-                      className="h-8 w-8 text-slate-600 hover:bg-slate-100 opacity-0 group-hover:opacity-100 transition-opacity"
-                    >
-                      <Pencil className="w-4 h-4" />
-                    </Button>
+                    {isAdmin && (
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={() => openEdit(u)}
+                        className="h-8 w-8 text-slate-600 hover:bg-slate-100 opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <Pencil className="w-4 h-4" />
+                      </Button>
+                    )}
                   </TableCell>
                 </TableRow>
               ))}
