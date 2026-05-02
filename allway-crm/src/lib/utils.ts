@@ -200,6 +200,130 @@ export function buildDailyWhatsApp(d: DailyReportData): string {
   return msg
 }
 
+// ─── Owner closing summary (matches Access format) ───────────────────────────
+export interface DailyClosingData {
+  date: string          // e.g. "01-05-2026"
+  // Sales breakdown by payment method
+  salesCashUsd: number
+  salesCashLbp: number  // raw LBP
+  salesWhish: number
+  salesCard: number
+  salesDebt: number
+  totalSalesUsd: number
+  totalSalesLbp: number // raw LBP
+  invoiceCount: number
+  // Expenses (approved today)
+  expenseTotal: number
+  // Debts owed to the business
+  receivablesTotal: number  // pending receivables sum
+  clientDebtsTotal: number  // sum of negative client balances
+  // Balance sheet / out amounts
+  capitalUsd: number        // fixed capital from settings
+  stockCashBalance: number  // Access StockCash (the ~$7,339 running counter)
+  stockPhysical: number     // cost × qty across all USD products
+  // Shifts
+  shiftCount: number
+  flaggedCount: number
+  // Commission from Whish
+  commissionTodayUsd: number
+  commissionTodayLbp: number
+  commissionMonthlyUsd: number
+  commissionMonthlyLbp: number
+  // Top items sold today
+  topProducts: { name: string; qty: number }[]
+}
+
+export function buildDailyClosingWhatsApp(d: DailyClosingData): string {
+  const LBP_RATE = 90_000
+  const f2 = (n: number) => n.toFixed(2)
+  const fLbp = (n: number) => Math.round(n).toLocaleString('en-GB')
+  const pnl   = d.totalSalesUsd - d.expenseTotal
+  const total = pnl + d.commissionTodayUsd + (d.commissionTodayLbp / LBP_RATE)
+
+  let msg = `📅 *Closing Summary — ${d.date}*\n`
+  msg += `══════════════════\n`
+
+  // ── USD Amounts (today's sales by method) ─────────────────────────────────
+  msg += `💵 *USD Amounts*\n`
+  if (d.salesCashUsd  > 0) msg += `  Cash:   $${f2(d.salesCashUsd)}\n`
+  if (d.salesWhish    > 0) msg += `  App:    $${f2(d.salesWhish)}\n`
+  if (d.salesCard     > 0) msg += `  Card:   $${f2(d.salesCard)}\n`
+  if (d.salesDebt     > 0) msg += `  Debt:   $${f2(d.salesDebt)}\n`
+  msg += `  *Total: $${f2(d.totalSalesUsd)}*\n`
+
+  // ── LBP Amounts ────────────────────────────────────────────────────────────
+  if (d.salesCashLbp > LBP_MIN) {
+    msg += `──────────────────\n`
+    msg += `💰 *LBP Amounts*\n`
+    msg += `  Cash: ${fLbp(d.salesCashLbp)} / $${f2(d.salesCashLbp / LBP_RATE)}\n`
+    if (d.totalSalesLbp > d.salesCashLbp)
+      msg += `  Other LBP: ${fLbp(d.totalSalesLbp - d.salesCashLbp)} / $${f2((d.totalSalesLbp - d.salesCashLbp) / LBP_RATE)}\n`
+  }
+
+  // ── Debts ──────────────────────────────────────────────────────────────────
+  msg += `──────────────────\n`
+  msg += `🔴 *Debts*\n`
+  msg += `  Total: $${f2(d.receivablesTotal + d.clientDebtsTotal)}\n`
+  if (d.receivablesTotal > 0) msg += `  Receivables: $${f2(d.receivablesTotal)}\n`
+  if (d.clientDebtsTotal > 0) msg += `  Client debts: $${f2(d.clientDebtsTotal)}\n`
+
+  // ── Out Amounts ────────────────────────────────────────────────────────────
+  msg += `──────────────────\n`
+  msg += `📤 *Out Amounts*\n`
+  msg += `  Capital: $${f2(d.capitalUsd)}\n`
+  msg += `  Cash Stock: $${f2(d.stockCashBalance)}\n`
+  msg += `  Receivables: $${f2(d.receivablesTotal)}\n`
+  msg += `  Expenses: $${f2(d.expenseTotal)}\n`
+
+  // ── PNL ────────────────────────────────────────────────────────────────────
+  msg += `──────────────────\n`
+  msg += `📊 *PNL*\n`
+  msg += `  Sales: $${f2(d.totalSalesUsd)}\n`
+  msg += `  Expenses: -$${f2(d.expenseTotal)}\n`
+  msg += `  *Profit: $${f2(pnl)}*\n`
+
+  // ── Commission ─────────────────────────────────────────────────────────────
+  if (d.commissionTodayUsd > 0 || d.commissionTodayLbp > 0) {
+    msg += `──────────────────\n`
+    msg += `🎯 *Commission Summary*\n`
+    if (d.commissionTodayUsd  > 0) msg += `  Today USD: $${f2(d.commissionTodayUsd)}\n`
+    if (d.commissionTodayLbp  > LBP_MIN) msg += `  Today LBP: ${fLbp(d.commissionTodayLbp)}\n`
+    if (d.commissionMonthlyUsd > 0) {
+      msg += `\n  _Monthly (to date)_\n`
+      msg += `  USD: $${f2(d.commissionMonthlyUsd)}\n`
+      if (d.commissionMonthlyLbp > LBP_MIN)
+        msg += `  LBP: ${fLbp(d.commissionMonthlyLbp)}\n`
+    }
+  }
+
+  // ── Profit + Commission ─────────────────────────────────────────────────────
+  msg += `──────────────────\n`
+  msg += `💫 *Profit + Commission*\n`
+  msg += `  $${f2(pnl)} + $${f2(d.commissionTodayUsd)} = *$${f2(total)}*\n`
+
+  // ── Stock Value ─────────────────────────────────────────────────────────────
+  msg += `──────────────────\n`
+  msg += `📦 *Stock Value*\n`
+  msg += `  Physical: $${f2(d.stockPhysical)}\n`
+  msg += `  Cash side: $${f2(d.stockCashBalance)}\n`
+  msg += `  *Total: $${f2(d.stockPhysical + d.stockCashBalance)}*\n`
+
+  // ── Shifts ─────────────────────────────────────────────────────────────────
+  msg += `──────────────────\n`
+  msg += `👥 Shifts: ${d.shiftCount}`
+  if (d.flaggedCount > 0) msg += `  ·  ⚠️ *${d.flaggedCount} flagged*`
+  msg += '\n'
+
+  // ── Top Products ────────────────────────────────────────────────────────────
+  if (d.topProducts.length > 0) {
+    msg += `──────────────────\n🏆 *Top Products*\n`
+    d.topProducts.slice(0, 5).forEach(p => { msg += `  · ${p.name.slice(0, 28)}: ×${p.qty}\n` })
+  }
+
+  msg += `══════════════════\n✅ *Close Day*`
+  return msg
+}
+
 // ─── End-of-day full HTML email builder ──────────────────────────────────────
 export interface DailyReportFullData extends DailyReportData {
   invoices: any[]

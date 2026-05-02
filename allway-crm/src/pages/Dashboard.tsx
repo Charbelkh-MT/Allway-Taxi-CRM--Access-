@@ -28,6 +28,8 @@ import {
   ArrowUpRight
 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
+import { PageLoader } from '@/components/shared/PageLoader'
+import { Spinner } from '@/components/shared/Spinner'
 import { useAuth, useRole } from '@/contexts/AuthContext'
 import { useAuditLog } from '@/hooks/useAuditLog'
 import { fmtMoney, fmt, normalizeMoney, LBP_MIN, sendWhatsApp, sendEmail, buildDailyWhatsApp, buildDailyReportHTML, type DailyReportData, type DailyReportFullData } from '@/lib/utils'
@@ -49,6 +51,7 @@ interface Metrics {
   openReceivables: number
   lowStockCount: number
   suspiciousCount: number
+  stockValue: number
 }
 
 export default function Dashboard() {
@@ -73,6 +76,29 @@ export default function Dashboard() {
   })
   const activeShift = activeShiftQuery.data ?? null
   const [loading, setLoading] = useState(true)
+
+  // 2-hour balance alert
+  const balanceAlertQuery = useQuery({
+    queryKey: ['balance_alert', profile?.station],
+    queryFn: async () => {
+      // Load interval from settings (defaults to 2h)
+      const { data: info } = await (supabase as any).from('tblInformation').select('BalanceIntervalHours,balance_interval_hours,CashDrawerStation,cash_drawer_station').limit(1).single().catch(() => ({ data: null }))
+      // Fall back to localStorage values set by Settings page
+      const intervalHours = parseInt(info?.BalanceIntervalHours ?? info?.balance_interval_hours ?? localStorage.getItem('aw_balance_interval_hours') ?? '2') || 2
+      const cashDrawerStation = info?.CashDrawerStation ?? info?.cash_drawer_station ?? localStorage.getItem('aw_cash_drawer_station') ?? ''
+      // Only alert if this station is the cash drawer station (or no station configured)
+      if (cashDrawerStation && profile?.station && cashDrawerStation !== profile.station) return null
+      const cutoff = new Date(Date.now() - intervalHours * 3600 * 1000).toISOString()
+      const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0)
+      const { data } = await (supabase as any).from('pnl_entries').select('created_at').gte('created_at', todayStart.toISOString()).order('created_at', { ascending: false }).limit(1)
+      const lastEntry = data?.[0]?.created_at ?? null
+      if (!lastEntry) return { overdue: true, minutesAgo: null, intervalHours }
+      const minutesAgo = Math.floor((Date.now() - new Date(lastEntry).getTime()) / 60000)
+      return { overdue: minutesAgo > intervalHours * 60, minutesAgo, intervalHours }
+    },
+    enabled: !!profile,
+    refetchInterval: 5 * 60 * 1000, // re-check every 5 minutes
+  })
 
   const [shiftDialogOpen, setShiftDialogOpen] = useState(false)
   const [startUsd, setStartUsd] = useState('0')
@@ -116,16 +142,32 @@ export default function Dashboard() {
         supabase.from('products').select('*', { count: 'exact', head: true }).eq('active', true),
         supabase.from('expenses').select('*', { count: 'exact', head: true }).eq('station', station).eq('status', 'pending'),
         supabase.from('receivables').select('*', { count: 'exact', head: true }).eq('status', 'pending'),
-        supabase.from('products').select('cost,selling,quantity').eq('active', true),
+        supabase.from('products').select('cost,selling,quantity,currency').eq('active', true),
         supabase.from('invoices').select('*').eq('station', station).order('created_at', { ascending: false }).limit(10),
         supabase.from('audit_log').select('*').eq('station', station).order('created_at', { ascending: false }).limit(10),
       ])
+
+      // Fetch StockCashBalance directly — no fallback hardcoding
+      let stockCash = 0
+      try {
+        const settingsRes = await (supabase as any).from('tblInformation').select('StockCashBalance').limit(1).single()
+        const val = parseFloat(settingsRes?.data?.StockCashBalance)
+        if (!isNaN(val) && val > 0) stockCash = val
+      } catch { /* column missing — stockCash stays 0 */ }
 
       const todaySales = ((todayInvsRes.data ?? []) as any[]).reduce((sum, row) => {
         const usd = normalizeMoney(row.total_usd, 'USD')
         const lbp = normalizeMoney(row.total_lbp, 'LBP')
         return sum + (usd > 0 ? usd : lbp / 90_000)
       }, 0)
+
+      // Physical stock value: all products, LBP converted to USD (identical formula to Products page)
+      const stockPhysical = ((productsRes.data ?? []) as any[])
+        .reduce((sum, p) => {
+          const cost = normalizeMoney(parseFloat(p.cost) || 0, p.currency || 'USD')
+          const qty  = parseFloat(p.quantity) || 0
+          return sum + qty * ((p.currency || 'USD').toUpperCase() === 'LBP' ? cost / 90_000 : cost)
+        }, 0)
 
       setMetrics({
         todaySales,
@@ -135,6 +177,7 @@ export default function Dashboard() {
         openReceivables: openReceivablesRes.count ?? 0,
         lowStockCount: (productsRes.data ?? []).filter((p: any) => p.quantity <= 2).length,
         suspiciousCount: (productsRes.data ?? []).filter((p: any) => p.cost > p.selling).length,
+        stockValue: stockPhysical + stockCash,
       })
       setRecentInvoices(invoicesRes.data ?? [])
       setRecentLogs(logsRes.data ?? [])
@@ -232,7 +275,7 @@ export default function Dashboard() {
     onError: (e) => { toast.error(e instanceof Error ? e.message : 'Failed to close day'); setConfirmCloseDayOpen(false) },
   })
 
-  if (loading) return <div className="h-screen flex items-center justify-center"><Zap className="w-8 h-8 text-amber-500 animate-pulse" /></div>
+  if (loading) return <PageLoader />
 
   return (
     <div className="max-w-7xl mx-auto space-y-10 pb-20">
@@ -303,18 +346,18 @@ export default function Dashboard() {
           <DialogFooter>
             <Button variant="outline" onClick={() => setConfirmCloseDayOpen(false)} disabled={closeDayMutation.isPending}>Cancel</Button>
             <Button variant="destructive" onClick={() => closeDayMutation.mutate()} disabled={closeDayMutation.isPending}>
-              {closeDayMutation.isPending ? 'Compiling & sending...' : 'Yes, Close Day'}
+              {closeDayMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />Compiling & sending...</> : 'Yes, Close Day'}
             </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
 
       {/* Decluttered Metrics Command Bar */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 stat-grid">
         {[
           { label: 'Total Revenue', value: fmtMoney(metrics?.todaySales || 0), icon: TrendingUp, color: 'text-emerald-600', sub: 'Today (USD)' },
           { label: 'Active Clients', value: metrics?.totalClients || 0, icon: Users, color: 'text-indigo-600', sub: 'Global Directory' },
-          { label: 'Stock Items', value: metrics?.totalProducts || 0, icon: Package, color: 'text-slate-700', sub: 'In Catalog' },
+          { label: 'Stock Value', value: fmtMoney(metrics?.stockValue || 0), icon: Package, color: 'text-slate-700', sub: 'Physical + Cash' },
           { label: 'Pending Debt', value: metrics?.openReceivables || 0, icon: CreditCard, color: 'text-amber-600', sub: 'Awaiting Collection' },
         ].map((m) => (
           <div key={m.label} className="p-6 bg-background border-2 rounded-3xl hover:border-primary/20 transition-all">
@@ -330,6 +373,26 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
+
+      {/* 2-hour balance alert */}
+      {balanceAlertQuery.data?.overdue && (
+        <div className="flex items-center gap-4 p-5 rounded-3xl border-2 border-amber-400 bg-amber-50 animate-in fade-in">
+          <div className="p-3 bg-amber-500 rounded-2xl text-white shrink-0">
+            <Clock className="w-5 h-5" />
+          </div>
+          <div className="flex-1">
+            <p className="font-black text-amber-900 uppercase tracking-tight">Balance Check Overdue</p>
+            <p className="text-amber-800 text-sm font-medium mt-0.5">
+              {balanceAlertQuery.data.minutesAgo === null
+                ? 'No balance check has been submitted today.'
+                : `Last check was ${balanceAlertQuery.data.minutesAgo} minutes ago — every ${balanceAlertQuery.data.intervalHours}h required.`}
+            </p>
+          </div>
+          <Button onClick={() => navigate('/daily-balance')} className="h-11 bg-amber-500 hover:bg-amber-600 text-white font-black px-6 rounded-2xl shrink-0">
+            Open Balance
+          </Button>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         
@@ -491,13 +554,6 @@ export default function Dashboard() {
       </Dialog>
     </div>
   )
-}
-
-function getGreeting() {
-  const h = new Date().getHours()
-  if (h < 12) return 'MORNING'
-  if (h < 17) return 'AFTERNOON'
-  return 'EVENING'
 }
 
 function Calculator(props: any) {

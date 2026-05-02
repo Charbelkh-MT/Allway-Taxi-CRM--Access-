@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
@@ -19,8 +19,9 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { Package, Plus, Search, AlertTriangle, BarChart3, ArrowUpRight, Layers, Box, Hash, Tag, LayoutGrid, FileText, ScanBarcode } from 'lucide-react'
 import type { Product } from '@/types/database'
-import { BrandLogo, BRAND_LOGOS, hasBrandLogo } from '@/components/shared/BrandLogos'
+import { SkeletonRows } from '@/components/shared/SkeletonRows'
 import { ScanToAssign } from '@/components/shared/ScanToAssign'
+import { Spinner } from '@/components/shared/Spinner'
 
 const QK = ['products']
 const CATEGORIES = ['Accessories', 'Mobiles', 'Recharges', 'Cables', 'Toys', 'Other']
@@ -65,25 +66,43 @@ export default function Products() {
     },
   })
 
+  // StockCashBalance — direct DB fetch, no React Query cache involved
+  const [stockCash, setStockCash] = useState(0)
+  useEffect(() => {
+    ;(supabase as any)
+      .from('tblInformation')
+      .select('StockCashBalance')
+      .limit(1)
+      .single()
+      .then(({ data }: any) => {
+        const val = parseFloat(data?.StockCashBalance)
+        setStockCash(!isNaN(val) && val > 0 ? val : 0)
+      })
+      .catch(() => setStockCash(0))
+  }, [])
+
   const { categories, brands, stats } = useMemo(() => {
     const data = productsQuery.data ?? []
     const cats = new Set(data.map(p => p.category).filter(Boolean))
     const brs = new Set(data.map(p => p.brand).filter(Boolean))
+    const physicalValueUsd = data.reduce((a, p) => {
+      const n = normalizeMoney(p.cost, p.currency)
+      return a + (p.quantity || 0) * (p.currency === 'LBP' ? n / 90000 : n)
+    }, 0)
     return {
       categories: [...cats].sort(),
       brands: [...brs].sort(),
       stats: {
         totalItems: data.length,
         totalQty: data.reduce((a, p) => a + (p.quantity || 0), 0),
-        totalValueUsd: data.reduce((a, p) => {
-          const n = normalizeMoney(p.cost, p.currency)
-          return a + (p.quantity || 0) * (p.currency === 'LBP' ? n / 90000 : n)
-        }, 0),
+        physicalValueUsd,
+        // Total = CRM physical stock (Supabase) + Access cash-side balance
+        totalValueUsd: physicalValueUsd + stockCash,
         lowStock: data.filter(p => (p.quantity || 0) > 0 && (p.quantity || 0) <= 5).length,
         outOfStock: data.filter(p => (p.quantity || 0) <= 0).length,
       }
     }
-  }, [productsQuery.data])
+  }, [productsQuery.data, stockCash])
 
   const filtered = useMemo(() => {
     let rows = productsQuery.data ?? []
@@ -178,9 +197,9 @@ export default function Products() {
         )}
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 stat-grid">
         {[
-          { label: 'Stock Value', value: fmtMoney(stats.totalValueUsd), icon: BarChart3, color: 'text-emerald-600', sub: `${stats.totalQty} total units` },
+          { label: 'Total Stock Value', value: fmtMoney(stats.totalValueUsd), icon: BarChart3, color: 'text-emerald-600', sub: `CRM ${fmtMoney(stats.physicalValueUsd)} · Access ${fmtMoney(stockCash)}` },
           { label: 'Total Items', value: stats.totalItems, icon: Layers, color: 'text-indigo-600', sub: 'Unique SKUs' },
           { label: 'Low Stock', value: stats.lowStock, icon: AlertTriangle, color: 'text-amber-600', sub: '5 units or fewer' },
           { label: 'Out of Stock', value: stats.outOfStock, icon: Box, color: 'text-rose-600', sub: 'Needs restocking' },
@@ -228,7 +247,7 @@ export default function Products() {
           </div>
         </CardHeader>
         <CardContent className="p-0">
-          <Table>
+          <Table className="aw-table">
             <TableHeader className="bg-secondary/20">
               <TableRow className="hover:bg-transparent border-b-2">
                 <TableHead className="pl-6 w-20 text-[10px] font-black uppercase">ID</TableHead>
@@ -241,7 +260,7 @@ export default function Products() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {productsQuery.isLoading && <TableRow><TableCell colSpan={7} className="text-center py-20 italic">Loading catalog...</TableCell></TableRow>}
+              {productsQuery.isLoading && <SkeletonRows cols={7} />}
               {filtered.map(p => {
                 const suspicious = normalizeMoney(p.cost, p.currency) > normalizeMoney(p.selling, p.currency)
                 const qty = p.quantity ?? 0
@@ -258,9 +277,7 @@ export default function Products() {
                     <TableCell>
                       <div className="flex flex-col gap-0.5">
                         <Badge variant="secondary" className="w-fit h-5 text-[9px] uppercase bg-emerald-50 text-emerald-700 border-emerald-200">{p.category || 'Other'}</Badge>
-                        {p.brand && hasBrandLogo(p.brand)
-                          ? <BrandLogo brand={p.brand} size="sm" />
-                          : <span className="text-[9px] font-black uppercase tracking-widest text-muted-foreground opacity-60">{p.brand || '—'}</span>}
+                        {p.brand && <span className="text-[9px] font-black uppercase tracking-widest text-muted-foreground opacity-60">{p.brand}</span>}
                       </div>
                     </TableCell>
                     <TableCell className="text-right font-mono text-xs text-muted-foreground italic opacity-60">

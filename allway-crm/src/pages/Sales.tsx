@@ -72,10 +72,12 @@ import {
   ChevronRight
 } from 'lucide-react'
 import { MethodBadge, StatusBadge, UserBadge } from '@/components/shared/Badges'
+import { SkeletonRows } from '@/components/shared/SkeletonRows'
 import { BarcodeCamera } from '@/components/shared/BarcodeCamera'
 import { useBarcode } from '@/hooks/useBarcode'
 import { lookupBarcode } from '@/lib/barcodeUtils'
 import type { Invoice, InvoiceItem } from '@/types/database'
+import { Spinner } from '@/components/shared/Spinner'
 
 type RangeFilter = 'today' | 'week' | 'month'
 type PaymentMethod = 'Cash USD' | 'Cash LBP' | 'Whish' | 'Card' | 'Debt'
@@ -362,7 +364,7 @@ export default function Sales() {
                 NEW SALE
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full sm:max-w-xl flex flex-col p-0 border-l-4 border-indigo-600">
+            <SheetContent side="right" className="w-full sm:max-w-xl flex flex-col p-0">
               <div className="p-8 bg-indigo-600 text-white">
                 <h2 className="text-2xl font-black uppercase tracking-tighter italic">CREATE INVOICE</h2>
                 <p className="text-indigo-100 text-sm font-medium">Capture transaction details and payment status.</p>
@@ -422,7 +424,7 @@ export default function Sales() {
               </div>
               <div className="p-8 bg-secondary/10 border-t">
                 <Button className="w-full h-14 bg-indigo-600 hover:bg-indigo-700 text-white font-black text-lg rounded-2xl" onClick={() => saveInvoiceMutation.mutate()} disabled={saveInvoiceMutation.isPending || draftTotal <= 0}>
-                  {saveInvoiceMutation.isPending ? 'PROCESSING...' : 'SAVE & POST INVOICE'}
+                  {saveInvoiceMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />PROCESSING...</> : 'SAVE & POST INVOICE'}
                 </Button>
               </div>
             </SheetContent>
@@ -431,7 +433,7 @@ export default function Sales() {
       </div>
 
       {/* Decluttered Summary Strip */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 stat-grid">
         {[
           { label: 'Today Revenue', value: fmtMoney(summary.usd), icon: TrendingUp, color: 'text-emerald-600', sub: 'Calculated in USD' },
           { label: 'Invoice Count', value: summary.count, icon: Receipt, color: 'text-indigo-600', sub: 'Today Activity' },
@@ -473,7 +475,7 @@ export default function Sales() {
           </div>
         </CardHeader>
         <CardContent className="p-0">
-          <Table>
+          <Table className="aw-table">
             <TableHeader className="bg-secondary/20">
               <TableRow className="hover:bg-transparent border-b-2">
                 <TableHead className="w-20 pl-6 text-[10px] font-black uppercase">Ref #</TableHead>
@@ -485,7 +487,7 @@ export default function Sales() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {invoicesQuery.isLoading && <TableRow><TableCell colSpan={6} className="text-center py-20 italic">Syncing Ledger...</TableCell></TableRow>}
+              {invoicesQuery.isLoading && <SkeletonRows cols={6} />}
               {filteredInvoices.map(inv => (
                 <TableRow key={inv.id} className="hover:bg-secondary/10 transition-colors group">
                   <TableCell className="pl-6 font-mono text-[10px] font-black text-muted-foreground">#{inv.id}</TableCell>
@@ -504,7 +506,11 @@ export default function Sales() {
                   <TableCell className="text-right pr-6">
                     <div className="flex justify-end gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                       <Button variant="ghost" size="icon" onClick={() => { setSelectedInvoice(inv); setDetailsDialogOpen(true) }} className="h-8 w-8 text-indigo-600 hover:bg-indigo-50"><Eye className="w-4 h-4" /></Button>
-                      <Button variant="ghost" size="icon" onClick={() => { setSelectedInvoice(inv); setVoidDialogOpen(true) }} className="h-8 w-8 text-rose-600 hover:bg-rose-50"><XCircle className="w-4 h-4" /></Button>
+                      {inv.status === 'void_requested' && canApproveVoid ? (
+                        <Button variant="ghost" size="icon" onClick={() => approveVoidMutation.mutate(inv)} disabled={approveVoidMutation.isPending} className="h-8 w-8 text-emerald-600 hover:bg-emerald-50" title="Approve void"><CheckCircle2 className="w-4 h-4" /></Button>
+                      ) : (
+                        <Button variant="ghost" size="icon" onClick={() => { setSelectedInvoice(inv); setVoidDialogOpen(true) }} className="h-8 w-8 text-rose-600 hover:bg-rose-50" disabled={inv.status === 'voided'}><XCircle className="w-4 h-4" /></Button>
+                      )}
                     </div>
                   </TableCell>
                 </TableRow>
@@ -546,7 +552,7 @@ export default function Sales() {
             </div>
             <Separator />
             <div className="rounded-2xl border-2 overflow-hidden">
-              <Table>
+              <Table className="aw-table">
                 <TableHeader className="bg-secondary/40">
                   <TableRow><TableHead className="text-[10px] font-black uppercase">Product</TableHead><TableHead className="text-center text-[10px] font-black uppercase">Qty</TableHead><TableHead className="text-right text-[10px] font-black uppercase pr-6">Price</TableHead></TableRow>
                 </TableHeader>
@@ -587,7 +593,7 @@ export default function Sales() {
               <Input value={voidReason} onChange={e => setVoidReason(e.target.value)} placeholder="Reason for cancellation..." className="h-12 border-2 font-bold" />
             </div>
             <Button className="w-full h-14 bg-rose-600 hover:bg-rose-700 text-white font-black text-lg rounded-2xl shadow-xl shadow-rose-600/20" onClick={() => requestVoidMutation.mutate()} disabled={requestVoidMutation.isPending || !voidReason.trim()}>
-              {requestVoidMutation.isPending ? 'PROCESSING...' : 'CONFIRM VOID'}
+              {requestVoidMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />PROCESSING...</> : 'CONFIRM VOID'}
             </Button>
           </div>
         </DialogContent>
@@ -600,13 +606,6 @@ function ShieldCheck(props: any) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /><path d="m9 12 2 2 4-4" />
-    </svg>
-  )
-}
-function Calculator(props: any) {
-  return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect width="16" height="20" x="4" y="2" rx="2" /><line x1="8" x2="16" y1="6" y2="6" /><line x1="16" x2="16" y1="14" y2="18" /><path d="M16 10h.01" /><path d="M12 10h.01" /><path d="M8 10h.01" /><path d="M12 14h.01" /><path d="M8 14h.01" /><path d="M12 18h.01" /><path d="M8 18h.01" />
     </svg>
   )
 }

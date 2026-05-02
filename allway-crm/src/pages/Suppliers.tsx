@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
+import { SkeletonRows } from '@/components/shared/SkeletonRows'
 import { fmtMoney } from '@/lib/utils'
 import { useAuditLog } from '@/hooks/useAuditLog'
 import { Button } from '@/components/ui/button'
@@ -9,24 +10,27 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { Card, CardContent } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { 
-  Building2, 
-  Plus, 
-  Search, 
-  Phone, 
-  MapPin, 
-  User, 
-  Wallet, 
-  ExternalLink, 
+import {
+  Building2,
+  Plus,
+  Search,
+  Phone,
+  MapPin,
+  User,
+  Wallet,
+  ExternalLink,
   MoreVertical,
   MessageSquare,
   ShieldCheck,
   TrendingUp,
-  Truck
+  Truck,
+  ArrowUpRight,
+  CheckCircle2
 } from 'lucide-react'
 import type { Supplier } from '@/types/database'
+import { Spinner } from '@/components/shared/Spinner'
 
 const QK = ['suppliers']
 
@@ -117,64 +121,71 @@ export default function Suppliers() {
   })
 
   return (
-    <div className="space-y-6 max-w-7xl mx-auto pb-10">
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <div className="max-w-7xl mx-auto space-y-10 pb-20">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b pb-8">
         <div>
-          <h1 className="font-display text-3xl font-bold tracking-tight text-foreground">Supplier Directory</h1>
-          <p className="text-muted-foreground text-sm mt-1">Manage vendor partnerships, contact details, and outstanding balances.</p>
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 rounded-full bg-slate-500" />
+            <span className="text-[10px] font-black uppercase tracking-[3px] text-muted-foreground">Suppliers Module</span>
+          </div>
+          <h1 className="font-display text-4xl font-black tracking-tighter italic uppercase">Supplier Directory</h1>
+          <p className="text-muted-foreground text-sm font-medium mt-1">Manage vendor partnerships, contact details, and outstanding balances.</p>
         </div>
-        <div className="flex items-center gap-3">
-          <Card className="flex items-center px-4 py-2 bg-primary/5 border-primary/20">
-            <div className="mr-3 p-2 bg-primary/10 rounded-full text-primary">
-              <Truck className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-[10px] uppercase font-bold text-muted-foreground leading-none mb-1">Active Vendors</p>
-              <p className="text-lg font-bold font-mono leading-none text-primary">{stats.count}</p>
-            </div>
-          </Card>
-          <Card className="flex items-center px-4 py-2 bg-destructive/5 border-destructive/20">
-            <div className="mr-3 p-2 bg-destructive/10 rounded-full text-destructive">
-              <Wallet className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-[10px] uppercase font-bold text-muted-foreground leading-none mb-1">Total Payable</p>
-              <p className="text-lg font-bold font-mono leading-none text-destructive">{fmtMoney(stats.totalBalance)}</p>
-            </div>
-          </Card>
-        </div>
-      </div>
-
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="relative w-full sm:w-80">
-          <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
-          <Input 
-            placeholder="Search name, contact, phone..." 
-            className="pl-10 h-10 shadow-sm"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
-        <Button onClick={handleOpenAdd} className="h-10 px-6 gap-2 bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20">
-          <Plus className="w-4 h-4" />
+        <Button onClick={handleOpenAdd} className="h-12 bg-slate-700 hover:bg-slate-800 text-white font-black px-8 rounded-2xl shadow-xl shadow-slate-700/20">
+          <Plus className="w-4 h-4 mr-2" />
           Add New Supplier
         </Button>
       </div>
 
-      <div className="rounded-xl border-2 shadow-sm overflow-hidden bg-background">
-        <Table>
-          <TableHeader className="bg-secondary/40">
-            <TableRow>
-              <TableHead className="w-[280px]">Company Name</TableHead>
-              <TableHead>Primary Contact</TableHead>
-              <TableHead>Contact Methods</TableHead>
-              <TableHead>Location</TableHead>
-              <TableHead className="text-right">Balance (USD)</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 stat-grid">
+        {[
+          { label: 'Active Vendors', value: stats.count, icon: Truck, color: 'text-slate-600', sub: 'Total suppliers' },
+          { label: 'Total Payable', value: fmtMoney(stats.totalBalance), icon: Wallet, color: 'text-rose-600', sub: 'Outstanding balances' },
+          { label: 'Cleared', value: (suppliersQuery.data ?? []).filter(s => !s.usd_balance || s.usd_balance <= 0).length, icon: CheckCircle2, color: 'text-emerald-600', sub: 'No outstanding debt' },
+          { label: 'With Debt', value: (suppliersQuery.data ?? []).filter(s => (s.usd_balance || 0) > 0).length, icon: TrendingUp, color: 'text-amber-600', sub: 'Have balance due' },
+        ].map((s) => (
+          <div key={s.label} className="p-6 bg-background border-2 rounded-3xl">
+            <div className="flex items-center justify-between mb-3">
+              <div className="p-2 rounded-xl bg-secondary"><s.icon className="w-4 h-4 text-muted-foreground" /></div>
+              <ArrowUpRight className="w-3.5 h-3.5 text-muted-foreground/30" />
+            </div>
+            <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mb-1">{s.label}</p>
+            <p className={`text-2xl font-black tracking-tight ${s.color}`}>{s.value}</p>
+            <p className="text-[9px] font-bold text-muted-foreground mt-1 opacity-50">{s.sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <Card className="rounded-3xl border-2 shadow-none overflow-hidden">
+        <CardHeader className="bg-secondary/30 pb-6 border-b flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <CardTitle className="text-lg font-black uppercase tracking-tight italic">Supplier Directory</CardTitle>
+            <CardDescription className="text-[10px] font-bold uppercase tracking-widest">{filtered.length} results</CardDescription>
+          </div>
+          <div className="relative w-full md:w-80">
+            <Search className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Input
+              placeholder="Search name, contact, phone..."
+              className="pl-10 h-10 shadow-sm"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+        </CardHeader>
+        <CardContent className="p-0">
+        <Table className="aw-table">
+          <TableHeader className="bg-secondary/20">
+            <TableRow className="hover:bg-transparent border-b-2">
+              <TableHead className="pl-6 text-[10px] font-black uppercase w-[280px]">Company Name</TableHead>
+              <TableHead className="text-[10px] font-black uppercase">Primary Contact</TableHead>
+              <TableHead className="text-[10px] font-black uppercase">Contact Methods</TableHead>
+              <TableHead className="text-[10px] font-black uppercase">Location</TableHead>
+              <TableHead className="text-[10px] font-black uppercase text-right">Balance (USD)</TableHead>
+              <TableHead className="text-[10px] font-black uppercase text-right">Actions</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
-            {suppliersQuery.isLoading && <TableRow><TableCell colSpan={6} className="text-center py-20 text-muted-foreground italic">Syncing directory...</TableCell></TableRow>}
+            {suppliersQuery.isLoading && <SkeletonRows cols={6} />}
             {!suppliersQuery.isLoading && filtered.length === 0 && <TableRow><TableCell colSpan={6} className="text-center py-20 text-muted-foreground">No suppliers found matching your search.</TableCell></TableRow>}
             {filtered.map(s => (
               <TableRow key={s.id} className="hover:bg-secondary/5 transition-colors group">
@@ -234,18 +245,19 @@ export default function Suppliers() {
             ))}
           </TableBody>
         </Table>
-      </div>
+        </CardContent>
+      </Card>
 
       <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-        <DialogContent className="sm:max-w-[500px]">
-          <DialogHeader>
-            <DialogTitle className="text-xl flex items-center gap-2">
-              <Building2 className="w-5 h-5 text-primary" />
+        <DialogContent className="sm:max-w-[500px] p-0 overflow-hidden rounded-3xl border-2">
+          <div className="p-8 bg-slate-700 text-white">
+            <DialogTitle className="text-xl font-black uppercase tracking-tighter italic flex items-center gap-2">
+              <Building2 className="w-5 h-5" />
               {editingSupplier ? 'Update Supplier Details' : 'Register New Supplier'}
             </DialogTitle>
-            <DialogDescription>Maintain accurate records for your vendors and outstanding balances.</DialogDescription>
-          </DialogHeader>
-          <div className="space-y-6 py-4">
+            <DialogDescription className="text-slate-300 text-sm font-medium mt-1">Maintain accurate records for your vendors and outstanding balances.</DialogDescription>
+          </div>
+          <div className="space-y-6 p-8">
             <div className="space-y-2">
               <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Company Name *</Label>
               <Input 
@@ -285,12 +297,12 @@ export default function Suppliers() {
               </div>
             </div>
           </div>
-          <DialogFooter className="gap-3 sm:gap-0">
+          <DialogFooter className="gap-3 sm:gap-0 px-8 pb-8">
             <Button variant="outline" onClick={() => setDialogOpen(false)} className="h-11">Cancel</Button>
-            <Button 
-              onClick={() => saveMutation.mutate()} 
-              disabled={saveMutation.isPending} 
-              className="h-11 px-8 bg-primary hover:bg-primary/90 font-bold shadow-lg shadow-primary/20"
+            <Button
+              onClick={() => saveMutation.mutate()}
+              disabled={saveMutation.isPending}
+              className="h-12 px-8 bg-slate-700 hover:bg-slate-800 text-white font-black rounded-2xl shadow-xl shadow-slate-700/20"
             >
               {saveMutation.isPending ? 'Saving...' : editingSupplier ? 'Update Record' : 'Create Supplier'}
             </Button>

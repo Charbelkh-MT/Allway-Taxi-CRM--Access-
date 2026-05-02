@@ -11,12 +11,14 @@ import { useBarcode } from '@/hooks/useBarcode'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Badge } from '@/components/ui/badge'
+import { Sheet, SheetContent, SheetFooter } from '@/components/ui/sheet'
 import { UserBadge } from '@/components/shared/Badges'
-import { ClipboardCheck, Plus, History, TrendingUp, AlertTriangle, CheckCircle2, Box, Search, ShieldAlert } from 'lucide-react'
+import { SkeletonRows } from '@/components/shared/SkeletonRows'
+import { ClipboardCheck, Plus, TrendingUp, AlertTriangle, CheckCircle2, Box, Search, ShieldAlert, ArrowUpRight, PlusCircle } from 'lucide-react'
+import { Spinner } from '@/components/shared/Spinner'
 
 const QK = ['inventory_checks']
 
@@ -28,7 +30,7 @@ export default function Inventory() {
   const isSup = role === 'admin' || role === 'supervisor'
   const { data: products = [] } = useProductsCache()
 
-  const [activeTab, setActiveTab] = useState('history')
+  const [sheetOpen, setSheetOpen] = useState(false)
   const [productName, setProductName] = useState('')
   const [systemQty, setSystemQty] = useState(0)
   const [counted, setCounted] = useState('')
@@ -105,7 +107,7 @@ export default function Inventory() {
       
       void queryClient.invalidateQueries({ queryKey: QK })
       setProductName(''); setSystemQty(0); setCounted(''); setNote('')
-      setActiveTab('history')
+      setSheetOpen(false)
     },
     onError: (e) => toast.error(e instanceof Error ? e.message : 'Submission failed'),
   })
@@ -124,32 +126,42 @@ export default function Inventory() {
   useBarcode({ onScan: handleBarcodeScan })
 
   return (
-    <div className="space-y-6 max-w-7xl mx-auto pb-10">
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <div className="max-w-7xl mx-auto space-y-10 pb-20">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b pb-8">
         <div>
-          <h1 className="font-display text-3xl font-bold tracking-tight text-foreground">Inventory Check</h1>
-          <p className="text-muted-foreground text-sm mt-1">Random spot checks to ensure physical stock matches digital records.</p>
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 rounded-full bg-teal-500" />
+            <span className="text-[10px] font-black uppercase tracking-[3px] text-muted-foreground">Inventory Module</span>
+          </div>
+          <h1 className="font-display text-4xl font-black tracking-tighter italic uppercase">Inventory Checks</h1>
+          <p className="text-muted-foreground text-sm font-medium mt-1">Random spot checks to ensure physical stock matches digital records.</p>
         </div>
-        <div className="flex items-center gap-3">
-          <Card className="flex items-center px-4 py-2 bg-primary/5 border-primary/20">
-            <div className="mr-3 p-2 bg-primary/10 rounded-full text-primary">
-              <ClipboardCheck className="w-4 h-4" />
+        <Button
+          onClick={() => setSheetOpen(true)}
+          className="h-12 bg-teal-600 hover:bg-teal-700 text-white font-black px-8 rounded-2xl shadow-xl shadow-teal-600/20 group"
+        >
+          <PlusCircle className="w-4 h-4 mr-2 group-hover:rotate-90 transition-transform" />
+          NEW CHECK
+        </Button>
+      </div>
+
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 stat-grid">
+        {[
+          { label: 'Checks Today', value: stats.todayCount, icon: ClipboardCheck, color: 'text-teal-600', sub: 'Completed today' },
+          { label: 'Mismatches Today', value: stats.mismatchCount, icon: AlertTriangle, color: 'text-rose-600', sub: 'Discrepancies found' },
+          { label: 'Total Checks', value: (checksQuery.data ?? []).length, icon: Box, color: 'text-indigo-600', sub: 'All-time records' },
+          { label: 'Matches Today', value: stats.todayCount - stats.mismatchCount, icon: CheckCircle2, color: 'text-emerald-600', sub: 'Stock confirmed' },
+        ].map((s) => (
+          <div key={s.label} className="p-6 bg-background border-2 rounded-3xl">
+            <div className="flex items-center justify-between mb-3">
+              <div className="p-2 rounded-xl bg-secondary"><s.icon className="w-4 h-4 text-muted-foreground" /></div>
+              <ArrowUpRight className="w-3.5 h-3.5 text-muted-foreground/30" />
             </div>
-            <div>
-              <p className="text-[10px] uppercase font-bold text-muted-foreground leading-none mb-1">Checks Today</p>
-              <p className="text-lg font-bold font-mono leading-none text-primary">{stats.todayCount}</p>
-            </div>
-          </Card>
-          <Card className="flex items-center px-4 py-2 bg-destructive/5 border-destructive/20">
-            <div className="mr-3 p-2 bg-destructive/10 rounded-full text-destructive">
-              <AlertTriangle className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-[10px] uppercase font-bold text-muted-foreground leading-none mb-1">Mismatches</p>
-              <p className="text-lg font-bold font-mono leading-none text-destructive">{stats.mismatchCount}</p>
-            </div>
-          </Card>
-        </div>
+            <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mb-1">{s.label}</p>
+            <p className={`text-2xl font-black tracking-tight ${s.color}`}>{s.value}</p>
+            <p className="text-[9px] font-bold text-muted-foreground mt-1 opacity-50">{s.sub}</p>
+          </div>
+        ))}
       </div>
 
       <div className="rounded-lg bg-amber-50 border border-amber-200 px-4 py-3 flex items-center gap-3">
@@ -159,48 +171,37 @@ export default function Inventory() {
         </p>
       </div>
 
-      <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-          <TabsList className="grid grid-cols-2 w-[350px]">
-            <TabsTrigger value="history" className="flex items-center gap-2">
-              <History className="w-4 h-4" />
-              Audit Log
-            </TabsTrigger>
-            <TabsTrigger value="new" className="flex items-center gap-2">
-              <Plus className="w-4 h-4" />
-              New Spot Check
-            </TabsTrigger>
-          </TabsList>
-          
-          {activeTab === 'history' && (
-            <div className="relative w-full sm:w-72">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input 
-                placeholder="Search products, users..." 
-                className="pl-9 h-10 shadow-sm"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </div>
-          )}
-        </div>
-
-        <TabsContent value="history" className="mt-0 space-y-4">
-          <div className="rounded-xl border-2 shadow-sm overflow-hidden bg-background">
-            <Table>
-              <TableHeader className="bg-secondary/40">
-                <TableRow>
-                  <TableHead>Product</TableHead>
-                  <TableHead className="text-center">System Qty</TableHead>
-                  <TableHead className="text-center">Physical Count</TableHead>
-                  <TableHead className="text-center">Difference</TableHead>
-                  <TableHead className="text-center">Checked By</TableHead>
-                  <TableHead>Date / Time</TableHead>
-                  <TableHead>Notes</TableHead>
+      <Card className="rounded-3xl border-2 shadow-none overflow-hidden">
+            <CardHeader className="bg-secondary/30 pb-4 border-b flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <CardTitle className="text-lg font-black uppercase tracking-tight italic">Audit Log</CardTitle>
+                <CardDescription className="text-[10px] font-bold uppercase tracking-widest">{filteredChecks.length} results</CardDescription>
+              </div>
+              <div className="relative w-full sm:w-72">
+                <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                <Input
+                  placeholder="Search products, users..."
+                  className="pl-9 h-10 shadow-sm"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+              </div>
+            </CardHeader>
+            <CardContent className="p-0">
+            <Table className="aw-table">
+              <TableHeader className="bg-secondary/20">
+                <TableRow className="hover:bg-transparent border-b-2">
+                  <TableHead className="pl-6 text-[10px] font-black uppercase">Product</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-center">System Qty</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-center">Physical Count</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-center">Difference</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-center">Checked By</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase">Date / Time</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase">Notes</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {checksQuery.isLoading && <TableRow><TableCell colSpan={7} className="text-center py-20 text-muted-foreground italic">Loading audit records...</TableCell></TableRow>}
+                {checksQuery.isLoading && <SkeletonRows cols={7} />}
                 {!checksQuery.isLoading && filteredChecks.length === 0 && <TableRow><TableCell colSpan={7} className="text-center py-20 text-muted-foreground">No inventory checks found.</TableCell></TableRow>}
                 {filteredChecks.map((r: any) => (
                   <TableRow key={r.id} className="hover:bg-secondary/5 transition-colors group">
@@ -238,115 +239,105 @@ export default function Inventory() {
                 ))}
               </TableBody>
             </Table>
-          </div>
-        </TabsContent>
-
-        <TabsContent value="new" className="mt-0">
-          <Card className="border-2 border-primary/20 shadow-md">
-            <CardHeader className="bg-primary/5 pb-4">
-              <CardTitle className="text-xl flex items-center gap-2 text-primary">
-                <Box className="w-5 h-5" />
-                Physical Stock Count
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="pt-8 space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="space-y-2 lg:col-span-2">
-                  <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Search Product</Label>
-                  <div className="relative flex gap-2">
-                    <div className="relative flex-1">
-                      <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-                      <Input 
-                        list="inv-products" 
-                        value={productName} 
-                        onChange={e => setProductName(e.target.value)} 
-                        placeholder="Type product name or scan barcode..." 
-                        className="h-11 pl-10 font-medium" 
-                      />
-                      <datalist id="inv-products">
-                        {products.map(p => <option key={p.id} value={p.description} />)}
-                      </datalist>
-                    </div>
-                    <BarcodeCamera onScan={handleBarcodeScan} label="Scan" className="h-11" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">System Record</Label>
-                  <div className="h-11 flex items-center px-4 bg-secondary/30 border rounded-md font-mono text-lg font-bold text-muted-foreground">
-                    {systemQty}
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground text-primary">Physical Count</Label>
-                  <Input 
-                    type="number" 
-                    value={counted} 
-                    onChange={e => setCounted(e.target.value)} 
-                    placeholder="Enter qty..." 
-                    className="h-11 font-mono text-xl font-bold border-primary/40 focus:border-primary"
-                  />
-                </div>
-              </div>
-
-              {productName && counted !== '' && (
-                <div className={`p-6 rounded-xl border-2 flex items-center justify-between transition-all ${
-                  diff === 0 
-                    ? 'bg-green-50 border-green-200 text-green-800' 
-                    : diff !== null && diff < 0 
-                      ? 'bg-red-50 border-red-200 text-red-800' 
-                      : 'bg-amber-50 border-amber-200 text-amber-800'
-                }`}>
-                  <div className="flex items-center gap-4">
-                    <div className={`p-3 rounded-full ${
-                      diff === 0 ? 'bg-green-100' : diff !== null && diff < 0 ? 'bg-red-100' : 'bg-amber-100'
-                    }`}>
-                      {diff === 0 ? <CheckCircle2 className="w-6 h-6" /> : <AlertTriangle className="w-6 h-6" />}
-                    </div>
-                    <div>
-                      <p className="text-lg font-bold leading-tight">
-                        {diff === 0 ? 'Inventory Matches' : diff !== null && diff < 0 ? 'Stock Shortage Found' : 'Stock Surplus Found'}
-                      </p>
-                      <p className="text-sm opacity-80">
-                        {diff === 0 ? 'System and physical counts are equal.' : `There is a difference of ${diff} units.`}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="text-4xl font-mono font-bold">
-                    {diff !== null && diff > 0 ? '+' : ''}{diff}
-                  </div>
-                </div>
-              )}
-
-              <div className="space-y-2">
-                <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Discrepancy Note / Explanation</Label>
-                <Input value={note} onChange={e => setNote(e.target.value)} placeholder="Why is there a difference? (Optional)" className="h-11" />
-              </div>
-
-              <div className="pt-6 border-t flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                  <ShieldAlert className="w-4 h-4 text-amber-600" />
-                  Submission is restricted to <span className="font-bold text-foreground">Supervisors & Admins</span>
-                </div>
-                {isSup ? (
-                  <Button 
-                    onClick={() => saveMutation.mutate()} 
-                    disabled={saveMutation.isPending || !productName || counted === ''} 
-                    className="w-full sm:w-64 h-12 bg-primary hover:bg-primary/90 text-lg font-bold shadow-lg shadow-primary/20"
-                  >
-                    {saveMutation.isPending ? 'Submitting...' : 'Confirm Audit Count'}
-                  </Button>
-                ) : (
-                  <Button disabled className="w-full sm:w-64 h-12 opacity-50 cursor-not-allowed">
-                    Supervisor Only
-                  </Button>
-                )}
-              </div>
             </CardContent>
-          </Card>
-        </TabsContent>
-      </Tabs>
+      </Card>
+
+      {/* Inventory Check Sheet */}
+      <Sheet open={sheetOpen} onOpenChange={(open) => {
+        setSheetOpen(open)
+        if (!open) { setProductName(''); setSystemQty(0); setCounted(''); setNote('') }
+      }}>
+        <SheetContent side="right" className="w-full sm:max-w-lg flex flex-col p-0">
+          <div className="p-8 bg-teal-600 text-white">
+            <h2 className="text-2xl font-black uppercase tracking-tighter italic">PHYSICAL STOCK COUNT</h2>
+            <p className="text-teal-100 text-sm font-medium">Verify physical inventory against system records.</p>
+          </div>
+          <div className="flex-1 overflow-y-auto p-8 space-y-6">
+            <div className="space-y-2">
+              <Label className="text-[10px] font-black uppercase tracking-widest text-muted-foreground ml-1">Search Product</Label>
+              <div className="flex gap-2">
+                <div className="relative flex-1">
+                  <Search className="absolute left-3 top-3.5 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    list="inv-products"
+                    value={productName}
+                    onChange={e => setProductName(e.target.value)}
+                    placeholder="Type product or scan barcode..."
+                    className="h-12 pl-10 border-2 font-bold"
+                  />
+                  <datalist id="inv-products">{products.map(p => <option key={p.id} value={p.description} />)}</datalist>
+                </div>
+                <BarcodeCamera onScan={handleBarcodeScan} label="Scan" className="h-12" />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label className="text-[10px] font-black uppercase tracking-widest text-muted-foreground ml-1">System Record</Label>
+                <div className="h-12 flex items-center px-4 bg-secondary/30 border-2 rounded-xl font-mono text-xl font-black text-muted-foreground">
+                  {systemQty}
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label className="text-[10px] font-black uppercase tracking-widest text-teal-600 ml-1">Physical Count *</Label>
+                <Input
+                  type="number"
+                  value={counted}
+                  onChange={e => setCounted(e.target.value)}
+                  placeholder="Enter qty..."
+                  className="h-12 border-2 font-mono text-xl font-black border-teal-300 focus:border-teal-500"
+                />
+              </div>
+            </div>
+
+            {productName && counted !== '' && (
+              <div className={`p-5 rounded-2xl border-2 flex items-center justify-between transition-all ${
+                diff === 0 ? 'bg-emerald-50 border-emerald-200 text-emerald-800' : diff !== null && diff < 0 ? 'bg-red-50 border-red-200 text-red-800' : 'bg-amber-50 border-amber-200 text-amber-800'
+              }`}>
+                <div className="flex items-center gap-3">
+                  <div className={`p-2.5 rounded-xl ${diff === 0 ? 'bg-emerald-100' : diff !== null && diff < 0 ? 'bg-red-100' : 'bg-amber-100'}`}>
+                    {diff === 0 ? <CheckCircle2 className="w-5 h-5" /> : <AlertTriangle className="w-5 h-5" />}
+                  </div>
+                  <div>
+                    <p className="font-black text-sm uppercase tracking-tight leading-none mb-0.5">
+                      {diff === 0 ? 'Inventory Matches' : diff !== null && diff < 0 ? 'Stock Shortage' : 'Stock Surplus'}
+                    </p>
+                    <p className="text-[10px] font-bold opacity-70">
+                      {diff === 0 ? 'System & physical are equal' : `Difference of ${diff} units`}
+                    </p>
+                  </div>
+                </div>
+                <div className="text-3xl font-mono font-black">
+                  {diff !== null && diff > 0 ? '+' : ''}{diff}
+                </div>
+              </div>
+            )}
+
+            <div className="space-y-2">
+              <Label className="text-[10px] font-black uppercase tracking-widest text-muted-foreground ml-1">Discrepancy Note (optional)</Label>
+              <Input value={note} onChange={e => setNote(e.target.value)} placeholder="Why is there a difference?" className="h-12 border-2 font-bold" />
+            </div>
+
+            <div className="flex items-center gap-2 text-xs text-muted-foreground font-bold">
+              <ShieldAlert className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+              Submission restricted to Supervisors & Admins
+            </div>
+          </div>
+          <SheetFooter className="p-8 bg-secondary/10 border-t">
+            {isSup ? (
+              <Button
+                onClick={() => saveMutation.mutate()}
+                disabled={saveMutation.isPending || !productName || counted === ''}
+                className="w-full h-14 bg-teal-600 hover:bg-teal-700 text-white font-black text-lg rounded-2xl shadow-xl shadow-teal-600/20"
+              >
+                {saveMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />SUBMITTING...</> : 'CONFIRM AUDIT COUNT'}
+              </Button>
+            ) : (
+              <Button disabled className="w-full h-14 rounded-2xl font-black text-lg opacity-50">SUPERVISOR ONLY</Button>
+            )}
+          </SheetFooter>
+        </SheetContent>
+      </Sheet>
     </div>
   )
 }

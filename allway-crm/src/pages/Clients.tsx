@@ -15,7 +15,9 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Separator } from '@/components/ui/separator'
 import { Users, Plus, Search, Phone, MessageSquare, Wallet, ArrowUpRight, UserCheck } from 'lucide-react'
 import { DebtBadge } from '@/components/shared/Badges'
+import { SkeletonRows } from '@/components/shared/SkeletonRows'
 import type { Client, DebtStatus } from '@/types/database'
+import { Spinner } from '@/components/shared/Spinner'
 
 const QK = ['clients']
 
@@ -117,7 +119,7 @@ export default function Clients() {
         </Button>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 stat-grid">
         {[
           { label: 'Total Clients', value: stats.total, icon: Users, color: 'text-blue-600', sub: 'Registered Profiles' },
           { label: 'Outstanding Credit', value: fmtMoney(stats.totalDebtUsd), icon: Wallet, color: 'text-rose-600', sub: 'Cumulative (USD)' },
@@ -159,7 +161,7 @@ export default function Clients() {
           </div>
         </CardHeader>
         <CardContent className="p-0">
-          <Table>
+          <Table className="aw-table">
             <TableHeader className="bg-secondary/20">
               <TableRow className="hover:bg-transparent border-b-2">
                 <TableHead className="pl-6 w-20 text-[10px] font-black uppercase">ID</TableHead>
@@ -173,7 +175,7 @@ export default function Clients() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {clientsQuery.isLoading && <TableRow><TableCell colSpan={8} className="text-center py-20 italic">Loading...</TableCell></TableRow>}
+              {clientsQuery.isLoading && <SkeletonRows cols={8} />}
               {filtered.map(c => (
                 <TableRow key={c.id} className="hover:bg-secondary/10 transition-colors group">
                   <TableCell className="pl-6 font-mono text-[10px] font-black text-muted-foreground">#{c.id}</TableCell>

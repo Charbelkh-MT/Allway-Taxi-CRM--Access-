@@ -34,6 +34,7 @@ import {
   AlertCircle
 } from 'lucide-react'
 import { UserBadge } from '@/components/shared/Badges'
+import { Spinner } from '@/components/shared/Spinner'
 
 const QK = ['whish_transactions']
 
@@ -342,7 +343,7 @@ export default function Whish() {
 
             <Button className="w-full h-14 text-lg font-bold text-white shadow-xl shadow-rose-600/20 hover:scale-[1.01] active:scale-[0.99] transition-all" style={{ background: 'linear-gradient(90deg, #EC174D 0%, #C1003A 100%)' }}
               onClick={() => saveMutation.mutate()} disabled={saveMutation.isPending}>
-              {saveMutation.isPending ? 'Processing...' : 'Complete Transaction'}
+              {saveMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />Processing...</> : 'Complete Transaction'}
             </Button>
             
             <p className="text-[10px] text-muted-foreground font-black uppercase tracking-widest text-center">
@@ -373,7 +374,7 @@ export default function Whish() {
 
           <div className="rounded-3xl border-2 shadow-sm overflow-hidden bg-background">
             <div className="max-h-[700px] overflow-auto">
-              <Table>
+              <Table className="aw-table">
                 <TableHeader className="bg-secondary/40 sticky top-0 z-10 backdrop-blur-md">
                   <TableRow>
                     <TableHead className="font-bold text-[10px] uppercase">Service / Client</TableHead>

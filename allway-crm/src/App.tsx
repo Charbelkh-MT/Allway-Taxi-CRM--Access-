@@ -25,6 +25,7 @@ import Audit      from '@/pages/Audit'
 import Users      from '@/pages/Users'
 import Suppliers  from '@/pages/Suppliers'
 import Settings   from '@/pages/Settings'
+import Payroll    from '@/pages/Payroll'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -82,6 +83,7 @@ export default function App() {
               <Route path="audit"         element={<Audit />} />
               <Route path="users"         element={<Users />} />
               <Route path="settings"      element={<Settings />} />
+              <Route path="payroll"       element={<Payroll />} />
               <Route path="*"             element={<Navigate to="/" replace />} />
             </Route>
           </Routes>

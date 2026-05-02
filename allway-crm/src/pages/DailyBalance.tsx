@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { toast } from 'sonner'
 import { supabase } from '@/lib/supabase'
@@ -14,26 +14,24 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { format } from 'date-fns'
 import { useNavigate } from 'react-router-dom'
-import { 
-  Calculator, 
-  History, 
-  DollarSign, 
-  TrendingUp, 
-  Wallet, 
-  ArrowRightLeft, 
-  CheckCircle2, 
-  FileText, 
-  Building2, 
-  User, 
-  ChevronRight,
+import { Spinner } from '@/components/shared/Spinner'
+import {
+  History,
+  DollarSign,
+  TrendingUp,
+  Wallet,
+  CheckCircle2,
+  FileText,
+  Building2,
+  User,
   Printer,
   Copy,
-  PlusCircle,
   Coins,
   CreditCard,
   Smartphone,
   Banknote,
-  XCircle
+  XCircle,
+  ArrowUpRight,
 } from 'lucide-react'
 
 const QK = ['pnl_entries']
@@ -57,9 +55,26 @@ export default function DailyBalance() {
   const [lbpWhish, setLbpWhish] = useState('0')
   const [lbpCash, setLbpCash] = useState('0')
 
-  // Commission
+  // Commission — auto-populated from today's Whish transactions, user can adjust
   const [commUsd, setCommUsd] = useState('0')
   const [commLbp, setCommLbp] = useState('0')
+  const [commAutoLoaded, setCommAutoLoaded] = useState(false)
+
+  useEffect(() => {
+    const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0)
+    ;(supabase as any)
+      .from('whish_transactions')
+      .select('commission_usd, commission_lbp')
+      .gte('created_at', todayStart.toISOString())
+      .then(({ data }: any) => {
+        if (!data || data.length === 0) return
+        const totalCommUsd = (data as any[]).reduce((s, r) => s + (parseFloat(r.commission_usd) || 0), 0)
+        const totalCommLbp = (data as any[]).reduce((s, r) => s + (parseFloat(r.commission_lbp) || 0), 0)
+        setCommUsd(totalCommUsd.toFixed(2))
+        setCommLbp(String(Math.round(totalCommLbp)))
+        setCommAutoLoaded(true)
+      })
+  }, [])
 
   const [note, setNote] = useState('')
 
@@ -71,6 +86,32 @@ export default function DailyBalance() {
       return data ?? []
     }
   })
+
+  // Real net revenue and expenses from today's invoices & expenses
+  const todayStatsQuery = useQuery({
+    queryKey: ['daily_balance_today'],
+    queryFn: async () => {
+      const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0)
+      const iso = todayStart.toISOString()
+      const [invRes, expRes, settingsRes] = await Promise.all([
+        (supabase as any).from('invoices').select('total_usd,total_lbp').eq('status', 'saved').gte('created_at', iso),
+        (supabase as any).from('expenses').select('amount_usd').eq('status', 'approved').gte('created_at', iso),
+        (supabase as any).from('tblInformation').select('HourlyRate,hourly_rate').limit(1).single().catch(() => ({ data: null })),
+      ])
+      const revenue = ((invRes.data ?? []) as any[]).reduce((s: number, r: any) => {
+        const usd = parseFloat(r.total_usd || 0); const lbp = parseFloat(r.total_lbp || 0)
+        return s + (usd > 0 ? usd : lbp / USD_RATE)
+      }, 0)
+      const expenses = ((expRes.data ?? []) as any[]).reduce((s: number, r: any) => s + (parseFloat(r.amount_usd) || 0), 0)
+      const rate = parseFloat(settingsRes?.data?.HourlyRate ?? settingsRes?.data?.hourly_rate ?? '2.50') || 2.50
+      return { revenue, expenses, hourlyRate: rate }
+    },
+    refetchInterval: 60_000,
+  })
+
+  const todayRevenue = todayStatsQuery.data?.revenue ?? 0
+  const todayExpenses = todayStatsQuery.data?.expenses ?? 0
+  const hourlyRate = todayStatsQuery.data?.hourlyRate ?? 2.50
 
   const totals = useMemo(() => {
     const u_cms = parseFloat(usdCms) || 0
@@ -84,15 +125,19 @@ export default function DailyBalance() {
     const l_whish = parseFloat(lbpWhish) || 0
     const l_cash = parseFloat(lbpCash) || 0
 
-    // Using 90,000 as the standard rate for reconciliation
     const totalUsd = u_cms + u_whish + u_cash + u_usdt + u_alfa + u_touch + (l_cms + l_whish + l_cash) / USD_RATE
-    
+    const comm = (parseFloat(commUsd) || 0) + (parseFloat(commLbp) || 0) / USD_RATE
+    // Net profit = today's invoiced revenue - today's approved expenses + commission
+    const netProfit = todayRevenue - todayExpenses + comm
+
     return {
       totalUsd,
-      shiftProfit: totalUsd * 0.05, 
-      dayProfit: totalUsd * 0.08,   
+      netRevenue: todayRevenue,
+      netExpenses: todayExpenses,
+      netProfit,
+      commission: comm,
     }
-  }, [usdCms, usdWhish, usdCash, usdt, alfa, touch, lbpCms, lbpWhish, lbpCash, commUsd, commLbp])
+  }, [usdCms, usdWhish, usdCash, usdt, alfa, touch, lbpCms, lbpWhish, lbpCash, commUsd, commLbp, todayRevenue, todayExpenses])
 
   const saveMutation = useMutation({
     mutationFn: async () => {
@@ -111,8 +156,10 @@ export default function DailyBalance() {
         commission_lbp: parseFloat(commLbp) || 0,
         note,
         total_usd: totals.totalUsd,
-        shift_profit: totals.shiftProfit,
-        day_profit: totals.dayProfit,
+        shift_profit: totals.netProfit,
+        day_profit: totals.netProfit,
+        net_revenue: totals.netRevenue,
+        net_expenses: totals.netExpenses,
         created_by: profile?.name ?? 'system',
         station: profile?.station ?? '',
       }
@@ -132,31 +179,58 @@ export default function DailyBalance() {
   })
 
   return (
-    <div className="space-y-6 max-w-7xl mx-auto pb-20 px-4 sm:px-6">
-      {/* Premium Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-        <div className="flex items-center gap-4">
-          <div className="p-3 bg-amber-500 rounded-2xl text-white shadow-lg shadow-amber-500/20">
-            <Calculator className="w-8 h-8" />
+    <div className="max-w-7xl mx-auto space-y-10 pb-20">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b pb-8">
+        <div>
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 rounded-full bg-amber-500 shadow-[0_0_8px_theme(colors.amber.500)]" />
+            <span className="text-[10px] font-black uppercase tracking-[3px] text-muted-foreground">Finance Module</span>
           </div>
-          <div>
-            <h1 className="font-display text-3xl font-black tracking-tight text-foreground uppercase italic">Daily Balance</h1>
-            <p className="text-muted-foreground text-sm font-medium">Global financial reconciliation and PNL tracking.</p>
-          </div>
+          <h1 className="font-display text-4xl font-black tracking-tighter text-foreground italic uppercase">Daily Balance</h1>
+          <p className="text-muted-foreground text-sm font-medium mt-1">Global financial reconciliation and net profit tracking.</p>
         </div>
         <div className="flex items-center gap-3">
-          <Button variant="outline" className="h-11 px-6 border-2 font-bold hover:bg-secondary transition-all flex items-center gap-2">
+          <Button variant="outline" className="h-12 px-6 border-2 font-black rounded-2xl flex items-center gap-2" onClick={async () => {
+            await saveMutation.mutateAsync().catch(() => {})
+            const text = [
+              `📊 Daily Balance — ${new Date().toLocaleString('en-GB')}`,
+              `Station: ${profile?.station || 'ROOT'} · By: ${profile?.name}`,
+              ``,
+              `💵 USD Assets`,
+              `  CMS Wallet:    $${usdCms}`,
+              `  Whish (USD):   $${usdWhish}`,
+              `  Physical Cash: $${usdCash}`,
+              `  USDT:          $${usdt}`,
+              `  Alfa Dollars:  $${alfa}`,
+              `  Touch Dollars: $${touch}`,
+              ``,
+              `🏦 LBP Assets`,
+              `  CMS Wallet:    ${lbpCms} LBP`,
+              `  Whish (LBP):   ${lbpWhish} LBP`,
+              `  Physical Cash: ${lbpCash} LBP`,
+              ``,
+              `💰 TOTAL: $${totals.totalUsd.toFixed(2)}`,
+              `📈 Net Profit: $${totals.netProfit.toFixed(2)}`,
+              note ? `📝 Note: ${note}` : '',
+            ].filter(Boolean).join('\n')
+            try {
+              await navigator.clipboard.writeText(text)
+              toast.success('Report saved & copied to clipboard')
+            } catch {
+              toast.success('Report saved')
+            }
+          }}>
             <Copy className="w-4 h-4" />
             Save & Copy
           </Button>
-          <Button 
+          <Button
             onClick={() => saveMutation.mutate()}
             disabled={saveMutation.isPending}
-            className="h-11 px-6 bg-amber-500/10 border-amber-500/20 text-amber-700 font-bold hover:bg-amber-500/20 flex items-center gap-2"
-            variant="outline"
+            className="h-12 bg-amber-600 hover:bg-amber-700 text-white font-black px-8 rounded-2xl shadow-xl shadow-amber-600/20 flex items-center gap-2"
           >
             <History className="w-4 h-4" />
-            {saveMutation.isPending ? 'Saving...' : 'Save Entry'}
+            {saveMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />SAVING...</> : 'SAVE ENTRY'}
           </Button>
         </div>
       </div>
@@ -272,22 +346,37 @@ export default function DailyBalance() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-emerald-500/10 p-5 rounded-2xl border border-emerald-500/20 text-center group hover:bg-emerald-500/15 transition-all">
-                  <TrendingUp className="w-5 h-5 mx-auto mb-2 text-emerald-600" />
-                  <p className="text-[10px] uppercase font-black text-emerald-700 mb-1 leading-none tracking-tighter">Shift Profit</p>
-                  <p className="text-xl font-mono font-black text-emerald-600">{fmtMoney(totals.shiftProfit)}</p>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center py-2 border-b border-dashed">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Net Revenue (today)</span>
+                  <span className="font-mono font-black text-emerald-600">{fmtMoney(totals.netRevenue)}</span>
                 </div>
-                <div className="bg-indigo-500/10 p-5 rounded-2xl border border-indigo-500/20 text-center group hover:bg-indigo-500/15 transition-all">
-                  <TrendingUp className="w-5 h-5 mx-auto mb-2 text-indigo-600" />
-                  <p className="text-[10px] uppercase font-black text-indigo-700 mb-1 leading-none tracking-tighter">Day Profit</p>
-                  <p className="text-xl font-mono font-black text-indigo-600">{fmtMoney(totals.dayProfit)}</p>
+                <div className="flex justify-between items-center py-2 border-b border-dashed">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Approved Expenses</span>
+                  <span className="font-mono font-black text-destructive">− {fmtMoney(totals.netExpenses)}</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-dashed">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Commission Earned</span>
+                  <span className="font-mono font-black text-indigo-600">+ {fmtMoney(totals.commission)}</span>
+                </div>
+                <div className="flex justify-between items-center py-3 bg-emerald-50 rounded-2xl px-4 border-2 border-emerald-200">
+                  <span className="text-[10px] font-black uppercase tracking-widest text-emerald-700">NET PROFIT</span>
+                  <span className={`font-mono font-black text-xl ${totals.netProfit >= 0 ? 'text-emerald-600' : 'text-destructive'}`}>{fmtMoney(totals.netProfit)}</span>
                 </div>
               </div>
 
               <Separator />
 
-              <div className="space-y-4">
+              <div className="space-y-3">
+                <div className="flex items-center justify-between px-1">
+                  <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Whish Commission</p>
+                  {commAutoLoaded && (
+                    <span className="text-[9px] font-black uppercase tracking-wide text-emerald-600 flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
+                      Auto-loaded from Whish
+                    </span>
+                  )}
+                </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label className="text-[10px] uppercase font-black text-muted-foreground ml-1">LBP Comm.</Label>
@@ -319,15 +408,15 @@ export default function DailyBalance() {
                 onClick={() => saveMutation.mutate()}
                 disabled={saveMutation.isPending}
               >
-                {saveMutation.isPending ? 'Processing...' : 'Save & Post Report'}
+                {saveMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />Processing...</> : 'Save & Post Report'}
               </Button>
               
-              <div className="grid grid-cols-2 gap-2 mt-4">
-                <Button variant="ghost" className="h-10 text-xs font-bold text-muted-foreground hover:bg-secondary flex items-center gap-2" onClick={() => window.print()}>
-                  <Printer className="w-4 h-4" /> Print Sheet
+              <div className="grid grid-cols-2 gap-2 mt-2">
+                <Button variant="outline" className="h-10 border-2 text-xs font-black rounded-xl flex items-center gap-2" onClick={() => window.print()}>
+                  <Printer className="w-3.5 h-3.5" /> Print
                 </Button>
-                <Button variant="ghost" className="h-10 text-xs font-bold text-rose-600 hover:bg-rose-50 flex items-center gap-2" onClick={() => navigate('/')}>
-                  <XCircle className="w-4 h-4" /> Close Panel
+                <Button variant="ghost" className="h-10 text-xs font-black text-rose-600 hover:bg-rose-50 rounded-xl flex items-center gap-2" onClick={() => navigate('/')}>
+                  <XCircle className="w-3.5 h-3.5" /> Close
                 </Button>
               </div>
             </CardContent>
@@ -335,18 +424,17 @@ export default function DailyBalance() {
         </div>
       </div>
 
-      {/* History Ledger Section */}
-      <div className="space-y-4 mt-12">
-        <div className="flex items-center justify-between px-2">
-          <div className="flex items-center gap-2">
-            <History className="w-5 h-5 text-muted-foreground" />
-            <h2 className="text-lg font-black uppercase tracking-widest text-muted-foreground">Historical Reconciliation Ledger</h2>
+      {/* History Ledger */}
+      <div className="rounded-3xl border-2 shadow-none overflow-hidden">
+        <div className="bg-secondary/30 px-8 py-6 border-b flex items-center justify-between">
+          <div>
+            <h2 className="text-lg font-black uppercase tracking-tight italic">Reconciliation Ledger</h2>
+            <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Historical Balance Entries</p>
           </div>
-          <Badge variant="secondary" className="font-bold uppercase tracking-widest text-[10px] px-3">{pnlQuery.data?.length || 0} RECORDS</Badge>
+          <Badge variant="secondary" className="font-black uppercase tracking-widest text-[9px] px-3 py-1">{pnlQuery.data?.length || 0} Records</Badge>
         </div>
-        
-        <div className="rounded-3xl border-2 shadow-sm bg-background overflow-hidden">
-          <Table>
+        <div className="overflow-hidden">
+          <Table className="aw-table">
             <TableHeader className="bg-secondary/40">
               <TableRow className="hover:bg-transparent border-b-2">
                 <TableHead className="text-[10px] font-black uppercase py-4">Reconciliation Date</TableHead>
@@ -399,3 +487,4 @@ export default function DailyBalance() {
     </div>
   )
 }
+

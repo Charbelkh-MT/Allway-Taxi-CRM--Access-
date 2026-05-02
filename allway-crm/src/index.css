@@ -95,7 +95,131 @@
 .font-display { font-family: var(--font-display); }
 .font-mono    { font-family: var(--font-mono); }
 
-/* Thin scrollbar */
+/* ─── Scrollbar ───────────────────────────────────────────── */
 ::-webkit-scrollbar          { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track    { background: transparent; }
 ::-webkit-scrollbar-thumb    { background: hsl(var(--border)); border-radius: 4px; }
+
+/* ─── Global smooth interactions ─────────────────────────── */
+html { scroll-behavior: smooth; }
+
+*:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: hsl(38 90% 38% / 0.15);
+  color: hsl(var(--foreground));
+}
+
+/* All interactive elements get smooth transitions + pointer cursor */
+button, a, [role="button"] {
+  transition: opacity 0.15s ease, transform 0.12s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+/* Press feedback on all buttons */
+button:active:not(:disabled),
+[role="button"]:active:not([aria-disabled="true"]) {
+  transform: scale(0.97);
+}
+
+/* Input smooth focus */
+input, textarea, select {
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* ─── Page transition ─────────────────────────────────────── */
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-content {
+  animation: pageIn 0.25s ease-out both;
+}
+
+/* ─── Stat card stagger ───────────────────────────────────── */
+@keyframes statCardIn {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.stat-grid > * {
+  animation: statCardIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.stat-grid > *:nth-child(1) { animation-delay: 0ms; }
+.stat-grid > *:nth-child(2) { animation-delay: 70ms; }
+.stat-grid > *:nth-child(3) { animation-delay: 140ms; }
+.stat-grid > *:nth-child(4) { animation-delay: 210ms; }
+
+/* ─── Table row stagger ───────────────────────────────────── */
+@keyframes rowIn {
+  from { opacity: 0; transform: translateX(-6px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.aw-table tbody tr {
+  animation: rowIn 0.2s ease-out both;
+}
+.aw-table tbody tr:nth-child(1)  { animation-delay: 0ms; }
+.aw-table tbody tr:nth-child(2)  { animation-delay: 25ms; }
+.aw-table tbody tr:nth-child(3)  { animation-delay: 50ms; }
+.aw-table tbody tr:nth-child(4)  { animation-delay: 75ms; }
+.aw-table tbody tr:nth-child(5)  { animation-delay: 100ms; }
+.aw-table tbody tr:nth-child(6)  { animation-delay: 125ms; }
+.aw-table tbody tr:nth-child(7)  { animation-delay: 150ms; }
+.aw-table tbody tr:nth-child(8)  { animation-delay: 175ms; }
+.aw-table tbody tr:nth-child(9)  { animation-delay: 200ms; }
+.aw-table tbody tr:nth-child(10) { animation-delay: 225ms; }
+
+/* ─── Skeleton shimmer ────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.skeleton-row td > div {
+  background: linear-gradient(90deg, hsl(var(--secondary)) 25%, hsl(var(--muted)) 50%, hsl(var(--secondary)) 75%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: 6px;
+}
+
+/* ─── Sheet / Dialog entrance polish ─────────────────────── */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ─── Nav link hover underline animation ─────────────────── */
+nav a {
+  position: relative;
+}
+
+/* ─── Card hover lift ─────────────────────────────────────── */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+/* ─── Pulsing green dot (shift active) ───────────────────── */
+@keyframes dotPulse {
+  0%, 100% { box-shadow: 0 0 0 0 currentColor; }
+  50%       { box-shadow: 0 0 0 4px transparent; }
+}
+
+/* ─── Number count-up flash ──────────────────────────────── */
+@keyframes numFlash {
+  0%   { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.num-updated {
+  animation: numFlash 0.3s ease-out;
+}

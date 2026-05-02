@@ -15,27 +15,30 @@ import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Badge } from '@/components/ui/badge'
+import { Sheet, SheetContent, SheetFooter } from '@/components/ui/sheet'
 import { Separator } from '@/components/ui/separator'
-import { 
-  ShoppingCart, 
-  Plus, 
-  History, 
-  TrendingUp, 
-  Building2, 
-  Package, 
-  User, 
-  DollarSign, 
-  Trash2, 
-  PlusCircle, 
+import {
+  ShoppingCart,
+  Plus,
+  History,
+  TrendingUp,
+  Building2,
+  Package,
+  User,
+  DollarSign,
+  Trash2,
+  PlusCircle,
   AlertCircle,
   Search,
   CheckCircle2,
-  FileText
+  FileText,
+  ArrowUpRight
 } from 'lucide-react'
 import { UserBadge } from '@/components/shared/Badges'
+import { SkeletonRows } from '@/components/shared/SkeletonRows'
 import type { Supplier } from '@/types/database'
+import { Spinner } from '@/components/shared/Spinner'
 
 interface PoLine { description: string; qty: number; unitCost: number }
 const QK = ['purchases']
@@ -49,7 +52,7 @@ export default function Purchasing() {
   const canCreate = role === 'admin' || role === 'supervisor'
   const { data: products = [] } = useProductsCache()
 
-  const [activeTab, setActiveTab] = useState('history')
+  const [sheetOpen, setSheetOpen] = useState(false)
   const [supplierId, setSupplierId] = useState('')
   const [paidUsd, setPaidUsd] = useState('0')
   const [lines, setLines] = useState<PoLine[]>([{ description: '', qty: 1, unitCost: 0 }])
@@ -172,92 +175,103 @@ export default function Purchasing() {
       void queryClient.invalidateQueries({ queryKey: ['products'] })
       setSupplierId(''); setPaidUsd('0')
       setLines([{ description: '', qty: 1, unitCost: 0 }])
-      setActiveTab('history')
+      setSheetOpen(false)
     },
     onError: (e) => toast.error(e instanceof Error ? e.message : 'Failed to register purchase'),
   })
 
   if (!canCreate) {
     return (
-      <div className="flex flex-col items-center justify-center py-20 space-y-4">
-        <AlertCircle className="w-12 h-12 text-destructive opacity-50" />
-        <h1 className="font-display text-2xl font-bold tracking-tight">Access Restricted</h1>
-        <p className="text-muted-foreground">Only supervisors and admins can manage purchase orders.</p>
+      <div className="max-w-7xl mx-auto space-y-10 pb-20">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b pb-8">
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <div className="w-2 h-2 rounded-full bg-orange-500" />
+              <span className="text-[10px] font-black uppercase tracking-[3px] text-muted-foreground">Procurement Module</span>
+            </div>
+            <h1 className="font-display text-4xl font-black tracking-tighter italic uppercase">Purchase Orders</h1>
+            <p className="text-muted-foreground text-sm font-medium mt-1">Issue purchase orders and manage incoming inventory shipments.</p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center py-20 space-y-4">
+          <AlertCircle className="w-12 h-12 text-destructive opacity-50" />
+          <h1 className="font-display text-2xl font-bold tracking-tight">Access Restricted</h1>
+          <p className="text-muted-foreground">Only supervisors and admins can manage purchase orders.</p>
+        </div>
       </div>
     )
   }
 
   return (
-    <div className="space-y-6 max-w-7xl mx-auto pb-10">
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <div className="max-w-7xl mx-auto space-y-10 pb-20">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b pb-8">
         <div>
-          <h1 className="font-display text-3xl font-bold tracking-tight text-foreground">Purchasing & Procurement</h1>
-          <p className="text-muted-foreground text-sm mt-1">Issue purchase orders and manage incoming inventory shipments.</p>
+          <div className="flex items-center gap-2 mb-2">
+            <div className="w-2 h-2 rounded-full bg-orange-500" />
+            <span className="text-[10px] font-black uppercase tracking-[3px] text-muted-foreground">Procurement Module</span>
+          </div>
+          <h1 className="font-display text-4xl font-black tracking-tighter italic uppercase">Purchase Orders</h1>
+          <p className="text-muted-foreground text-sm font-medium mt-1">Issue purchase orders and manage incoming inventory shipments.</p>
         </div>
-        <div className="flex items-center gap-3">
-          <Card className="flex items-center px-4 py-2 bg-indigo-500/5 border-indigo-500/20">
-            <div className="mr-3 p-2 bg-indigo-500/10 rounded-full text-indigo-600">
-              <ShoppingCart className="w-4 h-4" />
-            </div>
-            <div>
-              <p className="text-[10px] uppercase font-bold text-muted-foreground leading-none mb-1">Total Procurement</p>
-              <p className="text-lg font-bold font-mono leading-none text-indigo-600">{fmtMoney(stats.totalPurchased)}</p>
-            </div>
-          </Card>
-          <Card className="flex items-center px-4 py-2 bg-destructive/5 border-destructive/20">
-            <div className="mr-3 p-2 bg-destructive/10 rounded-full text-destructive">
-              <TrendingUp className="w-4 h-4 rotate-180" />
-            </div>
-            <div>
-              <p className="text-[10px] uppercase font-bold text-muted-foreground leading-none mb-1">Unpaid Debt</p>
-              <p className="text-lg font-bold font-mono leading-none text-destructive">{fmtMoney(stats.totalDebt)}</p>
-            </div>
-          </Card>
-        </div>
+        <Button
+          onClick={() => setSheetOpen(true)}
+          className="h-12 bg-orange-600 hover:bg-orange-700 text-white font-black px-8 rounded-2xl shadow-xl shadow-orange-600/20 group"
+        >
+          <PlusCircle className="w-4 h-4 mr-2 group-hover:rotate-90 transition-transform" />
+          NEW ORDER
+        </Button>
       </div>
 
-      <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-          <TabsList className="grid grid-cols-2 w-[350px]">
-            <TabsTrigger value="history" className="flex items-center gap-2">
-              <History className="w-4 h-4" />
-              PO History
-            </TabsTrigger>
-            <TabsTrigger value="new" className="flex items-center gap-2">
-              <PlusCircle className="w-4 h-4" />
-              New Order
-            </TabsTrigger>
-          </TabsList>
-          
-          {activeTab === 'history' && (
-            <div className="relative w-full sm:w-72">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input 
-                placeholder="Search PO # or supplier..." 
-                className="pl-9 h-10 shadow-sm"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 stat-grid">
+        {[
+          { label: 'Total Procurement', value: fmtMoney(stats.totalPurchased), icon: ShoppingCart, color: 'text-emerald-600', sub: 'All-time purchases' },
+          { label: 'Outstanding Debt', value: fmtMoney(stats.totalDebt), icon: TrendingUp, color: 'text-rose-600', sub: 'Unpaid balance' },
+          { label: 'PO Count', value: stats.count, icon: FileText, color: 'text-indigo-600', sub: 'Total orders' },
+          { label: 'Amount Paid', value: fmtMoney(stats.totalPurchased - stats.totalDebt), icon: DollarSign, color: 'text-amber-600', sub: 'Settled payments' },
+        ].map((s) => (
+          <div key={s.label} className="p-6 bg-background border-2 rounded-3xl">
+            <div className="flex items-center justify-between mb-3">
+              <div className="p-2 rounded-xl bg-secondary"><s.icon className="w-4 h-4 text-muted-foreground" /></div>
+              <ArrowUpRight className="w-3.5 h-3.5 text-muted-foreground/30" />
             </div>
-          )}
-        </div>
+            <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground mb-1">{s.label}</p>
+            <p className={`text-2xl font-black tracking-tight ${s.color}`}>{s.value}</p>
+            <p className="text-[9px] font-bold text-muted-foreground mt-1 opacity-50">{s.sub}</p>
+          </div>
+        ))}
+      </div>
 
-        <TabsContent value="history" className="mt-0 space-y-4">
-          <div className="rounded-xl border-2 shadow-sm overflow-hidden bg-background">
-            <Table>
-              <TableHeader className="bg-secondary/40">
-                <TableRow>
-                  <TableHead className="w-[100px]">Order #</TableHead>
-                  <TableHead>Supplier</TableHead>
-                  <TableHead className="text-right">Total USD</TableHead>
-                  <TableHead className="text-right">Paid</TableHead>
-                  <TableHead className="text-center">Debt Status</TableHead>
-                  <TableHead className="text-center">Issued By</TableHead>
-                  <TableHead className="text-right">Date</TableHead>
+      <Card className="rounded-3xl border-2 shadow-none overflow-hidden">
+            <CardHeader className="bg-secondary/30 pb-6 border-b flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div>
+                <CardTitle className="text-lg font-black uppercase tracking-tight italic">PO History</CardTitle>
+                <CardDescription className="text-[10px] font-bold uppercase tracking-widest">{filteredPurchases.length} results</CardDescription>
+              </div>
+              <div className="relative w-full md:w-72">
+                <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                <Input
+                  placeholder="Search PO # or supplier..."
+                  className="pl-9 h-10 shadow-sm"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+              </div>
+            </CardHeader>
+            <CardContent className="p-0">
+            <Table className="aw-table">
+              <TableHeader className="bg-secondary/20">
+                <TableRow className="hover:bg-transparent border-b-2">
+                  <TableHead className="pl-6 text-[10px] font-black uppercase w-[100px]">Order #</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase">Supplier</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-right">Total USD</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-right">Paid</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-center">Debt Status</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-center">Issued By</TableHead>
+                  <TableHead className="text-[10px] font-black uppercase text-right">Date</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {purchasesQuery.isLoading && <TableRow><TableCell colSpan={7} className="text-center py-20 text-muted-foreground italic">Syncing procurement logs...</TableCell></TableRow>}
+                {purchasesQuery.isLoading && <SkeletonRows cols={7} />}
                 {!purchasesQuery.isLoading && filteredPurchases.length === 0 && <TableRow><TableCell colSpan={7} className="text-center py-20 text-muted-foreground">No purchase orders found.</TableCell></TableRow>}
                 {filteredPurchases.map((r: any) => {
                   const total = normalizeMoney(r.total_usd, 'USD')
@@ -302,157 +316,92 @@ export default function Purchasing() {
                 })}
               </TableBody>
             </Table>
-          </div>
-        </TabsContent>
-
-        <TabsContent value="new" className="mt-0">
-          <Card className="border-2 border-indigo-500/20 shadow-md">
-            <CardHeader className="bg-indigo-500/5 pb-6 border-b">
-              <div className="flex items-center justify-between">
-                <div>
-                  <CardTitle className="text-xl flex items-center gap-2 text-indigo-700">
-                    <FileText className="w-5 h-5" />
-                    Create Purchase Order
-                  </CardTitle>
-                  <CardDescription>Register incoming stock and update inventory costs.</CardDescription>
-                </div>
-                <div className="text-right">
-                  <p className="text-[10px] uppercase font-bold text-muted-foreground">PO Date</p>
-                  <p className="font-mono font-bold">{new Date().toLocaleDateString('en-GB')}</p>
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent className="pt-8 space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-2">
-                  <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-                    <Building2 className="w-3.5 h-3.5" /> Supplier *
-                  </Label>
-                  <Select value={supplierId} onValueChange={setSupplierId}>
-                    <SelectTrigger className="h-11 shadow-sm font-medium"><SelectValue placeholder="Select vendor..." /></SelectTrigger>
-                    <SelectContent>
-                      {(suppliersQuery.data ?? []).map(s => <SelectItem key={s.id} value={String(s.id)}>{s.name}</SelectItem>)}
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div className="p-4 bg-indigo-50 border border-indigo-200 rounded-xl flex items-center justify-between">
-                  <div>
-                    <p className="text-[10px] uppercase font-bold text-indigo-700">Logged By</p>
-                    <p className="font-bold text-sm">{profile?.name}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-[10px] uppercase font-bold text-indigo-700">Station</p>
-                    <p className="font-bold text-sm uppercase">{profile?.station || 'Admin'}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-bold flex items-center gap-2">
-                    <Package className="w-4 h-4 text-muted-foreground" />
-                    Order Line Items
-                  </h3>
-                  <div className="flex items-center gap-2">
-                    <BarcodeCamera onScan={handleBarcodeScan} label="Scan" hint="" className="h-8" />
-                    <Button variant="outline" size="sm" onClick={addLine} className="h-8 gap-1.5 border-dashed hover:border-primary hover:bg-primary/5">
-                      <Plus className="w-3.5 h-3.5" /> Add line
-                    </Button>
-                  </div>
-                </div>
-                
-                <div className="space-y-3">
-                  {lines.map((line, i) => (
-                    <div key={i} className="flex items-center gap-3 animate-in fade-in slide-in-from-top-2 duration-200">
-                      <div className="flex-1">
-                        <Input 
-                          list="po-products" 
-                          placeholder="Search product..." 
-                          value={line.description} 
-                          onChange={e => updateLine(i, { description: e.target.value })} 
-                          className="h-10"
-                        />
-                      </div>
-                      <div className="w-24">
-                        <Input 
-                          type="number" 
-                          min={1} 
-                          placeholder="Qty"
-                          value={line.qty} 
-                          onChange={e => updateLine(i, { qty: parseInt(e.target.value) || 1 })} 
-                          className="h-10 font-mono text-center"
-                        />
-                      </div>
-                      <div className="w-32 relative">
-                        <span className="absolute left-3 top-2.5 text-muted-foreground font-mono text-xs">$</span>
-                        <Input 
-                          type="number" 
-                          step="0.01" 
-                          placeholder="Cost"
-                          value={line.unitCost} 
-                          onChange={e => updateLine(i, { unitCost: parseFloat(e.target.value) || 0 })} 
-                          className="h-10 pl-7 font-mono"
-                        />
-                      </div>
-                      <Button variant="ghost" size="icon" className="h-10 w-10 text-muted-foreground hover:text-destructive" onClick={() => removeLine(i)}>
-                        <Trash2 className="w-4 h-4" />
-                      </Button>
-                    </div>
-                  ))}
-                  <datalist id="po-products">{products.map(p => <option key={p.id} value={p.description} />)}</datalist>
-                </div>
-              </div>
-
-              <Separator />
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <div className="space-y-2">
-                    <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-                      <DollarSign className="w-3.5 h-3.5" /> Amount Paid Today (USD)
-                    </Label>
-                    <div className="relative">
-                      <span className="absolute left-3 top-2.5 text-green-600 font-mono font-bold">$</span>
-                      <Input 
-                        type="number" 
-                        step="0.01" 
-                        value={paidUsd} 
-                        onChange={e => setPaidUsd(e.target.value)} 
-                        className="h-11 pl-8 font-mono text-lg font-bold text-green-600 bg-green-50/30 border-green-200 focus:border-green-500" 
-                      />
-                    </div>
-                  </div>
-                  <div className="p-4 bg-secondary/20 rounded-xl border flex items-center gap-3">
-                    <AlertCircle className="w-4 h-4 text-muted-foreground" />
-                    <p className="text-[10px] text-muted-foreground leading-tight">
-                      Any unpaid balance will be automatically added to the supplier's outstanding ledger.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="p-6 bg-indigo-600 rounded-2xl text-white shadow-xl shadow-indigo-600/20 flex flex-col justify-center items-center">
-                  <p className="text-[10px] uppercase font-bold opacity-70 tracking-widest mb-1">Grand Total (USD)</p>
-                  <p className="text-4xl font-mono font-bold">{fmtMoney(totalUsd)}</p>
-                  <div className="mt-4 flex items-center gap-2 text-[10px] bg-white/10 px-3 py-1 rounded-full">
-                    <CheckCircle2 className="w-3 h-3" />
-                    Inventory stock will increase upon save
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t flex flex-col sm:flex-row items-center justify-end gap-4">
-                <Button 
-                  onClick={() => saveMutation.mutate()} 
-                  disabled={saveMutation.isPending || !supplierId || totalUsd <= 0} 
-                  className="w-full sm:w-64 h-12 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-lg shadow-lg shadow-indigo-600/20"
-                >
-                  {saveMutation.isPending ? 'Processing Order...' : 'Register Purchase'}
-                </Button>
-              </div>
             </CardContent>
-          </Card>
-        </TabsContent>
-      </Tabs>
+      </Card>
+
+      {/* Purchase Order Sheet */}
+      <Sheet open={sheetOpen} onOpenChange={(open) => {
+        setSheetOpen(open)
+        if (!open) { setSupplierId(''); setPaidUsd('0'); setLines([{ description: '', qty: 1, unitCost: 0 }]) }
+      }}>
+        <SheetContent side="right" className="w-full sm:max-w-xl flex flex-col p-0">
+          <div className="p-8 bg-orange-600 text-white flex items-center justify-between">
+            <div>
+              <h2 className="text-2xl font-black uppercase tracking-tighter italic">CREATE PURCHASE ORDER</h2>
+              <p className="text-orange-100 text-sm font-medium">Register incoming stock and update inventory costs.</p>
+            </div>
+            <div className="text-right text-orange-100">
+              <p className="text-[9px] uppercase font-black">PO Date</p>
+              <p className="font-mono font-black text-sm">{new Date().toLocaleDateString('en-GB')}</p>
+            </div>
+          </div>
+          <div className="flex-1 overflow-y-auto p-8 space-y-6">
+            <div className="space-y-2">
+              <Label className="text-[10px] font-black uppercase tracking-widest text-muted-foreground ml-1 flex items-center gap-1.5">
+                <Building2 className="w-3 h-3" /> Supplier *
+              </Label>
+              <Select value={supplierId} onValueChange={setSupplierId}>
+                <SelectTrigger className="h-12 border-2 font-bold"><SelectValue placeholder="Select vendor..." /></SelectTrigger>
+                <SelectContent>{(suppliersQuery.data ?? []).map(s => <SelectItem key={s.id} value={String(s.id)}>{s.name}</SelectItem>)}</SelectContent>
+              </Select>
+            </div>
+
+            <div>
+              <div className="flex items-center justify-between mb-3">
+                <Label className="text-[10px] font-black uppercase tracking-widest text-muted-foreground flex items-center gap-1.5">
+                  <Package className="w-3 h-3" /> Line Items
+                </Label>
+                <div className="flex items-center gap-2">
+                  <BarcodeCamera onScan={handleBarcodeScan} label="Scan" hint="" className="h-8 text-[9px]" />
+                  <Button variant="ghost" size="sm" onClick={addLine} className="h-8 text-[9px] font-black uppercase text-orange-600 hover:bg-orange-50">Add Line +</Button>
+                </div>
+              </div>
+              <div className="space-y-2">
+                {lines.map((line, i) => (
+                  <div key={i} className="flex items-center gap-2 animate-in fade-in slide-in-from-top-2">
+                    <Input list="po-products" placeholder="Product..." value={line.description} onChange={e => updateLine(i, { description: e.target.value })} className="h-10 border-2 text-sm font-bold flex-1" />
+                    <Input type="number" min={1} value={line.qty} onChange={e => updateLine(i, { qty: parseInt(e.target.value) || 1 })} className="w-16 h-10 border-2 font-mono text-center font-bold" />
+                    <div className="relative w-24">
+                      <span className="absolute left-2 top-2.5 text-[10px] font-black text-muted-foreground">$</span>
+                      <Input type="number" step="0.01" value={line.unitCost} onChange={e => updateLine(i, { unitCost: parseFloat(e.target.value) || 0 })} className="h-10 pl-5 border-2 font-mono text-right font-bold" />
+                    </div>
+                    <Button variant="ghost" size="icon" onClick={() => removeLine(i)} className="h-10 w-10 text-muted-foreground hover:text-destructive"><Trash2 className="w-4 h-4" /></Button>
+                  </div>
+                ))}
+                <datalist id="po-products">{products.map(p => <option key={p.id} value={p.description} />)}</datalist>
+              </div>
+            </div>
+
+            <Separator />
+
+            <div className="space-y-2">
+              <Label className="text-[10px] font-black uppercase tracking-widest text-muted-foreground ml-1 flex items-center gap-1.5">
+                <DollarSign className="w-3 h-3" /> Amount Paid Today (USD)
+              </Label>
+              <div className="relative">
+                <span className="absolute left-4 top-3.5 text-emerald-600 font-mono font-black">$</span>
+                <Input type="number" step="0.01" value={paidUsd} onChange={e => setPaidUsd(e.target.value)} className="h-12 pl-8 border-2 font-mono text-lg font-black text-emerald-600 border-emerald-200 focus:border-emerald-500" />
+              </div>
+              <p className="text-[10px] text-muted-foreground font-medium ml-1">Unpaid balance is added to the supplier's outstanding ledger.</p>
+            </div>
+
+            <div className="p-6 bg-secondary/30 rounded-2xl border-2 border-dashed text-center space-y-1">
+              <p className="text-[10px] font-black uppercase tracking-[3px] text-muted-foreground">Grand Total</p>
+              <p className="text-4xl font-mono font-black text-orange-600">{fmtMoney(totalUsd)}</p>
+              <p className="text-[9px] font-bold text-muted-foreground opacity-60 flex items-center justify-center gap-1"><CheckCircle2 className="w-3 h-3" /> Inventory increases upon save</p>
+            </div>
+          </div>
+          <SheetFooter className="p-8 bg-secondary/10 border-t">
+            <Button
+              onClick={() => saveMutation.mutate()}
+              disabled={saveMutation.isPending || !supplierId || totalUsd <= 0}
+              className="w-full h-14 bg-orange-600 hover:bg-orange-700 text-white font-black text-lg rounded-2xl shadow-xl shadow-orange-600/20"
+            >
+              {saveMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />PROCESSING...</> : 'REGISTER PURCHASE'}
+            </Button>
+          </SheetFooter>
+        </SheetContent>
+      </Sheet>
     </div>
   )
 }
