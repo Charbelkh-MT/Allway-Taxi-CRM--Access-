@@ -74,7 +74,7 @@ export default function Dashboard() {
     },
     enabled: !!profile?.name,
   })
-  const activeShift = activeShiftQuery.data ?? null
+  const activeShift = (activeShiftQuery.data ?? null) as any
   const [loading, setLoading] = useState(true)
 
   // 2-hour balance alert
