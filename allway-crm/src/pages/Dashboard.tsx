@@ -127,13 +127,23 @@ export default function Dashboard() {
       todayStart.setHours(0, 0, 0, 0)
       const station = profile.station ?? ''
 
+      // Paginate through all active products (same logic as Products page)
+      let allProducts: any[] = []
+      let from = 0
+      while (true) {
+        const { data, error } = await supabase.from('products').select('cost,selling,quantity,currency').eq('active', true).range(from, from + 999)
+        if (error || !data || data.length === 0) break
+        allProducts = [...allProducts, ...data]
+        if (data.length < 1000) break
+        from += 1000
+      }
+
       const [
         todayInvsRes,
         clientCountRes,
         productCountRes,
         pendingExpensesRes,
         openReceivablesRes,
-        productsRes,
         invoicesRes,
         logsRes,
       ] = await Promise.all([
@@ -142,7 +152,6 @@ export default function Dashboard() {
         supabase.from('products').select('*', { count: 'exact', head: true }).eq('active', true),
         supabase.from('expenses').select('*', { count: 'exact', head: true }).eq('station', station).eq('status', 'pending'),
         supabase.from('receivables').select('*', { count: 'exact', head: true }).eq('status', 'pending'),
-        supabase.from('products').select('cost,selling,quantity,currency').eq('active', true),
         supabase.from('invoices').select('*').eq('station', station).order('created_at', { ascending: false }).limit(10),
         supabase.from('audit_log').select('*').eq('station', station).order('created_at', { ascending: false }).limit(10),
       ])
@@ -161,13 +170,12 @@ export default function Dashboard() {
         return sum + (usd > 0 ? usd : lbp / 90_000)
       }, 0)
 
-      // Physical stock value: all products, LBP converted to USD (identical formula to Products page)
-      const stockPhysical = ((productsRes.data ?? []) as any[])
-        .reduce((sum, p) => {
-          const cost = normalizeMoney(parseFloat(p.cost) || 0, p.currency || 'USD')
-          const qty  = parseFloat(p.quantity) || 0
-          return sum + qty * ((p.currency || 'USD').toUpperCase() === 'LBP' ? cost / 90_000 : cost)
-        }, 0)
+      // Physical stock value: paginated allProducts, same formula as Products page
+      const stockPhysical = allProducts.reduce((sum, p) => {
+        const cost = normalizeMoney(p.cost, p.currency)
+        const qty  = parseFloat(p.quantity) || 0
+        return sum + qty * (p.currency === 'LBP' ? cost / 90_000 : cost)
+      }, 0)
 
       setMetrics({
         todaySales,
@@ -175,8 +183,8 @@ export default function Dashboard() {
         totalProducts: productCountRes.count ?? 0,
         pendingExpenses: pendingExpensesRes.count ?? 0,
         openReceivables: openReceivablesRes.count ?? 0,
-        lowStockCount: (productsRes.data ?? []).filter((p: any) => p.quantity <= 2).length,
-        suspiciousCount: (productsRes.data ?? []).filter((p: any) => p.cost > p.selling).length,
+        lowStockCount: allProducts.filter((p: any) => p.quantity <= 2).length,
+        suspiciousCount: allProducts.filter((p: any) => p.cost > p.selling).length,
         stockValue: stockPhysical + stockCash,
       })
       setRecentInvoices(invoicesRes.data ?? [])
