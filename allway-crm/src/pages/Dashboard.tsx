@@ -32,7 +32,7 @@ import { PageLoader } from '@/components/shared/PageLoader'
 import { Spinner } from '@/components/shared/Spinner'
 import { useAuth, useRole } from '@/contexts/AuthContext'
 import { useAuditLog } from '@/hooks/useAuditLog'
-import { fmtMoney, fmt, normalizeMoney, LBP_MIN, sendWhatsApp, buildDailyWhatsApp, buildDailyReportHTML, type DailyReportData, type DailyReportFullData } from '@/lib/utils'
+import { fmtMoney, fmt, normalizeMoney, LBP_MIN, sendWhatsApp, buildDailyWhatsApp, type DailyReportData } from '@/lib/utils'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -264,18 +264,11 @@ export default function Dashboard() {
 
       // 3. Send notifications if configured
       const { data: infoRow } = await (supabase as any).from('tblInformation').select('*').limit(1).single().catch(() => ({ data: null }))
-      const phone     = infoRow?.OwnerWhatsapp  || infoRow?.owner_whatsapp  || ''
-      
-      const ownerEml  = infoRow?.OwnerEmail     || infoRow?.owner_email     || ''
-      const dailyWaOn    = infoRow?.DailyReportEnabled  ?? infoRow?.daily_report_enabled  ?? false
-      const dailyEmailOn = infoRow?.DailyEmailEnabled   ?? infoRow?.daily_email_enabled   ?? false
+      const phone  = infoRow?.OwnerWhatsapp || infoRow?.owner_whatsapp || ''
+      const dailyWaOn = infoRow?.DailyReportEnabled ?? infoRow?.daily_report_enabled ?? false
 
       if (phone && dailyWaOn)
         await sendWhatsApp(phone, '', buildDailyWhatsApp(reportData))
-      if (dailyEmailOn && ownerEml) {
-        const fullData: DailyReportFullData = { ...reportData, invoices, expenses, whishTransactions: whish, shifts }
-        await sendEmail(ownerEml, `AllWay Daily Report — ${dateStr}`, buildDailyReportHTML(fullData))
-      }
 
       await log('day_closed', 'Dashboard', `Day closed by ${profile?.name} — ${invoices.length} invoices, $${totalSalesUsd.toFixed(2)}`)
     },
