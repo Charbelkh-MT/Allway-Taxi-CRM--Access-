@@ -49,7 +49,7 @@ export default function Purchasing() {
   const { profile } = useAuth()
   const { log } = useAuditLog()
   const role = useRole()
-  const canCreate = role === 'admin' || role === 'supervisor'
+  const canCreate = role === 'admin'
   const { data: products = [] } = useProductsCache()
 
   const [sheetOpen, setSheetOpen] = useState(false)
@@ -196,7 +196,7 @@ export default function Purchasing() {
         <div className="flex flex-col items-center justify-center py-20 space-y-4">
           <AlertCircle className="w-12 h-12 text-destructive opacity-50" />
           <h1 className="font-display text-2xl font-bold tracking-tight">Access Restricted</h1>
-          <p className="text-muted-foreground">Only supervisors and admins can manage purchase orders.</p>
+          <p className="text-muted-foreground">Only admins can manage purchase orders.</p>
         </div>
       </div>
     )

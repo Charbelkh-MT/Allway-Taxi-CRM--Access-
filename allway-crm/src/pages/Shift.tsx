@@ -55,7 +55,7 @@ export default function ShiftPage() {
   const { profile } = useAuth()
   const { log } = useAuditLog()
   const role = useRole()
-  const isAdmin = role === 'admin' || role === 'supervisor'
+  const isAdmin = role === 'admin'
 
   const [counted, setCounted] = useState('')
   const [shiftNote, setShiftNote] = useState('')

@@ -26,7 +26,7 @@ export default function Internet() {
   const { profile } = useAuth()
   const { log } = useAuditLog()
   const role = useRole()
-  const isSup = role === 'admin' || role === 'supervisor'
+  const isSup = role === 'admin'
 
   const [sheetOpen, setSheetOpen] = useState(false)
   const [editingRecharge, setEditingRecharge] = useState<any>(null)

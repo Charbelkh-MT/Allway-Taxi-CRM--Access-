@@ -30,7 +30,7 @@ export default function Products() {
   const queryClient = useQueryClient()
   const { log } = useAuditLog()
   const role = useRole()
-  const canAdd = role === 'admin' || role === 'supervisor'
+  const canAdd = role === 'admin'
 
   const [search, setSearch] = useState('')
   const [catFilter, setCatFilter] = useState('all')

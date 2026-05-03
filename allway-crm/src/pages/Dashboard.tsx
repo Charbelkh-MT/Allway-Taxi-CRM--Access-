@@ -59,7 +59,7 @@ interface Metrics {
 export default function Dashboard() {
   const { profile } = useAuth()
   const role = useRole()
-  const isAdmin = role === 'admin' || role === 'supervisor'
+  const isAdmin = role === 'admin'
   const queryClient = useQueryClient()
   const [confirmCloseDayOpen, setConfirmCloseDayOpen] = useState(false)
   const { log } = useAuditLog()

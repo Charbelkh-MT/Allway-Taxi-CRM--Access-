@@ -42,7 +42,7 @@ export default function Recharge() {
   const { profile } = useAuth()
   const { log } = useAuditLog()
   const role = useRole()
-  const isSup = role === 'admin' || role === 'supervisor'
+  const isSup = role === 'admin'
 
   const { data: clients = [] } = useClientsCache()
 
@@ -113,7 +113,7 @@ export default function Recharge() {
 
   const receiveMutation = useMutation({
     mutationFn: async () => {
-      if (!isSup) throw new Error('Only supervisors can add card stock')
+      if (!isSup) throw new Error('Only admins can add card stock')
       const qty = parseInt(rcQty) || 1
       const rows = Array.from({ length: qty }, () => ({
         brand: rcBrand,
@@ -436,7 +436,7 @@ export default function Recharge() {
             <div className="space-y-1">
               <p className="text-[10px] font-black uppercase tracking-widest text-amber-900">Inventory Alert</p>
               <p className="text-[11px] leading-relaxed text-amber-800">
-                All card movements are audited. Report any physical gaps immediately to supervisors.
+                All card movements are audited. Report any physical gaps immediately to admin.
               </p>
             </div>
           </div>

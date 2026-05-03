@@ -49,7 +49,7 @@ export default function Expenses() {
   const { profile } = useAuth()
   const { log } = useAuditLog()
   const role = useRole()
-  const isSup = role === 'admin' || role === 'supervisor'
+  const isSup = role === 'admin'
   
   const { data: suppliers = [] } = useSuppliersCache()
 
@@ -163,15 +163,15 @@ export default function Expenses() {
       if (error) throw error
       await log('expense_submitted', 'Expenses', `Expense: ${supplierName} $${usd} / ${lbp} LBP`)
 
-      // Check expense threshold from Settings and warn supervisors
+      // Check expense threshold from Settings and warn admins
       const { data: settingsRow } = await (supabase as any).from('tblInformation').select('*').limit(1).single().catch(() => ({ data: null }))
       const threshold = parseFloat(settingsRow?.ExpenseThreshold ?? settingsRow?.expense_threshold ?? '50') || 50
       if (usd >= threshold) {
-        toast.warning(`⚠ Large expense ($${usd}) submitted — supervisor approval required`, { duration: 6000 })
+        toast.warning(`⚠ Large expense ($${usd}) submitted — admin approval required`, { duration: 6000 })
       }
     },
     onSuccess: () => {
-      toast.success('Expense submitted for supervisor approval')
+      toast.success('Expense submitted for admin approval')
       void queryClient.invalidateQueries({ queryKey: QK })
       setExSupplierId(''); setExUsd('0'); setExLbp('0'); setExDesc(''); setExNote('')
       setSheetOpen(false)
@@ -391,7 +391,7 @@ export default function Expenses() {
         <SheetContent side="right" className="w-full sm:max-w-lg flex flex-col p-0">
           <div className="p-8 bg-amber-600 text-white">
             <h2 className="text-2xl font-black uppercase tracking-tighter italic">LOG BUSINESS EXPENSE</h2>
-            <p className="text-amber-100 text-sm font-medium">Record spending for supervisor review and approval.</p>
+            <p className="text-amber-100 text-sm font-medium">Record spending for admin review and approval.</p>
           </div>
           <div className="flex-1 overflow-y-auto p-8 space-y-6">
             <div className="space-y-2">
@@ -427,7 +427,7 @@ export default function Expenses() {
               <Clock className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
               <div>
                 <p className="text-[10px] font-black uppercase text-orange-900">Approval Required</p>
-                <p className="text-[10px] text-orange-700 leading-relaxed font-medium mt-0.5">Expenses are marked as Pending and require supervisor approval before affecting the PNL.</p>
+                <p className="text-[10px] text-orange-700 leading-relaxed font-medium mt-0.5">Expenses are marked as Pending and require admin approval before affecting the PNL.</p>
               </div>
             </div>
             <div className="flex items-center gap-2 text-xs text-muted-foreground font-bold">

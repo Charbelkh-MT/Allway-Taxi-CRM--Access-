@@ -27,7 +27,7 @@ export default function Inventory() {
   const { profile } = useAuth()
   const { log } = useAuditLog()
   const role = useRole()
-  const isSup = role === 'admin' || role === 'supervisor'
+  const isSup = role === 'admin'
   const { data: products = [] } = useProductsCache()
 
   const [sheetOpen, setSheetOpen] = useState(false)
@@ -77,7 +77,7 @@ export default function Inventory() {
 
   const saveMutation = useMutation({
     mutationFn: async () => {
-      if (!isSup) throw new Error('Only supervisors can submit inventory checks')
+      if (!isSup) throw new Error('Only admins can submit inventory checks')
       if (!productName.trim()) throw new Error('Please select a product to check')
       
       const match = products.find(p => p.description === productName)

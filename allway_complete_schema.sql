@@ -9,7 +9,7 @@ create table if not exists users (
   name text not null,
   username text unique not null,
   password_hash text not null,
-  role text not null check (role in ('admin','supervisor','senior','cashier')),
+  role text not null check (role in ('admin','staff')),
   station text default 'Main Station',
   active boolean default true,
   created_at timestamptz default now()

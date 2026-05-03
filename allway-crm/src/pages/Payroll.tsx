@@ -32,7 +32,7 @@ function monthLabel(y: number, m: number) {
 
 export default function Payroll() {
   const role = useRole()
-  const isAdmin = role === 'admin' || role === 'supervisor'
+  const isAdmin = role === 'admin'
 
   const now = new Date()
   const [selYear, setSelYear] = useState(now.getFullYear())

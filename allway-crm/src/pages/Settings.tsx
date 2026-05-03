@@ -41,7 +41,7 @@ export default function Settings() {
   const { profile } = useAuth()
   const role = useRole()
   const { log } = useAuditLog()
-  const isSup = role === 'admin' || role === 'supervisor'
+  const isSup = role === 'admin'
   const isAdmin = role === 'admin'
 
   const [phone, setPhone] = useState('')
@@ -379,7 +379,7 @@ export default function Settings() {
               },
               {
                 label: 'End-of-day WhatsApp summary',
-                desc: 'Sends a daily totals summary to the owner WhatsApp when Close Day is triggered by a supervisor.',
+                desc: 'Sends a daily totals summary to the owner WhatsApp when Close Day is triggered by an admin.',
                 val: dailyReportEnabled,
                 set: setDailyReportEnabled,
               },

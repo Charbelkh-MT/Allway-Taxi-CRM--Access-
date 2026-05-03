@@ -1,7 +1,7 @@
 // Hand-crafted from allway_complete_schema.sql
 // Run `npx supabase gen types typescript` after linking the project for auto-generated types.
 
-export type Role = 'admin' | 'supervisor' | 'senior' | 'cashier'
+export type Role = 'admin' | 'staff'
 export type DebtStatus = 'Debt' | 'Cash' | 'Unchecked'
 export type InvoiceStatus = 'saved' | 'void_requested' | 'voided'
 export type ExpenseStatus = 'pending' | 'approved' | 'rejected'

@@ -110,10 +110,8 @@ export function useAuth() {
 
 // ─── Permissions ────────────────────────────────────────────────────────────
 const PERMISSIONS: Record<Role, string[]> = {
-  admin:      ['dashboard','daily-balance','sales','clients','products','purchasing','suppliers','expenses','whish','recharge','internet','taxi','inventory','returns','settings','shift','audit','users'],
-  supervisor: ['dashboard','daily-balance','sales','clients','products','purchasing','suppliers','expenses','whish','recharge','internet','taxi','inventory','returns','settings','shift','audit'],
-  senior:     ['dashboard','daily-balance','sales','clients','products','expenses','whish','recharge','internet','taxi','inventory','returns','shift'],
-  cashier:    ['dashboard','daily-balance','sales','clients','products','whish','recharge','internet','taxi','shift'],
+  admin: ['dashboard','daily-balance','sales','clients','products','purchasing','suppliers','expenses','whish','recharge','internet','taxi','inventory','returns','settings','shift','audit','users'],
+  staff: ['dashboard','daily-balance','sales','clients','products','purchasing','suppliers','expenses','whish','recharge','internet','taxi','inventory','returns','shift'],
 }
 
 export function useCan(module: string): boolean {

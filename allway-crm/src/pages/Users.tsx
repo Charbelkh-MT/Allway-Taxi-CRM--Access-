@@ -30,15 +30,15 @@ import {
 } from 'lucide-react'
 
 const QK = ['users']
-const ROLES: Role[] = ['cashier', 'senior', 'supervisor', 'admin']
+const ROLES: Role[] = ['staff', 'admin']
 const STATIONS = ['Main Station', 'Station 01', 'Station 02', 'Station 03', 'Laptop']
 const SECURITY_RULES = [
   'No invoice can be deleted — only voided with reason',
-  'Void requires supervisor approval + reason logged',
+  'Void requires admin approval + reason logged',
   'Every action stamped with user + station + timestamp',
   'Cash mismatch auto-flagged on shift close',
-  'Expenses need supervisor approval before payment',
-  'Purchasing restricted to supervisor / admin only',
+  'Expenses need admin approval before payment',
+  'Purchasing restricted to admin only',
 ]
 
 export default function Users() {
@@ -47,14 +47,14 @@ export default function Users() {
   const { profile } = useAuth()
   const role = useRole()
   const isAdmin = role === 'admin'
-  const canView = role === 'admin' || role === 'supervisor'
+  const canView = role === 'admin'
 
   const [sheetOpen, setSheetOpen] = useState(false)
   const [editingUser, setEditingUser] = useState<any>(null)
   const [uName, setUName] = useState('')
   const [uUsername, setUUsername] = useState('')
   const [uPass, setUPass] = useState('')
-  const [uRole, setURole] = useState<Role>('cashier')
+  const [uRole, setURole] = useState<Role>('staff')
   const [uStation, setUStation] = useState(STATIONS[0])
   const [uActive, setUActive] = useState(true)
 
@@ -72,13 +72,13 @@ export default function Users() {
   const stats = {
     total: users.length,
     active: users.filter(u => u.active).length,
-    admins: users.filter(u => u.role === 'admin' || u.role === 'supervisor').length,
+    admins: users.filter(u => u.role === 'admin').length,
     inactive: users.filter(u => !u.active).length,
   }
 
   function openAdd() {
     setEditingUser(null)
-    setUName(''); setUUsername(''); setUPass(''); setURole('cashier'); setUStation(STATIONS[0]); setUActive(true)
+    setUName(''); setUUsername(''); setUPass(''); setURole('staff'); setUStation(STATIONS[0]); setUActive(true)
     setSheetOpen(true)
   }
 
@@ -91,7 +91,7 @@ export default function Users() {
 
   function resetForm() {
     setEditingUser(null)
-    setUName(''); setUUsername(''); setUPass(''); setURole('cashier'); setUStation(STATIONS[0]); setUActive(true)
+    setUName(''); setUUsername(''); setUPass(''); setURole('staff'); setUStation(STATIONS[0]); setUActive(true)
   }
 
   const saveMutation = useMutation({
@@ -136,7 +136,7 @@ export default function Users() {
           <AlertCircle className="w-8 h-8 text-destructive opacity-30" />
           <div>
             <p className="font-black text-lg uppercase tracking-tight">Access Restricted</p>
-            <p className="text-sm text-muted-foreground font-medium">Supervisor or Admin access required.</p>
+            <p className="text-sm text-muted-foreground font-medium">Admin access required.</p>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@ export default function Users() {
         {[
           { label: 'Total Users', value: stats.total, icon: UsersIcon, color: 'text-slate-700', sub: 'All accounts' },
           { label: 'Active', value: stats.active, icon: UserCheck, color: 'text-emerald-600', sub: 'With access' },
-          { label: 'Admins / Supervisors', value: stats.admins, icon: Shield, color: 'text-indigo-600', sub: 'Elevated privileges' },
+          { label: 'Admins', value: stats.admins, icon: Shield, color: 'text-indigo-600', sub: 'Elevated privileges' },
           { label: 'Inactive', value: stats.inactive, icon: UserX, color: 'text-rose-600', sub: 'Suspended accounts' },
         ].map(s => (
           <div key={s.label} className="p-6 bg-background border-2 rounded-3xl">

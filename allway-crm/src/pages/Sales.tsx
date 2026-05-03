@@ -121,7 +121,7 @@ export default function Sales() {
   const { log } = useAuditLog()
   const role = useRole()
   const canUseSales = useCan('sales')
-  const canApproveVoid = role === 'admin' || role === 'supervisor'
+  const canApproveVoid = role === 'admin'
 
   const [search, setSearch] = useState('')
   const [range, setRange] = useState<RangeFilter>('today')
@@ -250,7 +250,7 @@ export default function Sales() {
     mutationFn: async () => {
       if (!selectedInvoice || !voidReason.trim()) throw new Error('Reason required')
       const isCreator = selectedInvoice.created_by === profile?.name
-      if (!isCreator && !canApproveVoid) throw new Error('Only the invoice creator or a supervisor can request a void')
+      if (!isCreator && !canApproveVoid) throw new Error('Only the invoice creator or an admin can request a void')
       const { error } = await (supabase as any).from('invoices').update({ status: 'void_requested', void_reason: voidReason.trim(), void_requested_by: profile?.name ?? 'system' }).eq('id', selectedInvoice.id)
       if (error) throw error
       await log('void_requested', 'Voids', `Void requested for #${selectedInvoice.id}`)
@@ -585,7 +585,7 @@ export default function Sales() {
         <DialogContent className="sm:max-w-[400px] p-0 overflow-hidden rounded-3xl border-2">
           <div className="p-8 bg-rose-600 text-white">
             <h2 className="text-2xl font-black uppercase tracking-tighter italic">REQUEST VOID</h2>
-            <p className="text-rose-100 text-sm font-medium">This action triggers a supervisor audit.</p>
+            <p className="text-rose-100 text-sm font-medium">This action triggers an admin audit.</p>
           </div>
           <div className="p-8 space-y-6">
             <div className="space-y-2">

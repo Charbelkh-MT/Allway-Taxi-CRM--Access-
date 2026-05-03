@@ -37,11 +37,7 @@ export function DebtBadge({ status }: { status: string }) {
 export function RoleBadge({ role }: { role: string }) {
   if (role === 'admin')
     return <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-red-50 text-red-700 border border-red-200">Admin</span>
-  if (role === 'supervisor')
-    return <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-amber-50 text-amber-700 border border-amber-200">Supervisor</span>
-  if (role === 'senior')
-    return <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-blue-50 text-blue-700 border border-blue-200">Senior</span>
-  return <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-secondary text-muted-foreground">Cashier</span>
+  return <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-blue-50 text-blue-700 border border-blue-200">Staff</span>
 }
 
 export function ExpenseStatusBadge({ status }: { status: string }) {

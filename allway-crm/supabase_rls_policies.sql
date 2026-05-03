@@ -47,7 +47,7 @@ $$;
 CREATE POLICY "users_select_own"
   ON users FOR SELECT
   TO authenticated
-  USING (id = auth.uid() OR get_my_role() IN ('admin', 'supervisor'));
+  USING (id = auth.uid() OR get_my_role() = 'admin');
 
 CREATE POLICY "users_insert_admin"
   ON users FOR INSERT
@@ -61,7 +61,7 @@ CREATE POLICY "users_update_admin"
   WITH CHECK (get_my_role() = 'admin');
 
 -- ================================================================
--- CLIENTS TABLE — supervisor+ write; all authenticated read
+-- CLIENTS TABLE — admin write; all authenticated read
 -- ================================================================
 CREATE POLICY "clients_select_all"
   ON clients FOR SELECT
@@ -71,15 +71,15 @@ CREATE POLICY "clients_select_all"
 CREATE POLICY "clients_insert_supervisor"
   ON clients FOR INSERT
   TO authenticated
-  WITH CHECK (get_my_role() IN ('admin', 'supervisor'));
+  WITH CHECK (get_my_role() = 'admin');
 
 CREATE POLICY "clients_update_supervisor"
   ON clients FOR UPDATE
   TO authenticated
-  USING (get_my_role() IN ('admin', 'supervisor'));
+  USING (get_my_role() = 'admin');
 
 -- ================================================================
--- PRODUCTS TABLE — all authenticated read; supervisor+ write
+-- PRODUCTS TABLE — all authenticated read; admin write
 -- ================================================================
 CREATE POLICY "products_select_all"
   ON products FOR SELECT
@@ -89,15 +89,15 @@ CREATE POLICY "products_select_all"
 CREATE POLICY "products_write_supervisor"
   ON products FOR INSERT
   TO authenticated
-  WITH CHECK (get_my_role() IN ('admin', 'supervisor'));
+  WITH CHECK (get_my_role() = 'admin');
 
 CREATE POLICY "products_update_supervisor"
   ON products FOR UPDATE
   TO authenticated
-  USING (get_my_role() IN ('admin', 'supervisor'));
+  USING (get_my_role() = 'admin');
 
 -- ================================================================
--- INVOICES TABLE — all authenticated read+insert; only creator or supervisor can update
+-- INVOICES TABLE — all authenticated read+insert; only creator or admin can update
 -- ================================================================
 CREATE POLICY "invoices_select_all"
   ON invoices FOR SELECT
@@ -107,18 +107,18 @@ CREATE POLICY "invoices_select_all"
 CREATE POLICY "invoices_insert_all"
   ON invoices FOR INSERT
   TO authenticated
-  WITH CHECK (get_my_role() IN ('admin', 'supervisor', 'senior', 'cashier'));
+  WITH CHECK (get_my_role() IN ('admin', 'staff'));
 
 CREATE POLICY "invoices_update_creator_or_supervisor"
   ON invoices FOR UPDATE
   TO authenticated
   USING (
     created_by = (SELECT name FROM public.users WHERE id = auth.uid() LIMIT 1)
-    OR get_my_role() IN ('admin', 'supervisor')
+    OR get_my_role() = 'admin'
   );
 
 -- ================================================================
--- INVOICE ITEMS TABLE — all authenticated read+insert; supervisor can update
+-- INVOICE ITEMS TABLE — all authenticated read+insert; admin can update
 -- ================================================================
 CREATE POLICY "invoice_items_select_all"
   ON invoice_items FOR SELECT
@@ -133,10 +133,10 @@ CREATE POLICY "invoice_items_insert_all"
 CREATE POLICY "invoice_items_update_supervisor"
   ON invoice_items FOR UPDATE
   TO authenticated
-  USING (get_my_role() IN ('admin', 'supervisor'));
+  USING (get_my_role() = 'admin');
 
 -- ================================================================
--- EXPENSES TABLE — all authenticated insert+read; supervisor can update (approve/reject)
+-- EXPENSES TABLE — all authenticated insert+read; admin can update (approve/reject)
 -- ================================================================
 CREATE POLICY "expenses_select_all"
   ON expenses FOR SELECT
@@ -154,7 +154,7 @@ CREATE POLICY "expenses_update_supervisor"
   USING (
     -- Submitter can only update if still pending (to retract)
     (submitted_by = (SELECT name FROM public.users WHERE id = auth.uid() LIMIT 1) AND status = 'pending')
-    OR get_my_role() IN ('admin', 'supervisor')
+    OR get_my_role() = 'admin'
   )
   WITH CHECK (
     -- Prevent self-approval: submitter cannot change status to 'approved'
@@ -165,7 +165,7 @@ CREATE POLICY "expenses_update_supervisor"
   );
 
 -- ================================================================
--- PURCHASES TABLE — supervisor+ only
+-- PURCHASES TABLE — admin only
 -- ================================================================
 CREATE POLICY "purchases_select_all"
   ON purchases FOR SELECT
@@ -175,12 +175,12 @@ CREATE POLICY "purchases_select_all"
 CREATE POLICY "purchases_write_supervisor"
   ON purchases FOR INSERT
   TO authenticated
-  WITH CHECK (get_my_role() IN ('admin', 'supervisor'));
+  WITH CHECK (get_my_role() = 'admin');
 
 CREATE POLICY "purchases_update_supervisor"
   ON purchases FOR UPDATE
   TO authenticated
-  USING (get_my_role() IN ('admin', 'supervisor'));
+  USING (get_my_role() = 'admin');
 
 -- ================================================================
 -- AUDIT LOG — insert only (no update/delete — immutable audit trail)
@@ -188,7 +188,7 @@ CREATE POLICY "purchases_update_supervisor"
 CREATE POLICY "audit_log_select_supervisor"
   ON audit_log FOR SELECT
   TO authenticated
-  USING (get_my_role() IN ('admin', 'supervisor'));
+  USING (get_my_role() = 'admin');
 
 CREATE POLICY "audit_log_insert_all"
   ON audit_log FOR INSERT
@@ -199,14 +199,14 @@ CREATE POLICY "audit_log_insert_all"
 -- (No UPDATE or DELETE policies = those operations blocked for authenticated)
 
 -- ================================================================
--- SHIFTS TABLE — own shift + supervisor can see all
+-- SHIFTS TABLE — own shift + admin can see all
 -- ================================================================
 CREATE POLICY "shifts_select"
   ON shifts FOR SELECT
   TO authenticated
   USING (
     user_name = (SELECT name FROM public.users WHERE id = auth.uid() LIMIT 1)
-    OR get_my_role() IN ('admin', 'supervisor')
+    OR get_my_role() = 'admin'
   );
 
 CREATE POLICY "shifts_insert_all"
@@ -219,7 +219,7 @@ CREATE POLICY "shifts_update_own_or_supervisor"
   TO authenticated
   USING (
     user_name = (SELECT name FROM public.users WHERE id = auth.uid() LIMIT 1)
-    OR get_my_role() IN ('admin', 'supervisor')
+    OR get_my_role() = 'admin'
   );
 
 -- ================================================================
@@ -233,47 +233,47 @@ CREATE POLICY "whish_insert_all"     ON whish_transactions FOR INSERT TO authent
 -- ================================================================
 CREATE POLICY "taxi_select_all"      ON taxi_trips FOR SELECT TO authenticated USING (true);
 CREATE POLICY "taxi_insert_all"      ON taxi_trips FOR INSERT TO authenticated WITH CHECK (true);
-CREATE POLICY "taxi_update_supervisor" ON taxi_trips FOR UPDATE TO authenticated USING (get_my_role() IN ('admin', 'supervisor'));
+CREATE POLICY "taxi_update_supervisor" ON taxi_trips FOR UPDATE TO authenticated USING (get_my_role() = 'admin');
 
 -- ================================================================
--- RECHARGE CARDS — all read; supervisor write
+-- RECHARGE CARDS — all read; admin write
 -- ================================================================
 CREATE POLICY "recharge_select_all"  ON recharge_cards FOR SELECT TO authenticated USING (true);
-CREATE POLICY "recharge_insert_sup"  ON recharge_cards FOR INSERT TO authenticated WITH CHECK (get_my_role() IN ('admin', 'supervisor'));
-CREATE POLICY "recharge_update_sup"  ON recharge_cards FOR UPDATE TO authenticated USING (get_my_role() IN ('admin', 'supervisor'));
+CREATE POLICY "recharge_insert_sup"  ON recharge_cards FOR INSERT TO authenticated WITH CHECK (get_my_role() = 'admin');
+CREATE POLICY "recharge_update_sup"  ON recharge_cards FOR UPDATE TO authenticated USING (get_my_role() = 'admin');
 
 -- ================================================================
--- INTERNET RECHARGES — all insert+read; supervisor update (verify)
+-- INTERNET RECHARGES — all insert+read; admin update (verify)
 -- ================================================================
 CREATE POLICY "internet_select_all"  ON internet_recharges FOR SELECT TO authenticated USING (true);
 CREATE POLICY "internet_insert_all"  ON internet_recharges FOR INSERT TO authenticated WITH CHECK (true);
-CREATE POLICY "internet_update_sup"  ON internet_recharges FOR UPDATE TO authenticated USING (get_my_role() IN ('admin', 'supervisor'));
+CREATE POLICY "internet_update_sup"  ON internet_recharges FOR UPDATE TO authenticated USING (get_my_role() = 'admin');
 
 -- ================================================================
--- INVENTORY CHECKS — supervisor+ only
+-- INVENTORY CHECKS — admin only
 -- ================================================================
-CREATE POLICY "inventory_select_sup" ON inventory_checks FOR SELECT TO authenticated USING (get_my_role() IN ('admin', 'supervisor'));
-CREATE POLICY "inventory_insert_sup" ON inventory_checks FOR INSERT TO authenticated WITH CHECK (get_my_role() IN ('admin', 'supervisor'));
+CREATE POLICY "inventory_select_sup" ON inventory_checks FOR SELECT TO authenticated USING (get_my_role() = 'admin');
+CREATE POLICY "inventory_insert_sup" ON inventory_checks FOR INSERT TO authenticated WITH CHECK (get_my_role() = 'admin');
 
 -- ================================================================
--- PNL ENTRIES — supervisor+ only
+-- PNL ENTRIES — admin only
 -- ================================================================
-CREATE POLICY "pnl_select_sup"       ON pnl_entries FOR SELECT TO authenticated USING (get_my_role() IN ('admin', 'supervisor'));
-CREATE POLICY "pnl_insert_sup"       ON pnl_entries FOR INSERT TO authenticated WITH CHECK (get_my_role() IN ('admin', 'supervisor'));
+CREATE POLICY "pnl_select_sup"       ON pnl_entries FOR SELECT TO authenticated USING (get_my_role() = 'admin');
+CREATE POLICY "pnl_insert_sup"       ON pnl_entries FOR INSERT TO authenticated WITH CHECK (get_my_role() = 'admin');
 
 -- ================================================================
 -- RECEIVABLES — all authenticated
 -- ================================================================
 CREATE POLICY "recv_select_all"      ON receivables FOR SELECT TO authenticated USING (true);
 CREATE POLICY "recv_insert_all"      ON receivables FOR INSERT TO authenticated WITH CHECK (true);
-CREATE POLICY "recv_update_sup"      ON receivables FOR UPDATE TO authenticated USING (get_my_role() IN ('admin', 'supervisor'));
+CREATE POLICY "recv_update_sup"      ON receivables FOR UPDATE TO authenticated USING (get_my_role() = 'admin');
 
 -- ================================================================
--- SUPPLIERS — all read; supervisor write
+-- SUPPLIERS — all read; admin write
 -- ================================================================
 CREATE POLICY "suppliers_select_all" ON suppliers FOR SELECT TO authenticated USING (true);
-CREATE POLICY "suppliers_write_sup"  ON suppliers FOR INSERT TO authenticated WITH CHECK (get_my_role() IN ('admin', 'supervisor'));
-CREATE POLICY "suppliers_update_sup" ON suppliers FOR UPDATE TO authenticated USING (get_my_role() IN ('admin', 'supervisor'));
+CREATE POLICY "suppliers_write_sup"  ON suppliers FOR INSERT TO authenticated WITH CHECK (get_my_role() = 'admin');
+CREATE POLICY "suppliers_update_sup" ON suppliers FOR UPDATE TO authenticated USING (get_my_role() = 'admin');
 
 -- ================================================================
 -- STAMPS — all authenticated
