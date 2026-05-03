@@ -10,7 +10,6 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card, CardContent } from '@/components/ui/card'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
 import { Spinner } from '@/components/shared/Spinner'
 import {
@@ -124,7 +123,7 @@ export default function Settings() {
     mutationFn: async () => {
       if (!phone.trim()) throw new Error('Enter a WhatsApp number first')
       const ok = await sendWhatsApp(phone.trim(), '', `✅ Test message from AllWay CRM\n${new Date().toLocaleString('en-GB')}`)
-      if (!ok) throw new Error('WhatsApp not configured — check .env VITE_WA_PROVIDER and credentials')
+      if (!ok) throw new Error('Green API not configured — add VITE_GREEN_API_INSTANCE_ID and VITE_GREEN_API_TOKEN to your Vercel environment variables')
     },
     onSuccess: () => toast.success('Test WhatsApp sent!'),
     onError: (e) => toast.error(e instanceof Error ? e.message : 'Failed'),
@@ -421,18 +420,6 @@ export default function Settings() {
         </CardContent>
       </Card>
 
-      <Separator />
-
-      <div className="flex justify-end pb-4">
-        <Button
-          onClick={() => saveMutation.mutate()}
-          disabled={saveMutation.isPending}
-          className="h-14 bg-slate-800 hover:bg-slate-900 text-white font-black px-10 rounded-2xl shadow-xl shadow-slate-800/20 text-lg gap-2"
-        >
-          <Save className="w-5 h-5" />
-          {saveMutation.isPending ? <><Spinner size="xs" className="mr-1.5 opacity-70" />SAVING...</> : 'SAVE ALL SETTINGS'}
-        </Button>
-      </div>
     </div>
   )
 }
