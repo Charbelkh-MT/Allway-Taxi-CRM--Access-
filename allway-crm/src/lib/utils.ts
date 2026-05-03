@@ -55,46 +55,17 @@ export function escHtml(s: string | null | undefined): string {
   return (s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')
 }
 
-// ─── WhatsApp (provider-agnostic) ─────────────────────────────────────────────
-/**
- * Send a WhatsApp message via the configured provider.
- * Provider is selected by VITE_WA_PROVIDER env var (green-api | ultramsg | callmebot).
- * The _legacyApiKey param is kept for backward compatibility with CallMeBot.
- */
-export async function sendWhatsApp(phone: string, _legacyApiKey: string, message: string): Promise<boolean> {
+// ─── WhatsApp via Twilio (routed through Vercel serverless function) ──────────
+export async function sendWhatsApp(phone: string, _unused: string, message: string): Promise<boolean> {
   if (!phone || !message) return false
-  const provider = (import.meta.env.VITE_WA_PROVIDER as string | undefined) ?? 'callmebot'
   try {
-    if (provider === 'green-api') {
-      const instanceId = import.meta.env.VITE_GREEN_API_INSTANCE_ID as string | undefined
-      const token      = import.meta.env.VITE_GREEN_API_TOKEN as string | undefined
-      if (!instanceId || !token || instanceId === 'YOUR_INSTANCE_ID') return false
-      const chatId = `${phone.replace(/\D/g, '')}@c.us`
-      await fetch(`https://api.green-api.com/waInstance${instanceId}/sendMessage/${token}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chatId, message }),
-      })
-      return true
-    }
-
-    if (provider === 'ultramsg') {
-      const instanceId = import.meta.env.VITE_ULTRAMSG_INSTANCE_ID as string | undefined
-      const token      = import.meta.env.VITE_ULTRAMSG_TOKEN as string | undefined
-      if (!instanceId || !token) return false
-      await fetch(`https://api.ultramsg.com/${instanceId}/messages/chat`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({ token, to: phone, body: message }).toString(),
-      })
-      return true
-    }
-
-    // Fallback: CallMeBot
-    if (!_legacyApiKey) return false
-    const encoded = encodeURIComponent(message)
-    await fetch(`https://api.callmebot.com/whatsapp.php?phone=${phone.trim()}&text=${encoded}&apikey=${_legacyApiKey.trim()}`, { mode: 'no-cors' })
-    return true
+    const res = await fetch('/api/send-whatsapp', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ phone, message }),
+    })
+    const data = await res.json().catch(() => ({}))
+    return res.ok && data.ok === true
   } catch (e) {
     console.error('WhatsApp send failed:', e)
     return false

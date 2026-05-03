@@ -92,24 +92,33 @@ export default async function handler(req: Request): Promise<Response> {
 
   const message = lines.join('\n')
 
-  // Send WhatsApp via CallMeBot to each configured number
-  const phonesRaw = process.env.WHATSAPP_PHONES ?? process.env.WHATSAPP_PHONE ?? ''
-  const apiKey = process.env.CALLMEBOT_APIKEY ?? ''
+  // Send WhatsApp via Twilio sandbox
+  const phonesRaw  = process.env.WHATSAPP_PHONES ?? process.env.WHATSAPP_PHONE ?? ''
+  const accountSid = process.env.TWILIO_ACCOUNT_SID ?? ''
+  const authToken  = process.env.TWILIO_AUTH_TOKEN  ?? ''
+  const fromNumber = process.env.TWILIO_FROM_NUMBER ?? '+14155238886'
 
-  if (!phonesRaw || !apiKey) {
-    // Not configured — return the message so it can be tested manually
-    return new Response(JSON.stringify({ ok: true, message, warning: 'WhatsApp not configured — set WHATSAPP_PHONES and CALLMEBOT_APIKEY' }), {
+  if (!phonesRaw || !accountSid || !authToken) {
+    return new Response(JSON.stringify({ ok: true, message, warning: 'WhatsApp not configured — set WHATSAPP_PHONES, TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN' }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     })
   }
 
   const phones = phonesRaw.split(',').map((p: string) => p.trim()).filter(Boolean)
-  const results: { phone: string; status: number }[] = []
+  const credentials = Buffer.from(`${accountSid}:${authToken}`).toString('base64')
+  const twilioUrl = `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`
+  const from = `whatsapp:${fromNumber.startsWith('+') ? fromNumber : '+' + fromNumber}`
 
+  const results: { phone: string; status: number }[] = []
   for (const phone of phones) {
-    const url = `https://api.callmebot.com/whatsapp.php?phone=${phone}&text=${encodeURIComponent(message)}&apikey=${apiKey}`
-    const res = await fetch(url)
+    const to = `whatsapp:${phone.startsWith('+') ? phone : '+' + phone}`
+    const params = new URLSearchParams({ From: from, To: to, Body: message })
+    const res = await fetch(twilioUrl, {
+      method: 'POST',
+      headers: { 'Authorization': `Basic ${credentials}`, 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params.toString(),
+    })
     results.push({ phone, status: res.status })
   }
 

@@ -171,7 +171,7 @@ export default function ShiftPage() {
       const shiftSummaryOn = info?.ShiftSummaryEnabled ?? info?.shift_summary_enabled ?? true
       if (shiftSummaryOn && info) {
         const phone = info.OwnerWhatsapp || info.owner_whatsapp || ''
-        const legacyKey = info.CallMeBotApiKey || info.callmebot_api_key || ''
+        
         if (phone) {
           const [invRes2, whishRes2] = await Promise.all([
             (supabase as any).from('invoices').select('id,total_usd,total_lbp,payment_method').eq('created_by', profile?.name ?? '').eq('status', 'saved').gte('created_at', shiftStart),
@@ -197,7 +197,7 @@ export default function ShiftPage() {
             expectedCash: expected, countedCash: cnt, difference, status, note: shiftNote,
             whishCommissionUsd: wComm,
           }
-          await sendWhatsApp(phone, legacyKey, buildShiftWhatsApp(sumData))
+          await sendWhatsApp(phone, '', buildShiftWhatsApp(sumData))
         }
       }
       return { status, difference }
@@ -283,11 +283,11 @@ export default function ShiftPage() {
         shiftCount: shifts.length, flaggedCount, topProducts,
       }
       const phone = info?.OwnerWhatsapp || info?.owner_whatsapp || ''
-      const legacyKey = info?.CallMeBotApiKey || info?.callmebot_api_key || ''
+      
       const ownerEml = info?.OwnerEmail || info?.owner_email || ''
       const dailyWaOn = info?.DailyReportEnabled ?? info?.daily_report_enabled ?? false
       const dailyEmailOn = info?.DailyEmailEnabled ?? info?.daily_email_enabled ?? false
-      if (phone && dailyWaOn) await sendWhatsApp(phone, legacyKey, buildDailyClosingWhatsApp(closingData))
+      if (phone && dailyWaOn) await sendWhatsApp(phone, '', buildDailyClosingWhatsApp(closingData))
       if (dailyEmailOn && ownerEml) {
         const fullData: DailyReportFullData = { ...reportData, invoices, expenses, whishTransactions: whish, shifts }
         await sendEmail(ownerEml, `AllWay Daily Report — ${dateStr}`, buildDailyReportHTML(fullData))

@@ -123,7 +123,7 @@ export default function Settings() {
     mutationFn: async () => {
       if (!phone.trim()) throw new Error('Enter a WhatsApp number first')
       const ok = await sendWhatsApp(phone.trim(), '', `✅ Test message from AllWay CRM\n${new Date().toLocaleString('en-GB')}`)
-      if (!ok) throw new Error('Green API not configured — add VITE_GREEN_API_INSTANCE_ID and VITE_GREEN_API_TOKEN to your Vercel environment variables')
+      if (!ok) throw new Error('Twilio not configured — add TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN and TWILIO_FROM_NUMBER in Vercel environment variables')
     },
     onSuccess: () => toast.success('Test WhatsApp sent!'),
     onError: (e) => toast.error(e instanceof Error ? e.message : 'Failed'),
@@ -213,7 +213,7 @@ export default function Settings() {
             <p className="text-emerald-100 text-sm font-medium">
               Notifications via{' '}
               <Badge className="text-[9px] bg-white/20 text-white border-white/30 font-black uppercase">
-                {(import.meta.env.VITE_WA_PROVIDER as string) || 'green-api'}
+                Twilio Sandbox
               </Badge>
             </p>
           </div>
