@@ -3,12 +3,14 @@
 -- Run this in the Supabase SQL editor (once).
 -- ================================================================
 
--- Step 1: Migrate existing user roles
+-- Step 1: Drop the old check constraint FIRST (before any updates)
+ALTER TABLE public.users DROP CONSTRAINT IF EXISTS users_role_check;
+
+-- Step 2: Migrate existing user roles
 UPDATE public.users SET role = 'admin' WHERE role = 'supervisor';
 UPDATE public.users SET role = 'staff' WHERE role IN ('senior', 'cashier');
 
--- Step 2: Update the check constraint on the users table
-ALTER TABLE public.users DROP CONSTRAINT IF EXISTS users_role_check;
+-- Step 3: Add the new check constraint
 ALTER TABLE public.users ADD CONSTRAINT users_role_check
   CHECK (role IN ('admin', 'staff'));
 
