@@ -210,41 +210,25 @@ export default function Whish() {
             </div>
           ))}
         </div>
-      </div>
 
-      {/* Wallet Balance Summary */}
-      <Card className="border-2 border-dashed border-muted overflow-hidden bg-secondary/10">
-        <CardContent className="p-0 flex flex-col md:flex-row">
-          <div className="p-6 flex-1 border-b md:border-b-0 md:border-r border-muted flex items-center gap-6">
-            <div className="p-4 bg-emerald-500/10 rounded-2xl text-emerald-600">
-              <ArrowUpRight className="w-8 h-8" />
-            </div>
-            <div>
-              <p className="text-[10px] uppercase font-black tracking-widest text-muted-foreground mb-1">USD Wallet Status</p>
-              <div className="flex items-baseline gap-2">
-                <span className={`text-3xl font-mono font-black ${walletBalance.usd >= 0 ? 'text-emerald-600' : 'text-rose-600'}`}>
-                  {walletBalance.usd >= 0 ? '+' : ''}{fmtMoney(walletBalance.usd, 'USD')}
-                </span>
-                <span className="text-xs text-muted-foreground font-medium uppercase italic">computed balance</span>
-              </div>
-            </div>
+        {/* Wallet Balance — slim strip inside header */}
+        <div className="relative z-10 grid grid-cols-2 gap-px bg-white/10 border-t border-white/10">
+          <div className="bg-black/20 px-6 py-3 flex items-center gap-3">
+            <ArrowUpRight className="w-3.5 h-3.5 text-white/40" />
+            <span className="text-[9px] font-black uppercase tracking-[2px] text-white/50">Wallet USD</span>
+            <span className={`ml-auto font-mono font-black text-sm ${walletBalance.usd >= 0 ? 'text-emerald-300' : 'text-rose-300'}`}>
+              {walletBalance.usd >= 0 ? '+' : ''}{fmtMoney(walletBalance.usd, 'USD')}
+            </span>
           </div>
-          <div className="p-6 flex-1 flex items-center gap-6 bg-white">
-            <div className="p-4 bg-indigo-500/10 rounded-2xl text-indigo-600">
-              <ArrowDownLeft className="w-8 h-8" />
-            </div>
-            <div>
-              <p className="text-[10px] uppercase font-black tracking-widest text-muted-foreground mb-1">LBP Wallet Status</p>
-              <div className="flex items-baseline gap-2">
-                <span className={`text-3xl font-mono font-black ${walletBalance.lbp >= 0 ? 'text-indigo-600' : 'text-rose-600'}`}>
-                  {walletBalance.lbp >= 0 ? '+' : ''}{fmtMoney(walletBalance.lbp, 'LBP')}
-                </span>
-                <span className="text-xs text-muted-foreground font-medium uppercase italic">computed balance</span>
-              </div>
-            </div>
+          <div className="bg-black/20 px-6 py-3 flex items-center gap-3">
+            <ArrowDownLeft className="w-3.5 h-3.5 text-white/40" />
+            <span className="text-[9px] font-black uppercase tracking-[2px] text-white/50">Wallet LBP</span>
+            <span className={`ml-auto font-mono font-black text-sm ${walletBalance.lbp >= 0 ? 'text-indigo-200' : 'text-rose-300'}`}>
+              {walletBalance.lbp >= 0 ? '+' : ''}{fmtMoney(walletBalance.lbp, 'LBP')}
+            </span>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Log Transaction Section */}
