@@ -199,7 +199,7 @@ export default function Products() {
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 stat-grid">
         {[
-          { label: 'Total Stock Value', value: fmtMoney(stats.totalValueUsd), icon: BarChart3, color: 'text-emerald-600', sub: `CRM ${fmtMoney(stats.physicalValueUsd)} · Access ${fmtMoney(stockCash)}` },
+          { label: 'Total Stock Value', value: fmtMoney(stats.totalValueUsd), icon: BarChart3, color: 'text-emerald-600', sub: `Physical ${fmtMoney(stats.physicalValueUsd)} · Cash ${fmtMoney(stockCash)}` },
           { label: 'Total Items', value: stats.totalItems, icon: Layers, color: 'text-indigo-600', sub: 'Unique SKUs' },
           { label: 'Low Stock', value: stats.lowStock, icon: AlertTriangle, color: 'text-amber-600', sub: '5 units or fewer' },
           { label: 'Out of Stock', value: stats.outOfStock, icon: Box, color: 'text-rose-600', sub: 'Needs restocking' },
